@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu of Winner House, Sundbyberg</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Set a maximum width for the content */
+            max-width: 1200px;
+            /* Center the container horizontally */
+            margin: 0 auto;
+        }
+
+        /* Apply styles to each column */
+        .column {
+            /* Each column takes up 50% of the container width with some spacing */
+            flex-basis: calc(50% - 20px);
+            /* Include padding and border in the column's total width */
+            box-sizing: border-box;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 767px) {
+            .container {
+                /* Change to a single column layout */
+                flex-direction: column;
+            }
+
+            .column {
+                /* Full width for columns on mobile */
+                flex-basis: 100%;
+            }
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .right-column img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+        }
+
+        .left-column {
+            padding-right: 20px;
+        }
+
+        .menu-section-name-primary {
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .menu-table-first-column {
+            text-align: center;
+        }
+
+        .menu-table-last-column {
+            text-align: right;
+        }
+
+        .menu-item-name-primary {
+            font-weight: bold;
+        }
+
+        .menu-item-description {
+            font-size: small;
+        }
+
+        .btn-wikipedia {
+            font-family: serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Winner House</h1>
+        <p>
+            Järnvägsgatan 42, Sundbyberg [<a
+                href="https://maps.app.goo.gl/Li749hbdVE6Pzwrg9" target="_blank">Google Maps</a>]<br>
+            
+        </p>
+    </header>
+    
+    <section class="section">
+        <div class="container">
+            <div class="column left-column">
+                <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/325726093_487199590280304_7869728386477508905_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=38ZzmPz47u0AX_TYaUk&_nc_ht=scontent-arn2-1.xx&oh=00_AfBOMXeZ3EnCqUdt9kzuB7bhU1czyIYZTHDOkVV09tjhdA&oe=6599DD09" alt="Menu Image">
+            </div>
+            <div class="column right-column">
+                <table class="menu-table">
+                    <tbody>
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">肉類 </span>Meat
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('梅菜豬肉')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">梅菜豬肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('梅菜豬肉', 'zh-Hant')">🗣️</button>
+                                <br>Pork with Pickled Vegetables<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 188
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('羊腩煲')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">羊腩煲</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('羊腩煲', 'zh-Hant')">🗣️</button>
+                                <br>Lamb Brisket<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 208
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('牛腩煲')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">牛腩煲</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('牛腩煲', 'zh-Hant')">🗣️</button>
+                                <br>Beef Brisket<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 208
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/200px-Charsiu.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">新汁叉燒</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('新汁叉燒', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Char_siu', 'wikipedia')">W</button><br>Honey Yi Siu / Barbecue Pork<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 188
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('中式??肉/雞')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">中式??肉/雞</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('中式??肉/雞', 'zh-Hant')">🗣️</button>
+                                <br>Sweet and Sour Pork / Chicken<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 168
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/200px-Chen_Mapo_Tofu.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">麻婆豆腐</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('麻婆豆腐', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button><br>Mapo Tofu with meat<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 168
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Qiezi.jpg/200px-Qiezi.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">魚香茄子 (早一天預訂)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('魚香茄子 (早一天預訂)', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button><br>Fish-flavored Eggplant (meat) (order 1 day in advance)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 188
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('鹵水牛展')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">鹵水牛展</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鹵水牛展', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Lou_mei', 'wikipedia')">W</button><br>Marinade Beef Shank<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 188
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/200px-2015_0410_Chicken_feet_dim_sum.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">鳳爪 (早一天預訂)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鳳爪 (早一天預訂)', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet', 'wikipedia')">W</button><br>Chicken Feet (Phoenix) (order 1 day in advance)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">雞類 </span>Chicken
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Soy_Sauce_Chicken.jpg/200px-Soy_Sauce_Chicken.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">豉油雞</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('豉油雞', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Soy_sauce_chicken', 'wikipedia')">W</button><br>Soy sauce chicken<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 168
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('蔥油雞')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">蔥油雞</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('蔥油雞', 'zh-Hant')">🗣️</button>
+                                <br>Scallion chicken<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 168
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Crispyfriedchicken.jpg/200px-Crispyfriedchicken.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">炸子雞 (早一天預訂)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('炸子雞 (早一天預訂)', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Crispy_fried_chicken', 'wikipedia')">W</button><br>Fried chicken (order 1 day in advance)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 108 / per each
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('酥炸雞翌')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">酥炸雞翌</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('酥炸雞翌', 'zh-Hant')">🗣️</button>
+                                <br>Crispy chicken wings<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">粥、??類 </span>Porridge, ??
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('粥(雞粥、瘦肉粥)')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">粥(雞粥、瘦肉粥)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('粥(雞粥、瘦肉粥)', 'zh-Hant')">🗣️</button>
+                                <br>Porridge (chicken or lean meat porridge)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 110 + black egg (2 pp)
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg/200px-Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">揚州炒飯</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('揚州炒飯', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Yangzhou_fried_rice', 'wikipedia')">W</button><br>Yangzhou fried rice<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/200px-Beefchowfoon.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">干炒牛河</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('干炒牛河', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Beef_chow_fun', 'wikipedia')">W</button><br>Dry fried beef rice noodles<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('肉片炒新')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">肉片炒新</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('肉片炒新', 'zh-Hant')">🗣️</button>
+                                <br>Fried noodles with sliced pork<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/200px-Wonton_noodle_soup_boston.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">吞云湯麵</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('吞云湯麵', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine', 'wikipedia')">W</button><br>Wonton noodle soup<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">海鮮類 </span>Seafood
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('清蒸鮮魚')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">清蒸鮮魚</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('清蒸鮮魚', 'zh-Hant')">🗣️</button>
+                                <br>Steamed fresh fish<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 market price
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Fried_baby_squid.jpg/200px-Fried_baby_squid.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">椒鹽尤魚</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('椒鹽尤魚', 'zh-Hant')">🗣️</button>
+                                <br>Salt and pepper squid<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 168
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pepper_salt_prawns.jpeg/200px-Pepper_salt_prawns.jpeg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">椒鹽大虾</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('椒鹽大虾', 'zh-Hant')">🗣️</button>
+                                <br>Salt and pepper shrimp<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 168
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('吉列大蝦')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">吉列大蝦</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('吉列大蝦', 'zh-Hant')">🗣️</button>
+                                <br>“Cutlet” prawns<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 188
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('海鮮????')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">海鮮????</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('海鮮????', 'zh-Hant')">🗣️</button>
+                                <br>Seafood tofu pot<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 238
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">素菜 </span>Vegetarian
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('蒜蓉時蔬')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">蒜蓉時蔬</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('蒜蓉時蔬', 'zh-Hant')">🗣️</button>
+                                <br>Garlic vegetables<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Boeddha%27s_Delight.jpg/200px-Boeddha%27s_Delight.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">羅漢齋 (早一天預訂)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('羅漢齋 (早一天預訂)', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Buddha%27s_delight', 'wikipedia')">W</button><br>Buddha's delight (order 1 day in advance)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 148
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">慈心類 </span>Dim Sum
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('料餃 ??')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">料餃 ??</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('料餃 ??', 'zh-Hant')">🗣️</button>
+                                <br>Dumpling ??<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('粉菜 ??')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">粉菜 ??</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('粉菜 ??', 'zh-Hant')">🗣️</button>
+                                <br>Vermicelli ??<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg/200px-Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">燒賣</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('燒賣', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Shumai#Cantonese_siumaai', 'wikipedia')">W</button><br>Shumai<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/200px-Char_siu_bao.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">叉燒包</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('叉燒包', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button><br>Cha siu bao<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('奶黃包')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">奶黃包</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('奶黃包', 'zh-Hant')">🗣️</button>
+                                <br>Custard buns<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg/200px-Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">餃子(肉、菜)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('餃子(肉、菜)', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi#Cantonese', 'wikipedia')">W</button><br>Dumplings (meat, vegetables)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/200px-Tofuskinroll.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">鮮竹卷</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鮮竹卷', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed', 'wikipedia')">W</button><br>Tofu skin roll<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/200px-2015_0410_Chicken_feet_dim_sum.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">鳳爪</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鳳爪', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet', 'wikipedia')">W</button><br>Chicken feet<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Youtiao.jpg/200px-Youtiao.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">油條</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('油條', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Youtiao', 'wikipedia')">W</button><br>Chinese donuts (fried dough sticks)<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('排骨')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">排骨</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('排骨', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Spare_ribs#Asia', 'wikipedia')">W</button><br>pork ribs<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('蒲背糕')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">蒲背糕</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('蒲背糕', 'zh-Hant')">🗣️</button>
+                                <br>??? cake<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/RedbeanCake_Cantoversion.jpg/200px-RedbeanCake_Cantoversion.jpg" alt="Menu Image">
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">紅豆糕</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('紅豆糕', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Red_bean_cake', 'wikipedia')">W</button><br>red bean cake<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('明火例湯')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">明火例湯</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('明火例湯', 'zh-Hant')">🗣️</button>
+                                <button type="button" class="btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups', 'wikipedia')">W</button><br>Clear fire soup<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('蓮藕豬骨湯')">🖼️🔎</button>
+                            </td>
+                            <td>
+                                
+
+                                <span class="menu-item-name-primary">蓮藕豬骨湯</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('蓮藕豬骨湯', 'zh-Hant')">🗣️</button>
+                                <br>Lotus root and pork bone soup<br>
+
+                                <span class="menu-item-description"></span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                 95 / 2 pp.
+                            </td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+                <p>茗茶20元/位 (Tea 20 kr/person)</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="column left-column">
+                <img src="https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/325772274_1321724865288674_85867635613959231_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=CF5g7joPsYQAX_VZGMi&_nc_ht=scontent-arn2-1.xx&oh=00_AfByPQb9rKMDvOwMpYDdr2DkRxXeHqDtMcsb2M_ZlJUh9g&oe=659A9364" alt="Menu Image">
+            </div>
+            <div class="column right-column">
+                <table class="menu-table">
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>Generated by MenuDB—a FoodTBD project</p>
+    </footer>
+
+    <script>
+        function openLink(url, target) {
+            window.open(url, target);
+        }
+
+        function openGoogleImageSearch(queryText) {
+            openLink("https://www.google.com/search?tbm=isch&q=" + queryText, "googleimage");
+        }
+
+        function speakText(text, lang) {
+            window.speechSynthesis.cancel();
+
+            setTimeout(function () {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                utterance.rate = 0.85;
+                window.speechSynthesis.speak(utterance);
+            }, 100); // Delay 100 ms to let cancel() complete
+
+        }
+    </script>
+</body>
+
+</html>

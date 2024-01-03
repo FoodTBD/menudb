@@ -1,0 +1,180 @@
+author: John Chang
+restaurant:
+  name: Winner House
+  street_address: Järnvägsgatan 42
+  city: Sundbyberg
+  country_code: SE
+  tags:
+    - chinese
+    - cantonese
+  googlemaps_url: https://maps.app.goo.gl/Li749hbdVE6Pzwrg9
+  facebook_url: https://www.facebook.com/WinnerHouse.se
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - menuimage_url: https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/325726093_487199590280304_7869728386477508905_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=3635dc&_nc_ohc=38ZzmPz47u0AX_TYaUk&_nc_ht=scontent-arn2-1.xx&oh=00_AfBOMXeZ3EnCqUdt9kzuB7bhU1czyIYZTHDOkVV09tjhdA&oe=6599DD09
+      sections:
+        - "name_zh-Hant": 肉類
+          "name_en": Meat
+          menu_items:
+            - "name_zh-Hant": 梅菜豬肉
+              "name_en": Pork with Pickled Vegetables
+              price: 188
+            - "name_zh-Hant": 羊腩煲
+              "name_en": Lamb Brisket
+              price: 208
+            - "name_zh-Hant": 牛腩煲
+              "name_en": Beef Brisket
+              price: 208
+            - "name_zh-Hant": 新汁叉燒
+              "name_en": Honey Yi Siu / Barbecue Pork
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/200px-Charsiu.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Char_siu
+              price: 188
+            - "name_zh-Hant": 中式??肉/雞
+              "name_en": Sweet and Sour Pork / Chicken
+              price: 168
+            - "name_zh-Hant": 麻婆豆腐
+              "name_en": Mapo Tofu with meat
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/200px-Chen_Mapo_Tofu.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Mapo_tofu
+              price: 168
+            - "name_zh-Hant": 魚香茄子 (早一天預訂)
+              "name_en": Fish-flavored Eggplant (meat) (order 1 day in advance)
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Qiezi.jpg/200px-Qiezi.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Yuxiang
+              price: 188
+            - "name_zh-Hant": 鹵水牛展
+              "name_en": Marinade Beef Shank
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Lou_mei
+              price: 188
+            - "name_zh-Hant": 鳳爪 (早一天預訂)
+              "name_en": Chicken Feet (Phoenix) (order 1 day in advance)
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/200px-2015_0410_Chicken_feet_dim_sum.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Chicken_feet
+        - "name_zh-Hant": 雞類
+          "name_en": Chicken
+          menu_items:
+            - "name_zh-Hant": 豉油雞
+              "name_en": Soy sauce chicken
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Soy_Sauce_Chicken.jpg/200px-Soy_Sauce_Chicken.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Soy_sauce_chicken
+              price: 168
+            - "name_zh-Hant": 蔥油雞
+              "name_en": Scallion chicken
+              price: 168
+            - "name_zh-Hant": 炸子雞 (早一天預訂)
+              "name_en": Fried chicken (order 1 day in advance)
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Crispyfriedchicken.jpg/200px-Crispyfriedchicken.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Crispy_fried_chicken
+              price: 108 / per each
+            - "name_zh-Hant": 酥炸雞翌
+              "name_en": Crispy chicken wings
+              price: 148
+        - "name_zh-Hant": 粥、??類
+          "name_en": Porridge, ??
+          menu_items:
+            - "name_zh-Hant": 粥(雞粥、瘦肉粥)
+              "name_en": Porridge (chicken or lean meat porridge)
+              price: 110 + black egg (2 pp)
+            - "name_zh-Hant": 揚州炒飯
+              "name_en": Yangzhou fried rice
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg/200px-Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Yangzhou_fried_rice
+              price: 148
+            - "name_zh-Hant": 干炒牛河
+              "name_en": Dry fried beef rice noodles
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/200px-Beefchowfoon.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Beef_chow_fun
+              price: 148
+            - "name_zh-Hant": 肉片炒新
+              "name_en": Fried noodles with sliced pork
+              price: 148
+            - "name_zh-Hant": 吞云湯麵
+              "name_en": Wonton noodle soup
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/200px-Wonton_noodle_soup_boston.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
+              price: 148
+        - "name_zh-Hant": 海鮮類
+          "name_en": Seafood
+          menu_items:
+            - "name_zh-Hant": 清蒸鮮魚
+              "name_en": Steamed fresh fish
+              price: market price
+            - "name_zh-Hant": 椒鹽尤魚
+              "name_en": Salt and pepper squid
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Fried_baby_squid.jpg/200px-Fried_baby_squid.jpg
+              price: 168
+            - "name_zh-Hant": 椒鹽大虾
+              "name_en": Salt and pepper shrimp
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pepper_salt_prawns.jpeg/200px-Pepper_salt_prawns.jpeg
+              price: 168
+            - "name_zh-Hant": 吉列大蝦
+              "name_en": “Cutlet” prawns
+              price: 188
+            - "name_zh-Hant": 海鮮????
+              "name_en": Seafood tofu pot
+              price: 238
+        - "name_zh-Hant": 素菜
+          "name_en": Vegetarian
+          menu_items:
+            - "name_zh-Hant": 蒜蓉時蔬
+              "name_en": Garlic vegetables
+              price: 148
+            - "name_zh-Hant": 羅漢齋 (早一天預訂)
+              "name_en": Buddha's delight (order 1 day in advance)
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Boeddha%27s_Delight.jpg/200px-Boeddha%27s_Delight.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Buddha%27s_delight
+              price: 148
+        - "name_zh-Hant": 慈心類
+          "name_en": Dim Sum
+          menu_items:
+            - "name_zh-Hant": 料餃 ??
+              "name_en": Dumpling ??
+            - "name_zh-Hant": 粉菜 ??
+              "name_en": Vermicelli ??
+            - "name_zh-Hant": 燒賣
+              "name_en": Shumai
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg/200px-Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Shumai#Cantonese_siumaai
+            - "name_zh-Hant": 叉燒包
+              "name_en": Cha siu bao
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/200px-Char_siu_bao.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Cha_siu_bao
+            - "name_zh-Hant": 奶黃包
+              "name_en": Custard buns
+            - "name_zh-Hant": 餃子(肉、菜)
+              "name_en": Dumplings (meat, vegetables)
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg/200px-Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Jiaozi#Cantonese
+            - "name_zh-Hant": 鮮竹卷
+              "name_en": Tofu skin roll
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/200px-Tofuskinroll.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed
+            - "name_zh-Hant": 鳳爪
+              "name_en": Chicken feet
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/200px-2015_0410_Chicken_feet_dim_sum.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Chicken_feet
+            - "name_zh-Hant": 油條
+              "name_en": Chinese donuts (fried dough sticks)
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Youtiao.jpg/200px-Youtiao.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Youtiao
+            - "name_zh-Hant": 排骨
+              "name_en": pork ribs
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Spare_ribs#Asia
+            - "name_zh-Hant": 蒲背糕
+              "name_en": ??? cake
+            - "name_zh-Hant": 紅豆糕
+              "name_en": red bean cake
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/RedbeanCake_Cantoversion.jpg/200px-RedbeanCake_Cantoversion.jpg
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Red_bean_cake
+            - "name_zh-Hant": 明火例湯
+              "name_en": Clear fire soup
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
+            - "name_zh-Hant": 蓮藕豬骨湯
+              "name_en": Lotus root and pork bone soup
+              price: 95 / 2 pp.
+      page_footer: 茗茶20元/位 (Tea 20 kr/person)
+    - menuimage_url: https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/325772274_1321724865288674_85867635613959231_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=CF5g7joPsYQAX_VZGMi&_nc_ht=scontent-arn2-1.xx&oh=00_AfByPQb9rKMDvOwMpYDdr2DkRxXeHqDtMcsb2M_ZlJUh9g&oe=659A9364
