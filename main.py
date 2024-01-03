@@ -1,10 +1,14 @@
+import datetime
 import os
+import re
 import sys
 import typing
+import urllib.parse
+from typing import Any, OrderedDict
+
 import strictyaml
 from jinja2 import Environment, FileSystemLoader
-from typing import Dict, Any, OrderedDict
-import datetime
+from markupsafe import Markup
 
 
 def generate_html(
@@ -16,12 +20,45 @@ def generate_html(
     mod_date = datetime.datetime.fromtimestamp(os.path.getmtime(input_yaml_path))
     # The type checker thinks yaml_data.data is a str, not a dict
     yaml_dict = typing.cast(OrderedDict[str, Any], yaml_data.data)
+
     # Inject the modification date into the YAML data
     yaml_dict["date_modified"] = mod_date.isoformat()
 
+    restaurant_dict = yaml_dict["restaurant"]
+    if not restaurant_dict.get("googlemaps_url"):
+        query = ", ".join(
+            [
+                restaurant_dict["name"],
+                restaurant_dict["street_address"],
+                restaurant_dict["city"],
+                restaurant_dict["country_code"],
+            ]
+        )
+        url = "https://www.google.com/maps/search/" + urllib.parse.quote(query)
+        restaurant_dict["googlemaps_url"] = url
+
+    def format_text(text: str):
+        # Replace **bold**, *italic*, and `code` with HTML tags
+
+        def replace_markup(match: re.Match[str]) -> str:
+            if match.group(1):
+                return "<strong>" + match.group(1) + "</strong>"
+            elif match.group(2):
+                return "<em>" + match.group(2) + "</em>"
+            elif match.group(3):
+                return "<code>" + match.group(3) + "</code>"
+            else:
+                raise NotImplementedError
+
+        pattern = r"\*\*(.*?)\*\*|\*(.*?)\*|`(.*?)`"
+        formatted_text = re.sub(pattern, replace_markup, text)
+
+        return Markup(formatted_text)
+
     env = Environment(loader=FileSystemLoader("."))
+    env.filters["format_text"] = format_text
     template = env.get_template(template_path)
-    rendered_html = template.render(data=yaml_data.data)
+    rendered_html = template.render(data=yaml_dict)
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
         html_path.write(rendered_html)
@@ -45,11 +82,11 @@ def process_yaml_paths(input_dir: str, output_dir: str, template: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) > 4:
-        print("Usage: python main.py [input_dir] [output_dir] [menu_template.html]")
+        print("Usage: python main.py [input_dir] [output_dir] [menu_template.j2]")
         sys.exit(1)
 
     input_dir = sys.argv[1] if len(sys.argv) >= 2 else "content"
     output_dir = sys.argv[2] if len(sys.argv) >= 3 else "output"
-    template = sys.argv[3] if len(sys.argv) == 4 else "templates/menu_template.html"
+    template = sys.argv[3] if len(sys.argv) == 4 else "templates/menu_template.j2"
 
     process_yaml_paths(input_dir, output_dir, template)

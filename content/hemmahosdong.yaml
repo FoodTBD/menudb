@@ -1,11 +1,11 @@
-%YAML 1.2
----
 author: John Chang
 restaurant:
   name: Hemma Hos Dong
+  street_address: Karlbergsvägen 41
+  city: Stockholm
   country_code: SE
-  location: Stockholm
-  tags: chinese
+  tags:
+    - chinese
   googlemaps_url: https://maps.app.goo.gl/R2ea5RusZc9ZW8NA9
   homepage_url: https://hemmahosdong.wordpress.com/
 menu:
@@ -13,9 +13,8 @@ menu:
     - zh-Hans
     - zh-Latn-pinyin
     - sv-SE
-    - en
   pages:
-    - menuimage_url: hemma-hos-dong_img_2214 Medium.jpeg
+    - menuimage_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg
       sections:
       - "name_zh-Hans": 前餐
         "name_zh-Latn-pinyin": Förrätter
@@ -23,6 +22,7 @@ menu:
           - item_number: 1
             "name_zh-Hans": 麻香萝卜
             "name_zh-Latn-pinyin": Máxiāng luóbo
+            "name_sv-SE": Rättika med söt stark sås
             "description_sv-SE": Inlagd rättika med szechuan peppar, sesamfrön i en söt stark sas, soyasås
             image_url: https://hemmahosdong.files.wordpress.com/2020/11/rattika_mad_sot_stark_sas.jpg
             annotations: 🌶️
@@ -30,13 +30,17 @@ menu:
           - item_number: 2
             "name_zh-Hans": 酸辣土豆丝
             "name_zh-Latn-pinyin": Suān là tǔdòu sī
+            "name_sv-SE": Strimlad potatis med sötsur stark sås
             "description_sv-SE": Marinerade potatisstrimlor i vinäger- och chilisås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/strimlad_potatis_med_sotsur_stark_sas.jpg
             annotations: 🌶️
             price: 79
           - item_number: 3
             "name_zh-Hans": 酸辣木耳
             "name_zh-Latn-pinyin": Suān là mù'ěr
+            "name_sv-SE": Öronsvamp med sötsur sås
             "description_sv-SE": Marinerade fungus öronsvamp i vinäger- och chilisås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/oronsvamp_med_sotsur_sas.jpg
             annotations: 🌶️
             price: 79
           - item_number: 4
@@ -51,7 +55,9 @@ menu:
           - item_number: 1
             "name_zh-Hans": 家常豆腐
             "name_zh-Latn-pinyin": Jiācháng dòufu
+            "name_sv-SE": Wokad tofu med grönsaker
             "description_sv-SE": Wokad tofu med grönsaker, soyasås, ostronsås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_tofu_med_gronsaker_serverad_med_stark_eller_mild_sas.jpg
             annotations: 🌶️
             price: 159
           - item_number: 2
@@ -91,7 +97,7 @@ menu:
             "description_sv-SE": Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås
             annotations: 🐖
             price: 169
-    - menuimage_url: hemma-hos-dong_img_2215 Medium.jpeg
+    - menuimage_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg
       sections:
       - "name_zh-Hans": 正餐
         "name_zh-Latn-pinyin": Huvudrätter
@@ -99,54 +105,71 @@ menu:
           - item_number: 8
             "name_zh-Hans": 山城辣子鸡
             "name_zh-Latn-pinyin": Shānchéng làzǐ jī
+            "name_sv-SE": Wokad stark kyckling
             "description_sv-SE": Friterad kyckling med torrstark szechuan peppar chili och jordnötter, sesamfrön, soyasås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_stark_kyckling.jpg
             annotations: 🐓🌶️🌶️🌶️
             price: 189
           - item_number: 9
             "name_zh-Hans": 红烧鸡肉
             "name_zh-Latn-pinyin": Hóngshāo jīrò
+            "name_sv-SE": Bräserad kyckling med söt stark sås
             "description_sv-SE": Bräserad kyckling och grönsaker med en söt, salt och stark smak, soyasås, ostronsås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_kyckling_med_sot_stark_sas.jpg
             annotations: 🐓🌶️
             price: 189
           - item_number: 10
             "name_zh-Hans": 水煮牛肉
             "name_zh-Latn-pinyin": Shuǐ zhǔ niúròu
+            "name_sv-SE": Pocherad biff med grönsaker i szechuan soppa
             "description_sv-SE": Kokt biff med grönsaker på szechuan-vis, soyasås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/pocherad_biff_med_gronsaker_i_szechuan_soppa.jpg
             annotations: 🐄🌶️🌶️🌶️
             price: 249
           - item_number: 13
             "name_zh-Hans": 飘香鸭
             "name_zh-Latn-pinyin": Piāo xiāng yā
+            "name_sv-SE": Friterad anka med chili och jordnötssås
             "description_sv-SE": Friterad anka toppad med jordnötter, svartpeppar, sesamfrön, vetemjöl och chilisås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_anka_med_chili_och_jordnotssas.jpg
             annotations: 🦆🌶️
             price: 229
           - item_number: 14
             "name_zh-Hans": 沸腾水煮鱼
             "name_zh-Latn-pinyin": Fèiténg shuǐ zhǔ yú
             "description_sv-SE": Pocherad fiskfilé szechuan soppa, soyasås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/img_20201105_190954078.jpg
             annotations: 🐟🌶️🌶️🌶️
             price: 249
           - item_number: 15
             "name_zh-Hans": 葱姜炒虾
             "name_zh-Latn-pinyin": Cōng jiāng chǎo xiā
+            "name_sv-SE": Wokade räkor med ingefära och salladslök
             "description_sv-SE": Wokade räkor med broccoli, lök och ingefära, ostronsås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokade_rakor_med_ingefara_och_salladslok.jpg
             annotations: 🦐
             price: 189
           - item_number: 16
             "name_zh-Hans": 煎饺
             "name_zh-Latn-pinyin": Jiān jiǎo
-            "description_sv-SE": 12 t stekta kyckling dumplings (vetemjöl, kyckling, kinesisk gräslök, vitlök, soyasås, ingefära, sesamolja, ostronsås)
+            "name_sv-SE": Stekta dumplings med kycklingfyllning (12 st)
+            "description_sv-SE": 12 st stekta kyckling dumplings (vetemjöl, kyckling, kinesisk gräslök, vitlök, soyasås, ingefära, sesamolja, ostronsås)
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/stekta_dumplings_med_kycklingfyllning_12st.jpg
             annotations: 🐓
             price: 149
           - item_number: 17
             "name_zh-Hans": 牛肉汤面 
             "name_zh-Latn-pinyin": Niúròu tāngmian
+            "name_sv-SE": Nudelsoppa med biff och grönsaker
             "description_sv-SE": Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/nudelsoppa_med_biff_och_gronsaker.jpg
             annotations: 🐄🌶️
             price: 169
           - item_number: 18
             "name_zh-Hans": 干炒牛河 
             "name_zh-Latn-pinyin": Gàn chǎo niú hé
+            "name_sv-SE": Wokade platta risnudlar med biff, böngroddar och lök
             "description_sv-SE": Wokade risnudlar med biff, ägg, lök och böngroddar, soyasås
+            image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokade_platta_risnudlar_med_biff_bongroddar_och_lok.jpg
             annotations: 🐄
             price: 169

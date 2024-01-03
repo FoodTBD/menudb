@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu of {{ data.restaurant.name }}, {{ data.restaurant.city }}</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Set a maximum width for the content */
+            max-width: 1200px;
+            /* Center the container horizontally */
+            margin: 0 auto;
+        }
+
+        /* Apply styles to each column */
+        .column {
+            /* Each column takes up 50% of the container width with some spacing */
+            flex-basis: calc(50% - 20px);
+            /* Include padding and border in the column's total width */
+            box-sizing: border-box;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 767px) {
+            .container {
+                /* Change to a single column layout */
+                flex-direction: column;
+            }
+
+            .column {
+                /* Full width for columns on mobile */
+                flex-basis: 100%;
+            }
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .right-column img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+        }
+
+        .left-column {
+            padding-right: 20px;
+        }
+
+        .menu-section-name-primary {
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .menu-table-first-column {
+            text-align: center;
+        }
+
+        .menu-table-last-column {
+            text-align: right;
+        }
+
+        .menu-item-name-primary {
+            font-weight: bold;
+        }
+
+        .menu-item-description {
+            font-size: small;
+        }
+
+        .btn-wikipedia {
+            font-family: serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>{{ data.restaurant.name }}</h1>
+        <p>
+            {{ data.restaurant.street_address }}, {{ data.restaurant.city }} [<a
+                href="{{ data.restaurant.googlemaps_url }}">Google Maps</a>]<br>
+            {% if data.restaurant.homepage_url %}<a href="{{ data.restaurant.homepage_url }}">{{
+                data.restaurant.homepage_url }}</a>{% endif
+            %}
+        </p>
+    </header>
+    {% for page in data.menu.pages %}
+    <section class="section">
+        <div class="container">
+            <div class="column left-column">
+                <img src="{{ page.menuimage_url }}" alt="Menu Image">
+            </div>
+            <div class="column right-column">
+                <table class="menu-table">
+                    <tbody>
+                        {% for section in page.sections %}
+                        <tr>
+                            <th colspan="3">
+                                {% for lang in data.menu.language_codes if section['name_' + lang] -%}
+                                {% if loop.first -%}
+                                <span class="menu-section-name-primary">{{ section['name_' + lang] }} </span>
+                                {%- else -%}
+                                {{ section['name_' + lang] }}
+                                {%- endif %}
+                                {%- endfor %}
+                            </th>
+                        </tr>
+                        {% for item in section.menu_items %}
+                        <tr>
+                            <td class="menu-table-first-column">
+                                {% if item['image_url'] -%}
+                                <img src="{{ item['image_url'] }}" alt="Menu Image">
+                                {%- else -%}
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">🖼️🔎</button>
+                                {%- endif %}
+                            </td>
+                            <td>
+                                {% if item['item_number'] %}{{ item['item_number'] }}.{% endif %}
+
+                                {% for lang in data.menu.language_codes if item['name_' + lang] and not lang ==
+                                'zh-Latn-pinyin' -%}
+                                {%- set dish_name = item['name_' + lang] -%}
+                                {% if loop.first -%}
+                                <span class="menu-item-name-primary">{{ dish_name }}</span>
+                                {# Special case for Pinyin #}
+                                {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}({{
+                                item['name_zh-Latn-pinyin'] }}){% endif %}
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('{{ dish_name }}', '{{ lang }}')">🗣️</button>
+                                {% if item['wikipedia_url_en'] %}<button type="button" class="btn-wikipedia"
+                                    onclick="openLink('{{ item['wikipedia_url_en'] }}', 'wikipedia')">W</button>{%
+                                endif -%}
+                                {%- else -%}
+                                {{ dish_name }}
+                                {%- endif %}<br>
+                                {%- endfor %}
+
+                                <span class="menu-item-description">{% for lang in data.menu.language_codes if
+                                    item['description_' + lang] -%}
+                                    {{ item['description_' + lang] | format_text }}<br>
+                                    {%- endfor %}</span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                {{ item['annotations'] }} {{ item['price'] }}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+    <footer class="footer">
+        <p>Footer</p>
+    </footer>
+
+    <script>
+        function openLink(url, target) {
+            window.open(url, target);
+        }
+
+        function openGoogleImageSearch(queryText) {
+            openLink("https://www.google.com/search?tbm=isch&q=" + queryText, "googleimage");
+        }
+
+        function speakText(text, lang) {
+            window.speechSynthesis.cancel();
+
+            setTimeout(function () {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                utterance.rate = 0.85;
+                window.speechSynthesis.speak(utterance);
+            }, 100); // Delay 100 ms to let cancel() complete
+
+        }
+    </script>
+</body>
+
+</html>
