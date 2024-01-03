@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ data.restaurant.name }}</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .left-column {
+            flex: 1;
+            overflow: hidden;
+            max-width: 50%;
+            padding-right: 20px;
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+        .right-column img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+        }
+
+        .right-column td {
+            /* vertical-align: top; */
+            padding: 8px;
+        }
+
+        .menu-section-name-primary {
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .menu-table-first-column {
+            text-align: center;
+        }
+
+        .menu-table-last-column {
+            text-align: right;
+        }
+
+        .menu-item-name-primary {
+            font-weight: bold;
+        }
+
+        .menu-item-description {
+            font-size: small;
+        }
+
+        .btn-wikipedia {
+            font-family: serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>{{ data.restaurant.name }}</h1>
+
+    <ul>
+        <template>
+            {% if data.restaurant.homepage_url %}<li><a href="{{ data.restaurant.homepage_url }}">{{
+                    data.restaurant.homepage_url }}</a></li>{%
+            endif %}
+            {% if data.restaurant.googlemaps_url %}<li><a href="{{ data.restaurant.googlemaps_url }}">Google Maps</a>
+            </li>{%
+            endif %}
+        </template>
+    </ul>
+
+    <template>
+        {% for page in data.menu.pages %}
+    </template>
+    <div class="container">
+        <div class="left-column">
+            <img src="../static/img/{{ page.menuimage_url }}" alt="Menu Image">
+        </div>
+        <div class="right-column">
+            <table class="menu-table">
+                <tbody>
+                    {% for section in page.sections %}
+                    <tr>
+                        <th colspan="3">
+                            {% for lang in data.menu.language_codes %}
+                            {% if section['name_' + lang] %}{% if loop.first
+                            %}<span class="menu-section-name-primary">{% endif %}{{ section['name_' + lang] }}{% if
+                                loop.first
+                                %}</span>{% endif %}{% endif %}
+                            {% endfor %}
+                        </th>
+                    </tr>
+                    {% for item in section.menu_items %}
+                    <tr>
+                        <td class="menu-table-first-column">
+                            {% if item['image_url'] %}
+                            <img src="{{ item['image_url'] }}" alt="Menu Image">
+                            {% else %}
+                            <button type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('{{ dish_name }}')">🖼️🔎</button>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if item['item_number'] %}{{ item['item_number'] }}.{% endif %}
+
+                            {% for lang in data.menu.language_codes %}{% if item['name_' + lang] %}
+                            {% set dish_name = item['name_' + lang] %}
+                            {% if loop.first %}<span class="menu-item-name-primary">{% endif %}{{ dish_name }}{% if
+                                loop.first %}</span> <button type="button" class="btn-speak"
+                                onclick="speakText('{{ dish_name }}', '{{ lang }}')">🗣️</button> {% if
+                            item['wikipedia_url_en'] %}<button type="button" class="btn-wikipedia"
+                                onclick="openLink('{{ dish_name }}', 'wikipedia')">W</button>{%
+                            endif %}{% endif %}<br>
+                            {% endif %}{% endfor %}
+
+                            <span class="menu-item-description">
+                                {% for lang in data.menu.language_codes %}{% if item['description_' + lang] %}
+                                {{ item['description_' + lang] }}<br>
+                                {% endif %}{% endfor %}
+                            </span>
+                        </td>
+                        <td class="menu-table-last-column">
+                            {{ item['annotations'] }} {{ item['price'] }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <template>
+        {% endfor %}
+    </template>
+
+    <script>
+        function openGoogleImageSearch(queryText) {
+            window.open("https://www.google.com/search?tbm=isch&q=" + queryText, "googleimage");
+        }
+
+        function openLink(url, target) {
+            window.open(url, target);
+        }
+
+        function speakText(text, lang) {
+            window.speechSynthesis.cancel();
+
+            setTimeout(function () {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                utterance.rate = 0.85;
+                window.speechSynthesis.speak(utterance);
+            }, 100); // Delay 100 ms to let cancel() complete
+
+        }
+    </script>
+</body>
+
+</html>
