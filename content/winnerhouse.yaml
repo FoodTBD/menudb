@@ -21,20 +21,20 @@ menu:
           "name_en": Meat
           menu_items:
             - "name_zh-Hant": 梅菜豬肉
-              "name_en": Pork with Plum Vegetables (Meigan cai)
+              "name_en": Pork with Plum Vegetables [Meigan cai]
               wikipedia_url_en: https://en.wikipedia.org/wiki/Meigan_cai
               price: 188
             - "name_zh-Hant": 羊腩煲
               "name_en": Lamb Brisket
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lamb_brisket_pot.jpg/64px-Lamb_brisket_pot.jpg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Lamb_brisket_pot.jpg/128px-Lamb_brisket_pot.jpg
               price: 208
             - "name_zh-Hant": 牛腩煲
               "name_en": Beef Brisket
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/%E7%89%9B%E8%85%A9%E7%85%B2%E4%BB%94%E9%A5%AD_Beef_Brisket_Hotpot_Rice_-_Soup%2C_Box_Hill_%282171826488%29.jpg/64px-%E7%89%9B%E8%85%A9%E7%85%B2%E4%BB%94%E9%A5%AD_Beef_Brisket_Hotpot_Rice_-_Soup%2C_Box_Hill_%282171826488%29.jpg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/%E7%89%9B%E8%85%A9%E7%85%B2%E4%BB%94%E9%A5%AD_Beef_Brisket_Hotpot_Rice_-_Soup%2C_Box_Hill_%282171826488%29.jpg/128px-%E7%89%9B%E8%85%A9%E7%85%B2%E4%BB%94%E9%A5%AD_Beef_Brisket_Hotpot_Rice_-_Soup%2C_Box_Hill_%282171826488%29.jpg
               price: 208
             - "name_zh-Hant": 新汁叉燒
               "name_en": Honey Yi Siu / Barbecue Pork
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/64px-Charsiu.jpg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/128px-Charsiu.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Char_siu
               price: 188
             - "name_zh-Hant": 中式??肉/雞
@@ -70,8 +70,9 @@ menu:
               "description_zh-Hant": "(早一天預訂)"
               "description_en": "(order 1 day in advance)"
               price: 108 / per each
-            - "name_zh-Hant": 酥炸雞翌
-              "name_en": Crispy chicken wings
+            - "name_zh-Hant": 酥炸雞翼
+              "name_en": Crispy [fried] chicken wings
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tebasaki_karaage_by_kawanet_in_Kanayama%2C_Nagoya.jpg/128px-Tebasaki_karaage_by_kawanet_in_Kanayama%2C_Nagoya.jpg
               price: 148
         - "name_zh-Hant": 粥、??類
           "name_en": Porridge, ??
@@ -87,12 +88,14 @@ menu:
             - "name_zh-Hant": 干炒牛河
               "name_en": Dry fried beef rice noodles
               price: 148
-            - "name_zh-Hant": 肉片炒新
+            - "name_zh-Hant": 肉片炒麵
               "name_en": Fried noodles with sliced pork
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/HK_TKL_%E8%AA%BF%E6%99%AF%E5%B6%BA_Tiu_Keng_Leng_%E9%83%BD%E6%9C%83%E9%A7%85_MetroTown_Shopping_mall_shop_%E8%B1%AA%E5%AE%B4%E6%B5%B7%E9%AE%AE%E9%9B%86%E5%9C%98%E9%85%92%E5%AE%B6_Ho_Yin_Seafood_Group_Restaurant_Lunch_%E9%BB%9E%E5%BF%83%E5%B0%8F%E9%A3%9F_dim_sum_%E9%A3%B2%E8%8C%B6_tea_food_April_2019_SSG_06.jpg/128px-thumbnail.jpg?20190402082628
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Chow_mein
               price: 148
-            - "name_zh-Hant": 吞云湯麵 ??
+            - "name_zh-Hant": 吞云湯麵
               "name_en": Wonton noodle soup
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/64px-Wonton_noodle_soup_boston.jpg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
               price: 148
         - "name_zh-Hant": 海鮮類
@@ -103,11 +106,11 @@ menu:
               price: market price
             - "name_zh-Hant": 椒鹽尤魚
               "name_en": Salt and pepper squid
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Fried_baby_squid.jpg/64px-Fried_baby_squid.jpg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/HK_%E9%95%B7%E6%B4%B2_Cheung_Chau_%E8%88%88%E6%A8%82%E6%B5%B7%E9%AE%AE_Hing_Lok_Seafoods_Restaurant_food_dish_%E9%85%A5%E7%82%B8%E9%AD%B7%E9%AD%9A_Deep_fried_Calamari_squid_Sept-2013.JPG/128px-HK_%E9%95%B7%E6%B4%B2_Cheung_Chau_%E8%88%88%E6%A8%82%E6%B5%B7%E9%AE%AE_Hing_Lok_Seafoods_Restaurant_food_dish_%E9%85%A5%E7%82%B8%E9%AD%B7%E9%AD%9A_Deep_fried_Calamari_squid_Sept-2013.JPG
               price: 168
             - "name_zh-Hant": 椒鹽大虾
               "name_en": Salt and pepper shrimp
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pepper_salt_prawns.jpeg/64px-Pepper_salt_prawns.jpeg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pepper_salt_prawns.jpeg/128px-Pepper_salt_prawns.jpeg
               price: 168
             - "name_zh-Hant": 吉列大蝦
               "name_en": “Cutlet” (Breaded fried) prawns
@@ -159,7 +162,7 @@ menu:
               wikipedia_url_en: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
             - "name_zh-Hant": 蓮藕豬骨湯
               "name_en": Lotus root and pork bone soup
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lotus_Root_Soup.jpg/64px-Lotus_Root_Soup.jpg
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lotus_Root_Soup.jpg/128px-Lotus_Root_Soup.jpg
               price: 95 / 2 pp.
       page_footer: 茗茶20元/位 (Tea 20 kr/person)
     - menuimage_url: https://scontent-arn2-1.xx.fbcdn.net/v/t39.30808-6/325772274_1321724865288674_85867635613959231_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=CF5g7joPsYQAX_VZGMi&_nc_ht=scontent-arn2-1.xx&oh=00_AfByPQb9rKMDvOwMpYDdr2DkRxXeHqDtMcsb2M_ZlJUh9g&oe=659A9364
