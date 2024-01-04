@@ -1,0 +1,467 @@
+author: John Chang
+restaurant:
+  name: XLB Kitchen
+  street_address: 10235 S De Anza Blvd
+  city: Cupertino, CA
+  country_code: US
+  tags:
+    - chinese
+  googlemaps_url: https://maps.app.goo.gl/NYFJyj21kTzqjVBy9
+  facebook_url: https://www.facebook.com/pages/XLB-Kitchen/503057360125929
+menu:
+  language_codes:
+    - zh-Hans
+    - en
+  pages:
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipPqOC48rWZPwOJExE4NG4c7KqnxVf8KgdF8msf0=s1354-k-no
+      sections:
+        - "name_zh-Hans": 冷盤
+          "name_en": Appetizers
+          menu_items:
+            - item_number: 1-1
+              "name_zh-Hans": 口水鸡
+              "name_en": Chicken w/ Chili Sauce
+              price: 8.95
+            - item_number: 1-2
+              "name_zh-Hans": 金牌贵妃鸡
+              "name_en": Gold Royal Chichen [sic] (Half)
+              price: 14.95
+            - item_number: 1-3
+              "name_zh-Hans": 夫妻肺片
+              "name_en": Fuqi Feipian
+              price: 8.95
+            - item_number: 1-4
+              "name_zh-Hans": 马兰头香干
+              "name_en": Malan Tofu
+              price: 7.95
+            - item_number: 1-5
+              "name_zh-Hans": 蒜泥白肉
+              "name_en": Sliced Pork w/ Garlic Sauce
+              price: 8.95
+            - item_number: 1-6
+              "name_zh-Hans": 四川涼粉
+              "name_en": Sezchuan [sic] Beans Jelly
+              price: 7.95
+            - item_number: 1-7
+              "name_zh-Hans": 蒜泥黄瓜
+              "name_en": Mixed Fresh Cucumber w/ Garlic Sauce
+              price: 6.95
+            - item_number: 1-8
+              "name_zh-Hans": 香菜拌干丝
+              "name_en": Mixed Cilantro w/ Dry Shredded Tofu
+              price: 6.95
+            - item_number: 1-9
+              "name_zh-Hans": 糟香小黄鱼
+              "name_en": Yellow Croaker in Wine Sauce
+              price: 7.95
+            - item_number: 1-10
+              "name_zh-Hans": 炸豆腐
+              "name_en": Fried Tofu
+              price: 6.95
+            - item_number: 1-11
+              "name_zh-Hans": 炸鸡翅
+              "name_en": Fried Chicken Wings
+              price: 9.95
+            - item_number: 1-12
+              "name_zh-Hans": 绍兴醉鸡
+              "name_en": Chicken in Wine Sauce
+              price: 8.95            
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipM2aausW7T_OgKp3AyD_Cl9YHTD6_cjTUv5zqwD=s1354-k-no
+      sections:
+        - "name_zh-Hans": 湯類
+          "name_en": Soup
+          menu_items:
+            - item_number: 2-1
+              "name_zh-Hans": 番茄蛋花汤
+              "name_en": Tomato Egg Flower Soup
+              price: 12.95
+            - item_number: 2-2
+              "name_zh-Hans": 西湖牛肉羹
+              "name_en": Minced Beef w/ Egg White Soup
+              price: 12.95
+            - item_number: 2-3
+              "name_zh-Hans": 鸡蓉玉米羹
+              "name_en": Chicken w/ Corn Soup
+              price: 12.95
+            - item_number: 2-4
+              "name_zh-Hans": 酸辣汤
+              "name_en": Hot and Sour Soup
+              price: 12.95
+            - item_number: 2-5
+              "name_zh-Hans": 酸菜白肉砂锅
+              "name_en": Pork w/ Mustard Tuber
+              price: 18.95
+            - item_number: 2-6
+              "name_zh-Hans": 酸菜羊肉砂锅
+              "name_en": Lamb w/ Mustard Tuber
+              price: 20.95
+            - item_number: 2-7
+              "name_zh-Hans": 荠菜豆腐藥
+              "name_en": wild Green w/ Tofu Soup
+              price: 12.95
+            - item_number: 2-7
+              "name_zh-Hans": 宋嫂鱼羹
+              "name_en": Fish Soup
+              price: 13.95
+            - item_number: 2-8
+              "name_zh-Hans": 什锦馄饨汤
+              "name_en": Wor [sic] Wonton Soup
+              price: 12.95
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipOMqb7gJ4Zfom1h5X3gvPCMdksDchc_kG3tyEQo=s1354-k-no
+      sections:
+        - "name_zh-Hans": 招牌菜
+          "name_en": House Special
+          menu_items:
+            - item_number: 3-1
+              "name_zh-Hans": 樟茶鸭
+              "name_en": Smoke Duck (half)
+              price: 20.95
+            - item_number: 3-2
+              "name_zh-Hans": 竹筒糯米肉
+              "name_en": Glutinous Rice w/ Pork in Bamboo
+              price: 19.95
+            - item_number: 3-3
+              "name_zh-Hans": 揚州煮乾丝
+              "name_en": Yangzhou Dry Shredded Tofu
+              price: 16.95
+            - item_number: 3-4
+              "name_zh-Hans": 百叶炒肉丝
+              "name_en": Tofu Skin w/ Pork
+              price: 15.95
+            - item_number: 3-5
+              "name_zh-Hans": 咸蛋黃南瓜
+              "name_en": Pumpkin Fries w/ Salted Egg Yol [sic]
+              price: 16.95
+            - item_number: 3-6
+              "name_zh-Hans": 清炖三鲜狮子头
+              "name_en": Fresh Lion Meat Ball (Soup)
+              price: 18.95
+            - item_number: 3-7
+              "name_zh-Hans": 麻婆豆腐
+              "name_en": MaPo Tofu
+              price: 13.95
+            - item_number: 3-8
+              "name_zh-Hans": 四川扣肉
+              "name_en": Szechuan Buckle Pork
+              price: 15.95
+        - "name_zh-Hans": 锅肉煲类
+          "name_en": Clay Pot
+          menu_items:
+            - item_number: 4-1
+              "name_zh-Hans": 千锅大鸡翅
+              "name_en": Griddle Chicken Wings
+              price: 18.95
+            - item_number: 4-2
+              "name_zh-Hans": 千锅肥肠
+              "name_en": Griddle Intestines
+              price: 18.95
+            - item_number: 4-3
+              "name_zh-Hans": 千锅牛腩
+              "name_en": Griddle Beef Sirloin
+              price: 19.95
+            - item_number: 4-4
+              "name_zh-Hans": 砂锅酥肉什锦煲
+              "name_en": Assorted Meat Clay Pot (soup)
+              price: 18.95
+            - item_number: 4-5
+              "name_zh-Hans": 山城毛血旺
+              "name_en": Blood Wang
+              price: 20.95
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipMrwpoWAPRzA_7CBg78oL69nzE2vbNtTP9WqM1a=s1016-k-no
+      sections:
+        - "name_zh-Hans": 海鲜类
+          "name_en": Seafood
+          menu_items:
+            - item_number: 5-1
+              "name_zh-Hans": 椒盐鱼片
+              "name_en": Salt and Peppe [sic] Fish
+              price: 14.95
+            - item_number: 5-2
+              "name_zh-Hans": 水煮鱼片
+              "name_en": Bolied [sic] Fish w/ Spicy Hot Sauce
+              price: 15.95
+            - item_number: 5-3
+              "name_zh-Hans": 四川酸菜鱼
+              "name_en": Boiled Fish w/ Pickled Cabbage and Chili
+              price: 15.95
+            - item_number: 5-4
+              "name_zh-Hans": 糟熘鱼片
+              "name_en": Fish Fillet w/ Wine Sauce
+              price: 14.95
+            - item_number: 5-5
+              "name_zh-Hans": 南瓜木耳炒鱼片
+              "name_en": Fish Fillet w/ Pumpkin and Black Fungus
+              price: 14.95
+            - item_number: 5-6
+              "name_zh-Hans": 甜酸鱼片
+              "name_en": Sweet and Sour Fish
+              price: 13.95
+            - item_number: 5-7
+              "name_zh-Hans": 核桃虾
+              "name_en": Honey Walnut Prawns
+              price: 18.95
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipOcSns6pR9DErkx9pON6X8Q6JToc5QiZ6fcFpF3=s812-k-no              
+      sections:
+        - "name_zh-Hans": 蔬菜类
+          "name_en": Vegetable
+          menu_items:
+            - item_number: 6-1
+              "name_zh-Hans": 上海鸡舌菜
+              "name_en": Shanghai Baby Bok Choy
+              price: 14.95
+            - item_number: 6-2
+              "name_zh-Hans": 清炒大豆菌
+              "name_en": Sauteed Bean Sprouts in White Sauce
+              price: 17.95
+            - item_number: 6-3
+              "name_zh-Hans": 千四季豆
+              "name_en": Sauteed String Bean
+              price: 14.95
+            - item_number: 6-4
+              "name_zh-Hans": 色香茄子
+              "name_en": Eggplant w/ Hot Garlic Sauce
+              price: 14.95
+            - item_number: 6-5
+              "name_zh-Hans": 手撕包心菜
+              "name_en": Stir-Fried Hand-Shredded Cabbage
+              price: 14.95
+            - item_number: 6-6
+              "name_zh-Hans": 北地三鮮
+              "name_en": House Special Vegetable Deluxe (Eggplant Green Pepper and Potato)
+              price: 14.95
+            - item_number: 6-7
+              "name_zh-Hans": 番茄炒蛋
+              "name_en": Tomato w/ Egg
+              price: 14.95
+            - item_number: 6-8
+              "name_zh-Hans": 紅燒豆腐
+              "name_en": Braised Tofu
+              price: 15.95
+            - item_number: 6-9
+              "name_zh-Hans": 士豆丝
+              "name_en": Sauteed Julienne Potato
+              price: 14.95
+            - item_number: 6-10
+              "name_zh-Hans": 雪菜毛豆百
+              "name_en": Preserved Vegetable and Beans
+              price: 15.95
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipNzqeKSKH_q0oo7eg74Nq9Wl3fUlQeCO-URHTjA=s1016-k-no
+      sections:
+        - "name_zh-Hans": 南北小炒
+          "name_en": Meat
+          menu_items:
+            - item_number: 7-1
+              "name_zh-Hans": 水煮牛肉
+              "name_en": Boiled Beef w/ Hot Spicy Sauce
+              price: 15.95
+            - item_number: 7-2
+              "name_zh-Hans": 重庆辣子鸡
+              "name_en": Chongqing Spicy Chicken
+              price: 13.95
+            - item_number: 7-3
+              "name_zh-Hans": 蒜香大排骨
+              "name_en": Garlic Ribs
+              price: 16.95
+            - item_number: 7-4
+              "name_zh-Hans": 蒜香五花猪肉腩
+              "name_en": Garlic Pork Belly
+              price: 12.95
+            - item_number: 7-5
+              "name_zh-Hans": 回锅肉
+              "name_en": Twice Cook Pork Slices
+              price: 12.95
+            - item_number: 7-6
+              "name_zh-Hans": 四川牛肉
+              "name_en": Sezchuan [sic] Beef
+              price: 13.95
+            - item_number: 7-7
+              "name_zh-Hans": 蒙古牛肉
+              "name_en": Mongolian Beef
+              price: 13.95
+            - item_number: 7-8
+              "name_zh-Hans": 葱爆牛肉（羊肉）
+              "name_en": Beef(Lamb) w/ Green Onion
+              price: 13.95
+            - item_number: 7-9
+              "name_zh-Hans": 四季豆牛肉（鸡肉）
+              "name_en": Beef (Chicken w/ String Bean
+              price: 12.95
+            - item_number: 7-10
+              "name_zh-Hans": 芥蘭鸡肉
+              "name_en": Broccoli Chicken
+              price: 11.95
+            - item_number: 7-11
+              "name_zh-Hans": 四川鸡肉
+              "name_en": Sezchuan [sic] Chicken
+              price: 12.95
+            - item_number: 7-12
+              "name_zh-Hans": 宫保鸡丁
+              "name_en": Kungpao Chicken
+              price: 11.95
+            - item_number: 7-13
+              "name_zh-Hans": 左宗棠鸡
+              "name_en": General's Sauce Chicken
+              price: 12.95
+            - item_number: 7-14
+              "name_zh-Hans": 陈皮鸡
+              "name_en": Orange Peel Chicken
+              price: 12.95
+            - item_number: 7-15
+              "name_zh-Hans": 蔬菜鸡
+              "name_en": Vegetable w/ Chicken
+              price: 12.95
+    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipMWyrIUaY8chuH6knWOOX3ZmlogDbkMlFoZEoHm=s812-k-no
+      sections:
+        - "name_zh-Hans": 点心
+          "name_en": Dim sum
+          menu_items:
+            - item_number: 8-1
+              "name_zh-Hans": 小笼汤包
+              "name_en": Steamed Pork
+              price: 8.95
+            - item_number: 8-2
+              "name_zh-Hans": 牛煎包
+              "name_en": Fried Buns w/ Pork
+              price: 10.95
+            - item_number: 8-3
+              "name_zh-Hans": 葱油饼
+              "name_en": Green Onion Pancake
+              price: 5.95
+            - item_number: 8-4
+              "name_zh-Hans": 韭菜盒子
+              "name_en": Fried Dumplings Fill w/ Chinese Chives
+              price: 8.95
+            - item_number: 8-5
+              "name_zh-Hans": 油条
+              "name_en": Yu-Tao(Chinese Donut)
+              price: 4.95
+            - item_number: 8-6
+              "name_zh-Hans": 豆浆
+              "name_en": Bean Milk(Sweet)
+              price: 2.50
+            - item_number: 8-7
+              "name_zh-Hans": 锅贴
+              "name_en": Pot Sticker
+              price: 8.95
+            - item_number: 8-8
+              "name_zh-Hans": 白菜猪肉水饺
+              "name_en": Pork Dumplings w/ Chinese Cabbage
+              price: 10.95
+            - item_number: 8-9
+              "name_zh-Hans": 韭菜虾仁猪肉水饺
+              "name_en": Shrimp and Pork Dumplings w/ Chinese Chives
+              price: 11.95
+            - item_number: 8-10
+              "name_zh-Hans": 四川红油抄手
+              "name_en": Szechuan Chili Oil Wonton
+              price: 8.95
+            - item_number: 8-11
+              "name_zh-Hans": 清汤抄手
+              "name_en": Pork Wonton Soup
+              price: 8.95
+    - sections:
+        - "name_zh-Hans": 面类 米粉类
+          "name_en": Noodle Rice
+          menu_items:
+            - item_number: 9-1
+              "name_zh-Hans": 上海粗炒面
+              "name_en": Shanghai Style Stir Fried Noodle(Dried)
+              price: 14.95
+            - item_number: 9-2
+              "name_zh-Hans": 鸡炒面
+              "name_en": Chicken Fried Noodle(Dried)
+              price: 14.95
+            - item_number: 9-3
+              "name_zh-Hans": 上海炒年糕
+              "name_en": Shanghai Style Rice Cake
+              price: 15.95
+            - item_number: 9-4
+              "name_zh-Hans": 雪菜肉丝炒年糕
+              "name_en": Sliced Pork and Preserved Rice Cake
+              price: 15.95
+            - item_number: 9-5
+              "name_zh-Hans": 上海汤河粉
+              "name_en": Shanghai Style Rice Noodle Soup
+              price: 14.95
+            - item_number: 9-6
+              "name_zh-Hans": 四川担担面
+              "name_en": Szechuan Dan Dan Noodles
+              price: 12.95
+            - item_number: 9-7
+              "name_zh-Hans": 四川燃面
+              "name_en": Burning Noodles
+              price: 12.95
+            - item_number: 9-8
+              "name_zh-Hans": 红烧牛腩面
+              "name_en": Beef Stew Noodle Soup
+              price: 16.95
+        - "name_zh-Hans": "（米粉、河粉）"
+          "name_en": "(Rice Noodle)"
+          menu_items:
+            - item_number: 9-9
+              "name_zh-Hans": 千炒牛河
+              "name_en": Beef Chow Fun
+              price: 16.95
+            - item_number: 9-10
+              "name_zh-Hans": 雪菜肉丝汤面
+              "name_en": sliced Pork and Preserved Vegetable Noodle Soup
+              price: 14.95
+            - item_number: 9-11
+              "name_zh-Hans": 蔬菜汤面
+              "name_en": Vegetable Noodle Soup
+              price: 13.95
+    - sections:
+        - "name_zh-Hans": 炒饭
+          "name_en": Fried Rice
+          menu_items:
+            - item_number: 10-1
+              "name_zh-Hans": 鸡蛋酱油炒饭
+              "name_en": Egg w/ Soy Sauce Fried Rice
+              price: 13.95
+            - item_number: 10-2
+              "name_zh-Hans": 蔬菜炒饭/面
+              "name_en": Vegetable Fried Rice/Noodle
+              price: 13.95
+            - item_number: 10-3
+              "name_zh-Hans": 什锦炒饭（鸡、牛、虾)
+              "name_en": Combination Fried Rice (Chicken, Beef, Shrimp)
+              price: 15.95
+            - item_number: 10-4
+              "name_zh-Hans": 鸡炒饭
+              "name_en": Chicken Fried Rice
+              price: 13.95
+            - item_number: 10-5
+              "name_zh-Hans": 牛炒饭
+              "name_en": Beef Fried Rice
+              price: 14.95
+            - item_number: 10-6
+              "name_zh-Hans": 虾炒饭
+              "name_en": Shrimp Fried Rice
+              price: 14.95
+            - item_number: 10-7
+              "name_zh-Hans": 上海菜饭
+              "name_en": Shanghai Style Fried Rice w/ Bacon
+              price: 14.95
+        - "name_zh-Hans": 甜品
+          "name_en": Dessert
+          menu_items:
+            - item_number: 11-1
+              "name_zh-Hans": 血糯米八宝饭
+              "name_en": Eight Treasures Rice Pudding
+              price: 9.95
+            - item_number: 11-2
+              "name_zh-Hans": 豆沙芋泥
+              "name_en": Taro Pudding
+              price: 9.95
+            - item_number: 11-3
+              "name_zh-Hans": 桂花酒釀汤圆
+              "name_en": Sesame Ball w/ Wine Sauce
+              price: 14.95
+            - item_number: 11-4
+              "name_zh-Hans": 炸芝麻球
+              "name_en": Fried Sesame Ball
+              price: 9.95
+            - item_number: 11-5
+              "name_zh-Hans": 南瓜豆沙饼
+              "name_en": Pumpkin Sweet Cake
+              price: 11.95

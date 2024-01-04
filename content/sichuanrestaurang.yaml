@@ -20,35 +20,35 @@ menu:
           menu_items:
             - "name_zh-Hans": 香拌牛肉
               "name_en": Marinated Beef Salad
-              price: 149
+              price: 149:-
             - "name_zh-Hans": 夫妻肺片
               "name_en": Sliced Beef and Ox Tongue in Chili Sauce
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/64px-Fuqi_Fei_Pian.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Fuqi_Feipian
-              price: 189
+              price: 189:-
             - "name_zh-Hans": 口水鸡
               "name_en": Steamed Chicken with Chili Sauce
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/64px-Koushuiji.jpg
-              price: 149
+              price: 149:-
             - "name_zh-Hans": 红油肚丝
               "name_en": Pork Tripe in Chili Oil
-              price: 139
+              price: 139:-
             - "name_zh-Hans": 山椒木耳
               "name_en": Black Fungus with Wild Pepper
-              price: 149
+              price: 149:-
             - "name_zh-Hans": 蒜泥黄瓜
               "name_en": Cucumber with Mashed Garlic
-              price: 139
+              price: 139:-
         - "name_zh-Hans": 海鲜
           "name_en": Seafood
           menu_items:
             - "name_zh-Hans": 沸腾鱼
               "name_en": boiled fish in chili oil
-              price: 249
+              price: 249:-
             - "name_zh-Hans": 酸菜鱼
               "name_en": boiled fish with pickled cabbage and chili
               wikipedia_url_en: https://en.wikipedia.org/wiki/Suan_cai
-              price: 189
+              price: 189:-
             - "name_zh-Hans": 水煮鱼
               "name_en": poached fish in chili oil
               wikipedia_url_en: https://en.wikipedia.org/wiki/Shuizhu
@@ -58,13 +58,13 @@ menu:
               price: 时价 current price
             - "name_zh-Hans": 川香椒麻鱼
               "name_en": spicy pepper fish
-              price: 669
+              price: 669:-
             - "name_zh-Hans": 香辣大虾
               "name_en": spicy prawns
-              price: 219
+              price: 219:-
             - "name_zh-Hans": 茄汁大虾
               "name_en": prawns with tomato sauce
-              price: 199
+              price: 199:-
         - "name_zh-Hans": 牛肉
           "name_en": Beef
           menu_items:
