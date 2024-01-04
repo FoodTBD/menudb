@@ -1,3 +1,5 @@
+import collections
+import csv
 import datetime
 import os
 import shutil
@@ -16,7 +18,32 @@ INPUT_DIR = "content"
 OUTPUT_DIR = "output"
 
 
-def generate_menu_html(input_yaml_path: str, output_html_path: str) -> dict[str, Any]:
+def prepare_output_dir(output_dir: str) -> None:
+    os.makedirs(output_dir, exist_ok=True)
+
+    # cp -r ./static/ -> ./output/static/
+    output_static_dir = os.path.join(output_dir, STATIC_DIR)
+    if os.path.exists(output_static_dir):
+        shutil.rmtree(output_static_dir)
+
+    shutil.copytree(STATIC_DIR, output_static_dir)
+
+
+def load_known_menu_items() -> dict[str, Any]:
+    known_menu_items = {}
+    with open("known_menu_items.csv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter=";")
+        for row in csvreader:
+            native_names = row["native_names"].split(",")
+            row.pop("native_names")
+            for native_name in native_names:
+                known_menu_items[native_name] = row
+    return known_menu_items
+
+
+def generate_menu_html(
+    input_yaml_path: str, output_html_path: str, known_menu_items: dict[str, Any]
+) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
         yaml_data = strictyaml.load(yaml_path.read(), label="!yaml")
 
@@ -26,6 +53,7 @@ def generate_menu_html(input_yaml_path: str, output_html_path: str) -> dict[str,
     yaml_dict = typing.cast(OrderedDict[str, Any], yaml_data.data)
     yaml_dict["_date_modified"] = mod_date.isoformat()
 
+    # Inject restaurant.googlemaps_url if not already defined
     restaurant_dict = yaml_dict["restaurant"]
     if not restaurant_dict.get("googlemaps_url"):
         query = ", ".join(
@@ -38,6 +66,23 @@ def generate_menu_html(input_yaml_path: str, output_html_path: str) -> dict[str,
         )
         url = "https://www.google.com/maps/search/" + urllib.parse.quote(query)
         restaurant_dict["googlemaps_url"] = url
+
+    # Inject data from known_menu_items.csv into menu.pages[*].sections[*].menu_items[*]
+    primary_lang = yaml_dict["menu"]["language_codes"][0]
+    for page in yaml_dict["menu"]["pages"]:
+        if page.get("sections"):
+            for section in page["sections"]:
+                for menu_item in section["menu_items"]:
+                    primary_name = menu_item["name_" + primary_lang]
+                    if known_menu_items.get(primary_name):
+                        known_menu_item = known_menu_items[primary_name]
+                        for k, v in known_menu_item.items():
+                            if k not in menu_item:
+                                menu_item[k] = v
+                            # else:
+                            #     print(
+                            #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
+                            #     )
 
     env = Environment(loader=FileSystemLoader("."))
     for filter_name in jinja_filters.ALL_FILTERS:
@@ -65,6 +110,8 @@ def generate_index_html(yaml_dicts: list[str], output_html_path: str) -> None:
 
 
 def process_yaml_paths(input_dir: str, output_dir: str) -> None:
+    known_menu_items = load_known_menu_items()
+
     yaml_dicts = []
     for root, _, files in os.walk(input_dir):
         for filename in files:
@@ -74,7 +121,9 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
                 output_filename = os.path.splitext(relative_path)[0] + ".html"
                 output_path = os.path.join(output_dir, output_filename)
 
-                yaml_dict = generate_menu_html(input_path, output_path)
+                yaml_dict = generate_menu_html(
+                    input_path, output_path, known_menu_items
+                )
                 yaml_dict["_output_filename"] = output_filename
                 yaml_dicts.append(yaml_dict)
 
@@ -84,16 +133,22 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
     generate_index_html(yaml_dicts, output_path)
     print(f"Processed: {output_path}")
 
-
-def prepare_output_dir(output_dir: str) -> None:
-    os.makedirs(output_dir, exist_ok=True)
-
-    # cp -r ./static/ -> ./output/static/
-    output_static_dir = os.path.join(output_dir, STATIC_DIR)
-    if os.path.exists(output_static_dir):
-        shutil.rmtree(output_static_dir)
-
-    shutil.copytree(STATIC_DIR, output_static_dir)
+    primary_names = []
+    for yaml_dict in yaml_dicts:
+        menu = yaml_dict["menu"]
+        primary_lang = menu["language_codes"][0]
+        for page in menu["pages"]:
+            if page.get("sections"):
+                for section in page["sections"]:
+                    for menu_item in section["menu_items"]:
+                        primary_name = menu_item["name_" + primary_lang]
+                        primary_names.append(primary_name)
+    c = collections.Counter(primary_names)
+    filtered_c = {k: v for k, v in c.items() if v > 1}
+    print(
+        "Common menu items: "
+        + str(sorted(filtered_c.items(), key=lambda x: x[1], reverse=True))
+    )
 
 
 if __name__ == "__main__":

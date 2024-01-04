@@ -23,8 +23,6 @@ menu:
               price: 149:-
             - "name_zh-Hans": 夫妻肺片
               "name_en": Sliced Beef and Ox Tongue in Chili Sauce
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/64px-Fuqi_Fei_Pian.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Fuqi_Feipian
               price: 189:-
             - "name_zh-Hans": 口水鸡
               "name_en": Steamed Chicken with Chili Sauce
@@ -51,7 +49,6 @@ menu:
               price: 189:-
             - "name_zh-Hans": 水煮鱼
               "name_en": poached fish in chili oil
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Shuizhu
               price: 199
             - "name_zh-Hans": 清蒸比目
               "name_en": steamed flatfish
@@ -70,50 +67,36 @@ menu:
           menu_items:
             - "name_zh-Hans": 水煮牛肉
               "name_en": Poached Sliced Beef in Chili Oil
-              image_url: https://lh3.googleusercontent.com/p/AF1QipNgXm2gRf4eqvD9Pv7QiTRYrH_0hItz7BL7NzLD=w960-h960-n-o-v1
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Shuizhu
               price: 219:-
             - "name_zh-Hans": 孜然牛柳
               "name_en": Beef Tenderloin with Cumin
               price: 289:-
             - "name_zh-Hans": 水煮牛柳
               "name_en": Poached Beef Tenderloin in Chili Oil
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/64px-Shuizhuniurou.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Shuizhu
               price: 269:-
         - "name_zh-Hans": 猪肉
           "name_en": Pork
           menu_items:
             - "name_zh-Hans": 京酱肉丝
               "name_en": Jingjiang Rousi (Sautéed Shredded Pork in Sweet Bean Sauce)
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/64px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si
               price: 219:-
             - "name_zh-Hans": 鱼香肉丝
               "name_en": Yuxiang Shredded Pork (Sautéed in Spicy Garlic Sauce)
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/64px-Fish_flavoured_sliced_pork_from_Melbourne.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Yuxiang_shredded_pork
               price: 189:-
             - "name_zh-Hans": 小炒肉
               "name_en": Sautéed Pork
               price: 179:-
             - "name_zh-Hans": 回锅肉
               "name_en": Twice-Cooked Pork
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/64px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Twice_cooked_pork
               price: 189:-
         - "name_zh-Hans": 鸡肉
           "name_en": Chicken
           menu_items:
             - "name_zh-Hans": 宫保鸡丁
               "name_en": Kung Pao Chicken
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/64px-Kung-pao-shanghai.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Kung_Pao_chicken
               price: 189:-
             - "name_zh-Hans": 辣子鸡
               "name_en": Laziji (Spicy Chicken, Sichuan Style)
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/64px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Laziji
               price: 199:-
     - menuimage_url: https://lh3.googleusercontent.com/p/AF1QipMs-2VAVca1sXlFCLZLdXMAxt8yuowazw0majlx=w960-h960-n-o-v1
       sections:
@@ -134,28 +117,21 @@ menu:
               price: 279:-
             - "name_zh-Hans": 毛血旺
               "name_en": Maoxuewang (Spicy Sichuan Hot Pot with Duck Blood Curd, Beef Tripe, and Bean Sprouts)
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations
               price: 359:-
         - "name_zh-Hans": 蔬菜
           "name_en": Vegetables
           menu_items:
             - "name_zh-Hans": 麻婆豆腐
               "name_en": Mapo Tofu (Sautéed Tofu in Hot and Spicy Sauce)
-              image_url: https://lh3.googleusercontent.com/p/AF1QipP41do7KjATL2oXTutgV0oyh473Ify0GsVsName=w960-h960-n-o-v1
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Mapo_tofu
               price: 129:-
             - "name_zh-Hans": 干煸豆角
               "name_en": Dry-Fried Green Beans
               price: 159:-
             - "name_zh-Hans": 鱼香茄子
               "name_en": Yuxiang Eggplant (Sautéed with Spicy Garlic Sauce)
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Qiezi.jpg/64px-Qiezi.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Yuxiang
               price: 159:-
             - "name_zh-Hans": 西红柿炒鸡蛋
               "name_en": Stir-fried tomato and scrambled eggs
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG/64px-%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs
               price: 139:-
             - "name_zh-Hans": 酸辣土豆丝
               "name_en": Hot and Sour Shredded Potatoes
@@ -166,9 +142,9 @@ menu:
         - "name_zh-Hans": 面食
           "name_en": Noodles
           menu_items:
-            - "name_zh-Hans": 担担面 1份
-              "name_en": Dandan noodles (Noodles in Chili Sauce, Sichuan Style) 1 serving
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/64px-Dan-dan_noodles%2C_Shanghai.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Dandan_noodles
+            - "name_zh-Hans": 担担面
+              "name_en": Dandan noodles (Noodles in Chili Sauce, Sichuan Style)
+              "description_zh-Hant": 1份
+              "description_en": 1 serving
               price: 129:-
       page_footer: "备注：米饭 15kr/人 Remarks: Rice 15kr/person"

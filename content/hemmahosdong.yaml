@@ -66,8 +66,6 @@ menu:
               "name_zh-Hans": 麻婆豆腐
               "name_zh-Latn-pinyin": Mápó dòufu
               "description_sv-SE": Wokad tofu med szechuan pepparsås, soyasås
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/64px-Chen_Mapo_Tofu.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Mapo_tofu
               annotations: 🌶️🌶️
               price: 149:-
             - item_number: 3
@@ -114,7 +112,6 @@ menu:
               "name_sv-SE": Wokad stark kyckling
               "description_sv-SE": Friterad kyckling med torrstark szechuan peppar chili och jordnötter, sesamfrön, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_stark_kyckling.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Laziji
               annotations: 🐓🌶️🌶️🌶️
               price: 189:-
             - item_number: 9
@@ -131,8 +128,6 @@ menu:
               "name_zh-Latn-pinyin": Shuǐ zhǔ niúròu
               "name_sv-SE": Pocherad biff med grönsaker i szechuan soppa
               "description_sv-SE": Kokt biff med grönsaker på szechuan-vis, soyasås
-              image_url: https://hemmahosdong.files.wordpress.com/2020/11/pocherad_biff_med_gronsaker_i_szechuan_soppa.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Shuizhu
               annotations: 🐄🌶️🌶️🌶️
               price: 249:-
             - item_number: 13
@@ -148,7 +143,6 @@ menu:
               "name_zh-Latn-pinyin": Fèiténg shuǐ zhǔ yú
               "description_sv-SE": Pocherad fiskfilé szechuan soppa, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/img_20201105_190954078.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Shuizhu
               annotations: 🐟🌶️🌶️🌶️
               price: 249:-
             - item_number: 15
@@ -165,7 +159,6 @@ menu:
               "name_sv-SE": Stekta dumplings med kycklingfyllning (12 st)
               "description_sv-SE": 12 st stekta kyckling dumplings (vetemjöl, kyckling, kinesisk gräslök, vitlök, soyasås, ingefära, sesamolja, ostronsås)
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/stekta_dumplings_med_kycklingfyllning_12st.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Jiaozi
               annotations: 🐓
               price: 149:-
             - item_number: 17
@@ -173,8 +166,6 @@ menu:
               "name_zh-Latn-pinyin": Niúròu tāngmian
               "name_sv-SE": Nudelsoppa med biff och grönsaker
               "description_sv-SE": Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås
-              image_url: https://hemmahosdong.files.wordpress.com/2020/11/nudelsoppa_med_biff_och_gronsaker.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Beef_noodle_soup
               annotations: 🐄🌶️
               price: 169:-
             - item_number: 18
@@ -182,8 +173,6 @@ menu:
               "name_zh-Latn-pinyin": Gàn chǎo niú hé
               "name_sv-SE": Wokade platta risnudlar med biff, böngroddar och lök
               "description_sv-SE": Wokade risnudlar med biff, ägg, lök och böngroddar, soyasås
-              image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokade_platta_risnudlar_med_biff_bongroddar_och_lok.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Beef_chow_fun
               annotations: 🐄
               price: 169:-
       page_footer: "Note: ONE dish includes ONE portion of rice. 一份菜自带一份米板. Additional Rice: 15:- / portion 额外加米饭：15 克朗一份"
