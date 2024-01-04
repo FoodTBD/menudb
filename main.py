@@ -1,5 +1,6 @@
 import datetime
 import os
+import shutil
 import sys
 import typing
 import urllib.parse
@@ -9,6 +10,10 @@ import strictyaml
 from jinja2 import Environment, FileSystemLoader
 
 import jinja_filters
+
+STATIC_DIR = "static"
+INPUT_DIR = "content"
+OUTPUT_DIR = "output"
 
 
 def generate_menu_html(input_yaml_path: str, output_html_path: str) -> dict[str, Any]:
@@ -60,10 +65,7 @@ def generate_index_html(yaml_dicts: list[str], output_html_path: str) -> None:
 
 
 def process_yaml_paths(input_dir: str, output_dir: str) -> None:
-    os.makedirs(output_dir, exist_ok=True)
-
     yaml_dicts = []
-    output_paths = []
     for root, _, files in os.walk(input_dir):
         for filename in files:
             if filename.endswith(".yaml"):
@@ -83,12 +85,24 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
     print(f"Processed: {output_path}")
 
 
+def prepare_output_dir(output_dir: str) -> None:
+    os.makedirs(output_dir, exist_ok=True)
+
+    # cp -r ./static/ -> ./output/static/
+    output_static_dir = os.path.join(output_dir, STATIC_DIR)
+    if os.path.exists(output_static_dir):
+        shutil.rmtree(output_static_dir)
+
+    shutil.copytree(STATIC_DIR, output_static_dir)
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 4:
         print("Usage: python main.py [input_dir] [output_dir]")
         sys.exit(1)
 
-    input_dir = sys.argv[1] if len(sys.argv) >= 2 else "content"
-    output_dir = sys.argv[2] if len(sys.argv) >= 3 else "output"
+    input_dir = sys.argv[1] if len(sys.argv) >= 2 else INPUT_DIR
+    output_dir = sys.argv[2] if len(sys.argv) >= 3 else OUTPUT_DIR
 
+    prepare_output_dir(output_dir)
     process_yaml_paths(input_dir, output_dir)
