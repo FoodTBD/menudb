@@ -1,6 +1,5 @@
 import datetime
 import os
-import re
 import sys
 import typing
 import urllib.parse
@@ -8,7 +7,8 @@ from typing import Any, OrderedDict
 
 import strictyaml
 from jinja2 import Environment, FileSystemLoader
-from markupsafe import Markup
+
+from jinja_filters import format_styled_text, prettify_url
 
 
 def generate_html(
@@ -37,26 +37,10 @@ def generate_html(
         url = "https://www.google.com/maps/search/" + urllib.parse.quote(query)
         restaurant_dict["googlemaps_url"] = url
 
-    def format_text(text: str):
-        # Replace **bold**, *italic*, and `code` with HTML tags
-
-        def replace_markup(match: re.Match[str]) -> str:
-            if match.group(1):
-                return "<strong>" + match.group(1) + "</strong>"
-            elif match.group(2):
-                return "<em>" + match.group(2) + "</em>"
-            elif match.group(3):
-                return "<code>" + match.group(3) + "</code>"
-            else:
-                raise NotImplementedError
-
-        pattern = r"\*\*(.*?)\*\*|\*(.*?)\*|`(.*?)`"
-        formatted_text = re.sub(pattern, replace_markup, text)
-
-        return Markup(formatted_text)
-
     env = Environment(loader=FileSystemLoader("."))
-    env.filters["format_text"] = format_text
+    env.filters["format_styled_text"] = format_styled_text
+    env.filters["prettify_url"] = prettify_url
+
     template = env.get_template(template_path)
     rendered_html = template.render(data=yaml_dict)
 

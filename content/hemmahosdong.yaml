@@ -8,6 +8,7 @@ restaurant:
     - chinese
   googlemaps_url: https://maps.app.goo.gl/R2ea5RusZc9ZW8NA9
   homepage_url: https://hemmahosdong.wordpress.com/
+  instagram_url: https://www.instagram.com/hemmahosdong/
 menu:
   language_codes:
     - zh-Hans
@@ -65,6 +66,7 @@ menu:
               "name_zh-Hans": 麻婆豆腐
               "name_zh-Latn-pinyin": Mápó dòufu
               "description_sv-SE": Wokad tofu med szechuan pepparsås, soyasås
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/200px-Chen_Mapo_Tofu.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Mapo_tofu
               annotations: 🌶️🌶️
               price: 149
@@ -91,6 +93,7 @@ menu:
               "name_zh-Hans": 红烧排骨
               "name_zh-Latn-pinyin": Hóngshāo páigǔ
               "description_sv-SE": Bräserad revbensspjäll med kockens sås, soyasås
+              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/200px-Mianjin_hongshao_paigu_2009_03.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
               annotations: 🐖
               price: 189

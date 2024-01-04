@@ -9,6 +9,7 @@ restaurant:
     - cantonese
   googlemaps_url: https://maps.app.goo.gl/Li749hbdVE6Pzwrg9
   facebook_url: https://www.facebook.com/WinnerHouse.se
+  instagram_url: https://www.instagram.com/winnerhouse.sundbyberg/
 menu:
   language_codes:
     - zh-Hant
@@ -21,6 +22,7 @@ menu:
           menu_items:
             - "name_zh-Hant": 梅菜豬肉
               "name_en": Pork with Pickled Vegetables
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Meigan_cai
               price: 188
             - "name_zh-Hant": 羊腩煲
               "name_en": Lamb Brisket
