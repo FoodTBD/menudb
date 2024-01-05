@@ -4,8 +4,7 @@ restaurant:
   street_address: Karlbergsvägen 41
   city: Stockholm
   country_code: SE
-  tags:
-    - chinese
+  tags: chinese
   googlemaps_url: https://maps.app.goo.gl/R2ea5RusZc9ZW8NA9
   homepage_url: https://hemmahosdong.wordpress.com/
   instagram_url: https://www.instagram.com/hemmahosdong/

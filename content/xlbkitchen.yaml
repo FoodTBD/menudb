@@ -4,8 +4,7 @@ restaurant:
   street_address: 10235 S De Anza Blvd
   city: Cupertino, CA
   country_code: US
-  tags:
-    - chinese
+  tags: chinese, shanghaiese, xiaolongbao
   googlemaps_url: https://maps.app.goo.gl/NYFJyj21kTzqjVBy9
   facebook_url: https://www.facebook.com/pages/XLB-Kitchen/503057360125929
 menu:

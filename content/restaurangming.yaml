@@ -4,8 +4,7 @@ restaurant:
   street_address: Birger Jarlsgatan 35
   city: Stockholm
   country_code: SE
-  tags:
-    - chinese, cantonese, dimsum
+  tags: chinese, cantonese, dimsum
   googlemaps_url: https://maps.app.goo.gl/sdSFoaNUCwFx1ZiGA
   homepage_url: https://www.restaurangming.com/
 menu:

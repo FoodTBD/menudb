@@ -4,9 +4,7 @@ restaurant:
   street_address: Järnvägsgatan 42
   city: Sundbyberg
   country_code: SE
-  tags:
-    - chinese
-    - cantonese
+  tags: chinese, cantonese, dimsum
   googlemaps_url: https://maps.app.goo.gl/Li749hbdVE6Pzwrg9
   facebook_url: https://www.facebook.com/WinnerHouse.se
   instagram_url: https://www.instagram.com/winnerhouse.sundbyberg/

@@ -4,8 +4,7 @@ restaurant:
   street_address: Andersvägen 1
   city: Solna
   country_code: SE
-  tags:
-    - chinese, sichuan
+  tags: chinese, sichuan
   googlemaps_url: https://maps.app.goo.gl/5EuirpTveAZEenG66
   homepage_url: https://sichuanrestaurang.business.site/
 menu:
