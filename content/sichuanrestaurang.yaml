@@ -44,7 +44,7 @@ menu:
               price: 249:-
             - "name_zh-Hans": 酸菜鱼
               "name_en": boiled fish with pickled cabbage and chili
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Suan_cai
+              wikipedia_url: https://en.wikipedia.org/wiki/Suan_cai
               price: 189:-
             - "name_zh-Hans": 水煮鱼
               "name_en": poached fish in chili oil

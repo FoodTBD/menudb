@@ -145,8 +145,8 @@
                                 item['name_zh-Latn-pinyin'] }}){% endif %}
                                 <button type="button" class="btn-speak"
                                     onclick="speakText('{{ dish_name }}', '{{ lang }}')">🗣️</button>
-                                {% if item['wikipedia_url_en'] %}<button type="button" class="btn-wikipedia"
-                                    onclick="openLink('{{ item['wikipedia_url_en'] }}', 'wikipedia')">W</button>{%
+                                {% if item['wikipedia_url'] %}<button type="button" class="btn-wikipedia"
+                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')">W</button>{%
                                 endif -%}
                                 {%- else -%}
                                 {{ dish_name }}

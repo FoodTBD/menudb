@@ -20,7 +20,7 @@ menu:
           menu_items:
             - "name_zh-Hant": 梅菜豬肉
               "name_en": Pork with Plum Vegetables [Meigan cai]
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Meigan_cai
+              wikipedia_url: https://en.wikipedia.org/wiki/Meigan_cai
               price: 188
             - "name_zh-Hant": 羊腩煲
               "name_en": Lamb Brisket
@@ -33,7 +33,7 @@ menu:
             - "name_zh-Hant": 新汁叉燒
               "name_en": Honey Yi Siu / Barbecue Pork
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/128px-Charsiu.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Char_siu
+              wikipedia_url: https://en.wikipedia.org/wiki/Char_siu
               price: 188
             - "name_zh-Hant": 中式??肉/雞
               "name_en": Sweet and Sour Pork / Chicken
@@ -48,7 +48,7 @@ menu:
               price: 188
             - "name_zh-Hant": 鹵水牛展
               "name_en": Marinade Beef Shank
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Lou_mei
+              wikipedia_url: https://en.wikipedia.org/wiki/Lou_mei
               price: 188
             - "name_zh-Hant": 鳳爪
               "name_en": Chicken Feet (Phoenix)
@@ -89,12 +89,12 @@ menu:
             - "name_zh-Hant": 肉片炒麵
               "name_en": Fried noodles with sliced pork
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/HK_TKL_%E8%AA%BF%E6%99%AF%E5%B6%BA_Tiu_Keng_Leng_%E9%83%BD%E6%9C%83%E9%A7%85_MetroTown_Shopping_mall_shop_%E8%B1%AA%E5%AE%B4%E6%B5%B7%E9%AE%AE%E9%9B%86%E5%9C%98%E9%85%92%E5%AE%B6_Ho_Yin_Seafood_Group_Restaurant_Lunch_%E9%BB%9E%E5%BF%83%E5%B0%8F%E9%A3%9F_dim_sum_%E9%A3%B2%E8%8C%B6_tea_food_April_2019_SSG_06.jpg/128px-thumbnail.jpg?20190402082628
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Chow_mein
+              wikipedia_url: https://en.wikipedia.org/wiki/Chow_mein
               price: 148
             - "name_zh-Hant": 吞云湯麵
               "name_en": Wonton noodle soup
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
+              wikipedia_url: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
               price: 148
         - "name_zh-Hant": 海鮮類
           "name_en": Seafood
@@ -104,7 +104,6 @@ menu:
               price: market price
             - "name_zh-Hant": 椒鹽尤魚
               "name_en": Salt and pepper squid
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/HK_%E9%95%B7%E6%B4%B2_Cheung_Chau_%E8%88%88%E6%A8%82%E6%B5%B7%E9%AE%AE_Hing_Lok_Seafoods_Restaurant_food_dish_%E9%85%A5%E7%82%B8%E9%AD%B7%E9%AD%9A_Deep_fried_Calamari_squid_Sept-2013.JPG/128px-HK_%E9%95%B7%E6%B4%B2_Cheung_Chau_%E8%88%88%E6%A8%82%E6%B5%B7%E9%AE%AE_Hing_Lok_Seafoods_Restaurant_food_dish_%E9%85%A5%E7%82%B8%E9%AD%B7%E9%AD%9A_Deep_fried_Calamari_squid_Sept-2013.JPG
               price: 168
             - "name_zh-Hant": 椒鹽大虾
               "name_en": Salt and pepper shrimp
@@ -157,7 +156,7 @@ menu:
               "name_en": red bean cake
             - "name_zh-Hant": 明火例湯
               "name_en": Clear fire soup
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
+              wikipedia_url: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
             - "name_zh-Hant": 蓮藕豬骨湯
               "name_en": Lotus root and pork bone soup
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lotus_Root_Soup.jpg/128px-Lotus_Root_Soup.jpg

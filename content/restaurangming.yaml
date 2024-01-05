@@ -28,7 +28,7 @@ menu:
             - "name_zh-Hant": 豉椒排骨
               "name_en": Pork Spare Ribs
               price: 60:-
-            - "name_zh-Hant": 豉汁鳯爪
+            - "name_zh-Hant": 豉汁鳳爪
               "name_en": Chicken Feet
               price: 60:-
             - "name_zh-Hant": 糯米雞
@@ -48,18 +48,22 @@ menu:
           menu_items:
             - "name_zh-Hant": 鮮蝦腸粉
               "name_en": Shrimp Rolls
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 叉燒腸粉
               "name_en": Barbecue Pork Rolls
               price: 60:-
             - "name_zh-Hant": 蝦米腸粉
               "name_en": Dried Shrimp Rolls
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 混酱腸粉
               "name_en": Mixed Sauce & Sesame Rolls
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 炸兩腸粉
               "name_en": Deep-Fried Dough Stick Rolls
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
         - "name_zh-Hant": 煎/炸類
           "name_en": Fried/Deep-Fried
@@ -112,6 +116,7 @@ menu:
           menu_items:
             - "name_zh-Hant": 銀芽肉絲炒麵
               "name_en": Shredded Pork & Bean Sprouts w/Stir-Fried Noodles
+              wikipedia_url: https://en.wikipedia.org/wiki/Chow_mein
               price: 165:-
             - "name_zh-Hant": 干炒牛柳河
               "name_en": Beef, Scallions & Bean Sprouts w/ Flat Rice Noodles
@@ -135,13 +140,14 @@ menu:
               "name_en": Stir-Fried Flat Rice Noodles w/ Soy Sauce
               price: 130:-
             - "name_zh-Hant": 雲呑 / 水餃 / 牛腩 (湯河粉 / 湯米粉 / 湯麵)
-              "name_en": Wonton / Sui Gao Dumpling / Beef Brisket Soup w/ Flat Rice Noodles / Rice Noodles / Egg Noodles
+              "name_en": Wonton / Sui Gao [shuǐjiǎo] Dumpling / Beef Brisket Soup w/ Flat Rice Noodles / Rice Noodles / Egg Noodles
+              wikipedia_en_url: https://en.wikipedia.org/wiki/Dumpling#Chinese
               price: 105:-
             - "name_zh-Hant": 淨雲吞湯
               "name_en": Wonton Soup
               price: 95:-
             - "name_zh-Hant": 淨水餃湯
-              "name_en": Sui Gao Dumpling Soup
+              "name_en": Sui Gao [shuǐjiǎo] Dumpling Soup
               price: 95:-
         - "name_zh-Hant": 小菜
           "name_en": Additional Dishes
