@@ -60,6 +60,7 @@
 
         .menu-table td {
             padding: 4px;
+            padding-bottom: 12px;
         }
 
         .menu-table-first-column {
@@ -75,7 +76,7 @@
             font-weight: bold;
         }
 
-        .menu-item-description {
+        .menu-item-small {
             font-size: small;
         }
 
@@ -129,7 +130,8 @@
                                     onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">
                                 {%- else -%}
                                 <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">🖼️🔎</button>
+                                    onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">🔎
+                                    🖼️</button>
                                 {%- endif %}
                             </td>
                             <td>
@@ -138,28 +140,39 @@
                                 {% for lang in data.menu.language_codes if item['name_' + lang] and not lang ==
                                 'zh-Latn-pinyin' -%}
                                 {%- set dish_name = item['name_' + lang] -%}
+                                {%- set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] -%}
                                 {% if loop.first -%}
-                                <span class="menu-item-name-primary">{{ dish_name }}</span>
+                                <span class="menu-item-name-primary">{{ dish_name | styled_text_format }}</span>
                                 {# Special case for Pinyin #}
                                 {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}({{
                                 item['name_zh-Latn-pinyin'] }}){% endif %}
                                 <button type="button" class="btn-speak"
                                     onclick="speakText('{{ dish_name }}', '{{ lang }}')">🗣️</button>
-                                {% if item['wikipedia_url'] %}<button type="button" class="btn-wikipedia"
+                                {# {% if item['wikipedia_url'] %}<button type="button" class="btn-wikipedia"
                                     onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')">W</button>{%
-                                endif -%}
+                                endif -%} #}
                                 {%- else -%}
-                                {{ dish_name }}
+                                {% if wikipedia_url %}<a href="{{ wikipedia_url }}">{%
+                                    endif -%}
+                                    {{ dish_name | styled_text_format }}
+                                    {%- if wikipedia_url %}</a>{% endif %}
                                 {%- endif %}<br>
                                 {%- endfor %}
 
-                                <span class="menu-item-description">{% for lang in data.menu.language_codes if
+                                <span class="menu-item-small">{% for lang in data.menu.language_codes if
                                     item['description_' + lang] -%}
                                     {{ item['description_' + lang] | styled_text_format }}<br>
                                     {%- endfor %}</span>
+
+                                {% if item['note'] %}<span class="menu-item-small">{{ item['note'] | styled_text_format
+                                    }}{% endif %}</span>
                             </td>
                             <td class="menu-table-last-column">
-                                {{ item['annotations'] }} {{ item['price'] }}
+                                {{ item['annotation'] }}
+                                {{ item['price'] }}<br>
+
+                                {% if item['price_note'] %}<span class="menu-item-small">{{ item['price_note'] |
+                                    styled_text_format }}{% endif %}</span>
                             </td>
                         </tr>
                         {% endfor %}

@@ -4,7 +4,7 @@ from markupsafe import Markup
 
 
 def styled_text_format(text: str) -> str:
-    # Replace **bold**, *italic*, and `code` with HTML tags
+    # Replace Markdown-style **bold**, *italic*, `code`, and links with HTML tags
 
     def replace_markup(match: re.Match[str]) -> str:
         if match.group(1):
@@ -16,10 +16,19 @@ def styled_text_format(text: str) -> str:
         else:
             raise NotImplementedError
 
+    # Match Markdown styling
     pattern = r"\*\*(.*?)\*\*|\*(.*?)\*|`(.*?)`"
-    formatted_text = re.sub(pattern, replace_markup, text)
+    html_text = re.sub(pattern, replace_markup, text)
 
-    return Markup(formatted_text)
+    def replace_link(match):
+        link_text, link_url = match.groups()
+        return f'<a href="{link_url}" target="_blank" rel="noopener">{link_text}</a>'
+
+    # Match Markdown links
+    markdown_link_pattern = r"\[([^\]]+)\]\(([^)]+)\)"
+    html_text = re.sub(markdown_link_pattern, replace_link, html_text)
+
+    return Markup(html_text)
 
 
 def iso8601_to_datetime(iso8601_str: str) -> datetime.datetime:

@@ -19,8 +19,7 @@ menu:
           "name_en": Meat
           menu_items:
             - "name_zh-Hant": 梅菜豬肉
-              "name_en": Pork with Plum Vegetables [Meigan cai]
-              wikipedia_url: https://en.wikipedia.org/wiki/Meigan_cai
+              "name_en": Pork with [Plum Vegetables](https://en.wikipedia.org/wiki/Meigan_cai)
               price: 188
             - "name_zh-Hant": 羊腩煲
               "name_en": Lamb Brisket
@@ -33,7 +32,7 @@ menu:
             - "name_zh-Hant": 新汁叉燒
               "name_en": Honey Yi Siu / Barbecue Pork
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/128px-Charsiu.jpg
-              wikipedia_url: https://en.wikipedia.org/wiki/Char_siu
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Char_siu
               price: 188
             - "name_zh-Hant": 中式??肉/雞
               "name_en": Sweet and Sour Pork / Chicken
@@ -42,34 +41,29 @@ menu:
               "name_en": Mapo Tofu with meat
               price: 168
             - "name_zh-Hant": 魚香茄子
-              "name_en": Fish-flavored Eggplant (meat)
-              "description_zh-Hant": "(早一天預訂)"
-              "description_en": "(order 1 day in advance)"
+              "name_en": Fish-flavored Eggplant (Meat)
               price: 188
+              price_note: "(早一天預訂) (order 1 day in advance)"
             - "name_zh-Hant": 鹵水牛展
-              "name_en": Marinade Beef Shank
-              wikipedia_url: https://en.wikipedia.org/wiki/Lou_mei
+              "name_en": "[Marinade](https://en.wikipedia.org/wiki/Lou_mei) Beef Shank"
               price: 188
             - "name_zh-Hant": 鳳爪
-              "name_en": Chicken Feet (Phoenix)
-              "description_zh-Hant": "(早一天預訂)"
-              "description_en": "(order 1 day in advance)"
+              price_note: "(早一天預訂) (order 1 day in advance)"
         - "name_zh-Hant": 雞類
           "name_en": Chicken
           menu_items:
             - "name_zh-Hant": 豉油雞
-              "name_en": Soy sauce chicken
+              "name_en": Soy Sauce chicken
               price: 168
             - "name_zh-Hant": 蔥油雞
               "name_en": Scallion chicken
               price: 168
             - "name_zh-Hant": 炸子雞
               "name_en": Fried chicken
-              "description_zh-Hant": "(早一天預訂)"
-              "description_en": "(order 1 day in advance)"
               price: 108 / per each
+              price_note: "(早一天預訂) (order 1 day in advance)"
             - "name_zh-Hant": 酥炸雞翼
-              "name_en": Crispy [fried] chicken wings
+              "name_en": Crispy Chicken Wings
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tebasaki_karaage_by_kawanet_in_Kanayama%2C_Nagoya.jpg/128px-Tebasaki_karaage_by_kawanet_in_Kanayama%2C_Nagoya.jpg
               price: 148
         - "name_zh-Hant": 粥、??類
@@ -77,55 +71,50 @@ menu:
           menu_items:
             - "name_zh-Hant": 粥
               "name_en": Porridge
-              "description_zh-Hant": "(雞粥、瘦肉粥)"
-              "description_en": "(chicken or lean meat porridge)"
+              note: "(雞粥、瘦肉粥) (chicken or lean meat porridge)"
               price: 110 + black egg (2 pp)
             - "name_zh-Hant": 揚州炒飯
               "name_en": Yangzhou fried rice
               price: 148
             - "name_zh-Hant": 干炒牛河
-              "name_en": Dry fried beef rice noodles
+              "name_en": Dry Fried Beef rice noodles
               price: 148
             - "name_zh-Hant": 肉片炒麵
-              "name_en": Fried noodles with sliced pork
-              image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/HK_TKL_%E8%AA%BF%E6%99%AF%E5%B6%BA_Tiu_Keng_Leng_%E9%83%BD%E6%9C%83%E9%A7%85_MetroTown_Shopping_mall_shop_%E8%B1%AA%E5%AE%B4%E6%B5%B7%E9%AE%AE%E9%9B%86%E5%9C%98%E9%85%92%E5%AE%B6_Ho_Yin_Seafood_Group_Restaurant_Lunch_%E9%BB%9E%E5%BF%83%E5%B0%8F%E9%A3%9F_dim_sum_%E9%A3%B2%E8%8C%B6_tea_food_April_2019_SSG_06.jpg/128px-thumbnail.jpg?20190402082628
-              wikipedia_url: https://en.wikipedia.org/wiki/Chow_mein
+              "name_en": "[Fried noodles](https://en.wikipedia.org/wiki/Chow_mein) with Sliced Pork"
               price: 148
             - "name_zh-Hant": 吞云湯麵
-              "name_en": Wonton noodle soup
+              "name_en": Wonton noodles
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg
-              wikipedia_url: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
               price: 148
         - "name_zh-Hant": 海鮮類
           "name_en": Seafood
           menu_items:
             - "name_zh-Hant": 清蒸鮮魚
-              "name_en": Steamed fresh fish
+              "name_en": Steamed Fish
               price: market price
             - "name_zh-Hant": 椒鹽尤魚
-              "name_en": Salt and pepper squid
+              "name_en": Salt and Pepper Squid
               price: 168
             - "name_zh-Hant": 椒鹽大虾
-              "name_en": Salt and pepper shrimp
+              "name_en": Salt and Pepper Shrimp
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Pepper_salt_prawns.jpeg/128px-Pepper_salt_prawns.jpeg
               price: 168
             - "name_zh-Hant": 吉列大蝦
-              "name_en": “Cutlet” (Breaded fried) prawns
+              "name_en": “Cutlet” [Breaded Fried] Prawns
               price: 188
             - "name_zh-Hant": 海鮮????
-              "name_en": Seafood tofu pot
+              "name_en": Seafood Tofu Pot
               price: 238
         - "name_zh-Hant": 素菜
           "name_en": Vegetarian
           menu_items:
             - "name_zh-Hant": 蒜蓉時蔬
-              "name_en": Garlic vegetables
+              "name_en": Garlic Vegetables
               price: 148
             - "name_zh-Hant": 羅漢齋
-              "name_en": Buddha's delight
-              "description_zh-Hant": "(早一天預訂)"
-              "description_en": "(order 1 day in advance)"
               price: 148
+              price_note: "(早一天預訂) (order 1 day in advance)"
         - "name_zh-Hant": 慈心類
           "name_en": Dim Sum
           menu_items:
@@ -134,29 +123,20 @@ menu:
             - "name_zh-Hant": 粉菜 ??
               "name_en": Vermicelli ??
             - "name_zh-Hant": 燒賣
-              "name_en": Shumai
             - "name_zh-Hant": 叉燒包
-              "name_en": Cha siu bao
             - "name_zh-Hant": 奶黃包
-              "name_en": Custard buns
             - "name_zh-Hant": 餃子
-              "name_en": Dumplings
-              "description_zh-Hant": "(肉、菜) (meat, vegetables)"
+              note: "(肉、菜) (meat, vegetables)"
             - "name_zh-Hant": 鮮竹捲
-              "name_en": Tofu skin roll
             - "name_zh-Hant": 鳳爪
-              "name_en": Chicken feet
             - "name_zh-Hant": 油條
-              "name_en": Chinese donuts (fried dough sticks)
             - "name_zh-Hant": 排骨
-              "name_en": pork ribs
             - "name_zh-Hant": 蒲背糕
               "name_en": ??? cake
             - "name_zh-Hant": 紅豆糕
-              "name_en": red bean cake
             - "name_zh-Hant": 明火例湯
               "name_en": Clear fire soup
-              wikipedia_url: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
             - "name_zh-Hant": 蓮藕豬骨湯
               "name_en": Lotus root and pork bone soup
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lotus_Root_Soup.jpg/128px-Lotus_Root_Soup.jpg

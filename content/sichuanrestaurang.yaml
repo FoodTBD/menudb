@@ -21,7 +21,6 @@ menu:
               "name_en": Marinated Beef Salad
               price: 149:-
             - "name_zh-Hans": 夫妻肺片
-              "name_en": Sliced Beef and Ox Tongue in Chili Sauce
               price: 189:-
             - "name_zh-Hans": 口水鸡
               "name_en": Steamed Chicken with Chili Sauce
@@ -44,10 +43,10 @@ menu:
               price: 249:-
             - "name_zh-Hans": 酸菜鱼
               "name_en": boiled fish with pickled cabbage and chili
-              wikipedia_url: https://en.wikipedia.org/wiki/Suan_cai
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Suan_cai
               price: 189:-
             - "name_zh-Hans": 水煮鱼
-              "name_en": poached fish in chili oil
+              "name_en": Shuizhu Fish
               price: 199
             - "name_zh-Hans": 清蒸比目
               "name_en": steamed flatfish
@@ -65,37 +64,32 @@ menu:
           "name_en": Beef
           menu_items:
             - "name_zh-Hans": 水煮牛肉
-              "name_en": Poached Sliced Beef in Chili Oil
+              "name_en": Shuizhu Sliced Beef
               price: 219:-
             - "name_zh-Hans": 孜然牛柳
               "name_en": Beef Tenderloin with Cumin
               price: 289:-
             - "name_zh-Hans": 水煮牛柳
-              "name_en": Poached Beef Tenderloin in Chili Oil
+              "name_en": Shuizhu Beef Tenderloin
               price: 269:-
         - "name_zh-Hans": 猪肉
           "name_en": Pork
           menu_items:
             - "name_zh-Hans": 京酱肉丝
-              "name_en": Jingjiang Rousi (Sautéed Shredded Pork in Sweet Bean Sauce)
               price: 219:-
             - "name_zh-Hans": 鱼香肉丝
-              "name_en": Yuxiang Shredded Pork (Sautéed in Spicy Garlic Sauce)
               price: 189:-
             - "name_zh-Hans": 小炒肉
               "name_en": Sautéed Pork
               price: 179:-
             - "name_zh-Hans": 回锅肉
-              "name_en": Twice-Cooked Pork
               price: 189:-
         - "name_zh-Hans": 鸡肉
           "name_en": Chicken
           menu_items:
             - "name_zh-Hans": 宫保鸡丁
-              "name_en": Kung Pao Chicken
               price: 189:-
             - "name_zh-Hans": 辣子鸡
-              "name_en": Laziji (Spicy Chicken, Sichuan Style)
               price: 199:-
     - menuimage_url: https://lh3.googleusercontent.com/p/AF1QipMs-2VAVca1sXlFCLZLdXMAxt8yuowazw0majlx=w960-h960-n-o-v1
       sections:
@@ -115,22 +109,18 @@ menu:
               "name_en": Sliced Beef in Sour Soup
               price: 279:-
             - "name_zh-Hans": 毛血旺
-              "name_en": Maoxuewang (Spicy Sichuan Hot Pot with Duck Blood Curd, Beef Tripe, and Bean Sprouts)
               price: 359:-
         - "name_zh-Hans": 蔬菜
           "name_en": Vegetables
           menu_items:
             - "name_zh-Hans": 麻婆豆腐
-              "name_en": Mapo Tofu (Sautéed Tofu in Hot and Spicy Sauce)
               price: 129:-
             - "name_zh-Hans": 干煸豆角
               "name_en": Dry-Fried Green Beans
               price: 159:-
             - "name_zh-Hans": 鱼香茄子
-              "name_en": Yuxiang Eggplant (Sautéed with Spicy Garlic Sauce)
               price: 159:-
             - "name_zh-Hans": 西红柿炒鸡蛋
-              "name_en": Stir-fried tomato and scrambled eggs
               price: 139:-
             - "name_zh-Hans": 酸辣土豆丝
               "name_en": Hot and Sour Shredded Potatoes
@@ -142,8 +132,6 @@ menu:
           "name_en": Noodles
           menu_items:
             - "name_zh-Hans": 担担面
-              "name_en": Dandan noodles (Noodles in Chili Sauce, Sichuan Style)
-              "description_zh-Hant": 1份
-              "description_en": 1 serving
+              annotation: 1份 / 1 serving
               price: 129:-
-      page_footer: "备注：米饭 15kr/人 Remarks: Rice 15kr/person"
+      page_footer: "备注：米饭 15kr/人 / Remarks: Rice 15kr/person"

@@ -48,22 +48,22 @@ menu:
           menu_items:
             - "name_zh-Hant": 鮮蝦腸粉
               "name_en": Shrimp Rolls
-              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 叉燒腸粉
               "name_en": Barbecue Pork Rolls
               price: 60:-
             - "name_zh-Hant": 蝦米腸粉
               "name_en": Dried Shrimp Rolls
-              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 混酱腸粉
               "name_en": Mixed Sauce & Sesame Rolls
-              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 炸兩腸粉
               "name_en": Deep-Fried Dough Stick Rolls
-              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
         - "name_zh-Hant": 煎/炸類
           "name_en": Fried/Deep-Fried
@@ -97,14 +97,12 @@ menu:
           menu_items:
             - "name_zh-Hant": 廣東燒鴨
               "name_en": Roasted Duck
-              "description_zh-Hant":  (全隻)
-              "description_en": (whole)
               price: 485:-
+              price_note: "(全隻) (whole)"
             - "name_zh-Hant": 廣東燒鴨
               "name_en": Roasted Duck
-              "description_zh-Hant":  (全隻)
-              "description_en": (half)
               price: 265:-
+              price_note: "(半隻) (half)"
             - "name_zh-Hant": 港式燒肉
               "name_en": Roasted Pork Belly
               price: 175:-
@@ -116,7 +114,6 @@ menu:
           menu_items:
             - "name_zh-Hant": 銀芽肉絲炒麵
               "name_en": Shredded Pork & Bean Sprouts w/Stir-Fried Noodles
-              wikipedia_url: https://en.wikipedia.org/wiki/Chow_mein
               price: 165:-
             - "name_zh-Hant": 干炒牛柳河
               "name_en": Beef, Scallions & Bean Sprouts w/ Flat Rice Noodles

@@ -1,0 +1,148 @@
+author: John Chang
+restaurant:
+  name: Restaurang Shogun
+  street_address: Olofsgatan 7A
+  city: Stockholm
+  country_code: SE
+  tags: japanese, chinese, dimsum
+  googlemaps_url: https://maps.app.goo.gl/o4KKEDB6e9ZHt7E38
+  homepage_url: https://restaurangshogun.se/
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - sections:
+        - menu_items:
+            - item_number: 1
+              "name_zh-Hant": 鮮蝦餃皇
+              "name_en": Minced Prawn & Bamboo shoots
+            - item_number: 2
+              "name_zh-Hant": 香茜餃
+              "name_en": Minced Prawn, Pork Coriander & Shiitake
+            - item_number: 4
+              "name_zh-Hant": 干貝餃
+              "name_en": Minced Prawn & Scallops
+            - item_number: 6
+              "name_zh-Hant": 干蒸燒
+              "name_en": Minced Prawn, Pork & Shiitake
+            - item_number: 8
+              "name_zh-Hant": 山竹牛肉
+              "name_en": Minced Beef, Coriander & Water Chestnut
+            - item_number: 9
+              "name_zh-Hant": 薑蔥牛肉角
+              "name_en": Minced Beef, ginger & Scallion
+            - item_number: 10
+              "name_zh-Hant": 豉汁鳳爪
+              "name_en": Chicken Feet, Black Bean Garlic & Chili
+            - item_number: 10A
+              "name_zh-Hant": 白雪鳳爪
+              "name_en": Chicken Feet soaked in White Vinegar
+            - item_number: 11
+              "name_zh-Hant": 豉椒排骨
+              "name_en": Spareribs, Black Bean Garlic & Chili
+            - item_number: 12
+              "name_zh-Hant": 牛柏葉
+              "name_en": Beef tripe, Black Bean Garlic & Chili
+            - item_number: 13
+              "name_zh-Hant": 鮮竹卷
+              "name_en": Bean Curd Rolls with Pork
+            - item_number: 14A
+              "name_zh-Hant": 馬拉糕
+              "name_en": Wheat flour, Egg, Milk & Sugar
+            - item_number: 14C
+              "name_zh-Hant": 叉燒包
+              "name_en": BBQ Pork Buns
+            - item_number: 14D
+              "name_zh-Hant": 奶皇包
+              "name_en": Custard buns
+            - item_number: 17
+              "name_zh-Hant": 龍蝦角
+              "name_en": Minced Pork, Prawn & Bamboo Shoots
+            - item_number: 18
+              "name_zh-Hant": 蝦春卷
+              "name_en": Prawn Spring Rolls
+            - item_number: 18V
+              "name_zh-Hant": 蔬春卷
+              "name_en": Vegetarian Spring Rolls
+            - item_number: 19
+              "name_zh-Hant": 炸竿角
+              "name_en": Deep-Fried Taro Dumpling with Pork
+            - item_number: 20
+              "name_zh-Hant": 咸水角
+              "name_en": Deep-Fried Sweet Dumpling with Pork & Shiitake
+            - item_number: 22
+              "name_zh-Hant": 芝麻煎堆仔
+              "name_en": Deep-Fried Sesame Balls filled with Red Bean Paste
+            - item_number: 23
+              "name_zh-Hant": 蘿蔔糕
+              "name_en": Radish, Chinese Sausage & Dried Shrimp
+            - item_number: 23V
+              "name_zh-Hant": 素蘿蔔糕
+              "name_en": Radish & Rice Flour
+            - item_number: 27A
+              "name_zh-Hant": 鮮蝦雲吞湯
+              "name_en": Wonton with Shrimp Filling
+            - item_number: 27G
+              "name_zh-Hant": 素餃子
+              "name_en": Vegetarian Dumplings
+            - item_number: 28
+              "name_zh-Hant": 干炒牛河
+              "name_en": Rice Noodles, with Beef, Scallion & Bean Sprouts
+            - item_number: 26
+              "name_zh-Hant": 椰撻
+              "name_en": Hong Kong Style Coconut Tarts
+            - item_number: 29
+              "name_zh-Hant": 肉絲炒麵
+              "name_en": Egg Noodles with pork, Mushroom & Bean Sprouts
+            - item_number: 29A
+              "name_zh-Hant": 星州炒米
+              "name_en": Curry Rice Noodles with Shrimp & Pork
+            - item_number: 29B
+              "name_zh-Hant": 鮮蝦雲吞拉麵
+              "name_en": Wonton with Shrimp filling Egg Noodles
+            - item_number: 30
+              "name_zh-Hant": 生滾魚片粥
+              "name_en": Congee with Fish Fillets
+            - item_number: 31
+              "name_zh-Hant": 咸蛋瘦肉粥
+              "name_en": Congee with Century Egg Pork
+            - item_number: 32
+              "name_zh-Hant": 艇仔粥
+              "name_en": Congee with Squid, Pork Rind& Peanuts
+            - item_number: 42
+              "name_zh-Hant": 豉油王炒麵
+              "name_en": Egg Noodles & Bean Sprouts
+            - item_number: A
+              "name_zh-Hant": 鮮蝦腸粉
+              "name_en": Rice Noodle Rolls with Shrimp
+            - item_number: 24
+              "name_zh-Hant": 蛋撻
+              "name_en": Egg Tarts
+            - item_number: B
+              "name_zh-Hant": 牛肉腸粉
+              "name_en": Rice Noodle Rolls with Minced Beef
+            - item_number: D
+              "name_zh-Hant": 叉燒腸粉
+              "name_en": Rice Noodle Rolls with BBQ Pork
+            - item_number: E
+              "name_zh-Hant": 魚片腸粉
+              "name_en": Rice Noodle Rolls with Fish Fillets
+            - item_number: F
+              "name_zh-Hant": 炸兩
+              "name_en": Rice Noodle Rolls with Chinese Fried Dough
+            - item_number: G
+              "name_zh-Hant": 港式情懷腸粉
+              "name_en": Hong Kong Style Rice Noodle Rolls
+            - item_number: H
+              "name_zh-Hant": 糯米雞
+              "name_en": Glutinous Rice stuffed with Chicken, Mushrooms & Chinese Sausage
+            - item_number: I
+              "name_zh-Hant": 鍋貼
+              "name_en": Classic Shanghainese Dumpling
+            - item_number: S
+              # "name_zh-Hant": 小籠飽
+              "name_zh-Hant": 小籠包
+              "name_en": Shanghainese Pork Dumpling
+            - "name_zh-Hant": 港式燒鴨
+              "name_en": Cantonese style roast duck

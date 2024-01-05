@@ -31,12 +31,12 @@ def prepare_output_dir(output_dir: str) -> None:
 
 def load_known_dishes() -> dict[str, Any]:
     known_dishes = {}
-    with open("known_dishes.csv", "r", encoding="utf-8") as csvfile:
-        csvreader = csv.DictReader(csvfile, delimiter=";")
+    with open("known_dishes.tsv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
-            native_names = row["native_names"].split(",")
-            row.pop("native_names")
-            for native_name in native_names:
+            name_native_commaseparated = row["name_native"].split(",")
+            row.pop("name_native")
+            for native_name in name_native_commaseparated:
                 known_dishes[native_name] = row
     return known_dishes
 
