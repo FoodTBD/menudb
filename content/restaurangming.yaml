@@ -5,7 +5,7 @@ restaurant:
   city: Stockholm
   country_code: SE
   tags:
-    - chinese
+    - chinese, cantonese, dimsum
   googlemaps_url: https://maps.app.goo.gl/sdSFoaNUCwFx1ZiGA
   homepage_url: https://www.restaurangming.com/
 menu:
