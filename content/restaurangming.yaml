@@ -1,0 +1,170 @@
+author: John Chang
+restaurant:
+  name: Restaurang Ming
+  street_address: Birger Jarlsgatan 35
+  city: Stockholm
+  country_code: SE
+  tags:
+    - chinese
+  googlemaps_url: https://maps.app.goo.gl/sdSFoaNUCwFx1ZiGA
+  homepage_url: https://www.restaurangming.com/
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - sections:
+        - "name_zh-Hant": 點心
+          "name_en": Steamed [Dim Sum]
+          menu_items:
+            - "name_zh-Hant": 蝦餃
+              "name_en": Har Gow Shrimp Dumplings
+              price: 60:-
+            - "name_zh-Hant": 燒賣
+              "name_en": Siu Mai Pork Dumplings
+              price: 60:-
+            - "name_zh-Hant": 牛肉球
+              "name_en": Beef Meatballs
+              price: 60:-
+            - "name_zh-Hant": 豉椒排骨
+              "name_en": Pork Spare Ribs
+              price: 60:-
+            - "name_zh-Hant": 豉汁鳯爪
+              "name_en": Chicken Feet
+              price: 60:-
+            - "name_zh-Hant": 糯米雞
+              "name_en": Sticky Rice w/ Chicken
+              price: 60:-
+            - "name_zh-Hant": 叉燒包
+              "name_en": Barbecue Pork Buns
+              price: 60:-
+            - "name_zh-Hant": 奶皇包
+              "name_en": Egg Custard Buns
+              price: 60:-
+            - "name_zh-Hant": 鮮竹卷
+              "name_en": Bean Curd Rolls w/ pork
+              price: 60:-
+        - "name_zh-Hant": 腸粉
+          "name_en": Rice Noodle Rolls
+          menu_items:
+            - "name_zh-Hant": 鮮蝦腸粉
+              "name_en": Shrimp Rolls
+              price: 60:-
+            - "name_zh-Hant": 叉燒腸粉
+              "name_en": Barbecue Pork Rolls
+              price: 60:-
+            - "name_zh-Hant": 蝦米腸粉
+              "name_en": Dried Shrimp Rolls
+              price: 60:-
+            - "name_zh-Hant": 混酱腸粉
+              "name_en": Mixed Sauce & Sesame Rolls
+              price: 60:-
+            - "name_zh-Hant": 炸兩腸粉
+              "name_en": Deep-Fried Dough Stick Rolls
+              price: 60:-
+        - "name_zh-Hant": 煎/炸類
+          "name_en": Fried/Deep-Fried
+          menu_items:
+            - "name_zh-Hant": 蘿蔔糕
+              "name_en": Radish Cake
+              price: 60:-
+            - "name_zh-Hant": 龍蝦角
+              "name_en": Shrimp Wonton
+              price: 60:-
+            - "name_zh-Hant": 炸芋角
+              "name_en": Taro Dumplings
+              price: 60:-
+            - "name_zh-Hant": 鹹水角
+              "name_en": Glutinous Rice Dumplings
+              price: 60:-
+            - "name_zh-Hant": 芝麻球
+              "name_en": Sweet Sesame Balls
+              price: 60:-
+        - "name_zh-Hant": 粥品
+          "name_en": Congee
+          menu_items:
+            - "name_zh-Hant": 皮蛋瘦肉粥
+              "name_en": Century Egg & Pork Congee
+              price: 95:-
+            - "name_zh-Hant": 淨油條
+              "name_en": Deep-Fried Dough Stick
+              price: 25:-
+        - "name_zh-Hant": 燒味
+          "name_en": Roasted
+          menu_items:
+            - "name_zh-Hant": 廣東燒鴨
+              "name_en": Roasted Duck
+              "description_zh-Hant":  (全隻)
+              "description_en": (whole)
+              price: 485:-
+            - "name_zh-Hant": 廣東燒鴨
+              "name_en": Roasted Duck
+              "description_zh-Hant":  (全隻)
+              "description_en": (half)
+              price: 265:-
+            - "name_zh-Hant": 港式燒肉
+              "name_en": Roasted Pork Belly
+              price: 175:-
+            - "name_zh-Hant": 港式叉燒
+              "name_en": Barbecue Pork (Char Siu)
+              price: 175:-
+        - "name_zh-Hant": 粉/麵/飯類
+          "name_en": Noodles & Rice
+          menu_items:
+            - "name_zh-Hant": 銀芽肉絲炒麵
+              "name_en": Shredded Pork & Bean Sprouts w/Stir-Fried Noodles
+              price: 165:-
+            - "name_zh-Hant": 干炒牛柳河
+              "name_en": Beef, Scallions & Bean Sprouts w/ Flat Rice Noodles
+              price: 165:-
+            - "name_zh-Hant": 豉椒牛柳河
+              "name_en": Beef, Paprika & Black Beans w/ Flat Rice Noodles
+              price: 165:-
+            - "name_zh-Hant": 滑蛋蝦仁河
+              "name_en": Shrimp & Slippery Eggs w/ Flat Rice Noodles
+              price: 165:-
+            - "name_zh-Hant": 星州炒米
+              "name_en": Singapore Style Noodles
+              price: 165:-
+            - "name_zh-Hant": 揚州炒飯
+              "name_en": Yeung Chow Fried Rice
+              price: 165:-
+            - "name_zh-Hant": 豉油皇炒麵
+              "name_en": Stir-Fried Noodles w/ Soy Sauce
+              price: 130:-
+            - "name_zh-Hant": 豉油皇炒河
+              "name_en": Stir-Fried Flat Rice Noodles w/ Soy Sauce
+              price: 130:-
+            - "name_zh-Hant": 雲呑 / 水餃 / 牛腩 (湯河粉 / 湯米粉 / 湯麵)
+              "name_en": Wonton / Sui Gao Dumpling / Beef Brisket Soup w/ Flat Rice Noodles / Rice Noodles / Egg Noodles
+              price: 105:-
+            - "name_zh-Hant": 淨雲吞湯
+              "name_en": Wonton Soup
+              price: 95:-
+            - "name_zh-Hant": 淨水餃湯
+              "name_en": Sui Gao Dumpling Soup
+              price: 95:-
+        - "name_zh-Hant": 小菜
+          "name_en": Additional Dishes
+          menu_items:
+            - "name_zh-Hant": 干煎大蝦
+              "name_en": Dry-Fried Ketchup King Prawns
+              price: 265:-
+            - "name_zh-Hant": 椒鹽大蝦
+              "name_en": Salt & Pepper King Prawns
+              price: 265:-
+            - "name_zh-Hant": 清炒時菜
+              "name_en": Stir-Fried Seasonal Vegetables
+              price: 128:-
+            - "name_zh-Hant": 滑蛋蝦仁
+              "name_en": King Prawn Omelette
+              price: 175:-
+            - "name_zh-Hant": 蘿蔔牛腩
+              "name_en": Braised Beef Brisket w/ Radish
+              price: 175:-
+            - "name_zh-Hant": 荔芋扣肉
+              "name_en": Braised Pork w/Taro
+              price: 240:-
+            - "name_zh-Hant": 米飯
+              "name_en": Rice
+              price: 20:-

@@ -68,21 +68,22 @@ def generate_menu_html(
         restaurant_dict["googlemaps_url"] = url
 
     # Inject data from known_dishes.csv into menu.pages[*].sections[*].menu_items[*]
-    primary_lang = yaml_dict["menu"]["language_codes"][0]
-    for page in yaml_dict["menu"]["pages"]:
-        if page.get("sections"):
-            for section in page["sections"]:
-                for menu_item in section["menu_items"]:
-                    primary_name = menu_item["name_" + primary_lang]
-                    if known_dishes.get(primary_name):
-                        known_dish = known_dishes[primary_name]
-                        for k, v in known_dish.items():
-                            if k not in menu_item:
-                                menu_item[k] = v
-                            # else:
-                            #     print(
-                            #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
-                            #     )
+    if yaml_dict.get("menu"):
+        primary_lang = yaml_dict["menu"]["language_codes"][0]
+        for page in yaml_dict["menu"]["pages"]:
+            if page.get("sections"):
+                for section in page["sections"]:
+                    for menu_item in section["menu_items"]:
+                        primary_name = menu_item["name_" + primary_lang]
+                        if known_dishes.get(primary_name):
+                            known_dish = known_dishes[primary_name]
+                            for k, v in known_dish.items():
+                                if k not in menu_item:
+                                    menu_item[k] = v
+                                # else:
+                                #     print(
+                                #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
+                                #     )
 
     env = Environment(loader=FileSystemLoader("."))
     for filter_name in jinja_filters.ALL_FILTERS:
@@ -134,14 +135,15 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
     # Gather statistics
     primary_names = []
     for yaml_dict in yaml_dicts:
-        menu = yaml_dict["menu"]
-        primary_lang = menu["language_codes"][0]
-        for page in menu["pages"]:
-            if page.get("sections"):
-                for section in page["sections"]:
-                    for menu_item in section["menu_items"]:
-                        primary_name = menu_item["name_" + primary_lang]
-                        primary_names.append(primary_name)
+        if yaml_dict.get("menu"):
+            menu = yaml_dict["menu"]
+            primary_lang = menu["language_codes"][0]
+            for page in menu["pages"]:
+                if page.get("sections"):
+                    for section in page["sections"]:
+                        for menu_item in section["menu_items"]:
+                            primary_name = menu_item["name_" + primary_lang]
+                            primary_names.append(primary_name)
     print("Unique dish names: " + str(len(set(primary_names))))
     c = collections.Counter(primary_names)
     filtered_c = {k: v for k, v in c.items() if v > 1}
