@@ -297,11 +297,11 @@ menu:
               "name_en": pork Bun
               price: 20 kr
             - item_number: 59
-              "name_zh-Hans": 五花肉大肉包
+              "name_zh-Hans": 蔬菜包
               "name_en": vegetable Bun
               price: 20 kr
             - item_number: 60
-              "name_zh-Hans": 五花肉大肉包
+              "name_zh-Hans": 葱油花卷
               "name_en": Hanamaki
               price: 10 kr
             - item_number: 61

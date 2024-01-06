@@ -128,9 +128,9 @@ def generate_index_html(yaml_dicts: list[str], output_html_path: str) -> None:
         html_path.write(rendered_html)
 
 
-def process_yaml_paths(input_dir: str, output_dir: str) -> None:
-    known_dishes = load_known_dishes()
-
+def process_yaml_paths(
+    input_dir: str, output_dir: str, known_dishes: dict[str, Any]
+) -> list[dict[str, Any]]:
     yaml_dicts = []
     for root, _, files in os.walk(input_dir):
         for filename in files:
@@ -150,7 +150,10 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
     generate_index_html(yaml_dicts, output_path)
     print(f"Processed: {output_path}")
 
-    # Gather statistics
+    return yaml_dicts
+
+
+def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
     print(f"Menus: {len(yaml_dicts)}")
 
     primary_names = []
@@ -166,18 +169,26 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
                             if menu_item.get(lang):
                                 primary_name = menu_item[lang]
                                 primary_names.append(primary_name)
+
     print("Unique dish names: " + str(len(set(primary_names))))
-    c = collections.Counter(primary_names)
-    filtered_c = {k: v for k, v in c.items() if v > 1}
+
+    name_counter = collections.Counter(primary_names)
+    filtered_c = {k: v for k, v in name_counter.items() if v > 1}
     print(
-        "Common dish names: "
-        + str(sorted(filtered_c.items(), key=lambda x: x[1], reverse=True))
+        f"Common dishes ({len(filtered_c)} count): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
     )
-    c = collections.Counter()
+
+    character_counter = collections.Counter()
     for primary_name in primary_names:
-        c.update(primary_name)
-    print("Unique characters: " + str(len(c)))
-    print("Most common characters: " + str(c.most_common(10)))
+        character_counter.update(primary_name)
+    print("Unique characters: " + str(len(character_counter)))
+    print("Top 10 characters: " + str(character_counter.most_common(10)))
+
+    for dish_name in filtered_c:
+        if not dish_name in known_dishes:
+            print(
+                f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in database of known dishes"
+            )
 
 
 if __name__ == "__main__":
@@ -189,4 +200,6 @@ if __name__ == "__main__":
     output_dir = sys.argv[2] if len(sys.argv) >= 3 else OUTPUT_DIR
 
     prepare_output_dir(output_dir)
-    process_yaml_paths(input_dir, output_dir)
+    known_dishes = load_known_dishes()
+    yaml_dicts = process_yaml_paths(input_dir, output_dir, known_dishes)
+    print_stats(yaml_dicts)

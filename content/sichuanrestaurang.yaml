@@ -38,26 +38,25 @@ menu:
           "name_en": Seafood
           menu_items:
             - "name_zh-Hans": 沸腾鱼
-              "name_en": boiled fish in chili oil
+              "name_en": Boiled fish in chili oil
               price: 249:-
             - "name_zh-Hans": 酸菜鱼
-              "name_en": boiled fish with pickled cabbage and chili
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Suan_cai
+              "name_en": Boiled fish with [pickled cabbage](https://en.wikipedia.org/wiki/Suan_cai) and chili
               price: 189:-
             - "name_zh-Hans": 水煮鱼
               "name_en": Shuizhu Fish
-              price: 199
+              price: 199:-
             - "name_zh-Hans": 清蒸比目
-              "name_en": steamed flatfish
+              "name_en": Steamed flatfish
               price: 时价 current price
             - "name_zh-Hans": 川香椒麻鱼
-              "name_en": spicy pepper fish
+              "name_en": Spicy pepper fish
               price: 669:-
             - "name_zh-Hans": 香辣大虾
-              "name_en": spicy prawns
+              "name_en": Spicy prawns
               price: 219:-
             - "name_zh-Hans": 茄汁大虾
-              "name_en": prawns with tomato sauce
+              "name_en": Prawns with tomato sauce
               price: 199:-
         - "name_zh-Hans": 牛肉
           "name_en": Beef
