@@ -1,0 +1,430 @@
+author: John Chang
+restaurant:
+  name: Yummy King
+  street_address: Stråkvägen 1
+  city: Solna
+  country_code: SE
+  tags: chinese
+  homepage_url: http://qopla.com/yummy-king
+  facebook_url: https://www.facebook.com/YummyKingSolna
+menu:
+  language_codes:
+    - zh-Hans
+    - sv
+    - en
+  pages:
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPsP5pVRUf4L-Z82SSpsaISmZMIgtPH4nw48PpZ=s1016-k-no
+      sections:
+        - "name_zh-Hans": 凉菜类
+          "name_en": Appetizers
+          menu_items:
+            - item_number: 1
+              "name_zh-Hans": 泡椒凤爪
+              "name_en": Chicken feet with pickled peppers
+              "description_sv": Picklad kycklingfötter i pepperoni
+              price: 90 kr
+            - item_number: 2
+              "name_zh-Hans": 香辣猪肚丝
+              "name_en": Spicy pork tripe
+              "description_sv": Grismage med chrispy chili & vitlö
+              price: 110 kr
+            - item_number: 3
+              "name_zh-Hans": 白斩鸡
+              "name_en": Cold sliced chicken
+              "description_sv": Kokt kycklingklubba med sojasås
+              price: 90 kr
+            - item_number: 4
+              "name_zh-Hans": 棒棒鸡
+              "name_en": Bang Bang chicken
+              "description_sv": Kycklingklubba med sesamsås & chili
+              price: 100 kr
+            - item_number: 5
+              "name_zh-Hans": 红油牛百叶
+              "name_en": Chili oil beef honeycomb tripe
+              "description_sv": Oxmage med chiliolja & koriander
+              price: 120 kr
+            - item_number: 6
+              "name_zh-Hans": 麻辣鸭头 - 3个
+              "name_en": Spicy duck head
+              "description_sv": Bräserad ankhuvud (Mala ankhuvud)
+              price: 3/90 kr
+            - item_number: 7
+              "name_zh-Hans": 五香卤牛腱
+              "name_en": Spiced beef
+              "description_sv": Bräserat oxkött med sojasås
+              price: 120 kr
+            - item_number: 9
+              "name_zh-Hans": 凉拌海带丝
+              "name_en": Seaweed salad
+              "description_sv": Sjögräs med vitlök och sojasås
+              price: 80 kr
+            - item_number: 10
+              "name_zh-Hans": 拍黄瓜
+              "name_en": Smashed cucumber salad
+              "description_sv": Marinerad krossad gurka med vitlök
+              price: 80 kr
+            - item_number: 11
+              "name_zh-Hans": 皮蛋豆腐
+              "name_en": Tofu with preserved eggs
+              "description_sv": Tusenåriga ägg med tofu & sojasås
+              price: 110 kr
+            - item_number: 12
+              "name_zh-Hans": 红油猪耳朵
+              "name_en": Chilli oil pig ear
+              "description_sv": Marinerad grisöron med vitlök & crispy chili
+              price: 120 kr              
+        - "name_zh-Hans": 热菜类
+          "name_en": Main Course (Beef)
+          "description_sv": Varmrätter (Biff)
+          menu_items:
+            - item_number: 13
+              "name_zh-Hans": 金汤肥牛
+              "name_en": Golden stock beef
+              "description_sv": Gyllene soppa med skivat entrecote, vitlök, chili & grönsaker
+              price: 198 kr
+            - item_number: 14
+              "name_zh-Hans": 西芹牛肉
+              "name_en": Fried beef with celery
+              "description_sv": Stekt biff med selleri
+              price: 158 kr
+            - item_number: 15
+              "name_zh-Hans": 干煸牛肉
+              "name_en": Yummy beef
+              "description_sv": Yummy Biff (Lätt-friterad biff med sötsur-stark sås & grönsaker)
+              price: 168 kr
+            - item_number: 16
+              "name_zh-Hans": 尖椒牛肉
+              "name_en": Pepper beef
+              "description_sv": Stekt biff med turkisk paprika
+              price: 158 kr
+            - item_number: 17
+              "name_zh-Hans": 水煮牛肉
+              "name_en": Boiled beef fillet
+              "description_sv": Biff med chili, vitlök, sichuanpeppar & grönsaker
+              price: 168 kr
+            - item_number: 18
+              "name_zh-Hans": 红焖牛腩
+              "name_en": Braised Beef Brisket
+              "description_sv": Biffgryta med vitlök, chili bean sauce & grönsaker
+              price: 158 kr
+        - "name_zh-Hans": 热菜类
+          "name_en": Main Course (Pork)
+          "description_sv": Varmrätter (Fläsk)
+          menu_items:
+            - item_number: 19
+              "name_zh-Hans": 毛血旺
+              "name_en": Mao yue wang
+              "description_sv": Mao Xue Wang (Grismage, oxmage, ank blodpudding, gristarmar, chili, vitlök & grönsaker)
+              price: 198 kr
+            - item_number: 20
+              "name_zh-Hans": 爆炒腰花
+              "name_en": Stir fried pig kidney
+              "description_sv": Stekt grisnjure med chili, vitlök & grönsaker
+              price: 148 kr
+            - item_number: 22
+              "name_zh-Hans": 爆炒猪肚丝
+              "name_en": Stir Fried Pork Stomach
+              "description_sv": Stekt grismage med chili bean sauce & grönsaker
+              price: 148 kr
+            - item_number: 25
+              "name_zh-Hans": 尖椒肥肠
+              "name_en": Peppers with intestine
+              "description_sv": Stekt grisktarm med turkisk paprika
+              price: 168 kr
+            - item_number: 26
+              "name_zh-Hans": 糖醋排骨
+              "name_en": Sweet and Sour Spare Ribs
+              "description_sv": Lätt-friterade revbensspjäll i sweet sour sauce
+              price: 158 kr
+            - item_number: 27
+              "name_zh-Hans": 椒盐排骨
+              "name_en": Fried Spare Ribs with Spiced Salt
+              "description_sv": Friterade revbensspjäll med sichuanpeppar
+              price: 158 kr
+            - item_number: 28
+              "name_zh-Hans": 糖醋里脊
+              "name_en": Sweet and Sour pork Fillet
+              "description_sv": Friterad fläskfilé i sötsursås
+              price: 168 kr
+            - item_number: 29
+              "name_zh-Hans": 回锅肉
+              "name_en": Hui Guo Pork
+              "description_sv": Stekt fläsk med chili bean sauce & grönsaker
+              price: 168 kr
+            - item_number: 30
+              "name_zh-Hans": 鱼香肉丝
+              "name_en": Yu-Shiang Shredded Pork
+              "description_sv": Chilikryddad fläsk med vitlök, ingefära & grönsaker
+              price: 158 kr
+            - item_number: 31
+              "name_zh-Hans": 梅菜扣肉
+              "name_en": Braised Pork with Preserved vegetable in Soya Sauce
+              "description_sv": Bräserad sidfläsk med kinesisk soltorkad kål
+              price: 188 kr
+        - "name_zh-Hans": 鸭肉类
+          "name_en": Main Course (Duck)
+          menu_items:
+            - item_number: 32
+              "name_zh-Hans": 干锅啤酒鸭
+              "name_en": Griddle Duck in Beer
+              "description_sv": Långkokt anka i öl & grönsaker (Med ben)
+              price: 168 kr
+            - item_number: 33
+              "name_zh-Hans": 味王鸭
+              "name_en": Yummy duck
+              "description_sv": Yummy Duck (Wokad anka med vitlök & grönsaker)
+              price: 158 kr
+            - item_number: 34
+              "name_zh-Hans": 四川鸭
+              "name_en": Szechuan duck
+              "description_sv": Sichuan anka med chili vitlök, & grönsaker
+              price: 158 kr
+        - "name_zh-Hans": 鸡肉类
+          "name_en": Main Course (Chicken)
+          menu_items:
+            - item_number: 35
+              "name_zh-Hans": 黄焖鸡
+              "name_en": Yellow braised chicken
+              "description_sv": Bräserat kycklinglår med svamp & grönsaker (Med ben)
+              price: 158 kr
+            - item_number: 36
+              "name_zh-Hans": 味王鸡
+              "name_en": Yummy chicken
+              "description_sv": Yummy Chicken (Friterad kyckling i sötsur sås)
+              price: 148 kr
+            - item_number: 37
+              "name_zh-Hans": 柠檬鸡
+              "name_en": Spicy lime chicken
+              "description_sv": Spicy Lime Chicken (Lätt-friterad kycklingfilé med chiliolja & grönsaker)
+              price: 148 kr
+            - item_number: 38
+              "name_zh-Hans": 辣子鸡
+              "name_en": Sauteed chicken dices with chili peppers
+              "description_sv": Crispy chicken med sichuanpeppar
+              price: 158 kr
+        - "name_zh-Hans": 热菜类
+          "name_en": Main Course (Seafood)
+          "description_sv": Varmrätter (Fisk)
+          menu_items:
+            - item_number: 39
+              "name_zh-Hans": 水煮鱼
+              "name_en": Boiled Fish in Hot chili oil
+              "description_sv": Fiskgryta med chili, vitlök, sichuanpeppar & grönsaker
+              price: 158 kr
+            - item_number: 40
+              "name_zh-Hans": 酸菜鱼
+              "name_en": Boiled fish with pickled gabbage
+              "description_sv": Fiskgryta med surkål, vitlök & sichuanpeppar
+              price: 158 kr
+            - item_number: 41
+              "name_zh-Hans": 嫩滑鱼片
+              "name_en": Tender fish fillet
+              "description_sv": Wokad fiskfilé med grönsaker
+              price: 158 kr
+            - item_number: 42
+              "name_zh-Hans": 辣子鱼
+              "name_en": Chilli fish
+              "description_sv": Stekt fisk med chrispy chili & grönsaker
+              price: 158 kr
+            - item_number: 43
+              "name_zh-Hans": 椒盐虾
+              "name_en": Salt and pepper shrimp
+              "description_sv": Pepparstekt tigerräkor med sichuanpeppar (Med skal)
+              price: 188 kr
+            - item_number: 44
+              "name_zh-Hans": 姜葱大虾
+              "name_en": Ginger scallion prawns
+              "description_sv": Wokade tigerräkor med ingefära i ostronsås
+              price: 188 kr
+            - item_number: 45
+              "name_zh-Hans": 味王虾
+              "name_en": Yummy scampi
+              "description_sv": Yummy Shrimp
+              price: 158 kr
+        - "name_zh-Hans": 热菜类
+          "name_en": Main Course (Vegetable)
+          "description_sv": Varmrätter (Vegetarisk)
+          menu_items:
+            - item_number: 46
+              "name_zh-Hans": 干扁豆夹
+              "name_en": Dried lentil clip
+              "description_sv": Stekt haricots verts med vitlök i chrispy chili
+              price: 148 kr
+            - item_number: 47
+              "name_zh-Hans": 地三鲜
+              "name_en": Sauteed Potato, Green Pepper and Eggplant
+              "description_sv": Stekt potatis, haricots verts & aubergine
+              price: 148 kr
+            - item_number: 48
+              "name_zh-Hans": 上海青
+              "name_en": Shanghai vegetable
+              "description_sv": Stekt pak choy med vitlök
+              price: 138 kr
+            - item_number: 49
+              "name_zh-Hans": 鱼香茄子
+              "name_en": Yu-shiang eggplant
+              "description_sv": Chilikryddad aubergine med vitlök & fläskfärs (Kött kan tas bort)
+              price: 138 kr
+            - item_number: 50
+              "name_zh-Hans": 醋溜土豆丝
+              "name_en": Sour and spicy shredded potatoes
+              "description_sv": Stekt strimlad potatis med chili
+              price: 128 kr
+            - item_number: 52
+              "name_zh-Hans": 尖椒炒蛋
+              "name_en": Fried egg with pepper
+              "description_sv": Stekt äggröra med turkisk paprika
+              price: 138 kr
+            - item_number: 54
+              "name_zh-Hans": 家常豆腐
+              "name_en": Woked tofu
+              "description_sv": Wokad tofu med grönsaker
+              price: 138 kr
+            - item_number: 55
+              "name_zh-Hans": 麻婆豆腐
+              "name_en": Mapo tofu
+              "description_sv": Mapo Tofu (Tofu med fläskfärs & vitlök)
+              price: 148 kr
+        - "name_zh-Hans": 点心类
+          "name_en": Desserts
+          menu_items:
+            - item_number: 57
+              "name_zh-Hans": 味王油条
+              "name_en": Deep-Fried Dough Sticks
+              price: 15 kr
+            - item_number: 58
+              "name_zh-Hans": 五花肉大肉包
+              "name_en": pork Bun
+              price: 20 kr
+            - item_number: 59
+              "name_zh-Hans": 五花肉大肉包
+              "name_en": vegetable Bun
+              price: 20 kr
+            - item_number: 60
+              "name_zh-Hans": 五花肉大肉包
+              "name_en": Hanamaki
+              price: 10 kr
+            - item_number: 61
+              "name_zh-Hans": 葱油花卷
+              "name_en": Fried flatbread
+              "description_sv": Dabing (Kinesisk inbakad pizza med fläsk & soltorkad kål)
+              price: 70 kr
+            - item_number: 62 (1)
+              "name_zh-Hans": 糯米饭
+              "name_en": Savory Glutinous Rice
+              "description_sv": Salted Sticky Rice med fläskfärs, krossade kinesiska churros & krossade jordnötter
+              price: Liten 60kr / Stor 98kr
+            - item_number: 62 (2)
+              "name_zh-Hans": 糯米饭
+              "name_en": Sweet Glutinous Rice
+              "description_sv": Sweet Sticky Rice med kokosmjölk, socker, krossade kinesiska churros & krossade jordnötter
+              price: Liten 60kr / Stor 98kr
+            - item_number: 63
+              "name_zh-Hans": 生煎包(5个)
+              "name_en": Pan-fried bun, stuffed with pork
+              "description_sv": Sheng Jiang Bao (Fylld med fläsk & grönsaker)
+              price: 98 kr
+        - "name_zh-Hans": 主食类
+          "name_en": Rice and Noodles
+          menu_items:
+            - item_number: 64
+              "name_zh-Hans": 干炒牛河
+              "name_en": Stir-Fried Rice Noodles with Beef
+              "description_sv": Stekt risnudlar med biff & böngroddar
+              price: 158 kr
+            - item_number: 65
+              "name_zh-Hans": 红焖牛腩拉面
+              "name_en": Beef Brisket Noodles
+              "description_sv": "\"La Mian\" med långkokt oxkött pak choi"
+              price: 138 kr
+            - item_number: 66
+              "name_zh-Hans": 腊肉炒年糕
+              "name_en": Fried Rice Cake with Bacon
+              "description_sv": Stekt rice cake med lufttorkad sidfläsk & pak choi
+              price: 158 kr
+            - item_number: 67
+              "name_zh-Hans": 大肠粉
+              "name_en": Chitterlings Rice Flour
+              "description_sv": Risnudelsoppa med gristarm & kinesisk surkål
+              price: 138 kr
+            - item_number: 68
+              "name_zh-Hans": 青田炒粉干（虾)
+              "name_en": Fried Rice Noodles with Shrimp
+              "description_sv": Stekta risnudlar med räkor, ägg & grönsaker
+              price: 158 kr
+            - item_number: 69
+              "name_zh-Hans": 青田炒粉干（牛肉）
+              "name_en": Fried Rice Noodles with Beef
+              "description_sv": Stekta risnudlar med biff, ägg & grönsaker
+              price: 148 kr
+            - item_number: 70
+              "name_zh-Hans": 青田米面
+              "name_en": QingTian Rice Vermicelli
+              "description_sv": Risnudelsoppa med fläskfärs & surkål
+              price: 118 kr
+            - item_number: 72
+              "name_zh-Hans": 蚂蚁上树
+              "name_en": Woked vermicelli with spicy minced pork
+              "description_sv": Stekta glasnudlar med fläskfärs
+              price: 138 kr
+            - item_number: 73
+              "name_zh-Hans": 香炒糯米饭
+              "name_en": Stir fried glutinous rice
+              "description_sv": Stekt sticky rice med lufttorkad sidfläsk
+              price: 148 kr
+        - "name_zh-Hans": 汤类
+          "name_en": Soup
+          menu_items:
+            - item_number: 74
+              "name_zh-Hans": 开胃羹
+              "name_en": Beijing Soup
+              "description_sv": Peking soppa (Stor skål)
+              price: 118 kr
+            - item_number: 75
+              "name_zh-Hans": 鱼片汤
+              "name_en": Fish Soup
+              "description_sv": Fisk soppa (Stor skål)
+              price: 148 kr
+            - item_number: 76
+              "name_zh-Hans": 酸辣肚丝汤
+              "name_en": Hot and sour tripe soup
+              "description_sv": Grismage-soppa med chili, svamp & grönsaker (Stor skål)
+              price: 158 kr
+        - "name_zh-Hans": 新菜
+          "name_en": New Dishes
+          menu_items:
+            - item_number: 81
+              "name_zh-Hans": 香辣烤鱼
+              "name_en": Spicy grilled fish
+              "name_sv": Lätt-friterad fisk med chili, sichuanpeppar & grönsaker (Hel havsabborre)
+              price: 319 kr
+            - item_number: 82
+              "name_zh-Hans": 清蒸鲈鱼
+              "name_en": Steamed fish with scallionoil
+              "name_sv": Pocherad havsabborre med salladslök-sås (Hel fisk)
+              price: 299 kr
+            - item_number: 83
+              "name_zh-Hans": 避风塘大虾
+              "name_en": Prawns in typhoon shelter
+              "name_sv": Pepparstekt pankopanerad scampi (Med skål)
+              price: 188 kr
+            - item_number: 86
+              "name_zh-Hans": 孜然羊肉
+              "name_en": Fried Lamb with cumin
+              "name_sv": Stekt lammkött med spiskummin, chili, lök, & koriander
+              price: 188 kr
+            - item_number: 88
+              "name_zh-Hans": 脆皮五花肉
+              "name_en": Crispy pork belly
+              "name_sv": Krispig fläsk med grillkrydda
+              price: 178 kr
+            - item_number: 90
+              "name_zh-Hans": 蛋黄焗鸡翅
+              "name_en": Chicken wings with salted egg yolk sauce
+              "name_sv": Kycklingvingar med saltad äggulasås
+              price: 178 kr
+            - item_number: 91
+              "name_zh-Hans": 肉末水蒸蛋
+              "name_en": Steamed egg with minced meat
+              "name_sv": Ångad äggröra med fläskfärs
+              price: 138 kr

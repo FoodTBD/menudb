@@ -13,5 +13,6 @@
 
 ## To Do
 
+* Add index nav link
 * Google Analytics
 * Cantonese TTS

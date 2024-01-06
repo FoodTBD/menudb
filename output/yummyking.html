@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDB - Yummy King, Solna</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Set a maximum width for the content */
+            max-width: 1200px;
+            /* Center the container horizontally */
+            margin: 0 auto;
+        }
+
+        /* Apply styles to each column */
+        .column {
+            /* Each column takes up 50% of the container width with some spacing */
+            flex-basis: calc(50% - 20px);
+            /* Include padding and border in the column's total width */
+            box-sizing: border-box;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 767px) {
+            .container {
+                /* Change to a single column layout */
+                flex-direction: column;
+            }
+
+            .column {
+                /* Full width for columns on mobile */
+                flex-basis: 100%;
+            }
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .right-column img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+        }
+
+        .left-column {
+            padding-right: 20px;
+        }
+
+        .menu-section-name-primary {
+            font-weight: bold;
+        }
+
+        .menu-table td {
+            padding: 4px;
+            padding-bottom: 12px;
+        }
+
+        .menu-table-first-column {
+            text-align: center;
+            min-width: 48px;
+        }
+
+        .menu-table-last-column {
+            text-align: right;
+        }
+
+        .menu-item-name-primary {
+            font-weight: bold;
+        }
+
+        .menu-item-small {
+            font-size: small;
+        }
+
+        .btn-wikipedia {
+            font-family: serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Yummy King</h1>
+        <p>
+            Google Maps: <a href="https://www.google.com/maps/search/Yummy%20King%2C%20Str%C3%A5kv%C3%A4gen%201%2C%20Solna%2C%20SE" target="_blank" rel="noopener">Stråkvägen 1, Solna, SE</a><br>
+            Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">http://qopla.com/yummy-king</a><br>Facebook: <a href="https://www.facebook.com/YummyKingSolna" target="_blank" rel="noopener">facebook.com/YummyKingSolna</a><br>
+        </p>
+    </header>
+    
+    
+    <section class="section">
+        <div class="container">
+            <div class="column left-column">
+                
+                <a href="https://lh5.googleusercontent.com/p/AF1QipPsP5pVRUf4L-Z82SSpsaISmZMIgtPH4nw48PpZ=s1016-k-no" target="_blank" rel="noopener"><img src="https://lh5.googleusercontent.com/p/AF1QipPsP5pVRUf4L-Z82SSpsaISmZMIgtPH4nw48PpZ=s1016-k-no"
+                        alt="Menu Image"></a>
+                
+            </div>
+            <div class="column right-column">
+                <table class="menu-table">
+                    <tbody>
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">凉菜类 </span>Appetizers
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('泡椒凤爪')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                1.
+
+                                <span class="menu-item-name-primary">泡椒凤爪</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('泡椒凤爪', 'zh-Hans')">🗣️</button>
+                                <br>Chicken feet with pickled peppers<br>
+
+                                <span class="menu-item-small">Picklad kycklingfötter i pepperoni<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                90 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('香辣猪肚丝')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                2.
+
+                                <span class="menu-item-name-primary">香辣猪肚丝</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('香辣猪肚丝', 'zh-Hans')">🗣️</button>
+                                <br>Spicy pork tripe<br>
+
+                                <span class="menu-item-small">Grismage med chrispy chili & vitlö<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                110 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('白斩鸡')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                3.
+
+                                <span class="menu-item-name-primary">白斩鸡</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('白斩鸡', 'zh-Hans')">🗣️</button>
+                                <br>Cold sliced chicken<br>
+
+                                <span class="menu-item-small">Kokt kycklingklubba med sojasås<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                90 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('棒棒鸡')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                4.
+
+                                <span class="menu-item-name-primary">棒棒鸡</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('棒棒鸡', 'zh-Hans')">🗣️</button>
+                                <br>Bang Bang chicken<br>
+
+                                <span class="menu-item-small">Kycklingklubba med sesamsås & chili<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                100 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('红油牛百叶')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                5.
+
+                                <span class="menu-item-name-primary">红油牛百叶</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('红油牛百叶', 'zh-Hans')">🗣️</button>
+                                <br>Chili oil beef honeycomb tripe<br>
+
+                                <span class="menu-item-small">Oxmage med chiliolja & koriander<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                120 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('麻辣鸭头 - 3个')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                6.
+
+                                <span class="menu-item-name-primary">麻辣鸭头 - 3个</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('麻辣鸭头 - 3个', 'zh-Hans')">🗣️</button>
+                                <br>Spicy duck head<br>
+
+                                <span class="menu-item-small">Bräserad ankhuvud (Mala ankhuvud)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                3/90 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('五香卤牛腱')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                7.
+
+                                <span class="menu-item-name-primary">五香卤牛腱</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('五香卤牛腱', 'zh-Hans')">🗣️</button>
+                                <br>Spiced beef<br>
+
+                                <span class="menu-item-small">Bräserat oxkött med sojasås<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                120 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('凉拌海带丝')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                9.
+
+                                <span class="menu-item-name-primary">凉拌海带丝</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('凉拌海带丝', 'zh-Hans')">🗣️</button>
+                                <br>Seaweed salad<br>
+
+                                <span class="menu-item-small">Sjögräs med vitlök och sojasås<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                80 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('拍黄瓜')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                10.
+
+                                <span class="menu-item-name-primary">拍黄瓜</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('拍黄瓜', 'zh-Hans')">🗣️</button>
+                                <br>Smashed cucumber salad<br>
+
+                                <span class="menu-item-small">Marinerad krossad gurka med vitlök<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                80 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('皮蛋豆腐')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                11.
+
+                                <span class="menu-item-name-primary">皮蛋豆腐</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('皮蛋豆腐', 'zh-Hans')">🗣️</button>
+                                <br>Tofu with preserved eggs<br>
+
+                                <span class="menu-item-small">Tusenåriga ägg med tofu & sojasås<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                110 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('红油猪耳朵')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                12.
+
+                                <span class="menu-item-name-primary">红油猪耳朵</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('红油猪耳朵', 'zh-Hans')">🗣️</button>
+                                <br>Chilli oil pig ear<br>
+
+                                <span class="menu-item-small">Marinerad grisöron med vitlök & crispy chili<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                120 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">热菜类 </span>Main Course (Beef)
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('金汤肥牛')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                13.
+
+                                <span class="menu-item-name-primary">金汤肥牛</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('金汤肥牛', 'zh-Hans')">🗣️</button>
+                                <br>Golden stock beef<br>
+
+                                <span class="menu-item-small">Gyllene soppa med skivat entrecote, vitlök, chili & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                198 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('西芹牛肉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                14.
+
+                                <span class="menu-item-name-primary">西芹牛肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('西芹牛肉', 'zh-Hans')">🗣️</button>
+                                <br>Fried beef with celery<br>
+
+                                <span class="menu-item-small">Stekt biff med selleri<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('干煸牛肉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                15.
+
+                                <span class="menu-item-name-primary">干煸牛肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('干煸牛肉', 'zh-Hans')">🗣️</button>
+                                <br>Yummy beef<br>
+
+                                <span class="menu-item-small">Yummy Biff (Lätt-friterad biff med sötsur-stark sås & grönsaker)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                168 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('尖椒牛肉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                16.
+
+                                <span class="menu-item-name-primary">尖椒牛肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('尖椒牛肉', 'zh-Hans')">🗣️</button>
+                                <br>Pepper beef<br>
+
+                                <span class="menu-item-small">Stekt biff med turkisk paprika<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('水煮牛肉')">
+                            </td>
+                            <td>
+                                17.
+
+                                <span class="menu-item-name-primary">水煮牛肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('水煮牛肉', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Shuizhu">Boiled beef fillet</a><br>
+
+                                <span class="menu-item-small">Biff med chili, vitlök, sichuanpeppar & grönsaker<br>Poached beef in chili oil<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                168 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('红焖牛腩')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                18.
+
+                                <span class="menu-item-name-primary">红焖牛腩</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('红焖牛腩', 'zh-Hans')">🗣️</button>
+                                <br>Braised Beef Brisket<br>
+
+                                <span class="menu-item-small">Biffgryta med vitlök, chili bean sauce & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">热菜类 </span>Main Course (Pork)
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('毛血旺')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                19.
+
+                                <span class="menu-item-name-primary">毛血旺</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('毛血旺', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations">Mao yue wang</a><br>
+
+                                <span class="menu-item-small">Mao Xue Wang (Grismage, oxmage, ank blodpudding, gristarmar, chili, vitlök & grönsaker)<br>Spicy broth with pig blood curd, tripe, and vegetables<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                198 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('爆炒腰花')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                20.
+
+                                <span class="menu-item-name-primary">爆炒腰花</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('爆炒腰花', 'zh-Hans')">🗣️</button>
+                                <br>Stir fried pig kidney<br>
+
+                                <span class="menu-item-small">Stekt grisnjure med chili, vitlök & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('爆炒猪肚丝')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                22.
+
+                                <span class="menu-item-name-primary">爆炒猪肚丝</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('爆炒猪肚丝', 'zh-Hans')">🗣️</button>
+                                <br>Stir Fried Pork Stomach<br>
+
+                                <span class="menu-item-small">Stekt grismage med chili bean sauce & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('尖椒肥肠')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                25.
+
+                                <span class="menu-item-name-primary">尖椒肥肠</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('尖椒肥肠', 'zh-Hans')">🗣️</button>
+                                <br>Peppers with intestine<br>
+
+                                <span class="menu-item-small">Stekt grisktarm med turkisk paprika<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                168 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('糖醋排骨')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                26.
+
+                                <span class="menu-item-name-primary">糖醋排骨</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('糖醋排骨', 'zh-Hans')">🗣️</button>
+                                <br>Sweet and Sour Spare Ribs<br>
+
+                                <span class="menu-item-small">Lätt-friterade revbensspjäll i sweet sour sauce<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('椒盐排骨')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                27.
+
+                                <span class="menu-item-name-primary">椒盐排骨</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('椒盐排骨', 'zh-Hans')">🗣️</button>
+                                <br>Fried Spare Ribs with Spiced Salt<br>
+
+                                <span class="menu-item-small">Friterade revbensspjäll med sichuanpeppar<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('糖醋里脊')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                28.
+
+                                <span class="menu-item-name-primary">糖醋里脊</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('糖醋里脊', 'zh-Hans')">🗣️</button>
+                                <br>Sweet and Sour pork Fillet<br>
+
+                                <span class="menu-item-small">Friterad fläskfilé i sötsursås<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                168 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('回锅肉')">
+                            </td>
+                            <td>
+                                29.
+
+                                <span class="menu-item-name-primary">回锅肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('回锅肉', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Twice_cooked_pork">Hui Guo Pork</a><br>
+
+                                <span class="menu-item-small">Stekt fläsk med chili bean sauce & grönsaker<br>Pork stir-fried with vegetables in a spicy sauce<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                168 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('鱼香肉丝')">
+                            </td>
+                            <td>
+                                30.
+
+                                <span class="menu-item-name-primary">鱼香肉丝</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鱼香肉丝', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork">Yu-Shiang Shredded Pork</a><br>
+
+                                <span class="menu-item-small">Chilikryddad fläsk med vitlök, ingefära & grönsaker<br>Shredded pork in a spicy garlic sauce<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('梅菜扣肉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                31.
+
+                                <span class="menu-item-name-primary">梅菜扣肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('梅菜扣肉', 'zh-Hans')">🗣️</button>
+                                <br>Braised Pork with Preserved vegetable in Soya Sauce<br>
+
+                                <span class="menu-item-small">Bräserad sidfläsk med kinesisk soltorkad kål<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                188 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">鸭肉类 </span>Main Course (Duck)
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('干锅啤酒鸭')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                32.
+
+                                <span class="menu-item-name-primary">干锅啤酒鸭</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('干锅啤酒鸭', 'zh-Hans')">🗣️</button>
+                                <br>Griddle Duck in Beer<br>
+
+                                <span class="menu-item-small">Långkokt anka i öl & grönsaker (Med ben)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                168 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('味王鸭')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                33.
+
+                                <span class="menu-item-name-primary">味王鸭</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('味王鸭', 'zh-Hans')">🗣️</button>
+                                <br>Yummy duck<br>
+
+                                <span class="menu-item-small">Yummy Duck (Wokad anka med vitlök & grönsaker)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('四川鸭')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                34.
+
+                                <span class="menu-item-name-primary">四川鸭</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('四川鸭', 'zh-Hans')">🗣️</button>
+                                <br>Szechuan duck<br>
+
+                                <span class="menu-item-small">Sichuan anka med chili vitlök, & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">鸡肉类 </span>Main Course (Chicken)
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('黄焖鸡')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                35.
+
+                                <span class="menu-item-name-primary">黄焖鸡</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('黄焖鸡', 'zh-Hans')">🗣️</button>
+                                <br>Yellow braised chicken<br>
+
+                                <span class="menu-item-small">Bräserat kycklinglår med svamp & grönsaker (Med ben)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('味王鸡')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                36.
+
+                                <span class="menu-item-name-primary">味王鸡</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('味王鸡', 'zh-Hans')">🗣️</button>
+                                <br>Yummy chicken<br>
+
+                                <span class="menu-item-small">Yummy Chicken (Friterad kyckling i sötsur sås)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('柠檬鸡')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                37.
+
+                                <span class="menu-item-name-primary">柠檬鸡</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('柠檬鸡', 'zh-Hans')">🗣️</button>
+                                <br>Spicy lime chicken<br>
+
+                                <span class="menu-item-small">Spicy Lime Chicken (Lätt-friterad kycklingfilé med chiliolja & grönsaker)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('辣子鸡')">
+                            </td>
+                            <td>
+                                38.
+
+                                <span class="menu-item-name-primary">辣子鸡</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('辣子鸡', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Laziji">Sauteed chicken dices with chili peppers</a><br>
+
+                                <span class="menu-item-small">Crispy chicken med sichuanpeppar<br>Deep-fried chicken with Sichuan peppercorns and chilies<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">热菜类 </span>Main Course (Seafood)
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('水煮鱼')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                39.
+
+                                <span class="menu-item-name-primary">水煮鱼</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('水煮鱼', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Shuizhu">Boiled Fish in Hot chili oil</a><br>
+
+                                <span class="menu-item-small">Fiskgryta med chili, vitlök, sichuanpeppar & grönsaker<br>Poached fish in chili oil<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('酸菜鱼')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                40.
+
+                                <span class="menu-item-name-primary">酸菜鱼</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('酸菜鱼', 'zh-Hans')">🗣️</button>
+                                <br>Boiled fish with pickled gabbage<br>
+
+                                <span class="menu-item-small">Fiskgryta med surkål, vitlök & sichuanpeppar<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('嫩滑鱼片')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                41.
+
+                                <span class="menu-item-name-primary">嫩滑鱼片</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('嫩滑鱼片', 'zh-Hans')">🗣️</button>
+                                <br>Tender fish fillet<br>
+
+                                <span class="menu-item-small">Wokad fiskfilé med grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('辣子鱼')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                42.
+
+                                <span class="menu-item-name-primary">辣子鱼</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('辣子鱼', 'zh-Hans')">🗣️</button>
+                                <br>Chilli fish<br>
+
+                                <span class="menu-item-small">Stekt fisk med chrispy chili & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('椒盐虾')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                43.
+
+                                <span class="menu-item-name-primary">椒盐虾</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('椒盐虾', 'zh-Hans')">🗣️</button>
+                                <br>Salt and pepper shrimp<br>
+
+                                <span class="menu-item-small">Pepparstekt tigerräkor med sichuanpeppar (Med skal)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                188 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('姜葱大虾')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                44.
+
+                                <span class="menu-item-name-primary">姜葱大虾</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('姜葱大虾', 'zh-Hans')">🗣️</button>
+                                <br>Ginger scallion prawns<br>
+
+                                <span class="menu-item-small">Wokade tigerräkor med ingefära i ostronsås<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                188 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('味王虾')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                45.
+
+                                <span class="menu-item-name-primary">味王虾</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('味王虾', 'zh-Hans')">🗣️</button>
+                                <br>Yummy scampi<br>
+
+                                <span class="menu-item-small">Yummy Shrimp<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">热菜类 </span>Main Course (Vegetable)
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('干扁豆夹')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                46.
+
+                                <span class="menu-item-name-primary">干扁豆夹</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('干扁豆夹', 'zh-Hans')">🗣️</button>
+                                <br>Dried lentil clip<br>
+
+                                <span class="menu-item-small">Stekt haricots verts med vitlök i chrispy chili<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('地三鲜')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                47.
+
+                                <span class="menu-item-name-primary">地三鲜</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('地三鲜', 'zh-Hans')">🗣️</button>
+                                <br>Sauteed Potato, Green Pepper and Eggplant<br>
+
+                                <span class="menu-item-small">Stekt potatis, haricots verts & aubergine<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('上海青')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                48.
+
+                                <span class="menu-item-name-primary">上海青</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('上海青', 'zh-Hans')">🗣️</button>
+                                <br>Shanghai vegetable<br>
+
+                                <span class="menu-item-small">Stekt pak choy med vitlök<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Qiezi.jpg/128px-Qiezi.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('鱼香茄子')">
+                            </td>
+                            <td>
+                                49.
+
+                                <span class="menu-item-name-primary">鱼香茄子</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鱼香茄子', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Yuxiang">Yu-shiang eggplant</a><br>
+
+                                <span class="menu-item-small">Chilikryddad aubergine med vitlök & fläskfärs (Kött kan tas bort)<br>Eggplant in a spicy garlic sauce<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('醋溜土豆丝')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                50.
+
+                                <span class="menu-item-name-primary">醋溜土豆丝</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('醋溜土豆丝', 'zh-Hans')">🗣️</button>
+                                <br>Sour and spicy shredded potatoes<br>
+
+                                <span class="menu-item-small">Stekt strimlad potatis med chili<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                128 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('尖椒炒蛋')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                52.
+
+                                <span class="menu-item-name-primary">尖椒炒蛋</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('尖椒炒蛋', 'zh-Hans')">🗣️</button>
+                                <br>Fried egg with pepper<br>
+
+                                <span class="menu-item-small">Stekt äggröra med turkisk paprika<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('家常豆腐')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                54.
+
+                                <span class="menu-item-name-primary">家常豆腐</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('家常豆腐', 'zh-Hans')">🗣️</button>
+                                <br>Woked tofu<br>
+
+                                <span class="menu-item-small">Wokad tofu med grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('麻婆豆腐')">
+                            </td>
+                            <td>
+                                55.
+
+                                <span class="menu-item-name-primary">麻婆豆腐</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Mapo_tofu">Mapo tofu</a><br>
+
+                                <span class="menu-item-small">Mapo Tofu (Tofu med fläskfärs & vitlök)<br>Spicy tofu with minced meat in bean sauce<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">点心类 </span>Desserts
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('味王油条')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                57.
+
+                                <span class="menu-item-name-primary">味王油条</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('味王油条', 'zh-Hans')">🗣️</button>
+                                <br>Deep-Fried Dough Sticks<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                15 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('五花肉大肉包')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                58.
+
+                                <span class="menu-item-name-primary">五花肉大肉包</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('五花肉大肉包', 'zh-Hans')">🗣️</button>
+                                <br>pork Bun<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                20 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('五花肉大肉包')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                59.
+
+                                <span class="menu-item-name-primary">五花肉大肉包</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('五花肉大肉包', 'zh-Hans')">🗣️</button>
+                                <br>vegetable Bun<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                20 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('五花肉大肉包')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                60.
+
+                                <span class="menu-item-name-primary">五花肉大肉包</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('五花肉大肉包', 'zh-Hans')">🗣️</button>
+                                <br>Hanamaki<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                10 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('葱油花卷')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                61.
+
+                                <span class="menu-item-name-primary">葱油花卷</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('葱油花卷', 'zh-Hans')">🗣️</button>
+                                <br>Fried flatbread<br>
+
+                                <span class="menu-item-small">Dabing (Kinesisk inbakad pizza med fläsk & soltorkad kål)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                70 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('糯米饭')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                62 (1).
+
+                                <span class="menu-item-name-primary">糯米饭</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('糯米饭', 'zh-Hans')">🗣️</button>
+                                <br>Savory Glutinous Rice<br>
+
+                                <span class="menu-item-small">Salted Sticky Rice med fläskfärs, krossade kinesiska churros & krossade jordnötter<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                Liten 60kr / Stor 98kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('糯米饭')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                62 (2).
+
+                                <span class="menu-item-name-primary">糯米饭</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('糯米饭', 'zh-Hans')">🗣️</button>
+                                <br>Sweet Glutinous Rice<br>
+
+                                <span class="menu-item-small">Sweet Sticky Rice med kokosmjölk, socker, krossade kinesiska churros & krossade jordnötter<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                Liten 60kr / Stor 98kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('生煎包(5个)')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                63.
+
+                                <span class="menu-item-name-primary">生煎包(5个)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('生煎包(5个)', 'zh-Hans')">🗣️</button>
+                                <br>Pan-fried bun, stuffed with pork<br>
+
+                                <span class="menu-item-small">Sheng Jiang Bao (Fylld med fläsk & grönsaker)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                98 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">主食类 </span>Rice and Noodles
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('干炒牛河')">
+                            </td>
+                            <td>
+                                64.
+
+                                <span class="menu-item-name-primary">干炒牛河</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('干炒牛河', 'zh-Hans')">🗣️</button>
+                                <br><a href="https://en.wikipedia.org/wiki/Beef_chow_fun">Stir-Fried Rice Noodles with Beef</a><br>
+
+                                <span class="menu-item-small">Stekt risnudlar med biff & böngroddar<br>Stir-fried flat rice noodles with beef<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('红焖牛腩拉面')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                65.
+
+                                <span class="menu-item-name-primary">红焖牛腩拉面</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('红焖牛腩拉面', 'zh-Hans')">🗣️</button>
+                                <br>Beef Brisket Noodles<br>
+
+                                <span class="menu-item-small">"La Mian" med långkokt oxkött pak choi<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('腊肉炒年糕')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                66.
+
+                                <span class="menu-item-name-primary">腊肉炒年糕</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('腊肉炒年糕', 'zh-Hans')">🗣️</button>
+                                <br>Fried Rice Cake with Bacon<br>
+
+                                <span class="menu-item-small">Stekt rice cake med lufttorkad sidfläsk & pak choi<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('大肠粉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                67.
+
+                                <span class="menu-item-name-primary">大肠粉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('大肠粉', 'zh-Hans')">🗣️</button>
+                                <br>Chitterlings Rice Flour<br>
+
+                                <span class="menu-item-small">Risnudelsoppa med gristarm & kinesisk surkål<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('青田炒粉干（虾)')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                68.
+
+                                <span class="menu-item-name-primary">青田炒粉干（虾)</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('青田炒粉干（虾)', 'zh-Hans')">🗣️</button>
+                                <br>Fried Rice Noodles with Shrimp<br>
+
+                                <span class="menu-item-small">Stekta risnudlar med räkor, ägg & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('青田炒粉干（牛肉）')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                69.
+
+                                <span class="menu-item-name-primary">青田炒粉干（牛肉）</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('青田炒粉干（牛肉）', 'zh-Hans')">🗣️</button>
+                                <br>Fried Rice Noodles with Beef<br>
+
+                                <span class="menu-item-small">Stekta risnudlar med biff, ägg & grönsaker<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('青田米面')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                70.
+
+                                <span class="menu-item-name-primary">青田米面</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('青田米面', 'zh-Hans')">🗣️</button>
+                                <br>QingTian Rice Vermicelli<br>
+
+                                <span class="menu-item-small">Risnudelsoppa med fläskfärs & surkål<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                118 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('蚂蚁上树')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                72.
+
+                                <span class="menu-item-name-primary">蚂蚁上树</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('蚂蚁上树', 'zh-Hans')">🗣️</button>
+                                <br>Woked vermicelli with spicy minced pork<br>
+
+                                <span class="menu-item-small">Stekta glasnudlar med fläskfärs<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('香炒糯米饭')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                73.
+
+                                <span class="menu-item-name-primary">香炒糯米饭</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('香炒糯米饭', 'zh-Hans')">🗣️</button>
+                                <br>Stir fried glutinous rice<br>
+
+                                <span class="menu-item-small">Stekt sticky rice med lufttorkad sidfläsk<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">汤类 </span>Soup
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('开胃羹')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                74.
+
+                                <span class="menu-item-name-primary">开胃羹</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('开胃羹', 'zh-Hans')">🗣️</button>
+                                <br>Beijing Soup<br>
+
+                                <span class="menu-item-small">Peking soppa (Stor skål)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                118 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('鱼片汤')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                75.
+
+                                <span class="menu-item-name-primary">鱼片汤</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('鱼片汤', 'zh-Hans')">🗣️</button>
+                                <br>Fish Soup<br>
+
+                                <span class="menu-item-small">Fisk soppa (Stor skål)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                148 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('酸辣肚丝汤')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                76.
+
+                                <span class="menu-item-name-primary">酸辣肚丝汤</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('酸辣肚丝汤', 'zh-Hans')">🗣️</button>
+                                <br>Hot and sour tripe soup<br>
+
+                                <span class="menu-item-small">Grismage-soppa med chili, svamp & grönsaker (Stor skål)<br></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                158 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th colspan="3">
+                                <span class="menu-section-name-primary">新菜 </span>New Dishes
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('香辣烤鱼')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                81.
+
+                                <span class="menu-item-name-primary">香辣烤鱼</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('香辣烤鱼', 'zh-Hans')">🗣️</button>
+                                <br>Lätt-friterad fisk med chili, sichuanpeppar & grönsaker (Hel havsabborre)<br>Spicy grilled fish<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                319 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('清蒸鲈鱼')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                82.
+
+                                <span class="menu-item-name-primary">清蒸鲈鱼</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('清蒸鲈鱼', 'zh-Hans')">🗣️</button>
+                                <br>Pocherad havsabborre med salladslök-sås (Hel fisk)<br>Steamed fish with scallionoil<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                299 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('避风塘大虾')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                83.
+
+                                <span class="menu-item-name-primary">避风塘大虾</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('避风塘大虾', 'zh-Hans')">🗣️</button>
+                                <br>Pepparstekt pankopanerad scampi (Med skål)<br>Prawns in typhoon shelter<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                188 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('孜然羊肉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                86.
+
+                                <span class="menu-item-name-primary">孜然羊肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('孜然羊肉', 'zh-Hans')">🗣️</button>
+                                <br>Stekt lammkött med spiskummin, chili, lök, & koriander<br>Fried Lamb with cumin<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                188 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('脆皮五花肉')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                88.
+
+                                <span class="menu-item-name-primary">脆皮五花肉</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('脆皮五花肉', 'zh-Hans')">🗣️</button>
+                                <br>Krispig fläsk med grillkrydda<br>Crispy pork belly<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                178 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('蛋黄焗鸡翅')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                90.
+
+                                <span class="menu-item-name-primary">蛋黄焗鸡翅</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('蛋黄焗鸡翅', 'zh-Hans')">🗣️</button>
+                                <br>Kycklingvingar med saltad äggulasås<br>Chicken wings with salted egg yolk sauce<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                178 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="menu-table-first-column">
+                                <button type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('肉末水蒸蛋')">🔎
+                                    🖼️</button>
+                            </td>
+                            <td>
+                                91.
+
+                                <span class="menu-item-name-primary">肉末水蒸蛋</span>
+                                
+                                
+                                <button type="button" class="btn-speak"
+                                    onclick="speakText('肉末水蒸蛋', 'zh-Hans')">🗣️</button>
+                                <br>Ångad äggröra med fläskfärs<br>Steamed egg with minced meat<br>
+
+                                <span class="menu-item-small"></span>
+
+                                </span>
+                            </td>
+                            <td class="menu-table-last-column">
+                                
+                                138 kr<br>
+
+                                </span>
+                            </td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                </table>
+                
+            </div>
+        </div>
+    </section>
+    <hr>
+    
+    
+    <footer class="footer">
+        <p><small>Generated by MenuDB—a FoodTBD project - Menu updated 2024-01-06</small></p>
+    </footer>
+
+    <script>
+        function openLink(url, target) {
+            window.open(url, target);
+        }
+
+        function openGoogleImageSearch(queryText) {
+            openLink("https://www.google.com/search?tbm=isch&q=" + queryText, "googleimage");
+        }
+
+        function speakText(text, lang) {
+            window.speechSynthesis.cancel();
+
+            setTimeout(function () {
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = lang;
+                utterance.rate = 0.85;
+                window.speechSynthesis.speak(utterance);
+            }, 100); // Delay 100 ms to let cancel() complete
+
+        }
+    </script>
+</body>
+
+</html>

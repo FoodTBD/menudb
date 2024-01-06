@@ -1,0 +1,349 @@
+author: John Chang
+restaurant:
+  name: Lilla Kina
+  street_address: Karlbergsvägen 41
+  city: Stockholm
+  country_code: SE
+  tags: chinese
+  homepage_url: https://lillakina.com/
+  facebook_url: https://www.facebook.com/profile.php?id=100039276676866
+menu:
+  language_codes:
+    - zh-Hans
+    - sv-SE
+  pages:
+    - page_url: https://lillakina.com/meny.html
+      sections:
+        - "name_zh-Hans": 前餐
+          "name_sv-SE": Förrätter
+          menu_items:
+            - item_number: 1
+              "name_zh-Hans": 酸辣汤
+              "name_sv-SE": Pekingsoppa
+              "description_sv-SE": Tärnad Kycklingfilé med grönsaker
+              price: 65 kr
+              annotation: 🌶️🌶️
+            - item_number: 2
+              "name_zh-Hans": 西湖牛肉羹 
+              "name_sv-SE": Biffsoppa
+              "description_sv-SE": Hackad biff med mjuk
+              price: 65 kr
+            - item_number: 3
+              "name_zh-Hans": 春卷 
+              "name_sv-SE": Vårrullar
+              note: Välj mellan grönsaker och nötfärs
+              price: 65 kr
+            - item_number: 4
+              "name_zh-Hans": 饺子 
+              "name_sv-SE": Dumplings
+              note: Välj mellan fläsk, kyckling, nötfärs och vegetarisk 4st
+              price: 65 kr
+            - item_number: 5
+              "name_zh-Hans": 烧麦 
+              "name_sv-SE": Fläskdumplings
+              "description_sv-SE": Ångkokta fläskdumplings
+              note: 4st
+              price: 79 kr
+            - item_number: 6
+              "name_zh-Hans": 虾饺 
+              "name_sv-SE": Räkdumplings
+              "description_sv-SE": Ångkokta räkdumplings
+              note: 4st
+              price: 89 kr
+            - item_number: 7
+              "name_zh-Hans": 凉粉
+              "name_sv-SE": Kinesiska bönnudlar
+              "description_sv-SE": Marinerade bönnudlar med val av ssichuansksk chiliolja och sesam sås
+              price: 小/liten 75kr, 大/ Stor 128 kr
+            - item_number: 8
+              "name_zh-Hans": 凉拌黄瓜
+              "name_sv-SE": Kinesisk gurksallad
+              "description_sv-SE": Marinerad gurka med val av ssichuansksk chiliolja och sesam sås
+              price: 小/liten 75kr, 大/stor 128 kr
+              note: (Vegetarisk)
+            - item_number: 9
+              "name_zh-Hans": 小窝泡菜
+              "name_sv-SE": Kinesisk kimchi
+              "description_sv-SE": Marinerad sichuansk kimchi. (fermenterad kinakål)
+              note: (Vegetarisk)
+              price: 59 kr
+            - item_number: 10
+              "name_zh-Hans": 腐竹西芹
+              "name_sv-SE": Kinesisk selleri
+              "description_sv-SE": Marinerad selleri och tofusticks
+              note: (Vegetarisk)
+              price: 75 kr
+            - item_number: 11
+              "name_zh-Hans": 夫妻肺片
+              "name_sv-SE": Biffsallad
+              "description_sv-SE": Marinerad biff och komage i sichuansk chiliolja
+              price: 小/liten 99kr, 大/stor 188 kr
+              note: Kan kan beställas utan komage
+            - item_number: 12
+              "name_zh-Hans": 红油蒜泥肚丝
+              "description_sv-SE": Marinerad grismage med vitlök i sichuan chili olja
+              price: 小/liten 99kr, 大/stor 188 kr
+            - item_number: 13
+              "name_zh-Hans": 香汁卤豆腐
+              "name_sv-SE": Tofu
+              "description_sv-SE": Marinerad och kryddad tofu
+              note: (Vegetarisk)
+              price: 79 kr
+            - item_number: 14
+              "name_zh-Hans": 凉拌木耳 
+              "name_sv-SE": Judasöra
+              "description_sv-SE": Marinerad judasöra
+              note: (Vegetarisk)
+              price: 75 kr
+        - "name_zh-Hans": 鸡/鸭
+          "name_sv-SE": Kyckling/anka
+          menu_items:
+            - item_number: 30
+              "name_zh-Hans": 宫保鸡丁
+              "name_sv-SE": 
+              "description_sv-SE": Tärnad kycklingfilé och grönsaker, serverad med jordnötter
+              price: 178 kr
+            - item_number: 31
+              "name_zh-Hans": 青椒仔鸡
+              "description_sv-SE": Wok med marinerade kycklinglår med sichuanpeppar och grönsaker.
+              price: 178 kr
+              annotation: 🌶️🌶️🌶️
+            - item_number: 32
+              "name_zh-Hans": 干锅鸡
+              "description_sv-SE": Marinerade kycklinglår och kinesiska grönsaker i sichuansk chili hot pot.
+              price: 188 kr
+              annotation: 🌶️🌶️🌶️
+            - item_number: 33
+              "name_zh-Hans": 香酥鸭
+              "description_sv-SE": Krispig ankfilé med val av hoisinsås, sichuansås och sötsur sås
+              price: 188 kr
+            - item_number: 34
+              "name_zh-Hans": 烤脆鸭
+              "description_sv-SE": Grillad ankfilé med strimlad purjolök, serveras med kinesiska pannkakor och hemlagad hoisinsås.
+              price: 228 kr
+        - "name_zh-Hans": 猪
+          "name_sv-SE": Fläsk
+          menu_items:
+            - item_number: 40
+              "name_zh-Hans": 川香回锅肉
+              "description_sv-SE": Dubbelwokad sidfläsk med grönsaker.
+              price: 178 kr
+              annotation: 🌶️🌶️
+            - item_number: 41
+              "name_zh-Hans": 菠萝咕咾肉
+              "description_sv-SE": Lättfriterade fläskfilébollar med ananas i sötsur sås.
+              price: 178 kr
+            - item_number: 42
+              "name_zh-Hans": 京酱肉丝
+              "description_sv-SE": Sauterad strimlad fläskfilé och purjolök med sojabön sås, serveras med kinesiska pannkakor.
+              price: 198 kr
+            - item_number: 43
+              "name_zh-Hans": 川府水煮肉
+              "description_sv-SE": Bräserat fläsk och böngroddar i stark sichuansoppa.
+              price: 188 kr
+              annotation: 🌶️🌶️🌶️
+            - item_number: 45
+              "name_zh-Hans": 酸豆角肉末
+              "description_sv-SE": Marinerade brytbönor med köttfärs.
+              price: 178 kr
+              annotation: 🌶️
+            - item_number: 48
+              "name_zh-Hans": 老干妈猪手
+              "description_sv-SE": Bräserade grifötter med kinesiska grönsaker i sichuan chilipor.
+              annotation: 🌶️🌶️
+              price: 218 kr
+            - item_number: 49
+              "name_zh-Hans": 孜然排骨
+              "description_sv-SE": Torrwokad revben med chili och kummin.
+              price: 188 kr
+              annotation: 🌶️
+        - "name_zh-Hans": 牛
+          "name_sv-SE": Biff
+          menu_items:
+            - item_number: 50
+              "name_zh-Hans": 酸汤肥牛
+              "description_sv-SE": Tunt skivad entrecote i oxbuljong med färska grönsaker.
+              price: 198 kr
+              annotation: 🌶️
+            - item_number: 51
+              "name_zh-Hans": 豆花牛肉
+              "description_sv-SE": Bräserad ryggbiff i kinesisk chilibönsås samt tofu pudding och jordnötter.
+              price: 248 kr
+              annotation: 🌶️
+            - item_number: 52
+              "name_zh-Hans": 川府水煮牛肉
+              "description_sv-SE": Bräserad ryggbiff och böngroddar i sichuansk chili soppa.
+              price: 188 kr
+              annotation: 🌶️🌶️🌶️
+            - item_number: 53
+              "name_zh-Hans": 铁板牛肉
+              "description_sv-SE": Marinerad ryggbiff med färska grönsaker och torkad lök, serveras i varm gjutjärnspanna.
+              price: 188 kr
+            - item_number: 54
+              "name_zh-Hans": 麻辣牛肚煲
+              "description_sv-SE": Bräserad komage och kinesiska grönsaker i stark sichuansk grytan.
+              price: 198 kr
+              annotation: 🌶️🌶️🌶️
+            - item_number: 55
+              "name_zh-Hans": 泡椒爆小牛肉
+              "description_sv-SE": Wok med ryggbiff med grönsaker och pepperoni.
+              price: 188 kr
+              annotation: 🌶️
+        - "name_zh-Hans": 海鲜
+          "name_sv-SE": Skaldjur
+          menu_items:
+            - item_number: 60
+              "name_zh-Hans": 酸菜鱼
+              "description_sv-SE": Marinerad fiskfilé i buljong med böngroddar.
+              price: 小/liten 198kr, 大/ Stor 288kr(2人份)
+              annotation: 🌶️
+            - item_number: 61
+              "name_zh-Hans": 沸腾水煮鱼
+              "description_sv-SE": Marinerad fiskfilé i stark sichuansoppa med böngroddar.
+              price: 小/liten 198kr, 大/ Stor 288kr(2人份)
+              annotation: 🌶️🌶️🌶️
+            - item_number: 62
+              "name_zh-Hans": 香辣虾
+              "description_sv-SE": Jätteräkor med grönsaker i sichuanstil.(stark)
+              price: 小/liten 198kr, 大/ Stor 288kr(2人份)
+              annotation: 🌶️🌶️
+            - item_number: 63
+              "name_zh-Hans": 茄汁虾球
+              "name_sv-SE": 
+              "description_sv-SE": Wok med jätteräkor, grönsaker och ananas i tomatsås.
+              price: 198 kr
+            - item_number: 65
+              "name_zh-Hans": 海参个吃
+              "name_sv-SE": 
+              "description_sv-SE": Bräserad sjögurka i hemlagad buljong.
+              price: 198 kr
+            - item_number: 66
+              "name_zh-Hans": 咖喱蟹
+              "description_sv-SE": Bräserad krabba i hemlagad currysås.
+              price: (förfråga)
+            - item_number: 67
+              "name_zh-Hans": 干锅牛蛙
+              "description_sv-SE": Bräserade grodlår och grönsaker i sichuansk chilipot.
+              price: 258 kr
+              annotation: 🌶️🌶️🌶️
+        - "name_zh-Hans": 素
+          "name_sv-SE": Vegetarisk
+          menu_items:
+            - item_number: 70
+              "name_zh-Hans": 家常茄子
+              "description_sv-SE": Wok med aubergine och grönsaker.(serveras antingen stark eller mild)
+              price: 188 kr
+            - item_number: 71
+              "name_zh-Hans": 清炒时蔬
+              "description_sv-SE": Wok med blandade grönsaker i hemlagad söt soja sås.
+              price: 178 kr
+            - item_number: 72
+              "name_zh-Hans": 干煸四季豆
+              "description_sv-SE": Torrt wokade brytbönor med torkad chili peppar.
+              price: 178 kr
+              annotation: 🌶️
+            - item_number: 73
+              "name_zh-Hans": 干锅花菜
+              "description_sv-SE": Wokad blomkål med shichuan chiliolja i chili pot.
+              price: 188 kr
+              annotation: 🌶️🌶️
+            - item_number: 74
+              "name_zh-Hans": 青椒土豆丝
+              "description_sv-SE": Wok med strimlad potatis och paprika.
+              price: 168 kr
+            - item_number: 75
+              "name_zh-Hans": 飘香土豆丝
+              "description_sv-SE": Friterad strimlad potatis med shichuansk chilioljariterad strimlad potatis med chiliolja.
+              price: 178 kr
+              annotation: 🌶️
+            - item_number: 76
+              "name_zh-Hans": 金沙豆腐
+              "description_sv-SE": Wok med tofu och marinerad äggula.
+              price: 188 kr
+            - item_number: 77
+              "name_zh-Hans": 麻婆豆腐
+              "description_sv-SE": Wok med tofu i stark chilibön sås.
+              price: 178 kr
+              annotation: 🌶️🌶️
+            - item_number: 78
+              "name_zh-Hans": 家常豆腐
+              "description_sv-SE": Wok med tofu och grönsaker (serveras stark eller mild)
+              price: 178 kr
+        - "name_zh-Hans": 主食
+          "name_sv-SE": Nudlar & ris & dumplings
+          menu_items:
+            - item_number: 80
+              "name_zh-Hans": 春饼
+              "description_sv-SE": Kinesiska tunna pannkakor
+              note: 6 st
+              price: 35 kr
+            - item_number: 81
+              "name_zh-Hans": 手工浓汤面
+              "description_sv-SE": Äggnudlar med biff och grönsaker i buljong.
+              price: 158 kr
+            - item_number: 82
+              "name_zh-Hans": 酸辣粉
+              note: 加肥肠或者牛肉(biff/gristarmar) +30kr
+              price: 148 kr
+            - item_number: 90
+              "name_zh-Hans": 饺子
+              note: A. Kycklingfilé, B. Fläsk med svartpeppar, C. Vegetarisk
+              price: 15kr/st (minst 6st)
+        - "name_sv-SE": BARNMENY
+          menu_items:
+            - "name_sv-SE": Friterad kycklingfilé med sötsur sås
+              price: Halv/hel 95/135kr
+            - "name_sv-SE": Wok med Kycklingfilé med ananas i sötsur sås.
+              price: Halv/hel 95/135kr
+        - "name_zh-Hans": 特色
+          "name_sv-SE": Lilla Kinas Specialister
+          menu_items:
+            - item_number: s2
+              "name_zh-Hans": 重庆毛血旺
+              "description_sv-SE": Marinerat ankblod, kinesisk spam och, komagen i stark sichuansoppa.
+              price: 288 kr
+              annotation: 🌶️🌶️🌶️
+            - item_number: s3
+              "name_zh-Hans": 松鼠鱼
+              "description_sv-SE": Panerad marinerad hel fisk i sötsur sås.
+              price: (förfråga)
+            - item_number: s1
+              "name_zh-Hans": 麻辣香锅
+              "description_sv-SE": Marinerad kycklingfilé, ryggbiff, fläsk, stora räkor, komagen, gristarmar och kinesiska grönsaker i sichuansk chili pot med special sichuanska kryddor.
+              price: liten 228 kr, stor 388 kr (3人份)
+              annotation: 🌶️🌶️🌶️
+            - item_number: s4
+              "name_zh-Hans": 蜀香烤鱼
+              "description_sv-SE": Grillad hel fisk och kinesiska grönsaker i sichuansk hot pot med speciellal sichuanska kryddor.
+              price: 438 kr (3人份)
+              annotation: 🌶️🌶️🌶️
+            - item_number: s5
+              "name_zh-Hans": 酸汤老鸭煲
+              "description_sv-SE": Bräserad anka i buljong med kinesiska syrlig vitkål.
+              price: 218 kr
+        - "name_zh-Hans": 甜点
+          "name_sv-SE": Efterrätter
+          menu_items:
+            - item_number: 1
+              "name_zh-Hans": 香蕉冰
+              "name_sv-SE": Xiang Jiao Bing
+              "description_sv-SE": Friterad banan med vanilj glass
+              price: 89 kr
+            - item_number: 2
+              "name_zh-Hans": 炸鲜奶
+              "name_sv-SE": Zha Xian Nai
+              "description_sv-SE": Friterad mjölk med säsongens frukter
+              price: 89 kr
+            - item_number: 3
+              "name_zh-Hans": 冰淇淋配水果
+              "description_sv-SE": Vanilj glass med säsongens frukter
+              price: 89 kr
+            - item_number: 4
+              "name_zh-Hans": 椰子冰
+              "name_sv-SE": Kokosglass Deluxe
+              "description_sv-SE": Coconut ice cream Deluxe
+              price: 99 kr
+            - item_number: 5
+              "name_zh-Hans": 红糖冰粉
+              "description_sv-SE": Rotens putin med druvsockersås.
+              price: 89 kr

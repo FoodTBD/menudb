@@ -11,7 +11,8 @@ menu:
     - zh-Hant
     - en
   pages:
-    - sections:
+    - page_image_url: https://media.restaurangshogun.se/2021/04/6.jpg
+      sections:
         - menu_items:
             - item_number: 1
               "name_zh-Hant": 鮮蝦餃皇
