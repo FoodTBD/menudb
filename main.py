@@ -12,6 +12,7 @@ import strictyaml
 from jinja2 import Environment, FileSystemLoader
 
 import jinja_filters
+from schema import RESTAURANT_SCHEMA
 
 STATIC_DIR = "static"
 INPUT_DIR = "content"
@@ -45,7 +46,7 @@ def generate_menu_html(
     input_yaml_path: str, output_html_path: str, known_dishes: dict[str, Any]
 ) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
-        yaml_data = strictyaml.load(yaml_path.read(), label="!yaml")
+        yaml_data = strictyaml.load(yaml_path.read(), RESTAURANT_SCHEMA)
 
     # Inject the modification date into the YAML data
     mod_date = datetime.datetime.fromtimestamp(os.path.getmtime(input_yaml_path))
