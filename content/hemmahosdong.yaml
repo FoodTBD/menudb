@@ -24,30 +24,30 @@ menu:
               "name_sv-SE": Rättika med söt stark sås
               "description_sv-SE": Inlagd rättika med szechuan peppar, sesamfrön i en söt stark sas, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/rattika_mad_sot_stark_sas.jpg
-              annotation: 🌶️
               price: 79:-
+              spice_level: 1
             - item_number: 2
               "name_zh-Hans": 酸辣土豆丝
               "name_zh-Latn-pinyin": Suān là tǔdòu sī
               "name_sv-SE": Strimlad potatis med sötsur stark sås
               "description_sv-SE": Marinerade potatisstrimlor i vinäger- och chilisås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/strimlad_potatis_med_sotsur_stark_sas.jpg
-              annotation: 🌶️
               price: 79:-
+              spice_level: 1
             - item_number: 3
               "name_zh-Hans": 酸辣木耳
               "name_zh-Latn-pinyin": Suān là mù'ěr
               "name_sv-SE": Öronsvamp med sötsur sås
               "description_sv-SE": Marinerade fungus öronsvamp i vinäger- och chilisås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/oronsvamp_med_sotsur_sas.jpg
-              annotation: 🌶️
+              spice_level: 1
               price: 79:-
             - item_number: 4
               "name_zh-Hans": 红油腐竹
               "name_zh-Latn-pinyin": Hóng yóu fǔzhú
               "description_sv-SE": Marinerad tofu (soyabönor) skin i chili olja
-              annotation: 🌶️
               price: 79:-
+              spice_level: 1
         - "name_zh-Hans": 正餐
           "name_zh-Latn-pinyin": Huvudrätter
           menu_items:
@@ -58,32 +58,31 @@ menu:
               "description_sv-SE": Wokad tofu med grönsaker, soyasås, ostronsås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_tofu_med_gronsaker_serverad_med_stark_eller_mild_sas.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Hunan_cuisine#List_of_notable_dishes
-              annotation: 🌶️
               price: 159:-
+              spice_level: 1
             - item_number: 2
               "name_zh-Hans": 麻婆豆腐
               "name_zh-Latn-pinyin": Mápó dòufu
               "description_sv-SE": Wokad tofu med szechuan pepparsås, soyasås
-              annotation: 🌶️🌶️
+              spice_level: 2
               price: 149:-
             - item_number: 3
               "name_zh-Hans": 清炒时蔬
               "name_zh-Latn-pinyin": Qīngchǎo shíshū
               "description_sv-SE": Wokade säsongens grönsaker
-              annotation: 🥬
               price: 149:-
             - item_number: 4
               "name_zh-Hans": 红烧茄子
               "name_zh-Latn-pinyin": Hóngshāo qiézi
               "description_sv-SE": Bräserad aubergine med kockens söta, sura, salta och starka sås, soyasås, ostronsås
               wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
-              annotation: 🌶️
               price: 169:-
+              spice_level: 1
             - item_number: 5
               "name_zh-Hans": 酸辣土豆丝
               "name_zh-Latn-pinyin": Suānlà tǔdòu sī
               "description_sv-SE": Wokade potatisstrimlor med chili och vinäger smak, soyasås
-              annotation: 🌶️
+              spice_level: 1
               price: 109
             - item_number: 6
               "name_zh-Hans": 红烧排骨
@@ -91,13 +90,11 @@ menu:
               "description_sv-SE": Bräserad revbensspjäll med kockens sås, soyasås
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/128px-Mianjin_hongshao_paigu_2009_03.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
-              annotation: 🐖
               price: 189:-
             - item_number: 7
               "name_zh-Hans": 肉丝蒜苗
               "name_zh-Latn-pinyin": Ròu sī suànmíao
               "description_sv-SE": Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås
-              annotation: 🐖
               price: 169:-
     - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg
       sections:
@@ -110,8 +107,8 @@ menu:
               "name_sv-SE": Wokad stark kyckling
               "description_sv-SE": Friterad kyckling med torrstark szechuan peppar chili och jordnötter, sesamfrön, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_stark_kyckling.jpg
-              annotation: 🐓🌶️🌶️🌶️
               price: 189:-
+              spice_level: 3
             - item_number: 9
               "name_zh-Hans": 红烧鸡肉
               "name_zh-Latn-pinyin": Hóngshāo jīrò
@@ -119,58 +116,55 @@ menu:
               "description_sv-SE": Bräserad kyckling och grönsaker med en söt, salt och stark smak, soyasås, ostronsås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_kyckling_med_sot_stark_sas.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
-              annotation: 🐓🌶️
               price: 189:-
+              spice_level: 1
             - item_number: 10
               "name_zh-Hans": 水煮牛肉
               "name_zh-Latn-pinyin": Shuǐ zhǔ niúròu
               "name_sv-SE": Pocherad biff med grönsaker i szechuan soppa
               "description_sv-SE": Kokt biff med grönsaker på szechuan-vis, soyasås
-              annotation: 🐄🌶️🌶️🌶️
               price: 249:-
+              spice_level: 3
             - item_number: 13
               "name_zh-Hans": 飘香鸭
               "name_zh-Latn-pinyin": Piāo xiāng yā
               "name_sv-SE": Friterad anka med chili och jordnötssås
               "description_sv-SE": Friterad anka toppad med jordnötter, svartpeppar, sesamfrön, vetemjöl och chilisås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_anka_med_chili_och_jordnotssas.jpg
-              annotation: 🦆🌶️
               price: 229:-
+              spice_level: 1
             - item_number: 14
               "name_zh-Hans": 沸腾水煮鱼
               "name_zh-Latn-pinyin": Fèiténg shuǐ zhǔ yú
               "description_sv-SE": Pocherad fiskfilé szechuan soppa, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/img_20201105_190954078.jpg
-              annotation: 🐟🌶️🌶️🌶️
               price: 249:-
+              spice_level: 3
             - item_number: 15
               "name_zh-Hans": 葱姜炒虾
               "name_zh-Latn-pinyin": Cōng jiāng chǎo xiā
               "name_sv-SE": Wokade räkor med ingefära och salladslök
               "description_sv-SE": Wokade räkor med broccoli, lök och ingefära, ostronsås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokade_rakor_med_ingefara_och_salladslok.jpg
-              annotation: 🦐
               price: 189:-
             - item_number: 16
               "name_zh-Hans": 煎饺
               "name_zh-Latn-pinyin": Jiān jiǎo
-              "name_sv-SE": Stekta dumplings med kycklingfyllning (12 st)
+              "name_sv-SE": Stekta dumplings med kycklingfyllning
               "description_sv-SE": 12 st stekta kyckling dumplings (vetemjöl, kyckling, kinesisk gräslök, vitlök, soyasås, ingefära, sesamolja, ostronsås)
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/stekta_dumplings_med_kycklingfyllning_12st.jpg
-              annotation: 🐓
-              price: 149:-
+              price: 149:- (12 st)
             - item_number: 17
               "name_zh-Hans": 牛肉汤面 
               "name_zh-Latn-pinyin": Niúròu tāngmian
               "name_sv-SE": Nudelsoppa med biff och grönsaker
               "description_sv-SE": Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås
-              annotation: 🐄🌶️
               price: 169:-
+              spice_level: 1
             - item_number: 18
               "name_zh-Hans": 干炒牛河 
               "name_zh-Latn-pinyin": Gàn chǎo niú hé
               "name_sv-SE": Wokade platta risnudlar med biff, böngroddar och lök
               "description_sv-SE": Wokade risnudlar med biff, ägg, lök och böngroddar, soyasås
-              annotation: 🐄
               price: 169:-
       page_footer: "Note: ONE dish includes ONE portion of rice. 一份菜自带一份米板. Additional Rice: 15:- / portion 额外加米饭：15 克朗一份"

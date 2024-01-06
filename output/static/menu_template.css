@@ -1,0 +1,100 @@
+body {
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Set a maximum width for the content */
+    max-width: 1200px;
+    /* Center the container horizontally */
+    margin: 0 auto;
+}
+
+/* Apply styles to each column */
+.column {
+    /* Each column takes up 50% of the container width with some spacing */
+    flex-basis: calc(50% - 20px);
+    /* Include padding and border in the column's total width */
+    box-sizing: border-box;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .container {
+        /* Change to a single column layout */
+        flex-direction: column;
+    }
+
+    .column {
+        /* Full width for columns on mobile */
+        flex-basis: 100%;
+    }
+}
+
+.left-column {
+    padding-right: 20px;
+}
+
+.left-column img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.right-column img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+.menu-table th {
+    padding: 1rem;
+}
+
+.menu-table td {
+    /* background-color: aliceblue; */
+    padding: 0.6rem 0.2rem;
+    vertical-align: top;
+}
+
+.menu-table td span.menu-item-name {
+    font-weight: bold;
+}
+
+
+.menu-table td div.menu-item-description {
+    padding-top: 0.2rem;
+}
+
+.menu-table td span.menu-item-description {
+    font-size: small;
+    color: #666;
+}
+
+.menu-table td div.menu-item-note {
+    padding-top: 0.2rem;
+}
+
+.menu-table td span.menu-item-note {
+    font-size: small;
+    color: #666;
+}
+
+.menu-table .menu-item-price-note {
+    font-size: 0.6rem;
+    color: #666;
+}
+
+.menu-table .menu-table-price-column {
+    text-align: right;
+}
+
+.menu-table .menu-table-image-column {
+    text-align: right;
+}
+
+.menu-table .menu-table-image-column .btn-googleimage {
+    width: 100%;
+}

@@ -87,12 +87,23 @@ def generate_menu_html(
                                     #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
                                     #     )
 
+    language_codes = []
+    if yaml_dict.get("menu"):
+        language_codes = yaml_dict["menu"]["language_codes"]
+        if "en" not in language_codes:
+            language_codes.append("en")
+
     env = Environment(loader=FileSystemLoader("."))
+
+    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+    env.trim_blocks = True
+    env.lstrip_blocks = True
+
     for filter_name in jinja_filters.ALL_FILTERS:
         env.filters[filter_name] = getattr(jinja_filters, filter_name)
 
     template = env.get_template("templates/menu_template.j2")
-    rendered_html = template.render(data=yaml_dict)
+    rendered_html = template.render(data=yaml_dict, language_codes=language_codes)
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
         html_path.write(rendered_html)
@@ -102,6 +113,11 @@ def generate_menu_html(
 
 def generate_index_html(yaml_dicts: list[str], output_html_path: str) -> None:
     env = Environment(loader=FileSystemLoader("."))
+
+    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+    env.trim_blocks = True
+    env.lstrip_blocks = True
+
     for filter_name in jinja_filters.ALL_FILTERS:
         env.filters[filter_name] = getattr(jinja_filters, filter_name)
 

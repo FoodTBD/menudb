@@ -6,84 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - Hemma Hos Dong, Stockholm</title>
     <link rel="stylesheet" type="text/css" href="static/style.css">
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            /* Set a maximum width for the content */
-            max-width: 1200px;
-            /* Center the container horizontally */
-            margin: 0 auto;
-        }
-
-        /* Apply styles to each column */
-        .column {
-            /* Each column takes up 50% of the container width with some spacing */
-            flex-basis: calc(50% - 20px);
-            /* Include padding and border in the column's total width */
-            box-sizing: border-box;
-        }
-
-        /* Media query for mobile devices */
-        @media (max-width: 767px) {
-            .container {
-                /* Change to a single column layout */
-                flex-direction: column;
-            }
-
-            .column {
-                /* Full width for columns on mobile */
-                flex-basis: 100%;
-            }
-        }
-
-        .left-column img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .right-column img {
-            width: 64px;
-            height: 64px;
-            object-fit: cover;
-        }
-
-        .left-column {
-            padding-right: 20px;
-        }
-
-        .menu-section-name-primary {
-            font-weight: bold;
-        }
-
-        .menu-table td {
-            padding: 4px;
-            padding-bottom: 12px;
-        }
-
-        .menu-table-first-column {
-            text-align: center;
-            min-width: 48px;
-        }
-
-        .menu-table-last-column {
-            text-align: right;
-        }
-
-        .menu-item-name-primary {
-            font-weight: bold;
-        }
-
-        .menu-item-small {
-            font-size: small;
-        }
-
-        .btn-wikipedia {
-            font-family: serif;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
 
 <body>
@@ -91,619 +14,460 @@
         <h1>Hemma Hos Dong</h1>
         <p>
             Google Maps: <a href="https://www.google.com/maps/search/Hemma%20Hos%20Dong%2C%20Karlbergsv%C3%A4gen%2041%2C%20Stockholm%2C%20SE" target="_blank" rel="noopener">Karlbergsvägen 41, Stockholm, SE</a><br>
-            Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noopener">hemmahosdong.wordpress.com</a><br>Instagram: <a href="https://www.instagram.com/hemmahosdong/" target="_blank" rel="noopener">instagram.com/hemmahosdong</a><br>
-        </p>
+Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noopener">hemmahosdong.wordpress.com</a><br>Instagram: <a href="https://www.instagram.com/hemmahosdong/" target="_blank" rel="noopener">instagram.com/hemmahosdong</a><br>        </p>
     </header>
-    
-    
+    <hr>
     <section class="section">
         <div class="container">
             <div class="column left-column">
-                
                 <a href="https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg" target="_blank" rel="noopener"><img src="https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg"
                         alt="Menu Image"></a>
-                
             </div>
             <div class="column right-column">
                 <table class="menu-table">
-                    <tbody>
-                        
+                    <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">前餐 </span>Förrätter
+                                <span class="menu-section-name-primary">前餐</span>
+                                Förrätter
+                                
+                                
                             </th>
                         </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/rattika_mad_sot_stark_sas.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('麻香萝卜')">
-                            </td>
-                            <td>
-                                1.
+                    </thead <tbody>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">1.</span>                                <span class="menu-item-name menu-item-name-primary">麻香萝卜</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('麻香萝卜', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Rättika med söt stark sås</span>
+                            </div>
 
-                                <span class="menu-item-name-primary">麻香萝卜</span>
-                                
-                                (Máxiāng luóbo)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('麻香萝卜', 'zh-Hans')">🗣️</button>
-                                <br>Rättika med söt stark sås<br>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Inlagd rättika med szechuan peppar, sesamfrön i en söt stark sas, soyasås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">79:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/rattika_mad_sot_stark_sas.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('麻香萝卜')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">2.</span>                                <span class="menu-item-name menu-item-name-primary">酸辣土豆丝</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('酸辣土豆丝', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Strimlad potatis med sötsur stark sås</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy and Sour Shredded Potato</span>
+                            </div>
 
-                                <span class="menu-item-small">Inlagd rättika med szechuan peppar, sesamfrön i en söt stark sas, soyasås<br></span>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Marinerade potatisstrimlor i vinäger- och chilisås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">79:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/strimlad_potatis_med_sotsur_stark_sas.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('酸辣土豆丝')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">3.</span>                                <span class="menu-item-name menu-item-name-primary">酸辣木耳</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('酸辣木耳', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Öronsvamp med sötsur sås</span>
+                            </div>
 
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                79:-<br>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Marinerade fungus öronsvamp i vinäger- och chilisås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">79:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/oronsvamp_med_sotsur_sas.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('酸辣木耳')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">4.</span>                                <span class="menu-item-name menu-item-name-primary">红油腐竹</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('红油腐竹', 'zh-Hans')">🗣️</a>
 
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/strimlad_potatis_med_sotsur_stark_sas.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('酸辣土豆丝')">
-                            </td>
-                            <td>
-                                2.
+                            </div>
 
-                                <span class="menu-item-name-primary">酸辣土豆丝</span>
-                                
-                                (Suān là tǔdòu sī)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('酸辣土豆丝', 'zh-Hans')">🗣️</button>
-                                <br>Strimlad potatis med sötsur stark sås<br>
-
-                                <span class="menu-item-small">Marinerade potatisstrimlor i vinäger- och chilisås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                79:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/oronsvamp_med_sotsur_sas.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('酸辣木耳')">
-                            </td>
-                            <td>
-                                3.
-
-                                <span class="menu-item-name-primary">酸辣木耳</span>
-                                
-                                (Suān là mù'ěr)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('酸辣木耳', 'zh-Hans')">🗣️</button>
-                                <br>Öronsvamp med sötsur sås<br>
-
-                                <span class="menu-item-small">Marinerade fungus öronsvamp i vinäger- och chilisås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                79:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('红油腐竹')">🔎
-                                    🖼️</button>
-                            </td>
-                            <td>
-                                4.
-
-                                <span class="menu-item-name-primary">红油腐竹</span>
-                                
-                                (Hóng yóu fǔzhú)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('红油腐竹', 'zh-Hans')">🗣️</button>
-                                <br>
-
-                                <span class="menu-item-small">Marinerad tofu (soyabönor) skin i chili olja<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                79:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Marinerad tofu (soyabönor) skin i chili olja</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">79:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('红油腐竹')">🖼️ 🔎</button>
+                        </td>
+                    </tr>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">正餐 </span>Huvudrätter
+                                <span class="menu-section-name-primary">正餐</span>
+                                Huvudrätter
+                                
+                                
                             </th>
                         </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/wokad_tofu_med_gronsaker_serverad_med_stark_eller_mild_sas.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('家常豆腐')">
-                            </td>
-                            <td>
-                                1.
+                    </thead <tbody>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">1.</span>                                <span class="menu-item-name menu-item-name-primary">家常豆腐</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('家常豆腐', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wokad tofu med grönsaker</span>
+                            </div>
 
-                                <span class="menu-item-name-primary">家常豆腐</span>
-                                
-                                (Jiācháng dòufu)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('家常豆腐', 'zh-Hans')">🗣️</button>
-                                <br>Wokad tofu med grönsaker<br>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Wokad tofu med grönsaker, soyasås, ostronsås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">159:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/wokad_tofu_med_gronsaker_serverad_med_stark_eller_mild_sas.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('家常豆腐')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">2.</span>                                <span class="menu-item-name menu-item-name-primary">麻婆豆腐</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Mapo_tofu"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Mapo Tofu</span></a>
+                            </div>
 
-                                <span class="menu-item-small">Wokad tofu med grönsaker, soyasås, ostronsås<br></span>
+                            <div class="menu-item-description">
+🌶️🌶️                                <span class="menu-item-description">Wokad tofu med szechuan pepparsås, soyasås</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Spicy tofu with minced meat in bean sauce</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">149:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('麻婆豆腐')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">3.</span>                                <span class="menu-item-name menu-item-name-primary">清炒时蔬</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('清炒时蔬', 'zh-Hans')">🗣️</a>
 
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                159:-<br>
+                            </div>
 
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('麻婆豆腐')">
-                            </td>
-                            <td>
-                                2.
+                            <div class="menu-item-description">
+                                <span class="menu-item-description">Wokade säsongens grönsaker</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">149:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('清炒时蔬')">🖼️ 🔎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">4.</span>                                <span class="menu-item-name menu-item-name-primary">红烧茄子</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('红烧茄子', 'zh-Hans')">🗣️</a>
 
-                                <span class="menu-item-name-primary">麻婆豆腐</span>
-                                
-                                (Mápó dòufu)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</button>
-                                <br>
+                            </div>
 
-                                <span class="menu-item-small">Wokad tofu med szechuan pepparsås, soyasås<br></span>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Bräserad aubergine med kockens söta, sura, salta och starka sås, soyasås, ostronsås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">169:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('红烧茄子')">🖼️ 🔎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">5.</span>                                <span class="menu-item-name menu-item-name-primary">酸辣土豆丝</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('酸辣土豆丝', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy and Sour Shredded Potato</span>
+                            </div>
 
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️🌶️
-                                149:-<br>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Wokade potatisstrimlor med chili och vinäger smak, soyasås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">109</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('酸辣土豆丝')">🖼️ 🔎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">6.</span>                                <span class="menu-item-name menu-item-name-primary">红烧排骨</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('红烧排骨', 'zh-Hans')">🗣️</a>
 
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('清炒时蔬')">🔎
-                                    🖼️</button>
-                            </td>
-                            <td>
-                                3.
+                            </div>
 
-                                <span class="menu-item-name-primary">清炒时蔬</span>
-                                
-                                (Qīngchǎo shíshū)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('清炒时蔬', 'zh-Hans')">🗣️</button>
-                                <br>
+                            <div class="menu-item-description">
+                                <span class="menu-item-description">Bräserad revbensspjäll med kockens sås, soyasås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">189:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/128px-Mianjin_hongshao_paigu_2009_03.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('红烧排骨')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">7.</span>                                <span class="menu-item-name menu-item-name-primary">肉丝蒜苗</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('肉丝蒜苗', 'zh-Hans')">🗣️</a>
 
-                                <span class="menu-item-small">Wokade säsongens grönsaker<br></span>
+                            </div>
 
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🥬
-                                149:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('红烧茄子')">🔎
-                                    🖼️</button>
-                            </td>
-                            <td>
-                                4.
-
-                                <span class="menu-item-name-primary">红烧茄子</span>
-                                
-                                (Hóngshāo qiézi)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('红烧茄子', 'zh-Hans')">🗣️</button>
-                                <br>
-
-                                <span class="menu-item-small">Bräserad aubergine med kockens söta, sura, salta och starka sås, soyasås, ostronsås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                169:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('酸辣土豆丝')">🔎
-                                    🖼️</button>
-                            </td>
-                            <td>
-                                5.
-
-                                <span class="menu-item-name-primary">酸辣土豆丝</span>
-                                
-                                (Suānlà tǔdòu sī)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('酸辣土豆丝', 'zh-Hans')">🗣️</button>
-                                <br>
-
-                                <span class="menu-item-small">Wokade potatisstrimlor med chili och vinäger smak, soyasås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🌶️
-                                109<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/128px-Mianjin_hongshao_paigu_2009_03.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('红烧排骨')">
-                            </td>
-                            <td>
-                                6.
-
-                                <span class="menu-item-name-primary">红烧排骨</span>
-                                
-                                (Hóngshāo páigǔ)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('红烧排骨', 'zh-Hans')">🗣️</button>
-                                <br>
-
-                                <span class="menu-item-small">Bräserad revbensspjäll med kockens sås, soyasås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐖
-                                189:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('肉丝蒜苗')">🔎
-                                    🖼️</button>
-                            </td>
-                            <td>
-                                7.
-
-                                <span class="menu-item-name-primary">肉丝蒜苗</span>
-                                
-                                (Ròu sī suànmíao)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('肉丝蒜苗', 'zh-Hans')">🗣️</button>
-                                <br>
-
-                                <span class="menu-item-small">Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐖
-                                169:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        
+                            <div class="menu-item-description">
+                                <span class="menu-item-description">Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">169:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('肉丝蒜苗')">🖼️ 🔎</button>
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
-                
             </div>
         </div>
     </section>
     <hr>
-    
     <section class="section">
         <div class="container">
             <div class="column left-column">
-                
                 <a href="https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg" target="_blank" rel="noopener"><img src="https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg"
                         alt="Menu Image"></a>
-                
             </div>
             <div class="column right-column">
                 <table class="menu-table">
-                    <tbody>
-                        
+                    <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">正餐 </span>Huvudrätter
+                                <span class="menu-section-name-primary">正餐</span>
+                                Huvudrätter
+                                
+                                
                             </th>
                         </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/wokad_stark_kyckling.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('山城辣子鸡')">
-                            </td>
-                            <td>
-                                8.
+                    </thead <tbody>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">8.</span>                                <span class="menu-item-name menu-item-name-primary">山城辣子鸡</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('山城辣子鸡', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wokad stark kyckling</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Laziji"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Laziji</span></a>
+                            </div>
 
-                                <span class="menu-item-name-primary">山城辣子鸡</span>
-                                
-                                (Shānchéng làzǐ jī)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('山城辣子鸡', 'zh-Hans')">🗣️</button>
-                                <br>Wokad stark kyckling<br>
+                            <div class="menu-item-description">
+🌶️🌶️🌶️                                <span class="menu-item-description">Friterad kyckling med torrstark szechuan peppar chili och jordnötter, sesamfrön, soyasås</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Deep-fried chicken with Sichuan peppercorns and chilies</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">189:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/wokad_stark_kyckling.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('山城辣子鸡')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">9.</span>                                <span class="menu-item-name menu-item-name-primary">红烧鸡肉</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('红烧鸡肉', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Bräserad kyckling med söt stark sås</span>
+                            </div>
 
-                                <span class="menu-item-small">Friterad kyckling med torrstark szechuan peppar chili och jordnötter, sesamfrön, soyasås<br></span>
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Bräserad kyckling och grönsaker med en söt, salt och stark smak, soyasås, ostronsås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">189:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/friterad_kyckling_med_sot_stark_sas.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('红烧鸡肉')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">10.</span>                                <span class="menu-item-name menu-item-name-primary">水煮牛肉</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('水煮牛肉', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pocherad biff med grönsaker i szechuan soppa</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Beef</span></a>
+                            </div>
 
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐓🌶️🌶️🌶️
-                                189:-<br>
+                            <div class="menu-item-description">
+🌶️🌶️🌶️                                <span class="menu-item-description">Kokt biff med grönsaker på szechuan-vis, soyasås</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Poached beef in chili oil</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">249:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('水煮牛肉')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">13.</span>                                <span class="menu-item-name menu-item-name-primary">飘香鸭</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('飘香鸭', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Friterad anka med chili och jordnötssås</span>
+                            </div>
 
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/friterad_kyckling_med_sot_stark_sas.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('红烧鸡肉')">
-                            </td>
-                            <td>
-                                9.
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Friterad anka toppad med jordnötter, svartpeppar, sesamfrön, vetemjöl och chilisås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">229:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/friterad_anka_med_chili_och_jordnotssas.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('飘香鸭')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">14.</span>                                <span class="menu-item-name menu-item-name-primary">沸腾水煮鱼</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('沸腾水煮鱼', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Fish</span></a>
+                            </div>
 
-                                <span class="menu-item-name-primary">红烧鸡肉</span>
-                                
-                                (Hóngshāo jīrò)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('红烧鸡肉', 'zh-Hans')">🗣️</button>
-                                <br>Bräserad kyckling med söt stark sås<br>
+                            <div class="menu-item-description">
+🌶️🌶️🌶️                                <span class="menu-item-description">Pocherad fiskfilé szechuan soppa, soyasås</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Poached fish in chili oil</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">249:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/img_20201105_190954078.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('沸腾水煮鱼')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">15.</span>                                <span class="menu-item-name menu-item-name-primary">葱姜炒虾</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('葱姜炒虾', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wokade räkor med ingefära och salladslök</span>
+                            </div>
 
-                                <span class="menu-item-small">Bräserad kyckling och grönsaker med en söt, salt och stark smak, soyasås, ostronsås<br></span>
+                            <div class="menu-item-description">
+                                <span class="menu-item-description">Wokade räkor med broccoli, lök och ingefära, ostronsås</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">189:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/wokade_rakor_med_ingefara_och_salladslok.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('葱姜炒虾')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">16.</span>                                <span class="menu-item-name menu-item-name-primary">煎饺</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('煎饺', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stekta dumplings med kycklingfyllning</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jiaozi#Types"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Pan-Fried Jiaozi</span></a>
+                            </div>
 
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐓🌶️
-                                189:-<br>
+                            <div class="menu-item-description">
+                                <span class="menu-item-description">12 st stekta kyckling dumplings (vetemjöl, kyckling, kinesisk gräslök, vitlök, soyasås, ingefära, sesamolja, ostronsås)</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Crispy pan-fried dumplings</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">149:- (12 st)</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://hemmahosdong.files.wordpress.com/2020/11/stekta_dumplings_med_kycklingfyllning_12st.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('煎饺')">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">17.</span>                                <span class="menu-item-name menu-item-name-primary">牛肉汤面</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('牛肉汤面', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Nudelsoppa med biff och grönsaker</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Beef_noodle_soup"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Beef Noodle Soup</span></a>
+                            </div>
 
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('水煮牛肉')">
-                            </td>
-                            <td>
-                                10.
+                            <div class="menu-item-description">
+🌶️                                <span class="menu-item-description">Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Noodle soup with beef in aromatic broth</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">169:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('牛肉汤面')">🖼️ 🔎</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+<span class="menu-item-number">18.</span>                                <span class="menu-item-name menu-item-name-primary">干炒牛河</span>
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('干炒牛河', 'zh-Hans')">🗣️</a>
+ <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wokade platta risnudlar med biff, böngroddar och lök</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Beef_chow_fun"
+                                    target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Beef Chow Fun</span></a>
+                            </div>
 
-                                <span class="menu-item-name-primary">水煮牛肉</span>
-                                
-                                (Shuǐ zhǔ niúròu)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('水煮牛肉', 'zh-Hans')">🗣️</button>
-                                <br>Pocherad biff med grönsaker i szechuan soppa<br>
-
-                                <span class="menu-item-small">Kokt biff med grönsaker på szechuan-vis, soyasås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐄🌶️🌶️🌶️
-                                249:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/friterad_anka_med_chili_och_jordnotssas.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('飘香鸭')">
-                            </td>
-                            <td>
-                                13.
-
-                                <span class="menu-item-name-primary">飘香鸭</span>
-                                
-                                (Piāo xiāng yā)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('飘香鸭', 'zh-Hans')">🗣️</button>
-                                <br>Friterad anka med chili och jordnötssås<br>
-
-                                <span class="menu-item-small">Friterad anka toppad med jordnötter, svartpeppar, sesamfrön, vetemjöl och chilisås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🦆🌶️
-                                229:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/img_20201105_190954078.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('沸腾水煮鱼')">
-                            </td>
-                            <td>
-                                14.
-
-                                <span class="menu-item-name-primary">沸腾水煮鱼</span>
-                                
-                                (Fèiténg shuǐ zhǔ yú)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('沸腾水煮鱼', 'zh-Hans')">🗣️</button>
-                                <br>
-
-                                <span class="menu-item-small">Pocherad fiskfilé szechuan soppa, soyasås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐟🌶️🌶️🌶️
-                                249:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/wokade_rakor_med_ingefara_och_salladslok.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('葱姜炒虾')">
-                            </td>
-                            <td>
-                                15.
-
-                                <span class="menu-item-name-primary">葱姜炒虾</span>
-                                
-                                (Cōng jiāng chǎo xiā)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('葱姜炒虾', 'zh-Hans')">🗣️</button>
-                                <br>Wokade räkor med ingefära och salladslök<br>
-
-                                <span class="menu-item-small">Wokade räkor med broccoli, lök och ingefära, ostronsås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🦐
-                                189:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://hemmahosdong.files.wordpress.com/2020/11/stekta_dumplings_med_kycklingfyllning_12st.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('煎饺')">
-                            </td>
-                            <td>
-                                16.
-
-                                <span class="menu-item-name-primary">煎饺</span>
-                                
-                                (Jiān jiǎo)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('煎饺', 'zh-Hans')">🗣️</button>
-                                <br>Stekta dumplings med kycklingfyllning (12 st)<br>
-
-                                <span class="menu-item-small">12 st stekta kyckling dumplings (vetemjöl, kyckling, kinesisk gräslök, vitlök, soyasås, ingefära, sesamolja, ostronsås)<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐓
-                                149:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('牛肉汤面')">🔎
-                                    🖼️</button>
-                            </td>
-                            <td>
-                                17.
-
-                                <span class="menu-item-name-primary">牛肉汤面</span>
-                                
-                                (Niúròu tāngmian)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('牛肉汤面', 'zh-Hans')">🗣️</button>
-                                <br>Nudelsoppa med biff och grönsaker<br>
-
-                                <span class="menu-item-small">Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐄🌶️
-                                169:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td class="menu-table-first-column">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('干炒牛河')">
-                            </td>
-                            <td>
-                                18.
-
-                                <span class="menu-item-name-primary">干炒牛河</span>
-                                
-                                (Gàn chǎo niú hé)
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('干炒牛河', 'zh-Hans')">🗣️</button>
-                                <br>Wokade platta risnudlar med biff, böngroddar och lök<br>
-
-                                <span class="menu-item-small">Wokade risnudlar med biff, ägg, lök och böngroddar, soyasås<br></span>
-
-                                </span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                🐄
-                                169:-<br>
-
-                                </span>
-                            </td>
-                        </tr>
-                        
-                        
+                            <div class="menu-item-description">
+                                <span class="menu-item-description">Wokade risnudlar med biff, ägg, lök och böngroddar, soyasås</span> <span
+                                    class="menu-item-divider">/</span>                                 <span class="menu-item-description">Stir-fried flat rice noodles with beef</span>                            </div>                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">169:-</span>
+                        </td>
+                        <td class="menu-table-image-column">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image"
+                                onclick="openGoogleImageSearch('干炒牛河')">
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
-                <p>Note: ONE dish includes ONE portion of rice. 一份菜自带一份米板. Additional Rice: 15:- / portion 额外加米饭：15 克朗一份</p>
-            </div>
+<p>Note: ONE dish includes ONE portion of rice. 一份菜自带一份米板. Additional Rice: 15:- / portion 额外加米饭：15 克朗一份</p>            </div>
         </div>
     </section>
     <hr>
-    
-    
     <footer class="footer">
         <p><small>Generated by MenuDB—a FoodTBD project - Menu updated 2024-01-06</small></p>
     </footer>

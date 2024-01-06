@@ -131,6 +131,6 @@ menu:
           "name_en": Noodles
           menu_items:
             - "name_zh-Hans": 担担面
-              annotation: 1份 / 1 serving
               price: 129:-
+              price_note: (1份 / 1 serving)
       page_footer: "备注：米饭 15kr/人 / Remarks: Rice 15kr/person"

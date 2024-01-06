@@ -6,84 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - {{ data.restaurant.name }}, {{ data.restaurant.city }}</title>
     <link rel="stylesheet" type="text/css" href="static/style.css">
-    <style>
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            /* Set a maximum width for the content */
-            max-width: 1200px;
-            /* Center the container horizontally */
-            margin: 0 auto;
-        }
-
-        /* Apply styles to each column */
-        .column {
-            /* Each column takes up 50% of the container width with some spacing */
-            flex-basis: calc(50% - 20px);
-            /* Include padding and border in the column's total width */
-            box-sizing: border-box;
-        }
-
-        /* Media query for mobile devices */
-        @media (max-width: 767px) {
-            .container {
-                /* Change to a single column layout */
-                flex-direction: column;
-            }
-
-            .column {
-                /* Full width for columns on mobile */
-                flex-basis: 100%;
-            }
-        }
-
-        .left-column img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-        }
-
-        .right-column img {
-            width: 64px;
-            height: 64px;
-            object-fit: cover;
-        }
-
-        .left-column {
-            padding-right: 20px;
-        }
-
-        .menu-section-name-primary {
-            font-weight: bold;
-        }
-
-        .menu-table td {
-            padding: 4px;
-            padding-bottom: 12px;
-        }
-
-        .menu-table-first-column {
-            text-align: center;
-            min-width: 48px;
-        }
-
-        .menu-table-last-column {
-            text-align: right;
-        }
-
-        .menu-item-name-primary {
-            font-weight: bold;
-        }
-
-        .menu-item-small {
-            font-size: small;
-        }
-
-        .btn-wikipedia {
-            font-family: serif;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
 
 <body>
@@ -99,6 +22,8 @@
         </p>
     </header>
     {% if data.menu %}
+    {% set primary_lang = language_codes[0] %}
+    <hr>
     {% for page in data.menu.pages %}
     <section class="section">
         <div class="container">
@@ -114,74 +39,87 @@
             </div>
             <div class="column right-column">
                 <table class="menu-table">
-                    <tbody>
+                    <thead>
                         {% for section in page.sections %}
                         <tr>
                             <th colspan="3">
-                                {% for lang in data.menu.language_codes if section['name_' + lang] -%}
-                                {% if lang == data.menu.language_codes[0] -%}
-                                <span class="menu-section-name-primary">{{ section['name_' + lang] }} </span>
-                                {%- else -%}
+                                {% for lang in language_codes %}
+                                {% if lang == primary_lang %}
+                                <span class="menu-section-name-primary">{{ section['name_' + lang] }}</span>
+                                {% else %}
                                 {{ section['name_' + lang] }}
-                                {%- endif %}
-                                {%- endfor %}
+                                {% endif %}
+                                {% endfor %}
                             </th>
                         </tr>
-                        {% for item in section.menu_items %}
-                        <tr>
-                            <td class="menu-table-first-column">
-                                {% if item['image_url'] -%}
-                                <img src="{{ item['image_url'] }}" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">
-                                {%- else -%}
-                                <button type="button" class="btn-googleimage"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">🔎
-                                    🖼️</button>
-                                {%- endif %}
-                            </td>
-                            <td>
-                                {% if item['item_number'] %}{{ item['item_number'] }}.{% endif %}
+                    </thead <tbody>
+                    {% for item in section.menu_items %}
+                    <tr>
+                        <td class="menu-table-text-column">
+                            <div class="menu-item-name">
+                                {% if item['item_number'] %}<span class="menu-item-number">{{ item['item_number']
+                                    }}.</span>{% endif %}
 
-                                {% for lang in data.menu.language_codes if item['name_' + lang] and not lang ==
-                                'zh-Latn-pinyin' -%}
-                                {%- set dish_name = item['name_' + lang] -%}
-                                {%- set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] -%}
-                                {% if lang == data.menu.language_codes[0] -%}
-                                <span class="menu-item-name-primary">{{ dish_name | styled_text_format }}</span>
-                                {# Special case for Pinyin #}
-                                {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}({{
-                                item['name_zh-Latn-pinyin'] }}){% endif %}
-                                <button type="button" class="btn-speak"
-                                    onclick="speakText('{{ dish_name }}', '{{ lang }}')">🗣️</button>
-                                {# {% if item['wikipedia_url'] %}<button type="button" class="btn-wikipedia"
-                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')">W</button>{%
-                                endif -%} #}
-                                {%- else -%}
-                                {% if wikipedia_url %}<a href="{{ wikipedia_url }}">{%
-                                    endif -%}
-                                    {{ dish_name | styled_text_format }}
-                                    {%- if wikipedia_url %}</a>{% endif %}
-                                {%- endif %}<br>
-                                {%- endfor %}
+                                {%- for lang in language_codes if item['name_' + lang] and not lang ==
+                                'zh-Latn-pinyin' %}
+                                {% set dish_name = item['name_' + lang] %}
+                                {% if lang == primary_lang %}
+                                <span class="menu-item-name menu-item-name-primary">{{ dish_name | styled_text_format
+                                    }}</span>
+                                {# Special case Pinyin to be in parentheses on the same line as primary lang #}
+                                {# {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}
+                                (<span class="menu-item-name-pinyin">{{ item['name_zh-Latn-pinyin'] }}</span>)
+                                {% endif %} #}
+                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                    onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</a>
+                                {% else %}
+                                {% set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] %}
+                                {% if wikipedia_url %}<a class="menu-item-wikipedia-link" href="{{ wikipedia_url }}"
+                                    target="_blank" rel="noopener">{%
+                                    endif %}<span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                        styled_text_format
+                                        }}</span>{% if wikipedia_url %}</a>{% endif %}
+                                {% endif %}
+                                {% if not loop.last %} <span class="menu-item-divider">/</span> {% endif %}
+                                {% endfor +%}
+                            </div>
 
-                                <span class="menu-item-small">{% for lang in data.menu.language_codes if
-                                    item['description_' + lang] -%}
-                                    {{ item['description_' + lang] | styled_text_format }}<br>
-                                    {%- endfor %}</span>
+                            <div class="menu-item-description">
+                                {% for _ in range(item['spice_level'] | default('0') | int) %}🌶️{% endfor %}
 
-                                {% if item['note'] %}<span class="menu-item-small">{{ item['note'] | styled_text_format
-                                    }}{% endif %}</span>
-                            </td>
-                            <td class="menu-table-last-column">
-                                {{ item['annotation'] }}
-                                {{ item['price'] }}<br>
+                                {%- for lang in language_codes if item['description_' + lang] %}
+                                <span class="menu-item-description">{{ item['description_' + lang] |
+                                    styled_text_format }}</span>{% if not loop.last %} <span
+                                    class="menu-item-divider">/</span> {% endif %}
+                                {% endfor %}
+                            </div>
 
-                                {% if item['price_note'] %}<span class="menu-item-small">{{ item['price_note'] |
-                                    styled_text_format }}{% endif %}</span>
-                            </td>
-                        </tr>
-                        {% endfor %}
-                        {% endfor %}
+                            {%- if item['note'] %}
+                            <div class="menu-item-note">
+                                <span class="menu-item-note">{{ item['note'] |
+                                    styled_text_format }}</span>
+                            </div>
+                            {% endif %}
+                        </td>
+                        <td class="menu-table-price-column">
+                            <span class="menu-item-price">{{ item['price'] }}</span>
+                            {%- if item['price_note'] %}<br>
+                            <span class="menu-item-price-note">{{ item['price_note'] | styled_text_format
+                                }}</span>
+                            {% endif +%}
+                        </td>
+                        <td class="menu-table-image-column">
+                            {% if item['image_url'] %}
+                            <img src="{{ item['image_url'] }}" alt="Dish Image"
+                                onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
+                            {% else %}
+                            <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️ 🔎</button>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    {% endfor %}
                     </tbody>
                 </table>
                 {% if page.page_footer %}<p>{{ page.page_footer }}</p>{% endif %}

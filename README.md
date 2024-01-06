@@ -16,3 +16,4 @@
 * Add index nav link
 * Google Analytics
 * Cantonese TTS
+* YAML schema validation
