@@ -5,7 +5,6 @@ restaurant:
   city: Stockholm
   country_code: SE
   tags: japanese, chinese, dimsum
-  googlemaps_url: https://maps.app.goo.gl/o4KKEDB6e9ZHt7E38
   homepage_url: https://restaurangshogun.se/
 menu:
   language_codes:

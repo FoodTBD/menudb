@@ -5,14 +5,13 @@ restaurant:
   city: Cupertino, CA
   country_code: US
   tags: chinese, shanghaiese, xiaolongbao
-  googlemaps_url: https://maps.app.goo.gl/NYFJyj21kTzqjVBy9
   facebook_url: https://www.facebook.com/pages/XLB-Kitchen/503057360125929
 menu:
   language_codes:
     - zh-Hans
     - en
   pages:
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipPqOC48rWZPwOJExE4NG4c7KqnxVf8KgdF8msf0=s1354-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPqOC48rWZPwOJExE4NG4c7KqnxVf8KgdF8msf0=s1354-k-no
       sections:
         - "name_zh-Hans": 冷盤
           "name_en": Appetizers
@@ -65,7 +64,7 @@ menu:
               "name_zh-Hans": 绍兴醉鸡
               "name_en": Chicken in Wine Sauce
               price: 8.95            
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipM2aausW7T_OgKp3AyD_Cl9YHTD6_cjTUv5zqwD=s1354-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipM2aausW7T_OgKp3AyD_Cl9YHTD6_cjTUv5zqwD=s1354-k-no
       sections:
         - "name_zh-Hans": 湯類
           "name_en": Soup
@@ -106,7 +105,7 @@ menu:
               "name_zh-Hans": 什锦馄饨汤
               "name_en": Wor [sic] Wonton Soup
               price: 12.95
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipOMqb7gJ4Zfom1h5X3gvPCMdksDchc_kG3tyEQo=s1354-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipOMqb7gJ4Zfom1h5X3gvPCMdksDchc_kG3tyEQo=s1354-k-no
       sections:
         - "name_zh-Hans": 招牌菜
           "name_en": House Special
@@ -166,7 +165,7 @@ menu:
               "name_zh-Hans": 山城毛血旺
               "name_en": Blood Wang
               price: 20.95
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipMrwpoWAPRzA_7CBg78oL69nzE2vbNtTP9WqM1a=s1016-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMrwpoWAPRzA_7CBg78oL69nzE2vbNtTP9WqM1a=s1016-k-no
       sections:
         - "name_zh-Hans": 海鲜类
           "name_en": Seafood
@@ -199,7 +198,7 @@ menu:
               "name_zh-Hans": 核桃虾
               "name_en": Honey Walnut Prawns
               price: 18.95
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipOcSns6pR9DErkx9pON6X8Q6JToc5QiZ6fcFpF3=s812-k-no              
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipOcSns6pR9DErkx9pON6X8Q6JToc5QiZ6fcFpF3=s812-k-no              
       sections:
         - "name_zh-Hans": 蔬菜类
           "name_en": Vegetable
@@ -244,7 +243,7 @@ menu:
               "name_zh-Hans": 雪菜毛豆百
               "name_en": Preserved Vegetable and Beans
               price: 15.95
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipNzqeKSKH_q0oo7eg74Nq9Wl3fUlQeCO-URHTjA=s1016-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNzqeKSKH_q0oo7eg74Nq9Wl3fUlQeCO-URHTjA=s1016-k-no
       sections:
         - "name_zh-Hans": 南北小炒
           "name_en": Meat
@@ -309,7 +308,7 @@ menu:
               "name_zh-Hans": 蔬菜鸡
               "name_en": Vegetable w/ Chicken
               price: 12.95
-    - menuimage_url: https://lh5.googleusercontent.com/p/AF1QipMWyrIUaY8chuH6knWOOX3ZmlogDbkMlFoZEoHm=s812-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMWyrIUaY8chuH6knWOOX3ZmlogDbkMlFoZEoHm=s812-k-no
       sections:
         - "name_zh-Hans": 点心
           "name_en": Dim sum

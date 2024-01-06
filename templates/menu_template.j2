@@ -103,8 +103,8 @@
     <section class="section">
         <div class="container">
             <div class="column left-column">
-                {% if page.menuimage_url %}
-                <img src="{{ page.menuimage_url }}" alt="Menu Image">
+                {% if page.page_image_url %}
+                <img src="{{ page.page_image_url }}" alt="Menu Image">
                 {% endif %}
             </div>
             <div class="column right-column">
@@ -126,7 +126,7 @@
                         <tr>
                             <td class="menu-table-first-column">
                                 {% if item['image_url'] -%}
-                                <img src="{{ item['image_url'] }}" alt="Menu Image"
+                                <img src="{{ item['image_url'] }}" alt="Dish Image"
                                     onclick="openGoogleImageSearch('{{ item['name_' + data.menu.language_codes[0]] }}')">
                                 {%- else -%}
                                 <button type="button" class="btn-googleimage"

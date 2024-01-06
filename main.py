@@ -133,6 +133,8 @@ def process_yaml_paths(input_dir: str, output_dir: str) -> None:
     print(f"Processed: {output_path}")
 
     # Gather statistics
+    print(f"Menus: {len(yaml_dicts)}")
+
     primary_names = []
     for yaml_dict in yaml_dicts:
         if yaml_dict.get("menu"):

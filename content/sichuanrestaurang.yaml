@@ -5,14 +5,13 @@ restaurant:
   city: Solna
   country_code: SE
   tags: chinese, sichuan
-  googlemaps_url: https://maps.app.goo.gl/5EuirpTveAZEenG66
   homepage_url: https://sichuanrestaurang.business.site/
 menu:
   language_codes:
     - zh-Hans
     - en
   pages:
-    - menuimage_url: https://lh3.googleusercontent.com/p/AF1QipNUAP9068ubPT0u1x1L9qwHSOQgi_uT9yVsdPLa=w960-h960-n-o-v1
+    - page_image_url: https://lh3.googleusercontent.com/p/AF1QipNUAP9068ubPT0u1x1L9qwHSOQgi_uT9yVsdPLa=w960-h960-n-o-v1
       sections:
         - "name_zh-Hans": 前餐
           "name_en": Pre-meal
@@ -91,7 +90,7 @@ menu:
               price: 189:-
             - "name_zh-Hans": 辣子鸡
               price: 199:-
-    - menuimage_url: https://lh3.googleusercontent.com/p/AF1QipMs-2VAVca1sXlFCLZLdXMAxt8yuowazw0majlx=w960-h960-n-o-v1
+    - page_image_url: https://lh3.googleusercontent.com/p/AF1QipMs-2VAVca1sXlFCLZLdXMAxt8yuowazw0majlx=w960-h960-n-o-v1
       sections:
         - "name_zh-Hans": 干锅特色
           "name_en": Griddle Specialities

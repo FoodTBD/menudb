@@ -5,7 +5,6 @@ restaurant:
   city: Stockholm
   country_code: SE
   tags: chinese
-  googlemaps_url: https://maps.app.goo.gl/R2ea5RusZc9ZW8NA9
   homepage_url: https://hemmahosdong.wordpress.com/
   instagram_url: https://www.instagram.com/hemmahosdong/
 menu:
@@ -14,7 +13,7 @@ menu:
     - zh-Latn-pinyin
     - sv-SE
   pages:
-    - menuimage_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg
+    - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg
       sections:
         - "name_zh-Hans": 前餐
           "name_zh-Latn-pinyin": Förrätter
@@ -100,7 +99,7 @@ menu:
               "description_sv-SE": Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås
               annotation: 🐖
               price: 169:-
-    - menuimage_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg
+    - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg
       sections:
         - "name_zh-Hans": 正餐
           "name_zh-Latn-pinyin": Huvudrätter
