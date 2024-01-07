@@ -1,0 +1,593 @@
+author: John Chang
+restaurant:
+  name: Golden Palace Restaurant
+  street_address: 1146 S De Anza Blvd
+  city: San Jose, CA
+  country_code: US
+  tags: chinese, cantonese, dimsum
+  facebook_url: https://www.facebook.com/pages/Golden-Palace-Chinese-Restaurant/498353966951144
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMHbguNPmQy-1B6n2X1mF1H1wSHW8OeSgK_yXOW=s651-k-no
+      sections:
+        - "name_zh-Hant": 蒸蒸日上（蒸點）
+          "name_en": Steamed Dim Sum
+          menu_items:
+            - item_number: D01
+              "name_zh-Hant": 蟹子燒賣皇
+              "name_en": Shrimp & Pork Dumpling (Siu Mai)
+              price: (M)
+            - item_number: D02
+              "name_zh-Hant": 筍尖鮮蝦餃
+              "name_en": Shrimp Dumpling (Hargaw)
+              price: (L)
+            - item_number: D03
+              "name_zh-Hant": 鮮蝦豆苗餃
+              "name_en": Shrimp and Pea Sprout Dumpling
+              price: (SK)
+            - item_number: D04
+              "name_zh-Hant": 翡翠上素餃
+              "name_en": Vegetarian Dumpling
+              price: (L)
+            - item_number: D05
+              "name_zh-Hant": 瑤柱木耳餃
+              "name_en": Dried Scallops & Fungus Dumpling
+              price: (SK)
+            - item_number: D06
+              "name_zh-Hant": 山竹牛肉球
+              "name_en": Steamed Beef Ball
+              price: (M)
+            - item_number: D07
+              "name_zh-Hant": 蠔皇鮮竹卷
+              "name_en": Steamed Bean Curd Skin Roll
+              price: (M)
+            - item_number: D08
+              "name_zh-Hant": 豉汁蒸排骨
+              "name_en": Steamed Spare Ribs in Black Bean Sauce
+              price: (S)
+            - item_number: D09
+              "name_zh-Hant": 豉汁蒸鳳爪
+              "name_en": Steamed Chicken Feet in Black Bean Sauce
+              price: (M)
+            - item_number: D10
+              "name_zh-Hant": 姜蔥牛百葉
+              "name_en": Beef Tripe with Ginger and Scallion
+              price: (M)
+            - item_number: D11
+              "name_zh-Hant": 潮式芋頭糕
+              "name_en": Steamed Taro Cake
+              price: (M)
+            - item_number: D12
+              "name_zh-Hant": 荷葉糯米雞
+              "name_en": Sticky Rice Wrapped in Lotus Leaf
+              price: (L)
+            - item_number: D13
+              "name_zh-Hant": 蜜汁叉燒包
+              "name_en": Steamed B.B.Q. Pork Bun
+              price: (S)
+            - item_number: D14
+              "name_zh-Hant": 臘味糯米包
+              "name_en": Combination Fried Sticky Rice Bun
+              price: (L)
+            - item_number: D15
+              "name_zh-Hant": 金醬流沙包
+              "name_en": Steamed Egg Yolk Lava Bun
+              price: (M)
+            - item_number: D16
+              "name_zh-Hant": 香滑奶皇包
+              "name_en": Steamed Egg Custard Bun
+              price: (S)
+            - item_number: D17
+              "name_zh-Hant": 上海小籠包
+              "name_en": Shanghai Dumpling
+              price: (M)
+            - item_number: D18
+              "name_zh-Hant": 潮州蒸粉粿
+              "name_en": Shanghai Dumpling
+              price: (S)
+            - item_number: D19
+              "name_zh-Hant": 帶子鳳眼餃
+              "name_en": Scallop Dumpling
+              price: (SK)
+            - item_number: D20
+              "name_zh-Hant": 鮮蝦菠菜餃
+              "name_en": Shrimp and Spinach Dumpling
+              price: (L)
+            - item_number: D21
+              "name_zh-Hant": 中山香茜餃
+              "name_en": Shrimp and Cilantro Dumpling
+              price: (L)
+            - item_number: D22
+              "name_zh-Hant": 蟲草花皇燒賣
+              "name_en": Siu Mai with Cordyceps Flower
+              price: (L)
+        - "name_zh-Hant": 爽脆煎炸焗
+          "name_en": Fried or Baked
+          menu_items:
+            - item_number: D23
+              "name_zh-Hant": 脆皮叉燒包
+              "name_en": Baked B.B.Q. Pork Bun
+              price: (M)
+            - item_number: D24
+              "name_zh-Hant": 生煎菜肉包
+              "name_en": Pan Fried Pork Bun with Vegetable
+              price: (L)
+            - item_number: D25
+              "name_zh-Hant": 菠蘿流沙包
+              "name_en": Baked Egg Yolk Lava Bun
+              price: (L)
+            - item_number: D26
+              "name_zh-Hant": 招牌雪山包
+              "name_en": Baked Snow Top Sweet Bun
+              price: (S)
+            - item_number: D27
+              "name_zh-Hant": 榴蓮第一酥
+              "name_en": Crispy Durian Puff
+              price: (SK)
+            - item_number: D28
+              "name_zh-Hant": 香麻叉燒酥
+              "name_en": Baked B.B.Q/ Pork Puff
+              price: (M)
+            - item_number: D29
+              "name_zh-Hant": 酥皮焗蛋撻
+              "name_en": Baked Egg Custard Tart
+              price: (M)
+            - item_number: D30
+              "name_zh-Hant": 五香蜂巢芋角
+              "name_en": Deep Fried Stuffed Taro
+              price: (M)
+            - item_number: D31
+              "name_zh-Hant": 安蝦鹹水角
+              "name_en": Deep Fried Meat Dumpling
+              price: (S)
+            - item_number: D32
+              "name_zh-Hant": 沙律龍蝦角
+              "name_en": Deep Fried Shrimp Dumpling
+              price: (L)
+            - item_number: D33
+              "name_zh-Hant": 金絲炸蝦球
+              "name_en": Deep Fried Shrimp Ball
+              price: (L)
+            - item_number: D34
+              "name_zh-Hant": 鮮蝦腐皮卷
+              "name_en": Dry Bean Curd Skin Roll with Shrimp
+              price: (L)
+            - item_number: D35
+              "name_zh-Hant": 香煎韭菜粿
+              "name_en": Pan Fried Shrimp and Chive Dumpling
+              price: (L)
+            - item_number: D36
+              "name_zh-Hant": 臘味蘿蔔糕
+              "name_en": Pan Fried Turnip Cake
+              price: (M)
+            - item_number: D37
+              "name_zh-Hant": 香煎蓮藕餅
+              "name_en": Pan Fried lotus root cake
+              price: (SK)
+            - item_number: D38
+              "name_zh-Hant": 酥炸齋春卷
+              "name_en": Vegetarian Egg Roll
+              price: (M)
+            - item_number: D39
+              "name_zh-Hant": 香酥紫薯粿
+              "name_en": Deep Fried Purple Yam Puff
+              price: (M)
+            - item_number: D40
+              "name_zh-Hant": 生煎鮮鍋貼
+              "name_en": Pan Fried Pot Stickers
+              price: (L)
+            - item_number: D41
+              "name_zh-Hant": 香煎蔥油餅
+              "name_en": Pan Fried Scallion Cake
+              price: (M)
+            - item_number: D42
+              "name_zh-Hant": 香麻煎堆仔
+              "name_en": Deep Fried Sesame Ball
+              price: (S)
+            - item_number: D43
+              "name_zh-Hant": 百花釀青椒
+              "name_en": Stuffed Bell Pepper with Minced Shrimp
+              price: (L)
+            - item_number: D44
+              "name_zh-Hant": 百花釀茄子
+              "name_en": Stuffed Eggplant with Minced Shrimp
+              price: (L)
+        - "name_zh-Hant": 焼味滷味
+          "name_en": B.B.Q/Marinated
+          menu_items:
+            - item_number: D45
+              "name_zh-Hant": 滷水豆腐
+              "name_en": Fried Tofu with Soy Sauce
+              price: (K)
+            - item_number: D46
+              "name_zh-Hant": 蜜汁叉燒
+              "name_en": B.B.Q. Pork
+              price: (SP)
+            - item_number: D47
+              "name_zh-Hant": 涼拌海蜇
+              "name_en": Jelly Fish
+              price: (SK)
+            - item_number: D48
+              "name_zh-Hant": 日式海草
+              "name_en": Japanese Style Seaweed
+              price: (SK)
+            - item_number: D49
+              "name_zh-Hant": 口水雞
+              "name_en": Szechuan Spicy Chicken
+              price: (SP)
+            - item_number: D50
+              "name_zh-Hant": 白雲鳳爪
+              "name_en": Pickled Chicken Feet
+              price: (SK)
+            - item_number: D51
+              "name_zh-Hant": 泰式鳳爪
+              "name_en": Thai Style Chicken Feet
+              price: (SK)
+            - item_number: D52
+              "name_zh-Hant": 撈起豬肚
+              "name_en": Wasabi Pork Stomach
+              price: (SK)
+            - item_number: D53
+              "name_zh-Hant": 炭燒豬頸肉
+              "name_en": B.B.Q. Pork Neck
+              price: (SP)
+            - item_number: D54
+              "name_zh-Hant": 脆皮燒脯仔
+              "name_en": Crispy Skin Roast Pork
+              price: (SP)
+            - item_number: D55
+              "name_zh-Hant": 上海齋燒鵝
+              "name_en": Vegetarian Shanghai Bean Curd
+              price: (SK)
+            - item_number: D56
+              "name_zh-Hant": 夫妻肺片
+              "name_en": Couple’s Delight
+              price: (SK)
+              spice_level: 1
+            - item_number: D57
+              "name_zh-Hant": 滷水鴨翼
+              "name_en": Marinated Duck Wing
+              price: (SK)
+            - item_number: D58
+              "name_zh-Hant": 貴妃黃毛雞
+              "name_en": Marinated Empress Chicken
+              price: (SP)
+            - item_number: D59
+              "name_zh-Hant": 滷水鴨舌
+              "name_en": Marinated Duck Tongue
+              price: (SP)
+            - item_number: D60
+              "name_zh-Hant": 美極鴨下巴
+              "name_en": Duck Chin with Maggie Sauce
+              price: (SP)
+            - item_number: D61
+              "name_zh-Hant": 明爐火鴨
+              "name_en": Roast Duck
+              price: (SP)
+            - item_number: D62
+              "name_zh-Hant": 海蜇海草拼
+              "name_en": Jellyfish and Japanese Seaweed
+              price: (K)
+            - item_number: D63
+              "name_zh-Hant": 涼拌野木耳
+              "name_en": Tossed Black Fungus Salad
+              price: (SK)
+            - item_number: D64
+              "name_zh-Hant": 麻辣小黃瓜
+              "name_en": Cucmber with House Special spicy Sauce
+              price: (SK)
+              spice_level: 1
+        - "name_zh-Hant": 頭廚推薦
+          "name_en": Chef’s Special
+          menu_items:
+            - item_number: CS01
+              "name_zh-Hant": 橄欖角排骨蒸腸粉
+              "name_en": Steamed Rice Noodle with Spare Ribs in Olive Sauce
+              price: 15.99
+            - item_number: CS02
+              "name_zh-Hant": 乾炒牛河
+              "name_en": Beef Chow Fun
+              price: 17.99
+            - item_number: CS04
+              "name_zh-Hant": 蒙古牛肉炒河粉
+              "name_en": Beef Chow Fun with Mongolian Sauce
+              price: 17.99
+            - item_number: CS05
+              "name_zh-Hant": 滑蛋蝦球濕炒河粉
+              "name_en": Prawns with Scarmbled [sic] Egg Chow Fun
+              price: 19.99
+            - item_number: CS06
+              "name_zh-Hant": 招牌煎面
+              "name_en": House Special Seared Crispy Noodle
+              price: 21.99
+            - item_number: CS07
+              "name_zh-Hant": 番茄牛肉炒麵
+              "name_en": Tomato Beef Chow Mein
+              price: 17.99
+            - item_number: CS08
+              "name_zh-Hant": 味菜鮮魷撈寬面
+              "name_en": Squid with Preserved Mustard Green on Boiled Noodle
+              price: 18.99
+            - item_number: CS09
+              "name_zh-Hant": 三絲炒米粉
+              "name_en": Sam-See Fried Rice Noodle
+              price: 18.99
+            - item_number: CS10
+              "name_zh-Hant": 招牌炒飯
+              "name_en": House Special Fried Rice
+              price: 19.99
+            - item_number: CS11
+              "name_zh-Hant": 头厨砂锅炒饭
+              "name_en": Chef’s Special Fried Rice in Hot Pot
+              price: 22.99
+            - item_number: CS10
+              "name_zh-Hant": 北京片皮鴨
+              "name_en": Peking Duck
+              price: 23.99
+              price_note: 半只 Half
+        - "name_zh-Hant": 粉粉好味
+          "name_en": Rice Noodle Roll
+          menu_items:
+            - item_number: D65
+              "name_zh-Hant": 鮮蝦布拉腸
+              "name_en": Shrimp Rice Noodle Roll
+              price: (L)
+            - item_number: D66
+              "name_zh-Hant": 榨菜牛肉腸
+              "name_en": Beef Rice Noodle Roll
+              price: (L)
+            - item_number: D67
+              "name_zh-Hant": 蜜汁叉燒腸
+              "name_en": B.B.Q. Pork Rice Noodle Roll
+              price: (L)
+            - item_number: D68
+              "name_zh-Hant": 香港仔炸兩
+              "name_en": Chinese Donut in Rice Noodle Roll
+              price: (L)
+            - item_number: D69
+              "name_zh-Hant": 脆皮蝦腸
+              "name_en": Crispy Shrimp Roll
+              price: (SK)
+            - item_number: D70
+              "name_zh-Hant": 芫茜蔥花腸
+              "name_en": Rice Noodle Roll with Cilantro & Scallion
+              price: (L)
+            - item_number: D71
+              "name_zh-Hant": 鮮雜菌拉腸
+              "name_en": Rice Noodle Roll with Mixed Mushroom
+              price: (L)
+        - "name_zh-Hant": 心滿意粥
+          "name_en": Porridge
+          menu_items:
+            - item_number: P01
+              "name_zh-Hant": 皮蛋瘦肉粥
+              "name_en": Preserved Egg & Pork Porridge
+              price: 14.99
+            - item_number: P02
+              "name_zh-Hant": 生滾黃毛雞粥
+              "name_en": Ranch Chicken Porridge
+              price: 15.99
+            - item_number: P03
+              "name_zh-Hant": 大蜆瑤柱粥
+              "name_en": Dried Scallops & Clams Porridge
+              price: 16.99
+            - item_number: P04
+              "name_zh-Hant": 菜粒牛肉粥
+              "name_en": Beef & Vegetable Porridge
+              price: 14.99
+            - item_number: P05
+              "name_zh-Hant": 香茜魚片粥
+              "name_en": Sliced Fish with Cilantro Porridge
+              price: 16.99
+            - item_number: P06
+              "name_zh-Hant": 鮑魚瑤柱生滾粥
+              "name_en": Abalone and Dried Scallops Porridge
+              price: 17.99
+            - item_number: P07
+              "name_zh-Hant": 家鄉豬紅粥
+              "name_en": Country Style Pork Blood Porridge
+              price: 14.99
+            - item_number: P08
+              "name_zh-Hant": 生滾龍蝦粥
+              "name_en": Lobster Porridge
+              price: 28.00
+        - "name_zh-Hant": 點點廚意
+          "name_en": Kitchen Special
+          menu_items:
+            - item_number: D72
+              "name_zh-Hant": 梅辣脆皮茄子
+              "name_en": Crispy Eggplant with B.B.Q Sauce
+              price: (K)
+            - item_number: D73
+              "name_zh-Hant": 豉油皇薑汁炒秋葵
+              "name_en": Sauteed Okra with Soy Sauce & Ginger
+              price: (SP)
+            - item_number: D75
+              "name_zh-Hant": 百花釀蟹钳
+              "name_en": Deep Fried Stuff Crad [sic] Claw
+              price: (SP)
+            - item_number: D76
+              "name_zh-Hant": 百花炸釀豆腐
+              "name_en": Deep Fried Stuffed Bean Curd with Prawns
+              price: (SP)
+            - item_number: D77
+              "name_zh-Hant": 椒鹽多春魚
+              "name_en": Salt and Pepper Capelin Fish
+              price: (SP)
+            - item_number: D78
+              "name_zh-Hant": 柱候牛雜
+              "name_en": Spiced Beef Tripe
+              price: (K)
+            - item_number: D79
+              "name_zh-Hant": 椒鹽魷魚
+              "name_en": Salt and Pepper Squid
+              price: (K)
+              spice_level: 1
+            - item_number: D80
+              "name_zh-Hant": 椒鹽雞翼
+              "name_en": Salt and Pepper Chicken Wing
+              price: (SP)
+              spice_level: 1
+            - item_number: D81
+              "name_zh-Hant": 椒鹽中蝦
+              "name_en": Salt and Pepper Chicken Prawns
+              price: (SP)
+              spice_level: 1
+            - item_number: D82
+              "name_zh-Hant": 豉油皇炒麵
+              "name_en": Soy Sauce Chow Mein
+              price: (K)
+            - item_number: D83
+              "name_zh-Hant": 叉燒炒河
+              "name_en": B.B.Q Pork Chow Fun
+              price: (K)
+            - item_number: D84
+              "name_zh-Hant": 雪菜肉絲炒年糕
+              "name_en": Preserved Vegetable and Pork with Rice Cake
+              price: (K)
+              spice_level: 1
+            - item_number: D85
+              "name_zh-Hant": 煎釀辣尖椒
+              "name_en": Pan Fried Stuffed Chili Pepper
+              price: (K)
+            - item_number: D86
+              "name_zh-Hant": 韭菜豬紅
+              "name_en": Pork Blood w/ Chinese Chives
+              price: (K)
+            - item_number: D87
+              "name_zh-Hant": 蠔油芥蘭
+              "name_en": Chinese Broccoli with Oyster Sauce
+              price: (K)
+            - item_number: D88
+              "name_zh-Hant": 椒鹽豆腐粒
+              "name_en": Salt and Pepper Tofu
+              price: (K)
+              spice_level: 1
+            - item_number: D89
+              "name_zh-Hant": 金沙南瓜條
+              "name_en": Crispy Fried Pumpkin with Salted Egg Yolk
+              price: (K)
+            - item_number: D88 [sic]
+              "name_zh-Hant": 百花釀蘑菇
+              "name_en": Pan Fried Stuffed Mushroom
+              price: (SP)
+            - item_number: D90
+              "name_zh-Hant": 生炒糯米飯
+              "name_en": Combination Fried Sticky Rice
+              price: (SP)
+            - item_number: D91
+              "name_zh-Hant": 豉汁炒蜆
+              "name_en": Stir-Fried Clams in Black Bean Sauce
+              price: (SP)
+            - item_number: D92
+              "name_zh-Hant": 上湯大豆苗
+              "name_en": Pea Sprout in Supreme Broth
+              price: (SP)
+            - item_number: D93
+              "name_zh-Hant": XO醬蘿蔔糕
+              "name_en": Pan Fried Trunip [sic] Cake with XO Sauce
+              price: (K)
+            - item_number: D94
+              "name_zh-Hant": 拍蒜生菜
+              "name_en": Lettuce with Garlic Sauce
+              price: (K)
+            - item_number: D95
+              "name_zh-Hant": XO醬煎腸粉
+              "name_en": Pan Fried Rice Noodle Roll with XO Sauce
+              price: (K)
+            - item_number: D96
+              "name_zh-Hant": 牛雜腸粉煲
+              "name_en": Beef Tripe with Rice Noodle Roll in Clay Pot
+              price: (K)
+            - item_number: D97
+              "name_zh-Hant": 肥牛雜菌腸粉煲
+              "name_en": Beef and Mixed Mushroom with Rice Noodle Roll in Clay Pot
+              price: (SP)
+            - item_number: D98
+              "name_zh-Hant": 拍蒜油菜芯
+              "name_en": Steamed Chinese Green with Garlic
+              price: (K)
+            - item_number: D99
+              "name_zh-Hant": 核桃明蝦球
+              "name_en": Honey Glazed Walnut Prawns
+              price: (SP)
+            - item_number: D100
+              "name_zh-Hant": 乾煸四季豆
+              "name_en": Pan Fried String Beans with Hot Sauce
+              price: (K)
+              spice_level: 1
+            - item_number: D101
+              "name_zh-Hant": 紅油水餃
+              "name_en": Steamed Dumpling with Hot Sauce
+              price: (SP)
+              spice_level: 1
+            - item_number: D102
+              "name_zh-Hant": 白灼牛百葉
+              "name_en": Boiled Beef Tripe
+              price: (SP)
+              spice_level: 1
+        - "name_zh-Hant": 甜甜蜜蜜
+          "name_en": Dessert
+          menu_items:
+            - item_number: D103
+              "name_zh-Hant": 香煎馬蹄糕
+              "name_en": Pan Fried Water Chesnut [sic] Cake
+              price: (S)
+            - item_number: D104
+              "name_zh-Hant": 籠仔馬拉糕
+              "name_en": Steamed Sponge Cake
+              price: (M)
+            - item_number: D105
+              "name_zh-Hant": 綠茶豆沙角
+              "name_en": Green Tea Dumpling with Red Bean
+              price: (L)
+            - item_number: D106
+              "name_zh-Hant": 擂沙湯圓
+              "name_en": Soft Black Sesame Ball
+              price: (M)
+            - item_number: D107
+              "name_zh-Hant": 芒果布丁
+              "name_en": Mango Pudding
+              price: (S)
+            - item_number: D108
+              "name_zh-Hant": 杞子桂花糕
+              "name_en": Wolfberry and Osmanthus Jelly
+              price: (L)
+            - item_number: D109
+              "name_zh-Hant": 養生芝麻卷
+              "name_en": Black Sesame Roll
+              price: (M)
+        - "name_zh-Hant": 大特價
+          "name_en": (Service All Day)
+          menu_items:
+            - "name_zh-Hant": 原只龍蝦伊面
+              "name_en": Lobster Yee-Foo Noodle
+              price: $28.00
+            - "name_zh-Hant": 大排檔龍蝦
+              "name_en": Lobster, Hong Kong Style
+              price: $33.00
+            - "name_zh-Hant": 石斑兩食
+              "name_en": Fish & Congee Combo
+              "description_zh-Hant": 魚片炒河, 頭腩滾粥
+              "description_en":  Fish Filet Chow Fun, Fish Cheek Congee
+              price: $38.00 (3-6 人), $68.00 (7-10 人)
+        - menu_items:
+            - "name_zh-Hant": 香片
+              "name_en": Jasmine Tea
+            - "name_zh-Hant": 壽眉
+              "name_en": White (Sau Mei) Tea
+            - "name_zh-Hant": 普洱
+              "name_en": Puer
+            - "name_zh-Hant": 烏龍
+              "name_en": Oolong
+            - "name_zh-Hant": 菊花
+              "name_en": Chrysanthemum
+            - "name_zh-Hant": 茗茶
+              "name_en": Hot Tea
+              price: $1.79
+            - "name_zh-Hant": 熱水
+              "name_en": Hot Water
+              price: $1.00

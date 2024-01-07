@@ -16,7 +16,8 @@
         <ul>
             {% for yaml_dict in data | sort(attribute='restaurant.country_code,restaurant.city,restaurant.name') %}
             <li><a href="{{ yaml_dict._output_filename }}">{{ yaml_dict.restaurant.name }} ({{ yaml_dict.restaurant.city
-                    }}, {{ yaml_dict.restaurant.country_code }})</a> - <small>{{ yaml_dict.restaurant.tags }}</small>
+                    }}, {{ yaml_dict.restaurant.country_code }})</a> - <small>{{ yaml_dict.restaurant.tags | join(', ')
+                    }}</small>
             </li>
             {% endfor %}
         </ul>

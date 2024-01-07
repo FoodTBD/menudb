@@ -155,7 +155,7 @@ def process_yaml_paths(
 
 
 def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
-    print(f"Menus: {len(yaml_dicts)}")
+    print(f"Total menu count: {len(yaml_dicts)}")
 
     primary_names = []
     for yaml_dict in yaml_dicts:
@@ -176,7 +176,7 @@ def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
     name_counter = collections.Counter(primary_names)
     filtered_c = {k: v for k, v in name_counter.items() if v > 1}
     print(
-        f"Common dishes ({len(filtered_c)} count): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
+        f"Common dishes ({len(filtered_c)}): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
     )
 
     character_counter = collections.Counter()

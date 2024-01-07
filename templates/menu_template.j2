@@ -39,8 +39,8 @@
             </div>
             <div class="column right-column">
                 <table class="menu-table">
+                    {% for section in page.sections %}
                     <thead>
-                        {% for section in page.sections %}
                         <tr>
                             <th colspan="3">
                                 {% for lang in language_codes %}
@@ -52,75 +52,78 @@
                                 {% endfor %}
                             </th>
                         </tr>
-                    </thead <tbody>
-                    {% for item in section.menu_items %}
-                    <tr>
-                        <td class="menu-table-text-column">
-                            <div class="menu-item-name">
-                                {% if item['item_number'] %}<span class="menu-item-number">{{ item['item_number']
-                                    }}.</span>{% endif %}
+                    </thead>
+                    <tbody>
+                        {% for item in section.menu_items %}
+                        <tr>
+                            <td class="menu-table-text-column">
+                                <div class="menu-item-name">
+                                    {% if item['item_number'] %}<span class="menu-item-number">{{ item['item_number']
+                                        }}.</span>{% endif %}
 
-                                {%- for lang in language_codes if item['name_' + lang] and not lang ==
-                                'zh-Latn-pinyin' %}
-                                {% set dish_name = item['name_' + lang] %}
-                                {% if lang == primary_lang %}
-                                <span class="menu-item-name menu-item-name-primary">{{ dish_name | styled_text_format
-                                    }}</span>
-                                {# Special case Pinyin to be in parentheses on the same line as primary lang #}
-                                {# {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}
-                                (<span class="menu-item-name-pinyin">{{ item['name_zh-Latn-pinyin'] }}</span>)
-                                {% endif %} #}
-                                <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                    onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</a>
-                                {% else %}
-                                {% set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] %}
-                                {% if wikipedia_url %}<a class="menu-item-wikipedia-link" href="{{ wikipedia_url }}"
-                                    target="_blank" rel="noopener">{%
-                                    endif %}<span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                    {%- for lang in language_codes if item['name_' + lang] and not lang ==
+                                    'zh-Latn-pinyin' %}
+                                    {% set dish_name = item['name_' + lang] %}
+                                    {% if lang == primary_lang %}
+                                    <span class="menu-item-name menu-item-name-primary">{{ dish_name |
                                         styled_text_format
-                                        }}</span>{% if wikipedia_url %}</a>{% endif %}
+                                        }}</span>
+                                    {# Special case Pinyin to be in parentheses on the same line as primary lang #}
+                                    {# {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}
+                                    (<span class="menu-item-name-pinyin">{{ item['name_zh-Latn-pinyin'] }}</span>)
+                                    {% endif %} #}
+                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
+                                        onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</a>
+                                    {% else %}
+                                    {% set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] %}
+                                    {% if wikipedia_url %}<a class="menu-item-wikipedia-link" href="{{ wikipedia_url }}"
+                                        target="_blank" rel="noopener">{%
+                                        endif %}<span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                            styled_text_format
+                                            }}</span>{% if wikipedia_url %}</a>{% endif %}
+                                    {% endif %}
+                                    {% if not loop.last %} <span class="menu-item-divider">/</span> {% endif %}
+                                    {% endfor +%}
+                                </div>
+
+                                <div class="menu-item-description">
+                                    {% for _ in range(item['spice_level'] | default(0)) %}🌶️{% endfor %}
+
+                                    {%- for lang in language_codes if item['description_' + lang] %}
+                                    <span class="menu-item-description">{{ item['description_' + lang] |
+                                        styled_text_format }}</span>{% if not loop.last %} <span
+                                        class="menu-item-divider">/</span> {% endif %}
+                                    {% endfor %}
+                                </div>
+
+                                {%- if item['note'] %}
+                                <div class="menu-item-note">
+                                    <span class="menu-item-note">{{ item['note'] |
+                                        styled_text_format }}</span>
+                                </div>
                                 {% endif %}
-                                {% if not loop.last %} <span class="menu-item-divider">/</span> {% endif %}
-                                {% endfor +%}
-                            </div>
-
-                            <div class="menu-item-description">
-                                {% for _ in range(item['spice_level'] | default('0') | int) %}🌶️{% endfor %}
-
-                                {%- for lang in language_codes if item['description_' + lang] %}
-                                <span class="menu-item-description">{{ item['description_' + lang] |
-                                    styled_text_format }}</span>{% if not loop.last %} <span
-                                    class="menu-item-divider">/</span> {% endif %}
-                                {% endfor %}
-                            </div>
-
-                            {%- if item['note'] %}
-                            <div class="menu-item-note">
-                                <span class="menu-item-note">{{ item['note'] |
-                                    styled_text_format }}</span>
-                            </div>
-                            {% endif %}
-                        </td>
-                        <td class="menu-table-price-column">
-                            <span class="menu-item-price">{{ item['price'] }}</span>
-                            {%- if item['price_note'] %}<br>
-                            <span class="menu-item-price-note">{{ item['price_note'] | styled_text_format
-                                }}</span>
-                            {% endif +%}
-                        </td>
-                        <td class="menu-table-image-column">
-                            {% if item['image_url'] %}
-                            <img src="{{ item['image_url'] }}" alt="Dish Image"
-                                onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
-                            {% else %}
-                            <button aria-label="Image Search" type="button" class="btn-googleimage"
-                                onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️ 🔎</button>
-                            {% endif %}
-                        </td>
-                    </tr>
-                    {% endfor %}
-                    {% endfor %}
+                            </td>
+                            <td class="menu-table-price-column">
+                                <span class="menu-item-price">{{ item['price'] }}</span>
+                                {%- if item['price_note'] %}<br>
+                                <span class="menu-item-price-note">{{ item['price_note'] | styled_text_format
+                                    }}</span>
+                                {% endif +%}
+                            </td>
+                            <td class="menu-table-image-column">
+                                {% if item['image_url'] %}
+                                <img src="{{ item['image_url'] }}" alt="Dish Image"
+                                    onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
+                                {% else %}
+                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                    onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️
+                                    🔎</button>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
                     </tbody>
+                    {% endfor %}
                 </table>
                 {% if page.page_footer %}<p>{{ page.page_footer }}</p>{% endif %}
             </div>

@@ -93,6 +93,7 @@ body {
 
 .menu-table .menu-table-image-column {
     text-align: right;
+    min-width: 64px;
 }
 
 .menu-table .menu-table-image-column .btn-googleimage {
