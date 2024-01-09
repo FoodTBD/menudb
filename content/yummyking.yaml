@@ -277,7 +277,7 @@ menu:
               price: 138 kr
             - item_number: 54
               "name_zh-Hans": 家常豆腐
-              "name_en": Woked tofu
+              "name_en": Woked [sic] tofu
               "description_sv-SE": Wokad tofu med grönsaker
               price: 138 kr
             - item_number: 55
@@ -364,7 +364,7 @@ menu:
               price: 118 kr
             - item_number: 72
               "name_zh-Hans": 蚂蚁上树
-              "name_en": Woked vermicelli with spicy minced pork
+              "name_en": Woked [sic] vermicelli with spicy minced pork
               "description_sv-SE": Stekta glasnudlar med fläskfärs
               price: 138 kr
             - item_number: 73

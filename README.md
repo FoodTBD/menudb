@@ -26,6 +26,8 @@ The YAML is [StrictYAML](https://hitchdev.com/strictyaml/).
 
 Information hierarchy: Each YAML file contains **restaurant** metadata coupled with a **menu** definition.  Each menu contains **pages**. Each page contains **sections**. Each section contains **menu items** a.k.a. dishes.
 
+For now, any spelling or grammar mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.
+
 Languages: Language codes are [BCP 47 language tags](https://en.wikipedia.org/wiki/IETF_language_tag), specifying the native origin of the dish name. Examples:
 * `en-US` means English (United States)
 * `zh-Hans` means Simplified Chinese [written form]
