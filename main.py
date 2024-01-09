@@ -32,7 +32,7 @@ def prepare_output_dir(output_dir: str) -> None:
 
 def load_known_dishes() -> dict[str, Any]:
     known_dishes = {}
-    with open("known_dishes.tsv", "r", encoding="utf-8") as csvfile:
+    with open("data/known_dishes.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
             name_native_commaseparated = row["name_native"].split(",")
@@ -40,6 +40,19 @@ def load_known_dishes() -> dict[str, Any]:
             for native_name in name_native_commaseparated:
                 known_dishes[native_name] = row
     return known_dishes
+
+
+def load_eatsdb_names() -> list[str]:
+    dish_names = []
+    with open("data/eatsdb_names.tsv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter="\t")
+        for row in csvreader:
+            assert row["name_native"]
+            dish_names.append(row["name_native"])
+            dish_names.extend(
+                [s.strip() for s in row["alt_names"].split(",") if s.strip()]
+            )
+    return dish_names
 
 
 def generate_menu_html(
@@ -156,6 +169,8 @@ def process_yaml_paths(
 
 
 def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
+    eatsdb_names_set = set(load_eatsdb_names())
+
     print(f"Total menu count: {len(yaml_dicts)}")
 
     primary_names = []
@@ -192,7 +207,13 @@ def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
     for dish_name in filtered_c:
         if not dish_name in known_dishes:
             print(
-                f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in database of known dishes"
+                f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
+            )
+
+    for dish_name in primary_names:
+        if not dish_name in known_dishes and dish_name in eatsdb_names_set:
+            print(
+                f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes but is in EatsDB"
             )
 
 
