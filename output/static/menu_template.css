@@ -59,10 +59,14 @@ body {
     vertical-align: top;
 }
 
-.menu-table td span.menu-item-name {
-    font-weight: bold;
+.menu-table td span.menu-item-number {
+    font-weight: 300;
+    color: #666;
 }
 
+.menu-table td span.menu-item-name {
+    /* font-weight: 500; */
+}
 
 .menu-table td div.menu-item-description {
     padding-top: 0.2rem;
@@ -80,6 +84,10 @@ body {
 .menu-table td span.menu-item-note {
     font-size: small;
     color: #666;
+}
+
+.menu-table .menu-item-price {
+    font-weight: 300;
 }
 
 .menu-table .menu-item-price-note {

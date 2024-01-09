@@ -31,7 +31,7 @@ RESTAURANT_SCHEMA = Map(
                                     {
                                         Optional("name_zh-Hans"): Str(),
                                         Optional("name_en"): Str(),
-                                        "menu_items": Seq(
+                                        Optional("menu_items"): Seq(
                                             MapCombined(
                                                 {
                                                     Optional("item_number"): Str(),

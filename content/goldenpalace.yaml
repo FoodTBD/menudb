@@ -11,7 +11,7 @@ menu:
     - zh-Hant
     - en
   pages:
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMHbguNPmQy-1B6n2X1mF1H1wSHW8OeSgK_yXOW=s651-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMHbguNPmQy-1B6n2X1mF1H1wSHW8OeSgK_yXOW=s773-k-no
       sections:
         - "name_zh-Hant": 蒸蒸日上（蒸點）
           "name_en": Steamed Dim Sum
@@ -86,7 +86,7 @@ menu:
               price: (M)
             - item_number: D18
               "name_zh-Hant": 潮州蒸粉粿
-              "name_en": Shanghai Dumpling
+              "name_en": Chao Zhou Style Dumpling
               price: (S)
             - item_number: D19
               "name_zh-Hant": 帶子鳳眼餃
@@ -277,7 +277,7 @@ menu:
               price: (SK)
             - item_number: D64
               "name_zh-Hant": 麻辣小黃瓜
-              "name_en": Cucmber with House Special spicy Sauce
+              "name_en": Cucmber [sic] with House Special spicy Sauce
               price: (SK)
               spice_level: 1
         - "name_zh-Hant": 頭廚推薦
@@ -591,3 +591,346 @@ menu:
             - "name_zh-Hant": 熱水
               "name_en": Hot Water
               price: $1.00
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipP99W5s8fXoQrjlEBFeK9Rea1r3TxfQQMfkp3tW=s684-k-no
+      sections:
+        - "name_zh-Hant": 頭台
+          "name_en": Appetizers
+          menu_items:
+            - item_number: A01
+              "name_zh-Hant": 脆皮素春卷
+              "name_en": Crispy Spring Roll (Vegetarian) (3)
+              price: $9.99
+            - item_number: A02
+              "name_zh-Hant": 生煎鍋貼
+              "name_en": Pan Fried Potstickers (6)
+              price: $11.99
+            - item_number: A03
+              "name_zh-Hant": 芝麻米通蝦多士
+              "name_en": Toasted Sesame Prawns (4)
+              price: $12.99
+            - item_number: A04
+              "name_zh-Hant": 麻香沙律酥雞
+              "name_en": Chicken Salad, Chinese Style
+              price: $17.99
+            - item_number: A05
+              "name_zh-Hant": 五味椒鹽雞翼
+              "name_en": Salt and Pepper Chicken Wings
+              price: $14.99
+              spice_level: 1
+            - item_number: A06
+              "name_zh-Hant": 木須肉
+              "name_en": Mushu Pork (or Chicken, Vegetables)
+              "description_zh-Hant": 肉（或雞，素）
+              price: $19.99
+            - item_number: A07
+              "name_zh-Hant": 生菜片雞松
+              "name_en": Minced Chicken in Lettuce Cup
+              price: $19.99
+            - item_number: A08
+              "name_zh-Hant": 酥香炸魷魚
+              "name_en": Crispy Deep Fried Squid
+              price: $19.99
+            - item_number: A09
+              "name_zh-Hant": 招牌拼盤
+              "name_en": Assorted Platter
+              "description_en": "(Egg Rolls, Fried Prawns, Chicken Wings, and BBQ Pork)"
+              price: $22.99
+    - sections:
+        - "name_zh-Hant": ??湯羹
+          "name_en": Soup
+          menu_items:
+            - item_number: B01
+              "name_zh-Hant": 酸辣湯
+              "name_en": Hot and Sour Soup
+              price: $15.99
+            - item_number: B02
+              "name_zh-Hant": 云吞湯
+              "name_en": Wonton Soup
+              price: $15.99
+            - item_number: B03
+              "name_zh-Hant": 窩云吞湯
+              "name_en": Wor Wonton Soup
+              price: $19.99
+            - item_number: B04
+              "name_zh-Hant": 海鮮鍋巴湯
+              "name_en": Seafood Sizzling Rice Soup
+              price: $18.99
+            - item_number: B05
+              "name_zh-Hant": 西湖牛肉羹
+              "name_en": West Lake Minced Beef Soup
+              price: $17.99
+            - item_number: B06
+              "name_zh-Hant": 雞茸栗米羹
+              "name_en": Chicken Corn Soup
+              price: $17.99
+            - item_number: B07
+              "name_zh-Hant": 咸蛋芥菜肉片湯
+              "name_en": Sliced Pork, Salt Egg with Mustard Green Soup
+              price: $17.99
+            - item_number: B08
+              "name_zh-Hant": 生滾香苗皮蛋魚片湯
+              "name_en": Sliced Fish Soup with Cilantro
+              price: $18.99
+            - item_number: B09
+              "name_zh-Hant": 蟹肉魚肚羹
+              "name_en": Crab Meat with Fish Maw Soup
+              price: $23.99
+            - item_number: B10
+              "name_zh-Hant": 海鲜豆腐羹
+              "name_en": Combination Seafood and Tofu Soup
+              price: $18.99
+            - item_number: B11
+              "name_zh-Hant": 是日燉湯
+              "name_en": Daily Special Soup
+              price: (L) $20.99, (XL) $38.99
+            - item_number: B12
+              "name_zh-Hant": 金湯花膠南瓜盅(預訂)
+              "name_en": Boiled Fish Maw with Superior Broth in whole Pumpkin
+              price: $48.99
+              price_note: Order in Advance
+            - item_number: B13
+              "name_zh-Hant": 蟹肉燕窩美
+              "name_en": Bird's Nest and Crab Meat Soup
+              price: $48.99
+            - item_number: B14
+              "name_zh-Hant": 迷你佛跳墙
+              "name_en": Mini House Bolled Soup with Abalone and Sea Cucumber
+              price: $25.99
+            - item_number: B15
+              "name_zh-Hant": 寶冬瓜盅(預訂)
+              "name_en": Double Boiled Whole Winter Melon Soup
+              price: $58.99              
+              price_note: Order in Advance
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMOQ2-wlLzyFHFwrQ_WzFCbVrtgOCTfBb2O59xE=s684-k-no
+      sections:
+        - "name_zh-Hant": 燒滷味
+          "name_en": BBQ and Marinated Dishes
+          menu_items:
+            - item_number: C01
+              "name_zh-Hant": 北京片皮鴨
+              "name_en": Peking Duck
+              price: $23.99 （半隻 Half), $45.99 （全隻 Whole)
+            - item_number: C02
+              "name_zh-Hant": 明爐火鴨
+              "name_en": Roast Duck
+              price: $20.99 （半隻 Half)
+            - item_number: C03
+              "name_zh-Hant": 貴妃黄毛雞
+              "name_en": Marinated Empress Chicken
+              price: $18.99 （半隻 Half), $36.99 （全隻 Whole)
+            - item_number: C04
+              "name_zh-Hant": 京蔥霸王雞（半隻）
+              "name_en": Steamed Chicken with Fresh Pepper and Onion Sauce (Half)
+              price: $18.99 （半隻 Half)
+              spice_level: 1
+            - item_number: C05
+              "name_zh-Hant": 蜜汁叉燒
+              "name_en": BBQ Pork
+              price: $19.99
+            - item_number: C06
+              "name_zh-Hant": 澳門脆皮燒腩
+              "name_en": Macau Style Roast Pork
+              price: $17.99
+            - item_number: C07
+              "name_zh-Hant": 成都口水雞
+              "name_en": Chengdu Style Chicken with Spicy Sauce
+              price: $20.99 (半隻 Half)
+              spice_level: 1
+            - item_number: C08
+              "name_zh-Hant": 脆皮咸豬手
+              "name_en": Macau Style Crispy Skin Ham Hock)
+              price: $21.99
+            - item_number: C09
+              "name_zh-Hant": 炭燒豬頸肉
+              "name_en": Roast Pork Cheek
+              price: $21.99
+            - item_number: C10
+              "name_zh-Hant": 燒味拼盤
+              "name_en": Barbecue Combination Platter
+              price: $25.99 (例), $48.99 (L)
+            - item_number: C11
+              "name_zh-Hant": 潮式滷水拼盤
+              "name_en": Zhou Zhou Style Marinated Platter
+              price: $25.99 (例), $48.99 (L)
+            - item_number: C12
+              "name_zh-Hant": 大红乳豬全體
+              "name_en": Roast Whole Suckling Pig
+              price_note: 預訂 Order in Advance
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNtlCWsEpmJbnIIL5gGBLue5beW-6o6qs6LcfSg=s856-k-no
+      sections:
+        - "name_zh-Hant": 風味小食
+          "name_en": Special Dishes
+          menu_items:
+            - item_number: S01
+              "name_zh-Hant": 麻辣家鄉小黃瓜
+              "name_en": Cucumber w/ House Special Sauce
+              price: $11.99
+              spice_level: 1
+            - item_number: S02
+              "name_zh-Hant": 潮州鹵水豆腐
+              "name_en": Chao Zhou Marinated Tofu
+              price: $11.99
+            - item_number: S03
+              "name_zh-Hant": 涼拌舟山海蜇
+              "name_en": Seasoned Jelly fish
+              price: $11.99
+            - item_number: S04
+              "name_zh-Hant": 美味日式海草
+              "name_en": Japanese Style Seaweed
+              price: $11.99
+            - item_number: S05
+              "name_zh-Hant": 上海小籠包
+              "name_en": Steamed Shanghai Dumpling (6)
+              price: $11.99
+            - item_number: S06
+              "name_zh-Hant": 撈起豬肚
+              "name_en": Marinated Pork Tripe with Wasabi Sauce
+              price: $12.99
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipOdWZIyUQCKuxf6PnP_mvSYjFyNjN9PgUGkwz8X=s1140-k-no
+      sections:
+        - "name_zh-Hant": 鮑麥持選
+          "name_en": Abalone and Sea Cucumber
+          menu_items:
+            - item_number: D01
+              "name_zh-Hant": 京蔥燒海參
+              "name_en": Braised Sea Cucumber with Green Onion
+            - item_number: D02
+              "name_zh-Hant": 百花釀原條遼參
+              "name_en": Steamed Stuffed Sea Cucumber with Prawns
+            - item_number: D03
+              "name_zh-Hant": 海參燴花膠
+              "name_en": Braised Sea Cucumber with Fish Maw
+            - item_number: D04
+              "name_zh-Hant": 红燒海參範魚 (6 只)
+              "name_en": Braised Abalone with Sea Cucumber
+            - item_number: D04
+              "name_zh-Hant": 原只蠔皇範魚
+              "name_en": Braised Fresh Abalone in Oyster Sause [sic]
+        - "name_zh-Hant": 主廚推薦
+          "name_en": Chef's Recommendation
+          menu_items:
+            - item_number: SP01
+              "name_zh-Hant": 北京片皮鴨
+              "name_en": Two Flavors of Peking Duck (Whole)
+              "description_zh-Hant": "兩食 A: 片皮鴨＋鴨色, B: 炒鴨松十生菜"
+              "description_en": "A: Duck Skin with Steamed Buns, B: Duck Meat with Lettuce"
+            - item_number: SP02
+              "name_zh-Hant": 私房豬肚撈雞 (半只)
+              "name_en": Marinated Chicken and Pork Tripe with Wasabi (Half)
+            - item_number: SP03
+              "name_zh-Hant": 秘制手抓羊排仔
+              "name_en": Pan Fried Baby Lamb Chop with Special Sauce
+            - item_number: SP04
+              "name_zh-Hant": 姜蔥爆海參花膠
+              "name_en": Stir-Fried Sea Cucumber and Fish Maw with Ginger and Scallion
+            - item_number: SP05
+              "name_zh-Hant": 特色美松煎老虎蝦
+              "name_en": Pan Fried Tiger Prawns with Maggie Soy Sauce
+            - item_number: SP05
+              "name_zh-Hant": 蜜豆淮山炒帶子蝦球
+              "name_en": Scallops and Prawns with Sweet Peas and chinese Yam
+    - sections:
+        - "name_zh-Hant": 家鄉風味
+          "name_en": Country Style Delicacies
+          menu_items:
+            - item_number: E01
+              "name_zh-Hant": 頭廚小炒皇
+              "name_en": House Special Stir-Fry
+            - item_number: E02
+              "name_zh-Hant": 江南茶香蝦
+              "name_en": Salt and Pepper Prawn in Smoked Tea Leaves
+              spice_level: 1
+            - item_number: E03
+              "name_zh-Hant": 中山家鄉魚餅
+              "name_en": Stir Fried Sliced Fish Cake with Vegetables
+            - item_number: E04
+              "name_zh-Hant": 燒汁雜菌牛仔粒
+              "name_en": Steak Cube with Mixed Mushroom and BBQ Sauce
+            - item_number: E05
+              "name_zh-Hant": 雞粒扒脆皮玉子豆腐
+              "name_en": Crispy Homemade Egg Tofu with Diced Chicken
+            - item_number: E06
+              "name_zh-Hant": 红梅海鲜玉子豆腐
+              "name_en": Steamed Homemade Egg Tofu with Seafood
+            - item_number: E07
+              "name_zh-Hant": 石窩牛尾炆南瓜
+              "name_en": Ox Tail Stew with Pumpkin in Stoneware
+            - item_number: E08
+              "name_zh-Hant": 枝竹香茅焗牛尾
+              "name_en": Ox Tail Stew with Dried Bean Curd in Lemongrass Sauce
+            - item_number: E09
+              "name_zh-Hant": 麥香風沙金蠔
+              "name_en": Crispy Baked Oysters with Oak and Garlic
+              "description_zh-Hant": "(6)"
+            - item_number: E10
+              "name_zh-Hant": 金沙南瓜石斑球
+              "name_en": Fish Filet and Pumpkin, Crispy Fried with Egg Yolk
+            - item_number: E11
+              "name_zh-Hant": 蘿卜冬菜浸生蠔
+              "name_en": Fresh Oyster and Turnip in Chicken Broth
+            - item_number: E12
+              "name_zh-Hant": 蟠龍燒茄子
+              "name_en": Stuffed Whole Eggplants in BBQ Sauce
+            - item_number: E13
+              "name_zh-Hant": 鋼盤燒汁骨
+              "name_en": Baked Sparerib with BBQ Sauce on Brass Plate
+            - item_number: E14
+              "name_zh-Hant": 石鍋招牌無錫骨
+              "name_en": Wuxi Pork Rib in Stoneware
+    - sections:
+        - "name_zh-Hant": 家鄉 風味
+          "name_en": Country Style Delicacies
+          menu_items:
+            - item_number: E15
+              "name_zh-Hant": 蜜豆帶子牛仔粒
+              "name_en": Scallops and Beef Steak in Honey Pepper Sauce
+              spice_level: 1
+            - item_number: E16
+              "name_zh-Hant": 日式燒汁魷魚
+              "name_en": Japanese Style BBQ Squid
+            - item_number: E17
+              "name_zh-Hant": 桂林黃金百花球
+              "name_en": Guilin Deep Fried Shrimp Meatballs
+            - item_number: E18
+              "name_zh-Hant": 回味醬燒骨
+              "name_en": Mandarin Style Spareribs
+            - item_number: E19
+              "name_zh-Hant": 港式生炒骨
+              "name_en": Hong Kong Style Sweet and Sour Spareribs
+            - item_number: E20
+              "name_zh-Hant": 客家煎釀三寶
+              "name_en": Pan Fried Stuffed Tofu, Mushroom and Bell Pepper
+            - item_number: E21
+              "name_zh-Hant": 雪山桂花魚肚
+              "name_en": Stir-Fried Fish Maw with Egg Whites
+            - item_number: E22
+              "name_zh-Hant": 四川酸菜水煮魚
+              "name_en": Szechuan Style Boiled Sliced Fish in Spicy Sauce
+              spice_level: 1
+            - item_number: E23
+              "name_zh-Hant": 芥蘭炒魚餅
+              "name_en": Stir Fried Sliced fish Cake with Chinese Broccoli
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipP0LAJPCIyhabt4ny-rJXrF1BZB1_kyUZXR43ar=s1140-k-no
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Seafood
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNWCEhiQBajTQHS5rGnRy_M4vhIAgwoxF1ek1dg=s1140-k-no
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Poultry
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPZmd-67qIH88mV609ThJalYMeEmCFWkpe0IyV2=s1140-k-no
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Sizzling Platter, Claypot
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMrmbWqXj8XJbRJNUQ2oX41wZjr_rIaU-crFRIX=s856-k-no
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Vegetables and Tofu
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMKDPw_yDauE99gAQzROTvDhbHPCWRH9LEs36ap=s856-k-no
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Chow Mein / Chow Fu / Fried Rice
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPQLQAsKXJhAjnMBmkKtHlvyj2P_CIy-m0obNli=s684-k-no
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Dessert and Drink

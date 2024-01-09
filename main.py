@@ -74,19 +74,20 @@ def generate_menu_html(
         for page in yaml_dict["menu"]["pages"]:
             if page.get("sections"):
                 for section in page["sections"]:
-                    for menu_item in section["menu_items"]:
-                        lang = "name_" + primary_lang
-                        if menu_item.get(lang):
-                            primary_name = menu_item[lang]
-                            if known_dishes.get(primary_name):
-                                known_dish = known_dishes[primary_name]
-                                for k, v in known_dish.items():
-                                    if k not in menu_item:
-                                        menu_item[k] = v
-                                    # else:
-                                    #     print(
-                                    #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
-                                    #     )
+                    if section.get("menu_items"):
+                        for menu_item in section["menu_items"]:
+                            lang = "name_" + primary_lang
+                            if menu_item.get(lang):
+                                primary_name = menu_item[lang]
+                                if known_dishes.get(primary_name):
+                                    known_dish = known_dishes[primary_name]
+                                    for k, v in known_dish.items():
+                                        if k not in menu_item:
+                                            menu_item[k] = v
+                                        # else:
+                                        #     print(
+                                        #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
+                                        #     )
 
     language_codes = []
     if yaml_dict.get("menu"):
@@ -162,14 +163,17 @@ def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
         if yaml_dict.get("menu"):
             menu = yaml_dict["menu"]
             primary_lang = menu["language_codes"][0]
+            menu_primary_name_set = set()
             for page in menu["pages"]:
                 if page.get("sections"):
                     for section in page["sections"]:
-                        for menu_item in section["menu_items"]:
-                            lang = "name_" + primary_lang
-                            if menu_item.get(lang):
-                                primary_name = menu_item[lang]
-                                primary_names.append(primary_name)
+                        if section.get("menu_items"):
+                            for menu_item in section["menu_items"]:
+                                lang = "name_" + primary_lang
+                                if menu_item.get(lang):
+                                    primary_name = menu_item[lang]
+                                    menu_primary_name_set.add(primary_name)
+            primary_names.extend(menu_primary_name_set)
 
     print("Unique dish names: " + str(len(set(primary_names))))
 
