@@ -42,7 +42,7 @@ RESTAURANT_SCHEMA = Map(
                                                     ): Str(),
                                                     Optional("image_url"): Str(),
                                                     Optional("price"): Str(),
-                                                    Optional("spice_level"): Int(),
+                                                    Optional("spice_heat_level"): Int(),
                                                 },
                                                 Str(),  # validator for keys (both defined and undefined)
                                                 Str(),  # validator for values of undefined keys

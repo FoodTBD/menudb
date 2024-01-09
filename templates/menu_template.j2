@@ -87,7 +87,7 @@
                                 </div>
 
                                 <div class="menu-item-description">
-                                    {% for _ in range(item['spice_level'] | default(0)) %}🌶️{% endfor %}
+                                    {% for _ in range(item['spice_heat_level'] | default(0)) %}🌶️{% endfor %}
 
                                     {%- for lang in language_codes if item['description_' + lang] %}
                                     <span class="menu-item-description">{{ item['description_' + lang] |

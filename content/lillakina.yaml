@@ -22,7 +22,7 @@ menu:
               "name_sv-SE": Pekingsoppa
               "description_sv-SE": Tärnad Kycklingfilé med grönsaker
               price: 65 kr
-              spice_level: 2
+              spice_heat_level: 2
             - item_number: 2
               "name_zh-Hans": 西湖牛肉羹 
               "name_sv-SE": Biffsoppa
@@ -107,12 +107,12 @@ menu:
               "name_zh-Hans": 青椒仔鸡
               "description_sv-SE": Wok med marinerade kycklinglår med sichuanpeppar och grönsaker.
               price: 178 kr
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 32
               "name_zh-Hans": 干锅鸡
               "description_sv-SE": Marinerade kycklinglår och kinesiska grönsaker i sichuansk chili hot pot.
               price: 188 kr
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 33
               "name_zh-Hans": 香酥鸭
               "description_sv-SE": Krispig ankfilé med val av hoisinsås, sichuansås och sötsur sås
@@ -128,7 +128,7 @@ menu:
               "name_zh-Hans": 川香回锅肉
               "description_sv-SE": Dubbelwokad sidfläsk med grönsaker.
               price: 178 kr
-              spice_level: 2
+              spice_heat_level: 2
             - item_number: 41
               "name_zh-Hans": 菠萝咕咾肉
               "description_sv-SE": Lättfriterade fläskfilébollar med ananas i sötsur sås.
@@ -141,22 +141,22 @@ menu:
               "name_zh-Hans": 川府水煮肉
               "description_sv-SE": Bräserat fläsk och böngroddar i stark sichuansoppa.
               price: 188 kr
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 45
               "name_zh-Hans": 酸豆角肉末
               "description_sv-SE": Marinerade brytbönor med köttfärs.
               price: 178 kr
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 48
               "name_zh-Hans": 老干妈猪手
               "description_sv-SE": Bräserade grifötter med kinesiska grönsaker i sichuan chilipor.
-              spice_level: 2
+              spice_heat_level: 2
               price: 218 kr
             - item_number: 49
               "name_zh-Hans": 孜然排骨
               "description_sv-SE": Torrwokad revben med chili och kummin.
               price: 188 kr
-              spice_level: 1
+              spice_heat_level: 1
         - "name_zh-Hans": 牛
           "name_sv-SE": Biff
           menu_items:
@@ -164,17 +164,17 @@ menu:
               "name_zh-Hans": 酸汤肥牛
               "description_sv-SE": Tunt skivad entrecote i oxbuljong med färska grönsaker.
               price: 198 kr
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 51
               "name_zh-Hans": 豆花牛肉
               "description_sv-SE": Bräserad ryggbiff i kinesisk chilibönsås samt tofu pudding och jordnötter.
               price: 248 kr
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 52
               "name_zh-Hans": 川府水煮牛肉
               "description_sv-SE": Bräserad ryggbiff och böngroddar i sichuansk chili soppa.
               price: 188 kr
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 53
               "name_zh-Hans": 铁板牛肉
               "description_sv-SE": Marinerad ryggbiff med färska grönsaker och torkad lök, serveras i varm gjutjärnspanna.
@@ -183,12 +183,12 @@ menu:
               "name_zh-Hans": 麻辣牛肚煲
               "description_sv-SE": Bräserad komage och kinesiska grönsaker i stark sichuansk grytan.
               price: 198 kr
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 55
               "name_zh-Hans": 泡椒爆小牛肉
               "description_sv-SE": Wok med ryggbiff med grönsaker och pepperoni.
               price: 188 kr
-              spice_level: 1
+              spice_heat_level: 1
         - "name_zh-Hans": 海鲜
           "name_sv-SE": Skaldjur
           menu_items:
@@ -196,17 +196,17 @@ menu:
               "name_zh-Hans": 酸菜鱼
               "description_sv-SE": Marinerad fiskfilé i buljong med böngroddar.
               price: 小/liten 198kr, 大/ Stor 288kr(2人份)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 61
               "name_zh-Hans": 沸腾水煮鱼
               "description_sv-SE": Marinerad fiskfilé i stark sichuansoppa med böngroddar.
               price: 小/liten 198kr, 大/ Stor 288kr(2人份)
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 62
               "name_zh-Hans": 香辣虾
               "description_sv-SE": Jätteräkor med grönsaker i sichuanstil.(stark)
               price: 小/liten 198kr, 大/ Stor 288kr(2人份)
-              spice_level: 2
+              spice_heat_level: 2
             - item_number: 63
               "name_zh-Hans": 茄汁虾球
               "name_sv-SE": 
@@ -225,7 +225,7 @@ menu:
               "name_zh-Hans": 干锅牛蛙
               "description_sv-SE": Bräserade grodlår och grönsaker i sichuansk chilipot.
               price: 258 kr
-              spice_level: 3
+              spice_heat_level: 3
         - "name_zh-Hans": 素
           "name_sv-SE": Vegetarisk
           menu_items:
@@ -241,12 +241,12 @@ menu:
               "name_zh-Hans": 干煸四季豆
               "description_sv-SE": Torrt wokade brytbönor med torkad chili peppar.
               price: 178 kr
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 73
               "name_zh-Hans": 干锅花菜
               "description_sv-SE": Wokad blomkål med shichuan chiliolja i chili pot.
               price: 188 kr
-              spice_level: 2
+              spice_heat_level: 2
             - item_number: 74
               "name_zh-Hans": 青椒土豆丝
               "description_sv-SE": Wok med strimlad potatis och paprika.
@@ -255,7 +255,7 @@ menu:
               "name_zh-Hans": 飘香土豆丝
               "description_sv-SE": Friterad strimlad potatis med shichuansk chilioljariterad strimlad potatis med chiliolja.
               price: 178 kr
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 76
               "name_zh-Hans": 金沙豆腐
               "description_sv-SE": Wok med tofu och marinerad äggula.
@@ -264,7 +264,7 @@ menu:
               "name_zh-Hans": 麻婆豆腐
               "description_sv-SE": Wok med tofu i stark chilibön sås.
               price: 178 kr
-              spice_level: 2
+              spice_heat_level: 2
             - item_number: 78
               "name_zh-Hans": 家常豆腐
               "description_sv-SE": Wok med tofu och grönsaker (serveras stark eller mild)
@@ -302,7 +302,7 @@ menu:
               "name_zh-Hans": 重庆毛血旺
               "description_sv-SE": Marinerat ankblod, kinesisk spam och, komagen i stark sichuansoppa.
               price: 288 kr
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: s3
               "name_zh-Hans": 松鼠鱼
               "description_sv-SE": Panerad marinerad hel fisk i sötsur sås.
@@ -311,12 +311,12 @@ menu:
               "name_zh-Hans": 麻辣香锅
               "description_sv-SE": Marinerad kycklingfilé, ryggbiff, fläsk, stora räkor, komagen, gristarmar och kinesiska grönsaker i sichuansk chili pot med special sichuanska kryddor.
               price: liten 228 kr, stor 388 kr (3人份)
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: s4
               "name_zh-Hans": 蜀香烤鱼
               "description_sv-SE": Grillad hel fisk och kinesiska grönsaker i sichuansk hot pot med speciellal sichuanska kryddor.
               price: 438 kr (3人份)
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: s5
               "name_zh-Hans": 酸汤老鸭煲
               "description_sv-SE": Bräserad anka i buljong med kinesiska syrlig vitkål.

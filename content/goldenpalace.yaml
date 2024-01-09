@@ -246,7 +246,7 @@ menu:
               "name_zh-Hant": 夫妻肺片
               "name_en": Couple’s Delight
               price: (SK)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D57
               "name_zh-Hant": 滷水鴨翼
               "name_en": Marinated Duck Wing
@@ -279,7 +279,7 @@ menu:
               "name_zh-Hant": 麻辣小黃瓜
               "name_en": Cucmber [sic] with House Special spicy Sauce
               price: (SK)
-              spice_level: 1
+              spice_heat_level: 1
         - "name_zh-Hant": 頭廚推薦
           "name_en": Chef’s Special
           menu_items:
@@ -425,17 +425,17 @@ menu:
               "name_zh-Hant": 椒鹽魷魚
               "name_en": Salt and Pepper Squid
               price: (K)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D80
               "name_zh-Hant": 椒鹽雞翼
               "name_en": Salt and Pepper Chicken Wing
               price: (SP)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D81
               "name_zh-Hant": 椒鹽中蝦
               "name_en": Salt and Pepper Chicken Prawns
               price: (SP)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D82
               "name_zh-Hant": 豉油皇炒麵
               "name_en": Soy Sauce Chow Mein
@@ -448,7 +448,7 @@ menu:
               "name_zh-Hant": 雪菜肉絲炒年糕
               "name_en": Preserved Vegetable and Pork with Rice Cake
               price: (K)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D85
               "name_zh-Hant": 煎釀辣尖椒
               "name_en": Pan Fried Stuffed Chili Pepper
@@ -465,7 +465,7 @@ menu:
               "name_zh-Hant": 椒鹽豆腐粒
               "name_en": Salt and Pepper Tofu
               price: (K)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D89
               "name_zh-Hant": 金沙南瓜條
               "name_en": Crispy Fried Pumpkin with Salted Egg Yolk
@@ -518,17 +518,17 @@ menu:
               "name_zh-Hant": 乾煸四季豆
               "name_en": Pan Fried String Beans with Hot Sauce
               price: (K)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D101
               "name_zh-Hant": 紅油水餃
               "name_en": Steamed Dumpling with Hot Sauce
               price: (SP)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: D102
               "name_zh-Hant": 白灼牛百葉
               "name_en": Boiled Beef Tripe
               price: (SP)
-              spice_level: 1
+              spice_heat_level: 1
         - "name_zh-Hant": 甜甜蜜蜜
           "name_en": Dessert
           menu_items:
@@ -616,7 +616,7 @@ menu:
               "name_zh-Hant": 五味椒鹽雞翼
               "name_en": Salt and Pepper Chicken Wings
               price: $14.99
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: A06
               "name_zh-Hant": 木須肉
               "name_en": Mushu Pork (or Chicken, Vegetables)
@@ -722,7 +722,7 @@ menu:
               "name_zh-Hant": 京蔥霸王雞（半隻）
               "name_en": Steamed Chicken with Fresh Pepper and Onion Sauce (Half)
               price: $18.99 （半隻 Half)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: C05
               "name_zh-Hant": 蜜汁叉燒
               "name_en": BBQ Pork
@@ -735,7 +735,7 @@ menu:
               "name_zh-Hant": 成都口水雞
               "name_en": Chengdu Style Chicken with Spicy Sauce
               price: $20.99 (半隻 Half)
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: C08
               "name_zh-Hant": 脆皮咸豬手
               "name_en": Macau Style Crispy Skin Ham Hock)
@@ -765,7 +765,7 @@ menu:
               "name_zh-Hant": 麻辣家鄉小黃瓜
               "name_en": Cucumber w/ House Special Sauce
               price: $11.99
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: S02
               "name_zh-Hant": 潮州鹵水豆腐
               "name_en": Chao Zhou Marinated Tofu
@@ -839,7 +839,7 @@ menu:
             - item_number: E02
               "name_zh-Hant": 江南茶香蝦
               "name_en": Salt and Pepper Prawn in Smoked Tea Leaves
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: E03
               "name_zh-Hant": 中山家鄉魚餅
               "name_en": Stir Fried Sliced Fish Cake with Vegetables
@@ -884,7 +884,7 @@ menu:
             - item_number: E15
               "name_zh-Hant": 蜜豆帶子牛仔粒
               "name_en": Scallops and Beef Steak in Honey Pepper Sauce
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: E16
               "name_zh-Hant": 日式燒汁魷魚
               "name_en": Japanese Style BBQ Squid
@@ -906,7 +906,7 @@ menu:
             - item_number: E22
               "name_zh-Hant": 四川酸菜水煮魚
               "name_en": Szechuan Style Boiled Sliced Fish in Spicy Sauce
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: E23
               "name_zh-Hant": 芥蘭炒魚餅
               "name_en": Stir Fried Sliced fish Cake with Chinese Broccoli

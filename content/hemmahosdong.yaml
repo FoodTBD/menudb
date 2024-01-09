@@ -25,7 +25,7 @@ menu:
               "description_sv-SE": Inlagd rättika med szechuan peppar, sesamfrön i en söt stark sas, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/rattika_mad_sot_stark_sas.jpg
               price: 79:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 2
               "name_zh-Hans": 酸辣土豆丝
               "name_zh-Latn-pinyin": Suān là tǔdòu sī
@@ -33,21 +33,21 @@ menu:
               "description_sv-SE": Marinerade potatisstrimlor i vinäger- och chilisås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/strimlad_potatis_med_sotsur_stark_sas.jpg
               price: 79:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 3
               "name_zh-Hans": 酸辣木耳
               "name_zh-Latn-pinyin": Suān là mù'ěr
               "name_sv-SE": Öronsvamp med sötsur sås
               "description_sv-SE": Marinerade fungus öronsvamp i vinäger- och chilisås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/oronsvamp_med_sotsur_sas.jpg
-              spice_level: 1
+              spice_heat_level: 1
               price: 79:-
             - item_number: 4
               "name_zh-Hans": 红油腐竹
               "name_zh-Latn-pinyin": Hóng yóu fǔzhú
               "description_sv-SE": Marinerad tofu (soyabönor) skin i chili olja
               price: 79:-
-              spice_level: 1
+              spice_heat_level: 1
         - "name_zh-Hans": 正餐
           "name_zh-Latn-pinyin": Huvudrätter
           menu_items:
@@ -59,12 +59,12 @@ menu:
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_tofu_med_gronsaker_serverad_med_stark_eller_mild_sas.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Hunan_cuisine#List_of_notable_dishes
               price: 159:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 2
               "name_zh-Hans": 麻婆豆腐
               "name_zh-Latn-pinyin": Mápó dòufu
               "description_sv-SE": Wokad tofu med szechuan pepparsås, soyasås
-              spice_level: 2
+              spice_heat_level: 2
               price: 149:-
             - item_number: 3
               "name_zh-Hans": 清炒时蔬
@@ -77,12 +77,12 @@ menu:
               "description_sv-SE": Bräserad aubergine med kockens söta, sura, salta och starka sås, soyasås, ostronsås
               wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
               price: 169:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 5
               "name_zh-Hans": 酸辣土豆丝
               "name_zh-Latn-pinyin": Suānlà tǔdòu sī
               "description_sv-SE": Wokade potatisstrimlor med chili och vinäger smak, soyasås
-              spice_level: 1
+              spice_heat_level: 1
               price: 109
             - item_number: 6
               "name_zh-Hans": 红烧排骨
@@ -108,7 +108,7 @@ menu:
               "description_sv-SE": Friterad kyckling med torrstark szechuan peppar chili och jordnötter, sesamfrön, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_stark_kyckling.jpg
               price: 189:-
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 9
               "name_zh-Hans": 红烧鸡肉
               "name_zh-Latn-pinyin": Hóngshāo jīrò
@@ -117,14 +117,14 @@ menu:
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_kyckling_med_sot_stark_sas.jpg
               wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
               price: 189:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 10
               "name_zh-Hans": 水煮牛肉
               "name_zh-Latn-pinyin": Shuǐ zhǔ niúròu
               "name_sv-SE": Pocherad biff med grönsaker i szechuan soppa
               "description_sv-SE": Kokt biff med grönsaker på szechuan-vis, soyasås
               price: 249:-
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 13
               "name_zh-Hans": 飘香鸭
               "name_zh-Latn-pinyin": Piāo xiāng yā
@@ -132,14 +132,14 @@ menu:
               "description_sv-SE": Friterad anka toppad med jordnötter, svartpeppar, sesamfrön, vetemjöl och chilisås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_anka_med_chili_och_jordnotssas.jpg
               price: 229:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 14
               "name_zh-Hans": 沸腾水煮鱼
               "name_zh-Latn-pinyin": Fèiténg shuǐ zhǔ yú
               "description_sv-SE": Pocherad fiskfilé szechuan soppa, soyasås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/img_20201105_190954078.jpg
               price: 249:-
-              spice_level: 3
+              spice_heat_level: 3
             - item_number: 15
               "name_zh-Hans": 葱姜炒虾
               "name_zh-Latn-pinyin": Cōng jiāng chǎo xiā
@@ -160,7 +160,7 @@ menu:
               "name_sv-SE": Nudelsoppa med biff och grönsaker
               "description_sv-SE": Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås
               price: 169:-
-              spice_level: 1
+              spice_heat_level: 1
             - item_number: 18
               "name_zh-Hans": 干炒牛河 
               "name_zh-Latn-pinyin": Gàn chǎo niú hé
