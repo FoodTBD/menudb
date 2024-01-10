@@ -197,7 +197,7 @@ menu:
               "name_zh-Hant": 百花釀茄子
               "name_en": Stuffed Eggplant with Minced Shrimp
               price: (L)
-        - "name_zh-Hant": 焼味滷味
+        - "name_zh-Hant": 烧燒味滷味
           "name_en": B.B.Q/Marinated
           menu_items:
             - item_number: D45
@@ -209,6 +209,7 @@ menu:
               "name_en": B.B.Q. Pork
               price: (SP)
             - item_number: D47
+              # Doordash says 涼拌海哲
               "name_zh-Hant": 涼拌海蜇
               "name_en": Jelly Fish
               price: (SK)
@@ -233,6 +234,7 @@ menu:
               "name_en": Wasabi Pork Stomach
               price: (SK)
             - item_number: D53
+              # Doordash says 碳燒豬頸肉
               "name_zh-Hant": 炭燒豬頸肉
               "name_en": B.B.Q. Pork Neck
               price: (SP)
@@ -278,6 +280,7 @@ menu:
               "name_en": Tossed Black Fungus Salad
               price: (SK)
             - item_number: D64
+              # Doordash says 麻辣小黄瓜
               "name_zh-Hant": 麻辣小黃瓜
               "name_en": Cucmber [sic] with House Special spicy Sauce
               price: (SK)
@@ -342,7 +345,7 @@ menu:
               "name_en": Beef Rice Noodle Roll
               price: (L)
             - item_number: D67
-              "name_zh-Hant": 蜜汁叉燒腸
+              "name_zh-Hant": 蜜汁叉燒
               "name_en": B.B.Q. Pork Rice Noodle Roll
               price: (L)
             - item_number: D68
@@ -358,6 +361,7 @@ menu:
               "name_en": Rice Noodle Roll with Cilantro & Scallion
               price: (L)
             - item_number: D71
+              # Doordash says 鮮雜菌手拉腸
               "name_zh-Hant": 鮮雜菌拉腸
               "name_en": Rice Noodle Roll with Mixed Mushroom
               price: (L)
@@ -647,6 +651,7 @@ menu:
               "name_zh-Hant": 酸辣湯
               "name_en": Hot and Sour Soup
               price: $15.99
+              spice_heat_level: 1
             - item_number: B02
               "name_zh-Hant": 云吞湯
               "name_en": Wonton Soup
@@ -725,7 +730,7 @@ menu:
               price: $18.99 （半隻 Half), $36.99 （全隻 Whole)
             - item_number: C04
               "name_zh-Hant": 京蔥霸王雞（半隻）
-              "name_en": Steamed Chicken with Fresh Pepper and Onion Sauce (Half)
+              "name_en": Steamed Chicken with Fresh Pepper and Onion Sauce
               price: $18.99 （半隻 Half)
               spice_heat_level: 1
             - item_number: C05
@@ -1025,17 +1030,145 @@ menu:
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNWCEhiQBajTQHS5rGnRy_M4vhIAgwoxF1ek1dg=s1140-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192855126%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 家禽
           "name_en": Poultry
+          menu_items:
+            - item_number: G01
+              "name_zh-Hant": 九層塔辣子雞
+              "name_en": Szechuan Chicken
+              spice_heat_level: 1
+            - item_number: G02
+              "name_zh-Hant": 重度辣子雞
+              "name_en": Chongqing Spicy Chicken
+              spice_heat_level: 1
+            - item_number: G03
+              "name_zh-Hant": 宮保雞
+              "name_en": Kung Pao Chicken
+              spice_heat_level: 1
+            - item_number: G04
+              "name_zh-Hant": 咖喱雞球
+              "name_en": Chicken in Curry Sauce
+              spice_heat_level: 1
+            - item_number: G05
+              "name_zh-Hant": 碧绿川椒雞
+              "name_en": Chicken and Broccoli with Spicy Sauce
+            - item_number: G06
+              "name_zh-Hant": 腰果雞
+              "name_en": Cashew Nut Chicken
+            - item_number: G07
+              "name_zh-Hant": 雙菇雞球
+              "name_en": Chicken with Two Kinds of Mushroom
+            - item_number: G08
+              "name_zh-Hant": 檸檬煎雞脯
+              "name_en": Pan Fried Breaded Chicken in Lemon Sauce
+            - item_number: G09
+              "name_zh-Hant": 左宗棠雞
+              "name_en": General Tso's Chicken
+              spice_heat_level: 1
+            - item_number: G10
+              "name_zh-Hant": 四季豆炒雞球
+              "name_en": Stir Fried Chicken with String Beans
+            - item_number: G11
+              "name_zh-Hant": 陳皮雞
+              "name_en": Orange Chicken
+              spice_heat_level: 1
+            - item_number: G12
+              "name_zh-Hant": 姜蔥油淋雞
+              "name_en": Steamed Chicken with Ginger and Scallion Sauce
+              price_note: "(半只 Half)"
+            - item_number: G13
+              "name_zh-Hant": 當紅炸子雞
+              "name_en": Crispy Fried Chicken
+              price_note: "(半只 Half)"
+            - item_number: G14
+              "name_zh-Hant": 金華玉樹雞
+              "name_en": Sliced Steamed Chicken with Ham and Greens
+              price_note: "(Whole)"
+            - item_number: G15
+              "name_zh-Hant": 脆皮糯米雞
+              "name_en": Crispy Chicken Stuffed with Sweet Rice
+              price_note: "(Whole, Order in Advance)"
+            - item_number: G16
+              "name_zh-Hant": Braised Boneless Duck Stuffed with Eight Delicacies
+              "name_en": Crispy Chicken Stuffed with Sweet Rice
+              price_note: "(Order in Advance)"        
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPZmd-67qIH88mV609ThJalYMeEmCFWkpe0IyV2=s1140-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192901253%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 鐵板,煲仔菜
           "name_en": Sizzling Platter, Claypot
+          menu_items:
+            - item_number: J01
+              "name_zh-Hant": 鐵板黑椒牛柳
+              "name_en": Beef Steak with Black Pepper Sauce on Hot Iron Platter
+            - item_number: J02
+              "name_zh-Hant": 鐵板姜蔥生壞
+              "name_en": Oysters with Ginger and Onion on Hot Iron Platter
+            - item_number: J03
+              "name_zh-Hant": 鐵板三杯雞
+              "name_en": Braised Chicken with Three Kinds of Sauce on Hot Iron Platter
+              spice_heat_level: 1
+            - item_number: J04
+              "name_zh-Hant": 鐵板燒汁煎有殼蝦
+              "name_en": Grilled Prawns in Shell with BBQ Sauce on Hot Iron Platter
+            - item_number: J05
+              "name_zh-Hant": 红酒牛尾集
+              "name_en": Ox Tail Stew with Wine Sauce in Clay Pot
+            - item_number: J05
+              "name_zh-Hant": 特色鍋仔炆羊腩
+              "name_en": Grilled Prawns in Shell with BBQ Sauce on Hot Iron Platter
+            - item_number: J06
+              "name_zh-Hant": 特色鍋仔炆羊腩
+              "name_en": Stewed Lamb in Hot Pot
+            - item_number: J07
+              "name_zh-Hant": 錫仔清湯牛腩
+              "name_en": Beef Stew in Hot Pot
+            - item_number: J08
+              "name_zh-Hant": 咸魚雞粒豆腐煲
+              "name_en": Chicken with Salted Fish and Tofu in Clay Pot
+            - item_number: J09
+              "name_zh-Hant": 沙茶炒絲肥牛煲
+              "name_en": Satay Beef with Vermicelli in Clay Pot
+            - item_number: J10
+              "name_zh-Hant": 鍋仔酸湯肥牛
+              "name_en": Szechuan Hot and Sour Beef in Hot Pot
+              spice_heat_level: 1
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192903810%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 鐵板,煲仔菜
           "name_en": Sizzling Platter, Claypot
+          menu_items:
+            - item_number: J11
+              "name_zh-Hant": 海味節瓜粉絲煲
+              "name_en": Dried Seafood with Chinese Melon and Vermicelli in Clay Pot
+            - item_number: J12
+              "name_zh-Hant": 大千海鲜豆腐煲
+              "name_en": Seafood Combination with Tofu in Clay Pot
+              spice_heat_level: 1
+            - item_number: J13
+              "name_zh-Hant": 火腩生蠔煲
+              "name_en": Fresh Oyster with Roast Pork in Clay Pot
+            - item_number: J14
+              "name_zh-Hant": 紅燒斑腩煲
+              "name_en": Braised Fish Fillet with Tofu in Clay Pot
+            - item_number: J15
+              "name_zh-Hant": 大千蟹煲
+              "name_en": Spicy Crab with Vermicelli in Clay Pot
+              note: "(時價 Seasonal)"
+              spice_heat_level: 1
+            - item_number: J16
+              "name_zh-Hant": 珍豆腐煲
+              "name_en": House Special Braised Tofu in Clay Pot
+            - item_number: J17
+              "name_zh-Hant": 格辣海鮮茄子煲
+              "name_en": Combination Seafood with Eggplant in Clay Pot
+              spice_heat_level: 1
+            - item_number: J18
+              "name_zh-Hant": 香草海鮮南瓜煲
+              "name_en": Fresh Seafood & Pumpkin in clay Pot
+            - item_number: J19
+              "name_zh-Hant": 喝喝香菇滑雞煲
+              "name_en": Sizzling Chicken in Clay Pot
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMrmbWqXj8XJbRJNUQ2oX41wZjr_rIaU-crFRIX=s856-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192917515%20Large.jpeg
       sections:
@@ -1043,17 +1176,155 @@ menu:
           "name_en": Vegetables and Tofu
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192852015%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 牛肉
           "name_en": Pork and Beef
+          menu_items:
+            - item_number: H01
+              "name_zh-Hant": 京都上肉排
+              "name_en": Peking Style Pork Chop
+            - item_number: H02
+              "name_zh-Hant": 椒鹽焗排骨
+              "name_en": Salt and Pepper Pork Chop
+            - item_number: H03
+              "name_zh-Hant": 回鍋肉
+              "name_en": Twice Cooked Pork
+            - item_number: H04
+              "name_zh-Hant": 酸甜咕嚕肉
+              "name_en": Sweet and Sour Pork
+            - item_number: H05
+              "name_zh-Hant": 四川魚香肉絲
+              "name_en": Shredded Pork w/ Szechuan Garlic Sauce
+            - item_number: H06
+              "name_zh-Hant": 蒙古牛肉
+              "name_en": Mongolian Beef
+            - item_number: H07
+              "name_zh-Hant": 西蘭花牛肉
+              "name_en": Beef with Broccoli
+            - item_number: H08
+              "name_zh-Hant": 陳皮牛肉
+              "name_en": Orange Beef
+            - item_number: H09
+              "name_zh-Hant": 成都水煮牛肉
+              "name_en": Steamed Beef in Spicy Sauce, Chengdu Style
+            - item_number: H10
+              "name_zh-Hant": 燒汁牛仔骨
+              "name_en": Baby Short Ribs in BBQ Sauce
+            - item_number: H11
+              "name_zh-Hant": 菜遠士的球
+              "name_en": Steak Cube with Tender Greens
+            - item_number: H12
+              "name_zh-Hant": 火腿叉燒芙蓉蛋
+              "name_en": BBQ Pork and Ham Egg Fu Yong
+            - item_number: H13
+              "name_zh-Hant": 蔥爆牛柳絲
+              "name_en": Shredded Beef Steak with Green Onion
+            - item_number: H14
+              "name_zh-Hant": 蠔油牛肉
+              "name_en": Beef with Oyster Sauce
+            - item_number: H15
+              "name_zh-Hant": 京蔥爆羊肉
+              "name_en": Sliced Lamb with Green Onion
+            - item_number: H16
+              "name_zh-Hant": 秘制蜜汁牛仔骨
+              "name_en": Pan Fried Baby Short Ribs with Honey Pepper Sauce
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMKDPw_yDauE99gAQzROTvDhbHPCWRH9LEs36ap=s856-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192909208%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 炒粉，麵，飯
           "name_en": Chow Mein / Chow Fu / Fried Rice
+          menu_items:
+            - item_number: L01
+              "name_zh-Hant": 招牌炒面
+              "name_en": Combination Chow Mein
+            - item_number: L02
+              "name_zh-Hant": 招牌前面
+              "name_en": House Special Hong Kong Style Chow Mein
+            - item_number: L03
+              "name_zh-Hant": 雞炒面
+              "name_en": Chicken Chow Mein
+            - item_number: L04
+              "name_zh-Hant": 範汁雜菌撈粗面
+              "name_en": Mushroom Low Mein with Abalone Sauce
+            - item_number: L05
+              "name_zh-Hant": 上海粗而
+              "name_en": Shanghai Style Chow Mein
+            - item_number: L06
+              "name_zh-Hant": 干炒牛河
+              "name_en": Beef Chow Fun
+            - item_number: L07
+              "name_zh-Hant": 雞球炒河
+              "name_en": Chicken Chow Fun
+            - item_number: L08
+              "name_zh-Hant": 海鲜濕炒河
+              "name_en": Seafood Chow Fun with Gravy
+            - item_number: L09
+              "name_zh-Hant": 馬來炒者刁
+              "name_en": Shredded BBQ Pork and Shrimp Chow Fun with Curry
+              spice_heat_level: 1
+            - item_number: L10
+              "name_zh-Hant": 泰國炒米粉
+              "name_en": Tai Style Fried Rice Noodle
+              spice_heat_level: 1
+            - item_number: L11
+              "name_zh-Hant": 銀仔魚炒米粉
+              "name_en": Country Fried Rice Noodle with Dried Fish
+            - item_number: L12
+              "name_zh-Hant": 星洲炒米粉
+              "name_en": Singapore Fried Rice Noodle
+              spice_heat_level: 1
+            - item_number: L13
+              "name_zh-Hant": 日式海鮮炒烏冬
+              "name_en": Japanese Style Seafood Fried Udon
+            - item_number: L14
+              "name_zh-Hant": 上海炒年糕
+              "name_en": Shanghai Style Stir Fried Rice Cake
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192911823%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 炒粉，麵，飯
           "name_en": Chow Mein / Chow Fu / Fried Rice
+          menu_items:
+            - item_number: L15
+              "name_zh-Hant": 雪菜牛松前米粉
+              "name_en": Minced Beef Pan Fried Rice Noodle with Snow Cabbage
+            - item_number: L16
+              "name_zh-Hant": 榨菜肉絲煎米粉
+              "name_en": Shredded Pork and Preserved Pickle Pan Fried Rice Noodle
+            - item_number: L17
+              "name_zh-Hant": 招牌炒伊面
+              "name_en": House Special Stir Fried Yee Fu Noodle
+            - item_number: L18
+              "name_zh-Hant": 雜菌干燒伊面
+              "name_en": Mixed Mushroom with Yee Fu Noodle
+            - item_number: L19
+              "name_zh-Hant": 頭廚沙鍋炒飯
+              "name_en": Chef's Special Fried Rice in Hot Pot
+            - item_number: L20
+              "name_zh-Hant": 瑤柱蛋白炒飯
+              "name_en": Dried Scallops and Egg White Fried Rice
+            - item_number: L21
+              "name_zh-Hant": 揚州炒飯
+              "name_en": Yang Chow Fried Rice
+            - item_number: L22
+              "name_zh-Hant": 福建炒飯
+              "name_en": Fujian Style Fried Rice
+            - item_number: L23
+              "name_zh-Hant": 咸魚雞粒炒飯
+              "name_en": Salted Fish and Chicken Fried Rice
+            - item_number: L24
+              "name_zh-Hant": 鴛鴦炒飯
+              "name_en": Yuan Yung Fried Rice
+            - item_number: L25
+              "name_zh-Hant": 鄉下仔菜粒炒飯
+              "name_en": Country Boy Fried Rice
+            - item_number: L26
+              "name_zh-Hant": 生炒牛肉飯
+              "name_en": Beef Fried Rice
+            - item_number: L27
+              "name_zh-Hant": XO醬海鮮炒飯
+              "name_en": Seafood Fried Rice with XO Sauce
+            - item_number: L28
+              "name_zh-Hant": 白飯
+              "name_en": Steamed Rice
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPQLQAsKXJhAjnMBmkKtHlvyj2P_CIy-m0obNli=s684-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192920104%20Large.jpeg
       sections:

@@ -5,6 +5,7 @@
 * Google Analytics
 * Cantonese TTS?
 * Add feedback link
+* point to custom domain name food-tbd.com
 
 ## In general
 

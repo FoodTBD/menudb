@@ -60,7 +60,7 @@ body {
 }
 
 .menu-table td span.menu-item-number {
-    font-weight: 300;
+    /* font-weight: 300; */
     color: #666;
 }
 
