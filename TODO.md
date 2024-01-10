@@ -1,6 +1,5 @@
 # TODO
 
-* Fix broken responsiveness on mobile
 * Add index nav link
 * Add a known dishes / "EatsDB" page
 * Google Analytics
