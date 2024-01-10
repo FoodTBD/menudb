@@ -1,0 +1,29 @@
+table td img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+}
+
+
+.dishes-table td {
+    /* background-color: aliceblue; */
+    padding: 0.6rem 0.2rem;
+    vertical-align: top;
+}
+
+.dishes-table .dishes-table-image-column .btn-googleimage {
+    width: 100%;
+}
+
+.dishes-table td div.dish-description {
+    padding-top: 0.2rem;
+}
+
+.dishes-table td span.dish-description {
+    font-size: small;
+    color: #666;
+}
+
+.btn-wikipedia {
+    font-family: serif;
+}

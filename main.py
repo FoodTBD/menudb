@@ -30,15 +30,12 @@ def prepare_output_dir(output_dir: str) -> None:
     shutil.copytree(STATIC_DIR, output_static_dir)
 
 
-def load_known_dishes() -> dict[str, Any]:
-    known_dishes = {}
+def load_known_dishes() -> list[dict[str, Any]]:
+    known_dishes = []
     with open("data/known_dishes.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
-            name_native_commaseparated = row["name_native"].split(",")
-            row.pop("name_native")
-            for native_name in name_native_commaseparated:
-                known_dishes[native_name] = row
+            known_dishes.append(row)
     return known_dishes
 
 
@@ -143,8 +140,29 @@ def generate_index_html(yaml_dicts: list[str], output_html_path: str) -> None:
         html_path.write(rendered_html)
 
 
+def generate_dishes_html(
+    known_dishes: list[dict[str, Any]], output_html_path: str
+) -> None:
+    all_dishes = sorted(known_dishes, key=lambda d: d["name_en"])
+
+    env = Environment(loader=FileSystemLoader("."))
+
+    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+    env.trim_blocks = True
+    env.lstrip_blocks = True
+
+    for filter_name in jinja_filters.ALL_FILTERS:
+        env.filters[filter_name] = getattr(jinja_filters, filter_name)
+
+    template = env.get_template("templates/dishes_template.j2")
+    rendered_html = template.render(all_dishes=all_dishes)
+
+    with open(output_html_path, "w", encoding="utf-8") as html_path:
+        html_path.write(rendered_html)
+
+
 def process_yaml_paths(
-    input_dir: str, output_dir: str, known_dishes: dict[str, Any]
+    input_dir: str, output_dir: str, known_dish_lookuptable: dict[str, Any]
 ) -> list[dict[str, Any]]:
     yaml_dicts = []
     for root, _, files in os.walk(input_dir):
@@ -155,7 +173,9 @@ def process_yaml_paths(
                 output_filename = os.path.splitext(relative_path)[0] + ".html"
                 output_path = os.path.join(output_dir, output_filename)
 
-                yaml_dict = generate_menu_html(input_path, output_path, known_dishes)
+                yaml_dict = generate_menu_html(
+                    input_path, output_path, known_dish_lookuptable
+                )
                 yaml_dict["_output_filename"] = output_filename
                 yaml_dicts.append(yaml_dict)
 
@@ -168,7 +188,9 @@ def process_yaml_paths(
     return yaml_dicts
 
 
-def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
+def print_stats(
+    yaml_dicts: list[dict[str, Any]], known_dish_lookuptable: dict[str, Any]
+) -> None:
     eatsdb_names_set = set(load_eatsdb_names())
 
     print(f"Total menu count: {len(yaml_dicts)}")
@@ -184,9 +206,9 @@ def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
                     for section in page["sections"]:
                         if section.get("menu_items"):
                             for menu_item in section["menu_items"]:
-                                lang = "name_" + primary_lang
-                                if menu_item.get(lang):
-                                    primary_name = menu_item[lang]
+                                name_lang = "name_" + primary_lang
+                                if menu_item.get(name_lang):
+                                    primary_name = menu_item[name_lang]
                                     menu_primary_name_set.add(primary_name)
             primary_names.extend(menu_primary_name_set)
 
@@ -205,13 +227,13 @@ def print_stats(yaml_dicts: list[dict[str, Any]]) -> None:
     print("Top 10 characters: " + str(character_counter.most_common(10)))
 
     for dish_name in filtered_c:
-        if not dish_name in known_dishes:
+        if not dish_name in known_dish_lookuptable:
             print(
                 f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
             )
 
     for dish_name in primary_names:
-        if not dish_name in known_dishes and dish_name in eatsdb_names_set:
+        if not dish_name in known_dish_lookuptable and dish_name in eatsdb_names_set:
             print(
                 f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes but is in EatsDB"
             )
@@ -226,6 +248,21 @@ if __name__ == "__main__":
     output_dir = sys.argv[2] if len(sys.argv) >= 3 else OUTPUT_DIR
 
     prepare_output_dir(output_dir)
+
     known_dishes = load_known_dishes()
-    yaml_dicts = process_yaml_paths(input_dir, output_dir, known_dishes)
-    print_stats(yaml_dicts)
+
+    known_dish_lookuptable = {}
+    for known_dish in known_dishes:
+        name_native_commaseparated = known_dish["name_native"].split(",")
+        d = known_dish.copy()
+        d.pop("name_native")
+        for native_name in name_native_commaseparated:
+            known_dish_lookuptable[native_name] = d
+
+    yaml_dicts = process_yaml_paths(input_dir, output_dir, known_dish_lookuptable)
+
+    output_path = os.path.join(output_dir, "dishes.html")
+    generate_dishes_html(known_dishes, output_path)
+    print(f"Processed: {output_path}")
+
+    print_stats(yaml_dicts, known_dish_lookuptable)

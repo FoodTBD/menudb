@@ -137,27 +137,7 @@
                 datetime_format("%Y-%m-%d") }}</small></p>
     </footer>
 
-    <script>
-        function openLink(url, target) {
-            window.open(url, target);
-        }
-
-        function openGoogleImageSearch(queryText) {
-            openLink("https://www.google.com/search?tbm=isch&q=" + queryText, "googleimage");
-        }
-
-        function speakText(text, lang) {
-            window.speechSynthesis.cancel();
-
-            setTimeout(function () {
-                const utterance = new SpeechSynthesisUtterance(text);
-                utterance.lang = lang;
-                utterance.rate = 0.85;
-                window.speechSynthesis.speak(utterance);
-            }, 100); // Delay 100 ms to let cancel() complete
-
-        }
-    </script>
+    {% include 'templates/footer.j2' %}
 </body>
 
 </html>

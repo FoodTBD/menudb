@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDB - All Dishes</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" type="text/css" href="static/dishes_template.css">
+</head>
+
+<body>
+    <h1>Common Dishes</h1>
+    <table class="dishes-table">
+        <tbody>
+            {% for item in all_dishes %}
+            <tr>
+                {% set primary_name_native = item['name_native'].split(',')[0] %}
+                <td class="dishes-table-image-column">
+                    {% if item['image_url'] %}
+                    <img src="{{ item['image_url'] }}" alt="Dish Image"
+                        onclick="openGoogleImageSearch('{{ primary_name_native }}')">
+                    {% else %}
+                    <button aria-label="Image Search" type="button" class="btn-googleimage"
+                        onclick="openGoogleImageSearch('{{ primary_name_native }}')">🖼️
+                        🔎</button>
+                    {% endif %}
+                </td>
+                <td>
+                    <div><span class="dish-name-primary">{{ primary_name_native }}</span> / <span
+                            class="dish-name-secondary">{{ item.name_en }}</span></div>
+                    <div>
+                        <span class="dish-description">{{ item.description_en }}</span>
+                    </div>
+                </td>
+                <td>
+                    <button aria-label="Speak" class="btn-speak"
+                        onclick="speakText('{{ primary_name_native }}', '{{ item['locale_code'] }}')">🗣️</button>
+
+                    {% set wikipedia_url = item['wikipedia_url_en'] %}
+                    {% if wikipedia_url %}<button aria-label="Open Wikipedia" class="btn-wikipedia"
+                        onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button>{% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% include 'templates/footer.j2' %}
+</body>
+
+</html>
