@@ -6,6 +6,7 @@ restaurant:
   country_code: US
   tags: chinese, cantonese, dimsum
   facebook_url: https://www.facebook.com/pages/Golden-Palace-Chinese-Restaurant/498353966951144
+  doordash_url: https://www.doordash.com/store/golden-palace-san-jose-24537032/
 menu:
   language_codes:
     - zh-Hant
@@ -910,10 +911,107 @@ menu:
             - item_number: E23
               "name_zh-Hant": 芥蘭炒魚餅
               "name_en": Stir Fried Sliced fish Cake with Chinese Broccoli
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipP0LAJPCIyhabt4ny-rJXrF1BZB1_kyUZXR43ar=s1140-k-no
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMuJgEqsDk9Tzit1Pt4-qqYqI3lTWm2diAL86-N=s1016-k-no
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 特選海鮮
           "name_en": Seafood
+          menu_items:
+            - item_number: F01
+              "name_zh-Hant": 鲜果蜜桃蝦球
+              "name_en": Honey Glazed Walnut Prawns with Fruit
+            - item_number: F02
+              "name_zh-Hant": 宮保蝦球
+              "name_en": Kung Pao Prawns
+              spice_heat_level: 1
+            - item_number: F03
+              "name_zh-Hant": 糖果蝦球
+              "name_en": Prawns with Cashew Nuts
+            - item_number: F04
+              "name_zh-Hant": 龍蝦糊
+              "name_en": Prawns in Lobster Sauce
+            - item_number: F05
+              "name_zh-Hant": 干燒蝦球
+              "name_en": Spicy Braised Prawns
+              spice_heat_level: 1
+            - item_number: F06
+              "name_zh-Hant": 魚香帶子
+              "name_en": Scallops in Spicy Garlic Sauce
+              spice_heat_level: 1
+            - item_number: F07
+              "name_zh-Hant": 油泡帶子蝦
+              "name_en": Sauteed Scallops and Prawns
+            - item_number: F08
+              "name_zh-Hant": 油泡海中實
+              "name_en": Sauteed Seafood Combination
+            - item_number: F09
+              "name_zh-Hant": 味菜鲜鱿
+              "name_en": Squid with Preserved Mustard Greens
+            - item_number: F10
+              "name_zh-Hant": 香芋煎蠔餅
+              "name_en": Oyster and Taro Egg Pancake
+            - item_number: F11
+              "name_zh-Hant": 上湯花雕醉蜆
+              "name_en": Drunk Clams (Fresh Clams in Chinese Wine)
+            - item_number: F12
+              "name_zh-Hant": 四季豆炒蝦球
+              "name_en": Sauteed Prawns with String Beans
+            - item_number: F13
+              "name_zh-Hant": 京蔥香露斑球
+              "name_en": Sauteed Fish Filet with Green Onion
+            - item_number: F14
+              "name_zh-Hant": 椒鹽斑球
+              "name_en": Salt and Pepper Fish Filet
+              spice_heat_level: 1
+    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMCo7OsB9hEA7wM5EWrQZKLgbgc-MDvC_Ferkwv=s812-k-no
+      sections:
+        - "name_zh-Hant": 特選海鮮
+          "name_en": Seafood
+          menu_items:
+            - item_number: F15
+              "name_zh-Hant": 密豆炒斑球
+              "name_en": Sauteed Filet of Sole with Sweet Peas
+            - item_number: F16
+              "name_zh-Hant": 九層塔豉椒炒蜆
+              "name_en": Clams with Spicy Black Bean Sauce
+              spice_heat_level: 1
+            - item_number: F17
+              "name_zh-Hant": 鮮蝦蒸水蛋
+              "name_en": Fresh Clams in Steamed Eggs
+            - item_number: F18
+              "name_zh-Hant": 干煎大龍利
+              "name_en": Pan Fried Flounder
+            - item_number: F19
+              "name_zh-Hant": 西藍花斑球
+              "name_en": Sauteed Filet of Sole with Broccoli
+            - item_number: F20
+              "name_zh-Hant": 骨香龍利球
+              "name_en": Sauteed Filet of Flounder and Deep Fried Bones
+            - item_number: F21
+              "name_zh-Hant": 豉汁斑球
+              "name_en": Filet of Sole in Black Bean Sauce
+            - item_number: F22
+              "name_zh-Hant": 甜酸斑球
+              "name_en": Sweet and Sour Filet of Sole
+            - item_number: F23
+              "name_zh-Hant": 煙焗銀鱈魚
+              "name_en": Smoked Sea Bass with Honey and Butter Glaze
+            - item_number: F24
+              "name_zh-Hant": 魚肚賽螃蟹
+              "name_en": Shanghai Crab with Fish Maw and Stuffed Crab Claw
+            - item_number: F25
+              "name_zh-Hant": 四川石斑全魚
+              "name_en": Hot Braised Whole Rock Cod, Szechuan Style
+              spice_heat_level: 1
+            - item_number: F26
+              "name_zh-Hant": 五柳石斑全魚
+              "name_en": Hot Braised Whole Rock Cod with Sweet and Sour Sauce
+            - item_number: F27
+              "name_zh-Hant": 香港大排檔炒龍蝦
+              "name_en": Baked Lobster Hong Kong Style
+            - item_number: F28
+              "name_zh-Hant": 香辣避風塘蟹
+              "name_en": Spicy Baked Fresh Crab
+              spice_heat_level: 1           
     - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNWCEhiQBajTQHS5rGnRy_M4vhIAgwoxF1ek1dg=s1140-k-no
       sections:
         - "name_zh-Hant": ???
