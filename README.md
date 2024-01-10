@@ -39,6 +39,7 @@ Here's an example with all the defined fields:
         homepage_url: https://www.example.com/
         facebook_url: https://www.facebook.com/xxx
         instagram_url: https://www.instagram.com/xxx
+        doordash_url: https://www.doordash.com/xxx
     menu:
         # See Style Guide below
         language_codes:
