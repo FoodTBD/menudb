@@ -13,7 +13,8 @@ menu:
     - zh-Latn-pinyin
     - sv-SE
   pages:
-    - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg
+    # - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2214.jpg
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2214%20Large.jpeg
       sections:
         - "name_zh-Hans": 前餐
           "name_zh-Latn-pinyin": Förrätter
@@ -95,7 +96,8 @@ menu:
               "name_zh-Latn-pinyin": Ròu sī suànmíao
               "description_sv-SE": Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås
               price: 169:-
-    - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg
+    # - page_image_url: https://hemmahosdong.files.wordpress.com/2023/10/img_2215.jpg
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2215%20Large.jpeg
       sections:
         - "name_zh-Hans": 正餐
           "name_zh-Latn-pinyin": Huvudrätter

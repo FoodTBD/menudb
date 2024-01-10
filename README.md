@@ -82,11 +82,13 @@ Language Code | Meaning
 `zh-Hans` | Simplified Chinese [written form]
 `zh-Hant` | Traditional Chinese [written form]
 
+**Menu images**: See repository https://github.com/FoodTBD/menudb_images.
+
 **Dish names**:
 * Any spelling mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.
 * Any notes like "half portion" written in the dish name should be moved to `description_xxx` or `note_xxx` fields.
 
-**Images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/128px-filename.jpg. Edit the URL to specify `128px-` for thumbnails.
+**Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/128px-filename.jpg. Edit the URL to specify `128px-` for thumbnails.
 
 ### Transcription Workflow
 

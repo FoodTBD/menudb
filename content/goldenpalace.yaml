@@ -12,7 +12,8 @@ menu:
     - zh-Hant
     - en
   pages:
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMHbguNPmQy-1B6n2X1mF1H1wSHW8OeSgK_yXOW=s773-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMHbguNPmQy-1B6n2X1mF1H1wSHW8OeSgK_yXOW=s773-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192738885%20Large.jpeg
       sections:
         - "name_zh-Hant": 蒸蒸日上（蒸點）
           "name_en": Steamed Dim Sum
@@ -592,7 +593,8 @@ menu:
             - "name_zh-Hant": 熱水
               "name_en": Hot Water
               price: $1.00
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipP99W5s8fXoQrjlEBFeK9Rea1r3TxfQQMfkp3tW=s684-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipP99W5s8fXoQrjlEBFeK9Rea1r3TxfQQMfkp3tW=s684-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192808728%20Large.jpeg
       sections:
         - "name_zh-Hant": 頭台
           "name_en": Appetizers
@@ -636,7 +638,8 @@ menu:
               "name_en": Assorted Platter
               "description_en": "(Egg Rolls, Fried Prawns, Chicken Wings, and BBQ Pork)"
               price: $22.99
-    - sections:
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192813027%20Large.jpeg
+      sections:
         - "name_zh-Hant": ??湯羹
           "name_en": Soup
           menu_items:
@@ -702,7 +705,8 @@ menu:
               "name_en": Double Boiled Whole Winter Melon Soup
               price: $58.99              
               price_note: Order in Advance
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMOQ2-wlLzyFHFwrQ_WzFCbVrtgOCTfBb2O59xE=s684-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMOQ2-wlLzyFHFwrQ_WzFCbVrtgOCTfBb2O59xE=s684-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192822921%20Large.jpeg
       sections:
         - "name_zh-Hant": 燒滷味
           "name_en": BBQ and Marinated Dishes
@@ -757,7 +761,8 @@ menu:
               "name_zh-Hant": 大红乳豬全體
               "name_en": Roast Whole Suckling Pig
               price_note: 預訂 Order in Advance
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNtlCWsEpmJbnIIL5gGBLue5beW-6o6qs6LcfSg=s856-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNtlCWsEpmJbnIIL5gGBLue5beW-6o6qs6LcfSg=s856-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192755584%20Large.jpeg
       sections:
         - "name_zh-Hant": 風味小食
           "name_en": Special Dishes
@@ -787,7 +792,8 @@ menu:
               "name_zh-Hant": 撈起豬肚
               "name_en": Marinated Pork Tripe with Wasabi Sauce
               price: $12.99
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipOdWZIyUQCKuxf6PnP_mvSYjFyNjN9PgUGkwz8X=s1140-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipOdWZIyUQCKuxf6PnP_mvSYjFyNjN9PgUGkwz8X=s1140-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192826376%20Large.jpeg
       sections:
         - "name_zh-Hant": 鮑麥持選
           "name_en": Abalone and Sea Cucumber
@@ -830,7 +836,8 @@ menu:
             - item_number: SP05
               "name_zh-Hant": 蜜豆淮山炒帶子蝦球
               "name_en": Scallops and Prawns with Sweet Peas and chinese Yam
-    - sections:
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192833222%20Large.jpeg
+      sections:
         - "name_zh-Hant": 家鄉風味
           "name_en": Country Style Delicacies
           menu_items:
@@ -878,7 +885,8 @@ menu:
             - item_number: E14
               "name_zh-Hant": 石鍋招牌無錫骨
               "name_en": Wuxi Pork Rib in Stoneware
-    - sections:
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192836140%20Large.jpeg
+      sections:
         - "name_zh-Hant": 家鄉 風味
           "name_en": Country Style Delicacies
           menu_items:
@@ -911,7 +919,8 @@ menu:
             - item_number: E23
               "name_zh-Hant": 芥蘭炒魚餅
               "name_en": Stir Fried Sliced fish Cake with Chinese Broccoli
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMuJgEqsDk9Tzit1Pt4-qqYqI3lTWm2diAL86-N=s1016-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMuJgEqsDk9Tzit1Pt4-qqYqI3lTWm2diAL86-N=s1016-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192843949%20Large.jpeg
       sections:
         - "name_zh-Hant": 特選海鮮
           "name_en": Seafood
@@ -962,7 +971,8 @@ menu:
               "name_zh-Hant": 椒鹽斑球
               "name_en": Salt and Pepper Fish Filet
               spice_heat_level: 1
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMCo7OsB9hEA7wM5EWrQZKLgbgc-MDvC_Ferkwv=s812-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMCo7OsB9hEA7wM5EWrQZKLgbgc-MDvC_Ferkwv=s812-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192846703%20Large.jpeg
       sections:
         - "name_zh-Hant": 特選海鮮
           "name_en": Seafood
@@ -1012,23 +1022,40 @@ menu:
               "name_zh-Hant": 香辣避風塘蟹
               "name_en": Spicy Baked Fresh Crab
               spice_heat_level: 1           
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNWCEhiQBajTQHS5rGnRy_M4vhIAgwoxF1ek1dg=s1140-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNWCEhiQBajTQHS5rGnRy_M4vhIAgwoxF1ek1dg=s1140-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192855126%20Large.jpeg
       sections:
         - "name_zh-Hant": ???
           "name_en": Poultry
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPZmd-67qIH88mV609ThJalYMeEmCFWkpe0IyV2=s1140-k-no
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPZmd-67qIH88mV609ThJalYMeEmCFWkpe0IyV2=s1140-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192901253%20Large.jpeg
       sections:
         - "name_zh-Hant": ???
           "name_en": Sizzling Platter, Claypot
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMrmbWqXj8XJbRJNUQ2oX41wZjr_rIaU-crFRIX=s856-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192903810%20Large.jpeg
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Sizzling Platter, Claypot
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMrmbWqXj8XJbRJNUQ2oX41wZjr_rIaU-crFRIX=s856-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192917515%20Large.jpeg
       sections:
         - "name_zh-Hant": ???
           "name_en": Vegetables and Tofu
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMKDPw_yDauE99gAQzROTvDhbHPCWRH9LEs36ap=s856-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192852015%20Large.jpeg
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Pork and Beef
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMKDPw_yDauE99gAQzROTvDhbHPCWRH9LEs36ap=s856-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192909208%20Large.jpeg
       sections:
         - "name_zh-Hant": ???
           "name_en": Chow Mein / Chow Fu / Fried Rice
-    - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPQLQAsKXJhAjnMBmkKtHlvyj2P_CIy-m0obNli=s684-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192911823%20Large.jpeg
+      sections:
+        - "name_zh-Hant": ???
+          "name_en": Chow Mein / Chow Fu / Fried Rice
+    # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPQLQAsKXJhAjnMBmkKtHlvyj2P_CIy-m0obNli=s684-k-no
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192920104%20Large.jpeg
       sections:
         - "name_zh-Hant": ???
           "name_en": Dessert and Drink

@@ -11,7 +11,8 @@ menu:
     - zh-Hans
     - en
   pages:
-    - page_image_url: https://lh3.googleusercontent.com/p/AF1QipNUAP9068ubPT0u1x1L9qwHSOQgi_uT9yVsdPLa=w960-h960-n-o-v1
+    # - page_image_url: https://lh3.googleusercontent.com/p/AF1QipNUAP9068ubPT0u1x1L9qwHSOQgi_uT9yVsdPLa=w960-h960-n-o-v1
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/sichuanrestaurang/2023-02-28%202%20Large.jpeg
       sections:
         - "name_zh-Hans": 前餐
           "name_en": Pre-meal
@@ -89,7 +90,8 @@ menu:
               price: 189:-
             - "name_zh-Hans": 辣子鸡
               price: 199:-
-    - page_image_url: https://lh3.googleusercontent.com/p/AF1QipMs-2VAVca1sXlFCLZLdXMAxt8yuowazw0majlx=w960-h960-n-o-v1
+    # - page_image_url: https://lh3.googleusercontent.com/p/AF1QipMs-2VAVca1sXlFCLZLdXMAxt8yuowazw0majlx=w960-h960-n-o-v1
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/sichuanrestaurang/2023-02-28%20Large.jpeg
       sections:
         - "name_zh-Hans": 干锅特色
           "name_en": Griddle Specialities

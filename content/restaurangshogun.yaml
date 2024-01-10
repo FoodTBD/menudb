@@ -11,7 +11,8 @@ menu:
     - zh-Hant
     - en
   pages:
-    - page_image_url: https://media.restaurangshogun.se/2021/04/6.jpg
+    # - page_image_url: https://media.restaurangshogun.se/2021/04/6.jpg
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/restaurangshogun/6%20Large.jpeg
       sections:
         - menu_items:
             - item_number: 1
