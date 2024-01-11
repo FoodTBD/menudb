@@ -22,8 +22,9 @@ input[type="text"] {
     width: 100%;
 }
 
+
 .dishes-table td {
-    /* background-color: aliceblue; */
+    /* background-color: whitesmoke; */
     padding: 0.6rem 0.2rem;
     vertical-align: top;
 }
@@ -32,7 +33,7 @@ input[type="text"] {
     width: 64px;
 }
 
-.dishes-table .dishes-table-image-column .btn-googleimage {
+.btn-googleimage {
     width: 100%;
     height: 2rem;
 }
@@ -49,6 +50,12 @@ input[type="text"] {
 .dishes-table td span.dish-foundin-menus {
     font-size: xx-small;
     color: #666;
+}
+
+.dishes-table .dishes-table-action-column {
+    /* Minimize width without wrapping */
+    width: 64px;
+    white-space: nowrap;
 }
 
 .btn-speak {

@@ -19,18 +19,20 @@
         </ul>
     </header>
     <div class="container">
-        <hr>
-        <a name="cuisine-zh" />
-        <h2>Chinese (62)</h2>
-        <table class="dishes-table">
+        <div>
+            <input type="text" id="searchInput" placeholder="Filter by name or description">
+        </div>
+
+        <table id="dataTable" class="dishes-table">
             <thead>
                 <tr>
                     <th colspan="3">
-                        <input type="text" id="searchInput" placeholder="Filter by name or description">
+                        <a name="cuisine-zh" />
+                        Chinese
                     </th>
                 </tr>
             </thead>
-            <tbody id="dataTableBody">
+            <tbody>
                 <tr>
                     <td class="dishes-table-image-column">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mayishangshu.jpg/128px-Mayishangshu.jpg" alt="Dish Image"
@@ -39,9 +41,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蚂蚁上树</span> / <span
-                                class="dish-name-secondary">Ants Climbing a Tree</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Ants Climbing a Tree</span><br>
                             <span class="dish-description">Sichuan glass noodles stir-fried with minced meat and vegetables</span>
                         </div>
                         <div>
@@ -49,7 +49,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蚂蚁上树', 'zh')">🗣️</button>
 
@@ -64,9 +64,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">牛腩煲</span> / <span
-                                class="dish-name-secondary">Beef Brisket Pot</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Beef Brisket Pot</span><br>
                             <span class="dish-description">Stewed tender beef brisket with radish and spices</span>
                         </div>
                         <div>
@@ -74,7 +72,7 @@
                                 <a href="winnerhouse.html">Winner House</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('牛腩煲', 'zh')">🗣️</button>
 
@@ -88,9 +86,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">牛肉面</span> / <span
-                                class="dish-name-secondary">Beef Noodle Soup</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Beef Noodle Soup</span><br>
                             <span class="dish-description">Noodle soup featuring beef in a rich, aromatic broth</span>
                         </div>
                         <div>
@@ -98,7 +94,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('牛肉面', 'zh')">🗣️</button>
 
@@ -113,9 +109,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">西蘭花牛肉</span> / <span
-                                class="dish-name-secondary">Beef with Broccoli</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Beef with Broccoli</span><br>
                             <span class="dish-description">Stir-fried beef and broccoli in a savory sauce</span>
                         </div>
                         <div>
@@ -123,7 +117,7 @@
                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('西蘭花牛肉', 'zh')">🗣️</button>
 
@@ -139,9 +133,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">沸腾鱼</span> / <span
-                                class="dish-name-secondary">Boiled Fish in Chili Oil</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Boiled Fish in Chili Oil</span><br>
                             <span class="dish-description">Fish boiled and then topped with a spicy, numbing Sichuan hot oil</span>
                         </div>
                         <div>
@@ -149,7 +141,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('沸腾鱼', 'zh')">🗣️</button>
 
@@ -163,9 +155,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">罗汉斋</span> / <span
-                                class="dish-name-secondary">Buddha’s Delight</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Buddha’s Delight</span><br>
                             <span class="dish-description">Mixed vegetables and tofu in a light vegetarian dish</span>
                         </div>
                         <div>
@@ -173,7 +163,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('罗汉斋', 'zh')">🗣️</button>
 
@@ -189,9 +179,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">腰果雞丁</span> / <span
-                                class="dish-name-secondary">Cashew Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Cashew Chicken</span><br>
                             <span class="dish-description">Stir-fried chicken with cashew nuts and vegetables</span>
                         </div>
                         <div>
@@ -199,7 +187,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('腰果雞丁', 'zh')">🗣️</button>
 
@@ -215,9 +203,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">泡椒凤爪</span> / <span
-                                class="dish-name-secondary">Chicken Feet with Pickled Peppers</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Chicken Feet with Pickled Peppers</span><br>
                             <span class="dish-description">Spicy pickled chicken feet</span>
                         </div>
                         <div>
@@ -225,7 +211,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('泡椒凤爪', 'zh')">🗣️</button>
 
@@ -240,9 +226,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">凉拌黄瓜</span> / <span
-                                class="dish-name-secondary">Cold Cucumber Salad</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Cold Cucumber Salad</span><br>
                             <span class="dish-description">Refreshing cucumber salad with garlic and vinegar dressing</span>
                         </div>
                         <div>
@@ -250,7 +234,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('凉拌黄瓜', 'zh')">🗣️</button>
 
@@ -264,9 +248,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">孜然羊肉</span> / <span
-                                class="dish-name-secondary">Cumin Lamb</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Cumin Lamb</span><br>
                             <span class="dish-description">Lamb stir-fried with cumin and spices</span>
                         </div>
                         <div>
@@ -274,7 +256,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('孜然羊肉', 'zh')">🗣️</button>
 
@@ -288,9 +270,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">担担面</span> / <span
-                                class="dish-name-secondary">Dandan Noodles</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Dandan Noodles</span><br>
                             <span class="dish-description">Spicy Sichuan noodles with minced pork and peanuts</span>
                         </div>
                         <div>
@@ -298,7 +278,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('担担面', 'zh')">🗣️</button>
 
@@ -313,9 +293,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">干锅鸡</span> / <span
-                                class="dish-name-secondary">Dry Pot Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Dry Pot Chicken</span><br>
                             <span class="dish-description">Spicy chicken cooked in a dry pot with mixed vegetables</span>
                         </div>
                         <div>
@@ -323,7 +301,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('干锅鸡', 'zh')">🗣️</button>
 
@@ -339,9 +317,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">干锅肥肠</span> / <span
-                                class="dish-name-secondary">Dry Pot Intestine</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Dry Pot Intestine</span><br>
                             <span class="dish-description">Spicy stir-fried pork intestines with vegetables in a dry pot</span>
                         </div>
                         <div>
@@ -349,7 +325,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('干锅肥肠', 'zh')">🗣️</button>
 
@@ -363,9 +339,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">夫妻肺片</span> / <span
-                                class="dish-name-secondary">Fuqi Feipian</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Fuqi Feipian</span><br>
                             <span class="dish-description">Sichuan beef salad with tripe and tongue slices</span>
                         </div>
                         <div>
@@ -373,7 +347,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('夫妻肺片', 'zh')">🗣️</button>
 
@@ -388,9 +362,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蒜泥黄瓜</span> / <span
-                                class="dish-name-secondary">Garlic Cucumber Salad</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Garlic Cucumber Salad</span><br>
                             <span class="dish-description">Cucumber salad with garlic and light vinegar dressing, sometimes spicy</span>
                         </div>
                         <div>
@@ -398,7 +370,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蒜泥黄瓜', 'zh')">🗣️</button>
 
@@ -412,9 +384,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">左宗棠雞</span> / <span
-                                class="dish-name-secondary">General Tso's Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">General Tso's Chicken</span><br>
                             <span class="dish-description">Deep-fried chicken in a sweet and spicy sauce</span>
                         </div>
                         <div>
@@ -422,7 +392,7 @@
                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('左宗棠雞', 'zh')">🗣️</button>
 
@@ -438,9 +408,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">家常豆腐</span> / <span
-                                class="dish-name-secondary">Home-Style Tofu</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Home-Style Tofu</span><br>
                             <span class="dish-description">Stir-fried tofu with vegetables in savory sauce</span>
                         </div>
                         <div>
@@ -448,7 +416,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('家常豆腐', 'zh')">🗣️</button>
 
@@ -462,9 +430,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">酸辣汤</span> / <span
-                                class="dish-name-secondary">Hot and Sour Soup</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Hot and Sour Soup</span><br>
                             <span class="dish-description">Spicy, tangy soup with vegetables, tofu, and optional meat</span>
                         </div>
                         <div>
@@ -472,7 +438,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('酸辣汤', 'zh')">🗣️</button>
 
@@ -487,9 +453,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">饺子</span> / <span
-                                class="dish-name-secondary">Jiaozi</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Jiaozi</span><br>
                             <span class="dish-description">Dumplings filled with meat and vegetables</span>
                         </div>
                         <div>
@@ -497,7 +461,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('饺子', 'zh')">🗣️</button>
 
@@ -512,9 +476,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">京酱肉丝</span> / <span
-                                class="dish-name-secondary">Jingjiang Rousi</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Jingjiang Rousi</span><br>
                             <span class="dish-description">Shredded pork in sweet bean sauce, often with pancakes</span>
                         </div>
                         <div>
@@ -522,7 +484,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('京酱肉丝', 'zh')">🗣️</button>
 
@@ -537,9 +499,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">宫保鸡丁</span> / <span
-                                class="dish-name-secondary">Kung Pao Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Kung Pao Chicken</span><br>
                             <span class="dish-description">Spicy chicken stir-fry with peanuts and chili peppers</span>
                         </div>
                         <div>
@@ -547,7 +507,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('宫保鸡丁', 'zh')">🗣️</button>
 
@@ -562,9 +522,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">辣子鸡</span> / <span
-                                class="dish-name-secondary">Laziji</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Laziji</span><br>
                             <span class="dish-description">Sichuan deep-fried chicken with peppercorns and chilies</span>
                         </div>
                         <div>
@@ -572,7 +530,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('辣子鸡', 'zh')">🗣️</button>
 
@@ -587,9 +545,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">柠檬鸡</span> / <span
-                                class="dish-name-secondary">Lemon Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Lemon Chicken</span><br>
                             <span class="dish-description">Crispy chicken in a fresh lemon sauce</span>
                         </div>
                         <div>
@@ -597,7 +553,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('柠檬鸡', 'zh')">🗣️</button>
 
@@ -612,9 +568,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">毛血旺</span> / <span
-                                class="dish-name-secondary">Maoxuewang</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Maoxuewang</span><br>
                             <span class="dish-description">Spicy Sichuan broth with pig blood curd, tripe, and vegetables</span>
                         </div>
                         <div>
@@ -622,7 +576,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('毛血旺', 'zh')">🗣️</button>
 
@@ -637,9 +591,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">麻婆豆腐</span> / <span
-                                class="dish-name-secondary">Mapo Tofu</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Mapo Tofu</span><br>
                             <span class="dish-description">Spicy Sichuan tofu with minced meat in bean sauce</span>
                         </div>
                         <div>
@@ -647,7 +599,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('麻婆豆腐', 'zh')">🗣️</button>
 
@@ -663,9 +615,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">香拌牛肉</span> / <span
-                                class="dish-name-secondary">Marinated Beef Salad</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Marinated Beef Salad</span><br>
                             <span class="dish-description">Cold beef slices mixed with spicy sauce and cilantro</span>
                         </div>
                         <div>
@@ -673,7 +623,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('香拌牛肉', 'zh')">🗣️</button>
 
@@ -687,9 +637,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蒙古牛肉</span> / <span
-                                class="dish-name-secondary">Mongolian Beef</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Mongolian Beef</span><br>
                             <span class="dish-description">Stir-fried beef with onions and vegetables in a savory brown sauce</span>
                         </div>
                         <div>
@@ -697,7 +645,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蒙古牛肉', 'zh')">🗣️</button>
 
@@ -712,9 +660,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">木须肉</span> / <span
-                                class="dish-name-secondary">Moo Shu Pork</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Moo Shu Pork</span><br>
                             <span class="dish-description">Stir-fried pork with eggs, vegetables, and pancakes</span>
                         </div>
                         <div>
@@ -722,7 +668,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('木须肉', 'zh')">🗣️</button>
 
@@ -737,9 +683,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">口水鸡</span> / <span
-                                class="dish-name-secondary">Mouthwatering Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Mouthwatering Chicken</span><br>
                             <span class="dish-description">Sichuan chicken in spicy, garlicky chili oil sauce</span>
                         </div>
                         <div>
@@ -747,7 +691,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('口水鸡', 'zh')">🗣️</button>
 
@@ -761,9 +705,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">陈皮鸡</span> / <span
-                                class="dish-name-secondary">Orange Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Orange Chicken</span><br>
                             <span class="dish-description">Chicken stir-fried with orange peel and a tangy sauce</span>
                         </div>
                         <div>
@@ -771,7 +713,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('陈皮鸡', 'zh')">🗣️</button>
 
@@ -786,9 +728,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">煎饺</span> / <span
-                                class="dish-name-secondary">Pan-Fried Jiaozi</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Pan-Fried Jiaozi</span><br>
                             <span class="dish-description">Jiaozi dumplings first boiled or steamed, then fried for a crispy bottom</span>
                         </div>
                         <div>
@@ -796,7 +736,7 @@
                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('煎饺', 'zh')">🗣️</button>
 
@@ -811,9 +751,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">北京烤鸭</span> / <span
-                                class="dish-name-secondary">Peking Duck</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Peking Duck</span><br>
                             <span class="dish-description">Roasted duck with crispy skin, served with pancakes and sauces</span>
                         </div>
                         <div>
@@ -821,7 +759,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('北京烤鸭', 'zh')">🗣️</button>
 
@@ -837,9 +775,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">山椒木耳</span> / <span
-                                class="dish-name-secondary">Peppercorn Wood Ear Mushrooms</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Peppercorn Wood Ear Mushrooms</span><br>
                             <span class="dish-description">Wood ear mushrooms stir-fried with Sichuan peppercorns</span>
                         </div>
                         <div>
@@ -847,7 +783,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('山椒木耳', 'zh')">🗣️</button>
 
@@ -862,9 +798,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">红油肚丝</span> / <span
-                                class="dish-name-secondary">Pork Tripe in Chili Oil</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Pork Tripe in Chili Oil</span><br>
                             <span class="dish-description">Thinly sliced tripe in a flavorful and spicy chili oil sauce</span>
                         </div>
                         <div>
@@ -872,7 +806,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('红油肚丝', 'zh')">🗣️</button>
 
@@ -886,9 +820,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">锅贴</span> / <span
-                                class="dish-name-secondary">Potstickers</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Potstickers</span><br>
                             <span class="dish-description">Crispy, pan-fried dumplings filled with meat and vegetables</span>
                         </div>
                         <div>
@@ -896,7 +828,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('锅贴', 'zh')">🗣️</button>
 
@@ -912,9 +844,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">茄汁大虾</span> / <span
-                                class="dish-name-secondary">Prawns with Tomato Sauce</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Prawns with Tomato Sauce</span><br>
                             <span class="dish-description">Prawns cooked in a rich tomato sauce</span>
                         </div>
                         <div>
@@ -922,7 +852,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('茄汁大虾', 'zh')">🗣️</button>
 
@@ -936,9 +866,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">红烧排骨</span> / <span
-                                class="dish-name-secondary">Red Braised Spare Ribs</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Red Braised Spare Ribs</span><br>
                             <span class="dish-description">Pork ribs slowly braised in a savory and sweet soy sauce mixture</span>
                         </div>
                         <div>
@@ -946,7 +874,7 @@
                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('红烧排骨', 'zh')">🗣️</button>
 
@@ -962,9 +890,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">椒盐鱼片</span> / <span
-                                class="dish-name-secondary">Salt and Pepper Fish Fillet</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Salt and Pepper Fish Fillet</span><br>
                             <span class="dish-description">Crispy fish fillets seasoned with salt and pepper</span>
                         </div>
                         <div>
@@ -972,7 +898,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('椒盐鱼片', 'zh')">🗣️</button>
 
@@ -987,9 +913,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">椒盐排骨</span> / <span
-                                class="dish-name-secondary">Salt and Pepper Ribs</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Salt and Pepper Ribs</span><br>
                             <span class="dish-description">Crispy fried ribs seasoned with salt and pepper</span>
                         </div>
                         <div>
@@ -997,7 +921,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('椒盐排骨', 'zh')">🗣️</button>
 
@@ -1011,9 +935,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">椒盐鱿鱼</span> / <span
-                                class="dish-name-secondary">Salt and Pepper Squid</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Salt and Pepper Squid</span><br>
                             <span class="dish-description">Crispy squid seasoned with salt and pepper</span>
                         </div>
                         <div>
@@ -1021,7 +943,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('椒盐鱿鱼', 'zh')">🗣️</button>
 
@@ -1036,9 +958,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">葱油花卷</span> / <span
-                                class="dish-name-secondary">Scallion Buns</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Scallion Buns</span><br>
                             <span class="dish-description">Steamed buns with scallion layers, flower-shaped</span>
                         </div>
                         <div>
@@ -1046,7 +966,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('葱油花卷', 'zh')">🗣️</button>
 
@@ -1061,9 +981,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">上海炒年糕</span> / <span
-                                class="dish-name-secondary">Shanghai Fried Rice Cakes</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shanghai Fried Rice Cakes</span><br>
                             <span class="dish-description">Chewy rice cakes stir-fried with vegetables and meat in soy sauce</span>
                         </div>
                         <div>
@@ -1071,7 +989,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('上海炒年糕', 'zh')">🗣️</button>
 
@@ -1086,9 +1004,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">上海粗炒面</span> / <span
-                                class="dish-name-secondary">Shanghai Thick Noodles</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shanghai Thick Noodles</span><br>
                             <span class="dish-description">Stir-fried thick noodles with vegetables and meat in soy-based sauce</span>
                         </div>
                         <div>
@@ -1096,7 +1012,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('上海粗炒面', 'zh')">🗣️</button>
 
@@ -1110,9 +1026,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">水煮牛肉</span> / <span
-                                class="dish-name-secondary">Shuizhu Beef</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shuizhu Beef</span><br>
                             <span class="dish-description">Poached beef in a spicy, flavorful Sichuan broth</span>
                         </div>
                         <div>
@@ -1120,7 +1034,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('水煮牛肉', 'zh')">🗣️</button>
 
@@ -1135,9 +1049,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">水煮鱼</span> / <span
-                                class="dish-name-secondary">Shuizhu Fish</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shuizhu Fish</span><br>
                             <span class="dish-description">Poached fish in a spicy, flavorful Sichuan broth</span>
                         </div>
                         <div>
@@ -1145,7 +1057,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('水煮鱼', 'zh')">🗣️</button>
 
@@ -1161,9 +1073,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">铁板牛肉</span> / <span
-                                class="dish-name-secondary">Sizzling Beef on Iron Plate</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Sizzling Beef on Iron Plate</span><br>
                             <span class="dish-description">Tender beef cooked on a hot iron plate</span>
                         </div>
                         <div>
@@ -1171,7 +1081,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('铁板牛肉', 'zh')">🗣️</button>
 
@@ -1185,9 +1095,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蒜泥白肉</span> / <span
-                                class="dish-name-secondary">Sliced Pork Belly with Garlic Sauce</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Sliced Pork Belly with Garlic Sauce</span><br>
                             <span class="dish-description">Thinly sliced poached pork belly with a mashed garlic sauce</span>
                         </div>
                         <div>
@@ -1195,7 +1103,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蒜泥白肉', 'zh')">🗣️</button>
 
@@ -1210,9 +1118,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">香辣大虾</span> / <span
-                                class="dish-name-secondary">Spicy Garlic Prawns</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Spicy Garlic Prawns</span><br>
                             <span class="dish-description">Prawns cooked in a spicy garlic sauce</span>
                         </div>
                         <div>
@@ -1220,7 +1126,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('香辣大虾', 'zh')">🗣️</button>
 
@@ -1235,9 +1141,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">川香椒麻鱼</span> / <span
-                                class="dish-name-secondary">Spicy Pepper Fish</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Spicy Pepper Fish</span><br>
                             <span class="dish-description">Fiery and numbing fish dish with Sichuan peppercorns and spices</span>
                         </div>
                         <div>
@@ -1245,7 +1149,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('川香椒麻鱼', 'zh')">🗣️</button>
 
@@ -1260,9 +1164,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">酸辣土豆丝</span> / <span
-                                class="dish-name-secondary">Spicy and Sour Shredded Potato</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Spicy and Sour Shredded Potato</span><br>
                             <span class="dish-description">Stir-fried julienned potatoes in spicy, tangy seasoning</span>
                         </div>
                         <div>
@@ -1270,7 +1172,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('酸辣土豆丝', 'zh')">🗣️</button>
 
@@ -1284,9 +1186,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蜜汁叉烧包</span> / <span
-                                class="dish-name-secondary">Steamed Cha Siu Bao</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Steamed Cha Siu Bao</span><br>
                             <span class="dish-description">Steamed buns with sweet barbecued pork filling</span>
                         </div>
                         <div>
@@ -1294,7 +1194,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蜜汁叉烧包', 'zh')">🗣️</button>
 
@@ -1310,9 +1210,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">清蒸比目</span> / <span
-                                class="dish-name-secondary">Steamed Flounder</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Steamed Flounder</span><br>
                             <span class="dish-description">Delicately steamed flounder, often served with soy sauce</span>
                         </div>
                         <div>
@@ -1320,7 +1218,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('清蒸比目', 'zh')">🗣️</button>
 
@@ -1334,9 +1232,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">米饭</span> / <span
-                                class="dish-name-secondary">Steamed Rice</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Steamed Rice</span><br>
                             <span class="dish-description">Plain steamed white rice</span>
                         </div>
                         <div>
@@ -1344,7 +1240,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('米饭', 'zh')">🗣️</button>
 
@@ -1360,9 +1256,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">清炒时蔬</span> / <span
-                                class="dish-name-secondary">Stir-Fried Seasonal Vegetables</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Stir-Fried Seasonal Vegetables</span><br>
                             <span class="dish-description">Seasonal vegetables, lightly stir-fried</span>
                         </div>
                         <div>
@@ -1370,7 +1264,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('清炒时蔬', 'zh')">🗣️</button>
 
@@ -1384,9 +1278,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">番茄炒蛋</span> / <span
-                                class="dish-name-secondary">Stir-Fried Tomato and Scrambled Eggs</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Stir-Fried Tomato and Scrambled Eggs</span><br>
                             <span class="dish-description">Tomatoes and scrambled eggs, stir-fried together</span>
                         </div>
                         <div>
@@ -1394,7 +1286,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('番茄炒蛋', 'zh')">🗣️</button>
 
@@ -1409,9 +1301,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">酸菜鱼</span> / <span
-                                class="dish-name-secondary">Suancai Fish</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Suancai Fish</span><br>
                             <span class="dish-description">Poached fish in broth with pickled vegetables</span>
                         </div>
                         <div>
@@ -1419,7 +1309,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('酸菜鱼', 'zh')">🗣️</button>
 
@@ -1433,9 +1323,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">汤圆</span> / <span
-                                class="dish-name-secondary">Tangyuan</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Tangyuan</span><br>
                             <span class="dish-description">Glutinous rice balls with sweet filling, served in broth</span>
                         </div>
                         <div>
@@ -1443,7 +1331,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('汤圆', 'zh')">🗣️</button>
 
@@ -1458,9 +1346,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">回锅肉</span> / <span
-                                class="dish-name-secondary">Twice-Cooked Pork</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Twice-Cooked Pork</span><br>
                             <span class="dish-description">Pork stir-fried with vegetables and spices</span>
                         </div>
                         <div>
@@ -1468,7 +1354,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('回锅肉', 'zh')">🗣️</button>
 
@@ -1484,9 +1370,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">西湖牛肉羹</span> / <span
-                                class="dish-name-secondary">West Lake Beef Soup</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">West Lake Beef Soup</span><br>
                             <span class="dish-description">Thick beef soup with egg whites and coriander</span>
                         </div>
                         <div>
@@ -1494,7 +1378,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('西湖牛肉羹', 'zh')">🗣️</button>
 
@@ -1508,9 +1392,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">小笼包</span> / <span
-                                class="dish-name-secondary">Xiaolongbao</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Xiaolongbao</span><br>
                             <span class="dish-description">Steamed soup dumplings with a meat or seafood filling</span>
                         </div>
                         <div>
@@ -1518,7 +1400,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('小笼包', 'zh')">🗣️</button>
 
@@ -1533,9 +1415,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">鱼香茄子</span> / <span
-                                class="dish-name-secondary">Yuxiang Eggplant</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Yuxiang Eggplant</span><br>
                             <span class="dish-description">Eggplant in a spicy garlic sauce</span>
                         </div>
                         <div>
@@ -1543,7 +1423,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('鱼香茄子', 'zh')">🗣️</button>
 
@@ -1558,9 +1438,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">鱼香肉丝</span> / <span
-                                class="dish-name-secondary">Yuxiang Shredded Pork</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Yuxiang Shredded Pork</span><br>
                             <span class="dish-description">Shredded pork in a spicy garlic sauce</span>
                         </div>
                         <div>
@@ -1568,7 +1446,7 @@
                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('鱼香肉丝', 'zh')">🗣️</button>
 
@@ -1576,19 +1454,15 @@
                             onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button>                    </td>
                 </tr>
             </tbody>
-        </table>
-        <hr>
-        <a name="cuisine-zh-u-sd-cngd" />
-        <h2>Chinese - Cantonese (40)</h2>
-        <table class="dishes-table">
             <thead>
                 <tr>
                     <th colspan="3">
-                        <input type="text" id="searchInput" placeholder="Filter by name or description">
+                        <a name="cuisine-zh-u-sd-cngd" />
+                        Chinese - Cantonese
                     </th>
                 </tr>
             </thead>
-            <tbody id="dataTableBody">
+            <tbody>
                 <tr>
                     <td class="dishes-table-image-column">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image"
@@ -1597,9 +1471,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">干炒牛河</span> / <span
-                                class="dish-name-secondary">Beef Chow Fun</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Beef Chow Fun</span><br>
                             <span class="dish-description">Stir-fried flat rice noodles with beef slices</span>
                         </div>
                         <div>
@@ -1607,7 +1479,7 @@
                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('干炒牛河', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1624,9 +1496,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">皮蛋瘦肉粥</span> / <span
-                                class="dish-name-secondary">Century Egg and Pork Congee</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Century Egg and Pork Congee</span><br>
                             <span class="dish-description">Rice porridge with dark translucent preserved egg and lean pork</span>
                         </div>
                         <div>
@@ -1634,7 +1504,7 @@
                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('皮蛋瘦肉粥', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1651,9 +1521,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">叉烧包</span> / <span
-                                class="dish-name-secondary">Cha Siu Bao</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Cha Siu Bao</span><br>
                             <span class="dish-description">Buns filled with char siu, available steamed or baked</span>
                         </div>
                         <div>
@@ -1661,7 +1529,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('叉烧包', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1678,9 +1546,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">叉烧</span> / <span
-                                class="dish-name-secondary">Char Siu</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Char Siu</span><br>
                             <span class="dish-description">Cantonese barbecued pork with a sweet, caramelized glaze</span>
                         </div>
                         <div>
@@ -1688,7 +1554,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('叉烧', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1705,9 +1571,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">招牌炒面</span> / <span
-                                class="dish-name-secondary">Chow Mein</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Chow Mein</span><br>
                             <span class="dish-description">Stir-fried noodles with a variety of meats and vegetables</span>
                         </div>
                         <div>
@@ -1715,7 +1579,7 @@
                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('招牌炒面', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1732,9 +1596,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">粥</span> / <span
-                                class="dish-name-secondary">Congee</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Congee</span><br>
                             <span class="dish-description">Rice porridge customizable with various toppings</span>
                         </div>
                         <div>
@@ -1742,7 +1604,7 @@
                                 <a href="winnerhouse.html">Winner House</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('粥', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1759,9 +1621,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">炸子鸡</span> / <span
-                                class="dish-name-secondary">Crispy Fried Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Crispy Fried Chicken</span><br>
                             <span class="dish-description">Cantonese crispy deep-fried chicken</span>
                         </div>
                         <div>
@@ -1769,7 +1629,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('炸子鸡', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1786,9 +1646,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蛋挞</span> / <span
-                                class="dish-name-secondary">Egg Tart</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Egg Tart</span><br>
                             <span class="dish-description">Baked custard tart with a flaky pastry crust</span>
                         </div>
                         <div>
@@ -1796,7 +1654,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蛋挞', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1813,9 +1671,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">虾饺</span> / <span
-                                class="dish-name-secondary">Har Gow</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Har Gow</span><br>
                             <span class="dish-description">Steamed shrimp dumplings in a translucent wrapper</span>
                         </div>
                         <div>
@@ -1823,7 +1679,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('虾饺', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1840,9 +1696,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">芝麻球</span> / <span
-                                class="dish-name-secondary">Jian Dui</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Jian Dui</span><br>
                             <span class="dish-description">Sesame-coated fried balls of glutinous rice, sweet filling</span>
                         </div>
                         <div>
@@ -1850,7 +1704,7 @@
                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('芝麻球', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1867,9 +1721,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">糯米鸡</span> / <span
-                                class="dish-name-secondary">Lo Mai Gai</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Lo Mai Gai</span><br>
                             <span class="dish-description">Glutinous rice with chicken in lotus leaf, steamed</span>
                         </div>
                         <div>
@@ -1877,7 +1729,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('糯米鸡', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1894,9 +1746,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">芒果布丁</span> / <span
-                                class="dish-name-secondary">Mango Pudding</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Mango Pudding</span><br>
                             <span class="dish-description">Chilled dessert pudding with mango and evaporated milk</span>
                         </div>
                         <div>
@@ -1904,7 +1754,7 @@
                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('芒果布丁', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1921,9 +1771,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">凤爪</span> / <span
-                                class="dish-name-secondary">Phoenix Claws</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Phoenix Claws</span><br>
                             <span class="dish-description">Tender steamed chicken feet in black bean sauce</span>
                         </div>
                         <div>
@@ -1931,7 +1779,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('凤爪', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1948,9 +1796,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">肉丝炒面</span> / <span
-                                class="dish-name-secondary">Pork Chow Mein</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Pork Chow Mein</span><br>
                             <span class="dish-description">Stir-fried noodles with pork slices</span>
                         </div>
                         <div>
@@ -1958,7 +1804,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('肉丝炒面', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -1975,9 +1821,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">红豆糕</span> / <span
-                                class="dish-name-secondary">Red Bean Cake</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Red Bean Cake</span><br>
                             <span class="dish-description">Sweet cake with red bean paste filling</span>
                         </div>
                         <div>
@@ -1985,7 +1829,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('红豆糕', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2002,9 +1846,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">肠粉</span> / <span
-                                class="dish-name-secondary">Rice Noodle Roll</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Rice Noodle Roll</span><br>
                             <span class="dish-description">Steamed rice noodles with assorted fillings</span>
                         </div>
                         <div>
@@ -2012,7 +1854,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('肠粉', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2029,9 +1871,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">广东烧鸭</span> / <span
-                                class="dish-name-secondary">Roast Duck</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Roast Duck</span><br>
                             <span class="dish-description">Cantonese roasted duck with crispy skin</span>
                         </div>
                         <div>
@@ -2039,7 +1879,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('广东烧鸭', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2056,9 +1896,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">咸蛋瘦肉粥</span> / <span
-                                class="dish-name-secondary">Salted Duck Egg and Pork Congee</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Salted Duck Egg and Pork Congee</span><br>
                             <span class="dish-description">Rice porridge with salty preserved egg and lean pork</span>
                         </div>
                         <div>
@@ -2066,7 +1904,7 @@
                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('咸蛋瘦肉粥', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2084,9 +1922,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">龙虾角</span> / <span
-                                class="dish-name-secondary">Shrimp Dumplings</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shrimp Dumplings</span><br>
                             <span class="dish-description">Deep-fried dumplings with shrimp filling</span>
                         </div>
                         <div>
@@ -2094,7 +1930,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('龙虾角', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2111,9 +1947,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">蝦腸</span> / <span
-                                class="dish-name-secondary">Shrimp Rice Noodle Roll</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shrimp Rice Noodle Roll</span><br>
                             <span class="dish-description">Steamed rice noodle rolls filled with shrimp</span>
                         </div>
                         <div>
@@ -2121,7 +1955,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('蝦腸', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2138,9 +1972,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">烧卖</span> / <span
-                                class="dish-name-secondary">Shumai</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Shumai</span><br>
                             <span class="dish-description">Steamed open-faced dumplings with meat and seafood</span>
                         </div>
                         <div>
@@ -2148,7 +1980,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('烧卖', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2165,9 +1997,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">星州炒米</span> / <span
-                                class="dish-name-secondary">Singapore-Style Noodles</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Singapore-Style Noodles</span><br>
                             <span class="dish-description">Curried stir-fried noodles with meat and vegetables</span>
                         </div>
                         <div>
@@ -2175,7 +2005,7 @@
                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('星州炒米', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2192,9 +2022,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">豉油鸡</span> / <span
-                                class="dish-name-secondary">Soy Sauce Chicken</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Soy Sauce Chicken</span><br>
                             <span class="dish-description">Chicken marinated and cooked in soy sauce</span>
                         </div>
                         <div>
@@ -2202,7 +2030,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('豉油鸡', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2219,9 +2047,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">豉油皇炒麵</span> / <span
-                                class="dish-name-secondary">Soy Sauce Fried Noodles</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Soy Sauce Fried Noodles</span><br>
                             <span class="dish-description">Stir-fried noodles with soy sauce and vegetables</span>
                         </div>
                         <div>
@@ -2229,7 +2055,7 @@
                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('豉油皇炒麵', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2245,9 +2071,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">排骨</span> / <span
-                                class="dish-name-secondary">Spare Ribs</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Spare Ribs</span><br>
                             <span class="dish-description">Steamed pork ribs in black bean sauce</span>
                         </div>
                         <div>
@@ -2255,7 +2079,7 @@
                                 <a href="winnerhouse.html">Winner House</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('排骨', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2272,9 +2096,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">春卷</span> / <span
-                                class="dish-name-secondary">Spring Roll</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Spring Roll</span><br>
                             <span class="dish-description">Crispy fried rolls with vegetables and optional meat or seafood</span>
                         </div>
                         <div>
@@ -2282,7 +2104,7 @@
                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('春卷', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2299,9 +2121,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">奶黄包</span> / <span
-                                class="dish-name-secondary">Steamed Custard Bun</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Steamed Custard Bun</span><br>
                             <span class="dish-description">Steamed buns filled with sweet egg custard</span>
                         </div>
                         <div>
@@ -2309,7 +2129,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('奶黄包', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2325,9 +2145,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">山竹牛肉丸</span> / <span
-                                class="dish-name-secondary">Steamed Meatball</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Steamed Meatball</span><br>
                             <span class="dish-description">Steamed beef meatballs</span>
                         </div>
                         <div>
@@ -2335,7 +2153,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('山竹牛肉丸', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2352,9 +2170,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">糯米饭</span> / <span
-                                class="dish-name-secondary">Sticky Rice</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Sticky Rice</span><br>
                             <span class="dish-description">Glutinous rice, cooked to a sticky texture, often with additional ingredients</span>
                         </div>
                         <div>
@@ -2362,7 +2178,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('糯米饭', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2379,9 +2195,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">咕噜肉</span> / <span
-                                class="dish-name-secondary">Sweet and Sour Pork</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Sweet and Sour Pork</span><br>
                             <span class="dish-description">Deep-fried pork in a sweet and sour sauce</span>
                         </div>
                         <div>
@@ -2389,7 +2203,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('咕噜肉', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2406,9 +2220,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">糖醋排骨</span> / <span
-                                class="dish-name-secondary">Sweet and Sour Spareribs</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Sweet and Sour Spareribs</span><br>
                             <span class="dish-description">Pork spareribs in a tangy sweet and sour sauce</span>
                         </div>
                         <div>
@@ -2416,7 +2228,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('糖醋排骨', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2433,9 +2245,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">芋头角</span> / <span
-                                class="dish-name-secondary">Taro Dumpling</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Taro Dumpling</span><br>
                             <span class="dish-description">Fried dumplings with a taro filling</span>
                         </div>
                         <div>
@@ -2443,7 +2253,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('芋头角', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2460,9 +2270,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">鲜竹卷</span> / <span
-                                class="dish-name-secondary">Tofu Skin Roll</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Tofu Skin Roll</span><br>
                             <span class="dish-description">Steamed rolls of tofu skin, filled</span>
                         </div>
                         <div>
@@ -2470,7 +2278,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('鲜竹卷', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2487,9 +2295,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">皮蛋豆腐</span> / <span
-                                class="dish-name-secondary">Tofu with Century Eggs</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Tofu with Century Eggs</span><br>
                             <span class="dish-description">Soft tofu topped with dark translucent preserved eggs and a savory dressing</span>
                         </div>
                         <div>
@@ -2497,7 +2303,7 @@
                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('皮蛋豆腐', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2514,9 +2320,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">萝卜糕</span> / <span
-                                class="dish-name-secondary">Turnip Cake</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Turnip Cake</span><br>
                             <span class="dish-description">Steamed and pan-fried cake made from shredded radish</span>
                         </div>
                         <div>
@@ -2524,7 +2328,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('萝卜糕', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2541,9 +2345,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">馄饨面汤</span> / <span
-                                class="dish-name-secondary">Wonton Noodle Soup</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Wonton Noodle Soup</span><br>
                             <span class="dish-description">Egg noodles in broth with pork or shrimp wontons</span>
                         </div>
                         <div>
@@ -2551,7 +2353,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('馄饨面汤', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2568,9 +2370,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">云吞汤</span> / <span
-                                class="dish-name-secondary">Wonton Soup</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Wonton Soup</span><br>
                             <span class="dish-description">Light broth with pork or shrimp dumplings</span>
                         </div>
                         <div>
@@ -2578,7 +2378,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('云吞汤', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2595,9 +2395,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">扬州炒饭</span> / <span
-                                class="dish-name-secondary">Yangzhou Fried Rice</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Yangzhou Fried Rice</span><br>
                             <span class="dish-description">Fried rice with egg, shrimp, and vegetables</span>
                         </div>
                         <div>
@@ -2605,7 +2403,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('扬州炒饭', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2622,9 +2420,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">油条</span> / <span
-                                class="dish-name-secondary">Youtiao</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Youtiao</span><br>
                             <span class="dish-description">Deep-fried dough sticks</span>
                         </div>
                         <div>
@@ -2632,7 +2428,7 @@
                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('油条', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2649,9 +2445,7 @@
                     <td>
                         <div>
                             <span class="dish-name-primary">炸两</span> / <span
-                                class="dish-name-secondary">Zhaliang</span>
-                        </div>
-                        <div>
+                                class="dish-name-secondary">Zhaliang</span><br>
                             <span class="dish-description">Fried dough wrapped in steamed rice noodle roll</span>
                         </div>
                         <div>
@@ -2659,7 +2453,7 @@
                             </span>
                         </div>
                     </td>
-                    <td>
+                    <td class="dishes-table-action-column">
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('炸两', 'zh-HK')">🗣️粵</button>
                         <button aria-label="Speak" class="btn-speak"
@@ -2694,7 +2488,7 @@
 </script>    <script>
         // Get references to the input element and the table
         const searchInput = document.getElementById("searchInput");
-        const dataTableBody = document.getElementById("dataTableBody");
+        const dataTableBody = document.getElementById("dataTable");
 
         // Add an input event listener to the search input
         searchInput.addEventListener("input", function () {
@@ -2705,11 +2499,15 @@
             for (let i = 0; i < rows.length; i++) {
                 const row = rows[i];
 
-                const cellText = row.cells[1].innerText.toLowerCase();
-                if (cellText.includes(searchText)) {
-                    row.style.display = "";
-                } else {
-                    row.style.display = "none";
+                // Use the text contents of the first DIV inside the second TD
+                if (row.cells.length > 1) {
+                    const divs = row.cells[1].getElementsByTagName("div");
+                    const cellText = divs[0].innerText.toLowerCase();
+                    if (cellText.includes(searchText)) {
+                        row.style.display = "";
+                    } else {
+                        row.style.display = "none";
+                    }
                 }
             }
         });
