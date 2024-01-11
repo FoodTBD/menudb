@@ -23,6 +23,7 @@ Upon `git push`, all of `output/` is published (via GitHub Actions defined in `.
 
 Each YAML file contains **restaurant** metadata coupled with a **menu** definition.  A menu contains **pages**. A page contains **sections**. A section contains **menu items**, a.k.a. dishes.
 
+
 ### Example
 
 Here's an example with all the defined fields:
@@ -72,15 +73,25 @@ Here's an example with all the defined fields:
 
 The YAML is actually [StrictYAML](https://hitchdev.com/strictyaml/). Each input YAML gets validated against the schema definition in `schema.py`.
 
+
 ### Style Guide
+
+**Cuisines**: Locale codes are [BCP 47 language tags](https://en.wikipedia.org/wiki/IETF_language_tag), specifying the geographic region of the cuisine.
+
+Language Code | Meaning
+----- | -----
+`zh` | Chinese (cuisine of the Chinese diaspora, including outside of People's Republic of China)
+`zh-u-sd-cngd` | Chinese ([Guangdong province](https://en.wikipedia.org/wiki/Guangdong)), i.e. Cantonese cuisine
+
+Locales are defined in the `known_locales.tsv`, which comes from the same Google Sheet as `known_dishes.tsv`.
 
 **Languages**: Language codes are [BCP 47 language tags](https://en.wikipedia.org/wiki/IETF_language_tag), specifying the language of the native dish name.
 
 Language Code | Meaning
 ----- | -----
 `en-US` | English (United States)
-`zh-Hans` | Simplified Chinese [written form]
-`zh-Hant` | Traditional Chinese [written form]
+`zh-Hans` | Simplified Chinese [written form][*](https://www.loc.gov/standards/iso639-2/faq.html#23)
+`zh-Hant` | Traditional Chinese [written form][*](https://www.loc.gov/standards/iso639-2/faq.html#23)
 
 **Menu images**: See repository https://github.com/FoodTBD/menudb_images.
 
@@ -89,6 +100,7 @@ Language Code | Meaning
 * Any notes like "half portion" written in the dish name should be moved to `description_xxx` or `note_xxx` fields.
 
 **Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/600px-filename.jpg.
+
 
 ### Transcription Workflow
 

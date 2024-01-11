@@ -65,6 +65,22 @@ def load_known_dishes() -> list[dict[str, Any]]:
     return known_dishes
 
 
+def load_known_locales() -> dict[str, dict[str, Any]]:
+    known_locales = []
+    with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter="\t")
+        for row in csvreader:
+            assert any(row.values()), "ERROR: known_locales has empty lines"
+            known_locales.append(row)
+
+    # Map locale_code to locale dict
+    known_dish_lookuptable = {}
+    for known_locale in known_locales:
+        locale_code = known_locale["locale_code"]
+        known_dish_lookuptable[locale_code] = known_locale
+    return known_dish_lookuptable
+
+
 def load_eatsdb_names() -> list[str]:
     dish_names = []
     with open("data/eatsdb_names.tsv", "r", encoding="utf-8") as csvfile:
@@ -79,7 +95,9 @@ def load_eatsdb_names() -> list[str]:
 
 
 def generate_menu_html(
-    input_yaml_path: str, output_html_path: str, known_dishes: dict[str, Any]
+    input_yaml_path: str,
+    output_html_path: str,
+    known_dish_lookuptable: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
         yaml_data = strictyaml.load(yaml_path.read(), RESTAURANT_SCHEMA)
@@ -104,7 +122,7 @@ def generate_menu_html(
         url = "https://www.google.com/maps/search/" + urllib.parse.quote(query)
         restaurant_dict["googlemaps_url"] = url
 
-    # Inject data from known_dishes.csv into menu.pages[*].sections[*].menu_items[*]
+    # Inject data from known_dishes into menu YAML
     if yaml_dict.get("menu"):
         primary_lang = yaml_dict["menu"]["language_codes"][0]
         for page in yaml_dict["menu"]["pages"]:
@@ -115,21 +133,17 @@ def generate_menu_html(
                             lang = "name_" + primary_lang
                             if menu_item.get(lang):
                                 primary_name = menu_item[lang]
-                                if known_dishes.get(primary_name):
-                                    known_dish = known_dishes[primary_name]
+                                if known_dish_lookuptable.get(primary_name):
+                                    known_dish = known_dish_lookuptable[primary_name]
                                     for k, v in known_dish.items():
                                         if k not in menu_item:
                                             menu_item[k] = v
-                                        # else:
-                                        #     print(
-                                        #         f"{input_yaml_path}: Not overwriting {k} for {primary_name}"
-                                        #     )
 
-    language_codes = []
+    display_language_codes = []
     if yaml_dict.get("menu"):
-        language_codes = yaml_dict["menu"]["language_codes"]
-        if "en" not in language_codes:
-            language_codes.append("en")
+        display_language_codes = yaml_dict["menu"]["language_codes"]
+        if "en" not in display_language_codes:
+            display_language_codes.append("en")
 
     env = Environment(loader=FileSystemLoader("."))
 
@@ -141,7 +155,9 @@ def generate_menu_html(
         env.filters[filter_name] = getattr(jinja_filters, filter_name)
 
     template = env.get_template("templates/menu_template.j2")
-    rendered_html = template.render(data=yaml_dict, language_codes=language_codes)
+    rendered_html = template.render(
+        data=yaml_dict, display_language_codes=display_language_codes
+    )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
         html_path.write(rendered_html)
@@ -149,8 +165,10 @@ def generate_menu_html(
     return yaml_dict
 
 
-def process_menu_yaml_paths(input_dir: str, output_dir: str) -> dict[str, Any]:
-    # Generate name_native to known_dish dict mapping
+def process_menu_yaml_paths(
+    input_dir: str, output_dir: str, known_dishes: list[dict[str, Any]]
+) -> dict[str, Any]:
+    # Map name_native to dish dict
     known_dish_lookuptable = {}
     for known_dish in known_dishes:
         name_native_commaseparated = known_dish["name_native"].split(",")
@@ -256,12 +274,11 @@ def generate_index_html(
 
 
 def generate_dishes_html(
+    known_locale_lookuptable: dict[str, dict[str, Any]],
     known_dishes: list[dict[str, Any]],
-    menu_filename_to_menu_yaml_dicts: dict[str, Any],
+    menu_filename_to_menu_yaml_dicts: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
-    all_dishes = sorted(known_dishes, key=lambda d: d["name_en"])
-
     # Build mapping of primary_name to menu_filename
     dish_name_to_menu_filename = {}
     for yaml_dict in menu_filename_to_menu_yaml_dicts.values():
@@ -285,6 +302,17 @@ def generate_dishes_html(
                     yaml_dict["_output_filename"]
                 )
 
+    # Group all dishes by locale
+    locale_dish_groups = []
+    for locale_dict in known_locale_lookuptable.values():
+        locale_code = locale_dict["locale_code"]
+        locale_dishes = [
+            dish for dish in known_dishes if dish["locale_code"] == locale_code
+        ]
+        locale_dishes = sorted(locale_dishes, key=lambda d: d["name_en"])
+        locale_dish_group = {**locale_dict, "dishes": locale_dishes}
+        locale_dish_groups.append(locale_dish_group)
+
     env = Environment(loader=FileSystemLoader("."))
 
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
@@ -296,13 +324,37 @@ def generate_dishes_html(
 
     template = env.get_template("templates/dishes_template.j2")
     rendered_html = template.render(
-        all_dishes=all_dishes,
+        locale_dish_groups=locale_dish_groups,
         dish_name_to_menu_filename=dish_name_to_menu_filename,
         menu_filename_to_menu_yaml_dicts=menu_filename_to_menu_yaml_dicts,
     )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
         html_path.write(rendered_html)
+
+
+def main(input_dir: str, output_dir: str):
+    # Load canned data
+    known_locale_lookuptable = load_known_locales()
+    known_dishes = load_known_dishes()
+
+    prepare_output_dir(output_dir)
+    menu_filename_to_menu_yaml_dicts = process_menu_yaml_paths(
+        input_dir, output_dir, known_dishes
+    )
+
+    output_path = os.path.join(output_dir, "index.html")
+    generate_index_html(list(menu_filename_to_menu_yaml_dicts.values()), output_path)
+    print(f"Processed: {output_path}")
+
+    output_path = os.path.join(output_dir, "dishes.html")
+    generate_dishes_html(
+        known_locale_lookuptable,
+        known_dishes,
+        menu_filename_to_menu_yaml_dicts,
+        output_path,
+    )
+    print(f"Processed: {output_path}")
 
 
 if __name__ == "__main__":
@@ -313,16 +365,4 @@ if __name__ == "__main__":
     input_dir = sys.argv[1] if len(sys.argv) >= 2 else INPUT_DIR
     output_dir = sys.argv[2] if len(sys.argv) >= 3 else OUTPUT_DIR
 
-    prepare_output_dir(output_dir)
-
-    known_dishes = load_known_dishes()
-
-    menu_filename_to_menu_yaml_dicts = process_menu_yaml_paths(input_dir, output_dir)
-
-    output_path = os.path.join(output_dir, "index.html")
-    generate_index_html(list(menu_filename_to_menu_yaml_dicts.values()), output_path)
-    print(f"Processed: {output_path}")
-
-    output_path = os.path.join(output_dir, "dishes.html")
-    generate_dishes_html(known_dishes, menu_filename_to_menu_yaml_dicts, output_path)
-    print(f"Processed: {output_path}")
+    main(input_dir, output_dir)

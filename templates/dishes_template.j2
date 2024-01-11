@@ -12,10 +12,18 @@
 <body>
     <header>
         <h1>Common Dishes</h1>
+        <ul>
+            {% for locale_dish_group in locale_dish_groups %}
+            <li><a href="#cuisine-{{ locale_dish_group.locale_code }}">{{ locale_dish_group.cuisine_name_en }} ({{
+                    locale_dish_group.dishes | length }})</a></li>
+            {% endfor %}
+        </ul>
     </header>
     <div class="container">
-        {# TODO: Group by locale code in data instead of hard-coding this #}
-        <h2>Chinese ({{ all_dishes | length }})</h2>
+        {% for locale_dish_group in locale_dish_groups %}
+        <hr>
+        <a name="cuisine-{{ locale_dish_group.locale_code }}" />
+        <h2>{{ locale_dish_group.cuisine_name_en }} ({{ locale_dish_group.dishes | length }})</h2>
         <table class="dishes-table">
             <thead>
                 <tr>
@@ -25,7 +33,7 @@
                 </tr>
             </thead>
             <tbody id="dataTableBody">
-                {% for item in all_dishes %}
+                {% for item in locale_dish_group.dishes %}
                 <tr>
                     {% set primary_name_native = item['name_native'].split(',')[0] %}
                     <td class="dishes-table-image-column">
@@ -58,8 +66,15 @@
                         </div>
                     </td>
                     <td>
+                        {% if locale_dish_group.locale_code == 'zh-u-sd-cngd' %}
+                        <button aria-label="Speak" class="btn-speak"
+                            onclick="speakText('{{ primary_name_native }}', 'zh-HK')">🗣️粵</button>
+                        <button aria-label="Speak" class="btn-speak"
+                            onclick="speakText('{{ primary_name_native }}', 'zh-CN')">🗣️</button>
+                        {% else %}
                         <button aria-label="Speak" class="btn-speak"
                             onclick="speakText('{{ primary_name_native }}', '{{ item['locale_code'] }}')">🗣️</button>
+                        {% endif %}
 
                         {% set wikipedia_url = item['wikipedia_url_en'] %}
                         {% if wikipedia_url %}<button aria-label="Open Wikipedia" class="btn-wikipedia"
@@ -69,6 +84,7 @@
                 {% endfor %}
             </tbody>
         </table>
+        {% endfor %}
     </div>
 
     {% include 'templates/footer_script.j2' %}

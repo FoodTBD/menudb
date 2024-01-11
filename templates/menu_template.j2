@@ -22,7 +22,7 @@
         </p>
     </header>
     {% if data.menu %}
-    {% set primary_lang = language_codes[0] %}
+    {% set primary_lang = display_language_codes[0] %}
     <hr>
     {% for page in data.menu.pages %}
     <section class="section">
@@ -43,7 +43,7 @@
                     <thead>
                         <tr>
                             <th colspan="3">
-                                {% for lang in language_codes %}
+                                {% for lang in display_language_codes %}
                                 {% if lang == primary_lang %}
                                 <span class="menu-section-name-primary">{{ section['name_' + lang] }}</span>
                                 {% else %}
@@ -61,17 +61,13 @@
                                     {% if item['item_number'] %}<span class="menu-item-number">{{ item['item_number']
                                         }}.</span>{% endif %}
 
-                                    {%- for lang in language_codes if item['name_' + lang] and not lang ==
+                                    {%- for lang in display_language_codes if item['name_' + lang] and not lang ==
                                     'zh-Latn-pinyin' %}
                                     {% set dish_name = item['name_' + lang] %}
                                     {% if lang == primary_lang %}
                                     <span class="menu-item-name menu-item-name-primary">{{ dish_name |
                                         styled_text_format
                                         }}</span>
-                                    {# Special case Pinyin to be in parentheses on the same line as primary lang #}
-                                    {# {% if lang == 'zh-Hans' and item['name_zh-Latn-pinyin'] %}
-                                    (<span class="menu-item-name-pinyin">{{ item['name_zh-Latn-pinyin'] }}</span>)
-                                    {% endif %} #}
                                     <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
                                         onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</a>
                                     {% else %}
@@ -89,7 +85,7 @@
                                 <div class="menu-item-description">
                                     {% for _ in range(item['spice_heat_level'] | default(0)) %}🌶️{% endfor %}
 
-                                    {%- for lang in language_codes if item['description_' + lang] %}
+                                    {%- for lang in display_language_codes if item['description_' + lang] %}
                                     <span class="menu-item-description">{{ item['description_' + lang] |
                                         styled_text_format }}</span>{% if not loop.last %} <span
                                         class="menu-item-divider">/</span> {% endif %}
