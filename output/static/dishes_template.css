@@ -31,6 +31,11 @@ input[type="text"] {
     color: #666;
 }
 
+.dishes-table td span.dish-foundin-menus {
+    font-size: xx-small;
+    color: #666;
+}
+
 .btn-wikipedia {
     font-family: serif;
 }

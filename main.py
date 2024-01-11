@@ -123,52 +123,22 @@ def generate_menu_html(
     return yaml_dict
 
 
-def generate_index_html(yaml_dicts: list[str], output_html_path: str) -> None:
-    env = Environment(loader=FileSystemLoader("."))
+def process_menu_yaml_paths(input_dir: str, output_dir: str) -> dict[str, Any]:
+    # Generate name_native to known_dish dict mapping
+    known_dish_lookuptable = {}
+    for known_dish in known_dishes:
+        name_native_commaseparated = known_dish["name_native"].split(",")
+        d = known_dish.copy()
+        d.pop("name_native")
+        for native_name in name_native_commaseparated:
+            known_dish_lookuptable[native_name] = d
 
-    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
-    env.trim_blocks = True
-    env.lstrip_blocks = True
-
-    for filter_name in jinja_filters.ALL_FILTERS:
-        env.filters[filter_name] = getattr(jinja_filters, filter_name)
-
-    template = env.get_template("templates/index_template.j2")
-    rendered_html = template.render(data=yaml_dicts)
-
-    with open(output_html_path, "w", encoding="utf-8") as html_path:
-        html_path.write(rendered_html)
-
-
-def generate_dishes_html(
-    known_dishes: list[dict[str, Any]], output_html_path: str
-) -> None:
-    all_dishes = sorted(known_dishes, key=lambda d: d["name_en"])
-
-    env = Environment(loader=FileSystemLoader("."))
-
-    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
-    env.trim_blocks = True
-    env.lstrip_blocks = True
-
-    for filter_name in jinja_filters.ALL_FILTERS:
-        env.filters[filter_name] = getattr(jinja_filters, filter_name)
-
-    template = env.get_template("templates/dishes_template.j2")
-    rendered_html = template.render(all_dishes=all_dishes)
-
-    with open(output_html_path, "w", encoding="utf-8") as html_path:
-        html_path.write(rendered_html)
-
-
-def process_yaml_paths(
-    input_dir: str, output_dir: str, known_dish_lookuptable: dict[str, Any]
-) -> list[dict[str, Any]]:
-    yaml_dicts = []
+    menu_filename_to_menu_yaml_dicts = {}
     for root, _, files in os.walk(input_dir):
         for filename in files:
             if filename.endswith(".yaml"):
                 input_path = os.path.join(root, filename)
+
                 relative_path = os.path.relpath(input_path, input_dir)
                 output_filename = os.path.splitext(relative_path)[0] + ".html"
                 output_path = os.path.join(output_dir, output_filename)
@@ -176,27 +146,27 @@ def process_yaml_paths(
                 yaml_dict = generate_menu_html(
                     input_path, output_path, known_dish_lookuptable
                 )
+
                 yaml_dict["_output_filename"] = output_filename
-                yaml_dicts.append(yaml_dict)
+                menu_filename_to_menu_yaml_dicts[output_filename] = yaml_dict
 
                 print(f"Processed: {input_path} -> {output_path}")
 
-    output_path = os.path.join(output_dir, "index.html")
-    generate_index_html(yaml_dicts, output_path)
-    print(f"Processed: {output_path}")
+    print_stats(list(menu_filename_to_menu_yaml_dicts.values()), known_dish_lookuptable)
 
-    return yaml_dicts
+    return menu_filename_to_menu_yaml_dicts
 
 
 def print_stats(
-    yaml_dicts: list[dict[str, Any]], known_dish_lookuptable: dict[str, Any]
+    menu_yaml_dicts: list[dict[str, Any]], known_dish_lookuptable: dict[str, Any]
 ) -> None:
     eatsdb_names_set = set(load_eatsdb_names())
 
-    print(f"Total menu count: {len(yaml_dicts)}")
+    print(f"Total menu count: {len(menu_yaml_dicts)}")
 
+    # Build list of primary_names
     primary_names = []
-    for yaml_dict in yaml_dicts:
+    for yaml_dict in menu_yaml_dicts:
         if yaml_dict.get("menu"):
             menu = yaml_dict["menu"]
             primary_lang = menu["language_codes"][0]
@@ -239,6 +209,75 @@ def print_stats(
             )
 
 
+def generate_index_html(
+    menu_yaml_dicts: list[dict[str, Any]], output_html_path: str
+) -> None:
+    env = Environment(loader=FileSystemLoader("."))
+
+    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+    env.trim_blocks = True
+    env.lstrip_blocks = True
+
+    for filter_name in jinja_filters.ALL_FILTERS:
+        env.filters[filter_name] = getattr(jinja_filters, filter_name)
+
+    template = env.get_template("templates/index_template.j2")
+    rendered_html = template.render(data=menu_yaml_dicts)
+
+    with open(output_html_path, "w", encoding="utf-8") as html_path:
+        html_path.write(rendered_html)
+
+
+def generate_dishes_html(
+    known_dishes: list[dict[str, Any]],
+    menu_filename_to_menu_yaml_dicts: dict[str, Any],
+    output_html_path: str,
+) -> None:
+    all_dishes = sorted(known_dishes, key=lambda d: d["name_en"])
+
+    # Build mapping of primary_name to menu_filename
+    dish_name_to_menu_filename = {}
+    for yaml_dict in menu_filename_to_menu_yaml_dicts.values():
+        if yaml_dict.get("menu"):
+            menu = yaml_dict["menu"]
+            primary_lang = menu["language_codes"][0]
+            menu_primary_name_set = set()
+            for page in menu["pages"]:
+                if page.get("sections"):
+                    for section in page["sections"]:
+                        if section.get("menu_items"):
+                            for menu_item in section["menu_items"]:
+                                name_lang = "name_" + primary_lang
+                                if menu_item.get(name_lang):
+                                    primary_name = menu_item[name_lang]
+                                    menu_primary_name_set.add(primary_name)
+            for primary_name in menu_primary_name_set:
+                if not dish_name_to_menu_filename.get(primary_name):
+                    dish_name_to_menu_filename[primary_name] = []
+                dish_name_to_menu_filename[primary_name].append(
+                    yaml_dict["_output_filename"]
+                )
+
+    env = Environment(loader=FileSystemLoader("."))
+
+    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+    env.trim_blocks = True
+    env.lstrip_blocks = True
+
+    for filter_name in jinja_filters.ALL_FILTERS:
+        env.filters[filter_name] = getattr(jinja_filters, filter_name)
+
+    template = env.get_template("templates/dishes_template.j2")
+    rendered_html = template.render(
+        all_dishes=all_dishes,
+        dish_name_to_menu_filename=dish_name_to_menu_filename,
+        menu_filename_to_menu_yaml_dicts=menu_filename_to_menu_yaml_dicts,
+    )
+
+    with open(output_html_path, "w", encoding="utf-8") as html_path:
+        html_path.write(rendered_html)
+
+
 if __name__ == "__main__":
     if len(sys.argv) > 4:
         print("Usage: python main.py [input_dir] [output_dir]")
@@ -251,18 +290,12 @@ if __name__ == "__main__":
 
     known_dishes = load_known_dishes()
 
-    known_dish_lookuptable = {}
-    for known_dish in known_dishes:
-        name_native_commaseparated = known_dish["name_native"].split(",")
-        d = known_dish.copy()
-        d.pop("name_native")
-        for native_name in name_native_commaseparated:
-            known_dish_lookuptable[native_name] = d
+    menu_filename_to_menu_yaml_dicts = process_menu_yaml_paths(input_dir, output_dir)
 
-    yaml_dicts = process_yaml_paths(input_dir, output_dir, known_dish_lookuptable)
-
-    output_path = os.path.join(output_dir, "dishes.html")
-    generate_dishes_html(known_dishes, output_path)
+    output_path = os.path.join(output_dir, "index.html")
+    generate_index_html(list(menu_filename_to_menu_yaml_dicts.values()), output_path)
     print(f"Processed: {output_path}")
 
-    print_stats(yaml_dicts, known_dish_lookuptable)
+    output_path = os.path.join(output_dir, "dishes.html")
+    generate_dishes_html(known_dishes, menu_filename_to_menu_yaml_dicts, output_path)
+    print(f"Processed: {output_path}")

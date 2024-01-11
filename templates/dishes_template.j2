@@ -32,10 +32,22 @@
                         {% endif %}
                     </td>
                     <td>
-                        <div><span class="dish-name-primary">{{ primary_name_native }}</span> / <span
-                                class="dish-name-secondary">{{ item.name_en }}</span></div>
+                        <div>
+                            <span class="dish-name-primary">{{ primary_name_native }}</span> / <span
+                                class="dish-name-secondary">{{ item.name_en }}</span>
+                        </div>
                         <div>
                             <span class="dish-description">{{ item.description_en }}</span>
+                        </div>
+                        <div>
+                            <span class="dish-foundin-menus">
+                                {% for menu_filename in dish_name_to_menu_filename[primary_name_native] %}
+                                <a href="{{ menu_filename }}">{{
+                                    menu_filename_to_menu_yaml_dicts[menu_filename].restaurant.name
+                                    }}</a>{% if not
+                                loop.last %}, {% endif %}
+                                {% endfor %}
+                            </span>
                         </div>
                     </td>
                     <td>
