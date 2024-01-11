@@ -6,6 +6,7 @@ restaurant:
   country_code: SE
   tags: japanese, chinese, dimsum
   homepage_url: https://restaurangshogun.se/
+  facebook_url: https://www.facebook.com/RestaurangShogun
 menu:
   language_codes:
     - zh-Hant
