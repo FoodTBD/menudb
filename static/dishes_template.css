@@ -1,4 +1,10 @@
-table td img {
+.container {
+    max-width: 800px;
+    /* Center the container horizontally */
+    margin: 0 auto;
+}
+
+.dishes-table td img {
     width: 64px;
     height: 64px;
     object-fit: cover;
@@ -7,9 +13,13 @@ table td img {
 input[type="text"] {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     /* Ensure padding and border are included in the width */
     box-sizing: border-box;
+}
+
+.dishes-table {
+    width: 100%;
 }
 
 .dishes-table td {

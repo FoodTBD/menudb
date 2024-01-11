@@ -2,8 +2,8 @@ name_en	description_en	locale_code	name_native	wikipedia_url_en	image_url
 Ants Climbing a Tree	Glass noodles stir-fried with minced meat and vegetables	zh	蚂蚁上树	https://en.wikipedia.org/wiki/Ants_climbing_a_tree	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mayishangshu.jpg/128px-Mayishangshu.jpg
 Beef Brisket Pot	Tender beef brisket stewed with radish and spices	zh	牛腩煲		
 Beef Chow Fun	Stir-fried flat rice noodles with beef slices	zh	干炒牛河,乾炒牛河	https://en.wikipedia.org/wiki/Beef_chow_fun	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg
-Beef Noodle Soup	Noodle soup featuring beef in a rich, aromatic broth	zh	牛肉面,牛肉汤面,牛肉麵	https://en.wikipedia.org/wiki/Beef_noodle_soup	
-Beef with Broccoli	Stir-fried beef and broccoli in a savory sauce	zh	西蘭花牛肉	https://en.wikipedia.org/wiki/Beef_and_broccoli	
+Beef Noodle Soup	Noodle soup featuring beef in a rich, aromatic broth	zh	牛肉面,牛肉汤面,牛肉麵	https://en.wikipedia.org/wiki/Beef_noodle_soup	https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Xiangyang_beef_noodles_02.jpg/128px-Xiangyang_beef_noodles_02.jpg
+Beef with Broccoli	Stir-fried beef and broccoli in a savory sauce	zh	西蘭花牛肉	https://en.wikipedia.org/wiki/Beef_and_broccoli	https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Beef_and_broccoli_stir_fry.jpg/128px-Beef_and_broccoli_stir_fry.jpg
 Boiled Fish in Chili Oil	Fish fillets in fiery Sichuan chili oil broth	zh	沸腾鱼		
 Buddha’s Delight	Mixed vegetables and tofu in a light vegetarian dish	zh	罗汉斋,羅漢齋	https://en.wikipedia.org/wiki/Buddha%27s_delight	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Boeddha%27s_Delight.jpg/128px-Boeddha%27s_Delight.jpg
 Cashew Chicken	Stir-fried chicken with cashew nuts and vegetables	zh	腰果雞丁,腰果雞	https://en.wikipedia.org/wiki/Cashew_chicken	
@@ -16,11 +16,11 @@ Congee	Rice porridge customizable with various toppings	zh	粥,稀飯	https://en
 Crispy Fried Chicken	Crispy, Cantonese-style deep-fried chicken	zh	炸子鸡,炸子雞	https://en.wikipedia.org/wiki/Crispy_fried_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Crispyfriedchicken.jpg/128px-Crispyfriedchicken.jpg
 Cumin Lamb	Lamb stir-fried with cumin and spices	zh	孜然羊肉		
 Dandan Noodles	Spicy Sichuan noodles with minced pork and peanuts	zh	担担面,擔擔麵	https://en.wikipedia.org/wiki/Dandan_noodles	https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg
-Dry Pot Chicken	Spicy chicken cooked in a dry pot with mixed vegetables	zh	干锅鸡		
+Dry Pot Chicken	Spicy chicken cooked in a dry pot with mixed vegetables	zh	干锅鸡	https://en.wikipedia.org/wiki/Dry_pot_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg
 Dry Pot Intestine	Spicy stir-fried pork intestines with vegetables in a dry pot	zh	干锅肥肠		
 Egg Tart	Baked custard tart with a flaky pastry crust	zh	蛋挞,蛋撻	https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Egg_Tarts_with_Puff_Pastry.jpg/128px-Egg_Tarts_with_Puff_Pastry.jpg
 Fuqi Feipian	Sichuan beef salad with tripe and tongue slices	zh	夫妻肺片	https://en.wikipedia.org/wiki/Fuqi_Feipian	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg
-Garlic Cucumber Salad	Cucumber salad with garlic and light vinegar dressing, sometimes spicy	zh	蒜泥黄瓜,蒜泥黃瓜		
+Garlic Cucumber Salad	Cucumber salad with garlic and light vinegar dressing, sometimes spicy	zh	蒜泥黄瓜,蒜泥黃瓜		https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg/128px-%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg
 Garlic White-Cut Pork	Poached pork belly with a fragrant garlic sauce	zh	蒜泥白肉		
 General Tso's Chicken	Deep-fried chicken in a sweet and spicy sauce	zh	左宗棠雞	https://en.wikipedia.org/wiki/General_Tso%27s_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg/128px-Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg
 Har Gow	Steamed shrimp dumplings in a translucent wrapper	zh	虾饺,蝦餃,鮮蝦餃皇,筍尖鮮蝦餃	https://en.wikipedia.org/wiki/Har_gow	https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shrimp_dumplings.jpg/128px-Shrimp_dumplings.jpg
@@ -86,7 +86,7 @@ Stir-Fried Tomato and Scrambled Eggs	Tomatoes and scrambled eggs, stir-fried tog
 Suancai Fish	Poached fish in broth with pickled vegetables	zh	酸菜鱼,酸菜魚		https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg
 Sweet and Sour Pork	Deep-fried pork in a sweet and sour sauce	zh	咕噜肉,咕嚕肉,酸甜咕嚕肉,糖醋里脊	https://en.wikipedia.org/wiki/Sweet_and_sour#Chinese_cuisine	
 Sweet and Sour Spareribs	Pork spareribs in a tangy sweet and sour sauce	zh	糖醋排骨,生炒排骨	https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs	
-Tangyuan	Glutinous rice balls with sweet filling, served in broth	zh	汤圆,湯圓,擂沙湯圓	https://en.wikipedia.org/wiki/Tangyuan_(food)	
+Tangyuan	Glutinous rice balls with sweet filling, served in broth	zh	汤圆,湯圓,擂沙湯圓	https://en.wikipedia.org/wiki/Tangyuan_(food)	https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg/128px-Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg
 Taro Dumpling	Fried dumplings with a taro filling	zh	芋头角,芋頭角,炸芋角,炸竿角	https://en.wikipedia.org/wiki/Taro_dumpling	https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Fried_taro_cake.jpg/128px-Fried_taro_cake.jpg
 Tofu Skin Roll	Steamed rolls of tofu skin, filled	zh	鲜竹卷,鮮竹捲,鮮竹卷,蠔皇鮮竹卷	https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/128px-Tofuskinroll.jpg
 Tofu with Preserved Eggs	Soft tofu topped with century eggs and a savory dressing	zh	皮蛋豆腐		

@@ -10,14 +10,21 @@
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <h1>Common Dishes</h1>
-        <input type="text" id="searchInput" placeholder="Filter by name or description">
-
+    </header>
+    <div class="container">
         {# TODO: Group by locale code in data instead of hard-coding this #}
         <h2>Chinese</h2>
-        <table id="dataTable" class="dishes-table">
-            <tbody>
+        <table class="dishes-table">
+            <thead>
+                <tr>
+                    <th colspan="3">
+                        <input type="text" id="searchInput" placeholder="Filter by name or description">
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="dataTableBody">
                 {% for item in all_dishes %}
                 <tr>
                     {% set primary_name_native = item['name_native'].split(',')[0] %}
@@ -64,17 +71,16 @@
         </table>
     </div>
 
-    {% include 'templates/footer.j2' %}
-
+    {% include 'templates/footer_script.j2' %}
     <script>
         // Get references to the input element and the table
         const searchInput = document.getElementById("searchInput");
-        const dataTable = document.getElementById("dataTable");
+        const dataTableBody = document.getElementById("dataTableBody");
 
         // Add an input event listener to the search input
         searchInput.addEventListener("input", function () {
             const searchText = searchInput.value.toLowerCase();
-            const rows = dataTable.getElementsByTagName("tr");
+            const rows = dataTableBody.getElementsByTagName("tr");
 
             // Loop through all table rows and hide those that don't match the search query
             for (let i = 0; i < rows.length; i++) {
