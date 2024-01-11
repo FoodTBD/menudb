@@ -1,7 +1,6 @@
 # TODO
 
 * Add index nav link
-* Add a known dishes / "EatsDB" page
 * Google Analytics
 * Cantonese TTS?
 * Add feedback link

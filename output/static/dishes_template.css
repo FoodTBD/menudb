@@ -4,6 +4,13 @@ table td img {
     object-fit: cover;
 }
 
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    /* Ensure padding and border are included in the width */
+    box-sizing: border-box;
+}
 
 .dishes-table td {
     /* background-color: aliceblue; */
