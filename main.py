@@ -2,6 +2,7 @@ import collections
 import csv
 import datetime
 import os
+import re
 import shutil
 import sys
 import typing
@@ -35,6 +36,31 @@ def load_known_dishes() -> list[dict[str, Any]]:
     with open("data/known_dishes.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
+            assert any(row.values()), "ERROR: known_dishes has empty lines"
+
+            # Check all Wikimedia image references and rewrite them to be downscaled to 128px
+            image_url = row["image_url"]
+            o = urllib.parse.urlparse(image_url)
+            if o.path:
+                assert (
+                    o.hostname
+                ), f'ERROR: known_dishes has invalid image_url "{image_url}"'
+
+            if o.hostname:
+                if o.hostname.endswith("wikimedia.org") or o.hostname.endswith(
+                    "wikipedia.org"
+                ):
+                    m = re.match(
+                        r"https://upload\.wikimedia\.org/wikipedia/commons/thumb/(.+)/(.+)/(.+)/(\d+)px-(.+)",
+                        image_url,
+                    )
+                    assert (
+                        m
+                    ), f'ERROR: known_dishes has non-standard Wikipedia image_url "{image_url}". See README.md'
+
+                    image_url = image_url.replace(f"/{m.group(4)}px-", "/128px-")
+                    row["image_url"] = image_url
+
             known_dishes.append(row)
     return known_dishes
 
@@ -162,9 +188,10 @@ def print_stats(
 ) -> None:
     eatsdb_names_set = set(load_eatsdb_names())
 
+    print()
     print(f"Total menu count: {len(menu_yaml_dicts)}")
 
-    # Build list of primary_names
+    # Build list of primary_names and image_names
     primary_names = []
     for yaml_dict in menu_yaml_dicts:
         if yaml_dict.get("menu"):
@@ -196,16 +223,16 @@ def print_stats(
     print("Unique characters: " + str(len(character_counter)))
     print("Top 10 characters: " + str(character_counter.most_common(10)))
 
+    # Data linting
     for dish_name in filtered_c:
         if not dish_name in known_dish_lookuptable:
             print(
-                f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
+                f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
             )
-
     for dish_name in primary_names:
         if not dish_name in known_dish_lookuptable and dish_name in eatsdb_names_set:
             print(
-                f"Warning: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes but is in EatsDB"
+                f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes but is in EatsDB"
             )
 
 

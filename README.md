@@ -88,7 +88,7 @@ Language Code | Meaning
 * Any spelling mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.
 * Any notes like "half portion" written in the dish name should be moved to `description_xxx` or `note_xxx` fields.
 
-**Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/128px-filename.jpg. Edit the URL to specify `128px-` for thumbnails.
+**Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/600px-filename.jpg.
 
 ### Transcription Workflow
 
