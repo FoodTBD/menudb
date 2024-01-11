@@ -1,6 +1,5 @@
 # TODO
 
-* Add index nav link
 * Google Analytics
 * Add feedback link
 

@@ -11,6 +11,8 @@
 
 <body>
     <header>
+        {% include 'templates/common_header.j2' %}
+
         <h1>Common Dishes</h1>
         <ul>
             {% for locale_dish_group in locale_dish_groups %}
@@ -87,7 +89,7 @@
         {% endfor %}
     </div>
 
-    {% include 'templates/footer_script.j2' %}
+    {% include 'templates/common_script.j2' %}
     <script>
         // Get references to the input element and the table
         const searchInput = document.getElementById("searchInput");

@@ -11,6 +11,8 @@
 
 <body>
     <header class="header">
+        {% include 'templates/common_header.j2' %}
+
         <h1>{{ data.restaurant.name }}</h1>
         <p>
             Google Maps: <a href="{{ data.restaurant.googlemaps_url }}" target="_blank" rel="noopener">{{
@@ -133,7 +135,7 @@
                 datetime_format("%Y-%m-%d") }}</small></p>
     </footer>
 
-    {% include 'templates/footer_script.j2' %}
+    {% include 'templates/common_script.j2' %}
 </body>
 
 </html>
