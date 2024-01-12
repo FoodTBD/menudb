@@ -278,28 +278,35 @@ def generate_dishes_html(
     menu_filename_to_menu_yaml_dicts: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
-    # Build mapping of primary_name to menu_filename
+    # Build mapping of dish names to menu_filename
     dish_name_to_menu_filename = {}
     for yaml_dict in menu_filename_to_menu_yaml_dicts.values():
         if yaml_dict.get("menu"):
             menu = yaml_dict["menu"]
-            primary_lang = menu["language_codes"][0]
-            menu_primary_name_set = set()
+            language_codes = menu["language_codes"]
             for page in menu["pages"]:
                 if page.get("sections"):
                     for section in page["sections"]:
                         if section.get("menu_items"):
                             for menu_item in section["menu_items"]:
-                                name_lang = "name_" + primary_lang
-                                if menu_item.get(name_lang):
-                                    primary_name = menu_item[name_lang]
-                                    menu_primary_name_set.add(primary_name)
-            for primary_name in menu_primary_name_set:
-                if not dish_name_to_menu_filename.get(primary_name):
-                    dish_name_to_menu_filename[primary_name] = []
-                dish_name_to_menu_filename[primary_name].append(
-                    yaml_dict["_output_filename"]
-                )
+                                for language_code in language_codes:
+                                    name_lang = "name_" + language_code
+                                    if menu_item.get(name_lang):
+                                        name = menu_item[name_lang]
+                                        if not dish_name_to_menu_filename.get(name):
+                                            dish_name_to_menu_filename[name] = []
+                                        dish_name_to_menu_filename[name].append(
+                                            yaml_dict["_output_filename"]
+                                        )
+
+    # Inject into known_dishes
+    for known_dish in known_dishes:
+        menu_filename_set = set()
+        for dish_name in known_dish["name_native"].split(","):
+            menu_filenames = dish_name_to_menu_filename.get(dish_name)
+            if menu_filenames:
+                menu_filename_set.update(menu_filenames)
+        known_dish["_menu_filenames"] = list(menu_filename_set)
 
     # Group all dishes by locale
     locale_dish_groups = []
@@ -309,7 +316,7 @@ def generate_dishes_html(
             dish for dish in known_dishes if dish["locale_code"] == locale_code
         ]
         locale_dishes = sorted(locale_dishes, key=lambda d: d["name_en"])
-        locale_dish_group = {**locale_dict, "dishes": locale_dishes}
+        locale_dish_group = {**locale_dict, "menu_items": locale_dishes}
         locale_dish_groups.append(locale_dish_group)
 
     env = Environment(loader=FileSystemLoader("."))
@@ -324,7 +331,6 @@ def generate_dishes_html(
     template = env.get_template("templates/dishes_template.j2")
     rendered_html = template.render(
         locale_dish_groups=locale_dish_groups,
-        dish_name_to_menu_filename=dish_name_to_menu_filename,
         menu_filename_to_menu_yaml_dicts=menu_filename_to_menu_yaml_dicts,
     )
 
