@@ -13,6 +13,7 @@ import strictyaml
 from jinja2 import Environment, FileSystemLoader
 
 import jinja_filters
+from ngrams import find_top_ngrams
 from schema import RESTAURANT_SCHEMA
 
 STATIC_DIR = "static"
@@ -301,12 +302,23 @@ def print_stats(
         f"Most common dishes (n≥3): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
     )
 
+    unique_primary_names = list(set(primary_names))
+    print("Top n-grams:")
+    top_ngrams = find_top_ngrams(unique_primary_names, 3, 100)
+    print(top_ngrams)
+    # for ngram in top_ngrams:
+    #     print(f"{ngram[0]}\t{ngram[1]}")
+    top_ngrams = find_top_ngrams(unique_primary_names, 2, 100)
+    print(top_ngrams)
+    # for ngram in top_ngrams:
+    #     print(f"{ngram[0]}\t{ngram[1]}")
+
     character_counter = collections.Counter()
     for primary_name in primary_names:
         character_counter.update(primary_name)
-    print("Unique characters: " + str(len(character_counter)))
     n = 10
     print(f"Top characters (n={n}): " + str(character_counter.most_common(n)))
+    print("Unique characters: " + str(len(character_counter)))
     # for tuple in character_counter.most_common(n):
     #     print(tuple[0])
 
@@ -406,90 +418,6 @@ def generate_dishes_html(
         html_path.write(rendered_html)
 
 
-# EXPERIMENTAL
-# def generate_translations_html(
-#     menu_yaml_dicts: list[dict[str, Any]], output_html_path: str
-# ):
-#     all_menu_items_dict = {}
-#     for yaml_dict in menu_yaml_dicts:
-#         if yaml_dict.get("menu"):
-#             menu = yaml_dict["menu"]
-#             language_codes = menu["language_codes"]
-#             for page in menu["pages"]:
-#                 if page.get("sections"):
-#                     for section in page["sections"]:
-#                         if section.get("menu_items"):
-#                             for menu_item in section["menu_items"]:
-#                                 for language_code in language_codes:
-#                                     components = language_code.split("-")
-#                                     if (
-#                                         components[0] == "zh"
-#                                         and not components[-1] == "pinyin"
-#                                     ):
-#                                         key = "name_" + language_code
-#                                         if menu_item.get(key):
-#                                             native_name = menu_item[key]
-#                                             all_menu_items_dict[native_name] = menu_item
-#     # print(all_menu_items_dict)
-
-#     known_terms_dict = {}
-#     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
-#         csvreader = csv.DictReader(csvfile, delimiter="\t")
-#         for row in csvreader:
-#             assert any(row.values()), "ERROR: known_terms has empty lines"
-#             fieldnames = list(row.keys())
-#             known_terms_dict[row[fieldnames[0]]] = row[fieldnames[1]]
-
-#     ordered_known_terms = sorted(known_terms_dict, key=len, reverse=True)
-#     ordered_known_terms_dict = {k: known_terms_dict[k] for k in ordered_known_terms}
-#     # print(ordered_known_terms_dict)
-
-#     dish_name_to_annotated_html = {}
-#     for native_name in all_menu_items_dict.keys():
-#         annotated_html = ""
-#         i = 0
-#         while i < len(native_name):
-#             matched = False
-
-#             # Check for the longest possible match first
-#             for key in ordered_known_terms_dict:
-#                 if native_name[i:].startswith(key):
-#                     annotated_html += (
-#                         '<span class="dish-term-native">'
-#                         f"{key}"
-#                         f'<span class="dish-term-translated">{ordered_known_terms_dict[key]}</span>'
-#                         "</span>"
-#                     )
-#                     i += len(key)
-#                     matched = True
-#                     break
-
-#             # If no match, just add the character
-#             if not matched:
-#                 annotated_html += (
-#                     '<span class="dish-term-native">' f"{native_name[i]}" "</span>"
-#                 )
-#                 i += 1
-#         dish_name_to_annotated_html[native_name] = annotated_html
-
-#     env = Environment(loader=FileSystemLoader("."))
-#     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
-#     env.trim_blocks = True
-#     env.lstrip_blocks = True
-
-#     for filter_name in jinja_filters.ALL_FILTERS:
-#         env.filters[filter_name] = getattr(jinja_filters, filter_name)
-
-#     template = env.get_template("templates/translations_template.j2")
-#     rendered_html = template.render(
-#         all_dish_names=all_menu_items_dict.keys(),
-#         dish_name_to_annotated_html=dish_name_to_annotated_html,
-#     )
-
-#     with open(output_html_path, "w", encoding="utf-8") as html_path:
-#         html_path.write(rendered_html)
-
-
 def main(input_dir: str, output_dir: str):
     # Load canned data
     known_locale_lookuptable = load_known_locales()
@@ -512,12 +440,6 @@ def main(input_dir: str, output_dir: str):
         output_path,
     )
     print(f"Processed: {output_path}")
-
-    # output_path = os.path.join(output_dir, "translations.html")
-    # generate_translations_html(
-    #     list(menu_filename_to_menu_yaml_dicts.values()), output_path
-    # )
-    # print(f"Processed: {output_path}")
 
 
 if __name__ == "__main__":
