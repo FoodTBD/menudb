@@ -1,0 +1,522 @@
+author: Jocelyn Chang
+restaurant:
+  name: Hing Lung Ramen Inc
+  street_address: 1230 El Camino Real, Suite P
+  city: San Bruno, CA
+  country_code: US
+  tags: chinese, cantonese, dimsum
+  homepage_url: https://places.singleplatform.com/hing-lung/menu?ref=google
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_1%20Medium.jpeg
+      sections:
+        - "name_zh-Hant": 興隆招牌三寶
+          "name_en": HING LUNG 3 TREASURES
+          menu_items:
+            - "name_zh-Hant": 牛刪酥
+              "name_en": Fried dough w/ sweet crisp
+              price: 3.25
+            - "name_zh-Hant": 油條
+              "name_en": Fried dough
+              price: 3.45
+            - "name_zh-Hant": 沙翁
+              "name_en": Sugar egg puff
+              price: 2.50
+        - "name_zh-Hant": 興隆人氣火食
+          "name_en": HING LUNG MUST-TRY
+          menu_items:
+            - "name_zh-Hant": 招牌煎麵
+              "name_en": House special pan fried noodle
+              price: 16.95
+            - "name_zh-Hant": 牛瞞腸粉煲
+              "name_en": Rice noodle roll w/braised beef brisket pot
+              price: 15.95
+            - "name_zh-Hant": 汽水
+              "name_en": Soft Drink (can)
+              price: 2.50
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_2 Large.jpeg
+      sections:
+        - "name_zh-Hant": 精美廚貼
+          "name_en": APPETIZER
+          menu_items:
+            - "name_zh-Hant": 煎爾茄子
+              "name_en": Stuffed eggplant w/chicken paste
+              price: 8.95
+            - "name_zh-Hant": 椒鹽中雞翼(6)
+              "name_en": Deep fried chicken wing w/spicy sauce
+              price: 9.95
+            - "name_zh-Hant": 鹵水豆腐
+              "name_en": Marinated Tofu
+              price: 9.95
+            - "name_zh-Hant": 椒鹽南瓜茄子
+              "name_en": Deep fried pumpkin & eggplant w/spicy salt
+              price: 10.95
+            - "name_zh-Hant": 白灼瀦胭
+              "name_en": Par-boiled pork liver
+              price: 10.95
+            - "name_zh-Hant": 生煎瀦肉鍋貼 (6)
+              "name_en": Pan fried pot stickers
+              price: 7.95
+            - "name_zh-Hant": 章魚燒
+              "name_en": Takoyaki
+              price: 8.95
+            - "name_zh-Hant": 海草
+              "name_en": Seaweed salad
+              price: 7.95
+            - "name_zh-Hant": 海蛋
+              "name_en": Jellyfish
+              price: 7.95
+        - "name_zh-Hant": 滋味靚湯
+          "name_en": SOUP
+          menu_items:
+            - "name_zh-Hant": 粟米雞茸羹
+              "name_en": Sweet corn soup w/minced chicken
+              price: 11.95
+            - "name_zh-Hant": 紫菜海鮮豆腐湯
+              "name_en": Assorted seafood w/seaweed & tofu soup
+              price: 13.95
+            - "name_zh-Hant": 海鮮鍋巴湯
+              "name_en": Sizzling rice seafood soup
+              price: 14.95
+            - "name_zh-Hant": 西湖牛肉羹
+              "name_en": Minced beef soup
+              price: 12.95
+            - "name_zh-Hant": 酸辣海鮮湯
+              "name_en": Hot & sour seafood soup
+              price: 13.95
+        - "name_zh-Hant": 鑊氣小炒
+          "name_en": HOUSE SPECIAL
+          menu_items:
+            - "name_zh-Hant": X0醬蝦球
+              "name_en": Sauteed prawns w/XO sauce
+              price: 17.95
+            - "name_zh-Hant": 椒鹽龍利球
+              "name_en": Deep fried fillet fish w/spicy salt
+              price: 16.95
+            - "name_zh-Hant": 鮮菌龍利球
+              "name_en": Sauteed fillet fish w/mushrooms
+              price: 17.95
+            - "name_zh-Hant": 核桃明蝦球
+              "name_en": Honey walnut prawns
+              price: 17.95
+            - "name_zh-Hant": 椒鹽鮮魷
+              "name_en": Deep fried calamari w/spicy salt
+              price: 17.95
+            - "name_zh-Hant": 紅燒豆腐
+              "name_en": Braised tofu w/Chinese mushroom & veggie
+              price: 14.95
+            - "name_zh-Hant": 麻婆豆腐
+              "name_en": Mapo tofu w/minced pork
+              price: 14.95
+            - "name_zh-Hant": 豉汁炒大蜆
+              "name_en": Stir fried clams w/black bean sauce
+              price: 17.95
+            - "name_zh-Hant": 菠蘿咕咾肉
+              "name_en": Pineapple sweet & sour pork
+              price: 15.95
+            - "name_zh-Hant": 糖酒炒蘭遠
+              "name_en": Sauteed Chinese broccoli w/Chinese wine
+              price: 14.95
+            - "name_zh-Hant": 蒜子炒大豆苗
+              "name_en": Stir fried pea sprouts w/garlic
+              price: 17.95
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_3 Medium.jpeg
+      sections:
+        - "name_zh-Hant": 精美廚貼
+          "name_en": HOUSE SPECIAL CONT'D
+          menu_items:
+            - "name_zh-Hant": 杞子瀦潤浸時蔬
+              "name_en": Pig liver w/vegetable & wolf berry
+              price: 15.95
+            - "name_zh-Hant": 鹹魚雞粒豆腐
+              "name_en": Salted fish w/tofu & chicken pot
+              price: 15.95
+            - "name_zh-Hant": 椒鹽排骨
+              "name_en": Deep fried spareribs w/spicy salt
+              price: 15.95
+            - "name_zh-Hant": 咖喱雞
+              "name_en": Curry chicken
+              price: 14.95
+            - "name_zh-Hant": 蒙古牛肉
+              "name_en": Mongolian beef
+              price: 15.95
+            - "name_zh-Hant": 蜜椒牛仔粒
+              "name_en": Beef steak w/black pepper
+              price: 17.95
+            - "name_zh-Hant": 四季豆炒臘味
+              "name_en": Sauteed Chinese bacon w/string beans
+              price: 15.95
+            - "name_zh-Hant": 頭菜浸油菜心
+              "name_en": Tender green w/pickled vegetable
+              price: 13.95
+            - "name_zh-Hant": 乾偏四季豆
+              "name_en": Braised string beans w/ground pork
+              price: 14.95
+            - "name_zh-Hant": 芥蘭炒雞鬆
+              "name_en": Sauteed Chinese broccoli G chicken
+              price: 14.95
+            - "name_zh-Hant": 宮保雞
+              "name_en": Kung pao chicken
+              price: 14.95
+            - "name_zh-Hant": 金沙南瓜
+              "name_en": Pumpkin w/salted egg yolk
+              price: 13.95
+            - "name_zh-Hant": 魚香茄子煲
+              "name_en": Eggplant in garlic sauce clay pot
+              price: 14.95
+            - "name_zh-Hant": X0醬豆仔炒茄子
+              "name_en": Sauteed eggplant & string beans w/XO sauce
+              price: 14.95
+            - "name_zh-Hant": 泰式斑球
+              "name_en": Thai style fish fillet
+              price: 16.95
+            - "name_zh-Hant": 蘿蔔爛牛瞞
+              "name_en": Braised beef brisket w/radish
+              price: 17.95
+            - "name_zh-Hant": 西蘭花炒牛肉
+              "name_en": Broccoli beef
+              price: 155.95
+            - "name_zh-Hant": 燒汁什菌牛柳
+              "name_en": Teriyaki beef fillet w/mushrooms
+              price: 17.95
+            - "name_zh-Hant": 咖喱牛腩鍋
+              "name_en": Braised beef brisket pot w/curry
+              price: 16.95
+            - "name_zh-Hant": 梅菜扣肉煲
+              "name_en": Braised pork w/preserved veggie clay pot
+              price: 17.95
+            - "name_zh-Hant": 排骨南瓜煲
+              "name_en": Spareribs & pumpkin clay pot
+              price: 15.95
+            - "name_zh-Hant": 燒汁南瓜雞
+              "name_en": Teriyaki chicken & pumpkin
+              price: 15.95
+            - "name_zh-Hant": 腐乳上湯浸通菜
+              "name_en": Water spinach w/fermented tofu
+              price: 14.95
+            - "name_zh-Hant": 薑蔥炒豬潤
+              "name_en": Pork liver w/ginger & onion
+              price: 14.95
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_4 Large.jpeg
+      sections:
+        - "name_zh-Hant": 港式燒味
+          "name_en": HONG KONG STYLE B.B.Q.
+          menu_items:
+            - "name_zh-Hant": 貴妃黃毛雞(半隻)
+              "name_en": Hainan style chicken
+              price: 16.95/Half
+            - "name_zh-Hant": 貴妃黃毛雞(全隻)
+              "name_en": Hainan style chicken
+              price: 28.95/Whole
+            - "name_zh-Hant": 猪肚撈雞(半隻)
+              "name_en": Wasabi sauce tripe w/chicken
+              price: 19.95/Half
+            - "name_zh-Hant": 叉燒拼素鵝
+              "name_en": Honey bbq pork w/bean roll
+              price: 16.95
+            - "name_zh-Hant": 蜜汁叉燒
+              "name_en": Honey bbq pork
+              price: 13.95
+            - "name_zh-Hant": 燒鴨(半隻)
+              "name_en": Roasted duck
+              price: 16.95/Half
+            - "name_zh-Hant": 燒鴨(全隻)
+              "name_en": Roasted duck
+              price: 28.95/Whole
+        - "name_zh-Hant": 興隆招牌煲仔粥
+          "name_en": CONGEE IN POT
+          menu_items:
+            - "name_zh-Hant": 黃毛雞粥
+              "name_en": Hainan style chicken congee
+              price: 11.95
+            - "name_zh-Hant": 皮蛋瘦肉粥
+              "name_en": Pork & preserved egg congee
+              price: 10.95
+            - "name_zh-Hant": 鮮豬膶粥
+              "name_en": Fresh pork liver congee
+              price: 12.95
+            - "name_zh-Hant": 生滾大蜆粥
+              "name_en": Fresh clam congee (w/shell)
+              price: 16.95
+            - "name_zh-Hant": 狀元及第粥
+              "name_en": Assorted pork organs congee
+              price: 12.95
+            - "name_zh-Hant": 荔灣艇仔粥
+              "name_en": Sampan congee
+              price: 12.95
+            - "name_zh-Hant": 生滾魚片粥
+              "name_en": Fish congee
+              price: 11.95
+            - "name_zh-Hant": 免治牛肉粥
+              "name_en": Ground beef congee
+              price: 11.95
+            - "name_zh-Hant": 生滾蝦球粥
+              "name_en": Shrimp congee
+              price: 11.95
+            - "name_zh-Hant": 鯪魚球生菜粥
+              "name_en": Dace fish & vegetable congee
+              price: 10.95
+            - "name_zh-Hant": 生滾牛肉粥
+              "name_en": Beef congee
+              price: 11.95
+            - "name_zh-Hant": 爽滑豬紅粥
+              "name_en": Pork blood congee
+              price: 10.95
+            - "name_zh-Hant": (自製)肉丸粥
+              "name_en": (Homemade) meatball congee
+              price: 13.95
+            - "name_zh-Hant": 生滾肉片粥
+              "name_en": Sliced pork congee
+              price: 10.95
+            - "name_zh-Hant": 靚白粥
+              "name_en": Plain congee
+              price: 6.95
+            - "name_zh-Hant": 加豬膶/肉丸
+              "name_en": Add Extra Pork Liver/ Homemade Meatball
+              price: 2.00
+        - "name_zh-Hant": 香滑腸粉
+          "name_en": RICE NOODLE ROLL
+          menu_items:
+            - "name_zh-Hant": 貴妃黃毛雞(半隻)
+              "name_en": Rice noodle roll w/shrimp
+              price: 8.95
+            - "name_zh-Hant": 鮮豬膶腸粉
+              "name_en": Rice noodle roll w/pork liver
+              price: 8.95
+            - "name_zh-Hant": 牛肉腸粉
+              "name_en": Rice noodle roll w/beef
+              price: 8.95
+            - "name_zh-Hant": 叉燒腸粉
+              "name_en": Rice noodle roll w/bbq pork
+              price: 8.95
+            - "name_zh-Hant": 芫茜腸粉
+              "name_en": Rice noodle roll w/cilantro
+              price: 7.95
+            - "name_zh-Hant": 淨腸粉
+              "name_en": Rice noodle roll
+              price: 6.95
+            - "name_zh-Hant": X0醬腸粉煲
+              "name_en": Rice noodle roll w/X0 sauce
+              price: 11.95
+            - "name_zh-Hant": 港式炸兩腸粉
+              "name_en": Rice noodle roll w/Chinese fried bread
+              price: 8.95
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_5 Medium.jpeg
+      sections:
+        - "name_zh-Hant": 興隆招牌煲仔飯
+          "name_en": CLAY POT RICE
+          menu_items:
+            - "name_zh-Hant": 臘味煲仔飯
+              "name_en": Rice w/assorted cured meats
+              price: 16.95
+            - "name_zh-Hant": 北菇滑雞煲仔飯
+              "name_en": Rice w/chicken  mushroom
+              price: 14.95
+            - "name_zh-Hant": 豉汁排骨煲仔飯
+              "name_en": Rice w/pork spareribs in black bean sauce
+              price: 14.95
+        - "name_zh-Hant": 興隆招牌魚湯米線
+          "name_en": FISH BROTH
+          menu_items:
+            - "name_zh-Hant": 興隆招牌魚湯米線
+              "name_en": House special rice noodle in fish broth
+              price: 14.95
+            - "name_zh-Hant": 黃毛雞魚湯米線
+              "name_en": Chicken w/fish broth rice noodle soup
+              price: 14.95
+            - "name_zh-Hant": 紫菜三寶魚湯米線
+              "name_en": Combination in fish broth w/seaweed
+              price: 13.95
+            - "name_zh-Hant": 多魚魚湯米線
+              "name_en": Fish combo rice noodle soup
+              price: 13.95
+        - "name_zh-Hant": 傳統湯粉/湯麵
+          "name_en": NOODLE SOUP
+          menu_items:
+            - "name_zh-Hant": 可選 河粉/米粉/瀨粉
+              "name_en": "Selection: Flat Rice Noodle / Rice Noodle / Roll Rice Noodle"
+            - "name_zh-Hant": 鮮蝦雲吞麵
+              "name_en": Wotnon noodle soup (shrimp & pork)
+              price: 10.95
+            - "name_zh-Hant": 豬手湯麵
+              "name_en": Braised pork trotter noodle soup
+              price: 12.95
+            - "name_zh-Hant": 辣酒蜆湯米
+              "name_en": Rice noodle soup w/spicy clam
+              price: 16.95
+            - "name_zh-Hant": 上湯鮮蝦淨雲吞
+              "name_en": Wonton soup (shrimp & pork)
+              price: 10.95
+            - "name_zh-Hant": 上湯鮮蝦淨水餃
+              "name_en": Shrimp dumpling soup
+              price: 10.95
+            - "name_zh-Hant": 鮮蝦水鉸麵
+              "name_en": Shrimp dumpling noodle soup
+              price: 10.95
+            - "name_zh-Hant": 叉燒湯麵
+              "name_en": BBQ pork noodle soup
+              price: 10.95
+            - "name_zh-Hant": 豬膶湯麵
+              "name_en": Pork liver noodle soup
+              price: 10.95
+            - "name_zh-Hant": 上湯淨麵
+              "name_en": Plain noodle soup
+              price: 8.95
+            - "name_zh-Hant": 水餃撈麵
+              "name_en": Shrimp dumpling lo mein
+              price: 11.95
+            - "name_zh-Hant": 薑蔥撈麵
+              "name_en": Ginger & scallion lo mein
+              price: 9.95
+            - "name_zh-Hant": 蠔油菜遠撈麵
+              "name_en": Tender green & oyster sauce lo mein
+              price: 10.95
+            - "name_zh-Hant": 牛腩撈麵
+              "name_en": Braised beef brisket lo mein
+              price: 12.95
+            - "name_zh-Hant": 雲吞撈麵
+              "name_en": Wonton lo mein (shrimp & pork)
+              price: 11.95
+            - "name_zh-Hant": 雲吞水餃撈麵
+              "name_en": Wonton & shrimp dumpling lo mein
+              price: 11.95
+            - "name_zh-Hant": 蠔油芥蘭
+              "name_en": Chinese broccoli w/oyster sauce
+              price: 9.95
+            - "name_zh-Hant": 蠔油菜心
+              "name_en": Tender green w/oyster sauce
+              price: 9.95
+            - "name_zh-Hant": 蠔油西生菜
+              "name_en": Lettuce w/oyster sauce
+              price: 9.95
+            - "name_zh-Hant": 腐乳西生菜
+              "name_en": Lettuce w/fermented tofu sauce
+              price: 10.95
+            - "name_zh-Hant": 蠔油西蘭花
+              "name_en": Pan-boiled broccoli
+              price: 9.95
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_6 Large.jpeg
+      sections:
+        - "name_zh-Hant": 殉鑊氣炒/煎粉麵
+          "name_en": CHOW FUN/CHOW MEIN
+          menu_items:
+            - "name_zh-Hant": 雪菜牛鬆煎米粉
+              "name_en": Pan fried rice vermicelli w/ground beef
+              price: 15.95
+            - "name_zh-Hant": 特式乾炒牛河
+              "name_en": H.K style beef chow fun
+              price: 14.95
+            - "name_zh-Hant": 海鮮炒河
+              "name_en": Chow fun w/seafood
+              price: 15.95
+            - "name_zh-Hant": 星洲炒米粉
+              "name_en": Singaporean style rice noodle (curry flavor)
+              price: 14.95
+            - "name_zh-Hant": 蜜椒牛柳煎麵
+              "name_en": Pan fried noodle w/honey beef
+              price: 15.95
+            - "name_zh-Hant": 豉汁排骨炒河
+              "name_en": Chow fun w/spareribs in black bean sauce
+              price: 14.95
+            - "name_zh-Hant": 豉油皇炒麵
+              "name_en": Chow mein w/bean sprout & soy sauce
+              price: 12.95
+            - "name_zh-Hant": 涼瓜蛋白炒米粉
+              "name_en": Fried rice noodle w/bitter melon egg white
+              price: 14.95
+            - "name_zh-Hant": 泰式炒米粉
+              "name_en": Fried rice noodle w/ Thai style
+              price: 14.95
+        - "name_zh-Hant": 日式拉麵
+          "name_en": RAMEN
+          menu_items:
+            - "name_zh-Hant": 豬骨湯拉麵
+              "name_en": Roast pork flavor ramen
+              price: 13.95
+            - "name_zh-Hant": 黑蒜豬骨湯拉麵
+              "name_en": Garlic pork flavor ramen
+              price: 13.95
+            - "name_zh-Hant": 味噌湯拉麵
+              "name_en": Miso ramen
+              price: 13.95
+            - "name_zh-Hant": 辣味噌湯拉麵
+              "name_en": Spicy miso ramen
+              price: 13.95
+            - "name_zh-Hant": 豬扒拉麵
+              "name_en": Pork chop ramen
+              price: 13.95
+            - "name_zh-Hant": 海鮮拉麵
+              "name_en": Seafood ramen
+              price: 13.95
+        - "name_zh-Hant": 興隆碟飯/炒飯
+          "name_en": RICE
+          menu_items:
+            - "name_zh-Hant": 貴妃黃毛雞飯
+              "name_en": Hainan style chicken rice
+              price: 12.95
+            - "name_zh-Hant": 半肥瘦叉燒飯
+              "name_en": BBQ pork over rice
+              price: 12.95
+            - "name_zh-Hant": 燒鴨飯
+              "name_en": Roast duck rice
+              price: 13.95
+            - "name_zh-Hant": 叉燒黃毛雞飯
+              "name_en": BBQ pork & chicken rice
+              price: 16.95
+            - "name_zh-Hant": 叉燒燒鴨飯
+              "name_en": BBQ pork & roast duck rice
+              price: 16.95
+            - "name_zh-Hant": 柱侯牛腩飯
+              "name_en": Braised beef brisket over rice
+              price: 13.95
+            - "name_zh-Hant": 蒙古牛肉飯
+              "name_en": Mongolian beef over rice
+              price: 13.95
+            - "name_zh-Hant": 宮保雞飯
+              "name_en": Kung Pao chicken rice
+              price: 13.95
+            - "name_zh-Hant": 蕃茄牛肉飯
+              "name_en": Beef & tomato sauce over rice
+              price: 13.95
+            - "name_zh-Hant": 免治牛肉飯
+              "name_en": Minced beef over rice
+              price: 13.95
+            - "name_zh-Hant": 涼瓜牛肉飯
+              "name_en": Bitter melon beef over rice
+              price: 15.95
+            - "name_zh-Hant": 南乳豬手飯
+              "name_en": Braised pork trotter w/fermented tofu over rice
+              price: 15.95
+            - "name_zh-Hant": 揚州炒飯
+              "name_en": Yang chow fried rice
+              price: 13.95
+            - "name_zh-Hant": 福建炒飯
+              "name_en": Fook Kin fried rice
+              price: 15.95
+            - "name_zh-Hant": 鹹魚雞粒炒飯
+              "name_en": Fried rice w/salted fish/chicken
+              price: 15.95
+            - "name_zh-Hant": 夠薑炒牛肉飯
+              "name_en": Beef w/ginger fried rice
+              price: 14.95
+            - "name_zh-Hant": 瑤柱蛋白炒飯
+              "name_en": Fried rice w/dried scallop & egg white
+              price: 15.95
+            - "name_zh-Hant": XO醬海鮮炒飯
+              "name_en": Seafood fried rice w/XO sauce
+              price: 16.95
+            - "name_zh-Hant": 素炒飯
+              "name_en": Vegetarian fried rice
+              price: 12.95
+            - "name_zh-Hant": 西蘭花牛肉飯
+              "name_en": Broccoli beef rice
+              price: 15.95
+            - "name_zh-Hant": 涼瓜排骨飯
+              "name_en": Bitter melon & spareribs over rice
+              price: 15.95
+            - "name_zh-Hant": 白飯
+              "name_en": Steamed rice
+              price: 2.25
