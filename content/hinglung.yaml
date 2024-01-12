@@ -93,13 +93,13 @@ menu:
           "name_en": HOUSE SPECIAL
           menu_items:
             - "name_zh-Hant": X0醬蝦球
-              "name_en": Sauteed prawns w/XO sauce
+              "name_en": Sautéed prawns w/XO sauce
               price: 17.95
             - "name_zh-Hant": 椒鹽龍利球
               "name_en": Deep fried fillet fish w/spicy salt
               price: 16.95
             - "name_zh-Hant": 鮮菌龍利球
-              "name_en": Sauteed fillet fish w/mushrooms
+              "name_en": Sautéed fillet fish w/mushrooms
               price: 17.95
             - "name_zh-Hant": 核桃明蝦球
               "name_en": Honey walnut prawns
@@ -120,7 +120,7 @@ menu:
               "name_en": Pineapple sweet & sour pork
               price: 15.95
             - "name_zh-Hant": 糖酒炒蘭遠
-              "name_en": Sauteed Chinese broccoli w/Chinese wine
+              "name_en": Sautéed Chinese broccoli w/Chinese wine
               price: 14.95
             - "name_zh-Hant": 蒜子炒大豆苗
               "name_en": Stir fried pea sprouts w/garlic
@@ -149,7 +149,7 @@ menu:
               "name_en": Beef steak w/black pepper
               price: 17.95
             - "name_zh-Hant": 四季豆炒臘味
-              "name_en": Sauteed Chinese bacon w/string beans
+              "name_en": Sautéed Chinese bacon w/string beans
               price: 15.95
             - "name_zh-Hant": 頭菜浸油菜心
               "name_en": Tender green w/pickled vegetable
@@ -158,7 +158,7 @@ menu:
               "name_en": Braised string beans w/ground pork
               price: 14.95
             - "name_zh-Hant": 芥蘭炒雞鬆
-              "name_en": Sauteed Chinese broccoli & chicken
+              "name_en": Sautéed Chinese broccoli & chicken
               price: 14.95
             - "name_zh-Hant": 宮保雞
               "name_en": Kung pao chicken
@@ -170,7 +170,7 @@ menu:
               "name_en": Eggplant in garlic sauce clay pot
               price: 14.95
             - "name_zh-Hant": X0醬豆仔炒茄子
-              "name_en": Sauteed eggplant & string beans w/XO sauce
+              "name_en": Sautéed eggplant & string beans w/XO sauce
               price: 14.95
             - "name_zh-Hant": 泰式斑球
               "name_en": Thai style fish fillet
