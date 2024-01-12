@@ -693,10 +693,10 @@ menu:
               "name_en": Daily Special Soup
               price: (L) $20.99, (XL) $38.99
             - item_number: B12
-              "name_zh-Hant": 金湯花膠南瓜盅(預訂)
+              "name_zh-Hant": 金湯花膠南瓜盅
               "name_en": Boiled Fish Maw with Superior Broth in whole Pumpkin
               price: $48.99
-              price_note: Order in Advance
+              price_note: "(預訂 Order in Advance)"        
             - item_number: B13
               "name_zh-Hant": 蟹肉燕窩美
               "name_en": Bird's Nest and Crab Meat Soup
@@ -706,10 +706,10 @@ menu:
               "name_en": Mini House Bolled Soup with Abalone and Sea Cucumber
               price: $25.99
             - item_number: B15
-              "name_zh-Hant": 寶冬瓜盅(預訂)
+              "name_zh-Hant": 寶冬瓜盅
               "name_en": Double Boiled Whole Winter Melon Soup
               price: $58.99              
-              price_note: Order in Advance
+              price_note: "(預訂 Order in Advance)"        
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMOQ2-wlLzyFHFwrQ_WzFCbVrtgOCTfBb2O59xE=s684-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192822921%20Large.jpeg
       sections:
@@ -765,7 +765,7 @@ menu:
             - item_number: C12
               "name_zh-Hant": 大红乳豬全體
               "name_en": Roast Whole Suckling Pig
-              price_note: 預訂 Order in Advance
+              price_note: "(預訂 Order in Advance)"        
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNtlCWsEpmJbnIIL5gGBLue5beW-6o6qs6LcfSg=s856-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192755584%20Large.jpeg
       sections:
@@ -1089,9 +1089,9 @@ menu:
               "name_en": Crispy Chicken Stuffed with Sweet Rice
               price_note: "(Whole, Order in Advance)"
             - item_number: G16
-              "name_zh-Hant": Braised Boneless Duck Stuffed with Eight Delicacies
-              "name_en": Crispy Chicken Stuffed with Sweet Rice
-              price_note: "(Order in Advance)"        
+              "name_zh-Hant": 西湖八寶鴨
+              "name_en": Braised Boneless Duck Stuffed with Eight Delicacies
+              price_note: "(預訂 Order in Advance)"        
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPZmd-67qIH88mV609ThJalYMeEmCFWkpe0IyV2=s1140-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192901253%20Large.jpeg
       sections:

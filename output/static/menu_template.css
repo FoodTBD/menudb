@@ -60,6 +60,20 @@
     color: #666;
 }
 
+.dish-term-native {
+    display: inline-block;
+    text-align: center;
+    margin-right: 0.2rem;
+    vertical-align: top;
+}
+
+.dish-term-translated {
+    display: block;
+    font-size: 0.5rem;
+    /* font-stretch: condensed; */
+    font-variation-settings: "wdth" 50;
+}
+
 .menu-table td div.menu-item-description {
     padding-top: 0.2rem;
 }

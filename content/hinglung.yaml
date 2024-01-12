@@ -92,7 +92,7 @@ menu:
         - "name_zh-Hant": 鑊氣小炒
           "name_en": HOUSE SPECIAL
           menu_items:
-            - "name_zh-Hant": X0醬蝦球
+            - "name_zh-Hant": XO醬蝦球
               "name_en": Sautéed prawns w/XO sauce
               price: 17.95
             - "name_zh-Hant": 椒鹽龍利球
@@ -169,7 +169,7 @@ menu:
             - "name_zh-Hant": 魚香茄子煲
               "name_en": Eggplant in garlic sauce clay pot
               price: 14.95
-            - "name_zh-Hant": X0醬豆仔炒茄子
+            - "name_zh-Hant": XO醬豆仔炒茄子
               "name_en": Sautéed eggplant & string beans w/XO sauce
               price: 14.95
             - "name_zh-Hant": 泰式斑球
@@ -306,7 +306,7 @@ menu:
             - "name_zh-Hant": 淨腸粉
               "name_en": Rice noodle roll
               price: 6.95
-            - "name_zh-Hant": X0醬腸粉煲
+            - "name_zh-Hant": XO醬腸粉煲
               "name_en": Rice noodle roll w/XO sauce
               price: 11.95
             - "name_zh-Hant": 港式炸兩腸粉
