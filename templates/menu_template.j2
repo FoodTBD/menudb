@@ -18,7 +18,14 @@
             Google Maps: <a href="{{ data.restaurant.googlemaps_url }}" target="_blank" rel="noopener">{{
                 data.restaurant.street_address }}, {{ data.restaurant.city }}, {{ data.restaurant.country_code
                 }}</a><br>
-            {% for k,v in {"homepage_url": "Homepage", "facebook_url": "Facebook", "instagram_url": "Instagram"}.items()
+            {% for k,v in {
+            "homepage_url": "Homepage",
+            "facebook_url": "Facebook",
+            "instagram_url": "Instagram",
+            "online_menu_url": "Online Menu",
+            "tripadvisor_url": "TripAdvisor",
+            "yelp_url": "Yelp",
+            }.items()
             if data.restaurant[k] %}{{ v }}: <a href="{{ data.restaurant[k] }}" target="_blank" rel="noopener">{{
                 data.restaurant[k] | pretty_url }}</a><br>{% endfor %}
         </p>

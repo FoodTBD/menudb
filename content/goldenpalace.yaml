@@ -6,7 +6,7 @@ restaurant:
   country_code: US
   tags: chinese, cantonese, dimsum
   facebook_url: https://www.facebook.com/pages/Golden-Palace-Chinese-Restaurant/498353966951144
-  doordash_url: https://www.doordash.com/store/golden-palace-san-jose-24537032/
+  online_menu_url: https://www.doordash.com/store/golden-palace-san-jose-24537032/
 menu:
   language_codes:
     - zh-Hant

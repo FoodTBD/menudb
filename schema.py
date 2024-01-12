@@ -14,7 +14,9 @@ RESTAURANT_SCHEMA = Map(
                 Optional("googlemaps_url"): Str(),
                 Optional("facebook_url"): Str(),
                 Optional("instagram_url"): Str(),
-                Optional("doordash_url"): Str(),
+                Optional("online_menu_url"): Str(),
+                Optional("yelp_url"): Str(),
+                Optional("tripadvisor_url"): Str(),
             }
         ),
         Optional("menu"): Map(

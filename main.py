@@ -206,7 +206,6 @@ def print_stats(
 ) -> None:
     eatsdb_names_set = set(load_eatsdb_names())
 
-    print()
     print(f"Total menu count: {len(menu_yaml_dicts)}")
 
     # Build list of primary_names and image_names
@@ -230,16 +229,16 @@ def print_stats(
     print("Unique dish names: " + str(len(set(primary_names))))
 
     name_counter = collections.Counter(primary_names)
-    filtered_c = {k: v for k, v in name_counter.items() if v > 1}
+    filtered_c = {k: v for k, v in name_counter.items() if v >= 3}
     print(
-        f"Common dishes ({len(filtered_c)}): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
+        f"Most common dishes (n≥3): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
     )
 
     character_counter = collections.Counter()
     for primary_name in primary_names:
         character_counter.update(primary_name)
     print("Unique characters: " + str(len(character_counter)))
-    print("Top 10 characters: " + str(character_counter.most_common(10)))
+    print("Top characters (n=10): " + str(character_counter.most_common(10)))
 
     # Data linting
     for dish_name in filtered_c:

@@ -1,11 +1,11 @@
 author: Jocelyn Chang
 restaurant:
-  name: Hing Lung Ramen Inc
+  name: Hing Lung Ramen
   street_address: 1230 El Camino Real, Suite P
   city: San Bruno, CA
   country_code: US
   tags: chinese, cantonese, dimsum
-  homepage_url: https://places.singleplatform.com/hing-lung/menu?ref=google
+  online_menu_url: https://places.singleplatform.com/hing-lung/menu
 menu:
   language_codes:
     - zh-Hant
