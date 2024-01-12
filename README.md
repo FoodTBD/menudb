@@ -99,7 +99,7 @@ Language Code | Meaning
 
 **Dish names**:
 * Any spelling mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.
-* Any notes like "half portion" written in the dish name should be moved to `description_xxx` or `note_xxx` fields.
+* Anything like quantities or "half portion" written in the dish name should be moved to `description_xxx` or `note_xxx` fields, to facilitate name-based matching.
 
 **Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/600px-filename.jpg.
 

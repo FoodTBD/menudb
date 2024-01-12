@@ -5,7 +5,6 @@ restaurant:
   city: San Bruno, CA
   country_code: US
   tags: chinese, cantonese, dimsum
-  online_menu_url: https://places.singleplatform.com/hing-lung/menu
 menu:
   language_codes:
     - zh-Hant
@@ -34,6 +33,7 @@ menu:
             - "name_zh-Hant": 牛瞞腸粉煲
               "name_en": Rice noodle roll w/braised beef brisket pot
               price: 15.95
+        - menu_items:
             - "name_zh-Hant": 汽水
               "name_en": Soft Drink (can)
               price: 2.50
@@ -45,9 +45,10 @@ menu:
             - "name_zh-Hant": 煎爾茄子
               "name_en": Stuffed eggplant w/chicken paste
               price: 8.95
-            - "name_zh-Hant": 椒鹽中雞翼(6)
+            - "name_zh-Hant": 椒鹽中雞翼
               "name_en": Deep fried chicken wing w/spicy sauce
               price: 9.95
+              price_note: "(6)"
             - "name_zh-Hant": 鹵水豆腐
               "name_en": Marinated Tofu
               price: 9.95
@@ -57,9 +58,10 @@ menu:
             - "name_zh-Hant": 白灼瀦胭
               "name_en": Par-boiled pork liver
               price: 10.95
-            - "name_zh-Hant": 生煎瀦肉鍋貼 (6)
+            - "name_zh-Hant": 生煎豬肉鍋貼
               "name_en": Pan fried pot stickers
               price: 7.95
+              price_note: "(6)"
             - "name_zh-Hant": 章魚燒
               "name_en": Takoyaki
               price: 8.95
@@ -156,7 +158,7 @@ menu:
               "name_en": Braised string beans w/ground pork
               price: 14.95
             - "name_zh-Hant": 芥蘭炒雞鬆
-              "name_en": Sauteed Chinese broccoli G chicken
+              "name_en": Sauteed Chinese broccoli & chicken
               price: 14.95
             - "name_zh-Hant": 宮保雞
               "name_en": Kung pao chicken
@@ -178,7 +180,7 @@ menu:
               price: 17.95
             - "name_zh-Hant": 西蘭花炒牛肉
               "name_en": Broccoli beef
-              price: 155.95
+              price: 15.95
             - "name_zh-Hant": 燒汁什菌牛柳
               "name_en": Teriyaki beef fillet w/mushrooms
               price: 17.95
@@ -205,27 +207,32 @@ menu:
         - "name_zh-Hant": 港式燒味
           "name_en": HONG KONG STYLE B.B.Q.
           menu_items:
-            - "name_zh-Hant": 貴妃黃毛雞(半隻)
+            - "name_zh-Hant": 貴妃黃毛雞
               "name_en": Hainan style chicken
               price: 16.95/Half
-            - "name_zh-Hant": 貴妃黃毛雞(全隻)
+              price_note: "(半隻)"
+            - "name_zh-Hant": 貴妃黃毛雞
               "name_en": Hainan style chicken
               price: 28.95/Whole
-            - "name_zh-Hant": 猪肚撈雞(半隻)
+              price_note: "(全隻)"
+            - "name_zh-Hant": 猪肚撈雞
               "name_en": Wasabi sauce tripe w/chicken
               price: 19.95/Half
+              price_note: "(半隻)"
             - "name_zh-Hant": 叉燒拼素鵝
               "name_en": Honey bbq pork w/bean roll
               price: 16.95
             - "name_zh-Hant": 蜜汁叉燒
               "name_en": Honey bbq pork
               price: 13.95
-            - "name_zh-Hant": 燒鴨(半隻)
+            - "name_zh-Hant": 燒鴨
               "name_en": Roasted duck
               price: 16.95/Half
-            - "name_zh-Hant": 燒鴨(全隻)
+              price_note: "(半隻)"
+            - "name_zh-Hant": 燒鴨
               "name_en": Roasted duck
               price: 28.95/Whole
+              price_note: "(全隻)"
         - "name_zh-Hant": 興隆招牌煲仔粥
           "name_en": CONGEE IN POT
           menu_items:
@@ -280,9 +287,10 @@ menu:
         - "name_zh-Hant": 香滑腸粉
           "name_en": RICE NOODLE ROLL
           menu_items:
-            - "name_zh-Hant": 貴妃黃毛雞(半隻)
+            - "name_zh-Hant": 貴妃黃毛雞
               "name_en": Rice noodle roll w/shrimp
               price: 8.95
+              price_note: "(半隻)"
             - "name_zh-Hant": 鮮豬膶腸粉
               "name_en": Rice noodle roll w/pork liver
               price: 8.95
@@ -299,7 +307,7 @@ menu:
               "name_en": Rice noodle roll
               price: 6.95
             - "name_zh-Hant": X0醬腸粉煲
-              "name_en": Rice noodle roll w/X0 sauce
+              "name_en": Rice noodle roll w/XO sauce
               price: 11.95
             - "name_zh-Hant": 港式炸兩腸粉
               "name_en": Rice noodle roll w/Chinese fried bread
@@ -313,7 +321,7 @@ menu:
               "name_en": Rice w/assorted cured meats
               price: 16.95
             - "name_zh-Hant": 北菇滑雞煲仔飯
-              "name_en": Rice w/chicken  mushroom
+              "name_en": Rice w/chicken mushroom
               price: 14.95
             - "name_zh-Hant": 豉汁排骨煲仔飯
               "name_en": Rice w/pork spareribs in black bean sauce
@@ -339,7 +347,7 @@ menu:
             - "name_zh-Hant": 可選 河粉/米粉/瀨粉
               "name_en": "Selection: Flat Rice Noodle / Rice Noodle / Roll Rice Noodle"
             - "name_zh-Hant": 鮮蝦雲吞麵
-              "name_en": Wotnon noodle soup (shrimp & pork)
+              "name_en": Wotnon [sic] noodle soup (shrimp & pork)
               price: 10.95
             - "name_zh-Hant": 豬手湯麵
               "name_en": Braised pork trotter noodle soup
