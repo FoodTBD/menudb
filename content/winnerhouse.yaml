@@ -19,7 +19,7 @@ menu:
           "name_en": Meat
           menu_items:
             - "name_zh-Hant": 梅菜豬肉
-              "name_en": Pork with [Plum Vegetables](https://en.wikipedia.org/wiki/Meigan_cai)
+              "name_en": Pork with Plum Vegetables
               price: 188
             - "name_zh-Hant": 羊腩煲
               "name_en": Lamb Brisket
@@ -45,7 +45,7 @@ menu:
               price: 188
               price_note: "(早一天預訂) (order 1 day in advance)"
             - "name_zh-Hant": 鹵水牛展
-              "name_en": "[Marinade](https://en.wikipedia.org/wiki/Lou_mei) Beef Shank"
+              "name_en": "Marinade Beef Shank"
               price: 188
             - "name_zh-Hant": 鳳爪
               price_note: "(早一天預訂) (order 1 day in advance)"
@@ -80,7 +80,7 @@ menu:
               "name_en": Dry Fried Beef rice noodles
               price: 148
             - "name_zh-Hant": 肉片炒麵
-              "name_en": "[Fried noodles](https://en.wikipedia.org/wiki/Chow_mein) with Sliced Pork"
+              "name_en": "Fried noodles with Sliced Pork"
               price: 148
             - "name_zh-Hant": 吞云湯麵
               "name_en": Wonton noodles

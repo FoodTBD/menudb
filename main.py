@@ -88,8 +88,11 @@ def load_known_terms() -> dict[str, dict[str, Any]]:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
             assert any(row.values()), "ERROR: known_terms has empty lines"
-            fieldnames = list(row.keys())
-            known_terms_dict[row[fieldnames[0]]] = row[fieldnames[1]]
+            row.pop("_notes")
+            if row["zh-Hans"]:
+                known_terms_dict[row["zh-Hans"]] = row
+            if row["zh-Hant"]:
+                known_terms_dict[row["zh-Hant"]] = row
     return known_terms_dict
 
 
@@ -110,6 +113,7 @@ def generate_menu_html(
     input_yaml_path: str,
     output_html_path: str,
     known_dish_lookuptable: dict[str, dict[str, Any]],
+    known_terms_dict: dict[str, Any],
 ) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
         yaml_data = strictyaml.load(yaml_path.read(), RESTAURANT_SCHEMA)
@@ -158,9 +162,7 @@ def generate_menu_html(
             display_language_codes.append("en")
 
     # EXPERIMENTAL
-    known_terms_dict = load_known_terms()
     ordered_known_terms = sorted(known_terms_dict, key=len, reverse=True)
-    ordered_known_terms_dict = {k: known_terms_dict[k] for k in ordered_known_terms}
 
     # EXPERIMENTAL
     all_chinese_dish_names = []
@@ -192,14 +194,22 @@ def generate_menu_html(
             matched = False
 
             # Check for the longest possible match first
-            for key in ordered_known_terms_dict:
+            for key in ordered_known_terms:
                 if native_name[i:].startswith(key):
                     annotated_html += (
                         '<span class="dish-term-native">'
                         f"{key}"
-                        f'<span class="dish-term-translated">{ordered_known_terms_dict[key]}</span>'
-                        "</span>"
+                        f'<span class="dish-term-translated">'
                     )
+                    wikipedia_url_en = known_terms_dict[key]["wikipedia_url_en"]
+                    if wikipedia_url_en:
+                        annotated_html += f'<a href="{wikipedia_url_en}" target="wikipedia" rel="noopener">'
+                    annotated_html += f"{known_terms_dict[key]['en']}"
+                    if wikipedia_url_en:
+                        annotated_html += f"</a>"
+                    annotated_html += "</span>"
+                    annotated_html += "</span>"
+
                     i += len(key)
                     matched = True
                     break
@@ -234,7 +244,10 @@ def generate_menu_html(
 
 
 def process_menu_yaml_paths(
-    input_dir: str, output_dir: str, known_dishes: list[dict[str, Any]]
+    input_dir: str,
+    output_dir: str,
+    known_dishes: list[dict[str, Any]],
+    known_terms_dict: dict[str, Any],
 ) -> dict[str, Any]:
     # Map name_native to dish dict
     known_dish_lookuptable = {}
@@ -256,7 +269,7 @@ def process_menu_yaml_paths(
                 output_path = os.path.join(output_dir, output_filename)
 
                 yaml_dict = generate_menu_html(
-                    input_path, output_path, known_dish_lookuptable
+                    input_path, output_path, known_dish_lookuptable, known_terms_dict
                 )
 
                 yaml_dict["_output_filename"] = output_filename
@@ -264,13 +277,19 @@ def process_menu_yaml_paths(
 
                 print(f"Processed: {input_path} -> {output_path}")
 
-    print_stats(list(menu_filename_to_menu_yaml_dicts.values()), known_dish_lookuptable)
+    print_stats(
+        list(menu_filename_to_menu_yaml_dicts.values()),
+        known_dish_lookuptable,
+        known_terms_dict,
+    )
 
     return menu_filename_to_menu_yaml_dicts
 
 
 def print_stats(
-    menu_yaml_dicts: list[dict[str, Any]], known_dish_lookuptable: dict[str, Any]
+    menu_yaml_dicts: list[dict[str, Any]],
+    known_dish_lookuptable: dict[str, Any],
+    known_terms_dict: dict[str, Any],
 ) -> None:
     eatsdb_names_set = set(load_eatsdb_names())
 
@@ -302,25 +321,29 @@ def print_stats(
         f"Most common dishes (n≥3): {sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)}"
     )
 
-    unique_primary_names = list(set(primary_names))
-    print("Top n-grams:")
-    top_ngrams = find_top_ngrams(unique_primary_names, 3, 100)
-    print(top_ngrams)
+    # unique_primary_names = list(set(primary_names))
+    # print("Top n-grams:")
+    # top_ngrams = find_top_ngrams(unique_primary_names, 2, 100)
+    # print(top_ngrams)
     # for ngram in top_ngrams:
-    #     print(f"{ngram[0]}\t{ngram[1]}")
-    top_ngrams = find_top_ngrams(unique_primary_names, 2, 100)
-    print(top_ngrams)
-    # for ngram in top_ngrams:
-    #     print(f"{ngram[0]}\t{ngram[1]}")
+    #     if ngram[0] not in known_terms_dict and any(
+    #         [c not in known_terms_dict for c in ngram[0]]
+    #     ):
+    #         print(f"{ngram[0]}\t{ngram[1]}")
 
     character_counter = collections.Counter()
     for primary_name in primary_names:
         character_counter.update(primary_name)
-    n = 10
-    print(f"Top characters (n={n}): " + str(character_counter.most_common(n)))
+    n = 200
+    # print(f"Top characters (n={n}): " + str(character_counter.most_common(n)))
     print("Unique characters: " + str(len(character_counter)))
-    # for tuple in character_counter.most_common(n):
-    #     print(tuple[0])
+
+    top_chars_not_known = []
+    for tuple in character_counter.most_common(n):
+        if tuple[0] not in "".join(known_terms_dict.keys()) and tuple[0].isalpha():
+            top_chars_not_known.append(tuple[0])
+    if top_chars_not_known:
+        print(f"Top characters not present in known_terms: {top_chars_not_known}")
 
     # Data linting
     for dish_name in filtered_c:
@@ -422,10 +445,11 @@ def main(input_dir: str, output_dir: str):
     # Load canned data
     known_locale_lookuptable = load_known_locales()
     known_dishes = load_known_dishes()
+    known_terms_dict = load_known_terms()
 
     prepare_output_dir(output_dir)
     menu_filename_to_menu_yaml_dicts = process_menu_yaml_paths(
-        input_dir, output_dir, known_dishes
+        input_dir, output_dir, known_dishes, known_terms_dict
     )
 
     output_path = os.path.join(output_dir, "index.html")

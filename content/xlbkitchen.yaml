@@ -149,15 +149,15 @@ menu:
           "name_en": Clay Pot
           menu_items:
             - item_number: 4-1
-              "name_zh-Hans": 千锅大鸡翅
+              "name_zh-Hans": 干锅大鸡翅
               "name_en": Griddle Chicken Wings
               price: 18.95
             - item_number: 4-2
-              "name_zh-Hans": 千锅肥肠
+              "name_zh-Hans": 干锅肥肠
               "name_en": Griddle Intestines
               price: 18.95
             - item_number: 4-3
-              "name_zh-Hans": 千锅牛腩
+              "name_zh-Hans": 干锅牛腩
               "name_en": Griddle Beef Sirloin
               price: 19.95
             - item_number: 4-4
@@ -217,7 +217,7 @@ menu:
               "name_en": Sauteed Bean Sprouts in White Sauce
               price: 17.95
             - item_number: 6-3
-              "name_zh-Hans": 千四季豆
+              "name_zh-Hans": 干四季豆
               "name_en": Sauteed String Bean
               price: 14.95
             - item_number: 6-4
@@ -241,11 +241,11 @@ menu:
               "name_en": Braised Tofu
               price: 15.95
             - item_number: 6-9
-              "name_zh-Hans": 士豆丝
+              "name_zh-Hans": 土豆丝
               "name_en": Sauteed Julienne Potato
               price: 14.95
             - item_number: 6-10
-              "name_zh-Hans": 雪菜毛豆百
+              "name_zh-Hans": 雪菜毛豆百页
               "name_en": Preserved Vegetable and Beans
               price: 15.95
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipNzqeKSKH_q0oo7eg74Nq9Wl3fUlQeCO-URHTjA=s1016-k-no
@@ -405,7 +405,7 @@ menu:
           "name_en": "(Rice Noodle)"
           menu_items:
             - item_number: 9-9
-              "name_zh-Hans": 千炒牛河
+              "name_zh-Hans": 干炒牛河
               "name_en": Beef Chow Fun
               price: 16.95
             - item_number: 9-10

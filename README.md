@@ -57,9 +57,9 @@ Here's an example with all the defined fields:
 
                   # The following fields will take precedence over matching data from `known_dishes.tsv`.
                   # The key suffix must match one of the above `language_codes`.
-                  # The name and description values may contain Markdown-style bold, italic, code, and links
+                  # The name and description values may contain Markdown-style bold, italic, code
                   "name_zh-Hans": 酸菜鱼
-                  "name_en": Boiled fish with [pickled cabbage](https://en.wikipedia.org/wiki/Suan_cai) and chili
+                  "name_en": Boiled fish with pickled cabbage and chili
                   "description_en": Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   wikipedia_url_en: https://en.wikipedia.org/wiki/Dumpling
 

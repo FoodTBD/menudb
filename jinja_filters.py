@@ -4,7 +4,7 @@ from markupsafe import Markup
 
 
 def styled_text_format(text: str) -> str:
-    # Replace Markdown-style **bold**, *italic*, `code`, and links with HTML tags
+    # Replace Markdown-style **bold**, *italic*, `code` with HTML tags
 
     def replace_markup(match: re.Match[str]) -> str:
         if match.group(1):
@@ -20,13 +20,13 @@ def styled_text_format(text: str) -> str:
     pattern = r"\*\*(.*?)\*\*|\*(.*?)\*|`(.*?)`"
     html_text = re.sub(pattern, replace_markup, text)
 
-    def replace_link(match):
-        link_text, link_url = match.groups()
-        return f'<a href="{link_url}" target="_blank" rel="noopener">{link_text}</a>'
+    # def replace_link(match):
+    #     link_text, link_url = match.groups()
+    #     return f'<a href="{link_url}" target="_blank" rel="noopener">{link_text}</a>'
 
     # Match Markdown links
-    markdown_link_pattern = r"\[([^\]]+)\]\(([^)]+)\)"
-    html_text = re.sub(markdown_link_pattern, replace_link, html_text)
+    # markdown_link_pattern = r"\[([^\]]+)\]\(([^)]+)\)"
+    # html_text = re.sub(markdown_link_pattern, replace_link, html_text)
 
     return Markup(html_text)
 

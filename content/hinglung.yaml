@@ -55,7 +55,7 @@ menu:
             - "name_zh-Hant": 椒鹽南瓜茄子
               "name_en": Deep fried pumpkin & eggplant w/spicy salt
               price: 10.95
-            - "name_zh-Hant": 白灼瀦胭
+            - "name_zh-Hant": 白灼豬膶
               "name_en": Par-boiled pork liver
               price: 10.95
             - "name_zh-Hant": 生煎豬肉鍋貼
@@ -130,7 +130,7 @@ menu:
         - "name_zh-Hant": 精美廚貼
           "name_en": HOUSE SPECIAL CONT'D
           menu_items:
-            - "name_zh-Hant": 杞子瀦潤浸時蔬
+            - "name_zh-Hant": 杞子瀦膶浸時蔬
               "name_en": Pig liver w/vegetable & wolf berry
               price: 15.95
             - "name_zh-Hant": 鹹魚雞粒豆腐
@@ -199,7 +199,7 @@ menu:
             - "name_zh-Hant": 腐乳上湯浸通菜
               "name_en": Water spinach w/fermented tofu
               price: 14.95
-            - "name_zh-Hant": 薑蔥炒豬潤
+            - "name_zh-Hant": 薑蔥炒豬膶
               "name_en": Pork liver w/ginger & onion
               price: 14.95
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_4 Large.jpeg

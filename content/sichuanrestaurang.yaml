@@ -42,7 +42,7 @@ menu:
               "name_en": Boiled fish in chili oil
               price: 249:-
             - "name_zh-Hans": 酸菜鱼
-              "name_en": Boiled fish with [pickled cabbage](https://en.wikipedia.org/wiki/Suan_cai) and chili
+              "name_en": Boiled fish with pickled cabbage and chili
               price: 189:-
             - "name_zh-Hans": 水煮鱼
               "name_en": Shuizhu Fish
@@ -99,7 +99,7 @@ menu:
             - "name_zh-Hans": 干锅大虾
               "name_en": Griddle Prawns
               price: 219:-
-            - "name_zh-Hans": 千锅鸡杂
+            - "name_zh-Hans": 干锅鸡杂
               "name_en": Griddle Chicken Offal
               price: 189:-
             - "name_zh-Hans": 干锅肥肠
