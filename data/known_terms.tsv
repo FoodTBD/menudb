@@ -3,6 +3,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 回味	回味	aftertaste		
 香	香	aromatic		
 什锦	什锦	assorted		
+鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy	(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
 丸	丸	ball		
 球	球	ball		
 竹	竹	bamboo	https://en.wikipedia.org/wiki/Bamboo#Culinary	
@@ -30,11 +31,12 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 西兰花	西蘭花	broccoli		
 炖	炖	broth		
 燃	燃	burning		
+包心菜	包心菜	cabbage		(regional) https://en.wiktionary.org/wiki/%E5%8C%85%E5%BF%83%E8%8F%9C
 糕	糕	cake		
 西芹	西芹	celery		
+抄手	抄手	chaoshou wonton	https://en.wikipedia.org/wiki/Chaoshou	https://en.wikipedia.org/wiki/Wonton#Sichuan_cuisine
 叉烧	叉燒	char siu	https://en.wikipedia.org/wiki/Char_siu	
 炭	炭	charcoal		
-抄手	抄手	Chengdu wonton	https://en.wikipedia.org/wiki/Chaoshou	https://en.wikipedia.org/wiki/Wonton#Sichuan_cuisine
 鸡	雞	chicken		
 	鳯爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet	
 凤爪	鳳爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet	
@@ -42,7 +44,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 红油	紅油	chili oil	https://en.wikipedia.org/wiki/Chili_oil	
 韭菜	韭菜	Chinese chive	https://en.wikipedia.org/wiki/Allium_tuberosum	
 山城	山城	Chongqing	https://en.wikipedia.org/wiki/Chongqing	
-重庆	重庆	Chongqing		lit. "mountain city", referring to Chongqing
+重庆	重庆	Chongqing	https://en.wikipedia.org/wiki/Chongqing	lit. "mountain city", referring to Chongqing
 河	河	chow fun	https://en.wikipedia.org/wiki/Shahe_fen	
 河粉	河粉	chow fun	https://en.wikipedia.org/wiki/Shahe_fen	
 油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
@@ -50,7 +52,9 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 香茜	香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	
 	芫茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	(Cantonese) https://en.wiktionary.org/wiki/%E8%8A%AB%E8%8C%9C#Definitions
 蚬	蜆	clam		
+清	清	clear		
 凉拌	涼拌	cold tossed		
+色	色	colorful		
 粥	粥	congee	https://en.wikipedia.org/wiki/Congee	
 瑶柱	瑤柱	conpoy	https://en.wikipedia.org/wiki/Conpoy	
 煮	煮	cooked		
@@ -70,12 +74,12 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 远	遠	distant		
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried	
 干	乾	dry		
-干煸	乾煸	dry stir-fry	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	gānbiān
+干煸	乾煸	dry stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	gānbiān
 鸭	鴨	duck		
 盒子	盒子	dumpling		lit. "box"
 饺	餃	dumpling		
 角	角	dumpling		lit. "corner" or "angle," but in this context, it refers to a pastry or snack with a corner or triangular shape
-毛豆	毛豆	edamame		
+毛豆	毛豆	edamame	https://en.wikipedia.org/wiki/Edamame	
 蛋	蛋	egg		
 蛋黄	蛋黃	egg yolk		
 茄子	茄子	eggplant		
@@ -139,6 +143,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 大	大	large		
 瘦	瘦	lean		
 生菜	生菜	lettuce		
+清炒	清炒	lightly stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	qīngchǎo
 狮子头	狮子头	lion's head	https://en.wikipedia.org/wiki/Lion%27s_Head_(food)	
 膶	膶	liver		(Cantonese) https://en.wiktionary.org/wiki/%E8%86%B6#Definitions
 捞面	撈麵	lo mein	https://en.wikipedia.org/wiki/Lo_mein	
@@ -171,6 +176,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 新	新	new		
 年糕	年糕	nian gao	https://en.wikipedia.org/wiki/Nian_gao	
 面	麵	noodle		
+东北	東北	northeastern	https://en.wikipedia.org/wiki/Northeastern_Chinese_cuisine	
 养生	養生	nourishing		
 油	油	oil		
 葱	葱	onion		
@@ -183,10 +189,9 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 沙	沙	paste		
 青椒	青椒	pepper		
 椒	椒	pepper		
-雪菜	雪菜	pickled mustard greens	https://en.wikipedia.org/wiki/Pickled_mustard	
+雪菜	雪菜	pickled mustard	https://en.wikipedia.org/wiki/Pickled_mustard	
 泡菜	泡菜	pickled vegetables		
 菠萝	菠蘿	pineapple		
-清炒	清炒	plain stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	qīngchǎo
 梅	梅	plum		
 肉	肉	pork		
 猪肉	猪肉	pork		
@@ -197,7 +202,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 肥肠	肥肠	pork intestines	https://en.wikipedia.org/wiki/Offal#China	
 煲	煲	pot		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%B2#Definitions
 锅	鍋	pot		
-锅贴	鍋貼	pot sticker		
+锅贴	鍋貼	pot sticker	https://en.wikipedia.org/wiki/Jiaozi#Potstickers	
 土豆	土豆	potato		
 王	王	premium		
 兴隆	興隆	prosperous		
@@ -236,6 +241,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 芝麻	芝麻	sesame		
 上海	上海	Shanghai	https://en.wikipedia.org/wiki/Shanghai_cuisine	
 北菇	北菇	shittake	https://en.wikipedia.org/wiki/Shiitake#Uses	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E5%8C%97%E8%8F%87#Definitions
+撕	撕	shredded		
 丝	丝	shredded		
 肉丝	肉絲	shredded pork		
 虾仁	虾仁	shrimp		
@@ -245,6 +251,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 川	川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine	
 招牌	招牌	signature		
 星州	星州	Singapore		
+铁板	鐵板	sizzling platter		
 皮	皮	skin		
 片	片	slice		
 滑	滑	slippery		
@@ -258,19 +265,20 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 酸	酸	sour		
 豆浆	豆浆	soy milk	https://en.wikipedia.org/wiki/Soy_milk	
 豉油	豉油	soy sauce	https://en.wikipedia.org/wiki/Soy_sauce	
+大豆	大豆	soybean		
 排骨	排骨	spare rib		
 特	特	special		
 辣	辣	spicy		
 辣子	辣子	spicy		
 春	春	spring		
-苗	苗	sprouts		
+苗	苗	sprout		
 鱿	魷	squid	https://en.wikipedia.org/wiki/Squid_as_food#Asia	
 熘	熘	starch-fried		liū https://en.wiktionary.org/wiki/%E7%86%98#Chinese
 蒸	蒸	steamed		
 糯米	糯米	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 糯米饭	糯米飯	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 炒	炒	stir-fried	https://en.wikipedia.org/wiki/Stir_frying#Chao_technique	chǎo
-四季豆	四季豆	string bean		
+四季豆	四季豆	string bean	https://en.wikipedia.org/wiki/Green_bean	
 酿	釀	stuffed		
 式	式	style		
 酸菜	酸菜	suan cai	https://en.wikipedia.org/wiki/Suan_cai	
@@ -278,6 +286,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 皇	皇	supreme		
 甜	甜	sweet		
 薯	薯	sweet potato		https://en.wikipedia.org/wiki/Sweet_potato
+陈皮	陳皮	tangerine peel	https://en.wikipedia.org/wiki/Chenpi	
 汤圆	湯圓	tangyuan	https://en.wikipedia.org/wiki/Tangyuan_(food)	
 芋	芋	taro	https://en.wikipedia.org/wiki/Taro#China	
 挞	撻	tart		
@@ -289,7 +298,8 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 是日	是日	today’s		
 豆腐	豆腐	tofu		
 腐皮	腐皮	tofu skin	https://en.wikipedia.org/wiki/Tofu_skin	
-蕃茄	蕃茄	tomato		
+番茄	番茄	tomato		
+	蕃茄	tomato		
 舌	舌	tongue		
 上	上	topped		
 宝	寶	treasures		

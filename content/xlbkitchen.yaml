@@ -209,19 +209,19 @@ menu:
           "name_en": Vegetable
           menu_items:
             - item_number: 6-1
-              "name_zh-Hans": 上海鸡舌菜
+              "name_zh-Hans": 上海鸡毛菜
               "name_en": Shanghai Baby Bok Choy
               price: 14.95
             - item_number: 6-2
-              "name_zh-Hans": 清炒大豆菌
+              "name_zh-Hans": 清炒大豆苗
               "name_en": Sauteed Bean Sprouts in White Sauce
               price: 17.95
             - item_number: 6-3
-              "name_zh-Hans": 干四季豆
+              "name_zh-Hans": 干煸四季豆
               "name_en": Sauteed String Bean
               price: 14.95
             - item_number: 6-4
-              "name_zh-Hans": 色香茄子
+              "name_zh-Hans": 鱼香茄子
               "name_en": Eggplant w/ Hot Garlic Sauce
               price: 14.95
             - item_number: 6-5
@@ -229,7 +229,7 @@ menu:
               "name_en": Stir-Fried Hand-Shredded Cabbage
               price: 14.95
             - item_number: 6-6
-              "name_zh-Hans": 北地三鮮
+              "name_zh-Hans": 东北地三鮮
               "name_en": House Special Vegetable Deluxe (Eggplant Green Pepper and Potato)
               price: 14.95
             - item_number: 6-7
