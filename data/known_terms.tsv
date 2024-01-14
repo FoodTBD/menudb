@@ -1,11 +1,11 @@
 zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 鲍鱼	鮑魚	abalone	https://en.wikipedia.org/wiki/Abalone	
+鲍汁	鮑汁	abalone sauce	https://en.wikipedia.org/wiki/Abalone	
 回味	回味	aftertaste		
 香	香	aromatic		
 什锦	什锦	assorted		
 鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy	(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
 丸	丸	ball		
-球	球	ball		
 竹	竹	bamboo	https://en.wikipedia.org/wiki/Bamboo#Culinary	
 笼仔	籠仔	bamboo basket		
 包	包	bao	https://en.wikipedia.org/wiki/Baozi	
@@ -17,6 +17,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 牛杂	牛雜	beef offal	https://en.wikipedia.org/wiki/Offal#China	
 牛柳	牛柳	beef tenderloin		https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
 京	京	Beijing	https://en.wikipedia.org/wiki/Beijing_cuisine	
+京都	京都	Beijing	https://en.wikipedia.org/wiki/Beijing_cuisine	https://en.wiktionary.org/wiki/%E4%BA%AC%E9%83%BD#Noun
 北京	北京	Beijing	https://en.wikipedia.org/wiki/Beijing_cuisine	
 腩	腩	belly		
 凉瓜	涼瓜	bitter melon		
@@ -28,25 +29,33 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 沸腾	沸腾	boiling		
 烧汁	燒汁	braise sauce		
 扣肉	扣肉	braised pork		
+脯	脯	breast		
 西兰花	西蘭花	broccoli		
 炖	炖	broth		
 燃	燃	burning		
 包心菜	包心菜	cabbage		(regional) https://en.wiktionary.org/wiki/%E5%8C%85%E5%BF%83%E8%8F%9C
 糕	糕	cake		
+腰果	腰果	cashew		
+沙锅	沙鍋	casserole		
 西芹	西芹	celery		
 抄手	抄手	chaoshou wonton	https://en.wikipedia.org/wiki/Chaoshou	https://en.wikipedia.org/wiki/Wonton#Sichuan_cuisine
+炒贵刁	炒貴刁	char kway teow	https://en.wikipedia.org/wiki/Char_kway_teow	
 叉烧	叉燒	char siu	https://en.wikipedia.org/wiki/Char_siu	
 炭	炭	charcoal		
+厨	廚	chef		
+成都	成都	Chengdu	https://en.wikipedia.org/wiki/Sichuan_cuisine	
 鸡	雞	chicken		
 	鳯爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet	
 凤爪	鳳爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet	
 鸡肉	鸡肉	chicken meat		
 红油	紅油	chili oil	https://en.wikipedia.org/wiki/Chili_oil	
 韭菜	韭菜	Chinese chive	https://en.wikipedia.org/wiki/Allium_tuberosum	
-山城	山城	Chongqing	https://en.wikipedia.org/wiki/Chongqing	
-重庆	重庆	Chongqing	https://en.wikipedia.org/wiki/Chongqing	lit. "mountain city", referring to Chongqing
+山城	山城	Chongqing	https://en.wikipedia.org/wiki/Chongqing	lit. "mountain city", referring to Chongqing
+重庆	重慶	Chongqing	https://en.wikipedia.org/wiki/Chongqing	
+重	重	Chongqing	https://en.wikipedia.org/wiki/Chongqing	
 河	河	chow fun	https://en.wikipedia.org/wiki/Shahe_fen	
 河粉	河粉	chow fun	https://en.wikipedia.org/wiki/Shahe_fen	
+炒面	炒麵	chow mein	https://en.wikipedia.org/wiki/Chow_mein	
 油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
 菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum	
 香茜	香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	
@@ -61,18 +70,25 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 芯	芯	core		
 	粟米	corn		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%B2%9F%E7%B1%B3#Chinese
 家乡	家鄉	country-style		
+蟹	蟹	crab		
+螃蟹	螃蟹	crab		
 蟹柳	蟹柳	crab stick		https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
 脆	脆	crisp		
 酥	酥	crispy		
 粒	粒	cubes		
 黄瓜	黃瓜	cucumber		
 腊	臘	cured meat		
-咖喱	咖喱	curry		
+咖喱	咖喱	curry	https://en.wikipedia.org/wiki/Curry#East_Asia	
+排	排	cutlet		
+大排档	大排檔	daipaidong	https://en.wikipedia.org/wiki/Dai_pai_dong	https://en.wiktionary.org/wiki/%E5%A4%A7%E6%8E%92%E6%AA%94#Chinese
 炸	炸	deep-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based	zhá
 鲜	鲜	delicacies		
-鸡丁	鸡丁	diced chicken		
+珍	珍	delicacy		
+丁	丁	diced		
 远	遠	distant		
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried	
+淋	淋	drizzled		
+醉	醉	drunken	https://en.wikipedia.org/wiki/Drunken_chicken	
 干	乾	dry		
 干煸	乾煸	dry stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	gānbiān
 鸭	鴨	duck		
@@ -81,14 +97,15 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 角	角	dumpling		lit. "corner" or "angle," but in this context, it refers to a pastry or snack with a corner or triangular shape
 毛豆	毛豆	edamame	https://en.wikipedia.org/wiki/Edamame	
 蛋	蛋	egg		
+芙蓉蛋	芙蓉蛋	egg foo young	https://en.wikipedia.org/wiki/Egg_foo_young	
 蛋黄	蛋黃	egg yolk		
 茄子	茄子	eggplant		
+八	八	eight		
 贵妃	貴妃	empress		lit. "concubine," it implies a level of luxury, quality, or exclusivity
 够	夠	enough		
 肥	肥	fatty		
 腐乳	腐乳	fermented tofu	https://en.wikipedia.org/wiki/Fermented_bean_curd	
 柳	柳	fillet		https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
-斑球	斑球	fillet of sole		
 茗茶	茗茶	fine tea		
 火	火	fire		
 鱼	魚	fish		
@@ -101,13 +118,12 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 味	味	flavor		
 龙利	龍利	flounder		
 花	花	flower		
-排档	排檔	food stall		
 生	生	fresh		
 鲜	鮮	fresh		
 生滚	生滾	freshly cooked		
 炒饭	炒飯	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice	
 炒饭	炒饭	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice	
-福建	福建	Fujian		
+福建	福建	Fujian	https://en.wikipedia.org/wiki/Fujian_cuisine	
 芥兰	芥蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan	
 兰	蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan	
 蒜	蒜	garlic		
@@ -118,30 +134,36 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 绿	綠	green		
 尖椒	尖椒	green peppers		
 擂	擂	ground		
-石斑	石斑	grouper		
+石斑	石斑	grouper	https://en.wikipedia.org/wiki/Grouper	(Cantonese) https://en.wiktionary.org/wiki/%E6%96%91#Definitions
+斑	斑	grouper	https://en.wikipedia.org/wiki/Grouper	(Cantonese) https://en.wiktionary.org/wiki/%E6%96%91#Definitions
 半	半	half		
 半	半	half		
+火腿	火腿	ham		
 手	手	hand		
+头	頭	head		
 心	心	heart		
 家常	家常	home-style		
 私房	私房	home-style		
 自制	自製	homemade		
 蜜	蜜	honey		
-港	港	Hong Kong		
+港	港	Hong Kong	https://en.wikipedia.org/wiki/Hong_Kong_cuisine	
 热	熱	hot		
 酸辣	酸辣	hot & sour		
 百	百	hundred		
 肠	肠	intestines		
 日	日	Japan		
+凉粉	涼粉	jelly noodles	https://en.wikipedia.org/wiki/Liangfen	
 海蜇	海蜇	jellyfish		
 饺子	餃子	jiaozi	https://en.wikipedia.org/wiki/Jiaozi	https://en.wikipedia.org/wiki/Jiaozi
-汁	汁	juice/glaze		
+金华玉树	金華玉樹	Jinhua ham	https://en.wikipedia.org/wiki/Jinhua_ham	
+汁	汁	juice		alt. "glazed"
 宫保	宮保	kung pao	https://en.wikipedia.org/wiki/Kung_Pao_chicken	
 湖	湖	lake		
 羊	羊	lamb		
 羊肉	羊肉	lamb meat		
 大	大	large		
 瘦	瘦	lean		
+柠檬	檸檬	lemon		
 生菜	生菜	lettuce		
 清炒	清炒	lightly stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	qīngchǎo
 狮子头	狮子头	lion's head	https://en.wikipedia.org/wiki/Lion%27s_Head_(food)	
@@ -150,6 +172,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 龙虾	龍蝦	lobster		
 美極	美極	Maggi	https://en.wikipedia.org/wiki/Maggi	
 麻辣	麻辣	mala	https://en.wikipedia.org/wiki/Mala_(seasoning)	
+马来	馬來	Malay	https://en.wikipedia.org/wiki/Malay_cuisine	
 马拉	馬拉	Malay sponge	https://en.wikipedia.org/wiki/Malay_sponge_cake	
 芒果	芒果	mango		
 多	多	many		
@@ -186,20 +209,23 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 蚝	蠔	oyster		
 蚝油	蠔油	oyster sauce	https://en.wikipedia.org/wiki/Oyster_sauce	
 煎	煎	pan-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based	jiān
+焗	焗	pan-roasted		https://www.thefooddictator.com/the-40-methods-of-chinese-cooking/, https://www.youtube.com/watch?v=z_LAJKezDOs
 沙	沙	paste		
 青椒	青椒	pepper		
 椒	椒	pepper		
 雪菜	雪菜	pickled mustard	https://en.wikipedia.org/wiki/Pickled_mustard	
 泡菜	泡菜	pickled vegetables		
+球	球	piece		ChatGPT: "it more likely means… cut into small, bite-sized pieces or chunks"
 菠萝	菠蘿	pineapple		
 梅	梅	plum		
+当红	當紅	popular		
 肉	肉	pork		
-猪肉	猪肉	pork		
+猪肉	豬肉	pork		
 猪	豬	pork		
 五花肉	五花肉	pork belly		https://en.wiktionary.org/wiki/%E4%BA%94%E8%8A%B1%E8%82%89#Chinese
 脯仔	脯仔	pork belly strips		
 猪扒	豬扒	pork chop		
-肥肠	肥肠	pork intestines	https://en.wikipedia.org/wiki/Offal#China	
+肥肠	肥肠	pork intestine	https://en.wikipedia.org/wiki/Offal#China	
 煲	煲	pot		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%B2#Definitions
 锅	鍋	pot		
 锅贴	鍋貼	pot sticker	https://en.wikipedia.org/wiki/Jiaozi#Potstickers	
@@ -213,9 +239,9 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 萝卜	萝卜	radish		
 萝卜	蘿蔔	radish		Sometimes translated as turnip, though this is a misnomer https://en.wiktionary.org/wiki/%E8%98%BF%E8%94%94
 拉面	拉麵	ramen		
+红	紅	red		possibly also "blood"
 豆沙	豆沙	red bean paste	https://en.wikipedia.org/wiki/Red_bean_paste	
 红烧	紅燒	red-braised	https://en.wikipedia.org/wiki/Red_cooking	
-红	紅	red/blood		
 骨	骨	rib		
 米	米	rice		
 饭	飯	rice		
@@ -240,17 +266,21 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 麻	麻	sesame		
 芝麻	芝麻	sesame		
 上海	上海	Shanghai	https://en.wikipedia.org/wiki/Shanghai_cuisine	
+绍兴	紹興	Shaoxing wine	https://en.wikipedia.org/wiki/Shaoxing_wine	
 北菇	北菇	shittake	https://en.wikipedia.org/wiki/Shiitake#Uses	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E5%8C%97%E8%8F%87#Definitions
+牛仔骨	牛仔骨	short ribs		
 撕	撕	shredded		
-丝	丝	shredded		
-肉丝	肉絲	shredded pork		
+丝	絲	shredded		
 虾仁	虾仁	shrimp		
 虾	蝦	shrimp		
+水煮	水煮	shuizhu	https://en.wikipedia.org/wiki/Shuizhu	
 烧麦	烧麦	shumai	https://en.wikipedia.org/wiki/Shumai	
 四川	四川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine	
 川	川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine	
 招牌	招牌	signature		
-星州	星州	Singapore		
+银	銀	silver		
+星州	星洲	Singapore	https://en.wikipedia.org/wiki/Singaporean_cuisine	
+星洲	星洲	Singapore	https://en.wikipedia.org/wiki/Singaporean_cuisine	
 铁板	鐵板	sizzling platter		
 皮	皮	skin		
 片	片	slice		
@@ -278,6 +308,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 糯米	糯米	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 糯米饭	糯米飯	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 炒	炒	stir-fried	https://en.wikipedia.org/wiki/Stir_frying#Chao_technique	chǎo
+捞	撈	stirred		as in "lo mein", https://en.wiktionary.org/wiki/%E6%92%88#Etymology_3
 四季豆	四季豆	string bean	https://en.wikipedia.org/wiki/Green_bean	
 酿	釀	stuffed		
 式	式	style		
@@ -285,28 +316,31 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 糖	糖	sugar		
 皇	皇	supreme		
 甜	甜	sweet		
-薯	薯	sweet potato		https://en.wikipedia.org/wiki/Sweet_potato
+咕噜肉	咕嚕肉	sweet and sour pork	https://en.wikipedia.org/wiki/Sweet_and_sour#Hong_Kong/Cantonese	
+薯	薯	sweet potato	https://en.wikipedia.org/wiki/Sweet_potato	
 陈皮	陳皮	tangerine peel	https://en.wikipedia.org/wiki/Chenpi	
 汤圆	湯圓	tangyuan	https://en.wikipedia.org/wiki/Tangyuan_(food)	
 芋	芋	taro	https://en.wikipedia.org/wiki/Taro#China	
 挞	撻	tart		
 茶	茶	tea		
-泰	泰	Thai		
-泰国	泰國	Thailand		
+泰	泰	Thai	https://en.wikipedia.org/wiki/Thai_cuisine	
+九層塔	九層塔	Thai basil	https://en.wikipedia.org/wiki/Thai_basil	https://en.wiktionary.org/wiki/%E4%B9%9D%E5%B1%A4%E5%A1%94
+泰国	泰國	Thailand	https://en.wikipedia.org/wiki/Thai_cuisine	
 粗	粗	thick		
 三	三	three		
 是日	是日	today’s		
 豆腐	豆腐	tofu		
 腐皮	腐皮	tofu skin	https://en.wikipedia.org/wiki/Tofu_skin	
 番茄	番茄	tomato		
-	蕃茄	tomato		
+	蕃茄	tomato		https://en.wiktionary.org/wiki/%E7%95%AA%E8%8C%84#Chinese
 舌	舌	tongue		
 上	上	topped		
-宝	寶	treasures		
+宝	寶	treasure		
 肚	肚	tripe	https://en.wikipedia.org/wiki/Tripe	
 百叶	百葉	tripe or tofu skin	https://en.wikipedia.org/wiki/Tripe	https://en.wiktionary.org/wiki/%E7%99%BE%E8%91%89#Noun
-回锅	回锅	twice-cooked	https://en.wikipedia.org/wiki/Twice-cooked_pork	
+回锅	回鍋	twice-cooked	https://en.wikipedia.org/wiki/Twice-cooked_pork	
 双	雙	two		
+避风塘	避風塘	typhoon shelter	https://en.wikipedia.org/wiki/Typhoon_shelter#Typhoon_shelter_crab	
 百花	百花	various		
 菜	菜	vegetable		
 蔬菜	蔬菜	vegetable		
@@ -317,10 +351,11 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 核桃	核桃	walnut		
 水	水	water		
 通菜	通菜	water spinach		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E9%80%9A%E8%8F%9C#Definitions
-水煮	水煮	water-cooked	https://en.wikipedia.org/wiki/Shuizhu	
 西湖	西湖	West Lake	https://en.wikipedia.org/wiki/West_Lake	
 西	西	western		
+湿	濕	wet		
 白	白	white		
+全	全	whole		
 野	野	wild		
 酒	酒	wine		
 糟	糟	wine-marinated		https://en.wiktionary.org/wiki/%E7%B3%9F#Chinese
@@ -335,4 +370,5 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 扬州	揚州	Yangzhou	https://en.wikipedia.org/wiki/Huaiyang_cuisine	
 黄毛	黃毛	yellow-hair	https://en.wikipedia.org/wiki/Yellow-hair_chicken	
 油条	油條	youtiao	https://en.wikipedia.org/wiki/Youtiao	
+鱼香	魚香	yuxiang	https://en.wikipedia.org/wiki/Yuxiang	
 炸兩	炸兩	zhaliang	https://en.wikipedia.org/wiki/Zhaliang	

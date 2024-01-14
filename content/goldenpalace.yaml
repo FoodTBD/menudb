@@ -1142,7 +1142,7 @@ menu:
               "name_zh-Hant": 海味節瓜粉絲煲
               "name_en": Dried Seafood with Chinese Melon and Vermicelli in Clay Pot
             - item_number: J12
-              "name_zh-Hant": 大千海鲜豆腐煲
+              "name_zh-Hant": 大干海鲜豆腐煲
               "name_en": Seafood Combination with Tofu in Clay Pot
               spice_heat_level: 1
             - item_number: J13
@@ -1152,12 +1152,12 @@ menu:
               "name_zh-Hant": 紅燒斑腩煲
               "name_en": Braised Fish Fillet with Tofu in Clay Pot
             - item_number: J15
-              "name_zh-Hant": 大千蟹煲
+              "name_zh-Hant": 大干蟹煲
               "name_en": Spicy Crab with Vermicelli in Clay Pot
               note: "(時價 Seasonal)"
               spice_heat_level: 1
             - item_number: J16
-              "name_zh-Hant": 珍豆腐煲
+              "name_zh-Hant": 八珍豆腐煲
               "name_en": House Special Braised Tofu in Clay Pot
             - item_number: J17
               "name_zh-Hant": 格辣海鮮茄子煲
@@ -1210,7 +1210,7 @@ menu:
               "name_zh-Hant": 燒汁牛仔骨
               "name_en": Baby Short Ribs in BBQ Sauce
             - item_number: H11
-              "name_zh-Hant": 菜遠士的球
+              "name_zh-Hant": 菜??士的球
               "name_en": Steak Cube with Tender Greens
             - item_number: H12
               "name_zh-Hant": 火腿叉燒芙蓉蛋
@@ -1237,16 +1237,16 @@ menu:
               "name_zh-Hant": 招牌炒面
               "name_en": Combination Chow Mein
             - item_number: L02
-              "name_zh-Hant": 招牌前面
+              "name_zh-Hant": 招牌煎面
               "name_en": House Special Hong Kong Style Chow Mein
             - item_number: L03
               "name_zh-Hant": 雞炒面
               "name_en": Chicken Chow Mein
             - item_number: L04
-              "name_zh-Hant": 範汁雜菌撈粗面
+              "name_zh-Hant": 鮑汁雜菌撈粗面
               "name_en": Mushroom Low Mein with Abalone Sauce
             - item_number: L05
-              "name_zh-Hant": 上海粗而
+              "name_zh-Hant": 上海粗面
               "name_en": Shanghai Style Chow Mein
             - item_number: L06
               "name_zh-Hant": 干炒牛河
@@ -1258,7 +1258,7 @@ menu:
               "name_zh-Hant": 海鲜濕炒河
               "name_en": Seafood Chow Fun with Gravy
             - item_number: L09
-              "name_zh-Hant": 馬來炒者刁
+              "name_zh-Hant": 馬來炒貴刁
               "name_en": Shredded BBQ Pork and Shrimp Chow Fun with Curry
               spice_heat_level: 1
             - item_number: L10
