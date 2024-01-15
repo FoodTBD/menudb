@@ -109,6 +109,10 @@ def load_eatsdb_names() -> list[str]:
     return dish_names
 
 
+def _slugify(s: str) -> str:
+    return "".join([c if c.isalnum() else "-" for c in s])
+
+
 def generate_menu_html(
     input_yaml_path: str,
     output_html_path: str,
@@ -138,13 +142,25 @@ def generate_menu_html(
         url = "https://www.google.com/maps/search/" + urllib.parse.quote(query)
         restaurant_dict["googlemaps_url"] = url
 
-    # Inject data from known_dishes into menu YAML
     if yaml_dict.get("menu"):
         primary_lang = yaml_dict["menu"]["language_codes"][0]
+
         for page in yaml_dict["menu"]["pages"]:
             if page.get("sections"):
                 for section in page["sections"]:
+                    # Inject combined section name (all langs) for rendering TOC
+                    section_name_components = []
+                    for k in section.keys():
+                        if k.startswith("name_"):
+                            section_name_components.append(section[k])
+                    if section_name_components:
+                        section["_id"] = _slugify(
+                            section.get("name_" + primary_lang, "")
+                        )
+                        section["_name_all_langs"] = " / ".join(section_name_components)
+
                     if section.get("menu_items"):
+                        # Inject data from known_dishes into menu YAML
                         for menu_item in section["menu_items"]:
                             lang = "name_" + primary_lang
                             if menu_item.get(lang):
