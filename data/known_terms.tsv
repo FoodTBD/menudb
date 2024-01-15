@@ -2,6 +2,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 鲍鱼	鮑魚	abalone	https://en.wikipedia.org/wiki/Abalone	
 鲍汁	鮑汁	abalone sauce	https://en.wikipedia.org/wiki/Abalone	
 回味	回味	aftertaste		
+开胃	開胃	appetizer		
 香	香	aromatic		
 什锦	什锦	assorted		
 鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy	(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
@@ -22,6 +23,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 腩	腩	belly		
 凉瓜	涼瓜	bitter melon		
 黑	黑	black		
+豉椒	豉椒	black bean & pepper		https://en.wiktionary.org/wiki/%E8%B1%89%E6%A4%92#Noun
 豉汁	豉汁	black bean sauce	https://en.wikipedia.org/wiki/Douchi	
 白灼	白灼	blanched		
 血 	血 	blood		
@@ -59,17 +61,22 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 炒面	炒麵	chow mein	https://en.wikipedia.org/wiki/Chow_mein	
 油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
 菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum	
-香茜	香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	
+香菜	香菜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	
+香茜	香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	Combo of standard 香 and (Cantonese) 茜
 	芫茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	(Cantonese) https://en.wiktionary.org/wiki/%E8%8A%AB%E8%8C%9C#Definitions
 蚬	蜆	clam		
+砂锅	砂鍋	clay pot		https://zh.wikipedia.org/wiki/%E7%A0%82%E9%94%85
 煲仔饭	煲仔飯	clay pot rice	https://en.wikipedia.org/wiki/Claypot_rice	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%B2%E4%BB%94#Definitions
 清	清	clear		
+云	雲	cloud		
+椰	椰	coconut		
 凉拌	涼拌	cold tossed		
 色	色	colorful		
 粥	粥	congee	https://en.wikipedia.org/wiki/Congee	
 瑶柱	瑤柱	conpoy	https://en.wikipedia.org/wiki/Conpoy	
 煮	煮	cooked		
 芯	芯	core		
+玉米	玉米	corn		
 	粟米	corn		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%B2%9F%E7%B1%B3#Chinese
 家乡	家鄉	country-style		
 蟹	蟹	crab		
@@ -147,6 +154,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 半	半	half		
 火腿	火腿	ham		
 手	手	hand		
+虾饺	蝦餃	har gow	https://en.wikipedia.org/wiki/Har_gow	
 头	頭	head		
 心	心	heart		
 家常	家常	home-style		
@@ -161,6 +169,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 日	日	Japan		
 凉粉	涼粉	jelly noodles	https://en.wikipedia.org/wiki/Liangfen	
 海蜇	海蜇	jellyfish		
+煎堆	煎堆	jian dui	https://en.wikipedia.org/wiki/Jian_dui	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%8E%E5%A0%86
 饺子	餃子	jiaozi	https://en.wikipedia.org/wiki/Jiaozi	
 金华玉树	金華玉樹	Jinhua ham	https://en.wikipedia.org/wiki/Jinhua_ham	
 汁	汁	juice		alt. "glazed"
@@ -169,6 +178,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 湖	湖	lake		
 羊	羊	lamb		
 羊肉	羊肉	lamb meat		
+拉面	拉麵	lamian/ramen	https://en.wikipedia.org/wiki/%E6%8B%89%E9%BA%B5	
 大	大	large		
 瘦	瘦	lean		
 柠檬	檸檬	lemon		
@@ -194,6 +204,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 梅菜	梅菜	meigan cai	https://en.wikipedia.org/wiki/Meigan_cai	
 瓜	瓜	melon		
 奶	奶	milk		
+蓉	蓉	minced		https://en.wiktionary.org/wiki/%E8%93%89#Definitions
 免治	免治	minced		(Cantonese) https://en.wiktionary.org/wiki/%E5%85%8D%E6%B2%BB
 杂	雜	mixed		
 蒙古牛肉	蒙古牛肉	Mongolian beef	https://en.wikipedia.org/wiki/Mongolian_beef	
@@ -250,7 +261,6 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 紫	紫	purple		
 萝卜	萝卜	radish		
 萝卜	蘿蔔	radish		Sometimes translated as turnip, though this is a misnomer https://en.wiktionary.org/wiki/%E8%98%BF%E8%94%94
-拉面	拉麵	ramen		
 红	紅	red		possibly also "blood"
 豆沙	豆沙	red bean paste	https://en.wikipedia.org/wiki/Red_bean_paste	
 红烧	紅燒	red-braised	https://en.wikipedia.org/wiki/Red_cooking	
@@ -270,7 +280,8 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 咸	鹹	salted		
 艇仔	艇仔	sampan	https://en.wikipedia.org/wiki/Sampan_congee	
 酱	醬	sauce		
-带子	帶子	scallop	https://en.wikipedia.org/wiki/Scallop#As_food	
+干贝	干貝	scallop	https://en.wikipedia.org/wiki/Scallop#As_food	
+带子	帶子	scallop	https://en.wikipedia.org/wiki/Scallop#As_food	https://en.wiktionary.org/wiki/%E5%B8%B6%E5%AD%90#Chinese
 海	海	sea		
 海参	海參	sea cucumber	https://en.wikipedia.org/wiki/Sea_cucumbers_as_food	
 海鲜	海鮮	seafood		
@@ -281,6 +292,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 芝麻	芝麻	sesame		
 上海	上海	Shanghai	https://en.wikipedia.org/wiki/Shanghai_cuisine	
 绍兴	紹興	Shaoxing wine	https://en.wikipedia.org/wiki/Shaoxing_wine	
+荠菜	薺菜	shepherd’s purse	https://en.wikipedia.org/wiki/Capsella_bursa-pastoris#Cooking	
 北菇	北菇	shittake	https://en.wikipedia.org/wiki/Shiitake#Uses	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E5%8C%97%E8%8F%87#Definitions
 牛仔骨	牛仔骨	short ribs		https://en.wiktionary.org/wiki/%E7%89%9B%E4%BB%94%E9%AA%A8
 撕	撕	shredded		
@@ -288,6 +300,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 虾仁	虾仁	shrimp		
 虾	蝦	shrimp		
 水煮	水煮	shuizhu	https://en.wikipedia.org/wiki/Shuizhu	
+干蒸烧卖	乾蒸燒賣	shumai	https://en.wikipedia.org/wiki/Shumai	https://en.wikipedia.org/wiki/A_Bite_of_China
 烧麦	烧麦	shumai	https://en.wikipedia.org/wiki/Shumai	
 四川	四川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine	
 川	川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine	
@@ -295,15 +308,19 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 银	銀	silver		
 星州	星洲	Singapore	https://en.wikipedia.org/wiki/Singaporean_cuisine	
 星洲	星洲	Singapore	https://en.wikipedia.org/wiki/Singaporean_cuisine	
+宋嫂	宋嫂	Sister Song’s	https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup	
 铁板	鐵板	sizzling platter		
 皮	皮	skin		
 片	片	slice		
 滑	滑	slippery		
+仔	仔	small		(Cantonese, dialectal Hakka, Min Bei) Diminutive suffix https://en.wiktionary.org/wiki/%E4%BB%94#Definitions_2
 小	小	small		
+小黄鱼	小黃魚	small yellow croaker	https://en.wikipedia.org/wiki/Larimichthys_polyactis	
+多春鱼	多春魚	smelt	https://en.wikipedia.org/wiki/Smelt_(fish)#East_Asia	
 爽	爽	smooth		
 浸	浸	soaked		
-汤	湯	soup		
-羹	羹	soup		
+汤	湯	soup		tāng: thinner and clearer soup or broth
+羹	羹	soup		gēng: thicker and heartier soup
 汤包	汤包	soup dumpling	https://en.wikipedia.org/wiki/Tangbao	
 酸	酸	sour		
 豆浆	豆浆	soy milk	https://en.wikipedia.org/wiki/Soy_milk	
@@ -313,7 +330,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 特	特	special		
 辣	辣	spicy		
 辣子	辣子	spicy		
-春	春	spring		
+春卷	春捲	spring roll	https://en.wikipedia.org/wiki/Spring_roll	
 苗	苗	sprout		
 鱿	魷	squid	https://en.wikipedia.org/wiki/Squid_as_food#Asia	
 熘	熘	starch-fried		liū https://en.wiktionary.org/wiki/%E7%86%98#Chinese
@@ -350,9 +367,12 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 	蕃茄	tomato		https://en.wiktionary.org/wiki/%E7%95%AA%E8%8C%84#Chinese
 舌	舌	tongue		
 上	上	topped		
+拌	拌	tossed		
+情怀	情懷	traditional		https://en.wiktionary.org/wiki/%E6%83%85%E6%87%B7
 宝	寶	treasure		
 肚	肚	tripe	https://en.wikipedia.org/wiki/Tripe	
-百叶	百葉	tripe or tofu skin	https://en.wikipedia.org/wiki/Tripe	https://en.wiktionary.org/wiki/%E7%99%BE%E8%91%89#Noun
+百叶	百葉	tripe/tofu skin	https://en.wikipedia.org/wiki/Tripe	https://en.wiktionary.org/wiki/%E7%99%BE%E8%91%89#Noun
+筒	筒	tube		https://zh.wikipedia.org/wiki/%E7%AB%B9%E7%AD%92%E9%A5%AD
 回锅	回鍋	twice-cooked	https://en.wikipedia.org/wiki/Twice-cooked_pork	
 双	雙	two		
 避风塘	避風塘	typhoon shelter	https://en.wikipedia.org/wiki/Typhoon_shelter#Typhoon_shelter_crab	
@@ -374,7 +394,8 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 野	野	wild		
 酒	酒	wine		
 糟	糟	wine-marinated		https://en.wiktionary.org/wiki/%E7%B3%9F#Chinese
-翼	翼	wing		
+翅	翅	wing		
+翼	翼	wing		(literary or dialectal) https://en.wiktionary.org/wiki/%E7%BF%BC#Definitions
 拼	拼	with		
 杞子	杞子	wolfberry	https://en.wikipedia.org/wiki/Goji	
 云吞	雲吞	wonton	https://en.wikipedia.org/wiki/Wonton	

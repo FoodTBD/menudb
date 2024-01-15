@@ -26,7 +26,8 @@ menu:
               "name_zh-Hant": 干貝餃
               "name_en": Minced Prawn & Scallops
             - item_number: 6
-              "name_zh-Hant": 干蒸燒
+              # "name_zh-Hant": 干蒸燒  # [sic] Should be "干蒸烧卖" or "燒賣"
+              "name_zh-Hant": 干蒸烧卖
               "name_en": Minced Prawn, Pork & Shiitake
             - item_number: 8
               "name_zh-Hant": 山竹牛肉
@@ -38,13 +39,14 @@ menu:
               "name_zh-Hant": 豉汁鳳爪
               "name_en": Chicken Feet, Black Bean Garlic & Chili
             - item_number: 10A
-              "name_zh-Hant": 白雪鳳爪
+              "name_zh-Hant": 白雲鳳爪
               "name_en": Chicken Feet soaked in White Vinegar
             - item_number: 11
               "name_zh-Hant": 豉椒排骨
               "name_en": Spareribs, Black Bean Garlic & Chili
             - item_number: 12
-              "name_zh-Hant": 牛柏葉
+              # "name_zh-Hant": 牛柏葉  # [sic] Should be "牛百葉"
+              "name_zh-Hant": 牛百葉
               "name_en": Beef tripe, Black Bean Garlic & Chili
             - item_number: 13
               "name_zh-Hant": 鮮竹卷
@@ -68,7 +70,7 @@ menu:
               "name_zh-Hant": 蔬春卷
               "name_en": Vegetarian Spring Rolls
             - item_number: 19
-              "name_zh-Hant": 炸竿角
+              "name_zh-Hant": 炸芋角
               "name_en": Deep-Fried Taro Dumpling with Pork
             - item_number: 20
               "name_zh-Hant": 咸水角
@@ -108,7 +110,7 @@ menu:
               "name_en": Congee with Fish Fillets
             - item_number: 31
               "name_zh-Hant": 咸蛋瘦肉粥
-              "name_en": Congee with Century Egg Pork
+              "name_en": Congee with Century Egg Pork  # [sic] Should be Salted Egg
             - item_number: 32
               "name_zh-Hant": 艇仔粥
               "name_en": Congee with Squid, Pork Rind& Peanuts
