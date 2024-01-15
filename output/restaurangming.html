@@ -10,12 +10,23 @@
 </head>
 
 <body>
+
     <header class="header">
 <p><a href="index.html">❮ Home</a></p>
         <h1>Restaurang Ming</h1>
         <p>
             Google Maps: <a href="https://www.google.com/maps/search/Restaurang%20Ming%2C%20Birger%20Jarlsgatan%2035%2C%20Stockholm%2C%20SE" target="_blank" rel="noopener">Birger Jarlsgatan 35, Stockholm, SE</a><br>
 Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopener">restaurangming.com</a><br>        </p>
+
+        <ul>
+            <li><a href="#點心">點心 / Steamed [Dim Sum]</a></li>
+            <li><a href="#腸粉">腸粉 / Rice Noodle Rolls</a></li>
+            <li><a href="#煎-炸類">煎/炸類 / Fried/Deep-Fried</a></li>
+            <li><a href="#粥品">粥品 / Congee</a></li>
+            <li><a href="#燒味">燒味 / Roasted</a></li>
+            <li><a href="#粉-麵-飯類">粉/麵/飯類 / Noodles & Rice</a></li>
+            <li><a href="#小菜">小菜 / Additional Dishes</a></li>
+        </ul>
     </header>
     <hr>
     <section class="section">
@@ -27,8 +38,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">點心</span>
-                                Steamed [Dim Sum]
+                                <a name="點心">
+                                    <span class="menu-section-name-primary">點心</span>
+                                    Steamed [Dim Sum]
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -36,9 +49,11 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">餃<span class="dish-term-translated">dumpling</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('蝦餃', 'zh-Hant')">🗣️</a>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">餃<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">dumpling</a></span></span></span>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蝦餃', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蝦餃', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Har_gow"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Har Gow Shrimp Dumplings</span></a>
                                 </div>
@@ -57,8 +72,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">燒<span class="dish-term-translated">roast</span></span><span class="dish-term-native">賣</span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('燒賣', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('燒賣', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('燒賣', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shumai"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Siu Mai Pork Dumplings</span></a>
                                 </div>
@@ -76,9 +93,11 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span><span class="dish-term-native">球<span class="dish-term-translated">piece/ball</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('牛肉球', 'zh-Hant')">🗣️</a>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span><span class="dish-term-native">球<span class="dish-term-translated">piece</span></span></span>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('牛肉球', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('牛肉球', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Steamed_meatball"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Beef Meatballs</span></a>
                                 </div>
@@ -96,9 +115,11 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉</span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">排骨<span class="dish-term-translated">spare rib</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('豉椒排骨', 'zh-Hant')">🗣️</a>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉</span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">排骨<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spare_ribs#Asia" target="wikipedia" rel="noopener">spare rib</a></span></span></span>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉椒排骨', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉椒排骨', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Spare_ribs#Asia"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Pork Spare Ribs</span></a>
                                 </div>
@@ -117,8 +138,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉汁<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Douchi" target="wikipedia" rel="noopener">black bean sauce</a></span></span><span class="dish-term-native">鳳爪<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chicken_feet" target="wikipedia" rel="noopener">chicken feet</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('豉汁鳳爪', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉汁鳳爪', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉汁鳳爪', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Chicken_feet"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Chicken Feet</span></a>
                                 </div>
@@ -137,8 +160,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">糯米<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span><span class="dish-term-native">雞<span class="dish-term-translated">chicken</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('糯米雞', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('糯米雞', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('糯米雞', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Lo_mai_gai"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Sticky Rice w/ Chicken</span></a>
                                 </div>
@@ -157,8 +182,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">叉燒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('叉燒包', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('叉燒包', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('叉燒包', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Cha_siu_bao"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Barbecue Pork Buns</span></a>
                                 </div>
@@ -177,8 +204,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">奶<span class="dish-term-translated">milk</span></span><span class="dish-term-native">皇<span class="dish-term-translated">supreme</span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('奶皇包', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('奶皇包', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('奶皇包', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Egg Custard Buns</span>
                                 </div>
 
@@ -196,8 +225,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">竹<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo#Culinary" target="wikipedia" rel="noopener">bamboo</a></span></span><span class="dish-term-native">卷<span class="dish-term-translated">roll</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('鮮竹卷', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('鮮竹卷', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('鮮竹卷', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Bean Curd Rolls w/ pork</span></a>
                                 </div>
@@ -216,8 +247,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">腸粉</span>
-                                Rice Noodle Rolls
+                                <a name="腸粉">
+                                    <span class="menu-section-name-primary">腸粉</span>
+                                    Rice Noodle Rolls
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -226,8 +259,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('鮮蝦腸粉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('鮮蝦腸粉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('鮮蝦腸粉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shrimp Rolls</span></a>
                                 </div>
@@ -247,8 +282,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">叉燒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('叉燒腸粉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('叉燒腸粉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('叉燒腸粉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Barbecue Pork Rolls</span></a>
                                 </div>
@@ -267,8 +304,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">米<span class="dish-term-translated">rice</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('蝦米腸粉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蝦米腸粉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蝦米腸粉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Dried Shrimp Rolls</span></a>
                                 </div>
@@ -288,8 +327,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">混</span><span class="dish-term-native">酱<span class="dish-term-translated">sauce</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('混酱腸粉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('混酱腸粉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('混酱腸粉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Mixed Sauce & Sesame Rolls</span></a>
                                 </div>
@@ -309,8 +350,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炸兩<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Zhaliang" target="wikipedia" rel="noopener">zhaliang</a></span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('炸兩腸粉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('炸兩腸粉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('炸兩腸粉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Deep-Fried Dough Stick Rolls</span></a>
                                 </div>
@@ -329,8 +372,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">煎/炸類</span>
-                                Fried/Deep-Fried
+                                <a name="煎-炸類">
+                                    <span class="menu-section-name-primary">煎/炸類</span>
+                                    Fried/Deep-Fried
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -339,8 +384,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蘿蔔<span class="dish-term-translated">radish</span></span><span class="dish-term-native">糕<span class="dish-term-translated">cake</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('蘿蔔糕', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蘿蔔糕', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蘿蔔糕', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Turnip_cake"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Radish Cake</span></a>
                                 </div>
@@ -359,8 +406,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">龍蝦<span class="dish-term-translated">lobster</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('龍蝦角', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('龍蝦角', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('龍蝦角', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Shrimp Wonton</span>
                                 </div>
 
@@ -379,8 +428,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">deep-fried</a></span></span><span class="dish-term-native">芋<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Taro#China" target="wikipedia" rel="noopener">taro</a></span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('炸芋角', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('炸芋角', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('炸芋角', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Taro_dumpling"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Taro Dumplings</span></a>
                                 </div>
@@ -399,8 +450,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鹹<span class="dish-term-translated">salted</span></span><span class="dish-term-native">水<span class="dish-term-translated">water</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('鹹水角', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('鹹水角', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('鹹水角', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Glutinous Rice Dumplings</span>
                                 </div>
 
@@ -418,9 +471,11 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">芝麻<span class="dish-term-translated">sesame</span></span><span class="dish-term-native">球<span class="dish-term-translated">piece/ball</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('芝麻球', 'zh-Hant')">🗣️</a>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">芝麻<span class="dish-term-translated">sesame</span></span><span class="dish-term-native">球<span class="dish-term-translated">piece</span></span></span>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('芝麻球', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('芝麻球', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jian_dui"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Sweet Sesame Balls</span></a>
                                 </div>
@@ -439,8 +494,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">粥品</span>
-                                Congee
+                                <a name="粥品">
+                                    <span class="menu-section-name-primary">粥品</span>
+                                    Congee
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -449,8 +506,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">皮<span class="dish-term-translated">skin</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span><span class="dish-term-native">瘦<span class="dish-term-translated">lean</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">粥<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Congee" target="wikipedia" rel="noopener">congee</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('皮蛋瘦肉粥', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('皮蛋瘦肉粥', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('皮蛋瘦肉粥', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Century_egg"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Century Egg & Pork Congee</span></a>
                                 </div>
@@ -469,8 +528,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">淨<span class="dish-term-translated">pure</span></span><span class="dish-term-native">油條<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Youtiao" target="wikipedia" rel="noopener">youtiao</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('淨油條', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('淨油條', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('淨油條', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Youtiao"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Deep-Fried Dough Stick</span></a>
                                 </div>
@@ -489,8 +550,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">燒味</span>
-                                Roasted
+                                <a name="燒味">
+                                    <span class="menu-section-name-primary">燒味</span>
+                                    Roasted
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -499,8 +562,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">廣</span><span class="dish-term-native">東</span><span class="dish-term-native">燒<span class="dish-term-translated">roast</span></span><span class="dish-term-native">鴨<span class="dish-term-translated">duck</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('廣東燒鴨', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('廣東燒鴨', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('廣東燒鴨', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Roasted Duck</span>
                                 </div>
 
@@ -520,8 +585,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">廣</span><span class="dish-term-native">東</span><span class="dish-term-native">燒<span class="dish-term-translated">roast</span></span><span class="dish-term-native">鴨<span class="dish-term-translated">duck</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('廣東燒鴨', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('廣東燒鴨', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('廣東燒鴨', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Roasted Duck</span>
                                 </div>
 
@@ -541,8 +608,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">港<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hong_Kong_cuisine" target="wikipedia" rel="noopener">Hong Kong</a></span></span><span class="dish-term-native">式<span class="dish-term-translated">style</span></span><span class="dish-term-native">燒<span class="dish-term-translated">roast</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('港式燒肉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('港式燒肉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('港式燒肉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Roasted Pork Belly</span>
                                 </div>
 
@@ -561,8 +630,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">港<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hong_Kong_cuisine" target="wikipedia" rel="noopener">Hong Kong</a></span></span><span class="dish-term-native">式<span class="dish-term-translated">style</span></span><span class="dish-term-native">叉燒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('港式叉燒', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('港式叉燒', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('港式叉燒', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Char_siu"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Barbecue Pork (Char Siu)</span></a>
                                 </div>
@@ -581,8 +652,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">粉/麵/飯類</span>
-                                Noodles & Rice
+                                <a name="粉-麵-飯類">
+                                    <span class="menu-section-name-primary">粉/麵/飯類</span>
+                                    Noodles & Rice
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -591,8 +664,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">銀<span class="dish-term-translated">silver</span></span><span class="dish-term-native">芽</span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">絲<span class="dish-term-translated">shredded</span></span><span class="dish-term-native">炒麵<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">chow mein</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('銀芽肉絲炒麵', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('銀芽肉絲炒麵', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('銀芽肉絲炒麵', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Chow_mein"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shredded Pork & Bean Sprouts w/Stir-Fried Noodles</span></a>
                                 </div>
@@ -611,8 +686,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">牛柳<span class="dish-term-translated">beef tenderloin</span></span><span class="dish-term-native">河<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('干炒牛柳河', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('干炒牛柳河', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('干炒牛柳河', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Beef, Scallions & Bean Sprouts w/ Flat Rice Noodles</span>
                                 </div>
 
@@ -631,8 +708,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉</span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">牛柳<span class="dish-term-translated">beef tenderloin</span></span><span class="dish-term-native">河<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('豉椒牛柳河', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉椒牛柳河', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉椒牛柳河', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Beef, Paprika & Black Beans w/ Flat Rice Noodles</span>
                                 </div>
 
@@ -651,8 +730,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">滑<span class="dish-term-translated">slippery</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">仁</span><span class="dish-term-native">河<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('滑蛋蝦仁河', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('滑蛋蝦仁河', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('滑蛋蝦仁河', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Shrimp & Slippery Eggs w/ Flat Rice Noodles</span>
                                 </div>
 
@@ -671,8 +752,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">星州<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Singaporean_cuisine" target="wikipedia" rel="noopener">Singapore</a></span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">米<span class="dish-term-translated">rice</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('星州炒米', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('星州炒米', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('星州炒米', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Singapore-style_noodles"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Singapore Style Noodles</span></a>
                                 </div>
@@ -691,8 +774,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">揚州<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Huaiyang_cuisine" target="wikipedia" rel="noopener">Yangzhou</a></span></span><span class="dish-term-native">炒飯<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_fried_rice" target="wikipedia" rel="noopener">fried rice</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('揚州炒飯', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('揚州炒飯', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('揚州炒飯', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Yangzhou_fried_rice"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Yeung Chow Fried Rice</span></a>
                                 </div>
@@ -711,8 +796,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Soy_sauce" target="wikipedia" rel="noopener">soy sauce</a></span></span><span class="dish-term-native">皇<span class="dish-term-translated">supreme</span></span><span class="dish-term-native">炒麵<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">chow mein</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('豉油皇炒麵', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉油皇炒麵', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉油皇炒麵', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir-Fried Noodles w/ Soy Sauce</span>
                                 </div>
 
@@ -730,8 +817,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Soy_sauce" target="wikipedia" rel="noopener">soy sauce</a></span></span><span class="dish-term-native">皇<span class="dish-term-translated">supreme</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">河<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('豉油皇炒河', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉油皇炒河', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('豉油皇炒河', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir-Fried Flat Rice Noodles w/ Soy Sauce</span>
                                 </div>
 
@@ -749,9 +838,11 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">雲</span><span class="dish-term-native">呑</span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">水<span class="dish-term-translated">water</span></span><span class="dish-term-native">餃<span class="dish-term-translated">dumpling</span></span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">牛腩<span class="dish-term-translated">beef brisket</span></span><span class="dish-term-native"> </span><span class="dish-term-native">(</span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span><span class="dish-term-native">河粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span><span class="dish-term-native">米粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodles" target="wikipedia" rel="noopener">rice noodle</a></span></span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span><span class="dish-term-native">麵<span class="dish-term-translated">noodle</span></span><span class="dish-term-native">)</span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('雲呑 / 水餃 / 牛腩 (湯河粉 / 湯米粉 / 湯麵)', 'zh-Hant')">🗣️</a>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">雲</span><span class="dish-term-native">呑</span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">水餃<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi#Types" target="wikipedia" rel="noopener">boiled jiaozi</a></span></span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">牛腩<span class="dish-term-translated">beef brisket</span></span><span class="dish-term-native"> </span><span class="dish-term-native">(</span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span><span class="dish-term-native">河粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span><span class="dish-term-native">米粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodles" target="wikipedia" rel="noopener">rice noodle</a></span></span><span class="dish-term-native"> </span><span class="dish-term-native">/</span><span class="dish-term-native"> </span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span><span class="dish-term-native">麵<span class="dish-term-translated">noodle</span></span><span class="dish-term-native">)</span></span>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('雲呑 / 水餃 / 牛腩 (湯河粉 / 湯米粉 / 湯麵)', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('雲呑 / 水餃 / 牛腩 (湯河粉 / 湯米粉 / 湯麵)', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wonton / Sui Gao [shuǐjiǎo] Dumpling / Beef Brisket Soup w/ Flat Rice Noodles / Rice Noodles / Egg Noodles</span>
                                 </div>
 
@@ -770,8 +861,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">淨<span class="dish-term-translated">pure</span></span><span class="dish-term-native">雲吞<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Wonton" target="wikipedia" rel="noopener">wonton</a></span></span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('淨雲吞湯', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('淨雲吞湯', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('淨雲吞湯', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Wonton"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Wonton Soup</span></a>
                                 </div>
@@ -789,9 +882,11 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">淨<span class="dish-term-translated">pure</span></span><span class="dish-term-native">水<span class="dish-term-translated">water</span></span><span class="dish-term-native">餃<span class="dish-term-translated">dumpling</span></span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('淨水餃湯', 'zh-Hant')">🗣️</a>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">淨<span class="dish-term-translated">pure</span></span><span class="dish-term-native">水餃<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi#Types" target="wikipedia" rel="noopener">boiled jiaozi</a></span></span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span></span>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('淨水餃湯', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('淨水餃湯', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sui Gao [shuǐjiǎo] Dumpling Soup</span>
                                 </div>
 
@@ -810,8 +905,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                     <thead>
                         <tr>
                             <th colspan="3">
-                                <span class="menu-section-name-primary">小菜</span>
-                                Additional Dishes
+                                <a name="小菜">
+                                    <span class="menu-section-name-primary">小菜</span>
+                                    Additional Dishes
+                                </a>
                             </th>
                         </tr>
                     </thead>
@@ -820,8 +917,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">煎<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">pan-fried</a></span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('干煎大蝦', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('干煎大蝦', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('干煎大蝦', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Dry-Fried Ketchup King Prawns</span>
                                 </div>
 
@@ -840,8 +939,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">椒鹽<span class="dish-term-translated">salt & pepper</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('椒鹽大蝦', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('椒鹽大蝦', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('椒鹽大蝦', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Salt & Pepper King Prawns</span>
                                 </div>
 
@@ -860,8 +961,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">清炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">lightly stir-fried</a></span></span><span class="dish-term-native">時</span><span class="dish-term-native">菜<span class="dish-term-translated">vegetable</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('清炒時菜', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('清炒時菜', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('清炒時菜', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir-Fried Seasonal Vegetables</span>
                                 </div>
 
@@ -880,8 +983,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">滑<span class="dish-term-translated">slippery</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">仁</span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('滑蛋蝦仁', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('滑蛋蝦仁', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('滑蛋蝦仁', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">King Prawn Omelette</span>
                                 </div>
 
@@ -900,8 +1005,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蘿蔔<span class="dish-term-translated">radish</span></span><span class="dish-term-native">牛腩<span class="dish-term-translated">beef brisket</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('蘿蔔牛腩', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蘿蔔牛腩', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('蘿蔔牛腩', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Braised Beef Brisket w/ Radish</span>
                                 </div>
 
@@ -920,8 +1027,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">荔</span><span class="dish-term-native">芋<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Taro#China" target="wikipedia" rel="noopener">taro</a></span></span><span class="dish-term-native">扣肉<span class="dish-term-translated">braised pork</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('荔芋扣肉', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('荔芋扣肉', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('荔芋扣肉', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Braised Pork w/Taro</span>
                                 </div>
 
@@ -940,8 +1049,10 @@ Homepage: <a href="https://www.restaurangming.com/" target="_blank" rel="noopene
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">米<span class="dish-term-translated">rice</span></span><span class="dish-term-native">飯<span class="dish-term-translated">rice</span></span></span>
-                                    <a aria-label="Speak" href="javascript:void(0);" class="btn-speak"
-                                        onclick="speakText('米飯', 'zh-Hant')">🗣️</a>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('米飯', 'zh-HK')">🗣️粵</button>
+                                    <button aria-label="Speak" class="btn-speak"
+                                        onclick="speakText('米飯', 'zh-Hant')">🗣️</button>
  <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/White_rice"
                                         target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Rice</span></a>
                                 </div>

@@ -15,7 +15,7 @@ menu:
         - "name_zh-Hant": 興隆招牌三寶
           "name_en": HING LUNG 3 TREASURES
           menu_items:
-            - "name_zh-Hant": 牛刪酥
+            - "name_zh-Hant": 牛脷酥
               "name_en": Fried dough w/ sweet crisp
               price: 3.25
             - "name_zh-Hant": 油條
@@ -30,7 +30,7 @@ menu:
             - "name_zh-Hant": 招牌煎麵
               "name_en": House special pan fried noodle
               price: 16.95
-            - "name_zh-Hant": 牛瞞腸粉煲
+            - "name_zh-Hant": 牛腩腸粉煲
               "name_en": Rice noodle roll w/braised beef brisket pot
               price: 15.95
         - menu_items:
@@ -42,7 +42,7 @@ menu:
         - "name_zh-Hant": 精美廚貼
           "name_en": APPETIZER
           menu_items:
-            - "name_zh-Hant": 煎爾茄子
+            - "name_zh-Hant": 煎釀茄子
               "name_en": Stuffed eggplant w/chicken paste
               price: 8.95
             - "name_zh-Hant": 椒鹽中雞翼
@@ -130,7 +130,7 @@ menu:
         - "name_zh-Hant": 精美廚貼
           "name_en": HOUSE SPECIAL CONT'D
           menu_items:
-            - "name_zh-Hant": 杞子瀦膶浸時蔬
+            - "name_zh-Hant": 杞子豬潤浸時蔬
               "name_en": Pig liver w/vegetable & wolf berry
               price: 15.95
             - "name_zh-Hant": 鹹魚雞粒豆腐
@@ -154,7 +154,7 @@ menu:
             - "name_zh-Hant": 頭菜浸油菜心
               "name_en": Tender green w/pickled vegetable
               price: 13.95
-            - "name_zh-Hant": 乾偏四季豆
+            - "name_zh-Hant": 乾煸四季豆
               "name_en": Braised string beans w/ground pork
               price: 14.95
             - "name_zh-Hant": 芥蘭炒雞鬆
@@ -361,7 +361,7 @@ menu:
             - "name_zh-Hant": 上湯鮮蝦淨水餃
               "name_en": Shrimp dumpling soup
               price: 10.95
-            - "name_zh-Hant": 鮮蝦水鉸麵
+            - "name_zh-Hant": 鮮蝦水餃麵
               "name_en": Shrimp dumpling noodle soup
               price: 10.95
             - "name_zh-Hant": 叉燒湯麵
