@@ -87,9 +87,9 @@
                                     'zh-Latn-pinyin' %}
                                     {% set dish_name = item['name_' + lang] %}
                                     {% if lang == primary_lang %}
-                                    {% if lang == 'zh-Hant' %}
                                     <span class="menu-item-name menu-item-name-primary">{{
                                         dish_name_to_annotated_html[dish_name] }}</span>
+                                    {% if lang == 'zh-Hant' %}
                                     <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('{{ dish_name }}', 'zh-HK')">🗣️粵</button>
                                     {% endif %}
