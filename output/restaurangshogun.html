@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - Restaurang Shogun, Stockholm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
@@ -45,19 +47,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">1.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">蝦餃<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Har_gow" target="wikipedia" rel="noopener">har gow</a></span></span><span class="dish-term-native">皇<span class="dish-term-translated">supreme</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦餃皇', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦餃皇', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Har_gow"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Minced Prawn & Bamboo shoots</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Prawn & Bamboo shoots</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Har_gow', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed shrimp dumplings in a translucent wrapper</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shrimp_dumplings.jpg/128px-Shrimp_dumplings.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鮮蝦餃皇')">
@@ -67,20 +73,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">2.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香茜<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Coriander#Culinary" target="wikipedia" rel="noopener">cilantro</a></span></span><span class="dish-term-native">餃<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">dumpling</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香茜餃', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香茜餃', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Minced Prawn, Pork Coriander & Shiitake</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Prawn, Pork Coriander & Shiitake</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香茜餃')">🖼️
                                     🔎</button>
                             </td>
@@ -89,20 +98,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">4.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干貝<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Scallop#As_food" target="wikipedia" rel="noopener">scallop</a></span></span><span class="dish-term-native">餃<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">dumpling</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干貝餃', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干貝餃', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Minced Prawn & Scallops</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Prawn & Scallops</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干貝餃')">🖼️
                                     🔎</button>
                             </td>
@@ -111,19 +123,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">6.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干蒸烧卖<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shumai" target="wikipedia" rel="noopener">shumai</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干蒸烧卖', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干蒸烧卖', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shumai"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Minced Prawn, Pork & Shiitake</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Prawn, Pork & Shiitake</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shumai', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed open-faced dumplings with meat and seafood</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg/128px-Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('干蒸烧卖')">
@@ -133,19 +149,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">8.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">山<span class="dish-term-translated">mountain</span></span><span class="dish-term-native">竹<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo#Culinary" target="wikipedia" rel="noopener">bamboo</a></span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('山竹牛肉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('山竹牛肉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Steamed_meatball"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Minced Beef, Coriander & Water Chestnut</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Beef, Coriander & Water Chestnut</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Steamed_meatball', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed beef meatballs</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG/128px-HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG" alt="Dish Image"
                                     onclick="openGoogleImageSearch('山竹牛肉')">
@@ -155,20 +175,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">9.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">薑<span class="dish-term-translated">ginger</span></span><span class="dish-term-native">蔥<span class="dish-term-translated">onion</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('薑蔥牛肉角', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('薑蔥牛肉角', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Minced Beef, ginger & Scallion</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Beef, ginger & Scallion</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('薑蔥牛肉角')">🖼️
                                     🔎</button>
                             </td>
@@ -177,19 +200,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">10.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉汁<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Douchi" target="wikipedia" rel="noopener">black bean sauce</a></span></span><span class="dish-term-native">鳳爪<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chicken_feet" target="wikipedia" rel="noopener">chicken feet</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豉汁鳳爪', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豉汁鳳爪', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Chicken_feet#China"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Chicken Feet, Black Bean Garlic & Chili</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chicken Feet, Black Bean Garlic & Chili</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed chicken feet in a savory black bean sauce, featuring a gelatinous texture</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/128px-2015_0410_Chicken_feet_dim_sum.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('豉汁鳳爪')">
@@ -199,21 +226,25 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">10A.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">白<span class="dish-term-translated">white</span></span><span class="dish-term-native">雲<span class="dish-term-translated">cloud</span></span><span class="dish-term-native">鳳爪<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chicken_feet" target="wikipedia" rel="noopener">chicken feet</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('白雲鳳爪', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('白雲鳳爪', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Chicken_feet#China"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Chicken Feet soaked in White Vinegar</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chicken Feet soaked in White Vinegar</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Soft, silky chicken feet in a light clear sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('白雲鳳爪')">🖼️
                                     🔎</button>
                             </td>
@@ -222,19 +253,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">11.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉椒<span class="dish-term-translated">black bean & pepper</span></span><span class="dish-term-native">排骨<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spare_ribs#Asia" target="wikipedia" rel="noopener">spare rib</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豉椒排骨', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豉椒排骨', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Spare_ribs#Asia"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Spareribs, Black Bean Garlic & Chili</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spareribs, Black Bean Garlic & Chili</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Spare_ribs#Asia', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed pork ribs in black bean sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dimsumpaigui.jpg/128px-Dimsumpaigui.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('豉椒排骨')">
@@ -244,20 +279,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">12.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">百葉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe/tofu skin</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('牛百葉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('牛百葉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Beef tripe, Black Bean Garlic & Chili</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Beef tripe, Black Bean Garlic & Chili</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('牛百葉')">🖼️
                                     🔎</button>
                             </td>
@@ -266,19 +304,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">13.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">竹<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo#Culinary" target="wikipedia" rel="noopener">bamboo</a></span></span><span class="dish-term-native">卷<span class="dish-term-translated">roll</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮竹卷', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮竹卷', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Bean Curd Rolls with Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Bean Curd Rolls with Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed rolls of tofu skin, filled</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/128px-Tofuskinroll.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鮮竹卷')">
@@ -288,19 +330,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">14A.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">馬拉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Malay_sponge_cake" target="wikipedia" rel="noopener">Malay sponge</a></span></span><span class="dish-term-native">糕<span class="dish-term-translated">cake</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('馬拉糕', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('馬拉糕', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Malay_sponge_cake"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Wheat flour, Egg, Milk & Sugar</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Wheat flour, Egg, Milk & Sugar</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Malay_sponge_cake', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Yellow sponge cake, steamed to develop a soft, puffy texture</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sponge_cake_at_Top_Cantonese_Restaurant.jpg/128px-Sponge_cake_at_Top_Cantonese_Restaurant.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('馬拉糕')">
@@ -310,19 +356,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">14C.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">叉燒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('叉燒包', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('叉燒包', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Cha_siu_bao"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">BBQ Pork Buns</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">BBQ Pork Buns</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Bao (buns) filled with char siu, available steamed or baked</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/128px-Char_siu_bao.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('叉燒包')">
@@ -332,18 +382,21 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">14D.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">奶<span class="dish-term-translated">milk</span></span><span class="dish-term-native">皇<span class="dish-term-translated">supreme</span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('奶皇包', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('奶皇包', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Custard buns</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Custard buns</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed buns filled with sweet egg custard</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naihuangbao.jpg/128px-Naihuangbao.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('奶皇包')">
@@ -353,20 +406,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">17.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">龍蝦<span class="dish-term-translated">lobster</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('龍蝦角', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('龍蝦角', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Minced Pork, Prawn & Bamboo Shoots</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Minced Pork, Prawn & Bamboo Shoots</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Deep-fried dumplings with shrimp filling</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('龍蝦角')">🖼️
                                     🔎</button>
                             </td>
@@ -375,19 +431,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">18.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">春卷<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spring_roll" target="wikipedia" rel="noopener">spring roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蝦春卷', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蝦春卷', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Spring_roll#East_Asia"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Prawn Spring Rolls</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Prawn Spring Rolls</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Spring_roll#East_Asia', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Crispy fried rolls with vegetables and optional meat or seafood</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Spring_roll_001.jpg/128px-Spring_roll_001.jpg?20211018090341" alt="Dish Image"
                                     onclick="openGoogleImageSearch('蝦春卷')">
@@ -397,20 +457,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">18V.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蔬<span class="dish-term-translated">vegetable</span></span><span class="dish-term-native">春卷<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spring_roll" target="wikipedia" rel="noopener">spring roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蔬春卷', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蔬春卷', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Vegetarian Spring Rolls</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Vegetarian Spring Rolls</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('蔬春卷')">🖼️
                                     🔎</button>
                             </td>
@@ -419,19 +482,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">19.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">deep-fried</a></span></span><span class="dish-term-native">芋<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Taro#China" target="wikipedia" rel="noopener">taro</a></span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('炸芋角', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('炸芋角', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Taro_dumpling"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Deep-Fried Taro Dumpling with Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Deep-Fried Taro Dumpling with Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Taro_dumpling', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Fried dumplings with a taro filling</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Fried_taro_cake.jpg/128px-Fried_taro_cake.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('炸芋角')">
@@ -441,21 +508,25 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">20.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">咸<span class="dish-term-translated">salted</span></span><span class="dish-term-native">水<span class="dish-term-translated">water</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('咸水角', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('咸水角', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Dim_sum#Dumplings"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Deep-Fried Sweet Dumpling with Pork & Shiitake</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Deep-Fried Sweet Dumpling with Pork & Shiitake</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Dim_sum#Dumplings', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Deep fried glutinous rice dumpling filled with pork and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('咸水角')">🖼️
                                     🔎</button>
                             </td>
@@ -464,19 +535,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">22.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">芝麻<span class="dish-term-translated">sesame</span></span><span class="dish-term-native">煎堆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jian_dui" target="wikipedia" rel="noopener">jian dui</a></span></span><span class="dish-term-native">仔<span class="dish-term-translated">small</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('芝麻煎堆仔', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('芝麻煎堆仔', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jian_dui"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Deep-Fried Sesame Balls filled with Red Bean Paste</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Deep-Fried Sesame Balls filled with Red Bean Paste</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Jian_dui', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Sesame-coated fried balls of glutinous rice, sweet filling</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Zin_Deoi.jpg/128px-Zin_Deoi.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('芝麻煎堆仔')">
@@ -486,19 +561,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">23.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蘿蔔<span class="dish-term-translated">radish</span></span><span class="dish-term-native">糕<span class="dish-term-translated">cake</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蘿蔔糕', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蘿蔔糕', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Turnip_cake"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Radish, Chinese Sausage & Dried Shrimp</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Radish, Chinese Sausage & Dried Shrimp</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Turnip_cake', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed and pan-fried cake made from shredded radish</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Food_%2825455396733%29.jpg/128px-Food_%2825455396733%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('蘿蔔糕')">
@@ -508,20 +587,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">23V.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">素<span class="dish-term-translated">vegetarian</span></span><span class="dish-term-native">蘿蔔<span class="dish-term-translated">radish</span></span><span class="dish-term-native">糕<span class="dish-term-translated">cake</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('素蘿蔔糕', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('素蘿蔔糕', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Radish & Rice Flour</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Radish & Rice Flour</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('素蘿蔔糕')">🖼️
                                     🔎</button>
                             </td>
@@ -530,20 +612,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">27A.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">雲吞<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Wonton" target="wikipedia" rel="noopener">wonton</a></span></span><span class="dish-term-native">湯<span class="dish-term-translated">soup</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦雲吞湯', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦雲吞湯', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wonton with Shrimp Filling</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Wonton with Shrimp Filling</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('鮮蝦雲吞湯')">🖼️
                                     🔎</button>
                             </td>
@@ -552,20 +637,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">27G.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">素<span class="dish-term-translated">vegetarian</span></span><span class="dish-term-native">餃子<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">jiaozi</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('素餃子', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('素餃子', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Vegetarian Dumplings</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Vegetarian Dumplings</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('素餃子')">🖼️
                                     🔎</button>
                             </td>
@@ -574,19 +662,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">28.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">河<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干炒牛河', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干炒牛河', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Beef_chow_fun"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Rice Noodles, with Beef, Scallion & Bean Sprouts</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Rice Noodles, with Beef, Scallion & Bean Sprouts</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Beef_chow_fun', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Stir-fried flat rice noodles with beef slices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('干炒牛河')">
@@ -596,20 +688,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">26.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">椰<span class="dish-term-translated">coconut</span></span><span class="dish-term-native">撻<span class="dish-term-translated">tart</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('椰撻', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('椰撻', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Hong Kong Style Coconut Tarts</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Hong Kong Style Coconut Tarts</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('椰撻')">🖼️
                                     🔎</button>
                             </td>
@@ -618,19 +713,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">29.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">絲<span class="dish-term-translated">shredded</span></span><span class="dish-term-native">炒麵<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">chow mein</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('肉絲炒麵', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('肉絲炒麵', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Chow_mein"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Egg Noodles with pork, Mushroom & Bean Sprouts</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Egg Noodles with pork, Mushroom & Bean Sprouts</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Stir-fried noodles with pork slices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pork_chow_mein.jpg/128px-Pork_chow_mein.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('肉絲炒麵')">
@@ -640,19 +739,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">29A.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">星州<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Singaporean_cuisine" target="wikipedia" rel="noopener">Singapore</a></span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">米<span class="dish-term-translated">rice</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('星州炒米', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('星州炒米', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Singapore-style_noodles"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Curry Rice Noodles with Shrimp & Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Curry Rice Noodles with Shrimp & Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Singapore-style_noodles', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Curried thin rice noodles stir-fried with meat and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/R5_2023_08_02_0147-singapore-noodles.jpg/128px-R5_2023_08_02_0147-singapore-noodles.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('星州炒米')">
@@ -662,20 +765,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">29B.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">雲吞<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Wonton" target="wikipedia" rel="noopener">wonton</a></span></span><span class="dish-term-native">拉麵<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/%E6%8B%89%E9%BA%B5" target="wikipedia" rel="noopener">lamian/ramen</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦雲吞拉麵', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦雲吞拉麵', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Wonton with Shrimp filling Egg Noodles</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Wonton with Shrimp filling Egg Noodles</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('鮮蝦雲吞拉麵')">🖼️
                                     🔎</button>
                             </td>
@@ -684,20 +790,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">30.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">生滾<span class="dish-term-translated">freshly cooked</span></span><span class="dish-term-native">魚<span class="dish-term-translated">fish</span></span><span class="dish-term-native">片<span class="dish-term-translated">slice</span></span><span class="dish-term-native">粥<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Congee" target="wikipedia" rel="noopener">congee</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('生滾魚片粥', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('生滾魚片粥', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Congee with Fish Fillets</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Congee with Fish Fillets</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Rice porridge with tender slices of fresh fish, garnished with green onions and ginger</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('生滾魚片粥')">🖼️
                                     🔎</button>
                             </td>
@@ -706,21 +815,25 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">31.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">咸<span class="dish-term-translated">salted</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span><span class="dish-term-native">瘦<span class="dish-term-translated">lean</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">粥<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Congee" target="wikipedia" rel="noopener">congee</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('咸蛋瘦肉粥', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('咸蛋瘦肉粥', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Salted_duck_egg"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Congee with Century Egg Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Congee with Century Egg Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Salted_duck_egg', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Rice porridge with salty preserved egg and lean pork</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('咸蛋瘦肉粥')">🖼️
                                     🔎</button>
                             </td>
@@ -729,20 +842,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">32.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">艇仔<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sampan_congee" target="wikipedia" rel="noopener">sampan</a></span></span><span class="dish-term-native">粥<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Congee" target="wikipedia" rel="noopener">congee</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('艇仔粥', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('艇仔粥', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Congee with Squid, Pork Rind& Peanuts</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Congee with Squid, Pork Rind& Peanuts</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('艇仔粥')">🖼️
                                     🔎</button>
                             </td>
@@ -751,18 +867,21 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">42.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豉油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Soy_sauce" target="wikipedia" rel="noopener">soy sauce</a></span></span><span class="dish-term-native">王<span class="dish-term-translated">premium</span></span><span class="dish-term-native">炒麵<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">chow mein</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豉油王炒麵', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豉油王炒麵', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Egg Noodles & Bean Sprouts</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Egg Noodles & Bean Sprouts</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Stir-fried noodles with soy sauce and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Soy_Sauce_Fried_Noodles.jpg/128px-Soy_Sauce_Fried_Noodles.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('豉油王炒麵')">
@@ -772,21 +891,25 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">A.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鮮<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">蝦<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦腸粉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鮮蝦腸粉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Shrimp</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Shrimp</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Steamed rice noodle rolls filled with shrimp</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('鮮蝦腸粉')">🖼️
                                     🔎</button>
                             </td>
@@ -795,19 +918,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">24.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span><span class="dish-term-native">撻<span class="dish-term-translated">tart</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蛋撻', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蛋撻', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Egg Tarts</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Egg Tarts</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Baked custard tart with a flaky pastry crust</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Egg_Tarts_with_Puff_Pastry.jpg/128px-Egg_Tarts_with_Puff_Pastry.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('蛋撻')">
@@ -817,19 +944,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">B.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('牛肉腸粉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('牛肉腸粉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Minced Beef</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Minced Beef</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed rice noodle rolls filled with tender beef slices, served with soy sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/A_Beef_rice_noodle_rolls.jpg/128px-A_Beef_rice_noodle_rolls.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('牛肉腸粉')">
@@ -839,19 +970,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">D.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">叉燒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('叉燒腸粉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('叉燒腸粉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with BBQ Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with BBQ Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed rice noodles with assorted fillings</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/128px-Cha_siu_choeng.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('叉燒腸粉')">
@@ -861,20 +996,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">E.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">魚<span class="dish-term-translated">fish</span></span><span class="dish-term-native">片<span class="dish-term-translated">slice</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('魚片腸粉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('魚片腸粉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Fish Fillets</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Fish Fillets</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('魚片腸粉')">🖼️
                                     🔎</button>
                             </td>
@@ -883,19 +1021,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">F.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炸兩<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Zhaliang" target="wikipedia" rel="noopener">zhaliang</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('炸兩', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('炸兩', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Zhaliang"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Chinese Fried Dough</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Rice Noodle Rolls with Chinese Fried Dough</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Zhaliang', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Fried dough wrapped in steamed rice noodle roll</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Food_%E7%82%B8%E5%85%A9%E8%94%A5%E8%8A%B1%E8%85%B8%E7%B2%89%2C_%E6%96%B0%E8%91%A1%E8%8B%91%2C_Shin_Pu_Yuan%2C_%E5%8F%B0%E5%8C%97_%2820920383094%29.jpg/128px-Food_%E7%82%B8%E5%85%A9%E8%94%A5%E8%8A%B1%E8%85%B8%E7%B2%89%2C_%E6%96%B0%E8%91%A1%E8%8B%91%2C_Shin_Pu_Yuan%2C_%E5%8F%B0%E5%8C%97_%2820920383094%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('炸兩')">
@@ -905,20 +1047,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">G.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">港<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hong_Kong_cuisine" target="wikipedia" rel="noopener">Hong Kong</a></span></span><span class="dish-term-native">式<span class="dish-term-translated">style</span></span><span class="dish-term-native">情懷<span class="dish-term-translated">traditional</span></span><span class="dish-term-native">腸粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('港式情懷腸粉', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('港式情懷腸粉', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Hong Kong Style Rice Noodle Rolls</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Hong Kong Style Rice Noodle Rolls</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('港式情懷腸粉')">🖼️
                                     🔎</button>
                             </td>
@@ -927,19 +1072,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">H.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">糯米<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span><span class="dish-term-native">雞<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('糯米雞', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('糯米雞', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Lo_mai_gai"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Glutinous Rice stuffed with Chicken, Mushrooms & Chinese Sausage</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Glutinous Rice stuffed with Chicken, Mushrooms & Chinese Sausage</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Lo_mai_gai', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Glutinous rice with chicken in lotus leaf, steamed</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/128px-2016_0716_Lo_Mai_Gai.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('糯米雞')">
@@ -949,19 +1098,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">I.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鍋貼<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi#Potstickers" target="wikipedia" rel="noopener">pot sticker</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鍋貼', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鍋貼', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jiaozi#Potstickers"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Classic Shanghainese Dumpling</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Classic Shanghainese Dumpling</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi#Potstickers', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Crispy, pan-fried dumplings filled with meat and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Guotie_in_Ningxia_Night_Market_20070923.jpg/128px-Guotie_in_Ningxia_Night_Market_20070923.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鍋貼')">
@@ -971,19 +1124,23 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
 <span class="menu-item-number">S.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">小籠包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Xiaolongbao" target="wikipedia" rel="noopener">xiaolongbao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('小籠包', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('小籠包', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Xiaolongbao"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shanghainese Pork Dumpling</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shanghainese Pork Dumpling</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Xiaolongbao', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Steamed thin-skinned soup dumplings, filled with meat or seafood and a hot broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Xiaolongbao-breakfast.jpg/128px-Xiaolongbao-breakfast.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('小籠包')">
@@ -993,18 +1150,21 @@ Homepage: <a href="https://restaurangshogun.se/" target="_blank" rel="noopener">
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
                                     <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">港<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hong_Kong_cuisine" target="wikipedia" rel="noopener">Hong Kong</a></span></span><span class="dish-term-native">式<span class="dish-term-translated">style</span></span><span class="dish-term-native">燒<span class="dish-term-translated">roast</span></span><span class="dish-term-native">鴨<span class="dish-term-translated">duck</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('港式燒鴨', 'zh-HK')">🗣️粵</button>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('港式燒鴨', 'zh-Hant')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Cantonese style roast duck</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Cantonese style roast duck</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Cantonese roasted duck with crispy skin</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price"></span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cantonese_roast_duck_in_Los_Angeles_Chinatown.jpg/128px-Cantonese_roast_duck_in_Los_Angeles_Chinatown.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('港式燒鴨')">

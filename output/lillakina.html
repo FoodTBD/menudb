@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - Lilla Kina, Stockholm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
@@ -55,19 +57,25 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">1.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">1.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸辣汤', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pekingsoppa</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Hot_and_sour_soup"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Hot and Sour Soup</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Pekingsoppa</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Hot and Sour Soup</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Hot_and_sour_soup', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️                                    <span class="menu-item-description">Tärnad Kycklingfilé med grönsaker</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Spicy, tangy soup with vegetables, tofu, and optional meat</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">65 kr</span>
-                            </td>
+🌶️🌶️
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ping_SJ_hot_%26_sour_soup.JPG/128px-Ping_SJ_hot_%26_sour_soup.JPG" alt="Dish Image"
                                     onclick="openGoogleImageSearch('酸辣汤')">
@@ -76,20 +84,26 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">2.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">西湖<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/West_Lake" target="wikipedia" rel="noopener">West Lake</a></span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span><span class="dish-term-native">羹<span class="dish-term-translated">soup</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">2.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('西湖牛肉羹', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Biffsoppa</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">West Lake Beef Soup</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Biffsoppa</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">West Lake Beef Soup</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Hackad biff med mjuk</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Thick beef soup with egg whites and coriander</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">65 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('西湖牛肉羹')">🖼️
                                     🔎</button>
                             </td>
@@ -97,20 +111,27 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">3.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">春卷<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spring_roll" target="wikipedia" rel="noopener">spring roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">3.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('春卷', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Vårrullar</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Spring_roll#East_Asia"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Spring Roll</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Vårrullar</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Spring Roll</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Spring_roll#East_Asia', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Crispy fried rolls with vegetables and optional meat or seafood</span>                                </div>                                <div class="menu-item-note">
+
+                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">Välj mellan grönsaker och nötfärs</span>
                                 </div>
-                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">65 kr</span>
                             </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Spring_roll_001.jpg/128px-Spring_roll_001.jpg?20211018090341" alt="Dish Image"
@@ -120,20 +141,27 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">4.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">饺子<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">jiaozi</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">4.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('饺子', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Dumplings</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jiaozi"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Jiaozi</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Dumplings</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Jiaozi</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Dumplings filled with meat and vegetables</span>                                </div>                                <div class="menu-item-note">
+
+                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">Välj mellan fläsk, kyckling, nötfärs och vegetarisk</span>
                                 </div>
-                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">65 kr (4st)</span>
                             </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg/128px-Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg" alt="Dish Image"
@@ -143,21 +171,27 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">5.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">烧麦<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shumai" target="wikipedia" rel="noopener">shumai</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">5.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('烧麦', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fläskdumplings</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shumai"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shumai</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fläskdumplings</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Shumai</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shumai', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Ångkokta fläskdumplings</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Steamed open-faced dumplings with meat and seafood</span>                                </div>                                <div class="menu-item-note">
+
+                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">4st</span>
                                 </div>
-                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">79 kr</span>
                             </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg/128px-Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg" alt="Dish Image"
@@ -167,21 +201,27 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">6.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">虾饺<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Har_gow" target="wikipedia" rel="noopener">har gow</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">6.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('虾饺', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Räkdumplings</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Har_gow"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Har Gow</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Räkdumplings</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Har Gow</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Har_gow', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Ångkokta räkdumplings</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Steamed shrimp dumplings in a translucent wrapper</span>                                </div>                                <div class="menu-item-note">
+
+                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">4st</span>
                                 </div>
-                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">89 kr</span>
                             </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shrimp_dumplings.jpg/128px-Shrimp_dumplings.jpg" alt="Dish Image"
@@ -191,19 +231,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">7.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">凉粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Liangfen" target="wikipedia" rel="noopener">jelly noodles</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">7.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('凉粉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Kinesiska bönnudlar</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kinesiska bönnudlar</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerade bönnudlar med val av ssichuansksk chiliolja och sesam sås</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 75kr, 大/ Stor 128 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('凉粉')">🖼️
                                     🔎</button>
                             </td>
@@ -211,23 +253,29 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">8.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">凉拌<span class="dish-term-translated">cold tossed</span></span><span class="dish-term-native">黄瓜<span class="dish-term-translated">cucumber</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">8.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('凉拌黄瓜', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Kinesisk gurksallad</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Cold Cucumber Salad</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kinesisk gurksallad</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Cold Cucumber Salad</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad gurka med val av ssichuansksk chiliolja och sesam sås</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Refreshing cucumber salad with garlic and vinegar dressing</span>                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">(Vegetarisk)</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 75kr, 大/stor 128 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('凉拌黄瓜')">🖼️
                                     🔎</button>
                             </td>
@@ -235,22 +283,24 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">9.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">小<span class="dish-term-translated">small</span></span><span class="dish-term-native">窝</span><span class="dish-term-native">泡菜<span class="dish-term-translated">pickled vegetables</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">9.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('小窝泡菜', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Kinesisk kimchi</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kinesisk kimchi</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad sichuansk kimchi. (fermenterad kinakål)</span>                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">(Vegetarisk)</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">59 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('小窝泡菜')">🖼️
                                     🔎</button>
                             </td>
@@ -258,22 +308,24 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">10.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">腐竹<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tofu_skin#Dried" target="wikipedia" rel="noopener">dried tofu stick</a></span></span><span class="dish-term-native">西芹<span class="dish-term-translated">celery</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">10.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('腐竹西芹', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Kinesisk selleri</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kinesisk selleri</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad selleri och tofusticks</span>                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">(Vegetarisk)</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">75 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('腐竹西芹')">🖼️
                                     🔎</button>
                             </td>
@@ -281,21 +333,27 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">11.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">夫</span><span class="dish-term-native">妻</span><span class="dish-term-native">肺</span><span class="dish-term-native">片<span class="dish-term-translated">slice</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">11.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('夫妻肺片', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Biffsallad</span> <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Fuqi_Feipian"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Fuqi Feipian</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Biffsallad</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Fuqi Feipian</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_Feipian', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Marinerad biff och komage i sichuansk chiliolja</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Sichuan beef salad with tripe and tongue slices</span>                                </div>                                <div class="menu-item-note">
+
+                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">Kan kan beställas utan komage</span>
                                 </div>
-                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 99kr, 大/stor 188 kr</span>
                             </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image"
@@ -305,19 +363,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">12.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="dish-term-native">蒜<span class="dish-term-translated">garlic</span></span><span class="dish-term-native">泥<span class="dish-term-translated">mashed</span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">12.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红油蒜泥肚丝', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad grismage med vitlök i sichuan chili olja</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 99kr, 大/stor 188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红油蒜泥肚丝')">🖼️
                                     🔎</button>
                             </td>
@@ -325,22 +382,24 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">13.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">汁<span class="dish-term-translated">juice</span></span><span class="dish-term-native">卤<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Prolonged_immersion" target="wikipedia" rel="noopener">marinated</a></span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">13.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香汁卤豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Tofu</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Tofu</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad och kryddad tofu</span>                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">(Vegetarisk)</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">79 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香汁卤豆腐')">🖼️
                                     🔎</button>
                             </td>
@@ -348,22 +407,24 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">14.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">凉拌<span class="dish-term-translated">cold tossed</span></span><span class="dish-term-native">木耳<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Wood_ear" target="wikipedia" rel="noopener">wood-ear</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">14.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('凉拌木耳', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Judasöra</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Judasöra</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad judasöra</span>                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">(Vegetarisk)</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">75 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('凉拌木耳')">🖼️
                                     🔎</button>
                             </td>
@@ -384,19 +445,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">30.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">宫保<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Kung_Pao_chicken" target="wikipedia" rel="noopener">kung pao</a></span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span><span class="dish-term-native">丁<span class="dish-term-translated">diced</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">30.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('宫保鸡丁', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Kung_Pao_chicken"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Kung Pao Chicken</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kung Pao Chicken</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Tärnad kycklingfilé och grönsaker, serverad med jordnötter</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Spicy chicken stir-fry with peanuts and chili peppers</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('宫保鸡丁')">
@@ -405,19 +468,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">31.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">青椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">仔<span class="dish-term-translated">small</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">31.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('青椒仔鸡', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Wok med marinerade kycklinglår med sichuanpeppar och grönsaker.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Wok med marinerade kycklinglår med sichuanpeppar och grönsaker.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('青椒仔鸡')">🖼️
                                     🔎</button>
                             </td>
@@ -425,19 +487,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">32.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">32.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Dry_pot_chicken"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Dry Pot Chicken</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Dry Pot Chicken</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Dry_pot_chicken', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Marinerade kycklinglår och kinesiska grönsaker i sichuansk chili hot pot.</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Spicy chicken cooked in a dry pot with mixed vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('干锅鸡')">
@@ -446,19 +510,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">33.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">酥<span class="dish-term-translated">crispy</span></span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">33.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香酥鸭', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Krispig ankfilé med val av hoisinsås, sichuansås och sötsur sås</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香酥鸭')">🖼️
                                     🔎</button>
                             </td>
@@ -466,19 +529,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">34.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">烤<span class="dish-term-translated">roast</span></span><span class="dish-term-native">脆<span class="dish-term-translated">crisp</span></span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">34.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('烤脆鸭', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Grillad ankfilé med strimlad purjolök, serveras med kinesiska pannkakor och hemlagad hoisinsås.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">228 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('烤脆鸭')">🖼️
                                     🔎</button>
                             </td>
@@ -499,19 +561,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">40.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">川<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">回锅<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Twice-cooked_pork" target="wikipedia" rel="noopener">twice-cooked</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">40.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('川香回锅肉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️                                    <span class="menu-item-description">Dubbelwokad sidfläsk med grönsaker.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+🌶️🌶️
+                                    <span class="menu-item-description">Dubbelwokad sidfläsk med grönsaker.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('川香回锅肉')">🖼️
                                     🔎</button>
                             </td>
@@ -519,19 +580,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">41.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">菠萝<span class="dish-term-translated">pineapple</span></span><span class="dish-term-native">咕咾肉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sweet_and_sour#Hong_Kong/Cantonese" target="wikipedia" rel="noopener">sweet and sour pork</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">41.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('菠萝咕咾肉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Lättfriterade fläskfilébollar med ananas i sötsur sås.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('菠萝咕咾肉')">🖼️
                                     🔎</button>
                             </td>
@@ -539,19 +599,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">42.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">京<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Beijing_cuisine" target="wikipedia" rel="noopener">Beijing</a></span></span><span class="dish-term-native">酱<span class="dish-term-translated">sauce</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">42.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('京酱肉丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Jingjiang Rousi</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Jingjiang Rousi</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Sauterad strimlad fläskfilé och purjolök med sojabön sås, serveras med kinesiska pannkakor.</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Shredded pork in sweet bean sauce, often with pancakes</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('京酱肉丝')">
@@ -560,19 +622,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">43.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">川<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="dish-term-native">府</span><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">43.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('川府水煮肉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Bräserat fläsk och böngroddar i stark sichuansoppa.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Bräserat fläsk och böngroddar i stark sichuansoppa.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('川府水煮肉')">🖼️
                                     🔎</button>
                             </td>
@@ -580,19 +641,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">45.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸<span class="dish-term-translated">sour</span></span><span class="dish-term-native">豆<span class="dish-term-translated">bean</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">末</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">45.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸豆角肉末', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Marinerade brytbönor med köttfärs.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Marinerade brytbönor med köttfärs.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸豆角肉末')">🖼️
                                     🔎</button>
                             </td>
@@ -600,19 +660,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">48.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">老</span><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">妈</span><span class="dish-term-native">猪手<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Pig%27s_trotter" target="wikipedia" rel="noopener">pig trotter</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">48.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('老干妈猪手', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️                                    <span class="menu-item-description">Bräserade grifötter med kinesiska grönsaker i sichuan chilipor.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">218 kr</span>
-                            </td>
+🌶️🌶️
+                                    <span class="menu-item-description">Bräserade grifötter med kinesiska grönsaker i sichuan chilipor.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('老干妈猪手')">🖼️
                                     🔎</button>
                             </td>
@@ -620,19 +679,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">49.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">孜</span><span class="dish-term-native">然</span><span class="dish-term-native">排骨<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spare_ribs#Asia" target="wikipedia" rel="noopener">spare rib</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">49.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('孜然排骨', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Torrwokad revben med chili och kummin.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Torrwokad revben med chili och kummin.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('孜然排骨')">🖼️
                                     🔎</button>
                             </td>
@@ -653,19 +711,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">50.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸<span class="dish-term-translated">sour</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span><span class="dish-term-native">肥<span class="dish-term-translated">fatty</span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">50.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸汤肥牛', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Tunt skivad entrecote i oxbuljong med färska grönsaker.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Tunt skivad entrecote i oxbuljong med färska grönsaker.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸汤肥牛')">🖼️
                                     🔎</button>
                             </td>
@@ -673,19 +730,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">51.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">豆<span class="dish-term-translated">bean</span></span><span class="dish-term-native">花<span class="dish-term-translated">flower</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">51.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('豆花牛肉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Bräserad ryggbiff i kinesisk chilibönsås samt tofu pudding och jordnötter.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">248 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Bräserad ryggbiff i kinesisk chilibönsås samt tofu pudding och jordnötter.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('豆花牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -693,19 +749,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">52.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">川<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="dish-term-native">府</span><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">52.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('川府水煮牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Beef</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Beef</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Bräserad ryggbiff och böngroddar i sichuansk chili soppa.</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Poached beef in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('川府水煮牛肉')">
@@ -714,20 +772,22 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">53.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">铁板<span class="dish-term-translated">sizzling platter</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">53.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('铁板牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sizzling Beef on Iron Plate</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sizzling Beef on Iron Plate</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad ryggbiff med färska grönsaker och torkad lök, serveras i varm gjutjärnspanna.</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Tender beef cooked on a hot iron plate</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('铁板牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -735,19 +795,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">54.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mala_(seasoning)" target="wikipedia" rel="noopener">mala</a></span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">煲<span class="dish-term-translated">pot</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">54.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('麻辣牛肚煲', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Bräserad komage och kinesiska grönsaker i stark sichuansk grytan.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Bräserad komage och kinesiska grönsaker i stark sichuansk grytan.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('麻辣牛肚煲')">🖼️
                                     🔎</button>
                             </td>
@@ -755,19 +814,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">55.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">泡<span class="dish-term-translated">pickled</span></span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">爆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Bao_technique" target="wikipedia" rel="noopener">flash-fried</a></span></span><span class="dish-term-native">小<span class="dish-term-translated">small</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">55.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('泡椒爆小牛肉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Wok med ryggbiff med grönsaker och pepperoni.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Wok med ryggbiff med grönsaker och pepperoni.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('泡椒爆小牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -788,18 +846,19 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">60.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸菜<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">60.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸菜鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Suancai Fish</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Suancai Fish</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Marinerad fiskfilé i buljong med böngroddar.</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Poached fish in broth with pickled vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 198kr, 大/ Stor 288kr(2人份)</span>
-                            </td>
+🌶️
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('酸菜鱼')">
@@ -808,19 +867,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">61.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">沸腾<span class="dish-term-translated">boiling</span></span><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">61.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('沸腾水煮鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Fish</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Fish</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Marinerad fiskfilé i stark sichuansoppa med böngroddar.</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Poached fish in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 198kr, 大/ Stor 288kr(2人份)</span>
-                            </td>
+🌶️🌶️🌶️
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('沸腾水煮鱼')">
@@ -829,19 +890,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">62.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">辣<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">62.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香辣虾', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️                                    <span class="menu-item-description">Jätteräkor med grönsaker i sichuanstil.(stark)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">小/liten 198kr, 大/ Stor 288kr(2人份)</span>
-                            </td>
+🌶️🌶️
+                                    <span class="menu-item-description">Jätteräkor med grönsaker i sichuanstil.(stark)</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香辣虾')">🖼️
                                     🔎</button>
                             </td>
@@ -849,19 +909,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">63.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">茄</span><span class="dish-term-native">汁<span class="dish-term-translated">juice</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">球<span class="dish-term-translated">piece</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">63.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('茄汁虾球', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wok med jätteräkor, grönsaker och ananas i tomatsås.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('茄汁虾球')">🖼️
                                     🔎</button>
                             </td>
@@ -869,19 +928,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">65.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">海参<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sea_cucumbers_as_food" target="wikipedia" rel="noopener">sea cucumber</a></span></span><span class="dish-term-native">个</span><span class="dish-term-native">吃</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">65.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('海参个吃', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserad sjögurka i hemlagad buljong.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('海参个吃')">🖼️
                                     🔎</button>
                             </td>
@@ -889,19 +947,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">66.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">咖喱<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Curry#East_Asia" target="wikipedia" rel="noopener">curry</a></span></span><span class="dish-term-native">蟹<span class="dish-term-translated">crab</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">66.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('咖喱蟹', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserad krabba i hemlagad currysås.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">(förfråga)</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('咖喱蟹')">🖼️
                                     🔎</button>
                             </td>
@@ -909,19 +966,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">67.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">蛙</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">67.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅牛蛙', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Bräserade grodlår och grönsaker i sichuansk chilipot.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">258 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Bräserade grodlår och grönsaker i sichuansk chilipot.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干锅牛蛙')">🖼️
                                     🔎</button>
                             </td>
@@ -942,19 +998,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">70.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">家常<span class="dish-term-translated">home-style</span></span><span class="dish-term-native">茄子<span class="dish-term-translated">eggplant</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">70.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('家常茄子', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wok med aubergine och grönsaker.(serveras antingen stark eller mild)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('家常茄子')">🖼️
                                     🔎</button>
                             </td>
@@ -962,20 +1017,22 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">71.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">清炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">lightly stir-fried</a></span></span><span class="dish-term-native">时蔬<span class="dish-term-translated">seasonal vegetables</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">71.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('清炒时蔬', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir-Fried Seasonal Vegetables</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stir-Fried Seasonal Vegetables</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wok med blandade grönsaker i hemlagad söt soja sås.</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Seasonal vegetables, lightly stir-fried</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('清炒时蔬')">🖼️
                                     🔎</button>
                             </td>
@@ -983,19 +1040,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">72.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干煸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry stir-fried</a></span></span><span class="dish-term-native">四季豆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Green_bean" target="wikipedia" rel="noopener">string bean</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">72.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干煸四季豆', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Torrt wokade brytbönor med torkad chili peppar.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Torrt wokade brytbönor med torkad chili peppar.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干煸四季豆')">🖼️
                                     🔎</button>
                             </td>
@@ -1003,19 +1059,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">73.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">花<span class="dish-term-translated">flower</span></span><span class="dish-term-native">菜<span class="dish-term-translated">vegetable</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">73.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅花菜', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️                                    <span class="menu-item-description">Wokad blomkål med shichuan chiliolja i chili pot.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+🌶️🌶️
+                                    <span class="menu-item-description">Wokad blomkål med shichuan chiliolja i chili pot.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干锅花菜')">🖼️
                                     🔎</button>
                             </td>
@@ -1023,19 +1078,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">74.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">青椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">土豆<span class="dish-term-translated">potato</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">74.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('青椒土豆丝', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wok med strimlad potatis och paprika.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('青椒土豆丝')">🖼️
                                     🔎</button>
                             </td>
@@ -1043,19 +1097,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">75.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">飘</span><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">土豆<span class="dish-term-translated">potato</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">75.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('飘香土豆丝', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️                                    <span class="menu-item-description">Friterad strimlad potatis med shichuansk chilioljariterad strimlad potatis med chiliolja.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+🌶️
+                                    <span class="menu-item-description">Friterad strimlad potatis med shichuansk chilioljariterad strimlad potatis med chiliolja.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('飘香土豆丝')">🖼️
                                     🔎</button>
                             </td>
@@ -1063,19 +1116,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">76.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">金<span class="dish-term-translated">golden</span></span><span class="dish-term-native">沙<span class="dish-term-translated">paste</span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">76.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('金沙豆腐', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wok med tofu och marinerad äggula.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('金沙豆腐')">🖼️
                                     🔎</button>
                             </td>
@@ -1083,19 +1135,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">77.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻婆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mapo_tofu" target="wikipedia" rel="noopener">mapo</a></span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">77.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Mapo_tofu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Mapo Tofu</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Mapo Tofu</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️                                    <span class="menu-item-description">Wok med tofu i stark chilibön sås.</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Spicy Sichuan tofu with minced meat in bean sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
+🌶️🌶️
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('麻婆豆腐')">
@@ -1104,20 +1158,22 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">78.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">家常<span class="dish-term-translated">home-style</span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">78.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('家常豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Homestyle Tofu</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Homestyle Tofu</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wok med tofu och grönsaker (serveras stark eller mild)</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Stir-fried tofu with vegetables in savory sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('家常豆腐')">🖼️
                                     🔎</button>
                             </td>
@@ -1138,22 +1194,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">80.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">春</span><span class="dish-term-native">饼<span class="dish-term-translated">flatbread/cake</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">80.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('春饼', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Kinesiska tunna pannkakor</span>                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">6 st</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">35 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('春饼')">🖼️
                                     🔎</button>
                             </td>
@@ -1161,19 +1216,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">81.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">手<span class="dish-term-translated">hand</span></span><span class="dish-term-native">工</span><span class="dish-term-native">浓</span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span><span class="dish-term-native">面<span class="dish-term-translated">noodle</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">81.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('手工浓汤面', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Äggnudlar med biff och grönsaker i buljong.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('手工浓汤面')">🖼️
                                     🔎</button>
                             </td>
@@ -1181,22 +1235,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">82.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="dish-term-native">粉</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">82.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸辣粉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">加肥肠或者牛肉(biff/gristarmar) +30kr</span>
                                 </div>
                             </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸辣粉')">🖼️
                                     🔎</button>
                             </td>
@@ -1204,20 +1257,23 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">90.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">饺子<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">jiaozi</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">90.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('饺子', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jiaozi"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Jiaozi</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Jiaozi</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Dumplings filled with meat and vegetables</span>                                </div>                                <div class="menu-item-note">
+
+                                </div>                                <div class="menu-item-note">
                                     <span class="menu-item-note">A. Kycklingfilé, B. Fläsk med svartpeppar, C. Vegetarisk</span>
                                 </div>
-                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">15kr/st (minst 6st)</span>
                             </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg/128px-Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg" alt="Dish Image"
@@ -1240,16 +1296,17 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-name menu-item-name-secondary">Friterad kycklingfilé med sötsur sås</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Friterad kycklingfilé med sötsur sås</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">Halv/hel 95/135kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('')">🖼️
                                     🔎</button>
                             </td>
@@ -1257,16 +1314,17 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-name menu-item-name-secondary">Wok med Kycklingfilé med ananas i sötsur sås.</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Wok med Kycklingfilé med ananas i sötsur sås.</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">Halv/hel 95/135kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('')">🖼️
                                     🔎</button>
                             </td>
@@ -1287,19 +1345,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">s2.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">重庆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="dish-term-native">毛</span><span class="dish-term-native">血</span><span class="dish-term-native">旺</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">s2.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('重庆毛血旺', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Marinerat ankblod, kinesisk spam och, komagen i stark sichuansoppa.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">288 kr</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Marinerat ankblod, kinesisk spam och, komagen i stark sichuansoppa.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('重庆毛血旺')">🖼️
                                     🔎</button>
                             </td>
@@ -1307,19 +1364,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">s3.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">松<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Meat_floss" target="wikipedia" rel="noopener">floss</a></span></span><span class="dish-term-native">鼠</span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">s3.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('松鼠鱼', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Panerad marinerad hel fisk i sötsur sås.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">(förfråga)</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('松鼠鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -1327,19 +1383,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">s1.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mala_(seasoning)" target="wikipedia" rel="noopener">mala</a></span></span><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">s1.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('麻辣香锅', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Marinerad kycklingfilé, ryggbiff, fläsk, stora räkor, komagen, gristarmar och kinesiska grönsaker i sichuansk chili pot med special sichuanska kryddor.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">liten 228 kr, stor 388 kr (3人份)</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Marinerad kycklingfilé, ryggbiff, fläsk, stora räkor, komagen, gristarmar och kinesiska grönsaker i sichuansk chili pot med special sichuanska kryddor.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('麻辣香锅')">🖼️
                                     🔎</button>
                             </td>
@@ -1347,19 +1402,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">s4.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蜀</span><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">烤<span class="dish-term-translated">roast</span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">s4.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蜀香烤鱼', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
-🌶️🌶️🌶️                                    <span class="menu-item-description">Grillad hel fisk och kinesiska grönsaker i sichuansk hot pot med speciellal sichuanska kryddor.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">438 kr (3人份)</span>
-                            </td>
+🌶️🌶️🌶️
+                                    <span class="menu-item-description">Grillad hel fisk och kinesiska grönsaker i sichuansk hot pot med speciellal sichuanska kryddor.</span>                                </div>                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('蜀香烤鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -1367,19 +1421,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">s5.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸<span class="dish-term-translated">sour</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span><span class="dish-term-native">老</span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span><span class="dish-term-native">煲<span class="dish-term-translated">pot</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">s5.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸汤老鸭煲', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserad anka i buljong med kinesiska syrlig vitkål.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">218 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸汤老鸭煲')">🖼️
                                     🔎</button>
                             </td>
@@ -1400,19 +1453,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">1.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">蕉</span><span class="dish-term-native">冰</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">1.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香蕉冰', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Xiang Jiao Bing</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Xiang Jiao Bing</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Friterad banan med vanilj glass</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">89 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香蕉冰')">🖼️
                                     🔎</button>
                             </td>
@@ -1420,19 +1475,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">2.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">deep-fried</a></span></span><span class="dish-term-native">鲜<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">奶<span class="dish-term-translated">milk</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">2.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('炸鲜奶', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Zha Xian Nai</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Zha Xian Nai</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Friterad mjölk med säsongens frukter</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">89 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('炸鲜奶')">🖼️
                                     🔎</button>
                             </td>
@@ -1440,19 +1497,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">3.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">冰</span><span class="dish-term-native">淇</span><span class="dish-term-native">淋<span class="dish-term-translated">drizzled</span></span><span class="dish-term-native">配</span><span class="dish-term-native">水<span class="dish-term-translated">water</span></span><span class="dish-term-native">果</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">3.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('冰淇淋配水果', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Vanilj glass med säsongens frukter</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">89 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('冰淇淋配水果')">🖼️
                                     🔎</button>
                             </td>
@@ -1460,19 +1516,21 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">4.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">椰<span class="dish-term-translated">coconut</span></span><span class="dish-term-native">子</span><span class="dish-term-native">冰</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">4.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('椰子冰', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Kokosglass Deluxe</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kokosglass Deluxe</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Coconut ice cream Deluxe</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">99 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('椰子冰')">🖼️
                                     🔎</button>
                             </td>
@@ -1480,19 +1538,18 @@ Homepage: <a href="https://lillakina.com/" target="_blank" rel="noopener">lillak
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">5.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红<span class="dish-term-translated">red</span></span><span class="dish-term-native">糖<span class="dish-term-translated">sugar</span></span><span class="dish-term-native">冰</span><span class="dish-term-native">粉</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">5.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红糖冰粉', 'zh-Hans')">🗣️</button>
+                                    <br>
+
 
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Rotens putin med druvsockersås.</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">89 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红糖冰粉')">🖼️
                                     🔎</button>
                             </td>

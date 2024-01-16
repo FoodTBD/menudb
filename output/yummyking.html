@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - Yummy King, Solna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
@@ -56,21 +58,24 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">1.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">泡<span class="dish-term-translated">pickled</span></span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">凤爪<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chicken_feet" target="wikipedia" rel="noopener">chicken feet</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">1.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('泡椒凤爪', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Chicken_feet#China"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Chicken feet with pickled peppers</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chicken feet with pickled peppers</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Picklad kycklingfötter i pepperoni</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Sichuan chicken feet in a spicy pickled sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">90 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('泡椒凤爪')">🖼️
                                     🔎</button>
                             </td>
@@ -78,19 +83,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">2.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">辣<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">猪<span class="dish-term-translated">pork</span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">2.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香辣猪肚丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy pork tripe</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spicy pork tripe</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Grismage med chrispy chili & vitlö</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">110 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香辣猪肚丝')">🖼️
                                     🔎</button>
                             </td>
@@ -98,19 +105,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">3.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">白<span class="dish-term-translated">white</span></span><span class="dish-term-native">斩</span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">3.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('白斩鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Cold sliced chicken</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Cold sliced chicken</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Kokt kycklingklubba med sojasås</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">90 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('白斩鸡')">🖼️
                                     🔎</button>
                             </td>
@@ -118,19 +127,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">4.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">棒</span><span class="dish-term-native">棒</span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">4.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('棒棒鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Bang Bang chicken</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Bang Bang chicken</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Kycklingklubba med sesamsås & chili</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">100 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('棒棒鸡')">🖼️
                                     🔎</button>
                             </td>
@@ -138,19 +149,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">5.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">百叶<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe/tofu skin</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">5.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红油牛百叶', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Chili oil beef honeycomb tripe</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chili oil beef honeycomb tripe</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Oxmage med chiliolja & koriander</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">120 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红油牛百叶')">🖼️
                                     🔎</button>
                             </td>
@@ -158,19 +171,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">6.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mala_(seasoning)" target="wikipedia" rel="noopener">mala</a></span></span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span><span class="dish-term-native">头<span class="dish-term-translated">head</span></span><span class="dish-term-native"> </span><span class="dish-term-native">-</span><span class="dish-term-native"> </span><span class="dish-term-native">3</span><span class="dish-term-native">个</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">6.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('麻辣鸭头 - 3个', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy duck head</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spicy duck head</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserad ankhuvud (Mala ankhuvud)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">3/90 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('麻辣鸭头 - 3个')">🖼️
                                     🔎</button>
                             </td>
@@ -178,19 +193,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">7.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">五<span class="dish-term-translated">five</span></span><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">卤<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Prolonged_immersion" target="wikipedia" rel="noopener">marinated</a></span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">腱</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">7.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('五香卤牛腱', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spiced beef</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spiced beef</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserat oxkött med sojasås</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">120 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('五香卤牛腱')">🖼️
                                     🔎</button>
                             </td>
@@ -198,19 +215,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">9.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">凉拌<span class="dish-term-translated">cold tossed</span></span><span class="dish-term-native">海<span class="dish-term-translated">sea</span></span><span class="dish-term-native">带</span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">9.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('凉拌海带丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Seaweed salad</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Seaweed salad</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Sjögräs med vitlök och sojasås</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">80 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('凉拌海带丝')">🖼️
                                     🔎</button>
                             </td>
@@ -218,19 +237,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">10.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">拍<span class="dish-term-translated">mashed</span></span><span class="dish-term-native">黄瓜<span class="dish-term-translated">cucumber</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">10.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('拍黄瓜', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Smashed cucumber salad</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Smashed cucumber salad</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad krossad gurka med vitlök</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">80 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('拍黄瓜')">🖼️
                                     🔎</button>
                             </td>
@@ -238,19 +259,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">11.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">皮<span class="dish-term-translated">skin</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">11.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('皮蛋豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Century_egg"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Tofu with preserved eggs</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Tofu with preserved eggs</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Century_egg', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Tusenåriga ägg med tofu & sojasås</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Soft tofu topped with dark translucent preserved eggs and a savory dressing</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">110 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Billyfoodtofu1.jpg/128px-Billyfoodtofu1.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('皮蛋豆腐')">
@@ -259,19 +282,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">12.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="dish-term-native">猪<span class="dish-term-translated">pork</span></span><span class="dish-term-native">耳</span><span class="dish-term-native">朵</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">12.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红油猪耳朵', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Chilli oil pig ear</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chilli oil pig ear</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Marinerad grisöron med vitlök & crispy chili</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">120 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红油猪耳朵')">🖼️
                                     🔎</button>
                             </td>
@@ -292,19 +317,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">13.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">金<span class="dish-term-translated">golden</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span><span class="dish-term-native">肥<span class="dish-term-translated">fatty</span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">13.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('金汤肥牛', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Golden stock beef</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Golden stock beef</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Gyllene soppa med skivat entrecote, vitlök, chili & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('金汤肥牛')">🖼️
                                     🔎</button>
                             </td>
@@ -312,19 +339,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">14.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">西芹<span class="dish-term-translated">celery</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">14.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('西芹牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried beef with celery</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried beef with celery</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt biff med selleri</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('西芹牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -332,19 +361,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">15.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干煸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry stir-fried</a></span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">15.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干煸牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Yummy beef</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yummy beef</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Yummy Biff (Lätt-friterad biff med sötsur-stark sås & grönsaker)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干煸牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -352,19 +383,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">16.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">尖椒<span class="dish-term-translated">green peppers</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">16.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('尖椒牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pepper beef</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Pepper beef</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt biff med turkisk paprika</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('尖椒牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -372,19 +405,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">17.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">17.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('水煮牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Boiled beef fillet</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Boiled beef fillet</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Biff med chili, vitlök, sichuanpeppar & grönsaker</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Poached beef in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('水煮牛肉')">
@@ -393,19 +428,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">18.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红<span class="dish-term-translated">red</span></span><span class="dish-term-native">焖</span><span class="dish-term-native">牛腩<span class="dish-term-translated">beef brisket</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">18.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红焖牛腩', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Braised Beef Brisket</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Braised Beef Brisket</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Biffgryta med vitlök, chili bean sauce & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红焖牛腩')">🖼️
                                     🔎</button>
                             </td>
@@ -426,19 +463,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">19.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">毛</span><span class="dish-term-native">血</span><span class="dish-term-native">旺</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">19.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('毛血旺', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Mao yue wang</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Mao yue wang</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Mao Xue Wang (Grismage, oxmage, ank blodpudding, gristarmar, chili, vitlök & grönsaker)</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Spicy Sichuan broth with pig blood curd, tripe, and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">198 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('毛血旺')">
@@ -447,19 +486,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">20.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">爆炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Bao_technique" target="wikipedia" rel="noopener">flash-fried</a></span></span><span class="dish-term-native">腰</span><span class="dish-term-native">花<span class="dish-term-translated">flower</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">20.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('爆炒腰花', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir fried pig kidney</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stir fried pig kidney</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt grisnjure med chili, vitlök & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('爆炒腰花')">🖼️
                                     🔎</button>
                             </td>
@@ -467,19 +508,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">22.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">爆炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Bao_technique" target="wikipedia" rel="noopener">flash-fried</a></span></span><span class="dish-term-native">猪<span class="dish-term-translated">pork</span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">22.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('爆炒猪肚丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir Fried Pork Stomach</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stir Fried Pork Stomach</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt grismage med chili bean sauce & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('爆炒猪肚丝')">🖼️
                                     🔎</button>
                             </td>
@@ -487,19 +530,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">25.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">尖椒<span class="dish-term-translated">green peppers</span></span><span class="dish-term-native">肥肠<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Offal#China" target="wikipedia" rel="noopener">pork intestine</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">25.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('尖椒肥肠', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Peppers with intestine</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Peppers with intestine</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt grisktarm med turkisk paprika</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('尖椒肥肠')">🖼️
                                     🔎</button>
                             </td>
@@ -507,19 +552,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">26.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">糖<span class="dish-term-translated">sugar</span></span><span class="dish-term-native">醋<span class="dish-term-translated">vinegar</span></span><span class="dish-term-native">排骨<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spare_ribs#Asia" target="wikipedia" rel="noopener">spare rib</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">26.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('糖醋排骨', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Sweet and Sour Spare Ribs</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sweet and Sour Spare Ribs</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Lätt-friterade revbensspjäll i sweet sour sauce</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Pork spareribs in a tangy sweet and sour sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/T%C3%A1ngc%C3%B9_p%C3%A1ig%C7%94.jpg/128px-T%C3%A1ngc%C3%B9_p%C3%A1ig%C7%94.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('糖醋排骨')">
@@ -528,20 +575,22 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">27.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">椒盐<span class="dish-term-translated">salt & pepper</span></span><span class="dish-term-native">排骨<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Spare_ribs#Asia" target="wikipedia" rel="noopener">spare rib</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">27.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('椒盐排骨', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried Spare Ribs with Spiced Salt</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried Spare Ribs with Spiced Salt</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Friterade revbensspjäll med sichuanpeppar</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Crispy fried pork ribs seasoned with salt and pepper</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('椒盐排骨')">🖼️
                                     🔎</button>
                             </td>
@@ -549,19 +598,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">28.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">糖<span class="dish-term-translated">sugar</span></span><span class="dish-term-native">醋<span class="dish-term-translated">vinegar</span></span><span class="dish-term-native">里</span><span class="dish-term-native">脊</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">28.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('糖醋里脊', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Sweet_and_sour#Chinese_cuisine"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Sweet and Sour pork Fillet</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sweet and Sour pork Fillet</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Sweet_and_sour#Chinese_cuisine', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Friterad fläskfilé i sötsursås</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Deep-fried pork in a sweet and sour sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sweet-and-sour_pork.jpg/128px-Sweet-and-sour_pork.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('糖醋里脊')">
@@ -570,19 +621,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">29.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">回锅<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Twice-cooked_pork" target="wikipedia" rel="noopener">twice-cooked</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">29.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('回锅肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Twice_cooked_pork"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Hui Guo Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Hui Guo Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Twice_cooked_pork', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Stekt fläsk med chili bean sauce & grönsaker</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Pork stir-fried with vegetables and spices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('回锅肉')">
@@ -591,19 +644,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">30.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼香<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">30.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鱼香肉丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Yu-Shiang Shredded Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yu-Shiang Shredded Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Chilikryddad fläsk med vitlök, ingefära & grönsaker</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Shredded pork in a spicy garlic sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鱼香肉丝')">
@@ -612,19 +667,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">31.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">梅菜<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Meigan_cai" target="wikipedia" rel="noopener">meigan cai</a></span></span><span class="dish-term-native">扣肉<span class="dish-term-translated">braised pork</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">31.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('梅菜扣肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Braised Pork with Preserved vegetable in Soya Sauce</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Braised Pork with Preserved vegetable in Soya Sauce</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserad sidfläsk med kinesisk soltorkad kål</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('梅菜扣肉')">🖼️
                                     🔎</button>
                             </td>
@@ -645,19 +702,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">32.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">啤</span><span class="dish-term-native">酒<span class="dish-term-translated">wine</span></span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">32.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅啤酒鸭', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Griddle Duck in Beer</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Griddle Duck in Beer</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Långkokt anka i öl & grönsaker (Med ben)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">168 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干锅啤酒鸭')">🖼️
                                     🔎</button>
                             </td>
@@ -665,19 +724,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">33.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">味<span class="dish-term-translated">flavor</span></span><span class="dish-term-native">王<span class="dish-term-translated">premium</span></span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">33.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('味王鸭', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Yummy duck</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yummy duck</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Yummy Duck (Wokad anka med vitlök & grönsaker)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('味王鸭')">🖼️
                                     🔎</button>
                             </td>
@@ -685,19 +746,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">34.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">四川<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="dish-term-native">鸭<span class="dish-term-translated">duck</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">34.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('四川鸭', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Szechuan duck</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Szechuan duck</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Sichuan anka med chili vitlök, & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('四川鸭')">🖼️
                                     🔎</button>
                             </td>
@@ -718,19 +781,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">35.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">黄</span><span class="dish-term-native">焖</span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">35.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('黄焖鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Yellow braised chicken</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yellow braised chicken</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Bräserat kycklinglår med svamp & grönsaker (Med ben)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('黄焖鸡')">🖼️
                                     🔎</button>
                             </td>
@@ -738,19 +803,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">36.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">味<span class="dish-term-translated">flavor</span></span><span class="dish-term-native">王<span class="dish-term-translated">premium</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">36.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('味王鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Yummy chicken</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yummy chicken</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Yummy Chicken (Friterad kyckling i sötsur sås)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('味王鸡')">🖼️
                                     🔎</button>
                             </td>
@@ -758,19 +825,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">37.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">柠檬<span class="dish-term-translated">lemon</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">37.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('柠檬鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Lemon_chicken"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Spicy lime chicken</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spicy lime chicken</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Lemon_chicken', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Spicy Lime Chicken (Lätt-friterad kycklingfilé med chiliolja & grönsaker)</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Crispy chicken in a fresh lemon sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lemon_Chicken_in_Hong_Kong.jpg/128px-Lemon_Chicken_in_Hong_Kong.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('柠檬鸡')">
@@ -779,19 +848,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">38.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">辣子<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">38.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('辣子鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Laziji"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Sauteed chicken dices with chili peppers</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sauteed chicken dices with chili peppers</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Crispy chicken med sichuanpeppar</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Sichuan deep-fried chicken with peppercorns and chilies</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('辣子鸡')">
@@ -813,19 +884,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">39.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">39.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('水煮鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Boiled Fish in Hot chili oil</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Boiled Fish in Hot chili oil</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Fiskgryta med chili, vitlök, sichuanpeppar & grönsaker</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Poached fish in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('水煮鱼')">
@@ -834,18 +907,19 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">40.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸菜<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">40.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸菜鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Boiled fish with pickled gabbage</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Boiled fish with pickled gabbage</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Fiskgryta med surkål, vitlök & sichuanpeppar</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Poached fish in broth with pickled vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('酸菜鱼')">
@@ -854,19 +928,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">41.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">嫩</span><span class="dish-term-native">滑<span class="dish-term-translated">slippery</span></span><span class="dish-term-native">鱼片<span class="dish-term-translated">fish fillet</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">41.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('嫩滑鱼片', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Tender fish fillet</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Tender fish fillet</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wokad fiskfilé med grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('嫩滑鱼片')">🖼️
                                     🔎</button>
                             </td>
@@ -874,19 +950,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">42.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">辣子<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">42.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('辣子鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Chilli fish</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chilli fish</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt fisk med chrispy chili & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('辣子鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -894,19 +972,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">43.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">椒盐<span class="dish-term-translated">salt & pepper</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">43.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('椒盐虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Salt and pepper shrimp</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Salt and pepper shrimp</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Pepparstekt tigerräkor med sichuanpeppar (Med skal)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('椒盐虾')">🖼️
                                     🔎</button>
                             </td>
@@ -914,19 +994,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">44.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">姜<span class="dish-term-translated">ginger</span></span><span class="dish-term-native">葱<span class="dish-term-translated">onion</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">44.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('姜葱大虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Ginger scallion prawns</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Ginger scallion prawns</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wokade tigerräkor med ingefära i ostronsås</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('姜葱大虾')">🖼️
                                     🔎</button>
                             </td>
@@ -934,19 +1016,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">45.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">味<span class="dish-term-translated">flavor</span></span><span class="dish-term-native">王<span class="dish-term-translated">premium</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">45.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('味王虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Yummy scampi</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yummy scampi</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Yummy Shrimp</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('味王虾')">🖼️
                                     🔎</button>
                             </td>
@@ -967,19 +1051,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">46.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">扁</span><span class="dish-term-native">豆<span class="dish-term-translated">bean</span></span><span class="dish-term-native">夹</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">46.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干扁豆夹', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Dried lentil clip</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Dried lentil clip</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt haricots verts med vitlök i chrispy chili</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干扁豆夹')">🖼️
                                     🔎</button>
                             </td>
@@ -987,19 +1073,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">47.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">地</span><span class="dish-term-native">三<span class="dish-term-translated">three</span></span><span class="dish-term-native">鲜<span class="dish-term-translated">fresh</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">47.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('地三鲜', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sauteed Potato, Green Pepper and Eggplant</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sauteed Potato, Green Pepper and Eggplant</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt potatis, haricots verts & aubergine</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('地三鲜')">🖼️
                                     🔎</button>
                             </td>
@@ -1007,19 +1095,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">48.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">上海<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shanghai_cuisine" target="wikipedia" rel="noopener">Shanghai</a></span></span><span class="dish-term-native">青</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">48.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('上海青', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Shanghai vegetable</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shanghai vegetable</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt pak choy med vitlök</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('上海青')">🖼️
                                     🔎</button>
                             </td>
@@ -1027,19 +1117,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">49.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼香<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="dish-term-native">茄子<span class="dish-term-translated">eggplant</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">49.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鱼香茄子', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Yuxiang"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Yu-shiang eggplant</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yu-shiang eggplant</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Chilikryddad aubergine med vitlök & fläskfärs (Kött kan tas bort)</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Eggplant in a spicy garlic sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/128px-Yuxiangqiezi.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鱼香茄子')">
@@ -1048,19 +1140,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">50.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">醋<span class="dish-term-translated">vinegar</span></span><span class="dish-term-native">溜</span><span class="dish-term-native">土豆<span class="dish-term-translated">potato</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">50.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('醋溜土豆丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sour and spicy shredded potatoes</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sour and spicy shredded potatoes</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt strimlad potatis med chili</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">128 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('醋溜土豆丝')">🖼️
                                     🔎</button>
                             </td>
@@ -1068,19 +1162,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">52.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">尖椒<span class="dish-term-translated">green peppers</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">52.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('尖椒炒蛋', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried egg with pepper</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried egg with pepper</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt äggröra med turkisk paprika</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('尖椒炒蛋')">🖼️
                                     🔎</button>
                             </td>
@@ -1088,20 +1184,22 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">54.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">家常<span class="dish-term-translated">home-style</span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">54.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('家常豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Woked [sic] tofu</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Woked [sic] tofu</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wokad tofu med grönsaker</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Stir-fried tofu with vegetables in savory sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('家常豆腐')">🖼️
                                     🔎</button>
                             </td>
@@ -1109,19 +1207,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">55.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻婆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mapo_tofu" target="wikipedia" rel="noopener">mapo</a></span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">55.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Mapo_tofu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Mapo tofu</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Mapo tofu</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Mapo Tofu (Tofu med fläskfärs & vitlök)</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Spicy Sichuan tofu with minced meat in bean sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('麻婆豆腐')">
@@ -1143,19 +1243,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">57.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">味<span class="dish-term-translated">flavor</span></span><span class="dish-term-native">王<span class="dish-term-translated">premium</span></span><span class="dish-term-native">油条<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Youtiao" target="wikipedia" rel="noopener">youtiao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">57.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('味王油条', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Deep-Fried Dough Sticks</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Deep-Fried Dough Sticks</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">15 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('味王油条')">🖼️
                                     🔎</button>
                             </td>
@@ -1163,19 +1265,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">58.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">五花肉<span class="dish-term-translated">pork belly</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">58.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('五花肉大肉包', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">pork Bun</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">pork Bun</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">20 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('五花肉大肉包')">🖼️
                                     🔎</button>
                             </td>
@@ -1183,19 +1287,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">59.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蔬菜<span class="dish-term-translated">vegetable</span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">59.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蔬菜包', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">vegetable Bun</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">vegetable Bun</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">20 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('蔬菜包')">🖼️
                                     🔎</button>
                             </td>
@@ -1203,20 +1309,23 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">60.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">葱<span class="dish-term-translated">onion</span></span><span class="dish-term-native">油<span class="dish-term-translated">oil</span></span><span class="dish-term-native">花<span class="dish-term-translated">flower</span></span><span class="dish-term-native">卷<span class="dish-term-translated">roll</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">60.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('葱油花卷', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Mandarin_roll"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Hanamaki</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Hanamaki</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Mandarin_roll', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Steamed flower-shaped dough buns with layers of scallion and oil</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">10 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('葱油花卷')">🖼️
                                     🔎</button>
                             </td>
@@ -1224,21 +1333,24 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">61.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">葱<span class="dish-term-translated">onion</span></span><span class="dish-term-native">油<span class="dish-term-translated">oil</span></span><span class="dish-term-native">花<span class="dish-term-translated">flower</span></span><span class="dish-term-native">卷<span class="dish-term-translated">roll</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">61.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('葱油花卷', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Mandarin_roll"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Fried flatbread</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried flatbread</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Mandarin_roll', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Dabing (Kinesisk inbakad pizza med fläsk & soltorkad kål)</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Steamed flower-shaped dough buns with layers of scallion and oil</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">70 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('葱油花卷')">🖼️
                                     🔎</button>
                             </td>
@@ -1246,18 +1358,19 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">62 (1).</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">糯米饭<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">62 (1).</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('糯米饭', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Savory Glutinous Rice</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Savory Glutinous Rice</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Salted Sticky Rice med fläskfärs, krossade kinesiska churros & krossade jordnötter</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Glutinous rice, cooked to a sticky texture, often with additional ingredients</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">Liten 60kr / Stor 98kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg/128px-HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('糯米饭')">
@@ -1266,18 +1379,19 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">62 (2).</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">糯米饭<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">62 (2).</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('糯米饭', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sweet Glutinous Rice</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sweet Glutinous Rice</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Sweet Sticky Rice med kokosmjölk, socker, krossade kinesiska churros & krossade jordnötter</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Glutinous rice, cooked to a sticky texture, often with additional ingredients</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">Liten 60kr / Stor 98kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg/128px-HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('糯米饭')">
@@ -1286,19 +1400,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">63.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">生<span class="dish-term-translated">fresh</span></span><span class="dish-term-native">煎<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">pan-fried</a></span></span><span class="dish-term-native">包<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span><span class="dish-term-native">(</span><span class="dish-term-native">5</span><span class="dish-term-native">个</span><span class="dish-term-native">)</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">63.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('生煎包(5个)', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pan-fried bun, stuffed with pork</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Pan-fried bun, stuffed with pork</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Sheng Jiang Bao (Fylld med fläsk & grönsaker)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">98 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('生煎包(5个)')">🖼️
                                     🔎</button>
                             </td>
@@ -1319,19 +1435,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">64.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">牛<span class="dish-term-translated">beef</span></span><span class="dish-term-native">河<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">64.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干炒牛河', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Beef_chow_fun"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Stir-Fried Rice Noodles with Beef</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stir-Fried Rice Noodles with Beef</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Beef_chow_fun', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Stekt risnudlar med biff & böngroddar</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Stir-fried flat rice noodles with beef slices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('干炒牛河')">
@@ -1340,19 +1458,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">65.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红<span class="dish-term-translated">red</span></span><span class="dish-term-native">焖</span><span class="dish-term-native">牛腩<span class="dish-term-translated">beef brisket</span></span><span class="dish-term-native">拉面<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/%E6%8B%89%E9%BA%B5" target="wikipedia" rel="noopener">lamian/ramen</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">65.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红焖牛腩拉面', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Beef Brisket Noodles</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Beef Brisket Noodles</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">"La Mian" med långkokt oxkött pak choi</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红焖牛腩拉面')">🖼️
                                     🔎</button>
                             </td>
@@ -1360,19 +1480,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">66.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">腊<span class="dish-term-translated">cured meat</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">年糕<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Nian_gao" target="wikipedia" rel="noopener">nian gao</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">66.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('腊肉炒年糕', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried Rice Cake with Bacon</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried Rice Cake with Bacon</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt rice cake med lufttorkad sidfläsk & pak choi</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('腊肉炒年糕')">🖼️
                                     🔎</button>
                             </td>
@@ -1380,19 +1502,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">67.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">肠粉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Rice_noodle_roll" target="wikipedia" rel="noopener">rice noodle roll</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">67.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('大肠粉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Chitterlings Rice Flour</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Chitterlings Rice Flour</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Risnudelsoppa med gristarm & kinesisk surkål</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('大肠粉')">🖼️
                                     🔎</button>
                             </td>
@@ -1400,19 +1524,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">68.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">青</span><span class="dish-term-native">田</span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">粉</span><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">（</span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span><span class="dish-term-native">)</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">68.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('青田炒粉干（虾)', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried Rice Noodles with Shrimp</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried Rice Noodles with Shrimp</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekta risnudlar med räkor, ägg & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('青田炒粉干（虾)')">🖼️
                                     🔎</button>
                             </td>
@@ -1420,19 +1546,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">69.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">青</span><span class="dish-term-native">田</span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">粉</span><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">（</span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span><span class="dish-term-native">）</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">69.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('青田炒粉干（牛肉）', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried Rice Noodles with Beef</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fried Rice Noodles with Beef</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekta risnudlar med biff, ägg & grönsaker</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('青田炒粉干（牛肉）')">🖼️
                                     🔎</button>
                             </td>
@@ -1440,19 +1568,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">70.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">青</span><span class="dish-term-native">田</span><span class="dish-term-native">米<span class="dish-term-translated">rice</span></span><span class="dish-term-native">面<span class="dish-term-translated">noodle</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">70.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('青田米面', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">QingTian Rice Vermicelli</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">QingTian Rice Vermicelli</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Risnudelsoppa med fläskfärs & surkål</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">118 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('青田米面')">🖼️
                                     🔎</button>
                             </td>
@@ -1460,19 +1590,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">72.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蚂</span><span class="dish-term-native">蚁</span><span class="dish-term-native">上<span class="dish-term-translated">topped</span></span><span class="dish-term-native">树</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">72.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蚂蚁上树', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Ants_climbing_a_tree"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Woked [sic] vermicelli with spicy minced pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Woked [sic] vermicelli with spicy minced pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Ants_climbing_a_tree', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Stekta glasnudlar med fläskfärs</span> <span
-                                        class="menu-item-divider">/</span>                                     <span class="menu-item-description">Sichuan glass noodles stir-fried with minced meat and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mayishangshu.jpg/128px-Mayishangshu.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('蚂蚁上树')">
@@ -1481,19 +1613,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">73.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">糯米饭<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">73.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香炒糯米饭', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stir fried glutinous rice</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stir fried glutinous rice</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stekt sticky rice med lufttorkad sidfläsk</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香炒糯米饭')">🖼️
                                     🔎</button>
                             </td>
@@ -1514,19 +1648,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">74.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">开胃<span class="dish-term-translated">appetizer</span></span><span class="dish-term-native">羹<span class="dish-term-translated">soup</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">74.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('开胃羹', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Beijing Soup</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Beijing Soup</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Peking soppa (Stor skål)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">118 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('开胃羹')">🖼️
                                     🔎</button>
                             </td>
@@ -1534,19 +1670,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">75.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼片<span class="dish-term-translated">fish fillet</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">75.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鱼片汤', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fish Soup</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fish Soup</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Fisk soppa (Stor skål)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">148 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('鱼片汤')">🖼️
                                     🔎</button>
                             </td>
@@ -1554,19 +1692,21 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">76.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">76.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸辣肚丝汤', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Hot and sour tripe soup</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Hot and sour tripe soup</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Grismage-soppa med chili, svamp & grönsaker (Stor skål)</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">158 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸辣肚丝汤')">🖼️
                                     🔎</button>
                             </td>
@@ -1587,19 +1727,25 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">81.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">辣<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">烤<span class="dish-term-translated">roast</span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">81.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香辣烤鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Lätt-friterad fisk med chili, sichuanpeppar & grönsaker (Hel havsabborre)</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy grilled fish</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Lätt-friterad fisk med chili, sichuanpeppar & grönsaker (Hel havsabborre)</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Spicy grilled fish</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">319 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香辣烤鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -1607,19 +1753,25 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">82.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">清<span class="dish-term-translated">clear</span></span><span class="dish-term-native">蒸<span class="dish-term-translated">steamed</span></span><span class="dish-term-native">鲈</span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">82.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('清蒸鲈鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pocherad havsabborre med salladslök-sås (Hel fisk)</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Steamed fish with scallionoil</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Pocherad havsabborre med salladslök-sås (Hel fisk)</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Steamed fish with scallionoil</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">299 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('清蒸鲈鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -1627,19 +1779,25 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">83.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">避风塘<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Typhoon_shelter#Typhoon_shelter_crab" target="wikipedia" rel="noopener">typhoon shelter</a></span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">83.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('避风塘大虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pepparstekt pankopanerad scampi (Med skål)</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Prawns in typhoon shelter</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Pepparstekt pankopanerad scampi (Med skål)</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Prawns in typhoon shelter</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('避风塘大虾')">🖼️
                                     🔎</button>
                             </td>
@@ -1647,17 +1805,23 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">86.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">孜</span><span class="dish-term-native">然</span><span class="dish-term-native">羊肉<span class="dish-term-translated">lamb meat</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">86.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('孜然羊肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Stekt lammkött med spiskummin, chili, lök, & koriander</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Fried Lamb with cumin</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stekt lammkött med spiskummin, chili, lök, & koriander</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Fried Lamb with cumin</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Lamb stir-fried with cumin and spices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">188 kr</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg/128px-%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('孜然羊肉')">
@@ -1666,19 +1830,25 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">88.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">脆<span class="dish-term-translated">crisp</span></span><span class="dish-term-native">皮<span class="dish-term-translated">skin</span></span><span class="dish-term-native">五花肉<span class="dish-term-translated">pork belly</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">88.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('脆皮五花肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Krispig fläsk med grillkrydda</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Crispy pork belly</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Krispig fläsk med grillkrydda</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Crispy pork belly</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('脆皮五花肉')">🖼️
                                     🔎</button>
                             </td>
@@ -1686,19 +1856,25 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">90.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蛋黄<span class="dish-term-translated">egg yolk</span></span><span class="dish-term-native">焗<span class="dish-term-translated">pan-roasted</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span><span class="dish-term-native">翅<span class="dish-term-translated">wing</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">90.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蛋黄焗鸡翅', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Kycklingvingar med saltad äggulasås</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Chicken wings with salted egg yolk sauce</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kycklingvingar med saltad äggulasås</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Chicken wings with salted egg yolk sauce</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">178 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('蛋黄焗鸡翅')">🖼️
                                     🔎</button>
                             </td>
@@ -1706,19 +1882,25 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-<span class="menu-item-number">91.</span>                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">末</span><span class="dish-term-native">水<span class="dish-term-translated">water</span></span><span class="dish-term-native">蒸<span class="dish-term-translated">steamed</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+<span class="menu-item-number">91.</span>                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('肉末水蒸蛋', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Ångad äggröra med fläskfärs</span> <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Steamed egg with minced meat</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Ångad äggröra med fläskfärs</span>
+
+
+ <span class="menu-item-divider">/</span>
+                                    <span class="menu-item-name menu-item-name-secondary">Steamed egg with minced meat</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">138 kr</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('肉末水蒸蛋')">🖼️
                                     🔎</button>
                             </td>

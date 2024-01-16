@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - {{ data.restaurant.name }}, {{ data.restaurant.city }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
@@ -85,34 +87,41 @@
                                     'zh-Latn-pinyin' %}
                                     {% set dish_name = item['name_' + lang] %}
                                     {% if lang == primary_lang %}
+                                    {% if lang == 'zh-Hant' %}
                                     <span class="menu-item-name menu-item-name-primary">{{
                                         dish_name_to_annotated_html[dish_name] }}</span>
-                                    {% if lang == 'zh-Hant' %}
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('{{ dish_name }}', 'zh-HK')">🗣️粵</button>
                                     {% endif %}
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</button>
+                                    <br>
                                     {% else %}
+                                    <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                        styled_text_format }}</span>
+
                                     {% set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] %}
-                                    {% if wikipedia_url %}<a class="menu-item-wikipedia-link" href="{{ wikipedia_url }}"
-                                        target="_blank" rel="noopener">{%
-                                        endif %}<span class="menu-item-name menu-item-name-secondary">{{ dish_name |
-                                            styled_text_format
-                                            }}</span>{% if wikipedia_url %}</a>{% endif %}
+                                    {% if wikipedia_url %}
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button>
                                     {% endif %}
-                                    {% if not loop.last %} <span class="menu-item-divider">/</span> {% endif %}
+                                    {% endif %}
+
+                                    {% if not loop.first and not loop.last %} <span class="menu-item-divider">/</span>
+                                    {% endif %}
                                     {% endfor +%}
                                 </div>
 
                                 <div class="menu-item-description">
                                     {% for _ in range(item['spice_heat_level'] | default(0)) %}🌶️{% endfor %}
 
+                                    {% if not item['image_url'] %}
                                     {%- for lang in display_language_codes if item['description_' + lang] %}
                                     <span class="menu-item-description">{{ item['description_' + lang] |
                                         styled_text_format }}</span>{% if not loop.last %} <span
                                         class="menu-item-divider">/</span> {% endif %}
                                     {% endfor %}
+                                    {% endif %}
                                 </div>
 
                                 {%- if item['note'] %}
@@ -122,19 +131,19 @@
                                 </div>
                                 {% endif %}
                             </td>
-                            <td class="menu-table-price-column">
+                            {# <td class="menu-table-price-column">
                                 <span class="menu-item-price">{{ item['price'] }}</span>
                                 {%- if item['price_note'] %}<br>
                                 <span class="menu-item-price-note">{{ item['price_note'] | styled_text_format
                                     }}</span>
                                 {% endif +%}
-                            </td>
+                            </td> #}
                             <td class="menu-table-image-column">
                                 {% if item['image_url'] %}
                                 <img src="{{ item['image_url'] }}" alt="Dish Image"
                                     onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
                                 {% else %}
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️
                                     🔎</button>
                                 {% endif %}

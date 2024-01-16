@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - Sichuan Restaurang, Solna</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <link rel="stylesheet" type="text/css" href="static/menu_template.css">
 </head>
@@ -52,19 +54,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">拌<span class="dish-term-translated">tossed</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香拌牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Marinated Beef Salad</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Marinated Beef Salad</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Cold beef slices mixed with spicy sauce and cilantro</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">149:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香拌牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -72,18 +76,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">夫</span><span class="dish-term-native">妻</span><span class="dish-term-native">肺</span><span class="dish-term-native">片<span class="dish-term-translated">slice</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('夫妻肺片', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Fuqi_Feipian"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Fuqi Feipian</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Fuqi Feipian</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_Feipian', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Sichuan beef salad with tripe and tongue slices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">189:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('夫妻肺片')">
@@ -92,17 +99,19 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">口水<span class="dish-term-translated">mouth-watering</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('口水鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Steamed Chicken with Chili Sauce</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Steamed Chicken with Chili Sauce</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Sichuan chicken in spicy, garlicky chili oil sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">149:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('口水鸡')">
@@ -111,19 +120,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('红油肚丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Pork Tripe in Chili Oil</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Pork Tripe in Chili Oil</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Thinly sliced tripe in a flavorful and spicy chili oil sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">139:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('红油肚丝')">🖼️
                                     🔎</button>
                             </td>
@@ -131,19 +142,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">山<span class="dish-term-translated">mountain</span></span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">木耳<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Wood_ear" target="wikipedia" rel="noopener">wood-ear</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('山椒木耳', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Black Fungus with Wild Pepper</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Black Fungus with Wild Pepper</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Wood ear mushrooms stir-fried with Sichuan peppercorns</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">149:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('山椒木耳')">🖼️
                                     🔎</button>
                             </td>
@@ -151,17 +164,19 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蒜<span class="dish-term-translated">garlic</span></span><span class="dish-term-native">泥<span class="dish-term-translated">mashed</span></span><span class="dish-term-native">黄瓜<span class="dish-term-translated">cucumber</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('蒜泥黄瓜', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Cucumber with Mashed Garlic</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Cucumber with Mashed Garlic</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Cucumber salad with garlic and light vinegar dressing, sometimes spicy</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">139:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg/128px-%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('蒜泥黄瓜')">
@@ -182,19 +197,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">沸腾<span class="dish-term-translated">boiling</span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('沸腾鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Boiled fish in chili oil</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Boiled fish in chili oil</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Fish boiled and then topped with a spicy, numbing Sichuan hot oil</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">249:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('沸腾鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -202,17 +219,19 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸菜<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸菜鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Boiled fish with pickled cabbage and chili</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Boiled fish with pickled cabbage and chili</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Poached fish in broth with pickled vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">189:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('酸菜鱼')">
@@ -221,18 +240,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('水煮鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Fish</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Fish</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Poached fish in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">199:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('水煮鱼')">
@@ -241,19 +263,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">清<span class="dish-term-translated">clear</span></span><span class="dish-term-native">蒸<span class="dish-term-translated">steamed</span></span><span class="dish-term-native">比</span><span class="dish-term-native">目</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('清蒸比目', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Steamed flatfish</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Steamed flatfish</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Steamed flounder, often served with soy sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">时价 current price</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('清蒸比目')">🖼️
                                     🔎</button>
                             </td>
@@ -261,19 +285,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">川<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">麻<span class="dish-term-translated">sesame</span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('川香椒麻鱼', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy pepper fish</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spicy pepper fish</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Fiery and numbing fish dish with Sichuan peppercorns and spices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">669:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('川香椒麻鱼')">🖼️
                                     🔎</button>
                             </td>
@@ -281,19 +307,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">辣<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('香辣大虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Spicy prawns</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Spicy prawns</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Prawns cooked in a spicy garlic sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">219:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('香辣大虾')">🖼️
                                     🔎</button>
                             </td>
@@ -301,19 +329,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">茄</span><span class="dish-term-native">汁<span class="dish-term-translated">juice</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('茄汁大虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Prawns with tomato sauce</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Prawns with tomato sauce</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Prawns cooked in a rich tomato sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">199:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('茄汁大虾')">🖼️
                                     🔎</button>
                             </td>
@@ -333,18 +363,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('水煮牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Sliced Beef</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Sliced Beef</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Poached beef in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">219:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('水煮牛肉')">
@@ -353,19 +386,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">孜</span><span class="dish-term-native">然</span><span class="dish-term-native">牛柳<span class="dish-term-translated">beef tenderloin</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('孜然牛柳', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Beef Tenderloin with Cumin</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Beef Tenderloin with Cumin</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">289:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('孜然牛柳')">🖼️
                                     🔎</button>
                             </td>
@@ -373,18 +408,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">牛柳<span class="dish-term-translated">beef tenderloin</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('水煮牛柳', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Shuizhu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Shuizhu Beef Tenderloin</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Beef Tenderloin</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Poached beef in a spicy, flavorful Sichuan broth</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">269:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('水煮牛柳')">
@@ -405,18 +443,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">京<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Beijing_cuisine" target="wikipedia" rel="noopener">Beijing</a></span></span><span class="dish-term-native">酱<span class="dish-term-translated">sauce</span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('京酱肉丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Jingjiang Rousi</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Jingjiang Rousi</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Shredded pork in sweet bean sauce, often with pancakes</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">219:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('京酱肉丝')">
@@ -425,18 +466,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼香<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鱼香肉丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Yuxiang Shredded Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yuxiang Shredded Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Shredded pork in a spicy garlic sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">189:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鱼香肉丝')">
@@ -445,19 +489,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">小<span class="dish-term-translated">small</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('小炒肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sautéed Pork</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sautéed Pork</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">179:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('小炒肉')">🖼️
                                     🔎</button>
                             </td>
@@ -465,18 +511,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">回锅<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Twice-cooked_pork" target="wikipedia" rel="noopener">twice-cooked</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('回锅肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Twice_cooked_pork"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Twice-Cooked Pork</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Twice-Cooked Pork</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Twice_cooked_pork', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Pork stir-fried with vegetables and spices</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">189:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('回锅肉')">
@@ -497,18 +546,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">宫保<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Kung_Pao_chicken" target="wikipedia" rel="noopener">kung pao</a></span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span><span class="dish-term-native">丁<span class="dish-term-translated">diced</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('宫保鸡丁', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Kung_Pao_chicken"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Kung Pao Chicken</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Kung Pao Chicken</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Spicy chicken stir-fry with peanuts and chili peppers</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">189:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('宫保鸡丁')">
@@ -517,18 +569,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">辣子<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('辣子鸡', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Laziji"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Laziji</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Laziji</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Sichuan deep-fried chicken with peppercorns and chilies</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">199:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('辣子鸡')">
@@ -562,19 +617,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅大虾', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Griddle Prawns</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Griddle Prawns</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">219:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干锅大虾')">🖼️
                                     🔎</button>
                             </td>
@@ -582,19 +639,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span><span class="dish-term-native">杂<span class="dish-term-translated">mixed</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅鸡杂', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Griddle Chicken Offal</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Griddle Chicken Offal</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">189:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干锅鸡杂')">🖼️
                                     🔎</button>
                             </td>
@@ -602,19 +661,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干<span class="dish-term-translated">dry</span></span><span class="dish-term-native">锅<span class="dish-term-translated">pot</span></span><span class="dish-term-native">肥肠<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Offal#China" target="wikipedia" rel="noopener">pork intestine</a></span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干锅肥肠', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Griddle Pork Intestines</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Griddle Pork Intestines</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Spicy stir-fried pork intestines with vegetables in a dry pot</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">239:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干锅肥肠')">🖼️
                                     🔎</button>
                             </td>
@@ -622,19 +683,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸<span class="dish-term-translated">sour</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸汤牛肉', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sliced Beef in Sour Soup</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sliced Beef in Sour Soup</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">279:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸汤牛肉')">🖼️
                                     🔎</button>
                             </td>
@@ -642,18 +705,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">毛</span><span class="dish-term-native">血</span><span class="dish-term-native">旺</span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('毛血旺', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Maoxuewang</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Maoxuewang</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Spicy Sichuan broth with pig blood curd, tripe, and vegetables</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">359:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('毛血旺')">
@@ -674,18 +740,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻婆<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mapo_tofu" target="wikipedia" rel="noopener">mapo</a></span></span><span class="dish-term-native">豆腐<span class="dish-term-translated">tofu</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Mapo_tofu"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Mapo Tofu</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Mapo Tofu</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Spicy Sichuan tofu with minced meat in bean sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">129:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('麻婆豆腐')">
@@ -694,19 +763,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干煸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry stir-fried</a></span></span><span class="dish-term-native">豆<span class="dish-term-translated">bean</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('干煸豆角', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Dry-Fried Green Beans</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Dry-Fried Green Beans</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">159:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('干煸豆角')">🖼️
                                     🔎</button>
                             </td>
@@ -714,18 +785,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼香<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="dish-term-native">茄子<span class="dish-term-translated">eggplant</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('鱼香茄子', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Yuxiang"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Yuxiang Eggplant</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Yuxiang Eggplant</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Eggplant in a spicy garlic sauce</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">159:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/128px-Yuxiangqiezi.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('鱼香茄子')">
@@ -734,18 +808,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">西<span class="dish-term-translated">western</span></span><span class="dish-term-native">红<span class="dish-term-translated">red</span></span><span class="dish-term-native">柿</span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('西红柿炒鸡蛋', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Stir-Fried Tomato and Scrambled Eggs</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Stir-Fried Tomato and Scrambled Eggs</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Tomatoes and scrambled eggs, stir-fried together</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">139:-</span>
-                            </td>
+
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG/128px-%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG" alt="Dish Image"
                                     onclick="openGoogleImageSearch('西红柿炒鸡蛋')">
@@ -754,19 +831,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="dish-term-native">土豆<span class="dish-term-translated">potato</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('酸辣土豆丝', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Hot and Sour Shredded Potatoes</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Hot and Sour Shredded Potatoes</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                     <span class="menu-item-description">Stir-fried julienned potatoes in spicy, tangy seasoning</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">129:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('酸辣土豆丝')">🖼️
                                     🔎</button>
                             </td>
@@ -774,19 +853,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">时蔬<span class="dish-term-translated">seasonal vegetables</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('炒时蔬', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <span class="menu-item-name menu-item-name-secondary">Sautéed Seasonal Vegetable</span>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Sautéed Seasonal Vegetable</span>
+
+
+
                                 </div>
 
                                 <div class="menu-item-description">
+
                                 </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">149:-</span>
-                            </td>
                             <td class="menu-table-image-column">
-                                <button aria-label="Image Search" type="button" class="btn-googleimage"
+                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
                                     onclick="openGoogleImageSearch('炒时蔬')">🖼️
                                     🔎</button>
                             </td>
@@ -806,20 +887,21 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <tr>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name">
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">担</span><span class="dish-term-native">担</span><span class="dish-term-native">面<span class="dish-term-translated">noodle</span></span></span>
-                                    <button aria-label="Speak" class="btn-speak"
+                                    <button aria-label="Speak" class="btn btn-light btn-speak"
                                         onclick="speakText('担担面', 'zh-Hans')">🗣️</button>
- <span class="menu-item-divider">/</span> <a class="menu-item-wikipedia-link" href="https://en.wikipedia.org/wiki/Dandan_noodles"
-                                        target="_blank" rel="noopener"><span class="menu-item-name menu-item-name-secondary">Dandan Noodles</span></a>
+                                    <br>
+
+                                    <span class="menu-item-name menu-item-name-secondary">Dandan Noodles</span>
+
+                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
+                                        onclick="openLink('https://en.wikipedia.org/wiki/Dandan_noodles', 'wikipedia')">W</button>
+
+
                                 </div>
 
                                 <div class="menu-item-description">
-                                    <span class="menu-item-description">Spicy Sichuan noodles with minced pork and peanuts</span>                                </div>                            </td>
-                            <td class="menu-table-price-column">
-                                <span class="menu-item-price">129:-</span><br>
-                                <span class="menu-item-price-note">(1份 / 1 serving)</span>
 
-                            </td>
+                                </div>                            </td>
                             <td class="menu-table-image-column">
                                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg" alt="Dish Image"
                                     onclick="openGoogleImageSearch('担担面')">
