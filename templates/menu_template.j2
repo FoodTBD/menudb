@@ -97,14 +97,14 @@
                                         onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</button>
                                     <br>
                                     {% else %}
-                                    <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
-                                        styled_text_format }}</span>
-
                                     {% set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] %}
                                     {% if wikipedia_url %}
                                     <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
                                         onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button>
                                     {% endif %}
+
+                                    <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                        styled_text_format }}</span>
                                     {% endif %}
 
                                     {% if not loop.first and not loop.last %} <span class="menu-item-divider">/</span>
