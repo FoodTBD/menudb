@@ -217,11 +217,17 @@ def generate_menu_html(
                         f"{key}"
                         f'<span class="dish-term-translated">'
                     )
-                    wikipedia_url_en = known_terms_dict[key]["wikipedia_url_en"]
-                    if wikipedia_url_en:
-                        annotated_html += f'<a href="{wikipedia_url_en}" target="wikipedia" rel="noopener">'
+                    wikipedia_url = known_terms_dict[key]["wikipedia_url"]
+                    if wikipedia_url:
+                        o = urllib.parse.urlparse(wikipedia_url)
+                        if not o.hostname.startswith("en."):
+                            wikipedia_url = (
+                                "https://translate.google.com/translate?sl=auto&tl=en&u="
+                                + wikipedia_url
+                            )
+                        annotated_html += f'<a href="{wikipedia_url}" target="wikipedia" rel="noopener">'
                     annotated_html += f"{known_terms_dict[key]['en']}"
-                    if wikipedia_url_en:
+                    if wikipedia_url:
                         annotated_html += f"</a>"
                     annotated_html += "</span>"
                     annotated_html += "</span>"

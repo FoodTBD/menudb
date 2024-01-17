@@ -10,6 +10,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <style>
+        .dishes-table-image-column {
+            padding-left: 0 !important;
+        }
+
         .dishes-table-image-column img {
             width: 128px;
             height: 128px;
@@ -17,7 +21,6 @@
         }
 
         .dishes-table-menuaction-column {
-            padding-left: 0 !important;
             padding-right: 0 !important;
             text-align: right;
         }
@@ -44,6 +47,13 @@
         .dish-foundin-menus-div {
             font-size: x-small;
             color: #6c757d;
+        }
+
+        .btn-menuaction {
+            width: 100%;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -106,11 +116,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蚂蚁上树', 'zh')">🗣️</button>
+                            onclick="speakText('蚂蚁上树', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Ants_climbing_a_tree', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Ants_climbing_a_tree', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -134,11 +144,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛肉面', 'zh')">🗣️</button>
+                            onclick="speakText('牛肉面', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Beef_noodle_soup', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Beef_noodle_soup', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -162,11 +172,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('西蘭花牛肉', 'zh')">🗣️</button>
+                            onclick="speakText('西蘭花牛肉', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Beef_and_broccoli', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Beef_and_broccoli', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -190,7 +200,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('沸腾鱼', 'zh')">🗣️</button>
+                            onclick="speakText('沸腾鱼', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -216,11 +226,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('腰果雞丁', 'zh')">🗣️</button>
+                            onclick="speakText('腰果雞丁', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Cashew_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Cashew_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -244,7 +254,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('凉拌黄瓜', 'zh')">🗣️</button>
+                            onclick="speakText('凉拌黄瓜', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -270,7 +280,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('孜然羊肉', 'zh')">🗣️</button>
+                            onclick="speakText('孜然羊肉', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -296,11 +306,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('担担面', 'zh')">🗣️</button>
+                            onclick="speakText('担担面', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Dandan_noodles', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Dandan_noodles', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -324,11 +334,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('干锅鸡', 'zh')">🗣️</button>
+                            onclick="speakText('干锅鸡', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Dry_pot_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Dry_pot_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -352,7 +362,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('干锅肥肠', 'zh')">🗣️</button>
+                            onclick="speakText('干锅肥肠', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -373,12 +383,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('生滾魚片粥', 'zh')">🗣️</button>
+                            onclick="speakText('生滾魚片粥', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -399,16 +409,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('夫妻肺片', 'zh')">🗣️</button>
+                            onclick="speakText('夫妻肺片', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_Feipian', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_Feipian', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -432,7 +442,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蒜泥黄瓜', 'zh')">🗣️</button>
+                            onclick="speakText('蒜泥黄瓜', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -458,11 +468,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('左宗棠雞', 'zh')">🗣️</button>
+                            onclick="speakText('左宗棠雞', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/General_Tso%27s_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/General_Tso%27s_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -481,12 +491,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('家常豆腐', 'zh')">🗣️</button>
+                            onclick="speakText('家常豆腐', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -507,16 +517,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('酸辣汤', 'zh')">🗣️</button>
+                            onclick="speakText('酸辣汤', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Hot_and_sour_soup', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Hot_and_sour_soup', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -540,11 +550,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('海草', 'zh')">🗣️</button>
+                            onclick="speakText('海草', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Wakame#Cuisine', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Wakame#Cuisine', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -568,11 +578,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('饺子', 'zh')">🗣️</button>
+                            onclick="speakText('饺子', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -591,16 +601,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('京酱肉丝', 'zh')">🗣️</button>
+                            onclick="speakText('京酱肉丝', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -619,16 +629,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('宫保鸡丁', 'zh')">🗣️</button>
+                            onclick="speakText('宫保鸡丁', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -647,16 +657,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('辣子鸡', 'zh')">🗣️</button>
+                            onclick="speakText('辣子鸡', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -680,11 +690,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('柠檬鸡', 'zh')">🗣️</button>
+                            onclick="speakText('柠檬鸡', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Lemon_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Lemon_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -708,11 +718,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('毛血旺', 'zh')">🗣️</button>
+                            onclick="speakText('毛血旺', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -731,16 +741,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('麻婆豆腐', 'zh')">🗣️</button>
+                            onclick="speakText('麻婆豆腐', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -764,7 +774,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('香拌牛肉', 'zh')">🗣️</button>
+                            onclick="speakText('香拌牛肉', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -785,16 +795,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蒙古牛肉', 'zh')">🗣️</button>
+                            onclick="speakText('蒙古牛肉', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Mongolian_beef', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Mongolian_beef', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -818,11 +828,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('木须肉', 'zh')">🗣️</button>
+                            onclick="speakText('木须肉', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Moo_shu_pork', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Moo_shu_pork', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -846,7 +856,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('口水鸡', 'zh')">🗣️</button>
+                            onclick="speakText('口水鸡', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -872,11 +882,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('陈皮鸡', 'zh')">🗣️</button>
+                            onclick="speakText('陈皮鸡', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Orange_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Orange_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -900,11 +910,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('煎饺', 'zh')">🗣️</button>
+                            onclick="speakText('煎饺', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi#Types', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi#Types', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -928,11 +938,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('北京烤鸭', 'zh')">🗣️</button>
+                            onclick="speakText('北京烤鸭', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Peking_duck', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Peking_duck', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -956,7 +966,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('山椒木耳', 'zh')">🗣️</button>
+                            onclick="speakText('山椒木耳', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -982,7 +992,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('红油肚丝', 'zh')">🗣️</button>
+                            onclick="speakText('红油肚丝', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1003,16 +1013,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('锅贴', 'zh')">🗣️</button>
+                            onclick="speakText('锅贴', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi#Potstickers', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Jiaozi#Potstickers', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1036,7 +1046,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('茄汁大虾', 'zh')">🗣️</button>
+                            onclick="speakText('茄汁大虾', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1062,11 +1072,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('红烧排骨', 'zh')">🗣️</button>
+                            onclick="speakText('红烧排骨', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Red_cooking', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Red_cooking', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1085,16 +1095,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('红烧豆腐', 'zh')">🗣️</button>
+                            onclick="speakText('红烧豆腐', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Red_cooking', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Red_cooking', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1113,12 +1123,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('金沙南瓜', 'zh')">🗣️</button>
+                            onclick="speakText('金沙南瓜', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1144,11 +1154,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('葱油花卷', 'zh')">🗣️</button>
+                            onclick="speakText('葱油花卷', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Mandarin_roll', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Mandarin_roll', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1172,7 +1182,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('海鮮鍋巴湯', 'zh')">🗣️</button>
+                            onclick="speakText('海鮮鍋巴湯', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1198,11 +1208,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('上海炒年糕', 'zh')">🗣️</button>
+                            onclick="speakText('上海炒年糕', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1226,7 +1236,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('上海粗炒面', 'zh')">🗣️</button>
+                            onclick="speakText('上海粗炒面', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1247,16 +1257,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('水煮牛肉', 'zh')">🗣️</button>
+                            onclick="speakText('水煮牛肉', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1275,16 +1285,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('水煮鱼', 'zh')">🗣️</button>
+                            onclick="speakText('水煮鱼', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1308,11 +1318,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('宋嫂鱼羹', 'zh')">🗣️</button>
+                            onclick="speakText('宋嫂鱼羹', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1336,7 +1346,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('铁板牛肉', 'zh')">🗣️</button>
+                            onclick="speakText('铁板牛肉', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1362,7 +1372,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蒜泥白肉', 'zh')">🗣️</button>
+                            onclick="speakText('蒜泥白肉', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1388,7 +1398,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('香辣大虾', 'zh')">🗣️</button>
+                            onclick="speakText('香辣大虾', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1414,7 +1424,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('川香椒麻鱼', 'zh')">🗣️</button>
+                            onclick="speakText('川香椒麻鱼', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1440,11 +1450,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('泡椒凤爪', 'zh')">🗣️</button>
+                            onclick="speakText('泡椒凤爪', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1463,12 +1473,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('酸辣土豆丝', 'zh')">🗣️</button>
+                            onclick="speakText('酸辣土豆丝', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1494,7 +1504,7 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('清蒸比目', 'zh')">🗣️</button>
+                            onclick="speakText('清蒸比目', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1520,11 +1530,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('米饭', 'zh')">🗣️</button>
+                            onclick="speakText('米饭', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/White_rice', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/White_rice', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1543,12 +1553,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('清炒时蔬', 'zh')">🗣️</button>
+                            onclick="speakText('清炒时蔬', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1574,11 +1584,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('番茄炒蛋', 'zh')">🗣️</button>
+                            onclick="speakText('番茄炒蛋', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1597,12 +1607,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('酸菜鱼', 'zh')">🗣️</button>
+                            onclick="speakText('酸菜鱼', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1628,11 +1638,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('章魚燒', 'zh')">🗣️</button>
+                            onclick="speakText('章魚燒', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Takoyaki', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Takoyaki', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1656,11 +1666,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('汤圆', 'zh')">🗣️</button>
+                            onclick="speakText('汤圆', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Tangyuan_(food)', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Tangyuan_(food)', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1684,11 +1694,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('樟茶鸭', 'zh')">🗣️</button>
+                            onclick="speakText('樟茶鸭', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Zhangcha_duck', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Zhangcha_duck', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1712,11 +1722,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('回锅肉', 'zh')">🗣️</button>
+                            onclick="speakText('回锅肉', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Twice_cooked_pork', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Twice_cooked_pork', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1735,12 +1745,12 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('西湖牛肉羹', 'zh')">🗣️</button>
+                            onclick="speakText('西湖牛肉羹', 'zh')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1766,11 +1776,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('小笼包', 'zh')">🗣️</button>
+                            onclick="speakText('小笼包', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Xiaolongbao', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Xiaolongbao', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1789,16 +1799,16 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('鱼香茄子', 'zh')">🗣️</button>
+                            onclick="speakText('鱼香茄子', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1822,11 +1832,11 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('鱼香肉丝', 'zh')">🗣️</button>
+                            onclick="speakText('鱼香肉丝', 'zh')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
             </tbody>
             <thead>
@@ -1860,9 +1870,9 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛腩煲', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('牛腩煲', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛腩煲', 'zh-CN')">🗣️</button>
+                            onclick="speakText('牛腩煲', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -1883,18 +1893,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('干炒牛河', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('干炒牛河', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('干炒牛河', 'zh-CN')">🗣️</button>
+                            onclick="speakText('干炒牛河', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Beef_chow_fun', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Beef_chow_fun', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1913,18 +1923,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛肉腸粉', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('牛肉腸粉', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛肉腸粉', 'zh-CN')">🗣️</button>
+                            onclick="speakText('牛肉腸粉', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1943,18 +1953,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('凤爪', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('凤爪', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('凤爪', 'zh-CN')">🗣️</button>
+                            onclick="speakText('凤爪', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -1978,13 +1988,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('罗汉斋', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('罗汉斋', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('罗汉斋', 'zh-CN')">🗣️</button>
+                            onclick="speakText('罗汉斋', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Buddha%27s_delight', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Buddha%27s_delight', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2008,13 +2018,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('皮蛋瘦肉粥', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('皮蛋瘦肉粥', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('皮蛋瘦肉粥', 'zh-CN')">🗣️</button>
+                            onclick="speakText('皮蛋瘦肉粥', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Century_egg', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Century_egg', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2033,18 +2043,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('叉烧包', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('叉烧包', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('叉烧包', 'zh-CN')">🗣️</button>
+                            onclick="speakText('叉烧包', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2068,13 +2078,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('叉烧', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('叉烧', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('叉烧', 'zh-CN')">🗣️</button>
+                            onclick="speakText('叉烧', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Char_siu', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Char_siu', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2098,13 +2108,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蠔油菜心', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('蠔油菜心', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蠔油菜心', 'zh-CN')">🗣️</button>
+                            onclick="speakText('蠔油菜心', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Choy_sum', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Choy_sum', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2128,13 +2138,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('招牌炒面', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('招牌炒面', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('招牌炒面', 'zh-CN')">🗣️</button>
+                            onclick="speakText('招牌炒面', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2158,13 +2168,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('粥', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('粥', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('粥', 'zh-CN')">🗣️</button>
+                            onclick="speakText('粥', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Congee#China', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Congee#China', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2188,13 +2198,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('炸子鸡', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('炸子鸡', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('炸子鸡', 'zh-CN')">🗣️</button>
+                            onclick="speakText('炸子鸡', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Crispy_fried_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Crispy_fried_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2218,13 +2228,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('瑤柱蛋白炒飯', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('瑤柱蛋白炒飯', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('瑤柱蛋白炒飯', 'zh-CN')">🗣️</button>
+                            onclick="speakText('瑤柱蛋白炒飯', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Conpoy', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Conpoy', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2248,13 +2258,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('醉鸡', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('醉鸡', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('醉鸡', 'zh-CN')">🗣️</button>
+                            onclick="speakText('醉鸡', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Drunken_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Drunken_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2278,13 +2288,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蛋挞', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('蛋挞', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蛋挞', 'zh-CN')">🗣️</button>
+                            onclick="speakText('蛋挞', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2308,13 +2318,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蠔油芥蘭', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('蠔油芥蘭', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蠔油芥蘭', 'zh-CN')">🗣️</button>
+                            onclick="speakText('蠔油芥蘭', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Gai_lan', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Gai_lan', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2333,18 +2343,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('咸水角', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('咸水角', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('咸水角', 'zh-CN')">🗣️</button>
+                            onclick="speakText('咸水角', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Dim_sum#Dumplings', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Dim_sum#Dumplings', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2363,18 +2373,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('虾饺', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('虾饺', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('虾饺', 'zh-CN')">🗣️</button>
+                            onclick="speakText('虾饺', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Har_gow', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Har_gow', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2398,13 +2408,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('福建炒飯', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('福建炒飯', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('福建炒飯', 'zh-CN')">🗣️</button>
+                            onclick="speakText('福建炒飯', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Hokkien_fried_rice', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Hokkien_fried_rice', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2423,18 +2433,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('芝麻球', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('芝麻球', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('芝麻球', 'zh-CN')">🗣️</button>
+                            onclick="speakText('芝麻球', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Jian_dui', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Jian_dui', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2453,18 +2463,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('糯米鸡', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('糯米鸡', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('糯米鸡', 'zh-CN')">🗣️</button>
+                            onclick="speakText('糯米鸡', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Lo_mai_gai', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Lo_mai_gai', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2488,13 +2498,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('捞面', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('捞面', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('捞面', 'zh-CN')">🗣️</button>
+                            onclick="speakText('捞面', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Lo_mein', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Lo_mein', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2518,13 +2528,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('馬拉糕', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('馬拉糕', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('馬拉糕', 'zh-CN')">🗣️</button>
+                            onclick="speakText('馬拉糕', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Malay_sponge_cake', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Malay_sponge_cake', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2548,13 +2558,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('芒果布丁', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('芒果布丁', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('芒果布丁', 'zh-CN')">🗣️</button>
+                            onclick="speakText('芒果布丁', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Mango_pudding', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Mango_pudding', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2578,13 +2588,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛脷酥', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('牛脷酥', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('牛脷酥', 'zh-CN')">🗣️</button>
+                            onclick="speakText('牛脷酥', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Ox-tongue_pastry', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Ox-tongue_pastry', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2603,18 +2613,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('肉丝炒面', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('肉丝炒面', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('肉丝炒面', 'zh-CN')">🗣️</button>
+                            onclick="speakText('肉丝炒面', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2638,13 +2648,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('红豆糕', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('红豆糕', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('红豆糕', 'zh-CN')">🗣️</button>
+                            onclick="speakText('红豆糕', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Red_bean_cake', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Red_bean_cake', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2663,18 +2673,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('肠粉', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('肠粉', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('肠粉', 'zh-CN')">🗣️</button>
+                            onclick="speakText('肠粉', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2693,14 +2703,14 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('广东烧鸭', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('广东烧鸭', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('广东烧鸭', 'zh-CN')">🗣️</button>
+                            onclick="speakText('广东烧鸭', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -2726,13 +2736,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('沙翁', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('沙翁', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('沙翁', 'zh-CN')">🗣️</button>
+                            onclick="speakText('沙翁', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Sata_andagi', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Sata_andagi', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2756,9 +2766,9 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('椒盐鱼片', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('椒盐鱼片', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('椒盐鱼片', 'zh-CN')">🗣️</button>
+                            onclick="speakText('椒盐鱼片', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -2784,9 +2794,9 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('椒盐排骨', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('椒盐排骨', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('椒盐排骨', 'zh-CN')">🗣️</button>
+                            onclick="speakText('椒盐排骨', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -2812,9 +2822,9 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('椒盐鱿鱼', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('椒盐鱿鱼', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('椒盐鱿鱼', 'zh-CN')">🗣️</button>
+                            onclick="speakText('椒盐鱿鱼', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -2840,13 +2850,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('咸蛋瘦肉粥', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('咸蛋瘦肉粥', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('咸蛋瘦肉粥', 'zh-CN')">🗣️</button>
+                            onclick="speakText('咸蛋瘦肉粥', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Salted_duck_egg', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Salted_duck_egg', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2865,14 +2875,14 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('龙虾角', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('龙虾角', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('龙虾角', 'zh-CN')">🗣️</button>
+                            onclick="speakText('龙虾角', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -2893,18 +2903,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蝦腸', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('蝦腸', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蝦腸', 'zh-CN')">🗣️</button>
+                            onclick="speakText('蝦腸', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2923,18 +2933,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('烧卖', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('烧卖', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('烧卖', 'zh-CN')">🗣️</button>
+                            onclick="speakText('烧卖', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Shumai', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Shumai', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2953,18 +2963,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('星州炒米', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('星州炒米', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('星州炒米', 'zh-CN')">🗣️</button>
+                            onclick="speakText('星州炒米', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Singapore-style_noodles', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Singapore-style_noodles', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -2988,13 +2998,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('豉油鸡', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('豉油鸡', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('豉油鸡', 'zh-CN')">🗣️</button>
+                            onclick="speakText('豉油鸡', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Soy_sauce_chicken', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Soy_sauce_chicken', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3013,14 +3023,14 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('豉油皇炒麵', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('豉油皇炒麵', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('豉油皇炒麵', 'zh-CN')">🗣️</button>
+                            onclick="speakText('豉油皇炒麵', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -3041,18 +3051,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('排骨', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('排骨', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('排骨', 'zh-CN')">🗣️</button>
+                            onclick="speakText('排骨', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Spare_ribs#Asia', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Spare_ribs#Asia', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3071,18 +3081,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('春卷', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('春卷', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('春卷', 'zh-CN')">🗣️</button>
+                            onclick="speakText('春卷', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Spring_roll#East_Asia', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Spring_roll#East_Asia', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3106,13 +3116,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蜜汁叉烧包', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('蜜汁叉烧包', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蜜汁叉烧包', 'zh-CN')">🗣️</button>
+                            onclick="speakText('蜜汁叉烧包', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3131,14 +3141,14 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('奶黄包', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('奶黄包', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('奶黄包', 'zh-CN')">🗣️</button>
+                            onclick="speakText('奶黄包', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -3164,9 +3174,9 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('流沙包', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('流沙包', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('流沙包', 'zh-CN')">🗣️</button>
+                            onclick="speakText('流沙包', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -3187,18 +3197,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('山竹牛肉丸', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('山竹牛肉丸', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('山竹牛肉丸', 'zh-CN')">🗣️</button>
+                            onclick="speakText('山竹牛肉丸', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Steamed_meatball', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Steamed_meatball', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3222,9 +3232,9 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('糯米饭', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('糯米饭', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('糯米饭', 'zh-CN')">🗣️</button>
+                            onclick="speakText('糯米饭', 'zh-CN')">🗣️</button><br>
 
                     </td>
                 </tr>
@@ -3250,13 +3260,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('咕噜肉', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('咕噜肉', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('咕噜肉', 'zh-CN')">🗣️</button>
+                            onclick="speakText('咕噜肉', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Sweet_and_sour#Chinese_cuisine', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Sweet_and_sour#Chinese_cuisine', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3280,13 +3290,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('糖醋排骨', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('糖醋排骨', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('糖醋排骨', 'zh-CN')">🗣️</button>
+                            onclick="speakText('糖醋排骨', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3305,18 +3315,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('芋头角', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('芋头角', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('芋头角', 'zh-CN')">🗣️</button>
+                            onclick="speakText('芋头角', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Taro_dumpling', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Taro_dumpling', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3335,18 +3345,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('鲜竹卷', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('鲜竹卷', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('鲜竹卷', 'zh-CN')">🗣️</button>
+                            onclick="speakText('鲜竹卷', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3370,13 +3380,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('皮蛋豆腐', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('皮蛋豆腐', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('皮蛋豆腐', 'zh-CN')">🗣️</button>
+                            onclick="speakText('皮蛋豆腐', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Century_egg', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Century_egg', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3395,18 +3405,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('萝卜糕', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('萝卜糕', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('萝卜糕', 'zh-CN')">🗣️</button>
+                            onclick="speakText('萝卜糕', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Turnip_cake', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Turnip_cake', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3430,13 +3440,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('核桃明蝦球', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('核桃明蝦球', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('核桃明蝦球', 'zh-CN')">🗣️</button>
+                            onclick="speakText('核桃明蝦球', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Honey_walnut_shrimp', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Honey_walnut_shrimp', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3460,13 +3470,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('白雲鳳爪', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('白雲鳳爪', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('白雲鳳爪', 'zh-CN')">🗣️</button>
+                            onclick="speakText('白雲鳳爪', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Chicken_feet#China', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3490,13 +3500,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('馄饨面汤', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('馄饨面汤', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('馄饨面汤', 'zh-CN')">🗣️</button>
+                            onclick="speakText('馄饨面汤', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Wonton_noodles', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Wonton_noodles', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3520,13 +3530,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('云吞汤', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('云吞汤', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('云吞汤', 'zh-CN')">🗣️</button>
+                            onclick="speakText('云吞汤', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Wonton', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Wonton', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3550,13 +3560,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('XO醬海鮮炒飯', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('XO醬海鮮炒飯', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('XO醬海鮮炒飯', 'zh-CN')">🗣️</button>
+                            onclick="speakText('XO醬海鮮炒飯', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/XO_sauce', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/XO_sauce', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3575,18 +3585,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('扬州炒饭', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('扬州炒饭', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('扬州炒饭', 'zh-CN')">🗣️</button>
+                            onclick="speakText('扬州炒饭', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Yangzhou_fried_rice', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Yangzhou_fried_rice', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3610,13 +3620,13 @@
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('伊麵', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('伊麵', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('伊麵', 'zh-CN')">🗣️</button>
+                            onclick="speakText('伊麵', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Yi_mein', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Yi_mein', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3635,18 +3645,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('油条', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('油条', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('油条', 'zh-CN')">🗣️</button>
+                            onclick="speakText('油条', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Youtiao', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Youtiao', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
                 <!-- Dish -->
                 <tr>
@@ -3665,18 +3675,18 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('炸两', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('炸两', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('炸两', 'zh-CN')">🗣️</button>
+                            onclick="speakText('炸两', 'zh-CN')">🗣️</button><br>
 
-<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Zhaliang', 'wikipedia')">W</button>                    </td>
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Zhaliang', 'wikipedia')">W</button><br>
+                    </td>
                 </tr>
             </tbody>
         </table>
