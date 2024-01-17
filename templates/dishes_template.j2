@@ -10,6 +10,10 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <style>
+        .dishes-table-image-column {
+            padding-left: 0 !important;
+        }
+
         .dishes-table-image-column img {
             width: 128px;
             height: 128px;
@@ -17,7 +21,6 @@
         }
 
         .dishes-table-menuaction-column {
-            padding-left: 0 !important;
             padding-right: 0 !important;
             text-align: right;
         }
@@ -44,6 +47,13 @@
         .dish-foundin-menus-div {
             font-size: x-small;
             color: #6c757d;
+        }
+
+        .btn-menuaction {
+            width: 100%;
+            padding-left: 0.1rem;
+            padding-right: 0.1rem;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -122,18 +132,19 @@
                     <td class="dishes-table-menuaction-column">
                         {% if locale_dish_group.locale_code == 'zh-u-sd-cngd' %}
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', 'zh-HK')">🗣️粵</button>
+                            onclick="speakText('{{ primary_name_native }}', 'zh-HK')">🗣️粵</button><br>
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', 'zh-CN')">🗣️</button>
+                            onclick="speakText('{{ primary_name_native }}', 'zh-CN')">🗣️</button><br>
                         {% else %}
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', '{{ item['locale_code'] }}')">🗣️</button>
+                            onclick="speakText('{{ primary_name_native }}', '{{ item['locale_code'] }}')">🗣️</button><br>
                         {% endif %}
 
                         {% set wikipedia_url = item['wikipedia_url_en'] %}
-                        {% if wikipedia_url %}<button aria-label="Open Wikipedia"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button>{% endif %}
+                        {% if wikipedia_url %}
+                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button><br>
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor %}

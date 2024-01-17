@@ -10,17 +10,23 @@
     color: white;
 }
 
-.btn-primary {
-    background-color: crimson;
-}
-
-.btn-primary {
+.btn-primary,
+.btn-primary:hover {
     background-color: crimson;
     border-color: crimson;
 }
 
+.btn-primary:active:hover {
+    background-color: red;
+    border-color: red;
+}
+
 a {
     color: crimson;
+}
+
+a:active:hover {
+    color: red;
 }
 
 .btn-menuaction {
