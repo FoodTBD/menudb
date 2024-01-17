@@ -47,22 +47,22 @@ menu:
           menu_items:
             - "name_zh-Hant": 鮮蝦腸粉
               "name_en": Shrimp Rolls
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 叉燒腸粉
               "name_en": Barbecue Pork Rolls
               price: 60:-
             - "name_zh-Hant": 蝦米腸粉
               "name_en": Dried Shrimp Rolls
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 混酱腸粉
               "name_en": Mixed Sauce & Sesame Rolls
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
             - "name_zh-Hant": 炸兩腸粉
               "name_en": Deep-Fried Dough Stick Rolls
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
+              wikipedia_url: https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine
               price: 60:-
         - "name_zh-Hant": 煎/炸類
           "name_en": Fried/Deep-Fried

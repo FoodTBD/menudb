@@ -983,7 +983,7 @@ menu:
           "name_en": Seafood
           menu_items:
             - item_number: F15
-              "name_zh-Hant": 密豆炒斑球
+              "name_zh-Hant": 密豆炒斑球  # [sic] Not sure about 1st char, doesn't seem to be 蜜豆 either
               "name_en": Sauteed Filet of Sole with Sweet Peas
             - item_number: F16
               "name_zh-Hant": 九層塔豉椒炒蜆
@@ -1038,7 +1038,7 @@ menu:
               "name_en": Szechuan Chicken
               spice_heat_level: 1
             - item_number: G02
-              "name_zh-Hant": 重度辣子雞
+              "name_zh-Hant": 重慶辣子雞
               "name_en": Chongqing Spicy Chicken
               spice_heat_level: 1
             - item_number: G03
@@ -1172,8 +1172,54 @@ menu:
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipMrmbWqXj8XJbRJNUQ2oX41wZjr_rIaU-crFRIX=s856-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192917515%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 健康美食
           "name_en": Vegetables and Tofu
+          menu_items:
+            - item_number: K01
+              "name_zh-Hant": 高湯浸時蔬
+              "name_en": Seasonal Vegetables in Supreme Broth
+            - item_number: K02
+              "name_zh-Hant": 家鄉腿皮玉子豆腐
+              "name_en": Crispy Egg Tofu with Shredded Pork and Chinese Pickle
+            - item_number: K03
+              "name_zh-Hant": 紅燒豆腐
+              "name_en": Braised Tofu with Mushroom and Vegetables
+            - item_number: K04
+              "name_zh-Hant": 百花蒸釀豆腐
+              "name_en": Steamed Stuffed Bean Curd with Prawns
+            - item_number: K05
+              "name_zh-Hant": 蠔油芥蘭
+              "name_en": Steamed Chinese Broccoli with Oyster Sauce
+            - item_number: K06
+              "name_zh-Hant": 靈芝菇扒菜膽
+              "name_en": Braised Reishi Mushrooms on Mustard Greens
+            - item_number: K07
+              "name_zh-Hant": 上湯金銀蛋菠菜
+              "name_en": Spinach with Two Kinds of Egg in Broth
+            - item_number: K08
+              "name_zh-Hant": 川味麻婆豆腐
+              "name_en": Ma Po Tofu Szechuan Style
+            - item_number: K09
+              "name_zh-Hant": 鼎湖羅漢上素
+              "name_en": Mixed Vegetables Deluxe
+            - item_number: K10
+              "name_zh-Hant": 干煸四季豆
+              "name_en": Dried Pan Fried String Beans with Minced Pork in Hot Sauce
+            - item_number: K11
+              "name_zh-Hant": 魚香茄子
+              "name_en": Eggplant with Minced Pork in Szechuan Garlic Sauce
+            - item_number: K12
+              "name_zh-Hant": 蒜子炒豆苗
+              "name_en": Sauteed Pea Sprout with Garlic
+            - item_number: K13
+              "name_zh-Hant": 上湯大豆苗
+              "name_en": Pea Sprout with Virginia Ham in Supreme Broth
+            - item_number: K14
+              "name_zh-Hant": 糖酒炒芥蘭
+              "name_en": Sauteed Chinese Broccoli in Wine Sauce
+            - item_number: K15
+              "name_zh-Hant": 什菌玉子豆腐豆苗
+              "name_en": Crispy Egg Tofu with Mushrooms and Pea Sprout
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192852015%20Large.jpeg
       sections:
         - "name_zh-Hant": 牛肉

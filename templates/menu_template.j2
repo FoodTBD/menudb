@@ -253,10 +253,10 @@
                                 <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('{{ item['name_' + primary_lang] }}', '{{ primary_lang }}')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url_*' -->
-                                {% if item['wikipedia_url_en'] %}
+                                <!-- Menu Item 'wikipedia_url' -->
+                                {% if item['wikipedia_url'] %}
                                 <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('{{ item['wikipedia_url_en'] }}', 'wikipedia')">W</button><br>
+                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')">W</button><br>
                                 {% endif %}
                             </td>
                         </tr>

@@ -97,14 +97,16 @@
                 </tr>
             </thead>
             <tbody>
-                {% for item in locale_dish_group.menu_items %}
-                <!-- Dish -->
+                {% for known_dish in locale_dish_group.dishes %}
+                <!-- Known Dish -->
                 <tr>
-                    {% set primary_name_native = item['name_native'].split(',')[0] %}
+                    <!-- Known Dish 'name_native' -->
+                    {% set primary_name_native = known_dish['name_native'].split(',')[0] %}
 
                     <td class="dishes-table-image-column">
-                        {% if item['image_url'] %}
-                        <img src="{{ item['image_url'] }}" alt="Dish Image"
+                        <!-- Known Dish 'image_url' -->
+                        {% if known_dish['image_url'] %}
+                        <img src="{{ known_dish['image_url'] }}" alt="Dish Image"
                             onclick="openGoogleImageSearch('{{ primary_name_native }}')">
                         {% else %}
                         <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
@@ -114,14 +116,18 @@
                     <td>
                         <div class="dish-name-div">
                             <span class="dish-name-primary">{{ primary_name_native }}</span><br>
-                            <span class="dish-name-secondary">{{ item.name_en }}</span>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">{{ known_dish.name_en }}</span>
                         </div>
                         <div class="dish-description-div">
-                            <span class="dish-description">{{ item.description_en }}</span>
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                {{ known_dish.description_en }}
+                            </span>
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                {% for menu_filename in item['_menu_filenames'] %}
+                                {% for menu_filename in known_dish['_menu_filenames'] %}
                                 <a href="{{ menu_filename }}">{{
                                     menu_filename_to_menu_yaml_dicts[menu_filename].restaurant.name
                                     }}</a>{% if not loop.last %}, {% endif %}
@@ -137,13 +143,13 @@
                             onclick="speakText('{{ primary_name_native }}', 'zh-CN')">🗣️</button><br>
                         {% else %}
                         <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', '{{ item['locale_code'] }}')">🗣️</button><br>
+                            onclick="speakText('{{ primary_name_native }}', '{{ known_dish['locale_code'] }}')">🗣️</button><br>
                         {% endif %}
 
-                        {% set wikipedia_url = item['wikipedia_url_en'] %}
-                        {% if wikipedia_url %}
+                        <!-- Known Dish 'wikipedia_url' -->
+                        {% if known_dish['wikipedia_url'] %}
                         <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button><br>
+                            onclick="openLink('{{ known_dish['wikipedia_url'] }}', 'wikipedia')">W</button><br>
                         {% endif %}
                     </td>
                 </tr>

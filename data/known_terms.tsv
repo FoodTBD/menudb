@@ -7,7 +7,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 什锦	什锦	assorted		
 什	什	assorted		
 鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy	(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
-丸	丸	ball		
 竹	竹	bamboo	https://en.wikipedia.org/wiki/Bamboo#Culinary	
 笼仔	籠仔	bamboo basket		
 包	包	bao	https://en.wikipedia.org/wiki/Baozi	
@@ -35,6 +34,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 扣肉	扣肉	braised pork		
 脯	脯	breast		
 西兰花	西蘭花	broccoli		
+西蓝花	西藍花	broccoli		
 炖	炖	broth		
 高汤	高湯	broth		
 上汤	上湯	broth		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E4%B8%8A%E6%B9%AF#Noun
@@ -66,6 +66,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 炒面	炒麵	chow mein	https://en.wikipedia.org/wiki/Chow_mein	
 油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
 菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum	
+球	球	chunk		
 香菜	香菜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	
 香茜	香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	Combo of standard 香 and (Cantonese) 茜
 	芫茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	(Cantonese) https://en.wiktionary.org/wiki/%E8%8A%AB%E8%8C%9C#Definitions
@@ -80,6 +81,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 粥	粥	congee	https://en.wikipedia.org/wiki/Congee	
 瑶柱	瑤柱	conpoy	https://en.wikipedia.org/wiki/Conpoy	
 煮	煮	cooked		
+虫草	蟲草	cordyceps	https://en.wikipedia.org/wiki/Cordyceps_militaris	
 芯	芯	core		
 玉米	玉米	corn		
 	粟米	corn		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%B2%9F%E7%B1%B3#Chinese
@@ -97,21 +99,24 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 鲮鱼	鯪魚	dace	https://en.wikipedia.org/wiki/Cirrhinus_molitorella	
 鲮鱼球	鯪魚球	dace fish ball	https://zh.wikipedia.org/wiki/%E9%AF%AA%E9%AD%9A%E7%90%83	
 大排档	大排檔	daipaidong	https://en.wikipedia.org/wiki/Dai_pai_dong	https://en.wiktionary.org/wiki/%E5%A4%A7%E6%8E%92%E6%AA%94#Chinese
+碧绿	碧綠	dark green		
 炸	炸	deep-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based	zhá
 鲜	鲜	delicacies	  	
 珍	珍	delicacy		
+露	露	dew		suggests a delicate, fragrant sauce or seasoning
 丁	丁	diced		
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried	
 淋	淋	drizzled		
 醉	醉	drunken	https://en.wikipedia.org/wiki/Drunken_chicken	
 干	乾	dry		
-干煸	乾煸	dry stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	gānbiān
+干煸	乾煸	dry-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	gānbiān
 鸭	鴨	duck		
 盒子	盒子	dumpling		lit. "box"
 饺	餃	dumpling	https://en.wikipedia.org/wiki/Jiaozi	
 角	角	dumpling		lit. "corner" or "angle," but in this context, it refers to a pastry or snack with a corner or triangular shape
 毛豆	毛豆	edamame	https://en.wikipedia.org/wiki/Edamame	
 蛋	蛋	egg		
+赛螃蟹	賽螃蟹	egg as crab meat	https://zh.wikipedia.org/wiki/%E8%B3%BD%E8%9E%83%E8%9F%B9	
 芙蓉蛋	芙蓉蛋	egg foo young	https://en.wikipedia.org/wiki/Egg_foo_young	
 蛋黄	蛋黃	egg yolk		
 茄子	茄子	eggplant		
@@ -126,7 +131,9 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 鱼	魚	fish		
 鱼	鱼	fish		
 鱼球	魚球	fish ball		
+斑球	斑球	fish chunks	https://zh.wikipedia.org/wiki/%E6%96%91%E7%90%83	
 鱼片	鱼片	fish fillet		
+鱼肚	魚肚	fish maw	https://en.wikipedia.org/wiki/Swim_bladder#Human_uses	
 五	五	five		
 爆	爆	flash-fried	https://en.wikipedia.org/wiki/Stir_frying#Bao_technique	bào
 爆炒	爆炒	flash-fried	https://en.wikipedia.org/wiki/Stir_frying#Bao_technique	bào chǎo
@@ -141,10 +148,13 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 炒饭	炒飯	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice	
 炒饭	炒饭	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice	
 福建	福建	Fujian	https://en.wikipedia.org/wiki/Fujian_cuisine	
+粉粿	粉粿	fun guo	https://en.wikipedia.org/wiki/Fun_guo	
+夫妻肺片	夫妻肺片	fuqi feipian	https://en.wikipedia.org/wiki/Fuqi_feipian	
 芥兰	芥蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan	
 兰	蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan	
 蒜	蒜	garlic		
 蒜子	蒜子	garlic		(Cantonese) https://en.wiktionary.org/wiki/%E8%92%9C%E5%AD%90
+左宗棠	左宗棠	General Tso’s	https://en.wikipedia.org/wiki/General_Tso%27s_chicken	
 姜	薑	ginger		
 金	金	golden		
 靓	靚	good		(Cantonese, dialectal Hakka, Pinghua) https://en.wiktionary.org/wiki/%E9%9D%9A#Definitions
@@ -208,6 +218,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 卤	卤	marinated	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Prolonged_immersion	
 拍	拍	mashed		pāi
 泥	泥	mashed		ní
+肉丸	肉丸	meatball		
 中	中	medium		
 梅菜	梅菜	meigan cai	https://en.wikipedia.org/wiki/Meigan_cai	
 瓜	瓜	melon		
@@ -243,10 +254,10 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 豆苗	豆苗	pea sprout	https://en.wikipedia.org/wiki/Pea#Pea_sprouts	
 青椒	青椒	pepper		
 椒	椒	pepper		
+凤眼饺	鳳眼餃	phoenix eye dumpling	https://zh.wikipedia.org/wiki/%E9%B3%B3%E7%9C%BC%E9%A4%83	
 泡	泡	pickled		
 雪菜	雪菜	pickled mustard	https://en.wikipedia.org/wiki/Pickled_mustard	
 泡菜	泡菜	pickled vegetables		
-球	球	piece		ChatGPT: "it more likely means… cut into small, bite-sized pieces or chunks"
 猪手	豬手	pig trotter	https://en.wikipedia.org/wiki/Pig%27s_trotter	
 菠萝	菠蘿	pineapple		
 梅	梅	plum		
@@ -284,6 +295,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 烧	燒	roast		
 卷	卷	roll		
 沙翁	沙翁	sa-yung	https://en.wikipedia.org/wiki/Sata_andagi	
+银鳕鱼	銀鱈魚	sablefish	https://en.wikipedia.org/wiki/Sablefish	
 盐	鹽	salt		
 椒盐	椒鹽	salt & pepper		
 咸	鹹	salted		
@@ -311,6 +323,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 虾仁	虾仁	shrimp		
 虾	蝦	shrimp		
 水煮	水煮	shuizhu	https://en.wikipedia.org/wiki/Shuizhu	
+烧卖	燒賣	shumai	https://en.wikipedia.org/wiki/Shumai	
 干蒸烧卖	乾蒸燒賣	shumai	https://en.wikipedia.org/wiki/Shumai	https://en.wikipedia.org/wiki/A_Bite_of_China
 烧麦	烧麦	shumai	https://en.wikipedia.org/wiki/Shumai	
 四川	四川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine	
@@ -328,6 +341,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 小	小	small		
 小黄鱼	小黃魚	small yellow croaker	https://en.wikipedia.org/wiki/Larimichthys_polyactis	
 多春鱼	多春魚	smelt	https://en.wikipedia.org/wiki/Smelt_(fish)#East_Asia	
+烟	煙	smoked		
 爽	爽	smooth		
 浸	浸	soaked		
 汽水	汽水	soft drink		
@@ -348,6 +362,8 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 鱿	魷	squid	https://en.wikipedia.org/wiki/Squid_as_food#Asia	
 熘	熘	starch-fried		liū https://en.wiktionary.org/wiki/%E7%86%98#Chinese
 蒸	蒸	steamed		
+山竹牛肉球	山竹牛肉球	steamed meatball	https://en.wikipedia.org/wiki/Steamed_meatball	
+牛肉球	牛肉球	steamed meatball	https://en.wikipedia.org/wiki/Steamed_meatball	
 糯米	糯米	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 糯米饭	糯米飯	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 炒	炒	stir-fried	https://en.wikipedia.org/wiki/Stir_frying#Chao_technique	chǎo

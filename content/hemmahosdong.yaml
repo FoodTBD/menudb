@@ -58,7 +58,7 @@ menu:
               "name_sv-SE": Wokad tofu med grönsaker
               "description_sv-SE": Wokad tofu med grönsaker, soyasås, ostronsås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/wokad_tofu_med_gronsaker_serverad_med_stark_eller_mild_sas.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Hunan_cuisine#List_of_notable_dishes
+              wikipedia_url: https://en.wikipedia.org/wiki/Hunan_cuisine#List_of_notable_dishes
               price: 159:-
               spice_heat_level: 1
             - item_number: 2
@@ -76,7 +76,7 @@ menu:
               "name_zh-Hans": 红烧茄子
               "name_zh-Latn-pinyin": Hóngshāo qiézi
               "description_sv-SE": Bräserad aubergine med kockens söta, sura, salta och starka sås, soyasås, ostronsås
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
+              wikipedia_url: https://en.wikipedia.org/wiki/Red_cooking
               price: 169:-
               spice_heat_level: 1
             - item_number: 5
@@ -89,7 +89,7 @@ menu:
               "name_zh-Hans": 红烧排骨
               "name_zh-Latn-pinyin": Hóngshāo páigǔ
               "description_sv-SE": Bräserad revbensspjäll med kockens sås, soyasås
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
+              wikipedia_url: https://en.wikipedia.org/wiki/Red_cooking
               price: 189:-
             - item_number: 7
               "name_zh-Hans": 肉丝蒜苗
@@ -116,7 +116,7 @@ menu:
               "name_sv-SE": Bräserad kyckling med söt stark sås
               "description_sv-SE": Bräserad kyckling och grönsaker med en söt, salt och stark smak, soyasås, ostronsås
               image_url: https://hemmahosdong.files.wordpress.com/2020/11/friterad_kyckling_med_sot_stark_sas.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Red_cooking
+              wikipedia_url: https://en.wikipedia.org/wiki/Red_cooking
               price: 189:-
               spice_heat_level: 1
             - item_number: 10

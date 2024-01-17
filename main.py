@@ -39,7 +39,16 @@ def load_known_dishes() -> list[dict[str, Any]]:
         for row in csvreader:
             assert any(row.values()), "ERROR: known_dishes has empty lines"
 
-            # Check all Wikimedia image references and rewrite them to be downscaled to 128px
+            # Rewrite non-English Wikipedia links to be presented via Google Translate
+            wikipedia_url = row["wikipedia_url"]
+            o = urllib.parse.urlparse(wikipedia_url)
+            if o.hostname and not o.hostname.startswith("en."):
+                row["wikipedia_url"] = (
+                    "https://translate.google.com/translate?sl=auto&tl=en&u="
+                    + wikipedia_url
+                )
+
+            # Check all Wikimedia image links and rewrite them to be downscaled to 128px
             image_url = row["image_url"]
             o = urllib.parse.urlparse(image_url)
             if o.path:
@@ -59,8 +68,7 @@ def load_known_dishes() -> list[dict[str, Any]]:
                         m
                     ), f'ERROR: known_dishes has non-standard Wikipedia image_url "{image_url}". See README.md'
 
-                    image_url = image_url.replace(f"/{m.group(4)}px-", "/128px-")
-                    row["image_url"] = image_url
+                    row["image_url"] = image_url.replace(f"/{m.group(4)}px-", "/128px-")
 
             known_dishes.append(row)
     return known_dishes
@@ -93,6 +101,16 @@ def load_known_terms() -> dict[str, dict[str, Any]]:
                 known_terms_dict[row["zh-Hans"]] = row
             if row["zh-Hant"]:
                 known_terms_dict[row["zh-Hant"]] = row
+
+            # Rewrite non-English Wikipedia links to be presented via Google Translate
+            wikipedia_url = row["wikipedia_url"]
+            o = urllib.parse.urlparse(wikipedia_url)
+            if o.hostname and not o.hostname.startswith("en."):
+                row["wikipedia_url"] = (
+                    "https://translate.google.com/translate?sl=auto&tl=en&u="
+                    + wikipedia_url
+                )
+
     return known_terms_dict
 
 
@@ -219,12 +237,6 @@ def generate_menu_html(
                     )
                     wikipedia_url = known_terms_dict[key]["wikipedia_url"]
                     if wikipedia_url:
-                        o = urllib.parse.urlparse(wikipedia_url)
-                        if not o.hostname.startswith("en."):
-                            wikipedia_url = (
-                                "https://translate.google.com/translate?sl=auto&tl=en&u="
-                                + wikipedia_url
-                            )
                         annotated_html += f'<a href="{wikipedia_url}" target="wikipedia" rel="noopener">'
                     annotated_html += f"{known_terms_dict[key]['en']}"
                     if wikipedia_url:
@@ -446,7 +458,7 @@ def generate_dishes_html(
             dish for dish in known_dishes if dish["locale_code"] == locale_code
         ]
         locale_dishes = sorted(locale_dishes, key=lambda d: d["name_en"])
-        locale_dish_group = {**locale_dict, "menu_items": locale_dishes}
+        locale_dish_group = {**locale_dict, "dishes": locale_dishes}
         locale_dish_groups.append(locale_dish_group)
 
     env = Environment(loader=FileSystemLoader("."))

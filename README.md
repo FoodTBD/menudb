@@ -61,7 +61,7 @@ Here's an example with all the defined fields:
                   "name_zh-Hans": 酸菜鱼
                   "name_en": Boiled fish with pickled cabbage and chili
                   "description_en": Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  wikipedia_url_en: https://en.wikipedia.org/wiki/Dumpling
+                  wikipedia_url: https://en.wikipedia.org/wiki/Dumpling
 
                   # The following fields are non-localizable
                   image_url: https://www.example.com/dish.jpg
@@ -96,6 +96,8 @@ Language Code | Meaning
 `zh-Hant` | Traditional Chinese [written form][*](https://www.loc.gov/standards/iso639-2/faq.html#23)
 
 **Menu images**: See repository https://github.com/FoodTBD/menudb_images.
+
+**Wikipedia**: Prefer links to English Wikipedia, but if there's a relevant article in another language Wikipedia, use it and it will be presented to the user via Google Translate.
 
 **Dish names**:
 * Any spelling mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.

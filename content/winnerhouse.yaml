@@ -32,7 +32,7 @@ menu:
             - "name_zh-Hant": 新汁叉燒
               "name_en": Honey Yi Siu / Barbecue Pork
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/128px-Charsiu.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Char_siu
+              wikipedia_url: https://en.wikipedia.org/wiki/Char_siu
               price: 188
             - "name_zh-Hant": 中式??肉/雞
               "name_en": Sweet and Sour Pork / Chicken
@@ -85,7 +85,7 @@ menu:
             - "name_zh-Hant": 吞云湯麵
               "name_en": Wonton noodles
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
+              wikipedia_url: https://en.wikipedia.org/wiki/Wonton#Cantonese_cuisine
               price: 148
         - "name_zh-Hant": 海鮮類
           "name_en": Seafood
@@ -136,7 +136,7 @@ menu:
             - "name_zh-Hant": 紅豆糕
             - "name_zh-Hant": 明火例湯
               "name_en": Clear fire soup
-              wikipedia_url_en: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
+              wikipedia_url: https://en.wikipedia.org/wiki/Cantonese_cuisine#Soups
             - "name_zh-Hant": 蓮藕豬骨湯
               "name_en": Lotus root and pork bone soup
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lotus_Root_Soup.jpg/128px-Lotus_Root_Soup.jpg
