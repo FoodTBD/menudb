@@ -35,7 +35,7 @@ a:active:hover {
     font-size: small;
     font-weight: 300;
     color: #6c757d;
-    border-color: #adb5bd;
+    border-color: #ced4da;
 }
 
 .btn-wikipedia {
@@ -46,5 +46,5 @@ a:active:hover {
     width: 104px;
     height: 64px;
     font-weight: 300;
-    border-color: #adb5bd;
+    border-color: #ced4da;
 }

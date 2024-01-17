@@ -344,7 +344,7 @@ menu:
               price: 158 kr
             - item_number: 67
               "name_zh-Hans": 大肠粉
-              "name_en": Chitterlings Rice Flour
+              "name_en": Chitterlings Rice Flour [sic]  # "粉" = small intestine https://en.wikipedia.org/wiki/Chitterlings#China
               "description_sv-SE": Risnudelsoppa med gristarm & kinesisk surkål
               price: 138 kr
             - item_number: 68

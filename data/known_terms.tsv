@@ -26,11 +26,14 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 豉椒	豉椒	black bean & pepper		https://en.wiktionary.org/wiki/%E8%B1%89%E6%A4%92#Noun
 豉汁	豉汁	black bean sauce	https://en.wikipedia.org/wiki/Douchi	
 白灼	白灼	blanched		
+浸	浸	blanched		lit. "to soak" or "to immerse"
 血 	血 	blood		
 水饺	水餃	boiled jiaozi	https://en.wikipedia.org/wiki/Jiaozi#Types	shuǐjiǎo
 沸腾	沸腾	boiling		
 烧汁	燒汁	braise sauce		
-扒	扒	braised		e.g. https://en.wikipedia.org/wiki/Dezhou_braised_chicken
+扒	扒	braised		bā e.g. https://en.wikipedia.org/wiki/Dezhou_braised_chicken
+烧	燒	braised		shāo
+烩	燴	braised & thickened	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Combination	huì
 扣肉	扣肉	braised pork		
 脯	脯	breast		
 西兰花	西蘭花	broccoli		
@@ -58,6 +61,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 红油	紅油	chili oil	https://en.wikipedia.org/wiki/Chili_oil	
 韭菜	韭菜	Chinese chive	https://en.wikipedia.org/wiki/Allium_tuberosum	
 明虾	明蝦	Chinese white shrimp	https://en.wikipedia.org/wiki/Chinese_white_shrimp	
+大肠	大腸	chitterlings	https://en.wikipedia.org/wiki/Chitterlings#China	
 山城	山城	Chongqing	https://en.wikipedia.org/wiki/Chongqing	lit. "mountain city", referring to Chongqing
 重庆	重慶	Chongqing	https://en.wikipedia.org/wiki/Chongqing	
 重	重	Chongqing	https://en.wikipedia.org/wiki/Chongqing	
@@ -66,7 +70,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 炒面	炒麵	chow mein	https://en.wikipedia.org/wiki/Chow_mein	
 油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
 菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum	
-球	球	chunk		
+球	球	chunked		
 香菜	香菜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	
 香茜	香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	Combo of standard 香 and (Cantonese) 茜
 	芫茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary	(Cantonese) https://en.wiktionary.org/wiki/%E8%8A%AB%E8%8C%9C#Definitions
@@ -75,6 +79,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 煲仔饭	煲仔飯	clay pot rice	https://en.wikipedia.org/wiki/Claypot_rice	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%B2%E4%BB%94#Definitions
 清	清	clear		
 云	雲	cloud		
+熘	熘	coated & braised		liū https://en.wiktionary.org/wiki/%E7%86%98#Chinese
 椰	椰	coconut		
 凉拌	涼拌	cold tossed		
 色	色	colorful		
@@ -91,7 +96,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 蟹柳	蟹柳	crab stick		https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
 脆	脆	crisp		
 酥	酥	crispy		
-粒	粒	cubes		
+粒	粒	cubed		
 黄瓜	黃瓜	cucumber		
 腊	臘	cured meat		
 咖喱	咖喱	curry	https://en.wikipedia.org/wiki/Curry#East_Asia	
@@ -181,7 +186,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 热	熱	hot		
 酸辣	酸辣	hot & sour	https://en.wikipedia.org/wiki/Hot_and_sour	
 百	百	hundred		
-肠	肠	intestines		
+肠	肠	intestine		
 翡翠	翡翠	jade		
 日	日	Japan		
 凉粉	涼粉	jelly noodles	https://en.wikipedia.org/wiki/Liangfen	
@@ -200,7 +205,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 瘦	瘦	lean		
 柠檬	檸檬	lemon		
 生菜	生菜	lettuce		
-清炒	清炒	lightly stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	qīngchǎo
 灵芝	靈芝	lingzhi	https://en.wikipedia.org/wiki/Lingzhi_(mushroom)	
 狮子头	狮子头	lion's head	https://en.wikipedia.org/wiki/Lion%27s_Head_(food)	
 膶	膶	liver	https://en.wikipedia.org/wiki/Offal#China	(Cantonese) https://en.wiktionary.org/wiki/%E8%86%B6#Definitions
@@ -249,7 +253,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 蚝油	蠔油	oyster sauce	https://en.wikipedia.org/wiki/Oyster_sauce	
 煎	煎	pan-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based	jiān
 煎饺	煎餃	pan-fried jiaozi	https://en.wikipedia.org/wiki/Jiaozi#Types	jiānjiǎo
-焗	焗	pan-roasted		https://www.thefooddictator.com/the-40-methods-of-chinese-cooking/, https://www.youtube.com/watch?v=z_LAJKezDOs
+焗	焗	pan-roasted		jú https://www.thefooddictator.com/the-40-methods-of-chinese-cooking/, https://www.youtube.com/watch?v=z_LAJKezDOs
 沙	沙	paste		
 豆苗	豆苗	pea sprout	https://en.wikipedia.org/wiki/Pea#Pea_sprouts	
 青椒	青椒	pepper		
@@ -260,12 +264,13 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 泡菜	泡菜	pickled vegetables		
 猪手	豬手	pig trotter	https://en.wikipedia.org/wiki/Pig%27s_trotter	
 菠萝	菠蘿	pineapple		
+清炒	清炒	plainly stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying	qīngchǎo
 梅	梅	plum		
 当红	當紅	popular		
 肉	肉	pork		
 猪肉	豬肉	pork		
 猪	豬	pork		
-五花肉	五花肉	pork belly		https://en.wiktionary.org/wiki/%E4%BA%94%E8%8A%B1%E8%82%89#Chinese
+五花肉	五花肉	pork belly	https://en.wikipedia.org/wiki/Pork_belly#China	https://en.wiktionary.org/wiki/%E4%BA%94%E8%8A%B1%E8%82%89#Chinese
 脯仔	脯仔	pork belly strips		
 猪扒	豬扒	pork chop		
 肥肠	肥肠	pork intestine	https://en.wikipedia.org/wiki/Offal#China	
@@ -273,26 +278,28 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 锅	鍋	pot		
 锅贴	鍋貼	pot sticker	https://en.wikipedia.org/wiki/Jiaozi#Potstickers	
 土豆	土豆	potato		
+粉	粉	powder		
 王	王	premium		
 兴隆	興隆	prosperous		
 布丁	布丁	pudding		
 南瓜	南瓜	pumpkin		
 净	淨	pure		(Cantonese) https://en.wiktionary.org/wiki/%E6%B7%A8#Definitions
 紫	紫	purple		
+溜	溜	quick-fried & braised	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Without_heat	liū
 萝卜	萝卜	radish		
 萝卜	蘿蔔	radish		Sometimes translated as turnip, though this is a misnomer https://en.wiktionary.org/wiki/%E8%98%BF%E8%94%94
 红	紅	red		possibly also "blood"
 豆沙	豆沙	red bean paste	https://en.wikipedia.org/wiki/Red_bean_paste	
-红烧	紅燒	red-braised	https://en.wikipedia.org/wiki/Red_cooking	
+红烧	紅燒	red-braised	https://en.wikipedia.org/wiki/Red_cooking	hóngshāo
 骨	骨	rib		
 米	米	rice		
 饭	飯	rice		
-米粉	米粉	rice noodle	https://en.wikipedia.org/wiki/Rice_noodles	
-米线	米線	rice noodle	https://en.wikipedia.org/wiki/Rice_noodles	
+粉干	粉乾	rice noodle	https://en.wikipedia.org/wiki/Mixian_(noodle)	fěn gàn
+米粉	米粉	rice noodle	https://en.wikipedia.org/wiki/Rice_vermicelli#Mainland_China	mǐfěn
+米线	米線	rice noodle	https://en.wikipedia.org/wiki/Mixian_(noodle)	mǐ xiàn
 	腸	rice noodle roll	https://en.wikipedia.org/wiki/Rice_noodle_roll	(Cantonese) https://en.wiktionary.org/wiki/%E8%85%B8#Definitions
 肠粉	腸粉	rice noodle roll	https://en.wikipedia.org/wiki/Rice_noodle_roll	
-烤	烤	roast		
-烧	燒	roast		
+烤	烤	roasted		kǎo
 卷	卷	roll		
 沙翁	沙翁	sa-yung	https://en.wikipedia.org/wiki/Sata_andagi	
 银鳕鱼	銀鱈魚	sablefish	https://en.wikipedia.org/wiki/Sablefish	
@@ -305,6 +312,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 酱	醬	sauce		
 干贝	干貝	scallop	https://en.wikipedia.org/wiki/Scallop#As_food	
 带子	帶子	scallop	https://en.wikipedia.org/wiki/Scallop#As_food	https://en.wiktionary.org/wiki/%E5%B8%B6%E5%AD%90#Chinese
+锅巴	鍋巴	scorched rice	https://en.wikipedia.org/wiki/Scorched_rice#China	
 海	海	sea		
 海参	海參	sea cucumber	https://en.wikipedia.org/wiki/Sea_cucumbers_as_food	
 海鲜	海鮮	seafood		
@@ -343,7 +351,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 多春鱼	多春魚	smelt	https://en.wikipedia.org/wiki/Smelt_(fish)#East_Asia	
 烟	煙	smoked		
 爽	爽	smooth		
-浸	浸	soaked		
 汽水	汽水	soft drink		
 汤	湯	soup		tāng: thinner and clearer soup or broth
 羹	羹	soup		gēng: thicker and heartier soup
@@ -360,10 +367,10 @@ zh-Hans	zh-Hant	en	wikipedia_url	_notes
 春卷	春捲	spring roll	https://en.wikipedia.org/wiki/Spring_roll	
 苗	苗	sprout		
 鱿	魷	squid	https://en.wikipedia.org/wiki/Squid_as_food#Asia	
-熘	熘	starch-fried		liū https://en.wiktionary.org/wiki/%E7%86%98#Chinese
 蒸	蒸	steamed		
 山竹牛肉球	山竹牛肉球	steamed meatball	https://en.wikipedia.org/wiki/Steamed_meatball	
 牛肉球	牛肉球	steamed meatball	https://en.wikipedia.org/wiki/Steamed_meatball	
+焖	燜	stewed	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Prolonged_immersion	mèn
 糯米	糯米	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 糯米饭	糯米飯	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	
 炒	炒	stir-fried	https://en.wikipedia.org/wiki/Stir_frying#Chao_technique	chǎo

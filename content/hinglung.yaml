@@ -118,8 +118,8 @@ menu:
               price: 17.95
             - "name_zh-Hant": 菠蘿咕咾肉
               "name_en": Pineapple sweet & sour pork
-              price: 15.95
-            - "name_zh-Hant": 糖酒炒蘭遠
+              price: 15.95            
+            - "name_zh-Hant": 糖酒炒蘭遠  # last char is "distant"??
               "name_en": Sautéed Chinese broccoli w/Chinese wine
               price: 14.95
             - "name_zh-Hant": 蒜子炒大豆苗
@@ -130,7 +130,8 @@ menu:
         - "name_zh-Hant": 精美廚貼
           "name_en": HOUSE SPECIAL CONT'D
           menu_items:
-            - "name_zh-Hant": 杞子豬潤浸時蔬
+            # - "name_zh-Hant": 杞子豬潤浸時蔬  # [sic]
+            - "name_zh-Hant": 杞子豬膶浸時蔬
               "name_en": Pig liver w/vegetable & wolf berry
               price: 15.95
             - "name_zh-Hant": 鹹魚雞粒豆腐
@@ -175,7 +176,7 @@ menu:
             - "name_zh-Hant": 泰式斑球
               "name_en": Thai style fish fillet
               price: 16.95
-            - "name_zh-Hant": 蘿蔔爛牛瞞
+            - "name_zh-Hant": 蘿蔔燜牛腩
               "name_en": Braised beef brisket w/radish
               price: 17.95
             - "name_zh-Hant": 西蘭花炒牛肉
