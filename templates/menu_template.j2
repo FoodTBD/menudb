@@ -5,19 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB - {{ data.restaurant.name }}, {{ data.restaurant.city }}</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
-    <link rel="stylesheet" type="text/css" href="static/menu_template.css">
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* Set a maximum width for the content */
+            max-width: 1200px;
+            /* Center the container horizontally */
+            margin: 0 auto;
+        }
+
+        /* Apply styles to each column */
+        .column {
+            /* Each column takes up 50% of the container width with some spacing */
+            flex-basis: calc(50% - 20px);
+            /* Include padding and border in the column's total width */
+            box-sizing: border-box;
+        }
+
+        /* Media query for mobile devices */
+        @media (max-width: 767px) {
+            .container {
+                /* Change to a single column layout */
+                flex-direction: column;
+            }
+
+            .column {
+                /* Full width for columns on mobile */
+                flex-basis: 100%;
+            }
+        }
+
+        .left-column img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .menu-table {
+            width: 100%;
+        }
+
+        .menu-table th {
+            padding-top: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .menu-table tbody td {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            border-top: 0.5px solid #ccc;
+            vertical-align: top;
+            line-height: 1;
+        }
+
+        .menu-table-image-column img {
+            width: 104px;
+            height: 64px;
+            object-fit: cover;
+        }
+
+        .menu-table-text-column {
+            padding-left: 0.5rem;
+            padding-top: 0.2rem;
+        }
+
+        .menu-table-menuaction-column {
+            padding-left: 0;
+            padding-right: 0;
+            text-align: right;
+            min-width: 3rem;
+        }
+
+        .btn-googleimage {
+            width: 104px;
+            height: 64px;
+        }
+
+        .menu-item-name-div {
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+        }
+
+        .menu-item-number {
+            font-weight: 300;
+            color: #6c757d;
+        }
+
+        .menu-item-name-primary {
+            font-size: 1.25rem;
+        }
+
+        .dish-term-native {
+            display: inline-block;
+            text-align: center;
+            margin-right: 0.2rem;
+            vertical-align: top;
+        }
+
+        .dish-term-translated {
+            display: block;
+            font-size: x-small;
+            font-variation-settings: "wdth" 50;
+        }
+
+        .menu-item-name-secondary {
+            font-size: small;
+        }
+
+        .menu-item-description-div {}
+
+        .menu-item-description {
+            font-size: xx-small;
+            font-weight: 300;
+            color: #6c757d;
+            font-variation-settings: "wdth" 80;
+        }
+    </style>
 </head>
 
 <body>
-    {% set primary_lang = display_language_codes[0] %}
-
-    <header class="header">
-        {% include 'templates/common_header.j2' %}
-
+    <!-- Header -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">MenuDB</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-4">
+        <!-- Page Title -->
         <h1>{{ data.restaurant.name }}</h1>
+
+        <!-- Restaurant Info -->
         <p>
             Google Maps: <a href="{{ data.restaurant.googlemaps_url }}" target="_blank" rel="noopener">{{
                 data.restaurant.street_address }}, {{ data.restaurant.city }}, {{ data.restaurant.country_code
@@ -34,6 +160,7 @@
                 data.restaurant[k] | pretty_url }}</a><br>{% endfor %}
         </p>
 
+        <!-- Table of Contents -->
         <ul>
             {% for page in data.menu.pages %}
             {% for section in page.sections if section['_id'] %}
@@ -41,131 +168,144 @@
             {% endfor %}
             {% endfor %}
         </ul>
-    </header>
-    {% if data.menu %}
-    <hr>
-    {% for page in data.menu.pages %}
-    <section class="section">
-        <div class="container">
-            <div class="column left-column">
-                {% if page.page_image_url %}
-                <a href="{{ page.page_image_url }}" target="_blank" rel="noopener"><img src="{{ page.page_image_url }}"
-                        alt="Menu Image"></a>
-                {% elif page.page_url %}
-                <iframe src="{{ page.page_url }}"
-                    style="transform: scale(0.5); transform-origin: top left; width: 200%; height: 200%;"
-                    frameborder="0"></iframe>
-                {% endif %}
-            </div>
-            <div class="column right-column">
-                <table class="menu-table">
-                    {% for section in page.sections %}
-                    <thead>
-                        <tr>
-                            <th colspan="3">
-                                <a name="{{ section['_id'] }}">
-                                    {% for lang in display_language_codes %}
-                                    {% if lang == primary_lang %}
-                                    <span class="menu-section-name-primary">{{ section['name_' + lang] }}</span>
+
+        <!-- Menu Content -->
+        {% if data.menu %}
+        <hr>
+        {% set primary_lang = display_language_codes[0] %}
+        {% for page in data.menu.pages %}
+        <!-- Menu Page -->
+        <section class="section">
+            <div class="container">
+                <div class="column left-column">
+                    {% if page.page_image_url %}
+                    <a href="{{ page.page_image_url }}" target="_blank" rel="noopener"><img
+                            src="{{ page.page_image_url }}" alt="Menu Image"></a>
+                    {% elif page.page_url %}
+                    <iframe src="{{ page.page_url }}"
+                        style="transform: scale(0.5); transform-origin: top left; width: 200%; height: 200%;"
+                        frameborder="0"></iframe>
+                    {% endif %}
+                </div>
+                <div class="column right-column">
+                    <table class="menu-table">
+                        {% for section in page.sections %}
+                        <!-- Menu Section -->
+                        <thead>
+                            <tr>
+                                <th colspan="3">
+                                    <a name="{{ section['_id'] }}">
+                                        {% for lang in display_language_codes %}
+                                        {% if lang == primary_lang %}
+                                        <span class="menu-section-name-primary">{{ section['name_' + lang] }}</span>
+                                        {% else %}
+                                        {{ section['name_' + lang] }}
+                                        {% endif %}
+                                        {% endfor %}
+                                    </a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in section.menu_items %}
+                            <!-- Menu Item -->
+                            <tr class="menu-item-body-row">
+                                <td class="menu-table-image-column">
+                                    <!-- Menu Item 'image_url' -->
+                                    {% if item['image_url'] %}
+                                    <img src="{{ item['image_url'] }}" alt="Dish Image"
+                                        onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
                                     {% else %}
-                                    {{ section['name_' + lang] }}
+                                    <button aria-label="Image Search" type="button"
+                                        class="btn btn-light btn-googleimage"
+                                        onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️
+                                        🔎</button>
                                     {% endif %}
-                                    {% endfor %}
-                                </a>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for item in section.menu_items %}
-                        <tr>
-                            <td class="menu-table-text-column">
-                                <div class="menu-item-name">
-                                    {% if item['item_number'] %}<span class="menu-item-number">{{ item['item_number']
-                                        }}.</span>{% endif %}
+                                </td>
+                                <td class="menu-table-text-column">
+                                    <div class="menu-item-name-div">
+                                        <!-- Menu Item 'item_number' -->
+                                        {% if item['item_number'] %}<span class="menu-item-number">{{
+                                            item['item_number'] }}</span>{% endif %}
 
-                                    {%- for lang in display_language_codes if item['name_' + lang] and not lang ==
-                                    'zh-Latn-pinyin' %}
-                                    {% set dish_name = item['name_' + lang] %}
-                                    {% if lang == primary_lang %}
-                                    <span class="menu-item-name menu-item-name-primary">{{
-                                        dish_name_to_annotated_html[dish_name] }}</span>
-                                    {% if lang == 'zh-Hant' %}
-                                    <button aria-label="Speak" class="btn btn-light btn-speak"
-                                        onclick="speakText('{{ dish_name }}', 'zh-HK')">🗣️粵</button>
+                                        {%- for lang in display_language_codes if item['name_' + lang] and not lang ==
+                                        'zh-Latn-pinyin' %}
+                                        {% set dish_name = item['name_' + lang] %}
+                                        <!-- Menu Item 'name_*' (primary) -->
+                                        {% if lang == primary_lang %}
+                                        <span class="menu-item-name menu-item-name-primary">{{
+                                            dish_name_to_annotated_html[dish_name] }}</span>
+                                    </div>
+                                    <div class="menu-item-name-div">
+                                        {% else %}
+                                        <!-- Menu Item 'name_*' (secondary) -->
+                                        <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                            styled_text_format }}</span>
+                                        {% endif %}
+
+                                        {% if not loop.first and not loop.last %} <span
+                                            class="menu-item-divider">/</span>
+                                        {% endif %}
+                                        {% endfor +%}
+                                    </div>
+
+                                    <div class="menu-item-description-div">
+                                        <!-- Menu Item 'spice_heat_level' -->
+                                        {% for _ in range(item['spice_heat_level'] | default(0)) %}🌶️{% endfor %}
+
+                                        <!-- Menu Item 'description_*' -->
+                                        {% if not item['image_url'] %}
+                                        {%- for lang in display_language_codes if item['description_' + lang] %}
+                                        <span class="menu-item-description">{{ item['description_' + lang] |
+                                            styled_text_format }}</span>{% if not loop.last %} <span
+                                            class="menu-item-divider">/</span> {% endif %}
+                                        {% endfor %}
+                                        {% endif %}
+                                    </div>
+
+                                    {# {%- if item['note'] %}
+                                    <div class="menu-item-note">
+                                        <span class="menu-item-note">{{ item['note'] | styled_text_format }}</span>
+                                    </div>
+                                    {% endif %} #}
+                                </td>
+                                <td class="menu-table-menuaction-column">
+                                    {% if 'zh-Hant' in display_language_codes %}
+                                    <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                        onclick="speakText('{{ item['name_' + primary_lang] }}', 'zh-HK')">🗣️粵</button><br>
                                     {% endif %}
-                                    <button aria-label="Speak" class="btn btn-light btn-speak"
-                                        onclick="speakText('{{ dish_name }}', '{{ primary_lang }}')">🗣️</button>
-                                    <br>
-                                    {% else %}
-                                    {% set wikipedia_url = item['wikipedia_url_' + lang.split('-')[0]] %}
-                                    {% if wikipedia_url %}
-                                    <button aria-label="Open Wikipedia" class="btn btn-light btn-wikipedia"
-                                        onclick="openLink('{{ wikipedia_url }}', 'wikipedia')">W</button>
+                                    <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                        onclick="speakText('{{ item['name_' + primary_lang] }}', '{{ primary_lang }}')">🗣️</button><br>
+
+                                    <!-- Menu Item 'wikipedia_url_*' -->
+                                    {% if item['wikipedia_url_en'] %}
+                                    <button aria-label="Open Wikipedia"
+                                        class="btn btn-light btn-menuaction btn-wikipedia"
+                                        onclick="openLink('{{ item['wikipedia_url_en'] }}', 'wikipedia')">W</button><br>
                                     {% endif %}
-
-                                    <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
-                                        styled_text_format }}</span>
-                                    {% endif %}
-
-                                    {% if not loop.first and not loop.last %} <span class="menu-item-divider">/</span>
-                                    {% endif %}
-                                    {% endfor +%}
-                                </div>
-
-                                <div class="menu-item-description">
-                                    {% for _ in range(item['spice_heat_level'] | default(0)) %}🌶️{% endfor %}
-
-                                    {% if not item['image_url'] %}
-                                    {%- for lang in display_language_codes if item['description_' + lang] %}
-                                    <span class="menu-item-description">{{ item['description_' + lang] |
-                                        styled_text_format }}</span>{% if not loop.last %} <span
-                                        class="menu-item-divider">/</span> {% endif %}
-                                    {% endfor %}
-                                    {% endif %}
-                                </div>
-
-                                {%- if item['note'] %}
-                                <div class="menu-item-note">
-                                    <span class="menu-item-note">{{ item['note'] |
-                                        styled_text_format }}</span>
-                                </div>
-                                {% endif %}
-                            </td>
-                            {# <td class="menu-table-price-column">
-                                <span class="menu-item-price">{{ item['price'] }}</span>
-                                {%- if item['price_note'] %}<br>
-                                <span class="menu-item-price-note">{{ item['price_note'] | styled_text_format
-                                    }}</span>
-                                {% endif +%}
-                            </td> #}
-                            <td class="menu-table-image-column">
-                                {% if item['image_url'] %}
-                                <img src="{{ item['image_url'] }}" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
-                                {% else %}
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️
-                                    🔎</button>
-                                {% endif %}
-                            </td>
-                        </tr>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
                         {% endfor %}
-                    </tbody>
-                    {% endfor %}
-                </table>
-                {% if page.page_footer %}<p>{{ page.page_footer }}</p>{% endif %}
+                    </table>
+                    {% if page.page_footer %}<p>{{ page.page_footer }}</p>{% endif %}
+                </div>
             </div>
-        </div>
-    </section>
-    <hr>
-    {% endfor %}
-    {% endif %}
-    <footer class="footer">
-        <p><small>Generated by MenuDB—a FoodTBD project - Menu updated {{ data._date_modified | iso8601_to_datetime |
-                datetime_format("%Y-%m-%d") }}</small></p>
-    </footer>
+        </section>
+        <hr>
+        {% endfor %}
+        {% endif %}
 
-    {% include 'templates/common_script.j2' %}
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p><small>Generated {{ data._date_modified | iso8601_to_datetime | datetime_format("%Y-%m-%d")
+                        }}</small></p>
+            </div>
+        </footer>
+
+        {% include 'templates/common_script.j2' %}
 </body>
 
 </html>

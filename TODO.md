@@ -1,10 +1,5 @@
 # TODO
 
 * Google Analytics
+* Add support for English-only menus and non-Chinese cuisines
 * Add feedback link
-
-## In general
-
-* add more menus (add YAML)
-* fill-out/improve the known_dishes sheet
-* dogfood the generated pages, think of more improvements, repeat

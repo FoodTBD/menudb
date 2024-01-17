@@ -5,43 +5,228 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MenuDB</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
+    <style>
+        .header-icon {
+            font-size: 128px;
+        }
+
+        .menu-card-body {
+            padding-bottom: 0;
+        }
+
+        .menu-card-body a {
+            text-decoration: none;
+        }
+
+        .menu-card-image {
+            height: 96px;
+            object-fit: cover;
+        }
+
+        .menu-card-image-placeholder {
+            height: 96px;
+            background-color: #e0e0e0;
+            display: flex;
+        }
+
+        .menu-card-text {
+            line-height: 1;
+        }
+
+        .menu-card-location {
+            margin: 0;
+            margin-top: 8px;
+        }
+
+        .menu-card-tags {
+            margin: 0;
+            font-size: xx-small;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="header">
-        <h1>🥡 Restaurant Menus</h1>
+    <!-- Header -->
+    <header class="text-center py-5">
+        <h1 class="header-icon">🥡</h1>
+        <h1>MenuDB</h1>
     </header>
-    <div class="container">
-        <ul>
-            <li><a href="sichuanrestaurang.html">Sichuan Restaurang (Solna, SE)</a> - <small>chinese, sichuan</small>
-            </li>
-            <li><a href="yummyking.html">Yummy King (Solna, SE)</a> - <small>chinese</small>
-            </li>
-            <li><a href="hemmahosdong.html">Hemma Hos Dong (Stockholm, SE)</a> - <small>chinese</small>
-            </li>
-            <li><a href="lillakina.html">Lilla Kina (Stockholm, SE)</a> - <small>chinese</small>
-            </li>
-            <li><a href="restaurangming.html">Restaurang Ming (Stockholm, SE)</a> - <small>chinese, cantonese, dimsum</small>
-            </li>
-            <li><a href="restaurangshogun.html">Restaurang Shogun (Stockholm, SE)</a> - <small>japanese, chinese, dimsum</small>
-            </li>
-            <li><a href="winnerhouse.html">Winner House (Sundbyberg, SE)</a> - <small>chinese, cantonese, dimsum</small>
-            </li>
-            <li><a href="xlbkitchen.html">XLB Kitchen (Cupertino, CA, US)</a> - <small>chinese, shanghaiese, xiaolongbao</small>
-            </li>
-            <li><a href="hinglung.html">Hing Lung Ramen (San Bruno, CA, US)</a> - <small>chinese, cantonese, dimsum</small>
-            </li>
-            <li><a href="goldenpalace.html">Golden Palace Restaurant (San Jose, CA, US)</a> - <small>chinese, cantonese, dimsum</small>
-            </li>
-        </ul>
 
-        <ul>
-            <li><a href="dishes.html">📖 Index of Common Dishes</a></li>
-        </ul>
+    <!-- Menu Grid -->
+    <div class="container">
+        <div class="text-center mb-4">
+            <a href="dishes.html" class="btn btn-primary">Browse Known Dishes (126)</a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-5 g-4 py-4">
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="sichuanrestaurang.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/sichuanrestaurang/2023-02-28%202%20Large.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="sichuanrestaurang.html">
+                            <h5 class="card-title menu-text">Sichuan Restaurang</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Solna, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="yummyking.html">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPsP5pVRUf4L-Z82SSpsaISmZMIgtPH4nw48PpZ=s1016-k-no" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="yummyking.html">
+                            <h5 class="card-title menu-text">Yummy King</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Solna, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="hemmahosdong.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2214%20Large.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="hemmahosdong.html">
+                            <h5 class="card-title menu-text">Hemma Hos Dong</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Stockholm, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="lillakina.html">
+                        <div class="menu-card-image-placeholder"></div>
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="lillakina.html">
+                            <h5 class="card-title menu-text">Lilla Kina</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Stockholm, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="restaurangming.html">
+                        <div class="menu-card-image-placeholder"></div>
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="restaurangming.html">
+                            <h5 class="card-title menu-text">Restaurang Ming</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Stockholm, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="restaurangshogun.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/restaurangshogun/6%20Large.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="restaurangshogun.html">
+                            <h5 class="card-title menu-text">Restaurang Shogun</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Stockholm, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="winnerhouse.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/winnerhouse/325726093_487199590280304_7869728386477508905_n%20Large.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="winnerhouse.html">
+                            <h5 class="card-title menu-text">Winner House</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Sundbyberg, SE</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="xlbkitchen.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195238221%20Large.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="xlbkitchen.html">
+                            <h5 class="card-title menu-text">XLB Kitchen</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">Cupertino, CA, US</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="hinglung.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/hinglung_sanbruno_ca_usa/hing_lung_1%20Medium.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="hinglung.html">
+                            <h5 class="card-title menu-text">Hing Lung Ramen</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">San Bruno, CA, US</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <div class="col">
+                <div class="card h-100">
+                    <a href="goldenpalace.html">
+                        <img src="https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192738885%20Large.jpeg" class="card-img-top menu-card-image"
+                            alt="Menu Image" />
+                    </a>
+                    <div class="card-body menu-card-body">
+                        <a href="goldenpalace.html">
+                            <h5 class="card-title menu-text">Golden Palace Restaurant</h5>
+                        </a>
+                        <p class="card-text menu-card-text menu-card-location">San Jose, CA, US</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="footer">
-        <p><small>Generated by MenuDB—a FoodTBD project</small></p>
+
+    <!-- Footer -->
+    <footer class="text-center py-3">
+        <p>Generated by MenuDB—a FoodTBD project</p>
     </footer>
 </body>
 

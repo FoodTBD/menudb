@@ -93,7 +93,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 鲮鱼球	鯪魚球	dace fish ball	https://en.wikipedia.org/wiki/Cirrhinus_molitorella	https://zh.wikipedia.org/wiki/%E9%AF%AA%E9%AD%9A%E7%90%83
 大排档	大排檔	daipaidong	https://en.wikipedia.org/wiki/Dai_pai_dong	https://en.wiktionary.org/wiki/%E5%A4%A7%E6%8E%92%E6%AA%94#Chinese
 炸	炸	deep-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based	zhá
-鲜	鲜	delicacies		
+鲜	鲜	delicacies	  	
 珍	珍	delicacy		
 丁	丁	diced		
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried	
@@ -128,7 +128,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 饼	饼	flatbread/cake		
 味	味	flavor		
 松	鬆	floss	https://en.wikipedia.org/wiki/Meat_floss	https://en.wiktionary.org/wiki/%E9%AC%86#Definitions
-龙利	龍利	flounder		
+龙利	龍利	flounder	https://en.wikipedia.org/wiki/Sole_(fish)	
 花	花	flower		
 生	生	fresh		
 鲜	鮮	fresh		
@@ -319,6 +319,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 多春鱼	多春魚	smelt	https://en.wikipedia.org/wiki/Smelt_(fish)#East_Asia	
 爽	爽	smooth		
 浸	浸	soaked		
+汽水	汽水	soft drink		
 汤	湯	soup		tāng: thinner and clearer soup or broth
 羹	羹	soup		gēng: thicker and heartier soup
 汤包	汤包	soup dumpling	https://en.wikipedia.org/wiki/Tangbao	
@@ -385,7 +386,7 @@ zh-Hans	zh-Hant	en	wikipedia_url_en	_notes
 醋	醋	vinegar		
 核桃	核桃	walnut		
 水	水	water		
-通菜	通菜	water spinach		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E9%80%9A%E8%8F%9C#Definitions
+通菜	通菜	water spinach	https://en.wikipedia.org/wiki/Ipomoea_aquatica	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E9%80%9A%E8%8F%9C#Definitions
 西湖	西湖	West Lake	https://en.wikipedia.org/wiki/West_Lake	
 西	西	western		
 湿	濕	wet		

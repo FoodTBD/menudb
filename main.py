@@ -375,7 +375,9 @@ def print_stats(
 
 
 def generate_index_html(
-    menu_yaml_dicts: list[dict[str, Any]], output_html_path: str
+    menu_yaml_dicts: list[dict[str, Any]],
+    known_dishes: list[dict[str, Any]],
+    output_html_path: str,
 ) -> None:
     env = Environment(loader=FileSystemLoader("."))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
@@ -386,7 +388,9 @@ def generate_index_html(
         env.filters[filter_name] = getattr(jinja_filters, filter_name)
 
     template = env.get_template("templates/index_template.j2")
-    rendered_html = template.render(data=menu_yaml_dicts)
+    rendered_html = template.render(
+        menu_yaml_dicts=menu_yaml_dicts, known_dishes=known_dishes
+    )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
         html_path.write(rendered_html)
@@ -469,7 +473,9 @@ def main(input_dir: str, output_dir: str):
     )
 
     output_path = os.path.join(output_dir, "index.html")
-    generate_index_html(list(menu_filename_to_menu_yaml_dicts.values()), output_path)
+    generate_index_html(
+        list(menu_filename_to_menu_yaml_dicts.values()), known_dishes, output_path
+    )
     print(f"Processed: {output_path}")
 
     output_path = os.path.join(output_dir, "dishes.html")
