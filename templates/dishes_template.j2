@@ -76,7 +76,7 @@
         <ul>
             {% for locale_dish_group in locale_dish_groups %}
             <li><a href="#cuisine-{{ locale_dish_group.locale_code }}">{{ locale_dish_group.cuisine_name_en }} ({{
-                    locale_dish_group.menu_items | length }})</a></li>
+                    locale_dish_group.dishes | length }})</a></li>
             {% endfor %}
         </ul>
 
