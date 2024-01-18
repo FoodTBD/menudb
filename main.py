@@ -461,7 +461,7 @@ def _gather_stats(
                     [f'"{known_terms_dict.get(c, {}).get("en", "❓")}"' for c in k]
                 )
             t = (k, v, en)
-            top_2grams.append(t)
+            top_3grams.append(t)
 
     # Data linting
     for dish_name in filtered_c:
