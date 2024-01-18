@@ -97,21 +97,26 @@ Language Code | Meaning
 
 **Menu images**: See repository https://github.com/FoodTBD/menudb_images.
 
-**Wikipedia**: Prefer links to English Wikipedia, but if there's a relevant article in another language Wikipedia, use it and it will be presented to the user via Google Translate.
-
 **Dish names**:
 * Any spelling mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.
 * Anything like quantities or "half portion" written in the dish name should be moved to `description_xxx` or `note_xxx` fields, to facilitate name-based matching.
 
-**Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/600px-filename.jpg.
+**Dish images**: Either link directly to the restaurant's own website, or otherwise use free licensed content, ideally from Wikipedia Commons of the form https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/filename.jpg/600px-filename.jpg. Use Google Image Search for "xxx site:wikipedia.org OR site:wikimedia.org" to find images.
+
+**Wikipedia**: Prefer links to English Wikipedia. However, if there's a relevant article in another language Wikipedia, use it and it will be presented to the user via Google Translate.
+
+**Terms**:
+    * Use Google Search and ChatGPT to come up with the best translation for food contexts. Use singular for nouns ("noodle", not "noodles"), and past tense for verbs ("roasted" not "roast").
+    * Use Google Translate to find the corresponding simplified or traditional characters.
 
 
 ### Transcription Workflow
 
 John's workflow:
 
-1. Upload menu photos to Google Drive.
-2. On phone: using the Google Drive app, choose "Open with", then "Google Lens". (Alternatively open the image file within the Google Translate app.) Tap "Select text".
-3. Send the copied text to Mac.
-4. On Mac: use the text from Google Lens/Translate to fill out the YAML.
-5. Open the menu photo in the macOS Preview app. Select dish names and copy to clipboard. Double-check the OCR text from Google Lens/Translate against the OCR text from Preview. If they disagree, use Google Translate and Google Search to figure out the correct transcription.
+1. Do the OCR work. Google Lens/Translate seems to work best, but you might want to double-check against macOS Preview and/or [EasyOCR](https://www.jaided.ai/easyocr/).
+    * To use Google Lens/Translate: Upload menu photos to Google Drive. On phone: using the Google Drive app, choose "Open with", then "Google Lens". (Alternatively open the image file within the Google Translate app.) Tap "Select text". Send the copied text to Mac.
+    * To use macOS Preview: Open the menu photo in Preview. Select dish names and copy to clipboard.
+2. Ask ChatGPT to "Translate literally: xxx".
+    * Read the answer and do a sanity check. Look up terms in [Wiktionary](https://en.wiktionary.org/), Wikipedia, Google Search, and Google Image Search. Go back and look for OCR errors.
+3. Add any useful terms to the `known_terms` table, especially if it exists in Wiktionary. See style guide above.

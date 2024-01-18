@@ -1374,5 +1374,38 @@ menu:
     # - page_image_url: https://lh5.googleusercontent.com/p/AF1QipPQLQAsKXJhAjnMBmkKtHlvyj2P_CIy-m0obNli=s684-k-no
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/goldenpalace/PXL_20230705_192920104%20Large.jpeg
       sections:
-        - "name_zh-Hant": ???
+        - "name_zh-Hant": 甜品,飲品
           "name_en": Dessert and Drink
+          menu_items:
+            - item_number: M01
+              "name_zh-Hant": 香芒布甸
+              "name_en": Fresh Mango Pudding
+            - item_number: M02
+              "name_zh-Hant": 椰汁馬豆糕  # GT reads "计" as "汁", which is more common
+              "name_en": Coconut with Bean Jello
+            - item_number: M03
+              "name_zh-Hant": 龜苓膏
+              "name_en": Chinese Herb Jelly
+            - item_number: M04
+              "name_zh-Hant": 擂沙湯圓
+              "name_en": Soft Black Sesame Ball
+            - item_number: M05
+              "name_zh-Hant": 冰糖燉燕窩
+              "name_en": Double Boiled Swallow's Nest with Rock Sugar
+            - item_number: M06
+              "name_zh-Hant": 杏汁燉官燕
+              "name_en": Double Boiled Swallow's Nest with Almond Soup
+            - item_number: M07
+              "name_zh-Hant": 椰子燉官燕
+              "name_en": Double Boiled Swallow's Nest with Whole Coconut
+            - item_number: M08
+              "name_zh-Hant": 汽水
+              "name_en": Soda
+              "description_zh-Hant": 可樂,無糖可樂,七喜
+              "description_en": Coke, Diet Coke, 7up
+            - item_number: M09
+              "name_zh-Hant": 啤酒
+              "name_en": Beer
+              "description_en": Imported (Tsing Tao, Heineken); Domestic (Budweiser)
+            - item_number: M10
+              "name_en": Wine (Red or White)
