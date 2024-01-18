@@ -468,8 +468,8 @@ def _gather_stats(
         "common_dishes": common_dishes,
         "unique_character_count": unique_character_count,
         "top_characters": top_characters,
-        "top_3grams": top_3grams,
         "top_2grams": top_2grams,
+        "top_3grams": top_3grams,
     }
 
 
