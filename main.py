@@ -307,7 +307,7 @@ def process_menu_yaml_paths(
 
 def generate_index_html(
     menu_yaml_dicts: list[dict[str, Any]],
-    known_dish_names: list[str],
+    known_dishes: list[dict[str, Any]],
     output_html_path: str,
 ) -> None:
     env = Environment(loader=FileSystemLoader("."))
@@ -317,7 +317,7 @@ def generate_index_html(
 
     template = env.get_template("templates/index_template.j2")
     rendered_html = template.render(
-        menu_yaml_dicts=menu_yaml_dicts, known_dish_names=known_dish_names
+        menu_yaml_dicts=menu_yaml_dicts, known_dishes=known_dishes
     )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
@@ -408,6 +408,8 @@ def _gather_stats(
                                     primary_name = menu_item[name_lang]
                                     menu_primary_name_set.add(primary_name)
             primary_names.extend(menu_primary_name_set)
+
+    # Find common dishes
     name_counter = collections.Counter(primary_names)
     filtered_c = {k: v for k, v in name_counter.items() if v >= 3}
     common_dishes = [
@@ -532,9 +534,7 @@ def main(input_dir: str, output_dir: str):
 
     output_path = os.path.join(output_dir, "index.html")
     generate_index_html(
-        list(menu_filename_to_menu_yaml_dicts.values()),
-        list(known_dish_lookuptable.keys()),
-        output_path,
+        list(menu_filename_to_menu_yaml_dicts.values()), known_dishes, output_path
     )
     print(f"Processed: {output_path}")
 
