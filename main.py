@@ -2,7 +2,6 @@ import collections
 import csv
 import datetime
 import os
-import re
 import shutil
 import sys
 import typing
@@ -32,48 +31,6 @@ def prepare_output_dir(output_dir: str) -> None:
     shutil.copytree(STATIC_DIR, output_static_dir)
 
 
-def load_known_dishes() -> list[dict[str, Any]]:
-    known_dishes = []
-    with open("data/known_dishes.tsv", "r", encoding="utf-8") as csvfile:
-        csvreader = csv.DictReader(csvfile, delimiter="\t")
-        for row in csvreader:
-            assert any(row.values()), "ERROR: known_dishes has empty lines"
-
-            # Rewrite non-English Wikipedia links to be presented via Google Translate
-            wikipedia_url = row["wikipedia_url"]
-            o = urllib.parse.urlparse(wikipedia_url)
-            if o.hostname and not o.hostname.startswith("en."):
-                row["wikipedia_url"] = (
-                    "https://translate.google.com/translate?sl=auto&tl=en&u="
-                    + wikipedia_url
-                )
-
-            # Check all Wikimedia image links and rewrite them to be downscaled to 128px
-            image_url = row["image_url"]
-            o = urllib.parse.urlparse(image_url)
-            if o.path:
-                assert (
-                    o.hostname
-                ), f'ERROR: known_dishes has invalid image_url "{image_url}"'
-
-            if o.hostname:
-                if o.hostname.endswith("wikimedia.org") or o.hostname.endswith(
-                    "wikipedia.org"
-                ):
-                    m = re.match(
-                        r"https://upload\.wikimedia\.org/wikipedia/commons/thumb/(.+)/(.+)/(.+)/(\d+)px-(.+)",
-                        image_url,
-                    )
-                    assert (
-                        m
-                    ), f'ERROR: known_dishes has non-standard Wikipedia image_url "{image_url}". See README.md'
-
-                    row["image_url"] = image_url.replace(f"/{m.group(4)}px-", "/128px-")
-
-            known_dishes.append(row)
-    return known_dishes
-
-
 def load_known_locales() -> dict[str, dict[str, Any]]:
     known_locales = []
     with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
@@ -90,17 +47,17 @@ def load_known_locales() -> dict[str, dict[str, Any]]:
     return known_dish_lookuptable
 
 
-def load_known_terms() -> dict[str, dict[str, Any]]:
-    known_terms_dict = {}
+def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
+    known_terms = []
     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
             assert any(row.values()), "ERROR: known_terms has empty lines"
-            row.pop("_notes")
-            if row["zh-Hans"]:
-                known_terms_dict[row["zh-Hans"]] = row
-            if row["zh-Hant"]:
-                known_terms_dict[row["zh-Hant"]] = row
+
+            # Remove comments
+            for k in list(row.keys()):
+                if k.startswith("_"):
+                    row.pop(k)
 
             # Rewrite non-English Wikipedia links to be presented via Google Translate
             wikipedia_url = row["wikipedia_url"]
@@ -111,20 +68,62 @@ def load_known_terms() -> dict[str, dict[str, Any]]:
                     + wikipedia_url
                 )
 
-    return known_terms_dict
+            known_terms.append(row)
 
+    # Check for duplicates
+    zh_hans_name_set = set()
+    zh_hant_name_set = set()
+    for known_term in known_terms:
+        k = "zh-Hans"
+        if known_term[k]:
+            if known_term[k] in zh_hans_name_set:
+                print(f'WARNING: duplicate {k} key "{known_term[k]}" in known_terms')
+            zh_hans_name_set.add(known_term[k])
 
-def load_eatsdb_names() -> list[str]:
-    dish_names = []
-    with open("data/eatsdb_names.tsv", "r", encoding="utf-8") as csvfile:
-        csvreader = csv.DictReader(csvfile, delimiter="\t")
-        for row in csvreader:
-            assert row["name_native"]
-            dish_names.append(row["name_native"])
-            dish_names.extend(
-                [s.strip() for s in row["alt_names"].split(",") if s.strip()]
+        k = "zh-Hant"
+        if known_term[k]:
+            if known_term[k] in zh_hant_name_set:
+                print(f'WARNING: duplicate {k} key "{known_term[k]}" in known_terms')
+            zh_hant_name_set.add(known_term[k])
+
+    # Check capitalization
+    EN_STOPWORDS = ["a", "an", "and", "BBQ", "for", "in", "with"]
+    for known_term in known_terms:
+        if known_term["dish_cuisine"]:
+            en_actual = known_term["en"]
+            en_expected = " ".join(
+                [
+                    w.title() if not w in EN_STOPWORDS and w.isalpha() else w
+                    for w in en_actual.split(" ")
+                ]
             )
-    return dish_names
+            if en_actual != en_expected:
+                print(
+                    f'WARNING: {known_term["en"]} defines dish_cuisine but is not title cased'
+                )
+
+    known_terms_lookup_dict = {}
+    for known_term in known_terms:
+        # Use all native forms (both simplified and traditional) as lookup keys
+        for k in ["zh-Hans", "zh-Hant"]:
+            names = [s.strip() for s in known_term[k].split(",")]
+            for name in names:
+                if name:
+                    known_terms_lookup_dict[name] = known_term
+
+    known_dishes = []
+    for known_term in known_terms:
+        if known_term["dish_cuisine"]:
+            # Backward compatiblity from known_terms to known_dishes
+            known_dish = known_term.copy()
+            known_dish["name_native"] = ",".join(
+                [known_dish["zh-Hans"], known_dish["zh-Hant"]]
+            )
+            known_dish["name_en"] = known_dish.pop("en")
+            known_dish["description_en"] = known_dish.pop("dish_description_en")
+            known_dish["locale_code"] = known_dish.pop("dish_cuisine")
+            known_dishes.append(known_dish)
+    return known_terms_lookup_dict, known_dishes
 
 
 def _slugify(s: str) -> str:
@@ -135,7 +134,7 @@ def generate_menu_html(
     input_yaml_path: str,
     output_html_path: str,
     known_dish_lookuptable: dict[str, dict[str, Any]],
-    known_terms_dict: dict[str, Any],
+    known_terms_lookup_dict: dict[str, Any],
 ) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
         yaml_data = strictyaml.load(yaml_path.read(), RESTAURANT_SCHEMA)
@@ -196,7 +195,7 @@ def generate_menu_html(
             display_language_codes.append("en")
 
     # EXPERIMENTAL
-    ordered_known_terms = sorted(known_terms_dict, key=len, reverse=True)
+    ordered_known_terms = sorted(known_terms_lookup_dict, key=len, reverse=True)
 
     # EXPERIMENTAL
     all_chinese_dish_names = []
@@ -235,10 +234,10 @@ def generate_menu_html(
                         f"{key}"
                         f'<span class="dish-term-translated">'
                     )
-                    wikipedia_url = known_terms_dict[key]["wikipedia_url"]
+                    wikipedia_url = known_terms_lookup_dict[key]["wikipedia_url"]
                     if wikipedia_url:
                         annotated_html += f'<a href="{wikipedia_url}" target="wikipedia" rel="noopener">'
-                    annotated_html += f"{known_terms_dict[key]['en']}"
+                    annotated_html += f"{known_terms_lookup_dict[key]['en']}"
                     if wikipedia_url:
                         annotated_html += f"</a>"
                     annotated_html += "</span>"
@@ -281,7 +280,7 @@ def process_menu_yaml_paths(
     input_dir: str,
     output_dir: str,
     known_dish_lookuptable: dict[str, dict[str, Any]],
-    known_terms_dict: dict[str, Any],
+    known_terms_lookup_dict: dict[str, Any],
 ) -> dict[str, Any]:
     menu_filename_to_menu_yaml_dicts = {}
     for root, _, files in os.walk(input_dir):
@@ -294,7 +293,10 @@ def process_menu_yaml_paths(
                 output_path = os.path.join(output_dir, output_filename)
 
                 yaml_dict = generate_menu_html(
-                    input_path, output_path, known_dish_lookuptable, known_terms_dict
+                    input_path,
+                    output_path,
+                    known_dish_lookuptable,
+                    known_terms_lookup_dict,
                 )
 
                 yaml_dict["_output_filename"] = output_filename
@@ -389,7 +391,7 @@ def generate_dishes_html(
 def _gather_stats(
     menu_yaml_dicts: list[dict[str, Any]],
     known_dish_lookuptable: dict[str, dict[str, Any]],
-    known_terms_dict: dict[str, Any],
+    known_terms_lookup_dict: dict[str, Any],
 ) -> dict[str, Any]:
     # Find dish names
     primary_names = []
@@ -417,6 +419,13 @@ def _gather_stats(
         for k, v in sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)
     ]
 
+    # Data linting
+    for dish_name in filtered_c:
+        if not dish_name in known_dish_lookuptable.keys():
+            print(
+                f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
+            )
+
     # Find top characters
     character_counter = collections.Counter()
     for primary_name in primary_names:
@@ -425,59 +434,64 @@ def _gather_stats(
 
     top_characters = character_counter.most_common(100)
     top_characters = [
-        (k, v, known_terms_dict.get(k, {}).get("en", "❓")) for k, v in top_characters
+        (k, v, known_terms_lookup_dict.get(k, {}).get("en", "❓"))
+        for k, v in top_characters
     ]
 
     top_chars_not_known = []
     for tuple in top_characters:
-        if tuple[0] not in "".join(known_terms_dict.keys()) and tuple[0].isalpha():
+        if (
+            tuple[0] not in "".join(known_terms_lookup_dict.keys())
+            and tuple[0].isalpha()
+        ):
             top_chars_not_known.append(tuple[0])
     if top_chars_not_known:
         print(f"Top characters not present in known_terms: {top_chars_not_known}")
 
     # Find top n-grams
     unique_primary_names = list(set(primary_names))
-    top_2grams = []
-    for k, v in find_top_ngrams(unique_primary_names, 2, 100):
-        if v >= 3:
-            en = known_terms_dict.get(k, {}).get("en")
-            if en:
-                en = f'"{en}"'
-            else:
-                en = " + ".join(
-                    [f'"{known_terms_dict.get(c, {}).get("en", "❓")}"' for c in k]
-                )
-            t = (k, v, en)
-            top_2grams.append(t)
-
-    top_3grams = []
+    top_3gram_tuples = []
     for k, v in find_top_ngrams(unique_primary_names, 3, 100):
         if v >= 3:
-            en = known_terms_dict.get(k, {}).get("en")
+            en = known_terms_lookup_dict.get(k, {}).get("en")
             if en:
                 en = f'"{en}"'
             else:
                 en = " + ".join(
-                    [f'"{known_terms_dict.get(c, {}).get("en", "❓")}"' for c in k]
+                    [
+                        f'"{known_terms_lookup_dict.get(c, {}).get("en", "❓")}"'
+                        for c in k
+                    ]
                 )
             t = (k, v, en)
-            top_3grams.append(t)
+            top_3gram_tuples.append(t)
 
-    # Data linting
-    for dish_name in filtered_c:
-        if not dish_name in known_dish_lookuptable.keys():
-            print(
-                f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
-            )
-    eatsdb_names_set = set(load_eatsdb_names())
-    for dish_name in primary_names:
-        if (
-            not dish_name in known_dish_lookuptable.keys()
-            and dish_name in eatsdb_names_set
-        ):
-            print(
-                f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes but is in EatsDB"
-            )
+    top_3grams = [t[0] for t in top_3gram_tuples]
+
+    top_2gram_tuples = []
+    for k, v in find_top_ngrams(unique_primary_names, 2, 100):
+        if v >= 3:
+            en = known_terms_lookup_dict.get(k, {}).get("en")
+            if en:
+                en = f'"{en}"'
+            else:
+                en = " + ".join(
+                    [
+                        f'"{known_terms_lookup_dict.get(c, {}).get("en", "❓")}"'
+                        for c in k
+                    ]
+                )
+            t = (k, v, en)
+
+            # Filter out 2-grams e.g. "黃毛" that are included in 3-grams e.g. "黃毛雞"
+            is_included = False
+            for three_gram in top_3grams:
+                if k in three_gram:
+                    is_included = True
+                    break
+
+            if not is_included:
+                top_2gram_tuples.append(t)
 
     return {
         "menu_count": len(menu_yaml_dicts),
@@ -485,19 +499,19 @@ def _gather_stats(
         "common_dishes": common_dishes,
         "unique_character_count": unique_character_count,
         "top_characters": top_characters,
-        "top_2grams": top_2grams,
-        "top_3grams": top_3grams,
+        "top_2grams": top_2gram_tuples,
+        "top_3grams": top_3gram_tuples,
     }
 
 
 def generate_stats_html(
     menu_yaml_dicts: list[dict[str, Any]],
     known_dish_lookuptable: dict[str, dict[str, Any]],
-    known_terms_dict: dict[str, dict[str, Any]],
+    known_terms_lookup_dict: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
     stats = _gather_stats(
-        list(menu_yaml_dicts), known_dish_lookuptable, known_terms_dict
+        list(menu_yaml_dicts), known_dish_lookuptable, known_terms_lookup_dict
     )
 
     env = Environment(loader=FileSystemLoader("."))
@@ -515,8 +529,7 @@ def generate_stats_html(
 def main(input_dir: str, output_dir: str):
     # Load canned data
     known_locale_lookuptable = load_known_locales()
-    known_dishes = load_known_dishes()
-    known_terms_dict = load_known_terms()
+    known_terms_lookup_dict, known_dishes = load_known_terms()
 
     # Map known_dish's name_native to known_dish dict
     known_dish_lookuptable = {}
@@ -528,16 +541,20 @@ def main(input_dir: str, output_dir: str):
             known_dish_lookuptable[native_name] = d
 
     prepare_output_dir(output_dir)
+
+    # Generate menu pages
     menu_filename_to_menu_yaml_dicts = process_menu_yaml_paths(
-        input_dir, output_dir, known_dish_lookuptable, known_terms_dict
+        input_dir, output_dir, known_dish_lookuptable, known_terms_lookup_dict
     )
 
+    # Generate index page
     output_path = os.path.join(output_dir, "index.html")
     generate_index_html(
         list(menu_filename_to_menu_yaml_dicts.values()), known_dishes, output_path
     )
     print(f"Processed: {output_path}")
 
+    # Generate dishes page
     output_path = os.path.join(output_dir, "dishes.html")
     generate_dishes_html(
         known_locale_lookuptable,
@@ -547,11 +564,12 @@ def main(input_dir: str, output_dir: str):
     )
     print(f"Processed: {output_path}")
 
+    # Generate stats page
     output_path = os.path.join(output_dir, "stats.html")
     generate_stats_html(
         list(menu_filename_to_menu_yaml_dicts.values()),
         known_dish_lookuptable,
-        known_terms_dict,
+        known_terms_lookup_dict,
         output_path,
     )
     print(f"Processed: {output_path}")

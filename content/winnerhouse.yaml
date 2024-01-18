@@ -93,7 +93,7 @@ menu:
             - "name_zh-Hant": 清蒸鮮魚
               "name_en": Steamed Fish
               price: market price
-            - "name_zh-Hant": 椒鹽尤魚
+            - "name_zh-Hant": 椒鹽尤魚  # [sic] should be 鱿
               "name_en": Salt and Pepper Squid
               price: 168
             - "name_zh-Hant": 椒鹽大虾
