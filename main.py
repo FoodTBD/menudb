@@ -435,16 +435,31 @@ def _gather_stats(
 
     # Find top n-grams
     unique_primary_names = list(set(primary_names))
-    top_2grams = [
-        (k, v, known_terms_dict.get(k, {}).get("en", "❓"))
-        for k, v in find_top_ngrams(unique_primary_names, 2, 100)
-        if v >= 3
-    ]
-    top_3grams = [
-        (k, v, known_terms_dict.get(k, {}).get("en", "❓"))
-        for k, v in find_top_ngrams(unique_primary_names, 3, 100)
-        if v >= 3
-    ]
+    top_2grams = []
+    for k, v in find_top_ngrams(unique_primary_names, 2, 100):
+        if v >= 3:
+            en = known_terms_dict.get(k, {}).get("en")
+            if en:
+                en = f'"{en}"'
+            else:
+                en = " + ".join(
+                    [f'"{known_terms_dict.get(c, {}).get("en", "❓")}"' for c in k]
+                )
+            t = (k, v, en)
+            top_2grams.append(t)
+
+    top_3grams = []
+    for k, v in find_top_ngrams(unique_primary_names, 3, 100):
+        if v >= 3:
+            en = known_terms_dict.get(k, {}).get("en")
+            if en:
+                en = f'"{en}"'
+            else:
+                en = " + ".join(
+                    [f'"{known_terms_dict.get(c, {}).get("en", "❓")}"' for c in k]
+                )
+            t = (k, v, en)
+            top_2grams.append(t)
 
     # Data linting
     for dish_name in filtered_c:

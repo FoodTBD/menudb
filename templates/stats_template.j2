@@ -54,7 +54,7 @@
                     <th scope="row">Top {{ stats.top_characters | length }} characters</th>
                     <td>
                         {% for d in stats.top_characters %}
-                        (<a href="https://en.wiktionary.org/wiki/" ~ {{ d[0] }} ~ "#Chinese">{{ d[0] }}</a>, {{ d[1]
+                        (<a href="https://en.wiktionary.org/wiki/{{ d[0] }}#Chinese">{{ d[0] }}</a>, {{ d[1]
                         }}, "{{ d[2] }}")
                         {% if not loop.last %}, {% endif %}
                         {% endfor %}
@@ -64,8 +64,8 @@
                     <th scope="row">{{ stats.top_2grams | length }} most common 2-grams (n≥3)</th>
                     <td>
                         {% for d in stats.top_2grams %}
-                        (<a href="https://en.wiktionary.org/wiki/" ~ {{ d[0] }} ~ "#Chinese">{{ d[0] }}</a>, {{ d[1]
-                        }}, "{{ d[2] }}")
+                        (<a href="https://en.wiktionary.org/wiki/{{ d[0] }}#Chinese">{{ d[0] }}</a>, {{ d[1]
+                        }}, {{ d[2] }})
                         {% if not loop.last %}, {% endif %}
                         {% endfor %}
                     </td>
@@ -74,8 +74,8 @@
                     <th scope="row">{{ stats.top_3grams | length }} most common 3-grams (n≥3)</th>
                     <td>
                         {% for d in stats.top_3grams %}
-                        (<a href="https://en.wiktionary.org/wiki/" ~ {{ d[0] }} ~ "#Chinese">{{ d[0] }}</a>, {{ d[1]
-                        }}, "{{ d[2] }}")
+                        (<a href="https://en.wiktionary.org/wiki/{{ d[0] }}#Chinese">{{ d[0] }}</a>, {{ d[1]
+                        }}, {{ d[2] }})
                         {% if not loop.last %}, {% endif %}
                         {% endfor %}
                     </td>
