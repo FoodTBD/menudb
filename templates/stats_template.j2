@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDB - Stats</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">MenuDB</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-3">
+        <!-- Page Title -->
+        <h1>Stats</h1>
+
+        <!-- Stats -->
+        <table class="table">
+            {# <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Value</th>
+                </tr>
+            </thead> #}
+            <tbody>
+                <tr>
+                    <th scope="row">Menu count</th>
+                    <td>{{ stats.menu_count }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unique dish count</th>
+                    <td>{{ stats.unique_dish_count }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Common dishes across menus (n≥3)</th>
+                    <td>{{ stats.common_dishes }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Unique character count</th>
+                    <td>{{ stats.unique_character_count }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Top {{ stats.top_characters | length }} characters</th>
+                    <td>
+                        {% for d in stats.top_characters %}
+                        (<a href="https://en.wiktionary.org/wiki/" ~ {{ d[0] }} ~ "#Chinese">{{ d[0] }}</a>, {{ d[1]
+                        }}, "{{ d[2] }}")
+                        {% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Most common 3-grams (n≥3, count={{ stats.top_3grams | length }})</th>
+                    <td>
+                        {% for d in stats.top_3grams %}
+                        (<a href="https://en.wiktionary.org/wiki/" ~ {{ d[0] }} ~ "#Chinese">{{ d[0] }}</a>, {{ d[1]
+                        }}, "{{ d[2] }}")
+                        {% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Most common 2-grams (n≥3, count={{ stats.top_2grams | length }})</th>
+                    <td>
+                        {% for d in stats.top_2grams %}
+                        (<a href="https://en.wiktionary.org/wiki/" ~ {{ d[0] }} ~ "#Chinese">{{ d[0] }}</a>, {{ d[1]
+                        }}, "{{ d[2] }}")
+                        {% if not loop.last %}, {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Footer -->
+    {# <footer class="footer">
+        <div class="container">
+        </div>
+    </footer> #}
+</body>
+
+</html>
