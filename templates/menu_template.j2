@@ -188,14 +188,16 @@
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
+                                {% set imageSearchUrl = "https://www.google.com/search?tbm=isch&q=" ~
+                                item['name_' + primary_lang] %}
                                 <!-- Menu Item 'image_url' -->
                                 {% if item['image_url'] %}
-                                <img src="{{ item['image_url'] }}" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">
+                                <img src="{{ item['image_url'] }}" alt="Dish Image" title="{{ imageSearchUrl }}"
+                                    onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">
                                 {% else %}
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('{{ item['name_' + primary_lang] }}')">🖼️
-                                    🔎</button>
+                                <button aria-label="Image Search" title="{{ imageSearchUrl }}" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">🖼️ 🔎</button>
                                 {% endif %}
                             </td>
                             <td class="menu-table-text-column">
@@ -247,17 +249,18 @@
                             </td>
                             <td class="menu-table-menuaction-column">
                                 {% if 'zh-Hant' in display_language_codes %}
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
+                                    class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('{{ item['name_' + primary_lang] }}', 'zh-HK')">🗣️粵</button><br>
                                 {% endif %}
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('{{ item['name_' + primary_lang] }}', '{{ primary_lang }}')">🗣️</button><br>
 
                                 <!-- Menu Item 'wikipedia_url' -->
                                 {% if item['wikipedia_url'] %}
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')" title="{{
-                                    item['wikipedia_url'] }}">W</button><br>
+                                <button aria-label="Open Wikipedia" title="{{ item['wikipedia_url'] }}"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')">W</button><br>
                                 {% endif %}
                             </td>
                         </tr>

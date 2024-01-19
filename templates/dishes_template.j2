@@ -104,13 +104,16 @@
                     {% set primary_name_native = known_dish['name_native'].split(',')[0] %}
 
                     <td class="dishes-table-image-column">
+                        {% set imageSearchUrl = "https://www.google.com/search?tbm=isch&q=" ~ primary_name_native %}
+
                         <!-- Known Dish 'image_url' -->
                         {% if known_dish['image_url'] %}
-                        <img src="{{ known_dish['image_url'] }}" alt="Dish Image"
-                            onclick="openGoogleImageSearch('{{ primary_name_native }}')">
+                        <img src="{{ known_dish['image_url'] }}" alt="Dish Image" title="{{ imageSearchUrl }}"
+                            onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">
                         {% else %}
-                        <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                            onclick="openGoogleImageSearch('{{ primary_name_native }}')">🖼️ 🔎</button>
+                        <button aria-label="Image Search" title="{{ imageSearchUrl }}" type="button"
+                            class="btn btn-light btn-googleimage"
+                            onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">🖼️ 🔎</button>
                         {% endif %}
                     </td>
                     <td>
@@ -136,21 +139,22 @@
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
+                        {% set lang = known_dish['locale_code'] %}
+
                         {% if locale_dish_group.locale_code == 'zh-u-sd-cngd' %}
-                        <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                        <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
+                            class="btn btn-light btn-menuaction btn-speak"
                             onclick="speakText('{{ primary_name_native }}', 'zh-HK')">🗣️粵</button><br>
-                        <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', 'zh-CN')">🗣️</button><br>
-                        {% else %}
-                        <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', '{{ known_dish['locale_code'] }}')">🗣️</button><br>
+                        {% set lang = 'zh-CN' %}
                         {% endif %}
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('{{ primary_name_native }}', '{{ lang }}')">🗣️</button><br>
 
                         <!-- Known Dish 'wikipedia_url' -->
                         {% if known_dish['wikipedia_url'] %}
-                        <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('{{ known_dish['wikipedia_url'] }}', 'wikipedia')"
-                            title="{{ known_dish['wikipedia_url'] }}">W</button><br>
+                        <button aria-label="Open Wikipedia" title="{{ known_dish['wikipedia_url'] }}"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('{{ known_dish['wikipedia_url'] }}', 'wikipedia')">W</button><br>
                         {% endif %}
                     </td>
                 </tr>
