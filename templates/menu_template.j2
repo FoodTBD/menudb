@@ -256,7 +256,8 @@
                                 <!-- Menu Item 'wikipedia_url' -->
                                 {% if item['wikipedia_url'] %}
                                 <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')">W</button><br>
+                                    onclick="openLink('{{ item['wikipedia_url'] }}', 'wikipedia')" title="{{
+                                    item['wikipedia_url'] }}">W</button><br>
                                 {% endif %}
                             </td>
                         </tr>

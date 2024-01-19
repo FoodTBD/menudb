@@ -149,7 +149,8 @@
                         <!-- Known Dish 'wikipedia_url' -->
                         {% if known_dish['wikipedia_url'] %}
                         <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('{{ known_dish['wikipedia_url'] }}', 'wikipedia')">W</button><br>
+                            onclick="openLink('{{ known_dish['wikipedia_url'] }}', 'wikipedia')"
+                            title="{{ known_dish['wikipedia_url'] }}">W</button><br>
                         {% endif %}
                     </td>
                 </tr>
