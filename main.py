@@ -194,41 +194,36 @@ def generate_menu_html(
         if "en" not in display_language_codes:
             display_language_codes.append("en")
 
-    # EXPERIMENTAL
     ordered_known_terms = sorted(known_terms_lookup_dict, key=len, reverse=True)
 
-    # EXPERIMENTAL
-    all_chinese_dish_names = []
+    # CHINESE ONLY
+    # Gather all primary dish names from YAML
+    chinese_dish_name_to_menu_item = {}
     if yaml_dict.get("menu"):
-        primary_lang = yaml_dict["menu"]["language_codes"][0]
+        primary_lang_tag = yaml_dict["menu"]["language_codes"][0]
+        primary_lang_code = primary_lang_tag.split("-")[0]
+
         for page in yaml_dict["menu"]["pages"]:
-            if page.get("sections"):
-                for section in page["sections"]:
-                    if section.get("menu_items"):
-                        for menu_item in section["menu_items"]:
-                            lang = "name_" + primary_lang
-                            if menu_item.get(lang):
-                                primary_name = menu_item[lang]
-                                if known_dish_lookuptable.get(primary_name):
-                                    known_dish = known_dish_lookuptable[primary_name]
-                                    for k, v in known_dish.items():
-                                        if k not in menu_item:
-                                            menu_item[k] = v
+            sections = page.get("sections", [])
+            for section in sections:
+                menu_items = section.get("menu_items", [])
+                for menu_item in menu_items:
+                    primary_name = menu_item.get("name_" + primary_lang_tag)
+                    if primary_name and primary_lang_code == "zh":
+                        chinese_dish_name_to_menu_item[primary_name] = menu_item
 
-                                components = primary_lang.split("-")
-                                if components[0] == "zh":
-                                    all_chinese_dish_names.append(primary_name)
-
+    # CHINESE ONLY
+    # For each Chinese name, match against known_terms to try to annotate it
     dish_name_to_annotated_html = {}
-    for native_name in all_chinese_dish_names:
+    for dish_name in chinese_dish_name_to_menu_item.keys():
         annotated_html = ""
         i = 0
-        while i < len(native_name):
+        while i < len(dish_name):
             matched = False
 
             # Check for the longest possible match first
             for key in ordered_known_terms:
-                if native_name[i:].startswith(key):
+                if dish_name[i:].startswith(key):
                     annotated_html += (
                         '<span class="dish-term-native">'
                         f"{key}"
@@ -245,15 +240,26 @@ def generate_menu_html(
 
                     i += len(key)
                     matched = True
+
+                    # Use data from this matching term to possibly enrich the menu_item dict
+                    menu_item = chinese_dish_name_to_menu_item[dish_name]
+                    known_term = known_terms_lookup_dict[key]
+                    if not menu_item.get("image_url") and known_term.get("image_url"):
+                        menu_item["image_url"] = known_term["image_url"]
+                    if not menu_item.get("wikipedia_url") and known_term.get(
+                        "wikipedia_url"
+                    ):
+                        menu_item["wikipedia_url"] = known_term["wikipedia_url"]
+
                     break
 
             # If no match, just add the character
             if not matched:
                 annotated_html += (
-                    '<span class="dish-term-native">' f"{native_name[i]}" "</span>"
+                    '<span class="dish-term-native">' f"{dish_name[i]}" "</span>"
                 )
                 i += 1
-        dish_name_to_annotated_html[native_name] = annotated_html
+        dish_name_to_annotated_html[dish_name] = annotated_html
 
     env = Environment(loader=FileSystemLoader("."))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
