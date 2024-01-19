@@ -190,7 +190,8 @@
                             <td class="menu-table-image-column">
                                 {% set imageSearchUrl = "https://www.google.com/search?tbm=isch&q=" ~
                                 item['name_' + primary_lang] %}
-                                <!-- Menu Item 'image_url' -->
+
+                                <!-- Dish Image -->
                                 {% if item['image_url'] %}
                                 <img src="{{ item['image_url'] }}" alt="Dish Image" title="{{ imageSearchUrl }}"
                                     onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">
@@ -202,38 +203,38 @@
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    {% if item['item_number'] %}<span class="menu-item-number">{{
-                                        item['item_number'] }}</span>{% endif %}
+                                    <!-- Number -->
+                                    {% if item['item_number'] %}
+                                    <span class="menu-item-number">{{ item['item_number'] }}</span>
+                                    {% endif %}
 
-                                    {%- for lang in display_language_codes if item['name_' + lang] and not lang
-                                    ==
-                                    'zh-Latn-pinyin' %}
+                                    <!-- Name (Primary) -->
+                                    {% for lang in display_language_codes if item['name_' + lang] and not lang
+                                    == 'zh-Latn-pinyin' %}
                                     {% set dish_name = item['name_' + lang] %}
-                                    <!-- Menu Item 'name_*' (primary) -->
                                     {% if lang == primary_lang %}
                                     <span class="menu-item-name menu-item-name-primary">{{
                                         dish_name_to_annotated_html[dish_name] }}</span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     {% else %}
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
                                         styled_text_format }}</span>
-                                    {% endif %}
+                                    {%- endif %}
 
-                                    {% if not loop.first and not loop.last %} <span class="menu-item-divider">/</span>
+                                    {%- if not loop.first and not loop.last %} <span class="menu-item-divider">/</span>
                                     {% endif %}
                                     {% endfor +%}
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
                                     {% for _ in range(item['spice_heat_level'] | default(0)) %}🌶️{% endfor %}
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                     {% if not item['image_url'] %}
-                                    {%- for lang in display_language_codes if item['description_' + lang] %}
+                                    {% for lang in display_language_codes if item['description_' + lang] %}
                                     <span class="menu-item-description">{{ item['description_' + lang] |
                                         styled_text_format }}</span>{% if not loop.last %} <span
                                         class="menu-item-divider">/</span> {% endif %}
@@ -248,6 +249,7 @@
                                 {% endif %} #}
                             </td>
                             <td class="menu-table-menuaction-column">
+                                <!-- Speak Button(s) -->
                                 {% if 'zh-Hant' in display_language_codes %}
                                 <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
                                     class="btn btn-light btn-menuaction btn-speak"
@@ -256,7 +258,7 @@
                                 <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('{{ item['name_' + primary_lang] }}', '{{ primary_lang }}')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                                 {% if item['wikipedia_url'] %}
                                 <button aria-label="Open Wikipedia" title="{{ item['wikipedia_url'] }}"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
