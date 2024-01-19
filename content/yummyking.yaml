@@ -44,10 +44,11 @@ menu:
               "description_sv-SE": Oxmage med chiliolja & koriander
               price: 120 kr
             - item_number: 6
-              "name_zh-Hans": 麻辣鸭头 - 3个
+              "name_zh-Hans": 麻辣鸭头
               "name_en": Spicy duck head
               "description_sv-SE": Bräserad ankhuvud (Mala ankhuvud)
               price: 3/90 kr
+              note: "3个"
             - item_number: 7
               "name_zh-Hans": 五香卤牛腱
               "name_en": Spiced beef

@@ -15,76 +15,76 @@ menu:
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/sichuanrestaurang/2023-02-28%202%20Large.jpeg
       sections:
         - "name_zh-Hans": 前餐
-          "name_en": Pre-meal
+          # "name_en": Pre-meal
           menu_items:
             - "name_zh-Hans": 香拌牛肉
-              "name_en": Marinated Beef Salad
+              # "name_en": Marinated Beef Salad
               price: 149:-
             - "name_zh-Hans": 夫妻肺片
               price: 189:-
             - "name_zh-Hans": 口水鸡
-              "name_en": Steamed Chicken with Chili Sauce
+              # "name_en": Steamed Chicken with Chili Sauce
               image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg
               price: 149:-
             - "name_zh-Hans": 红油肚丝
-              "name_en": Pork Tripe in Chili Oil
+              # "name_en": Pork Tripe in Chili Oil
               price: 139:-
             - "name_zh-Hans": 山椒木耳
-              "name_en": Black Fungus with Wild Pepper
+              # "name_en": Black Fungus with Wild Pepper
               price: 149:-
             - "name_zh-Hans": 蒜泥黄瓜
-              "name_en": Cucumber with Mashed Garlic
+              # "name_en": Cucumber with Mashed Garlic
               price: 139:-
         - "name_zh-Hans": 海鲜
-          "name_en": Seafood
+          # "name_en": Seafood
           menu_items:
             - "name_zh-Hans": 沸腾鱼
-              "name_en": Boiled fish in chili oil
+              # "name_en": Boiled fish in chili oil
               price: 249:-
             - "name_zh-Hans": 酸菜鱼
-              "name_en": Boiled fish with pickled cabbage and chili
+              # "name_en": Boiled fish with pickled cabbage and chili
               price: 189:-
             - "name_zh-Hans": 水煮鱼
-              "name_en": Shuizhu Fish
+              # "name_en": Shuizhu Fish
               price: 199:-
             - "name_zh-Hans": 清蒸比目
-              "name_en": Steamed flatfish
+              # "name_en": Steamed flatfish
               price: 时价 current price
             - "name_zh-Hans": 川香椒麻鱼
-              "name_en": Spicy pepper fish
+              # "name_en": Spicy pepper fish
               price: 669:-
             - "name_zh-Hans": 香辣大虾
-              "name_en": Spicy prawns
+              # "name_en": Spicy prawns
               price: 219:-
             - "name_zh-Hans": 茄汁大虾
-              "name_en": Prawns with tomato sauce
+              # "name_en": Prawns with tomato sauce
               price: 199:-
         - "name_zh-Hans": 牛肉
-          "name_en": Beef
+          # "name_en": Beef
           menu_items:
             - "name_zh-Hans": 水煮牛肉
-              "name_en": Shuizhu Sliced Beef
+              # "name_en": Shuizhu Sliced Beef
               price: 219:-
             - "name_zh-Hans": 孜然牛柳
-              "name_en": Beef Tenderloin with Cumin
+              # "name_en": Beef Tenderloin with Cumin
               price: 289:-
             - "name_zh-Hans": 水煮牛柳
-              "name_en": Shuizhu Beef Tenderloin
+              # "name_en": Shuizhu Beef Tenderloin
               price: 269:-
         - "name_zh-Hans": 猪肉
-          "name_en": Pork
+          # "name_en": Pork
           menu_items:
             - "name_zh-Hans": 京酱肉丝
               price: 219:-
             - "name_zh-Hans": 鱼香肉丝
               price: 189:-
             - "name_zh-Hans": 小炒肉
-              "name_en": Sautéed Pork
+              # "name_en": Sautéed Pork
               price: 179:-
             - "name_zh-Hans": 回锅肉
               price: 189:-
         - "name_zh-Hans": 鸡肉
-          "name_en": Chicken
+          # "name_en": Chicken
           menu_items:
             - "name_zh-Hans": 宫保鸡丁
               price: 189:-
@@ -94,44 +94,44 @@ menu:
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/sichuanrestaurang/2023-02-28%20Large.jpeg
       sections:
         - "name_zh-Hans": 干锅特色
-          "name_en": Griddle Specialities
+          # "name_en": Griddle Specialities
           menu_items:
             - "name_zh-Hans": 干锅大虾
-              "name_en": Griddle Prawns
+              # "name_en": Griddle Prawns
               price: 219:-
             - "name_zh-Hans": 干锅鸡杂
-              "name_en": Griddle Chicken Offal
+              # "name_en": Griddle Chicken Offal
               price: 189:-
             - "name_zh-Hans": 干锅肥肠
-              "name_en": Griddle Pork Intestines
+              # "name_en": Griddle Pork Intestines
               price: 239:-
             - "name_zh-Hans": 酸汤牛肉
-              "name_en": Sliced Beef in Sour Soup
+              # "name_en": Sliced Beef in Sour Soup
               price: 279:-
             - "name_zh-Hans": 毛血旺
               price: 359:-
         - "name_zh-Hans": 蔬菜
-          "name_en": Vegetables
+          # "name_en": Vegetables
           menu_items:
             - "name_zh-Hans": 麻婆豆腐
               price: 129:-
             - "name_zh-Hans": 干煸豆角
-              "name_en": Dry-Fried Green Beans
+              # "name_en": Dry-Fried Green Beans
               price: 159:-
             - "name_zh-Hans": 鱼香茄子
               price: 159:-
             - "name_zh-Hans": 西红柿炒鸡蛋
               price: 139:-
             - "name_zh-Hans": 酸辣土豆丝
-              "name_en": Hot and Sour Shredded Potatoes
+              # "name_en": Hot and Sour Shredded Potatoes
               price: 129:-
             - "name_zh-Hans": 炒时蔬
-              "name_en": Sautéed Seasonal Vegetable
+              # "name_en": Sautéed Seasonal Vegetable
               price: 149:-
         - "name_zh-Hans": 面食
-          "name_en": Noodles
+          # "name_en": Noodles
           menu_items:
             - "name_zh-Hans": 担担面
               price: 129:-
-              price_note: (1份 / 1 serving)
-      page_footer: "备注：米饭 15kr/人 / Remarks: Rice 15kr/person"
+              price_note: (1份)  # (1 serving)
+      page_footer: "备注：米饭 15kr/人"  # "Remarks: Rice 15kr/person"

@@ -67,14 +67,14 @@
             font-size: 1.25rem;
         }
 
-        .dish-term-native {
+        .term-native {
             display: inline-block;
             text-align: center;
             margin-right: 0.2rem;
             vertical-align: top;
         }
 
-        .dish-term-translated {
+        .term-translated {
             display: block;
             font-size: x-small;
             font-variation-settings: "wdth" 50;
@@ -126,14 +126,14 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
     <div class="container mt-4">
         <!-- Table of Contents -->
         <ul>
-            <li><a href="#前餐">前餐 / Pre-meal</a></li>
-            <li><a href="#海鲜">海鲜 / Seafood</a></li>
-            <li><a href="#牛肉">牛肉 / Beef</a></li>
-            <li><a href="#猪肉">猪肉 / Pork</a></li>
-            <li><a href="#鸡肉">鸡肉 / Chicken</a></li>
-            <li><a href="#干锅特色">干锅特色 / Griddle Specialities</a></li>
-            <li><a href="#蔬菜">蔬菜 / Vegetables</a></li>
-            <li><a href="#面食">面食 / Noodles</a></li>
+            <li><a href="#前餐">前餐</a></li>
+            <li><a href="#海鲜">海鲜</a></li>
+            <li><a href="#牛肉">牛肉</a></li>
+            <li><a href="#猪肉">猪肉</a></li>
+            <li><a href="#鸡肉">鸡肉</a></li>
+            <li><a href="#干锅特色">干锅特色</a></li>
+            <li><a href="#蔬菜">蔬菜</a></li>
+            <li><a href="#面食">面食</a></li>
         </ul>
     </div>
     <div class="container mt-4">
@@ -149,13 +149,11 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
             <div class="col-md-6">
                 <table class="menu-table">
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="前餐">
                         <tr>
                             <th colspan="3">
-                                <a name="前餐">
-                                    <span class="menu-section-name-primary">前餐</span>
-                                    Pre-meal
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">前餐<span class="term-translated">Pre-Meal</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -163,236 +161,232 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('香拌牛肉')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=香拌牛肉" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=香拌牛肉', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">拌<span class="dish-term-translated">tossed</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">香<span class="term-translated">aromatic</span></span><span class="term-native">拌<span class="term-translated">tossed</span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Marinated Beef Salad</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('香拌牛肉', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('夫妻肺片')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=夫妻肺片"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=夫妻肺片', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">夫妻肺片<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Fuqi_feipian" target="wikipedia" rel="noopener">Fuqi Feipian</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">夫妻肺片<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Fuqi_feipian" target="wikipedia" rel="noopener">Fuqi Feipian</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Fuqi Feipian</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('夫妻肺片', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Fuqi_feipian"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_feipian', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('口水鸡')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=口水鸡"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=口水鸡', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">口水鸡<span class="dish-term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E" target="wikipedia" rel="noopener">Mouthwatering Chicken</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">口水鸡<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E" target="wikipedia" rel="noopener">Mouthwatering Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Steamed Chicken with Chili Sauce</span>
-
-
+                                    <!-- Name(s) (Secondary) -->
+                                    <span class="menu-item-name menu-item-name-secondary">Mouthwatering Chicken</span>
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('口水鸡', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('红油肚丝')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=红油肚丝" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=红油肚丝', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">红油<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="dish-term-native">肚<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">红油<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="term-native">肚<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="term-native">丝<span class="term-translated">shredded</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Pork Tripe in Chili Oil</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('红油肚丝', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chili_oil"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chili_oil', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('山椒木耳')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=山椒木耳" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=山椒木耳', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">山<span class="dish-term-translated">mountain</span></span><span class="dish-term-native">椒<span class="dish-term-translated">pepper</span></span><span class="dish-term-native">木耳<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Wood_ear" target="wikipedia" rel="noopener">wood-ear</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">山<span class="term-translated">mountain</span></span><span class="term-native">椒<span class="term-translated">pepper</span></span><span class="term-native">木耳<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Wood_ear" target="wikipedia" rel="noopener">wood-ear</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Black Fungus with Wild Pepper</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('山椒木耳', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Wood_ear"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Wood_ear', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('蒜泥黄瓜')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Pai_huang_gua.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蒜泥黄瓜"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=蒜泥黄瓜', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">蒜<span class="dish-term-translated">garlic</span></span><span class="dish-term-native">泥<span class="dish-term-translated">mashed</span></span><span class="dish-term-native">黄瓜<span class="dish-term-translated">cucumber</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蒜<span class="term-translated">garlic</span></span><span class="term-native">泥<span class="term-translated">mashed</span></span><span class="term-native">黄瓜<span class="term-translated">cucumber</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Cucumber with Mashed Garlic</span>
-
-
+                                    <!-- Name(s) (Secondary) -->
+                                    <span class="menu-item-name menu-item-name-secondary">Smashed Cucumber Salad</span>
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('蒜泥黄瓜', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                             </td>
                         </tr>
                     </tbody>
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="海鲜">
                         <tr>
                             <th colspan="3">
-                                <a name="海鲜">
-                                    <span class="menu-section-name-primary">海鲜</span>
-                                    Seafood
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">海鲜<span class="term-translated">Seafood</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -400,271 +394,267 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('沸腾鱼')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=沸腾鱼" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=沸腾鱼', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">沸腾<span class="dish-term-translated">boiled</span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">沸腾<span class="term-translated">boiled</span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Boiled fish in chili oil</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('沸腾鱼', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('酸菜鱼')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸菜鱼"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酸菜鱼', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸菜鱼<span class="dish-term-translated">Suancai Fish</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Boiled fish with pickled cabbage and chili</span>
-
-
+                                    <!-- Name(s) (Secondary) -->
+                                    <span class="menu-item-name menu-item-name-secondary">Suancai Fish</span>
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('酸菜鱼', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('水煮鱼')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮鱼"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮鱼', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮鱼<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Fish</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Shuizhu Fish</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('水煮鱼', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('清蒸比目')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=清蒸比目" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=清蒸比目', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">清<span class="dish-term-translated">clear</span></span><span class="dish-term-native">蒸<span class="dish-term-translated">steamed</span></span><span class="dish-term-native">比目<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Flatfish#As_food" target="wikipedia" rel="noopener">flatfish</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">清<span class="term-translated">clear</span></span><span class="term-native">蒸<span class="term-translated">steamed</span></span><span class="term-native">比目<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Flatfish#As_food" target="wikipedia" rel="noopener">flatfish</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Steamed flatfish</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('清蒸比目', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Flatfish#As_food"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Flatfish#As_food', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('川香椒麻鱼')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=川香椒麻鱼" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=川香椒麻鱼', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">川香椒麻<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_pepper" target="wikipedia" rel="noopener">Sichuan pepper-y</a></span></span><span class="dish-term-native">鱼<span class="dish-term-translated">fish</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">川香椒麻<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_pepper" target="wikipedia" rel="noopener">Sichuan pepper-y</a></span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Spicy pepper fish</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('川香椒麻鱼', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Sichuan_pepper"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Sichuan_pepper', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('香辣大虾')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=香辣大虾" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=香辣大虾', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">香<span class="dish-term-translated">aromatic</span></span><span class="dish-term-native">辣<span class="dish-term-translated">spicy</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">香<span class="term-translated">aromatic</span></span><span class="term-native">辣<span class="term-translated">spicy</span></span><span class="term-native">大<span class="term-translated">large</span></span><span class="term-native">虾<span class="term-translated">shrimp</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Spicy prawns</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('香辣大虾', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('茄汁大虾')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=茄汁大虾" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=茄汁大虾', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">茄汁<span class="dish-term-translated">tomato sauce</span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">茄汁<span class="term-translated">tomato sauce</span></span><span class="term-native">大<span class="term-translated">large</span></span><span class="term-native">虾<span class="term-translated">shrimp</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Prawns with tomato sauce</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('茄汁大虾', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                             </td>
                         </tr>
                     </tbody>
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="牛肉">
                         <tr>
                             <th colspan="3">
-                                <a name="牛肉">
-                                    <span class="menu-section-name-primary">牛肉</span>
-                                    Beef
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">牛肉<span class="term-translated">Beef</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -672,124 +662,124 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('水煮牛肉')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮牛肉"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮牛肉', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮牛肉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Beef</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Sliced Beef</span>
-
-
+                                    <!-- Name(s) (Secondary) -->
+                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Beef</span>
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('水煮牛肉', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('孜然牛柳')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=孜然牛柳" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=孜然牛柳', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">孜</span><span class="dish-term-native">然</span><span class="dish-term-native">牛柳<span class="dish-term-translated">beef tenderloin</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">孜然<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Cumin" target="wikipedia" rel="noopener">cumin</a></span></span><span class="term-native">牛柳<span class="term-translated">beef tenderloin</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Beef Tenderloin with Cumin</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('孜然牛柳', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Cumin"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Cumin', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('水煮牛柳')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=水煮牛柳" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮牛柳', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">水煮<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="dish-term-native">牛柳<span class="dish-term-translated">beef tenderloin</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">牛柳<span class="term-translated">beef tenderloin</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Shuizhu Beef Tenderloin</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('水煮牛柳', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                     </tbody>
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="猪肉">
                         <tr>
                             <th colspan="3">
-                                <a name="猪肉">
-                                    <span class="menu-section-name-primary">猪肉</span>
-                                    Pork
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">猪肉<span class="term-translated">Pork</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -797,163 +787,162 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('京酱肉丝')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=京酱肉丝"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=京酱肉丝', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">京酱肉丝<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si" target="wikipedia" rel="noopener">Jingjiang Rousi</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">京<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Beijing_cuisine" target="wikipedia" rel="noopener">Beijing</a></span></span><span class="term-native">酱<span class="term-translated">sauce</span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">丝<span class="term-translated">shredded</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Jingjiang Rousi</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('京酱肉丝', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('鱼香肉丝')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香肉丝"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香肉丝', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼香肉丝<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork" target="wikipedia" rel="noopener">Yuxiang Shredded Pork</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">鱼香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">丝<span class="term-translated">shredded</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Yuxiang Shredded Pork</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('鱼香肉丝', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('小炒肉')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=小炒肉" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=小炒肉', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">小<span class="dish-term-translated">small</span></span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">肉<span class="dish-term-translated">pork</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">小<span class="term-translated">small</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">肉<span class="term-translated">pork</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Sautéed Pork</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('小炒肉', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('回锅肉')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=回锅肉"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=回锅肉', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">回锅肉<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Twice-cooked_pork" target="wikipedia" rel="noopener">Twice-Cooked Pork</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">回锅肉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Twice-cooked_pork" target="wikipedia" rel="noopener">Twice-Cooked Pork</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Twice-Cooked Pork</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('回锅肉', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Twice-cooked_pork"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Twice-cooked_pork', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                     </tbody>
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="鸡肉">
                         <tr>
                             <th colspan="3">
-                                <a name="鸡肉">
-                                    <span class="menu-section-name-primary">鸡肉</span>
-                                    Chicken
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">鸡肉<span class="term-translated">Chicken</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -961,76 +950,76 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('宫保鸡丁')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宫保鸡丁"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=宫保鸡丁', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">宫保鸡丁<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Kung_Pao_chicken" target="wikipedia" rel="noopener">Kung Pao Chicken</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">宫保鸡丁<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Kung_Pao_chicken" target="wikipedia" rel="noopener">Kung Pao Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Kung Pao Chicken</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('宫保鸡丁', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Kung_Pao_chicken"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('辣子鸡')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=辣子鸡"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=辣子鸡', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">辣子鸡<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Laziji" target="wikipedia" rel="noopener">Laziji</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">辣子<span class="term-translated">spicy</span></span><span class="term-native">鸡<span class="term-translated">chicken</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Laziji</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('辣子鸡', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Laziji"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
@@ -1047,13 +1036,11 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
             <div class="col-md-6">
                 <table class="menu-table">
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="干锅特色">
                         <tr>
                             <th colspan="3">
-                                <a name="干锅特色">
-                                    <span class="menu-section-name-primary">干锅特色</span>
-                                    Griddle Specialities
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">干锅<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85" target="wikipedia" rel="noopener">Dry-Pot</a></span></span><span class="term-native">特色<span class="term-translated">Speciality</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -1061,198 +1048,194 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('干锅大虾')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干锅大虾"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=干锅大虾', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干锅<span class="dish-term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85" target="wikipedia" rel="noopener">dry-pot</a></span></span><span class="dish-term-native">大<span class="dish-term-translated">large</span></span><span class="dish-term-native">虾<span class="dish-term-translated">shrimp</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干锅<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85" target="wikipedia" rel="noopener">dry-pot</a></span></span><span class="term-native">大<span class="term-translated">large</span></span><span class="term-native">虾<span class="term-translated">shrimp</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Griddle Prawns</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('干锅大虾', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('干锅鸡杂')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干锅鸡杂"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=干锅鸡杂', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干锅鸡<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Dry_pot_chicken" target="wikipedia" rel="noopener">Dry Pot Chicken</a></span></span><span class="dish-term-native">杂<span class="dish-term-translated">mixed</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干锅<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85" target="wikipedia" rel="noopener">dry-pot</a></span></span><span class="term-native">鸡<span class="term-translated">chicken</span></span><span class="term-native">杂<span class="term-translated">mixed</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Griddle Chicken Offal</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('干锅鸡杂', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('干锅肥肠')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干锅肥肠"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=干锅肥肠', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干锅<span class="dish-term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85" target="wikipedia" rel="noopener">dry-pot</a></span></span><span class="dish-term-native">肥肠<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chitterlings#China" target="wikipedia" rel="noopener">pork intestine</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干锅<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85" target="wikipedia" rel="noopener">dry-pot</a></span></span><span class="term-native">肥肠<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chitterlings#China" target="wikipedia" rel="noopener">pork intestine</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Griddle Pork Intestines</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('干锅肥肠', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('酸汤牛肉')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=酸汤牛肉" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酸汤牛肉', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸<span class="dish-term-translated">sour</span></span><span class="dish-term-native">汤<span class="dish-term-translated">soup</span></span><span class="dish-term-native">牛肉<span class="dish-term-translated">beef</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸<span class="term-translated">sour</span></span><span class="term-native">汤<span class="term-translated">soup</span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Sliced Beef in Sour Soup</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('酸汤牛肉', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('毛血旺')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=毛血旺"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=毛血旺', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">毛血旺<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations" target="wikipedia" rel="noopener">Maoxuewang</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">毛血旺<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations" target="wikipedia" rel="noopener">Maoxuewang</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Maoxuewang</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('毛血旺', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                     </tbody>
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="蔬菜">
                         <tr>
                             <th colspan="3">
-                                <a name="蔬菜">
-                                    <span class="menu-section-name-primary">蔬菜</span>
-                                    Vegetables
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">蔬菜<span class="term-translated">Vegetable</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -1260,232 +1243,238 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('麻婆豆腐')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=麻婆豆腐"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=麻婆豆腐', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">麻婆豆腐<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Mapo_tofu" target="wikipedia" rel="noopener">Mapo Tofu</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">麻婆豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Mapo_tofu" target="wikipedia" rel="noopener">Mapo Tofu</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Mapo Tofu</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('麻婆豆腐', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Mapo_tofu"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('干煸豆角')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=干煸豆角" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=干煸豆角', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">干煸<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry-fried</a></span></span><span class="dish-term-native">豆<span class="dish-term-translated">bean</span></span><span class="dish-term-native">角<span class="dish-term-translated">dumpling</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干煸<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry-fried</a></span></span><span class="term-native">豆<span class="term-translated">bean</span></span><span class="term-native">角<span class="term-translated">dumpling</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Dry-Fried Green Beans</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('干煸豆角', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/440px-Yuxiangqiezi.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('鱼香茄子')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/440px-Yuxiangqiezi.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香茄子"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香茄子', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">鱼香茄子<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">Yuxiang Eggplant</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">鱼香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">茄子<span class="term-translated">eggplant</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Yuxiang Eggplant</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('鱼香茄子', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Yuxiang"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('西红柿炒鸡蛋')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=西红柿炒鸡蛋" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=西红柿炒鸡蛋', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">西<span class="dish-term-translated">western</span></span><span class="dish-term-native">红<span class="dish-term-translated">red</span></span><span class="dish-term-native">柿</span><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">鸡<span class="dish-term-translated">chicken</span></span><span class="dish-term-native">蛋<span class="dish-term-translated">egg</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西<span class="term-translated">western</span></span><span class="term-native">红柿<span class="term-translated">tomato</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">鸡<span class="term-translated">chicken</span></span><span class="term-native">蛋<span class="term-translated">egg</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('西红柿炒鸡蛋', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('酸辣土豆丝')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=酸辣土豆丝" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酸辣土豆丝', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">酸辣<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="dish-term-native">土豆<span class="dish-term-translated">potato</span></span><span class="dish-term-native">丝<span class="dish-term-translated">shredded</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="term-native">土豆<span class="term-translated">potato</span></span><span class="term-native">丝<span class="term-translated">shredded</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Hot and Sour Shredded Potatoes</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('酸辣土豆丝', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Hot_and_sour"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Hot_and_sour', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <button aria-label="Image Search" type="button" class="btn btn-light btn-googleimage"
-                                    onclick="openGoogleImageSearch('炒时蔬')">🖼️
-                                    🔎</button>
+
+                                <!-- Dish Image -->
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=炒时蔬" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=炒时蔬', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">炒<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="dish-term-native">时蔬<span class="dish-term-translated">seasonal vegetables</span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">时蔬<span class="term-translated">seasonal vegetables</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">Sautéed Seasonal Vegetable</span>
-
 
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('炒时蔬', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                     </tbody>
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="面食">
                         <tr>
                             <th colspan="3">
-                                <a name="面食">
-                                    <span class="menu-section-name-primary">面食</span>
-                                    Noodles
-                                </a>
+                                <span class="menu-section-name-primary"><span class="term-native">面食<span class="term-translated">Noodle</span></span></span>
+                                
                             </th>
                         </tr>
                     </thead>
@@ -1493,61 +1482,57 @@ Homepage: <a href="https://sichuanrestaurang.business.site/" target="_blank" rel
                         <!-- Menu Item -->
                         <tr class="menu-item-body-row">
                             <td class="menu-table-image-column">
-                                <!-- Menu Item 'image_url' -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg" alt="Dish Image"
-                                    onclick="openGoogleImageSearch('担担面')">
+
+                                <!-- Dish Image -->
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=担担面"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=担担面', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
-                                    <!-- Menu Item 'item_number' -->
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="dish-term-native">担担面<span class="dish-term-translated"><a href="https://en.wikipedia.org/wiki/Dandan_noodles" target="wikipedia" rel="noopener">Dandan Noodles</a></span></span></span>
+                                    <!-- Number -->
+
+                                    <!-- Name (Primary) -->
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">担担面<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Dandan_noodles" target="wikipedia" rel="noopener">Dandan Noodles</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
-
-                                    <!-- Menu Item 'name_*' (primary) -->
-                                    <!-- Menu Item 'name_*' (secondary) -->
+                                    <!-- Name(s) (Secondary) -->
                                     <span class="menu-item-name menu-item-name-secondary">Dandan Noodles</span>
-
-
                                 </div>
 
                                 <div class="menu-item-description-div">
-                                    <!-- Menu Item 'spice_heat_level' -->
+                                    <!-- Spice Heat Level -->
 
-                                    <!-- Menu Item 'description_*' -->
+                                    <!-- Description(s) -->
                                 </div>
 
                             </td>
                             <td class="menu-table-menuaction-column">
-                                <button aria-label="Speak" class="btn btn-light btn-menuaction btn-speak"
+                                <!-- Speak Button(s) -->
+                                <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                                     onclick="speakText('担担面', 'zh-Hans')">🗣️</button><br>
 
-                                <!-- Menu Item 'wikipedia_url' -->
-                                <button aria-label="Open Wikipedia" class="btn btn-light btn-menuaction btn-wikipedia"
+                                <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Dandan_noodles"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
                                     onclick="openLink('https://en.wikipedia.org/wiki/Dandan_noodles', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-<p>备注：米饭 15kr/人 / Remarks: Rice 15kr/person</p>            </div>
+<p>备注：米饭 15kr/人</p>            </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p><small>Generated 2024-01-13</small></p>
+            <p><small>Generated 2024-01-19</small></p>
         </div>
     </footer>
 
 <script>
     function openLink(url, target) {
         window.open(url, target);
-    }
-
-    function openGoogleImageSearch(queryText) {
-        openLink("https://www.google.com/search?tbm=isch&q=" + queryText, "googleimage");
     }
 
     function speakText(text, lang) {

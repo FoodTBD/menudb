@@ -48,8 +48,8 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 扣肉	扣肉	braised pork					
 脯	脯	breast					
 大红	大紅	bright red					
-西兰花	西蘭花	broccoli					(chiefly Mainland China, Hong Kong, Malaysia, Singapore)
 西蓝花	西藍花	broccoli					Alternative form of 西蘭花／西兰花
+西兰花	西蘭花	broccoli					(chiefly Mainland China, Hong Kong, Malaysia, Singapore)
 上汤	上湯	broth					(chiefly Cantonese) https://en.wiktionary.org/wiki/%E4%B8%8A%E6%B9%AF#Noun
 炖	炖	broth					
 高汤	高湯	broth					
@@ -63,18 +63,16 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 西芹	西芹	celery					
 皮蛋瘦肉粥	皮蛋瘦肉粥	Century Egg and Pork Congee	https://en.wikipedia.org/wiki/Century_egg	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Pork_preserved_duck_egg_congee.jpg/128px-Pork_preserved_duck_egg_congee.jpg	zh-u-sd-cngd	Rice porridge with dark translucent preserved egg and lean pork	
 叉烧包	叉燒包	Cha Siu Bao	https://en.wikipedia.org/wiki/Cha_siu_bao	https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/128px-Char_siu_bao.jpg	zh-u-sd-cngd	Bao (buns) filled with char siu, available steamed or baked	
-潮	潮	Chaoshan	https://en.wikipedia.org/wiki/Teochew_cuisine				
-潮州	潮州	Chaoshan	https://en.wikipedia.org/wiki/Teochew_cuisine				
-抄手	抄手	chaoshou wonton	https://en.wikipedia.org/wiki/Chaoshou				https://en.wikipedia.org/wiki/Wonton#Sichuan_cuisine
-炒贵刁	炒貴刁	char kway teow	https://en.wikipedia.org/wiki/Char_kway_teow				
+潮州,潮	潮州,潮	Chaoshan	https://en.wikipedia.org/wiki/Teochew_cuisine				
+抄手	抄手	chaoshou wonton	https://en.wikipedia.org/wiki/Chaoshou	https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/SuanMary.JPG/500px-SuanMary.JPG			https://en.wikipedia.org/wiki/Wonton#Sichuan_cuisine
+炒贵刁	炒貴刁	Char Kway Teow	https://en.wikipedia.org/wiki/Char_kway_teow	https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Char_kway_teow.jpg/440px-Char_kway_teow.jpg			
 叉烧	叉燒	char siu	https://en.wikipedia.org/wiki/Char_siu			Cantonese barbecued pork with a sweet, caramelized glaze	
 炭	炭	charcoal					
 厨	廚	chef					
 成都	成都	Chengdu	https://en.wikipedia.org/wiki/Sichuan_cuisine				
 鸡	雞	chicken					
-凤爪	鳳爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet				
-	鳯爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet				
-鸡肉	鸡肉	chicken meat					
+鸡肉	鸡肉	chicken					
+凤爪	鳳爪,鳯爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet				
 红油	紅油	chili oil	https://en.wikipedia.org/wiki/Chili_oil				
 韭菜	韭菜	Chinese chive	https://en.wikipedia.org/wiki/Allium_tuberosum				
 明虾	明蝦	Chinese white shrimp	https://en.wikipedia.org/wiki/Chinese_white_shrimp				
@@ -83,15 +81,15 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 河	河	chow fun	https://en.wikipedia.org/wiki/Shahe_fen				
 河粉	河粉	chow fun	https://en.wikipedia.org/wiki/Shahe_fen				
 炒面	炒麵	Chow Mein	https://en.wikipedia.org/wiki/Chow_mein	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg	zh-u-sd-cngd	Stir-fried noodles with various ingredients	
-油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum				https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
-菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum				
+油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg			https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
+菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg			
 蚝油菜心	蠔油菜心	Choy Sum with Oyster Sauce	https://en.wikipedia.org/wiki/Choy_sum	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg	zh-u-sd-cngd	Choy sum stir-fried with oyster sauce 	
 柱侯	柱侯	Chu Hou sauce	https://zh.wikipedia.org/wiki/%E6%9F%B1%E4%BE%AF%E9%86%AC				
-香菜	香菜,香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary				Added combo of standard 香 and (Cantonese) 茜
 	芫茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary				(Cantonese) https://en.wiktionary.org/wiki/%E8%8A%AB%E8%8C%9C#Definitions
+香菜	香菜,香茜	cilantro	https://en.wikipedia.org/wiki/Coriander#Culinary				Added combo of standard 香 and (Cantonese) 茜
 蚬	蜆	clam					
 砂锅	砂鍋	clay pot	https://zh.wikipedia.org/wiki/%E7%A0%82%E9%94%85				
-煲仔饭	煲仔飯	Clay Pot Rice	https://en.wikipedia.org/wiki/Claypot_rice		zh-u-sd-cngd		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%B2%E4%BB%94#Definitions
+煲仔饭	煲仔飯	Clay Pot Rice	https://en.wikipedia.org/wiki/Claypot_rice	https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Claypot_Chicken_Rice%2C_Singapore.JPG/500px-Claypot_Chicken_Rice%2C_Singapore.JPG	zh-u-sd-cngd		(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%B2%E4%BB%94#Definitions
 清	清	clear					
 云	雲	cloud					
 熘	熘	coated & braised					liū https://en.wiktionary.org/wiki/%E7%86%98#Chinese
@@ -100,7 +98,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 椰汁	椰汁	coconut milk					
 凉拌	涼拌	cold tossed					
 色	色	colorful					
-粥,稀饭	粥,稀飯	congee	https://en.wikipedia.org/wiki/Congee#China	https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Chinese_rice_congee.jpg/128px-Chinese_rice_congee.jpg		Rice porridge, customizable with various toppings	
+粥,稀饭	粥,稀飯	congee	https://en.wikipedia.org/wiki/Congee#China	https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Chinese_rice_congee.jpg/440px-Chinese_rice_congee.jpg		Rice porridge, customizable with various toppings	
 瑶柱	瑤柱	conpoy	https://en.wikipedia.org/wiki/Conpoy				
 煮	煮	cooked					
 虫草	蟲草	cordyceps	https://en.wikipedia.org/wiki/Cordyceps_militaris				
@@ -108,15 +106,15 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 玉米	玉米	corn					
 	粟米	corn					(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%B2%9F%E7%B1%B3#Chinese
 家乡	家鄉	country-style					
-螃蟹	螃蟹	crab					
-蟹	蟹	crab					
+螃蟹,蟹	螃蟹,蟹	crab					
 蟹柳	蟹柳	crab stick					https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
 脆	脆	crisp					
 酥	酥	crispy					
 炸子鸡	炸子雞	Crispy Fried Chicken	https://en.wikipedia.org/wiki/Crispy_fried_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Crispyfriedchicken.jpg/128px-Crispyfriedchicken.jpg	zh-u-sd-cngd	Cantonese crispy deep-fried chicken	
 粒	粒	cubed					
 黄瓜	黃瓜	cucumber					
-孜然羊肉	孜然羊肉	Cumin Lamb		https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg/600px-%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg	zh	Lamb stir-fried with cumin and spices	
+孜然	孜然	cumin	https://en.wikipedia.org/wiki/Cumin				
+孜然羊肉	孜然羊肉	Cumin Lamb		https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg/1024px-%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg	zh	Lamb stir-fried with cumin and spices	
 腊	臘	cured meat					
 咖喱	咖喱	curry	https://en.wikipedia.org/wiki/Curry#East_Asia				
 排	排	cutlet					
@@ -130,6 +128,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 珍	珍	delicacy					
 露	露	dew					suggests a delicate, fragrant sauce or seasoning
 丁	丁	diced					
+碟	碟	dish					
 	燉	double-steamed	https://en.wikipedia.org/wiki/Double_steaming				dùn; NOTE: meaning of the Chinese character for dun in Cantonese is different from that in Mandarin
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried				
 淋	淋	drizzled					
@@ -153,7 +152,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 赛螃蟹	賽螃蟹	egg-as-crab-meat	https://zh.wikipedia.org/wiki/%E8%B3%BD%E8%9E%83%E8%9F%B9				
 茄子	茄子	eggplant					
 八	八	eight					
-贵妃	貴妃	empress					lit. "concubine," it implies a level of luxury, quality, or exclusivity
 够	夠	enough					
 全体	全體	entire					
 肥	肥	fatty					
@@ -180,7 +178,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 生滚	生滾	freshly cooked					
 炒饭	炒飯	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice				
 福建	福建	Fujian	https://en.wikipedia.org/wiki/Fujian_cuisine				
-粉粿	粉粿	Fun Guo	https://en.wikipedia.org/wiki/Fun_guo		zh-u-sd-cngd		
+粉粿	粉粿	Fun Guo	https://en.wikipedia.org/wiki/Fun_guo	https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg/440px-%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg	zh-u-sd-cngd		
 夫妻肺片	夫妻肺片	Fuqi Feipian	https://en.wikipedia.org/wiki/Fuqi_feipian	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg	zh	Sichuan beef salad with tripe and tongue slices	
 芥兰,兰	芥蘭,蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan				
 蚝油芥兰	蠔油芥蘭	Gai Lan with Oyster Sauce	https://en.wikipedia.org/wiki/Gai_lan	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Chinese_Broccoli_with_Oyster_sauce.jpg/320px-Chinese_Broccoli_with_Oyster_sauce.jpg	zh-u-sd-cngd	Stir-fried gai lan (Chinese broccoli) topped with oyster sauce	
@@ -215,6 +213,8 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 酸辣	酸辣	hot & sour	https://en.wikipedia.org/wiki/Hot_and_sour				
 酸辣汤	酸辣湯	Hot and Sour Soup	https://en.wikipedia.org/wiki/Hot_and_sour_soup	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ping_SJ_hot_%26_sour_soup.JPG/128px-Ping_SJ_hot_%26_sour_soup.JPG	zh	Spicy, tangy soup with vegetables, tofu, and optional meat	
 百	百	hundred					
+贵妃	貴妃	Imperial Concubine	https://zh.wikipedia.org/wiki/%E8%B2%B4%E5%A6%83%E9%9B%9E				
+贵妃鸡	貴妃雞	Imperial Concubine Chicken	https://zh.wikipedia.org/wiki/%E8%B2%B4%E5%A6%83%E9%9B%9E		zh	Poached young hen infused with Shaoxing wine, a variation of Drunken Chicken	
 肠	肠	intestine					
 铁板	鐵板	iron platter					https://en.wiktionary.org/wiki/%E9%90%B5%E6%9D%BF#Chinese
 翡翠	翡翠	jade					
@@ -227,6 +227,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 京酱肉丝	京醬肉絲	Jingjiang Rousi	https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si	https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg	zh	Shredded pork in sweet bean sauce, often with pancakes	
 金华玉树	金華玉樹	Jinhua ham	https://en.wikipedia.org/wiki/Jinhua_ham				
 汁	汁	juice					alt. "glazed"
+海带	海帶	kelp	https://en.wikipedia.org/wiki/Saccharina_japonica#China	https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sliced_kelp_at_Lady_Chai%2C_Ganjiakou_%2820211022125400%29.jpg/440px-Sliced_kelp_at_Lady_Chai%2C_Ganjiakou_%2820211022125400%29.jpg			
 頭菜	頭菜	kohlrabi	https://en.wikipedia.org/wiki/Kohlrabi				
 韭菜粿	韭菜粿	Ku Chai Kueh	https://en.wikipedia.org/wiki/Kuih#Chinese_kuih		zh-u-sd-cngd		
 粿	粿	kuih	https://en.wikipedia.org/wiki/Kuih#Chinese_kuih				
@@ -284,6 +285,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 颈	頸	neck					
 新	新	new					
 年糕	年糕	nian gao	https://en.wikipedia.org/wiki/Nian_gao				
+面食		noodle					
 面	麵	noodle					
 东北	東北	northeastern	https://en.wikipedia.org/wiki/Northeastern_Chinese_cuisine				
 养生	養生	nourishing					
@@ -317,9 +319,9 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 拼盘	拼盤	platter					
 梅	梅	plum					
 当红	當紅	popular					
+肉	肉	pork					
 猪	豬	pork					
 猪肉	豬肉	pork					
-肉	肉	pork					
 五花肉	五花肉	pork belly	https://en.wikipedia.org/wiki/Pork_belly#China				https://en.wiktionary.org/wiki/%E4%BA%94%E8%8A%B1%E8%82%89#Chinese
 脯仔	脯仔	pork belly strips					
 猪扒	豬扒	pork chop					
@@ -330,6 +332,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 锅	鍋	pot					
 土豆	土豆	potato					
 锅贴	鍋貼	Potstickers	https://en.wikipedia.org/wiki/Jiaozi#Potstickers	https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Guotie_in_Ningxia_Night_Market_20070923.jpg/128px-Guotie_in_Ningxia_Night_Market_20070923.jpg	zh	Crispy, pan-fried dumplings filled with meat and vegetables	
+前餐		pre-meal					
 王	王	premium					
 官燕	官燕	premium bird’s nest	https://en.wikipedia.org/wiki/Edible_bird%27s_nest#Culinary_use	https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bird%27s_Nest_soup.jpg/400px-Bird%27s_Nest_soup.jpg			"In order of price, the most beautiful ones were called Guan Yan" https://zh-yue.wikipedia.org/wiki/%E7%87%95%E7%AA%A9
 兴隆	興隆	prosperous					
@@ -342,17 +345,17 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 红	紅	red					possibly also "blood"
 红豆糕	紅豆糕	Red Bean Cake	https://en.wikipedia.org/wiki/Red_bean_cake	https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/RedbeanCake_Cantoversion.jpg/128px-RedbeanCake_Cantoversion.jpg	zh-u-sd-cngd	Sweet cake with red bean paste filling	
 豆沙	豆沙	red bean paste	https://en.wikipedia.org/wiki/Red_bean_paste				
-红烧排骨	紅燒排骨	Red Braised Spare Ribs		https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/320px-Mianjin_hongshao_paigu_2009_03.jpg	zh	Pork ribs slowly braised in a savory, slightly sweet soy-based sauce	
-红烧豆腐	紅燒豆腐	Red Braised Tofu	https://en.wikipedia.org/wiki/Red_cooking		zh	Tofu braised in a savory, slightly sweet soy-based sauce	
 红烧	紅燒	red-braised	https://en.wikipedia.org/wiki/Red_cooking				hóngshāo
+红烧排骨	紅燒排骨	Red-Braised Spare Ribs		https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/320px-Mianjin_hongshao_paigu_2009_03.jpg	zh	Pork ribs slowly braised in a savory, slightly sweet soy-based sauce	
+红烧豆腐	紅燒豆腐	Red-Braised Tofu	https://en.wikipedia.org/wiki/Red_cooking		zh	Tofu braised in a savory, slightly sweet soy-based sauce	
 骨	骨	rib					
 米	米	rice					
 饭	飯	rice					
 米粉	米粉	rice noodle	https://en.wikipedia.org/wiki/Rice_vermicelli#Mainland_China				mǐfěn
 米线	米線	rice noodle	https://en.wikipedia.org/wiki/Mixian_(noodle)				mǐ xiàn
 粉干	粉乾	rice noodle	https://en.wikipedia.org/wiki/Mixian_(noodle)				fěn gàn
-肠粉	腸粉	rice noodle roll	https://en.wikipedia.org/wiki/Rice_noodle_roll	https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/128px-Cha_siu_choeng.jpg			
 	腸	rice noodle roll	https://en.wikipedia.org/wiki/Rice_noodle_roll	https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/128px-Cha_siu_choeng.jpg			(Cantonese) https://en.wiktionary.org/wiki/%E8%85%B8#Definitions
+肠粉	腸粉	rice noodle roll	https://en.wikipedia.org/wiki/Rice_noodle_roll	https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/128px-Cha_siu_choeng.jpg			
 叉烧肠粉	叉燒腸粉	Rice Noodle Rolls with BBQ Pork	https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine	https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/128px-Cha_siu_choeng.jpg	zh-u-sd-cngd	Steamed rice noodles filled with char siu	
 粉	粉	rice vermicelli	https://en.wikipedia.org/wiki/Rice_vermicelli				lit. "powder" but often short for 米粉
 烧鸭	燒鴨	Roast Duck	https://en.wikipedia.org/wiki/Duck_as_food#Duck_meat	https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cantonese_roast_duck_in_Los_Angeles_Chinatown.jpg/128px-Cantonese_roast_duck_in_Los_Angeles_Chinatown.jpg	zh-u-sd-cngd	Cantonese roasted duck with crispy skin	
@@ -369,7 +372,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 咸蛋	鹹蛋	salted egg	https://en.wikipedia.org/wiki/Salted_duck_egg	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Salty_egg.JPG/440px-Salty_egg.JPG			
 金银蛋	金銀蛋	salted egg & century egg					
 流沙包	流沙包	Salted Egg Yolk Lava Bun	https://zh.wikipedia.org/wiki/%E6%B5%81%E6%B2%99%E5%8C%85	https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flowing_Custard_Bun.JPG/600px-Flowing_Custard_Bun.JPG	zh-u-sd-cngd	Fluffy steamed buns with golden, molten custard filling made from salted egg yolk	
-艇仔	艇仔	sampan	https://en.wikipedia.org/wiki/Sampan_congee				
+艇仔粥,艇仔	艇仔粥,艇仔	Sampan Congee	https://en.wikipedia.org/wiki/Sampan_congee	https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sampan_Congee.jpg/500px-Sampan_Congee.jpg	zh-u-sd-cngd		
 酱	醬	sauce					
 葱油花卷	蔥油花捲	Scallion Buns	https://en.wikipedia.org/wiki/Mandarin_roll		zh	Steamed flower-shaped dough buns with layers of scallion and oil	
 带子	帶子	scallop	https://en.wikipedia.org/wiki/Scallop#As_food				https://en.wiktionary.org/wiki/%E5%B8%B6%E5%AD%90#Chinese
@@ -379,7 +382,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 海参	海參	sea cucumber	https://en.wikipedia.org/wiki/Sea_cucumbers_as_food				
 海鲜	海鮮	seafood					
 时蔬	時蔬	seasonal vegetables					
-紫菜	紫菜	seaweed					
+紫菜	紫菜	seaweed	https://en.wikipedia.org/wiki/Edible_seaweed				
 秘制	秘制	secret					
 芝麻,麻	芝麻,麻	sesame					
 上海	上海	Shanghai	https://en.wikipedia.org/wiki/Shanghai_cuisine				
@@ -389,14 +392,14 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 荠菜	薺菜	shepherd’s purse	https://en.wikipedia.org/wiki/Capsella_bursa-pastoris#Cooking				
 北菇	北菇	shittake	https://en.wikipedia.org/wiki/Shiitake#Uses				(chiefly Cantonese) https://en.wiktionary.org/wiki/%E5%8C%97%E8%8F%87#Definitions
 牛仔骨	牛仔骨	short ribs					https://en.wiktionary.org/wiki/%E7%89%9B%E4%BB%94%E9%AA%A8
-丝	絲	shredded					
 撕	撕	shredded					
-虾	蝦	shrimp					
+丝	絲	shredded					
 虾仁	虾仁	shrimp					
+虾	蝦	shrimp					
 水煮	水煮	shuizhu	https://en.wikipedia.org/wiki/Shuizhu				
 水煮牛肉	水煮牛肉	Shuizhu Beef	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg	zh	Poached beef in a spicy, flavorful Sichuan broth	
-水煮鱼	水煮魚	Shuizhu Fish	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg	zh	Poached fish in a spicy, flavorful Sichuan broth	
-烧卖,烧麦	燒賣	Shumai	https://en.wikipedia.org/wiki/Shumai	https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg		Steamed open-faced dumplings with meat and seafood	alt. form, see https://en.wikipedia.org/wiki/A_Bite_of_China
+水煮鱼	水煮魚	Shuizhu Fish	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg	zh	Poached fish in a spicy, flavorful Sichuan broth	
+烧卖,烧麦	燒賣	Shumai	https://en.wikipedia.org/wiki/Shumai	https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg/128px-Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg	zh-u-sd-cngd	Steamed open-faced dumplings with meat and seafood	alt. form, see https://en.wikipedia.org/wiki/A_Bite_of_China
 四川,川	四川,川	Sichuan	https://en.wikipedia.org/wiki/Sichuan_cuisine				
 川香椒麻	川香椒麻	Sichuan pepper-y	https://en.wikipedia.org/wiki/Sichuan_pepper				
 招牌	招牌	signature					
@@ -409,6 +412,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 仔	仔	small					(Cantonese, dialectal Hakka, Min Bei) Diminutive suffix https://en.wiktionary.org/wiki/%E4%BB%94#Definitions_2
 小	小	small					
 小黄鱼	小黃魚	small yellow croaker	https://en.wikipedia.org/wiki/Larimichthys_polyactis				
+蒜泥黄瓜	蒜泥黃瓜	Smashed Cucumber Salad		https://upload.wikimedia.org/wikipedia/commons/7/78/Pai_huang_gua.jpg	zh	Cucumber salad with garlic and light vinegar dressing, sometimes spicy	
 多春鱼	多春魚	smelt	https://en.wikipedia.org/wiki/Smelt_(fish)#East_Asia				
 烟	煙	smoked					
 滑	滑	smooth					
@@ -416,7 +420,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 汽水	汽水	soft drink					
 汤	湯	soup					tāng: thinner and clearer soup or broth
 羹	羹	soup					gēng: thicker and heartier soup
-汤包	汤包	soup dumpling	https://en.wikipedia.org/wiki/Tangbao				
 酸	酸	sour					
 豆浆	豆浆	soy milk	https://en.wikipedia.org/wiki/Soy_milk				
 豉油	豉油	soy sauce	https://en.wikipedia.org/wiki/Soy_sauce				
@@ -425,6 +428,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 大豆	大豆	soybean	https://en.wikipedia.org/wiki/Soybean#Food_for_human_consumption				
 排骨	排骨	spare rib	https://en.wikipedia.org/wiki/Spare_ribs#Asia				
 特	特	special					
+特色		speciality					
 辣	辣	spicy					
 辣子	辣子	spicy					
 菠菜	菠菜	spinach					
@@ -433,7 +437,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 苗	苗	sprout					
 鱿	魷	squid	https://en.wikipedia.org/wiki/Squid_as_food#Asia				
 蒸	蒸	steamed					
-蜜汁叉烧包	蜜汁叉燒包	Steamed Cha Siu Bao		https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/128px-Char_siu_bao.jpg	zh-u-sd-cngd	Steamed buns with sweet barbecued pork filling	
+蜜汁叉烧包	蜜汁叉燒包	Steamed Cha Siu Bao	https://en.wikipedia.org/wiki/Cha_siu_bao#Cantonese_cuisine	https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/500px-Char_siu_bao.jpg	zh-u-sd-cngd	Steamed buns with sweet barbecued pork filling	
 奶黄包	奶黃包,奶皇包	Steamed Custard Bun	https://zh.wikipedia.org/wiki/%E5%A5%B6%E9%BB%83%E5%8C%85	https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naihuangbao.jpg/128px-Naihuangbao.jpg	zh-u-sd-cngd	Steamed buns filled with sweet egg custard	
 山竹牛肉丸	山竹牛肉丸,山竹牛肉球,山竹牛肉,牛肉球	Steamed Meatball	https://en.wikipedia.org/wiki/Steamed_meatball	https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG/128px-HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG	zh-u-sd-cngd	Steamed beef meatballs	
 米饭,白饭	米飯,白飯	Steamed Rice	https://en.wikipedia.org/wiki/White_rice	https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Steamed_rice_in_bowl_01.jpg/128px-Steamed_rice_in_bowl_01.jpg	zh	Plain steamed white rice	
@@ -447,7 +451,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 酿	釀	stuffed					
 式	式	style					
 酸菜	酸菜	suan cai	https://en.wikipedia.org/wiki/Suan_cai				
-酸菜鱼	酸菜魚	Suancai Fish		https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg	zh	Poached fish in broth with pickled vegetables	
+酸菜鱼	酸菜魚	Suancai Fish	https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC	https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg	zh	Poached fish in broth with pickled vegetables	
 乳猪	乳豬	suckling pig	https://en.wikipedia.org/wiki/Suckling_pig				
 糖	糖	sugar					
 皇	皇	supreme					
@@ -457,6 +461,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 薯	薯	sweet potato	https://en.wikipedia.org/wiki/Sweet_potato				
 章鱼烧	章魚燒	Takoyaki	https://en.wikipedia.org/wiki/Takoyaki	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Takoyaki_by_Ballet_Lausanne_in_Tokyo.jpg/400px-Takoyaki_by_Ballet_Lausanne_in_Tokyo.jpg	ja	Japanese snack of grilled dough balls made with diced octopus	
 玉子	玉子	tamago	https://en.wikipedia.org/wiki/Tamagoyaki				
+汤包	汤包	Tangbao	https://en.wikipedia.org/wiki/Tangbao	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%E5%BC%80%E5%B0%81%E7%AC%AC%E4%B8%80%E6%A5%BC%E5%B0%8F%E7%AC%BC%E5%8C%85.JPG/500px-%E5%BC%80%E5%B0%81%E7%AC%AC%E4%B8%80%E6%A5%BC%E5%B0%8F%E7%AC%BC%E5%8C%85.JPG	zh	Large, soup-filled baozi (steamed buns)	
 陈皮	陳皮	tangerine peel	https://en.wikipedia.org/wiki/Chenpi				
 汤圆	湯圓	Tangyuan	https://en.wikipedia.org/wiki/Tangyuan_(food)	https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg/128px-Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg	zh	Glutinous rice balls with sweet filling, served in broth	
 芋头,芋	芋頭,芋	taro	https://en.wikipedia.org/wiki/Taro#China				
@@ -477,6 +482,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 鲜竹卷	鮮竹捲,鮮竹卷	Tofu Skin Roll	https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/128px-Tofuskinroll.jpg	zh-u-sd-cngd	Steamed rolls of tofu skin, filled	
 皮蛋豆腐	皮蛋豆腐	Tofu with Century Eggs		https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Billyfoodtofu1.jpg/128px-Billyfoodtofu1.jpg	zh-u-sd-cngd	Soft tofu topped with dark translucent preserved eggs and a savory dressing	
 番茄	番茄,蕃茄	tomato					alt form. https://en.wiktionary.org/wiki/%E7%95%AA%E8%8C%84#Chinese
+红柿	紅柿	tomato					Wiktionary says "persimmon"
 茄汁	茄汁	tomato sauce					
 舌	舌	tongue					
 上	上	top(ped)					
@@ -494,6 +500,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 蔬菜,蔬,菜	蔬菜,蔬,菜	vegetable					
 菜膽	菜膽	vegetable heart					
 素	素	vegetarian					
+斋烧鹅	齋燒鵝	vegetarian mock goose	https://zh.wikipedia.org/wiki/%E9%BD%8B%E9%9B%9E%E7%B2%92#%E9%BD%8B%E7%87%92%E9%B5%9D				
 茸	茸	velvet					
 醋	醋	vinegar					
 海草	海草	Wakame	https://en.wikipedia.org/wiki/Wakame#Cuisine	https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Salade_wakame_%28Paris%29.JPG/128px-Salade_wakame_%28Paris%29.JPG	ja	Japanese-style salad of wakame seaweed in a dressing of sesame seeds, soy sauce, and vinegar	lit. "seagrass" but menus use it as seawedd
@@ -506,6 +513,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 湿	濕	wet					
 白	白	white					
 白云凤爪	白雲鳳爪	White Cloud Chicken Feet	https://en.wikipedia.org/wiki/Chicken_feet#China		zh-u-sd-cngd	Soft, tender chicken feet in a light clear sauce	
+白切鸡,白斩鸡	白切雞,白斬雞	White Cut Chicken	https://en.wikipedia.org/wiki/White_cut_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BeiQieJi-WhiteCutChicken.jpg/440px-BeiQieJi-WhiteCutChicken.jpg	zh-u-sd-cngd	Chicken brined, steamed, and served with a ginger dip	
 全	全	whole					
 野	野	wild					
 酒	酒	wine					
@@ -525,7 +533,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 扬州炒饭	揚州炒飯	Yangzhou Fried Rice	https://en.wikipedia.org/wiki/Yangzhou_fried_rice	https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg/128px-Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg	zh-u-sd-cngd	Fried rice with egg, shrimp, and vegetables	
 黄	黃	yellow					
 马豆糕	馬豆糕	yellow split pea cake	https://zh.wikipedia.org/wiki/%E9%A6%AC%E8%B1%86%E7%B3%95	https://upload.wikimedia.org/wikipedia/commons/d/da/Split_pea_pudding.jpg			
-黄毛鸡	黃毛雞	yellow-hair chicken	https://en.wikipedia.org/wiki/Yellow-hair_chicken				
+黄毛鸡	黃毛雞,黄毛雞	yellow-hair chicken	https://en.wikipedia.org/wiki/Yellow-hair_chicken				
 伊面	伊麵	yi mein	https://en.wikipedia.org/wiki/Yi_mein			Flat, golden brown egg noodles made with soda water	
 油条	油條	Youtiao	https://en.wikipedia.org/wiki/Youtiao	https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Youtiao.jpg/128px-Youtiao.jpg	zh-u-sd-cngd	Deep-fried dough sticks	
 鱼香	魚香	yuxiang	https://en.wikipedia.org/wiki/Yuxiang				

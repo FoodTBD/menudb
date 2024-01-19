@@ -725,7 +725,7 @@ menu:
               "name_en": Roast Duck
               price: $20.99 （半隻 Half)
             - item_number: C03
-              "name_zh-Hant": 貴妃黄毛雞
+              "name_zh-Hant": 貴妃黄毛雞  # [sic] should be "黃毛雞"
               "name_en": Marinated Empress Chicken
               price: $18.99 （半隻 Half), $36.99 （全隻 Whole)
             - item_number: C04

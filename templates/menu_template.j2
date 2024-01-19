@@ -67,14 +67,14 @@
             font-size: 1.25rem;
         }
 
-        .dish-term-native {
+        .term-native {
             display: inline-block;
             text-align: center;
             margin-right: 0.2rem;
             vertical-align: top;
         }
 
-        .dish-term-translated {
+        .term-translated {
             display: block;
             font-size: x-small;
             font-variation-settings: "wdth" 50;
@@ -168,18 +168,16 @@
                 <table class="menu-table">
                     {% for section in page.sections %}
                     <!-- Menu Section -->
-                    <thead>
+                    <thead id="{{ section['_id'] }}">
                         <tr>
                             <th colspan="3">
-                                <a name="{{ section['_id'] }}">
-                                    {% for lang in display_language_codes %}
-                                    {% if lang == primary_lang %}
-                                    <span class="menu-section-name-primary">{{ section['name_' + lang] }}</span>
-                                    {% else %}
-                                    {{ section['name_' + lang] }}
-                                    {% endif %}
-                                    {% endfor %}
-                                </a>
+                                {% for lang in display_language_codes %}
+                                {% if lang == primary_lang %}
+                                <span class="menu-section-name-primary">{{ section['_annotated_name'] }}</span>
+                                {% else %}
+                                {{ section['name_' + lang] }}
+                                {% endif %}
+                                {% endfor %}
                             </th>
                         </tr>
                     </thead>
@@ -211,15 +209,14 @@
                                     <!-- Name (Primary) -->
                                     {% for lang in display_language_codes if item['name_' + lang] and not lang
                                     == 'zh-Latn-pinyin' %}
-                                    {% set dish_name = item['name_' + lang] %}
                                     {% if lang == primary_lang %}
                                     <span class="menu-item-name menu-item-name-primary">{{
-                                        dish_name_to_annotated_html[dish_name] }}</span>
+                                        item['_annotated_name'] }}</span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     {% else %}
                                     <!-- Name(s) (Secondary) -->
-                                    <span class="menu-item-name menu-item-name-secondary">{{ dish_name |
+                                    <span class="menu-item-name menu-item-name-secondary">{{ item['name_' + lang] |
                                         styled_text_format }}</span>
                                     {%- endif %}
 

@@ -107,19 +107,19 @@ See repository https://github.com/FoodTBD/menudb_images.
 
 ## Language Data
 
-`known_terms.tsv` contains all linguistic definitions, including for dishes. It supercedes the old `known_dishes.tsv`.
+`known_terms.tsv` contains all linguistic definitions, including for dishes. It supercedes `known_dishes.tsv`.
 
 `known_terms.tsv` is a snapshot copy of https://docs.google.com/spreadsheets/d/1p_pUiqP6fgpCcKsQ4Ok7WpijfDf6fmVvRuJAwMi1B1E/edit#gid=2051976005. As it's easier to edit in Google Sheets, treat Google Sheets as the canonical version and use that to overwrite `data/known_terms.tsv`, rather than the other way around.
 
-To define a **dish**:
-1. Write the `en` name in title-case.
-1. Fill out the `dish_cuisine` and `dish_description_en` fields.
+There's a grey zone between what is a "term" and what is a "dish". For example, "braised" is obviously a term, and "Kung Pao Chicken" is obviously a dish. Some things like "fried rice" and "wonton" and "bok choy" SHOULD be left as terms, rather than dishes, because they are usually only part of a dish name.
 
 To define a **term**:
 1. Write the `en` name in lowercase.
 1. Leave the `dish_cuisine` and `dish_description_en` fields unset.
 
-There's a grey zone between what is a "term" and what is a "dish". For example, "braised" is obviously a term, and "Kung Pao Chicken" is obviously a dish. Some things like "fried rice" and "wonton" and "bok choy" are left as terms, rather than dishes, because they are usually only part of a dish name.
+To promote a term to a **dish**:
+1. Write the `en` name in title-case.
+1. Fill out the `dish_cuisine` and `dish_description_en` fields.
 
 
 ### Language Data Style Guide
@@ -127,7 +127,7 @@ There's a grey zone between what is a "term" and what is a "dish". For example, 
 #### `zh-Hans` and `zh-Hant` Columns
 
 * Use Google Translate to translate between simplified and traditional Chinese.
-* Minor variations in written form MAY be added using in comma separated format. Use separate line items for synonyms that are significant different, especially if they correspond to separate entries in Wiktionary.
+* Minor variations in written form MAY be added using in comma separated format, e.g. (`煎䭔,煎堆` for jiān duī). Use separate line items for synonyms, especially if they correspond to separate entries in Wiktionary, e.g. (`煎䭔` jiān duī vs `芝麻球` for zhīma qiú).
 
 #### `en` Column
 
@@ -170,5 +170,6 @@ John's workflow:
     * To use Google Lens/Translate: Upload menu photos to Google Drive. On phone: using the Google Drive app, choose "Open with", then "Google Lens". (Alternatively open the image file within the Google Translate app.) Tap "Select text". Send the copied text to Mac.
     * To use macOS Preview: Open the menu photo in Preview. Select dish names and copy to clipboard.
 2. Ask ChatGPT to "`Translate literally: xxx`".
-    * Read the answer and do a sanity check. Look up terms in [Wiktionary](https://en.wiktionary.org/), Wikipedia, Google Search, and/or Google Image Search. If something doesn't make sense, go back and look for OCR errors.
+    * Read the answer and do a sanity check. Look up terms in [Wiktionary](https://en.wiktionary.org/), Wikipedia, Google Search, and/or Google Image Search, even [MDBG Chinese Dictionary](https://www.mdbg.net/chinese/dictionary?page=radicals). If something doesn't make sense, go back and look for OCR errors.
 3. Add any useful terms to the `known_terms` table, especially if it exists in Wiktionary. See style guide above.
+4. Proofread (and dogfood) the generated results to look for errors ("char siu with vegetarian goose"?!) and think of usability improvements.

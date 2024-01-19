@@ -220,7 +220,7 @@ menu:
               "name_en": Wasabi sauce tripe w/chicken
               price: 19.95/Half
               price_note: "(半隻)"
-            - "name_zh-Hant": 叉燒拼素鵝
+            - "name_zh-Hant": 叉燒拼素鵝  # "素鵝" is lit. "vegetarian goose"??
               "name_en": Honey bbq pork w/bean roll
               price: 16.95
             - "name_zh-Hant": 蜜汁叉燒

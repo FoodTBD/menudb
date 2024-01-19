@@ -188,78 +188,119 @@ def generate_menu_html(
                                         if k not in menu_item:
                                             menu_item[k] = v
 
+    # Display languages are all languages in the menu, plus English
     display_language_codes = []
     if yaml_dict.get("menu"):
         display_language_codes = yaml_dict["menu"]["language_codes"]
         if "en" not in display_language_codes:
             display_language_codes.append("en")
 
-    ordered_known_terms = sorted(known_terms_lookup_dict, key=len, reverse=True)
-
     # CHINESE ONLY
-    # Gather all primary dish names from YAML
-    chinese_dish_name_to_menu_item = {}
-    if yaml_dict.get("menu"):
+    def _annotate_menu_section_or_item_with_known_terms(
+        section_or_item: dict[str, Any],
+        is_section: bool,
+        ordered_known_terms: list[str],
+        known_terms_lookup_dict: dict[str, Any],
+    ) -> bool:
         primary_lang_tag = yaml_dict["menu"]["language_codes"][0]
+
         primary_lang_code = primary_lang_tag.split("-")[0]
+        if not primary_lang_code == "zh":
+            return False
 
-        for page in yaml_dict["menu"]["pages"]:
-            sections = page.get("sections", [])
-            for section in sections:
-                menu_items = section.get("menu_items", [])
-                for menu_item in menu_items:
-                    primary_name = menu_item.get("name_" + primary_lang_tag)
-                    if primary_name and primary_lang_code == "zh":
-                        chinese_dish_name_to_menu_item[primary_name] = menu_item
+        primary_name = section_or_item.get("name_" + primary_lang_tag)
+        if not primary_name:
+            return False
 
-    # CHINESE ONLY
-    # For each Chinese name, match against known_terms to try to annotate it
-    dish_name_to_annotated_html = {}
-    for dish_name in chinese_dish_name_to_menu_item.keys():
+        matched_all = True
         annotated_html = ""
         i = 0
-        while i < len(dish_name):
+        while i < len(primary_name):
             matched = False
 
             # Check for the longest possible match first
             for key in ordered_known_terms:
-                if dish_name[i:].startswith(key):
-                    annotated_html += (
-                        '<span class="dish-term-native">'
-                        f"{key}"
-                        f'<span class="dish-term-translated">'
-                    )
+                if primary_name[i:].startswith(key):
+                    annotated_html += '<span class="term-native">'
+                    annotated_html += key
+                    annotated_html += '<span class="term-translated">'
+
                     wikipedia_url = known_terms_lookup_dict[key]["wikipedia_url"]
                     if wikipedia_url:
                         annotated_html += f'<a href="{wikipedia_url}" target="wikipedia" rel="noopener">'
-                    annotated_html += f"{known_terms_lookup_dict[key]['en']}"
+
+                    term_en = known_terms_lookup_dict[key]["en"]
+                    if is_section:
+                        term_en = term_en.title()
+                    annotated_html += term_en
+
                     if wikipedia_url:
                         annotated_html += f"</a>"
+
                     annotated_html += "</span>"
                     annotated_html += "</span>"
 
                     i += len(key)
                     matched = True
 
-                    # Use data from this matching term to possibly enrich the menu_item dict
-                    menu_item = chinese_dish_name_to_menu_item[dish_name]
+                    # Use data from this matching term to possibly enrich the section_or_item
                     known_term = known_terms_lookup_dict[key]
-                    if not menu_item.get("image_url") and known_term.get("image_url"):
+                    if not section_or_item.get("image_url") and known_term.get(
+                        "image_url"
+                    ):
                         menu_item["image_url"] = known_term["image_url"]
-                    if not menu_item.get("wikipedia_url") and known_term.get(
+                    if not section_or_item.get("wikipedia_url") and known_term.get(
                         "wikipedia_url"
                     ):
-                        menu_item["wikipedia_url"] = known_term["wikipedia_url"]
+                        section_or_item["wikipedia_url"] = known_term["wikipedia_url"]
 
                     break
 
             # If no match, just add the character
             if not matched:
                 annotated_html += (
-                    '<span class="dish-term-native">' f"{dish_name[i]}" "</span>"
+                    '<span class="term-native">' f"{primary_name[i]}" "</span>"
                 )
                 i += 1
-        dish_name_to_annotated_html[dish_name] = annotated_html
+
+                matched_all = False
+
+        section_or_item["_annotated_name"] = annotated_html
+        return matched_all
+
+    # CHINESE ONLY
+    # Match against longest terms first
+    ordered_nondish_terms = sorted(
+        {k: v for k, v in known_terms_lookup_dict.items() if not v["dish_cuisine"]},
+        key=len,
+        reverse=True,
+    )
+    ordered_all_terms = sorted(known_terms_lookup_dict, key=len, reverse=True)
+
+    # For each Chinese section/menu_item, try to annotate it
+    if yaml_dict.get("menu"):
+        for page in yaml_dict["menu"]["pages"]:
+            sections = page.get("sections", [])
+            for section in sections:
+                # Annotate section name
+                _annotate_menu_section_or_item_with_known_terms(
+                    section, True, ordered_nondish_terms, known_terms_lookup_dict
+                )
+
+                menu_items = section.get("menu_items", [])
+                for menu_item in menu_items:
+                    # Annotate menu item name, trying first without dish names
+                    matched_all = _annotate_menu_section_or_item_with_known_terms(
+                        menu_item, False, ordered_nondish_terms, known_terms_lookup_dict
+                    )
+                    # Are there holes? If so, re-try including dish names
+                    if not matched_all:
+                        _annotate_menu_section_or_item_with_known_terms(
+                            menu_item,
+                            False,
+                            ordered_all_terms,
+                            known_terms_lookup_dict,
+                        )
 
     env = Environment(loader=FileSystemLoader("."))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
@@ -271,9 +312,7 @@ def generate_menu_html(
 
     template = env.get_template("templates/menu_template.j2")
     rendered_html = template.render(
-        data=yaml_dict,
-        display_language_codes=display_language_codes,
-        dish_name_to_annotated_html=dish_name_to_annotated_html,
+        data=yaml_dict, display_language_codes=display_language_codes
     )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
@@ -345,19 +384,19 @@ def generate_dishes_html(
             menu = yaml_dict["menu"]
             language_codes = menu["language_codes"]
             for page in menu["pages"]:
-                if page.get("sections"):
-                    for section in page["sections"]:
-                        if section.get("menu_items"):
-                            for menu_item in section["menu_items"]:
-                                for language_code in language_codes:
-                                    name_lang = "name_" + language_code
-                                    if menu_item.get(name_lang):
-                                        name = menu_item[name_lang]
-                                        if not dish_name_to_menu_filename.get(name):
-                                            dish_name_to_menu_filename[name] = []
-                                        dish_name_to_menu_filename[name].append(
-                                            yaml_dict["_output_filename"]
-                                        )
+                sections = page.get("sections", [])
+                for section in sections:
+                    menu_items = section.get("menu_items", [])
+                    for menu_item in menu_items:
+                        for language_code in language_codes:
+                            name_lang = "name_" + language_code
+                            if menu_item.get(name_lang):
+                                name = menu_item[name_lang]
+                                if not dish_name_to_menu_filename.get(name):
+                                    dish_name_to_menu_filename[name] = []
+                                dish_name_to_menu_filename[name].append(
+                                    yaml_dict["_output_filename"]
+                                )
 
     # Inject into known_dishes
     for known_dish in known_dishes:
