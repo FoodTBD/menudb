@@ -5,6 +5,7 @@ restaurant:
   city: Cupertino, CA 
   country_code: US
   tags: chinese, shanghainese
+  online_menu_url: https://shanghaifamilytogo.com/
 menu:
   language_codes:
     - zh-Hant
