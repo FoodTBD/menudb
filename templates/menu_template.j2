@@ -16,6 +16,13 @@
             object-fit: contain;
         }
 
+        .menu-iframe {
+            transform: scale(0.5);
+            transform-origin: top left;
+            width: 200%;
+            height: 200%;
+        }
+
         .menu-table {
             width: 100%;
         }
@@ -159,9 +166,7 @@
                 <a href="{{ page.page_image_url }}" target="_blank" rel="noopener"><img class="menu-image"
                         src="{{ page.page_image_url }}" alt="Menu Image"></a>
                 {% elif page.page_url %}
-                <iframe src="{{ page.page_url }}"
-                    style="transform: scale(0.5); transform-origin: top left; width: 200%; height: 200%;"
-                    frameborder="0"></iframe>
+                <iframe class="menu-iframe" src="{{ page.page_url }}" alt="Menu Webpage" frameborder="0"></iframe>
                 {% endif %}
             </div>
             <div class="col-md-6">
