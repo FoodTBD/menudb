@@ -1,0 +1,928 @@
+author: Jocelyn Chang
+restaurant:
+  name: Shanghai Family Restaurant
+  street_address: 10877 N Wolfe Rd
+  city: Cupertino, CA 
+  country_code: US
+  tags: chinese, shanghainese
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/shanghai_family_cupertino_ca_usa/shanghai_family_1 Large.jpeg
+      sections:
+        - "name_zh-Hant": 冷盘类
+          "name_en": Appetizer
+          menu_items:
+            - item_number: A1
+              "name_zh-Hant": 鎮江肴肉
+              "name_en": Cured Pork Zhen Jiang Style
+            - item_number: A2
+              "name_zh-Hant": 上海白切鸡
+              "name_en": Shanghai White Sliced Chicken
+            - item_number: A3
+              "name_zh-Hant": 上海醉雞
+              "name_en": Chicken in Wine Marinated Pot
+            - item_number: A4
+              "name_zh-Hant": 上海燻魚
+              "name_en": Smoked Fish Shanghai Style
+            - item_number: A5
+              "name_zh-Hant": 上海醬鴨
+              "name_en": Braised Duck Shanghai Style
+            - item_number: A6
+              "name_zh-Hant": 上海鰻鲞
+              "name_en": Wine Dried Salted Eel
+            - item_number: A7
+              "name_zh-Hant": 四喜烤麩
+              "name_en": Four Happiness Spongy Gluten
+            - item_number: A8 
+              "name_zh-Hant": 八寶辣醬
+              "name_en": Pork, Vegetable in Hot Sauce
+            - item_number: A9 
+              "name_zh-Hant": 八寶鹹醬
+              "name_en": Salted Dry Chicken
+            - item_number: A10 
+              "name_zh-Hant": 苔絛花生
+              "name_en": Peanuts wiht Sea Moss
+            - item_number: A11
+              "name_zh-Hant": 酸辣白菜
+              "name_en": Napa Cabbage in Hot and Sour Sauce
+            - item_number: A12
+              "name_zh-Hant": 馬蘭頭拌香乾
+              "name_en": Bean Curd with Ma Lan
+            - item_number: A13
+              "name_zh-Hant": 糟香青魚乾
+              "name_en": Dry Herring
+            - item_number: A16
+              "name_zh-Hant": 鹽水鴨腿
+              "name_en": Salted Duck Feg [*Leg]
+            - item_number: A17
+              "name_zh-Hant": 皮蛋拌豆腐
+              "name_en": Preserved Eggs & Tofu
+            - item_number: A18
+              "name_zh-Hant": 皮蛋拌豆腐
+              "name_en": Cucumber Mixed w/Garlic
+            - item_number: A19
+              "name_zh-Hant": 冰鎮糖番茄
+              "name_en": Iced Sugar Tomato
+            - item_number: A20
+              "name_zh-Hant": 清口麻辣雞肫
+              "name_en": Spicy Chicken Stew
+            - item_number: A21
+              "name_zh-Hant": 麻辣牛筋
+              "name_en": Spicy Beef Tendon
+            - item_number: A22
+              "name_zh-Hant": 上海蜇皮
+              "name_en": Shanghai Sting The Skin
+            - item_number: A24
+              "name_zh-Hant": 上海素鵝
+              "name_en": ShanghaiStyleVegetableGoose
+            - item_number: A24
+              "name_zh-Hant": 桂花糖莲藕
+              "name_en": Osmanthus Sugar Lotus
+        - "name_zh-Hant": 海鮮類
+          "name_en": Seafood
+          menu_items:
+            - item_number: B1
+              "name_zh-Hant": 水晶蝦仁
+              "name_en": Shanghai Style Sauteed Shrimp 
+            - item_number: B2
+              "name_zh-Hant": 百合蝦仁
+              "name_en": Sauteed Shrimp with Fresh Lily
+            - item_number: B3
+              "name_zh-Hant": 乾燒蝦仁
+              "name_en": Dry Cooked Shrimp in Hot Sauce
+            - item_number: B4
+              "name_zh-Hant": 蝦仁炒蛋
+              "name_en": Stir Fried Eggs with Shrimp
+            - item_number: B5
+              "name_zh-Hant": 蝦仁豆腐
+              "name_en": Sauteed Bean Curd with Shrimp
+            - item_number: B6
+              "name_zh-Hant": 清炒鱔糊
+              "name_en": Sauteed Yellow Eel
+            - item_number: B7
+              "name_zh-Hant": 韭黃鐵板鱔糊
+              "name_en": Sizzling Eel
+            - item_number: B8
+              "name_zh-Hant": 紅燒划水
+              "name_en": Braised Fish Tail
+            - item_number: B9
+              "name_zh-Hant": 雪菜墨魚
+              "name_en": Fresh Cuttle Fish with Salted Snow Vegetable
+            - item_number: B10
+              "name_zh-Hant": 酥炸苔條魚
+              "name_en": Grispy [*Crispy] Fish Fillet with Sea Moss 
+            - item_number: B11
+              "name_zh-Hant": 紅燒黄魚
+              "name_en": Yellow Fish in Brown Sauce
+            - item_number: B12
+              "name_zh-Hant": 松子黄魚
+              "name_en": Yellow Fish with Pine Nuts
+            - item_number: B13
+              "name_zh-Hant": 糖醋魚片
+              "name_en": Sweet and Sour Fish Fillet
+            - item_number: B14
+              "name_zh-Hant": 糟溜魚片
+              "name_en": Fish Fillet in Wine Sauce  
+            - item_number: B15
+              "name_zh-Hant": 豉汁魚片
+              "name_en": Fish Fillet Slices in Black Bean Sauce
+            - item_number: B16
+              "name_zh-Hant": 薑蔥蛴螃蟹炒年糕
+              "name_en": Braised Crab with Rice Cake Slices
+            - item_number: B17
+              "name_zh-Hant": 薑蔥蛴螃蟹炒年糕
+              "name_en": Braised Crab with Rice Cake Slices
+            - item_number: B18
+              "name_zh-Hant": 蔥烤大鳥参
+              "name_en": Green Onion Braised Sea Cucumber
+            - item_number: B19
+              "name_zh-Hant": 蝦仔大鳥參
+              "name_en": Sea Cucumber with Shrimp Roe
+            - item_number: B20
+              "name_zh-Hant": 剁椒魚片
+              "name_en": Red Pepper Fish Fillets
+            - item_number: B21
+              "name_zh-Hant": 唐芹墨魚絲
+              "name_en": Tang Celery w/Squid
+            - item_number: B22
+              "name_zh-Hant": 椒鹽蝦
+              "name_en": Salted and pepper Shrimp
+            - item_number: B23
+              "name_zh-Hant": 翡翠溜魚片
+              "name_en": Jade Fish Slides
+            - item_number: B24
+              "name_zh-Hant": 蛤蜊蒸蛋
+              "name_en": Steamed Clams and Egg
+            - item_number: B25
+              "name_zh-Hant": 家常鱼片煲
+              "name_en": Homemade Fish Casserole
+            - item_number: B26
+              "name_zh-Hant": 核桃蝦
+              "name_en": Honey Walnut Prawns
+            - item_number: B27
+              "name_zh-Hant": 荷蘭豆蝦
+              "name_en": Show Pea w/Prawns
+            - item_number: B28
+              "name_zh-Hant": 上海脆鱔
+              "name_en": Shanghai Style water Eel
+            - item_number: B29
+              "name_zh-Hant": 美極油爆蝦
+              "name_en": Shanghai Style Soy Sauce Prawns
+            - item_number: B30
+              "name_zh-Hant": 鹹蛋黃焗蟹
+              "name_en": Salted Egg Yolk w/Dungenels [*Dungeness] Crab 
+            - item_number: B31
+              "name_zh-Hant": 豆瓣魚片
+              "name_en": Fish Fillet w/Bean Sauce
+            - item_number: B32
+              "name_zh-Hant": 水煮魚
+              "name_en": Water Boiled Fish
+            - item_number: B33
+              "name_zh-Hant": 三鮮魚麵筋
+              "name_en": Gluten Stuffed w/Seafood Peas Leaf
+            - item_number: B34
+              "name_zh-Hant": 絲瓜魚麵筋
+              "name_en": Chinese Squash w/Fish Gluten
+            - item_number: B35
+              "name_zh-Hant": 江南賽螃蟹
+              "name_en": Special Grounded Fish Fillet w/Crab Meats
+            - item_number: B36
+              "name_zh-Hant": 江南賽螃蟹
+              "name_en": Crab Meat and Tofu
+            - item_number: B37
+              "name_zh-Hant": 九層塔炒蜆
+              "name_en": Basil Fried Clams
+            - item_number: B38
+              "name_zh-Hant": 九層塔炒蜆
+              "name_en": Salted and Pepper Slice Fish
+            - item_number: B39
+              "name_zh-Hant": 清蒸龍利
+              "name_en": Steamed Long Lee
+            - item_number: B41
+              "name_zh-Hant": 清蒸龍利
+              "name_en": Steamed Long Lee
+            - item_number: B42
+              "name_zh-Hant": 海鲜豆腐煲
+              "name_en": Seafood tofu pot
+            - item_number: B43
+              "name_zh-Hant": 麻辣鳝魚
+              "name_en": Spicy eel
+            - item_number: B44
+              "name_zh-Hant": 紅烧鯧魚
+              "name_en": Braised Pomfret
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/shanghai_family_cupertino_ca_usa/shanghai_family_2 Large.jpeg
+      sections:
+        - "name_zh-Hant": 肉类
+          "name_en": Meat
+          menu_items:
+            - item_number: C1
+              "name_zh-Hant": 走油蹄膀
+              "name_en": Fat Extracted Pork Rump in Brown Sauce
+            - item_number: C2
+              "name_zh-Hant": 百葉結燒肉
+              "name_en": Knotted Bean Curd Sheets with Pork
+            - item_number: C3
+              "name_zh-Hant": 梅乾菜燒肉
+              "name_en": Braised Dry May Vegetable with Pork
+            - item_number: C4
+              "name_zh-Hant": 竹筍燒肉
+              "name_en": Braised Bamboo Shoots with Pork
+            - item_number: C5
+              "name_zh-Hant": 水筍燒肉
+              "name_en": pork with Soaked Dry Bamboo Shoot
+            - item_number: C6
+              "name_zh-Hant": 筊白炒肉絲
+              "name_en": Julienne Pork with Jiao Bai
+            - item_number: C7
+              "name_zh-Hant": 香乾炒肉絲
+              "name_en": Shredded Pork with Xiang gan
+            - item_number: C8
+              "name_zh-Hant": 魚香肉絲
+              "name_en": Shredded Pork in Garlic Sauce
+            - item_number: C9
+              "name_zh-Hant": 荠菜冬筍肉絲
+              "name_en": Shredded Pork, Bamboo Shoot with Jizhai
+            - item_number: C10
+              "name_zh-Hant": 碧綠竹筍肉絲
+              "name_en": Green Shoots w/Pork
+            - item_number: C11
+              "name_zh-Hant": 青椒炒肉絲
+              "name_en": Shredded Pork w/Green Pepper
+            - item_number: C12
+              "name_zh-Hant": 揚州煮千絲
+              "name_en": Yangzhou Boiled Dry Silk
+            - item_number: C13
+              "name_zh-Hant": 家常豆腐
+              "name_en": Homemade Tofu
+            - item_number: C14
+              "name_zh-Hant": 油豆腐塞肉紅燒蛋
+              "name_en": Braised egg with fried tofu stuffed meat
+            - item_number: C15
+              "name_zh-Hant": 回鍋肉
+              "name_en": Twice-Cooked Pork
+            - item_number: C16
+              "name_zh-Hant": 韭黃香乾肉絲
+              "name_en": The Chives Xianggan
+            - item_number: C17
+              "name_zh-Hant": 脆皮咸豬手
+              "name_en": Crispy Pork
+            - item_number: C18
+              "name_zh-Hant": 炒腰花
+              "name_en": Pork Kidney in Brown Sauce
+            - item_number: C19
+              "name_zh-Hant": 醬爆豬肝
+              "name_en": Pork Liver in Soy Sauce
+            - item_number: C20
+              "name_zh-Hant": 醬爆大腸
+              "name_en": Intestine in Soy Sauce
+            - item_number: C21
+              "name_zh-Hant": 本幫炒三鮮
+              "name_en": Three Kinds Meat in Shanghai Brown Sauce
+            - item_number: C22
+              "name_zh-Hant": 蒜丝毛肚
+              "name_en": Garlic Silk Duck
+            - item_number: C23
+              "name_zh-Hant": 酸豆角炒肉絲
+              "name_en": Sour Beans Fried Pork
+            - item_number: C24
+              "name_zh-Hant": 花菜肉片燴番茄
+              "name_en": Pork Sliced with Tomato and Vegetable
+            - item_number: C25
+              "name_zh-Hant": 鹹肉蒸百葉
+              "name_en": Steamed Salted Pork w/Bean Curd Sheets
+            - item_number: C26
+              "name_zh-Hant": 苔條酱方
+              "name_en": Pork Square in Sea Moss Brown Sauce
+            - item_number: C27
+              "name_zh-Hant": 油麵筋塞薺菜肉
+              "name_en": Fried Gluten Stuffed with Ji Zhai and Meat
+            - item_number: C28
+              "name_zh-Hant": 千鍋肥腸
+              "name_en": Griddle Cooked Spicy Pork Intestine
+            - item_number: C29
+              "name_zh-Hant": 糖醋小排
+              "name_en": Spare Rib Shanghai Style
+            - item_number: C30
+              "name_zh-Hant": 椒鹽排骨
+              "name_en": Salted and Pepper Ribs
+            - item_number: C31
+              "name_zh-Hant": 芋頭粉蒸排肉
+              "name_en": Chongqing Steamed Pork Ribs
+            - item_number: C32
+              "name_zh-Hant": 香辣蒜香骨
+              "name_en": Spicy Croutons Bone
+            - item_number: C33
+              "name_zh-Hant": 甜酸雞
+              "name_en": Sweet and Sour Sauce Chicken
+            - item_number: C34
+              "name_zh-Hant": 陳皮雞
+              "name_en": Tangerine Peel Chicken
+            - item_number: C35
+              "name_zh-Hant": 辣子雞丁/塊
+              "name_en": Chicken w/Spicy Sauce
+            - item_number: C36
+              "name_zh-Hant": 左宗雞
+              "name_en": General Tso's Chicken
+            - item_number: C37
+              "name_zh-Hant": 豆豉雞
+              "name_en": Chicken in Black Bean Sauce
+            - item_number: C38
+              "name_zh-Hant": 黑椒雞
+              "name_en": Chicken in Black Pepper Sauce
+            - item_number: C39
+              "name_zh-Hant": 蔥爆牛肉
+              "name_en": Stir Fried Beef with Green Onion
+            - item_number: C40
+              "name_zh-Hant": 豆豉牛肉
+              "name_en": Beef in Black Bean Sauce
+            - item_number: C41
+              "name_zh-Hant": 蔥爆羊肉
+              "name_en": Stir Fried Lamb with Green Onion
+            - item_number: C42
+              "name_zh-Hant": 孜然羊肉
+              "name_en": Cuming Lamg [*Cumin Lamb]
+            - item_number: C43
+              "name_zh-Hant": 水煮牛
+              "name_en": Boiled Beef
+            - item_number: C44
+              "name_zh-Hant": 洋蔥牛肉
+              "name_en": Lam w/Green Onion
+            - item_number: C45
+              "name_zh-Hant": 蠔油牛肉
+              "name_en": Beef w/Oyster
+            - item_number: C46
+              "name_zh-Hant": 黑椒牛肉
+              "name_en": Beef /Chicken in Black Pepper Sauce
+            - item_number: C47
+              "name_zh-Hant": 鐵板牛肉/雞
+              "name_en": Sizzling Beef /Chicken
+            - item_number: C48
+              "name_zh-Hant": 蒙古牛肉/雞
+              "name_en": Mongolia Beef /Chicken
+            - item_number: C49
+              "name_zh-Hant": 醬爆牛／雞
+              "name_en": Sliced Beef /Chicken in Soy Sauce
+            - item_number: C50
+              "name_zh-Hant": 宮保雞丁/牛
+              "name_en": Kung Pao Chicken /Beef
+            - item_number: C51
+              "name_zh-Hant": 海派咖喱雞/牛
+              "name_en": Curry Chicken /Beef
+            - item_number: C52
+              "name_zh-Hant": 四季豆雞/牛
+              "name_en": Green Bean with Chicken /Beef
+            - item_number: C53
+              "name_zh-Hant": 脆皮香酥半鴨
+              "name_en": Crispy Half Duck
+            - item_number: C54
+              "name_zh-Hant": 重慶辣子雞
+              "name_en": Chongqing spicy chicken
+            - item_number: C55
+              "name_zh-Hant": 北京片皮鴨 (片皮、鴨骨湯）附：餅、蔥、醬
+              "name_en": "Beijing Slice Duck (Slices of skin, duck bone soup) Attached: pancake, green onions, sauce"
+            - item_number: C56
+              "name_zh-Hant": 芥兰牛/雞
+              "name_en": Broccoli Cow/Chicken
+            - item_number: C57
+              "name_zh-Hant": 白灼牛百叶
+              "name_en": Boiled Tripe
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/shanghai_family_cupertino_ca_usa/shanghai_family_3 Large.jpeg
+      sections:
+        - "name_zh-Hant": 蔬菜
+          "name_en": Vegetable
+          menu_items:
+            - item_number: D1
+              "name_zh-Hant": 喬家栅小炒
+              "name_en": House Special Stir Fry
+            - item_number: D2
+              "name_zh-Hant": 雪菜百葉毛豆
+              "name_en": Bean Sheets, Soy Bean w/Saited Snow Vegetable
+            - item_number: D3
+              "name_zh-Hant": 素雞炒毛豆
+              "name_en": Vegetable Chicken with Fresh SoyS eans [*Soybeans]
+            - item_number: D4
+              "name_zh-Hant": 素雞炒毛豆
+              "name_en": Vegetable Chicken with Fresh SoyS eans [*Soybeans]
+            - item_number: D5
+              "name_zh-Hant": 絲瓜開洋
+              "name_en": Chinese Squash with Dry Shrimp
+            - item_number: D6
+              "name_zh-Hant": 絲瓜炒蛋
+              "name_en": Chinese Squash with Eggs
+            - item_number: D7
+              "name_zh-Hant": 絲瓜木耳
+              "name_en": Chinese Squash Bamboo Fungus
+            - item_number: D8
+              "name_zh-Hant": 鹹蛋黃絲瓜
+              "name_en": Salted Egg Yolk with Chinese Squash
+            - item_number: D9
+              "name_zh-Hant": 雙冬炒麵筋
+              "name_en": Fired Gluten with Bamboo Shoots Dry Mushroom
+            - item_number: D10
+              "name_zh-Hant": 油燜竹筍
+              "name_en": Braised Bamboo Shoots
+            - item_number: D11
+              "name_zh-Hant": 塔菜炒新鮮竹筍
+              "name_en": TaKoo Vegetable with Fresh Winted Bamboo Shoot
+            - item_number: D12
+              "name_zh-Hant": 魚香茄子
+              "name_en": Eggplant in Garlic Sauce
+            - item_number: D13
+              "name_zh-Hant": 手撕包心菜
+              "name_en": Shredded Cabbage
+            - item_number: D14
+              "name_zh-Hant": 油燜茄子
+              "name_en": Braised Eggplant
+            - item_number: D15
+              "name_zh-Hant": 雪菜豆瓣酥
+              "name_en": Crisp w/Salted Snow Vegetable
+            - item_number: D16
+              "name_zh-Hant": 雪菜新豆瓣
+              "name_en": Green Bean with Salted Snow Vegetable
+            - item_number: D17
+              "name_zh-Hant": 唐芹香乾
+              "name_en": Chinese Celery with Dried Bean Curd
+            - item_number: D18
+              "name_zh-Hant": 素什錦
+              "name_en": Assorted Vegetable and Bean Curd
+            - item_number: D19
+              "name_zh-Hant": 土豆辣椒絲
+              "name_en": Potato with Chili
+            - item_number: D20
+              "name_zh-Hant": 麻婆豆腐
+              "name_en": Ma Puo Hot and Spicy Bean Curd
+            - item_number: D21
+              "name_zh-Hant": 紅燒豆腐
+              "name_en": Bean Curd in Brown Sauce
+            - item_number: D22
+              "name_zh-Hant": 油燜茭白
+              "name_en": Braised Jo Bai
+            - item_number: D23
+              "name_zh-Hant": 炒時菜
+              "name_en": Stir Fried Season Vegetable
+            - item_number: D24
+              "name_zh-Hant": 炸臭豆腐
+              "name_en": Deep Fried Stinky Bean Curd
+            - item_number: D25
+              "name_zh-Hant": 蒸臭豆腐
+              "name_en": Steam Stinky Bean Curd
+            - item_number: D26
+              "name_zh-Hant": 薺菜溜豆腐
+              "name_en": Tofu with Ji Zhai
+            - item_number: D27
+              "name_zh-Hant": 鐵板豆腐
+              "name_en": Sizzling Tofu
+            - item_number: D28
+              "name_zh-Hant": 千扁四季豆
+              "name_en": Dry Sauteed String Bean
+            - item_number: D29
+              "name_zh-Hant": 素燴竹笙
+              "name_en": Braised Bamboo Fungus
+            - item_number: D30
+              "name_zh-Hant": 南瓜炒年糕
+              "name_en": Fried Pumpkin Cake
+            - item_number: D31
+              "name_zh-Hant": 南瓜炒百合
+              "name_en": Fried Pumpkin and Lily
+            - item_number: D32
+              "name_zh-Hant": 開洋白菜
+              "name_en": Cabbage w/Dry Shrimp
+            - item_number: D33
+              "name_zh-Hant": 西芹百合
+              "name_en": Lily Bulb w/Celery
+            - item_number: D34
+              "name_zh-Hant": 鹹蛋黄南瓜
+              "name_en": Pumpkin w/Egg Yok
+            - item_number: D35
+              "name_zh-Hant": 宮爆豆腐
+              "name_en": Kung Po Tofu
+            - item_number: D36
+              "name_zh-Hant": 茄子燒豆腐
+              "name_en": Eggplant Curd
+            - item_number: D37
+              "name_zh-Hant": 爆炒菌菇
+              "name_en": Stuffed Muchroom [*Mushroom]
+            - item_number: D38
+              "name_zh-Hant": 千鍋花菜
+              "name_en": Dry Pot Cauliflower
+            - item_number: D40
+              "name_zh-Hant": 雞毛菜（清炒/蒜炒）
+              "name_en": Feather Dishes (Fried / Garlic Fried)
+            - item_number: D41
+              "name_zh-Hant": 大豆苗（清炒/蒜炒）
+              "name_en": Soybean Seedlings (Fried / Garlic Fried)
+        - "name_zh-Hant": 煲, 汤类
+          "name_en": Clay Pot / Soup
+          menu_items:
+            - item_number: E1
+              "name_zh-Hant": 大魚頭砂鍋
+              "name_en": Fish Head Soup in Clay Pot
+            - item_number: E2
+              "name_zh-Hant": 什錦大砂鍋
+              "name_en": Combination Soup in Clay Pot
+            - item_number: E3
+              "name_zh-Hant": 醃篤大砂鍋
+              "name_en": Shanghai Salted & Fresh Pork Soup in Clay Pot
+            - item_number: E4
+              "name_zh-Hant": 獅子頭菜心煲
+              "name_en": Big Meat Ball in Clay Pot
+            - item_number: E5
+              "name_zh-Hant": 蟹粉獅子頭
+              "name_en": Crab Meat Lion Head
+            - item_number: E6
+              "name_zh-Hant": 雙檔白菜粉絲煲
+              "name_en": Stuffed Bean Curd in Clay Pot
+            - item_number: E7
+              "name_zh-Hant": 番茄絲瓜麺筋煲
+              "name_en": Tomato, Lofa Squash & Bean Vemicelli in Clay Pot
+            - item_number: E8
+              "name_zh-Hant": 九層塔栗子雞褒
+              "name_en": Chicken with Chestnut Clay Pot
+            - item_number: E9
+              "name_zh-Hant": 沙茶肥牛鍋
+              "name_en": Sacha Fat Beef Hot Pot
+            - item_number: E10
+              "name_zh-Hant": 牛腩煲
+              "name_en": Beef Brisket in Clay Pot
+            - item_number: E11
+              "name_zh-Hant": 鹹魚雞粒豆腐煲
+              "name_en": Salted Fish & Chicken Tofu in Clay Pot
+            - item_number: E12
+              "name_zh-Hant": 鹹魚雞粒茄孑煲
+              "name_en": Salted Fish & Chicken Eggplant Clay Pot
+            - item_number: E13
+              "name_zh-Hant": 紅炆羊肉優
+              "name_en": Lamb w/Brown Sauce in Hot Pot
+            - item_number: E14
+              "name_zh-Hant": 王嫂魚羹
+              "name_en": Fish Soup with Snow Vegetable and Egg White
+            - item_number: E15
+              "name_zh-Hant": 薺菜肉絲豆腐羹
+              "name_en": Shredded Pork, Bean Curd w/Ji Zhai Soup
+            - item_number: E16
+              "name_zh-Hant": 薺菜黄魚羹
+              "name_en": Fish Fillet and Ji Zhai Soup
+            - item_number: E17
+              "name_zh-Hant": 海鮮豆腐羮
+              "name_en": Seafood Tofu Soup
+            - item_number: E18
+              "name_zh-Hant": 西湖牛肉羮
+              "name_en": West Lake Beef Rouging
+            - item_number: E19
+              "name_zh-Hant": 咖喱牛肉粉絲湯
+              "name_en": Curry Beef with Vermicelli
+            - item_number: E20
+              "name_zh-Hant": 火腿扁尖冬瓜湯
+              "name_en": Winter Melon Soup w/Ham, Dry Bamboo Shoot
+            - item_number: E21
+              "name_zh-Hant": 火腿扁尖老鴨湯
+              "name_en": Duck Soup with Chinese Ham & Dry Bamboo Shoot
+            - item_number: E22
+              "name_zh-Hant": 酸辣湯
+              "name_en": Hot and Sour Soup
+            - item_number: E23
+              "name_zh-Hant": 榨菜肉絲蛋湯
+              "name_en": The Mustard Pork Bowl of Soup
+            - item_number: E24
+              "name_zh-Hant": 番茄蛋湯
+              "name_en": Tomato Egg Soup
+            - item_number: E25
+              "name_zh-Hant": 蛤蜊蛋漡
+              "name_en": The Clams Bowl of Soup
+            - item_number: E26
+              "name_zh-Hant": 雞茸玉米漡
+              "name_en": Chicken Bones Com [*Corn] Hot 
+            - item_number: E28
+              "name_zh-Hant": 竹笙雞湯
+              "name_en": Chicken Soup w/Bamboo Fungus
+            - item_number: E29
+              "name_zh-Hant": 酸菜羊肉锅
+              "name_en": Pickled Lamb Pot
+            - item_number: E30
+              "name_zh-Hant": 酸菜白肉锅
+              "name_en": Pickled White Meat Pot
+            - item_number: E31
+              "name_zh-Hant": 酸菜魚肉锅
+              "name_en": Pickled fish pot
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/shanghai_family_cupertino_ca_usa/shanghai_family_4 Large.jpeg
+      sections:
+        - "name_zh-Hant": 上海点心
+          "name_en": Shanghai Dim Sum
+          menu_items:
+            - item_number: F1
+              "name_zh-Hant": 薺菜餛飩
+              "name_en": Special Shanghai JI Zhai Wonton
+            - item_number: F2
+              "name_zh-Hant": 上海小餛飩
+              "name_en": Special Shanghai Little Wonton
+            - item_number: F3
+              "name_zh-Hant": 三鮮餛飩
+              "name_en": 3 Seafood Won ton
+            - item_number: F4
+              "name_zh-Hant": 三鮮餛飩
+              "name_en": 3 Seafood Won ton
+            - item_number: F5
+              "name_zh-Hant": 鮮肉锅贴
+              "name_en": Pot Stickers (8)
+            - item_number: F6
+              "name_zh-Hant": 小籠包
+              "name_en": Shanghai Steamed Pork Buns (6)
+            - item_number: F7
+              "name_zh-Hant": 蟹粉小籠包（6只）
+              "name_en": Streamed [*steamed] Crab Meat Bun (6)
+            - item_number: F8
+              "name_zh-Hant": 生煎包（6只）
+              "name_en": Pan Fried Bun Stuffed w/Pork Meat(6)
+            - item_number: F9
+              "name_zh-Hant": 上海春巻
+              "name_en": Shanghai Egg Rolls (4)
+            - item_number: F10
+              "name_zh-Hant": 鮮肉湯圓
+              "name_en": Sweet- Rice Dumpling with Pork Filling (4)
+            - item_number: F11
+              "name_zh-Hant": 鮮肉湯圓
+              "name_en": Sweet- Rice Dumpling with Pork Filling (4)
+            - item_number: F12
+              "name_zh-Hant": 薺菜炒年糕
+              "name_en": Stir Fried Rice Cake Slices Ji Zhai
+            - item_number: F13
+              "name_zh-Hant": 菜湯年糕
+              "name_en": Rice Cake Slices in Soup
+            - item_number: F14
+              "name_zh-Hant": 上海炒粗麵
+              "name_en": Shanghai Stir-Fried Thick Noodle
+            - item_number: F15
+              "name_zh-Hant": 肉絲菜湯麵
+              "name_en": Noodle Soup Shanghai Style
+            - item_number: F16
+              "name_zh-Hant": 鱔糊面（湯/干）
+              "name_en": Noodle Soup with Yellow Eel
+            - item_number: F17
+              "name_zh-Hant": 四喜烤麩麵
+              "name_en": Noodle Soup with 4-Happiness Spongy Glnten [*Gluten]
+            - item_number: F18
+              "name_zh-Hant": 炸醬麵
+              "name_en": Noodle with Pork & Vegetable in Hot Sauce
+            - item_number: F19
+              "name_zh-Hant": 辣醬面
+              "name_en": Noodle Soup with Hot Brown Sauce
+            - item_number: F20
+              "name_zh-Hant": 開洋蔥油麵
+              "name_en": Noodle with Dry Shrimp and Scallion
+            - item_number: F21
+              "name_zh-Hant": 雪菜肉丝麵
+              "name_en": Noodle with Salted Snow Vegetable
+            - item_number: F22
+              "name_zh-Hant": 榨菜肉絲麵
+              "name_en": Noodle with Preserved Vegetable
+            - item_number: F23
+              "name_zh-Hant": 咖喱牛肉麵
+              "name_en": Noodle Soup with Curry Beef
+            - item_number: F24
+              "name_zh-Hant": 熏魚麵
+              "name_en": Noodle Soup with Smoked Fish
+            - item_number: F25
+              "name_zh-Hant": 排骨麵
+              "name_en": Noodle Soup with Pork Chops
+            - item_number: F26
+              "name_zh-Hant": 蝦腰麵
+              "name_en": Noodle Soup with Shrimp and Pork Kidney
+            - item_number: F27
+              "name_zh-Hant": 紅燒牛腩麵
+              "name_en": Noodle Soup with Tender Beef Brisket
+            - item_number: F28
+              "name_zh-Hant": 嫩雞煨麵
+              "name_en": Noodle in Chicken Soup
+            - item_number: F29
+              "name_zh-Hant": 羅漢上素麵
+              "name_en": Lohan Vegetable Noodle
+            - item_number: F30
+              "name_zh-Hant": 薺菜肉絲麵
+              "name_en": Noodle w/Shredded Pork and Ji Zhai
+            - item_number: F31
+              "name_zh-Hant": 什錦兩麵黃
+              "name_en": Pan Fried Noodle in Combination Sauce
+            - item_number: F32
+              "name_zh-Hant": 蝦仁兩麵黃
+              "name_en": Pan Fried Noodle with Shrimps
+            - item_number: F33
+              "name_zh-Hant": 素炒（飯/麵）
+              "name_en": Vegetable Fried (Rice or Noodle)
+            - item_number: F34
+              "name_zh-Hant": 什錦（飯/麵）
+              "name_en": Seafood and Meat Combination Fried (Rice or Noodle)
+            - item_number: F35
+              "name_zh-Hant": 炒馬面
+              "name_en": Fried Horse-Faced
+            - item_number: F36
+              "name_zh-Hant": 銀絲卷（蒸/炸）
+              "name_en": Steamed or Fried Roll
+            - item_number: F37
+              "name_zh-Hant": 桂花酒釀小芝麻湯丸
+              "name_en": Sesame Dumplings in Sweet Rice Wine Soup
+            - item_number: F38
+              "name_zh-Hant": 豆沙鍋餅
+              "name_en": Pancake with Red Bean Paste Filling
+            - item_number: F39
+              "name_zh-Hant": 蔥油餅
+              "name_en": Pancake with Green Onion
+            - item_number: F40
+              "name_zh-Hant": 韭菜盒子（2只）
+              "name_en": Chinese Chive Cake (2)
+            - item_number: F41
+              "name_zh-Hant": 素菜包（4只）
+              "name_en": Vegetable Bun (4)
+            - item_number: F42
+              "name_zh-Hant": 紅油抄手
+              "name_en": Red Oil Super Hand
+            - item_number: F43
+              "name_zh-Hant": 豆漿（甜/鹹）
+              "name_en": Soybean Milk Sweet Orgial [*Original]
+            - item_number: F44
+              "name_zh-Hant": 白菜猪肉水餃
+              "name_en": Cabbage pork dumplings
+            - item_number: F45
+              "name_zh-Hant": 三鮮水餃
+              "name_en": Three fresh dumplings
+            - item_number: F46
+              "name_zh-Hant": 油条
+              "name_en": Chinese Donut
+            - item_number: F47
+              "name_zh-Hant": 素蒸餃
+              "name_en": Vegetable Steam Dumpling
+            - item_number: F48
+              "name_zh-Hant": 牛蒸餃
+              "name_en": Beef Steam Dumpling
+            - item_number: F49
+              "name_zh-Hant": 丝瓜虾肉小笼包
+              "name_en": Loofah shrimp dumplings
+            - item_number: F50
+              "name_zh-Hant": 喬家栅菜泡飯
+              "name_en": House Special Rice Soup
+            - item_number: F51
+              "name_zh-Hant": 八寶飯
+              "name_en": 8-Treasure Sweet Rice Cake
+            - item_number: F52
+              "name_zh-Hant": 上海菜飯
+              "name_en": Baked Steamed Rice with Salted Pork & Vegetable
+            - item_number: F52
+              "name_zh-Hant": 肉肉絲蛋炒飯
+              "name_en": Fried Rice w/Pork & Egg
+            - item_number: F53
+              "name_zh-Hant": 肉肉絲蛋炒飯
+              "name_en": Fried Rice w/Pork & Egg
+            - item_number: F54
+              "name_zh-Hant": 蝦仁蛋炒飯
+              "name_en": Fried Rice with Shrimp
+            - item_number: F55
+              "name_zh-Hant": 鹹魚雞粒炒飯
+              "name_en": Salted Fish & Chicken Fried Rice
+            - item_number: F56
+              "name_zh-Hant": 揚州炒飯
+              "name_en": Yangzhou Fried Rice
+            - item_number: F57
+              "name_zh-Hant": 罗卜丝油墩子
+              "name_en": Luo Bosi oil baidunzi
+            - item_number: F58
+              "name_zh-Hant": 上海成蛋黄肉松青团
+              "name_en":  Shanghai Salted Egg Yolk Pork Floss Green Group
+            - item_number: F59
+              "name_zh-Hant": 上海豆沙青团
+              "name_en":  Shanghai Youth League Zaoni (4)
+            - item_number: F60
+              "name_zh-Hant": 上海肉，豆沙大棕, 买十送一
+              "name_en":  "[*Shanghai meat, brown bean paste] Buy ten get one"
+            - item_number: F61
+              "name_zh-Hant": 牛肉巻餅
+              "name_en":  Beef Burrito
+            - item_number: F62
+              "name_zh-Hant": 白飯
+              "name_en":  Steamed Rice
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/shanghai_family_cupertino_ca_usa/shanghai_family_5 Large.jpeg
+      sections:
+        - "name_zh-Hant": 特价午餐
+          "name_en": Lunch Special
+          menu_items:
+            - item_number: 1
+              "name_zh-Hant": 雪菜百葉毛豆
+              "name_en": Bean Sheets Soy w/Salted Snow Vegetable
+            - item_number: 2
+              "name_zh-Hant": 雪菜炒粉皮
+              "name_en": Vermicelli with Salted Snow Vegetable
+            - item_number: 3
+              "name_zh-Hant": 香幹肉絲
+              "name_en": Shredded Pork with Dry Bean Curd
+            - item_number: 4
+              "name_zh-Hant": 油燜茄子
+              "name_en": Braised Eggplan
+            - item_number: 5
+              "name_zh-Hant": 土豆辣椒絲
+              "name_en": Potato with Chili
+            - item_number: 5
+              "name_zh-Hant": 土豆辣椒絲
+              "name_en": Potato with Chili
+            - item_number: 6
+              "name_zh-Hant": 麻婆豆腐
+              "name_en": Ma Puo Hot and Spicy Bean Curd
+            - item_number: 7
+              "name_zh-Hant": 開洋絲瓜
+              "name_en": Lofa Squash with Dry Shrimp
+            - item_number: 8
+              "name_zh-Hant": 魚香茄子
+              "name_en": Eggplant in Garlic Sauce
+            - item_number: 9
+              "name_zh-Hant": 雙冬炒麵筋
+              "name_en": Fired [*Fried] Gluten with Bamboo Shoot Dry Mushroom
+            - item_number: 10
+              "name_zh-Hant": 海派咖喱雞
+              "name_en": Shanghai Style Curry Chicken
+            - item_number: 11
+              "name_zh-Hant": 魚香肉絲
+              "name_en": Shredded Pork with Dry Bean Curd
+            - item_number: 12
+              "name_zh-Hant": 素什錦
+              "name_en": Assorted Vegetable and Bean Curd
+            - item_number: 13
+              "name_zh-Hant": 乾扁四季豆
+              "name_en": Dry Sauteed String Bean
+            - item_number: 14
+              "name_zh-Hant": 宮保雞/牛
+              "name_en": Kung Pao Chicken / Beef
+            - item_number: 15
+              "name_zh-Hant": 糖醋小排
+              "name_en": Spare Rib Shanghai Style
+            - item_number: 16
+              "name_zh-Hant": 蝦仁炒蛋
+              "name_en": Stir Eggs with Shrimp
+            - item_number: 17
+              "name_zh-Hant": 醬爆豬肝
+              "name_en": Pork Liver in Soy Sauce
+            - item_number: 18
+              "name_zh-Hant": 雪菜墨魚
+              "name_en": Fresh Cuttle Fish with Salted Snow Vegetable
+            - item_number: 19
+              "name_zh-Hant": 千煎小黄魚
+              "name_en": Deep Fried Small Yellow Fish
+            - item_number: 20
+              "name_zh-Hant": 獅子頭菜心煲
+              "name_en": Big Meat Balls in Clay Pot
+            - item_number: 21
+              "name_zh-Hant": 雙檔白菜粉絲煲
+              "name_en": Stutted [*Stuffed] Bean Curd in Clay Pot
+            - item_number: 22
+              "name_zh-Hant": 炒腰花
+              "name_en": Pork Kidney in Brown Sauce
+            - item_number: 23
+              "name_zh-Hant": 薺菜冬筍炒肉絲
+              "name_en": Shredded Pork, Bamboo Shoot with Ji Zhai
+            - item_number: 24
+              "name_zh-Hant": 糖醋魚片
+              "name_en": Sweet and Sour Fish Fillet
+            - item_number: 25
+              "name_zh-Hant": 糟溜魚片
+              "name_en": Fish Fillet in Wine Sauce
+            - item_number: 26
+              "name_zh-Hant": 梅乾菜燒肉
+              "name_en": Braised Dry May Vegetable with Pork
+            - item_number: 27
+              "name_zh-Hant": 百葉結燒肉
+              "name_en": Knotted Bean Curd Sheets with Pork
+            - item_number: 28
+              "name_zh-Hant": 蒙古牛/雞
+              "name_en": Mongolian Beef /Chicken
+            - item_number: 29
+              "name_zh-Hant": 豆豉牛肉/雞
+              "name_en": Beef in Black Bean Sauce / Chicken
+            - item_number: 30
+              "name_zh-Hant": 蔥爆牛肉/雞
+              "name_en": Stir Fried Beef with Green Onio
+            - item_number: 31
+              "name_zh-Hant": 四季豆牛/雞
+              "name_en": Four Seasons Beans Beef / Chicken
+            - item_number: 32
+              "name_zh-Hant": 回鍋肉
+              "name_en": Back To The Pot of Meat
+        - "name_zh-Hant": 特价午餐
+          "name_en": Porridge
+          menu_items:
+            - item_number: H1
+              "name_zh-Hant": 皮蛋瘦肉粥
+              "name_en": Pork & Preserved Egg Porridge
+            - item_number: H2
+              "name_zh-Hant": 生滾魚片粥
+              "name_en": Fish Porridge
+            - item_number: H3
+              "name_zh-Hant": 牛肉粥
+              "name_en": Beef Porridge
+            - item_number: H4
+              "name_zh-Hant": 海鮮粥
+              "name_en": Seafood Porridge
+            - item_number: H5
+              "name_zh-Hant": 白粥
+              "name_en": Porridge
+            - item_number: H6
+              "name_zh-Hant": 雞蓉粥
+              "name_en": Dhicken [*Chicken] Hui porridge
