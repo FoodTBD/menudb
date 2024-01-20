@@ -394,8 +394,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 牛仔骨	牛仔骨	short ribs					https://en.wiktionary.org/wiki/%E7%89%9B%E4%BB%94%E9%AA%A8
 撕	撕	shredded					
 丝	絲	shredded					
-虾仁	虾仁	shrimp					
-虾	蝦	shrimp					
+虾仁	蝦仁	shrimp	https://zh.wikipedia.org/wiki/%E8%9D%A6%E4%BB%81				
 水煮	水煮	shuizhu	https://en.wikipedia.org/wiki/Shuizhu				
 水煮牛肉	水煮牛肉	Shuizhu Beef	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg	zh	Poached beef in a spicy, flavorful Sichuan broth	
 水煮鱼	水煮魚	Shuizhu Fish	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg	zh	Poached fish in a spicy, flavorful Sichuan broth	
@@ -485,7 +484,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 红柿	紅柿	tomato					Wiktionary says "persimmon"
 茄汁	茄汁	tomato sauce					
 舌	舌	tongue					
-上	上	top(ped)					
+上	上	topped					
 拌	拌	tossed					
 情怀	情懷	traditional					https://en.wiktionary.org/wiki/%E6%83%85%E6%87%B7
 宝	寶	treasure					
@@ -496,6 +495,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 回锅肉	回鍋肉	Twice-Cooked Pork	https://en.wikipedia.org/wiki/Twice-cooked_pork	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg	zh	Pork stir-fried with vegetables and spices	
 双	雙	two					
 避风塘	避風塘	typhoon shelter	https://en.wikipedia.org/wiki/Typhoon_shelter#Typhoon_shelter_crab				
+虾	蝦	unpeeled shrimp					likely unpeeled
 百花	百花	various					
 蔬菜,蔬,菜	蔬菜,蔬,菜	vegetable					
 菜膽	菜膽	vegetable heart					

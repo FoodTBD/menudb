@@ -129,7 +129,7 @@
                             <span class="dish-foundin-menus">
                                 {% for menu_filename in known_dish['_menu_filenames'] %}
                                 <a href="{{ menu_filename }}">{{
-                                    menu_filename_to_menu_yaml_dicts[menu_filename].restaurant.name
+                                    menu_filename_to_menu_yaml_dict[menu_filename].restaurant.name
                                     }}</a>{% if not loop.last %}, {% endif %}
                                 {% endfor %}
                             </span>

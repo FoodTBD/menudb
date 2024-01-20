@@ -27,33 +27,49 @@
 
         <!-- Stats -->
         <table class="table">
-            {# <thead>
+            <thead class="table-light">
                 <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Value</th>
+                    <th scope="col" colspan="2">Canned Data</th>
                 </tr>
-            </thead> #}
+            </thead>
             <tbody>
                 <tr>
-                    <th scope="row" style="width: 20%;">Menus</th>
-                    <td>{{ stats.menu_count }}</td>
+                    <th scope="row" style="width: 20%;">Known terms</th>
+                    <td>{{ known_terms_lookup_dict | length }}</td>
                 </tr>
                 <tr>
-                    <th scope="row">Unique dish names</th>
-                    <td>{{ stats.unique_dish_count }}</td>
+                    <th scope="row">Known dishes</th>
+                    <td>{{ known_dish_lookup_dict | length }}</td>
                 </tr>
                 <tr>
                     <th scope="row">Common dishes across menus (n≥3)</th>
-                    <td>{{ stats.common_dishes }}</td>
+                    <td>{{ menu_stats.common_dishes }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead class="table-light">
+                <tr>
+                    <th scope="col" colspan="2">Menu Data</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" style="width: 20%;">Menus</th>
+                    <td>{{ menu_stats.menu_count }}</td>
                 </tr>
                 <tr>
-                    <th scope="row">Unique characters</th>
-                    <td>{{ stats.unique_character_count }}</td>
+                    <th scope="row">Unique menu items</th>
+                    <td>{{ menu_stats.unique_menu_item_count }}</td>
                 </tr>
                 <tr>
-                    <th scope="row">Top {{ stats.top_characters | length }} characters</th>
+                    <th scope="row">Unique alpha characters</th>
+                    <td>{{ menu_stats.unique_character_count }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Top {{ menu_stats.top_characters | length }} alpha characters</th>
                     <td>
-                        {% for d in stats.top_characters %}
+                        {% for d in menu_stats.top_characters %}
                         (<a href="https://en.wiktionary.org/wiki/{{ d[0] }}#Chinese">{{ d[0] }}</a>, {{ d[1]
                         }}, "{{ d[2] }}")
                         {% if not loop.last %}, {% endif %}
@@ -61,9 +77,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">{{ stats.top_2grams | length }} most common 2-grams (n≥3)</th>
+                    <th scope="row">{{ menu_stats.top_2grams | length }} most common 2-grams (n≥3)</th>
                     <td>
-                        {% for d in stats.top_2grams %}
+                        {% for d in menu_stats.top_2grams %}
                         (<a href="https://en.wiktionary.org/wiki/{{ d[0] }}#Chinese">{{ d[0] }}</a>, {{ d[1]
                         }}, {{ d[2] }})
                         {% if not loop.last %}, {% endif %}
@@ -71,9 +87,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <th scope="row">{{ stats.top_3grams | length }} most common 3-grams (n≥3)</th>
+                    <th scope="row">{{ menu_stats.top_3grams | length }} most common 3-grams (n≥3)</th>
                     <td>
-                        {% for d in stats.top_3grams %}
+                        {% for d in menu_stats.top_3grams %}
                         (<a href="https://en.wiktionary.org/wiki/{{ d[0] }}#Chinese">{{ d[0] }}</a>, {{ d[1]
                         }}, {{ d[2] }})
                         {% if not loop.last %}, {% endif %}
