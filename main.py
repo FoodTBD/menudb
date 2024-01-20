@@ -31,22 +31,6 @@ def prepare_output_dir(output_dir: str) -> None:
     shutil.copytree(STATIC_DIR, output_static_dir)
 
 
-def load_known_locales() -> dict[str, dict[str, Any]]:
-    known_locales = []
-    with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
-        csvreader = csv.DictReader(csvfile, delimiter="\t")
-        for row in csvreader:
-            assert any(row.values()), "ERROR: known_locales has empty lines"
-            known_locales.append(row)
-
-    # Map locale_code to locale dict
-    known_dish_lookuptable = {}
-    for known_locale in known_locales:
-        locale_code = known_locale["locale_code"]
-        known_dish_lookuptable[locale_code] = known_locale
-    return known_dish_lookuptable
-
-
 def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
     known_terms = []
     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
@@ -124,6 +108,35 @@ def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]
             known_dish["locale_code"] = known_dish.pop("dish_cuisine")
             known_dishes.append(known_dish)
     return known_terms_lookup_dict, known_dishes
+
+
+def load_known_locales() -> dict[str, dict[str, Any]]:
+    known_locales = []
+    with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter="\t")
+        for row in csvreader:
+            assert any(row.values()), "ERROR: known_locales has empty lines"
+            known_locales.append(row)
+
+    # Map locale_code to locale dict
+    known_dish_lookuptable = {}
+    for known_locale in known_locales:
+        locale_code = known_locale["locale_code"]
+        known_dish_lookuptable[locale_code] = known_locale
+    return known_dish_lookuptable
+
+
+def load_eatsdb_names() -> list[str]:
+    dish_names = []
+    with open("data/eatsdb_names.tsv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter="\t")
+        for row in csvreader:
+            assert row["name_native"]
+            dish_names.append(row["name_native"])
+            dish_names.extend(
+                [s.strip() for s in row["alt_names"].split(",") if s.strip()]
+            )
+    return dish_names
 
 
 def _slugify(s: str) -> str:
@@ -469,6 +482,16 @@ def _gather_stats(
         if not dish_name in known_dish_lookuptable.keys():
             print(
                 f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes"
+            )
+
+    eatsdb_names_set = set(load_eatsdb_names())
+    for dish_name in primary_names:
+        if (
+            not dish_name in known_dish_lookuptable.keys()
+            and dish_name in eatsdb_names_set
+        ):
+            print(
+                f"WARNING: {dish_name} (count {name_counter[dish_name]}) is not in known_dishes but is in EatsDB"
             )
 
     # Find top characters
