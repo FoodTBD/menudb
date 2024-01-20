@@ -288,18 +288,21 @@ def generate_menu_html(
 
                 menu_items = section.get("menu_items", [])
                 for menu_item in menu_items:
-                    # Annotate menu item name, trying first without dish names
-                    matched_all = _annotate_menu_section_or_item_with_known_terms(
-                        menu_item, False, ordered_nondish_terms, known_terms_lookup_dict
+                    # # Annotate menu item name, trying first without dish names
+                    # matched_all = _annotate_menu_section_or_item_with_known_terms(
+                    #     menu_item, False, ordered_nondish_terms, known_terms_lookup_dict
+                    # )
+                    # # Are there holes? If so, re-try including dish names
+                    # if not matched_all:
+                    #     _annotate_menu_section_or_item_with_known_terms(
+                    #         menu_item,
+                    #         False,
+                    #         ordered_all_terms,
+                    #         known_terms_lookup_dict,
+                    #     )
+                    _annotate_menu_section_or_item_with_known_terms(
+                        menu_item, False, ordered_all_terms, known_terms_lookup_dict
                     )
-                    # Are there holes? If so, re-try including dish names
-                    if not matched_all:
-                        _annotate_menu_section_or_item_with_known_terms(
-                            menu_item,
-                            False,
-                            ordered_all_terms,
-                            known_terms_lookup_dict,
-                        )
 
     env = Environment(loader=FileSystemLoader("."))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
