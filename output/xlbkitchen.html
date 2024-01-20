@@ -16,6 +16,13 @@
             object-fit: contain;
         }
 
+        .menu-iframe {
+            transform: scale(0.5);
+            transform-origin: top left;
+            width: 200%;
+            height: 200%;
+        }
+
         .menu-table {
             width: 100%;
         }
@@ -334,7 +341,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">1-5</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蒜<span class="term-translated">garlic</span></span><span class="term-native">泥<span class="term-translated">mashed</span></span><span class="term-native">白<span class="term-translated">white</span></span><span class="term-native">肉<span class="term-translated">pork</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蒜泥白肉<span class="term-translated">Sliced Pork Belly with Garlic Sauce</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -410,7 +417,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">1-7</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蒜<span class="term-translated">garlic</span></span><span class="term-native">泥<span class="term-translated">mashed</span></span><span class="term-native">黄瓜<span class="term-translated">cucumber</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蒜泥黄瓜<span class="term-translated">Smashed Cucumber Salad</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -597,9 +604,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=绍兴醉鸡" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=绍兴醉鸡', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ShaoxingWineChickenWings.jpg/440px-ShaoxingWineChickenWings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=绍兴醉鸡"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=绍兴醉鸡', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -607,7 +613,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">1-12</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">绍兴<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shaoxing_wine" target="wikipedia" rel="noopener">Shaoxing wine</a></span></span><span class="term-native">醉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Drunken_chicken" target="wikipedia" rel="noopener">drunken</a></span></span><span class="term-native">鸡<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">绍兴<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shaoxing_wine" target="wikipedia" rel="noopener">Shaoxing wine</a></span></span><span class="term-native">醉鸡<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Drunken_chicken" target="wikipedia" rel="noopener">Drunken Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -706,7 +712,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">2-2</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西湖<span class="term-translated"><a href="https://en.wikipedia.org/wiki/West_Lake" target="wikipedia" rel="noopener">West Lake</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span><span class="term-native">羹<span class="term-translated">soup</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西湖牛肉羹<span class="term-translated">West Lake Beef Soup</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -726,9 +732,6 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     onclick="speakText('西湖牛肉羹', 'zh-Hans')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/West_Lake"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/West_Lake', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -782,7 +785,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">2-4</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="term-native">汤<span class="term-translated">soup</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣汤<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour_soup" target="wikipedia" rel="noopener">Hot and Sour Soup</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1615,9 +1618,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=水煮鱼片" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮鱼片', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮鱼片"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮鱼片', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1625,7 +1627,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">5-2</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">鱼片<span class="term-translated">fish fillet</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮鱼<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Fish</a></span></span><span class="term-native">片<span class="term-translated">slice</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1655,9 +1657,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=四川酸菜鱼" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=四川酸菜鱼', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=四川酸菜鱼"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=四川酸菜鱼', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1665,7 +1666,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">5-3</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">四川<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="term-native">酸菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">四川<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="term-native">酸菜鱼<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC" target="wikipedia" rel="noopener">Suancai Fish</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1957,7 +1958,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">6-3</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干煸<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry-fried</a></span></span><span class="term-native">四季豆<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Green_bean" target="wikipedia" rel="noopener">string bean</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干煸四季豆<span class="term-translated">Dry-Fried Green Beans</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1977,9 +1978,6 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     onclick="speakText('干煸四季豆', 'zh-Hans')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -1996,7 +1994,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">6-4</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">鱼香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">茄子<span class="term-translated">eggplant</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">鱼香茄子<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">Yuxiang Eggplant</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2112,7 +2110,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">6-7</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">番茄<span class="term-translated">tomato</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">蛋<span class="term-translated">egg</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">番茄炒蛋<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs" target="wikipedia" rel="noopener">Stir-Fried Tomato and Scrambled Eggs</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2152,7 +2150,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">6-8</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">紅燒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Red_cooking" target="wikipedia" rel="noopener">red-braised</a></span></span><span class="term-native">豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tofu#China_2" target="wikipedia" rel="noopener">tofu</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">紅燒豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Red_cooking" target="wikipedia" rel="noopener">Red-Braised Tofu</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2290,7 +2288,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">7-1</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮牛肉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Beef</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2320,9 +2318,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=重庆辣子鸡" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=重庆辣子鸡', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=重庆辣子鸡"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=重庆辣子鸡', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -2330,7 +2327,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">7-2</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">重庆<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="term-native">辣子<span class="term-translated">spicy</span></span><span class="term-native">鸡<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">重庆<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="term-native">辣子鸡<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Laziji" target="wikipedia" rel="noopener">Laziji</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2802,7 +2799,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">7-14</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">陈皮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chenpi" target="wikipedia" rel="noopener">tangerine peel</a></span></span><span class="term-native">鸡<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">陈皮鸡<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Orange_chicken" target="wikipedia" rel="noopener">Orange Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2891,9 +2888,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=小笼汤包" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=小笼汤包', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%E5%BC%80%E5%B0%81%E7%AC%AC%E4%B8%80%E6%A5%BC%E5%B0%8F%E7%AC%BC%E5%8C%85.JPG/500px-%E5%BC%80%E5%B0%81%E7%AC%AC%E4%B8%80%E6%A5%BC%E5%B0%8F%E7%AC%BC%E5%8C%85.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=小笼汤包"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=小笼汤包', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -2901,7 +2897,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">8-1</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">小<span class="term-translated">small</span></span><span class="term-native">笼<span class="term-translated">basket</span></span><span class="term-native">汤<span class="term-translated">soup</span></span><span class="term-native">包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">小<span class="term-translated">small</span></span><span class="term-native">笼<span class="term-translated">basket</span></span><span class="term-native">汤包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tangbao" target="wikipedia" rel="noopener">Tangbao</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2921,9 +2917,9 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     onclick="speakText('小笼汤包', 'zh-Hans')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Baozi"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Tangbao"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Baozi', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Tangbao', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -3216,7 +3212,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">8-9</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">韭菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Allium_tuberosum" target="wikipedia" rel="noopener">Chinese chive</a></span></span><span class="term-native">虾仁<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E8%9D%A6%E4%BB%81" target="wikipedia" rel="noopener">shrimp</a></span></span><span class="term-native">猪肉<span class="term-translated">pork</span></span><span class="term-native">水饺<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi#Types" target="wikipedia" rel="noopener">boiled jiaozi</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">韭菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Allium_tuberosum" target="wikipedia" rel="noopener">Chinese chive</a></span></span><span class="term-native">虾仁<span class="term-translated">shrimp</span></span><span class="term-native">猪肉<span class="term-translated">pork</span></span><span class="term-native">水饺<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi#Types" target="wikipedia" rel="noopener">boiled jiaozi</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3355,7 +3351,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">9-1</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shanghai_cuisine" target="wikipedia" rel="noopener">Shanghai</a></span></span><span class="term-native">粗<span class="term-translated">thick</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">面<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海粗炒面<span class="term-translated">Shanghai Thick Noodles</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3375,9 +3371,6 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     onclick="speakText('上海粗炒面', 'zh-Hans')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shanghai_cuisine"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Shanghai_cuisine', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -3385,9 +3378,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=鸡炒面" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=鸡炒面', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鸡炒面"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=鸡炒面', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -3395,7 +3387,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">9-2</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">鸡<span class="term-translated">chicken</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">面<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">鸡<span class="term-translated">chicken</span></span><span class="term-native">炒面<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">Chow Mein</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3415,9 +3407,9 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     onclick="speakText('鸡炒面', 'zh-Hans')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chow_mein"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -3434,7 +3426,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">9-3</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shanghai_cuisine" target="wikipedia" rel="noopener">Shanghai</a></span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">年糕<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Nian_gao" target="wikipedia" rel="noopener">nian gao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海炒年糕<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine" target="wikipedia" rel="noopener">Shanghai Fried Rice Cakes</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3683,7 +3675,7 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <span class="menu-item-number">9-9</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干<span class="term-translated">dry</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">牛<span class="term-translated">beef</span></span><span class="term-native">河<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干炒牛河<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Beef_chow_fun" target="wikipedia" rel="noopener">Beef Chow Fun</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->

@@ -153,7 +153,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 茄子	茄子	eggplant					
 八	八	eight					
 够	夠	enough					
-全体	全體	entire					
 肥	肥	fatty					
 腐乳	腐乳	fermented tofu	https://en.wikipedia.org/wiki/Fermented_bean_curd				
 柳	柳	fillet					https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
@@ -195,6 +194,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 石斑,斑	石斑,斑	grouper	https://en.wikipedia.org/wiki/Grouper				(Cantonese) https://en.wiktionary.org/wiki/%E6%96%91#Definitions
 广东	廣東	Guangdong	https://en.wikipedia.org/wiki/Cantonese_cuisine				
 半	半	half					
+半只	半隻	half					
 火腿,腿	火腿,腿	ham					
 咸水角	鹹水角	Ham Sui Gok	https://en.wikipedia.org/wiki/Dim_sum#Dumplings		zh-u-sd-cngd	Deep fried glutinous rice dumpling filled with pork and vegetables	
 手	手	hand					
@@ -395,6 +395,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 撕	撕	shredded					
 丝	絲	shredded					
 虾仁	蝦仁	shrimp	https://zh.wikipedia.org/wiki/%E8%9D%A6%E4%BB%81				
+虾仁	虾仁	shrimp					
 水煮	水煮	shuizhu	https://en.wikipedia.org/wiki/Shuizhu				
 水煮牛肉	水煮牛肉	Shuizhu Beef	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg	zh	Poached beef in a spicy, flavorful Sichuan broth	
 水煮鱼	水煮魚	Shuizhu Fish	https://en.wikipedia.org/wiki/Shuizhu	https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg	zh	Poached fish in a spicy, flavorful Sichuan broth	
@@ -514,7 +515,8 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 白	白	white					
 白云凤爪	白雲鳳爪	White Cloud Chicken Feet	https://en.wikipedia.org/wiki/Chicken_feet#China		zh-u-sd-cngd	Soft, tender chicken feet in a light clear sauce	
 白切鸡,白斩鸡	白切雞,白斬雞	White Cut Chicken	https://en.wikipedia.org/wiki/White_cut_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BeiQieJi-WhiteCutChicken.jpg/440px-BeiQieJi-WhiteCutChicken.jpg	zh-u-sd-cngd	Chicken brined, steamed, and served with a ginger dip	
-全	全	whole					
+原只	原只	whole					
+全只,全	全隻,全	whole					
 野	野	wild					
 酒	酒	wine					
 糟	糟	wine-marinated					https://en.wiktionary.org/wiki/%E7%B3%9F#Chinese

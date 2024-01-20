@@ -71,7 +71,7 @@ def gather_menu_stats(
     for primary_name in menu_item_primary_names:
         character_counter.update("".join([c for c in primary_name if c.isalpha()]))
 
-    top_characters = character_counter.most_common(150)
+    top_characters = character_counter.most_common(250)
     top_chars_not_known = []
     for tuple in top_characters:
         if (
@@ -89,10 +89,15 @@ def gather_menu_stats(
         for k, v in top_characters
     ]
 
-    # Find top n-grams
-    unique_primary_names = list(set(menu_item_primary_names))
+    # Get primary names with non-alpha characters filtered out
+    alpha_primary_names = []
+    for name in set(menu_item_primary_names):
+        name = "".join([c if c.isalpha() else " " for c in name])
+        alpha_primary_names.extend(name.split(" "))
+
+    # Find top 3-grams
     top_3gram_tuples = []
-    for k, v in find_top_ngrams(unique_primary_names, 3, 100):
+    for k, v in find_top_ngrams(alpha_primary_names, 3, 50):
         if v >= 3:
             # Enrich tuples with English definitions
             en = known_terms_lookup_dict.get(k, {}).get("en")
@@ -110,8 +115,9 @@ def gather_menu_stats(
 
     top_3grams = [t[0] for t in top_3gram_tuples]
 
+    # Find top 2-grams
     top_2gram_tuples = []
-    for k, v in find_top_ngrams(unique_primary_names, 2, 250):
+    for k, v in find_top_ngrams(alpha_primary_names, 2, 200):
         if v >= 3:
             # Enrich tuples with English definitions
             en = known_terms_lookup_dict.get(k, {}).get("en")
@@ -120,7 +126,7 @@ def gather_menu_stats(
             else:
                 en = " + ".join(
                     [
-                        f'"{known_terms_lookup_dict.get(c, {}).get("en", "❓")}"'
+                        f'"{known_terms_lookup_dict.get(c, {}).get("en", UNKNOWN_CHAR_PLACEHOLDER)}"'
                         for c in k
                     ]
                 )

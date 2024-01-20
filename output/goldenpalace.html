@@ -16,6 +16,13 @@
             object-fit: contain;
         }
 
+        .menu-iframe {
+            transform: scale(0.5);
+            transform-origin: top left;
+            width: 200%;
+            height: 200%;
+        }
+
         .menu-table {
             width: 100%;
         }
@@ -214,9 +221,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('蟹子燒賣皇', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shumai"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Shumai', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -224,9 +231,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=筍尖鮮蝦餃" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=筍尖鮮蝦餃', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shrimp_dumplings.jpg/128px-Shrimp_dumplings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=筍尖鮮蝦餃"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=筍尖鮮蝦餃', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -234,7 +240,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D02</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">筍<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo_shoot" target="wikipedia" rel="noopener">bamboo shoot</a></span></span><span class="term-native">尖<span class="term-translated">tip</span></span><span class="term-native">鮮<span class="term-translated">fresh</span></span><span class="term-native">蝦<span class="term-translated">unpeeled shrimp</span></span><span class="term-native">餃<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Jiaozi" target="wikipedia" rel="noopener">dumpling</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">筍<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo_shoot" target="wikipedia" rel="noopener">bamboo shoot</a></span></span><span class="term-native">尖<span class="term-translated">tip</span></span><span class="term-native">鮮<span class="term-translated">fresh</span></span><span class="term-native">蝦餃<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Har_gow" target="wikipedia" rel="noopener">Har Gow</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -405,7 +411,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D06</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">山<span class="term-translated">mountain</span></span><span class="term-native">竹<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo#Culinary" target="wikipedia" rel="noopener">bamboo</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span><span class="term-native">球<span class="term-translated">piece</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">山竹牛肉球<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Steamed_meatball" target="wikipedia" rel="noopener">Steamed Meatball</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -438,9 +444,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=蠔皇鮮竹卷" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=蠔皇鮮竹卷', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/128px-Tofuskinroll.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蠔皇鮮竹卷"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=蠔皇鮮竹卷', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -448,7 +453,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D07</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蠔皇<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Oyster_sauce" target="wikipedia" rel="noopener">oyster sauce</a></span></span><span class="term-native">鮮<span class="term-translated">fresh</span></span><span class="term-native">竹<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Bamboo#Culinary" target="wikipedia" rel="noopener">bamboo</a></span></span><span class="term-native">卷<span class="term-translated">roll</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蠔皇<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Oyster_sauce" target="wikipedia" rel="noopener">oyster sauce</a></span></span><span class="term-native">鮮竹卷<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tofu_skin_roll#Steamed" target="wikipedia" rel="noopener">Tofu Skin Roll</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -490,7 +495,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D08</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">豉汁<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Douchi" target="wikipedia" rel="noopener">black bean sauce</a></span></span><span class="term-native">蒸<span class="term-translated">steamed</span></span><span class="term-native">排骨<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Spare_ribs#Asia" target="wikipedia" rel="noopener">spare rib</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">豉汁蒸排骨<span class="term-translated">Steamed Spare Ribs in Black Bean Sauce</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -513,9 +518,6 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('豉汁蒸排骨', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Douchi"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Douchi', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -652,7 +654,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg/520px-HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=荷葉糯米雞"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/128px-2016_0716_Lo_Mai_Gai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=荷葉糯米雞"
                                     onclick="openLink('https://www.google.com/search?tbm=isch&q=荷葉糯米雞', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
@@ -661,7 +663,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D12</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">荷葉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Nelumbo_nucifera#Leaves" target="wikipedia" rel="noopener">lotus leaf</a></span></span><span class="term-native">糯米<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">荷葉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Nelumbo_nucifera#Leaves" target="wikipedia" rel="noopener">lotus leaf</a></span></span><span class="term-native">糯米雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Lo_mai_gai" target="wikipedia" rel="noopener">Lo Mai Gai</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -703,7 +705,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D13</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蜜汁<span class="term-translated">honey</span></span><span class="term-native">叉燒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span><span class="term-native">包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蜜汁叉燒包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Cha_siu_bao#Cantonese_cuisine" target="wikipedia" rel="noopener">Steamed Cha Siu Bao</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -810,9 +812,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('金醬流沙包', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Baozi"
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E6%B5%81%E6%B2%99%E5%8C%85"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Baozi', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E6%B5%81%E6%B2%99%E5%8C%85', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -820,9 +822,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=香滑奶皇包" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=香滑奶皇包', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naihuangbao.jpg/128px-Naihuangbao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=香滑奶皇包"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=香滑奶皇包', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -830,7 +831,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D16</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">香<span class="term-translated">aromatic</span></span><span class="term-native">滑<span class="term-translated">smooth</span></span><span class="term-native">奶<span class="term-translated">milk</span></span><span class="term-native">皇<span class="term-translated">supreme</span></span><span class="term-native">包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">香<span class="term-translated">aromatic</span></span><span class="term-native">滑<span class="term-translated">smooth</span></span><span class="term-native">奶皇包<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%A5%B6%E9%BB%83%E5%8C%85" target="wikipedia" rel="noopener">Steamed Custard Bun</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -853,9 +854,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('香滑奶皇包', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Baozi"
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%A5%B6%E9%BB%83%E5%8C%85"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Baozi', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%A5%B6%E9%BB%83%E5%8C%85', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -905,9 +906,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=潮州蒸粉粿" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=潮州蒸粉粿', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg/440px-%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=潮州蒸粉粿"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=潮州蒸粉粿', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -915,7 +915,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D18</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">潮州<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Teochew_cuisine" target="wikipedia" rel="noopener">Chaoshan</a></span></span><span class="term-native">蒸<span class="term-translated">steamed</span></span><span class="term-native">粉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Rice_vermicelli" target="wikipedia" rel="noopener">rice vermicelli</a></span></span><span class="term-native">粿<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Kuih#Chinese_kuih" target="wikipedia" rel="noopener">kuih</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">潮州<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Teochew_cuisine" target="wikipedia" rel="noopener">Chaoshan</a></span></span><span class="term-native">蒸<span class="term-translated">steamed</span></span><span class="term-native">粉粿<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Fun_guo" target="wikipedia" rel="noopener">Fun Guo</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1130,9 +1130,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=脆皮叉燒包" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=脆皮叉燒包', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/128px-Char_siu_bao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=脆皮叉燒包"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=脆皮叉燒包', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1140,7 +1139,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D23</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">脆<span class="term-translated">crisp</span></span><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">叉燒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Char_siu" target="wikipedia" rel="noopener">char siu</a></span></span><span class="term-native">包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">脆<span class="term-translated">crisp</span></span><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">叉燒包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Cha_siu_bao" target="wikipedia" rel="noopener">Cha Siu Bao</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1163,9 +1162,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('脆皮叉燒包', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Char_siu"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Cha_siu_bao"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Char_siu', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Cha_siu_bao', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -1248,9 +1247,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('菠蘿流沙包', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Baozi"
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E6%B5%81%E6%B2%99%E5%8C%85"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Baozi', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E6%B5%81%E6%B2%99%E5%8C%85', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -1384,9 +1383,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=酥皮焗蛋撻" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酥皮焗蛋撻', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Egg_Tarts_with_Puff_Pastry.jpg/128px-Egg_Tarts_with_Puff_Pastry.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酥皮焗蛋撻"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酥皮焗蛋撻', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1394,7 +1392,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D29</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酥<span class="term-translated">crispy</span></span><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">焗<span class="term-translated">pan-roasted</span></span><span class="term-native">蛋<span class="term-translated">egg</span></span><span class="term-native">撻<span class="term-translated">tart</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酥<span class="term-translated">crispy</span></span><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">焗<span class="term-translated">pan-roasted</span></span><span class="term-native">蛋撻<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong" target="wikipedia" rel="noopener">Egg Tart</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1417,6 +1415,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('酥皮焗蛋撻', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Egg_tart#Hong_Kong', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -1646,7 +1647,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D35</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">香<span class="term-translated">aromatic</span></span><span class="term-native">煎<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">pan-fried</a></span></span><span class="term-native">韭菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Allium_tuberosum" target="wikipedia" rel="noopener">Chinese chive</a></span></span><span class="term-native">粿<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Kuih#Chinese_kuih" target="wikipedia" rel="noopener">kuih</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">香<span class="term-translated">aromatic</span></span><span class="term-native">煎<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based" target="wikipedia" rel="noopener">pan-fried</a></span></span><span class="term-native">韭菜粿<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Kuih#Chinese_kuih" target="wikipedia" rel="noopener">Ku Chai Kueh</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1679,9 +1680,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=臘味蘿蔔糕" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=臘味蘿蔔糕', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Food_%2825455396733%29.jpg/128px-Food_%2825455396733%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=臘味蘿蔔糕"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=臘味蘿蔔糕', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1689,7 +1689,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D36</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">臘<span class="term-translated">cured meat</span></span><span class="term-native">味<span class="term-translated">flavor</span></span><span class="term-native">蘿蔔<span class="term-translated">radish</span></span><span class="term-native">糕<span class="term-translated">cake</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">臘<span class="term-translated">cured meat</span></span><span class="term-native">味<span class="term-translated">flavor</span></span><span class="term-native">蘿蔔糕<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Turnip_cake" target="wikipedia" rel="noopener">Turnip Cake</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1712,6 +1712,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('臘味蘿蔔糕', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Turnip_cake"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Turnip_cake', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -1964,9 +1967,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('香麻煎堆仔', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Jian_dui"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Jian_dui', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -2194,9 +2197,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=日式海草" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=日式海草', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Salade_wakame_%28Paris%29.JPG/128px-Salade_wakame_%28Paris%29.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=日式海草"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=日式海草', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -2204,7 +2206,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D48</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">日<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Japanese_cuisine" target="wikipedia" rel="noopener">Japan</a></span></span><span class="term-native">式<span class="term-translated">style</span></span><span class="term-native">海<span class="term-translated">sea</span></span><span class="term-native">草<span class="term-translated">grass</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">日<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Japanese_cuisine" target="wikipedia" rel="noopener">Japan</a></span></span><span class="term-native">式<span class="term-translated">style</span></span><span class="term-native">海草<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Wakame#Cuisine" target="wikipedia" rel="noopener">Wakame</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2289,7 +2291,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D50</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">白<span class="term-translated">white</span></span><span class="term-native">雲<span class="term-translated">cloud</span></span><span class="term-native">鳳爪<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chicken_feet" target="wikipedia" rel="noopener">chicken feet</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">白雲鳳爪<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chicken_feet#China" target="wikipedia" rel="noopener">White Cloud Chicken Feet</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2785,9 +2787,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=海蜇海草拼" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=海蜇海草拼', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Salade_wakame_%28Paris%29.JPG/128px-Salade_wakame_%28Paris%29.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=海蜇海草拼"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=海蜇海草拼', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -2795,7 +2796,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D62</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">海蜇<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Jellyfish_as_food" target="wikipedia" rel="noopener">jellyfish</a></span></span><span class="term-native">海<span class="term-translated">sea</span></span><span class="term-native">草<span class="term-translated">grass</span></span><span class="term-native">拼<span class="term-translated">with</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">海蜇<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Jellyfish_as_food" target="wikipedia" rel="noopener">jellyfish</a></span></span><span class="term-native">海草<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Wakame#Cuisine" target="wikipedia" rel="noopener">Wakame</a></span></span><span class="term-native">拼<span class="term-translated">with</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2976,7 +2977,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">CS02</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">乾<span class="term-translated">dry</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">牛<span class="term-translated">beef</span></span><span class="term-native">河<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">乾炒牛河<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Beef_chow_fun" target="wikipedia" rel="noopener">Beef Chow Fun</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3041,9 +3042,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('蒙古牛肉炒河粉', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Mongolian_beef"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Mongolian_beef', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -3137,9 +3138,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=番茄牛肉炒麵" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=番茄牛肉炒麵', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=番茄牛肉炒麵"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=番茄牛肉炒麵', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -3147,7 +3147,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">CS07</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">番茄<span class="term-translated">tomato</span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">麵<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">番茄<span class="term-translated">tomato</span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span><span class="term-native">炒麵<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">Chow Mein</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3170,9 +3170,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('番茄牛肉炒麵', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chow_mein"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -3448,7 +3448,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/128px-Cha_siu_choeng.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=榨菜牛肉腸"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/A_Beef_rice_noodle_rolls.jpg/320px-A_Beef_rice_noodle_rolls.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=榨菜牛肉腸"
                                     onclick="openLink('https://www.google.com/search?tbm=isch&q=榨菜牛肉腸', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
@@ -3480,9 +3480,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('榨菜牛肉腸', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Rice_noodle_roll"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Rice_noodle_roll#Cantonese_cuisine', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -3721,7 +3721,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">P01</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">蛋<span class="term-translated">egg</span></span><span class="term-native">瘦<span class="term-translated">lean</span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">粥<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Congee#China" target="wikipedia" rel="noopener">congee</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">皮蛋瘦肉粥<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Century_egg" target="wikipedia" rel="noopener">Century Egg and Pork Congee</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4320,7 +4320,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D79</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">椒鹽<span class="term-translated">salt & pepper</span></span><span class="term-native">魷<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Squid_as_food#Asia" target="wikipedia" rel="noopener">squid</a></span></span><span class="term-native">魚<span class="term-translated">fish</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">椒鹽魷魚<span class="term-translated">Salt and Pepper Squid</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4343,9 +4343,6 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('椒鹽魷魚', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Squid_as_food#Asia"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Squid_as_food#Asia', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -4442,7 +4439,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D82</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">豉油<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Soy_sauce" target="wikipedia" rel="noopener">soy sauce</a></span></span><span class="term-native">皇<span class="term-translated">supreme</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">麵<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">豉油皇炒麵<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E8%B1%89%E6%B2%B9%E7%9A%87%E7%82%92%E9%BA%B5" target="wikipedia" rel="noopener">Soy Sauce Fried Noodles</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4656,7 +4653,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D87</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蠔油<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Oyster_sauce" target="wikipedia" rel="noopener">oyster sauce</a></span></span><span class="term-native">芥蘭<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Gai_lan" target="wikipedia" rel="noopener">gai lan</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蠔油芥蘭<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Gai_lan" target="wikipedia" rel="noopener">Gai Lan with Oyster Sauce</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4940,9 +4937,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=XO醬蘿蔔糕" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=XO醬蘿蔔糕', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Food_%2825455396733%29.jpg/128px-Food_%2825455396733%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=XO醬蘿蔔糕"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=XO醬蘿蔔糕', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -4950,7 +4946,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D93</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">XO醬<span class="term-translated"><a href="https://en.wikipedia.org/wiki/XO_sauce" target="wikipedia" rel="noopener">XO sauce</a></span></span><span class="term-native">蘿蔔<span class="term-translated">radish</span></span><span class="term-native">糕<span class="term-translated">cake</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">XO醬<span class="term-translated"><a href="https://en.wikipedia.org/wiki/XO_sauce" target="wikipedia" rel="noopener">XO sauce</a></span></span><span class="term-native">蘿蔔糕<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Turnip_cake" target="wikipedia" rel="noopener">Turnip Cake</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -5201,7 +5197,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D99</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">核桃<span class="term-translated">walnut</span></span><span class="term-native">明蝦<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_white_shrimp" target="wikipedia" rel="noopener">Chinese white shrimp</a></span></span><span class="term-native">球<span class="term-translated">piece</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">核桃明蝦球<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Honey_walnut_shrimp" target="wikipedia" rel="noopener">Honey Walnut Shrimp</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -5243,7 +5239,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D100</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">乾煸<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry-fried</a></span></span><span class="term-native">四季豆<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Green_bean" target="wikipedia" rel="noopener">string bean</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">乾煸四季豆<span class="term-translated">Dry-Fried Green Beans</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -5266,9 +5262,6 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('乾煸四季豆', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -5552,7 +5545,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D107</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">芒果<span class="term-translated">mango</span></span><span class="term-native">布丁<span class="term-translated">pudding</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">芒果布丁<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Mango_pudding" target="wikipedia" rel="noopener">Mango Pudding</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -5688,7 +5681,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <!-- Number -->
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">原</span><span class="term-native">只</span><span class="term-native">龍蝦<span class="term-translated">lobster</span></span><span class="term-native">伊面<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yi_mein" target="wikipedia" rel="noopener">yi mein</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">原只<span class="term-translated">whole</span></span><span class="term-native">龍蝦<span class="term-translated">lobster</span></span><span class="term-native">伊面<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yi_mein" target="wikipedia" rel="noopener">yi mein</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -6515,7 +6508,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">B01</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="term-native">湯<span class="term-translated">soup</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣湯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour_soup" target="wikipedia" rel="noopener">Hot and Sour Soup</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -6557,7 +6550,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">B02</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">云吞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Wonton" target="wikipedia" rel="noopener">wonton</a></span></span><span class="term-native">湯<span class="term-translated">soup</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">云吞湯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Wonton" target="wikipedia" rel="noopener">Wonton Soup</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -6685,7 +6678,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">B05</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西湖<span class="term-translated"><a href="https://en.wikipedia.org/wiki/West_Lake" target="wikipedia" rel="noopener">West Lake</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span><span class="term-native">羹<span class="term-translated">soup</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西湖牛肉羹<span class="term-translated">West Lake Beef Soup</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -6708,9 +6701,6 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('西湖牛肉羹', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/West_Lake"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/West_Lake', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -7632,7 +7622,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">C12</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">大红<span class="term-translated">bright red</span></span><span class="term-native">乳豬<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suckling_pig" target="wikipedia" rel="noopener">suckling pig</a></span></span><span class="term-native">全體<span class="term-translated">entire</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">大红<span class="term-translated">bright red</span></span><span class="term-native">乳豬<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suckling_pig" target="wikipedia" rel="noopener">suckling pig</a></span></span><span class="term-native">全<span class="term-translated">whole</span></span><span class="term-native">體</span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -8144,7 +8134,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">D04</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">原</span><span class="term-native">只</span><span class="term-native">蠔皇<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Oyster_sauce" target="wikipedia" rel="noopener">oyster sauce</a></span></span><span class="term-native">範</span><span class="term-native">魚<span class="term-translated">fish</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">原只<span class="term-translated">whole</span></span><span class="term-native">蠔皇<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Oyster_sauce" target="wikipedia" rel="noopener">oyster sauce</a></span></span><span class="term-native">範</span><span class="term-native">魚<span class="term-translated">fish</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -8242,7 +8232,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">SP02</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">私房<span class="term-translated">home-style</span></span><span class="term-native">豬<span class="term-translated">pork</span></span><span class="term-native">肚<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="term-native">撈<span class="term-translated">stirred</span></span><span class="term-native">雞<span class="term-translated">chicken</span></span><span class="term-native"> </span><span class="term-native">(</span><span class="term-native">半<span class="term-translated">half</span></span><span class="term-native">只</span><span class="term-native">)</span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">私房<span class="term-translated">home-style</span></span><span class="term-native">豬<span class="term-translated">pork</span></span><span class="term-native">肚<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tripe" target="wikipedia" rel="noopener">tripe</a></span></span><span class="term-native">撈<span class="term-translated">stirred</span></span><span class="term-native">雞<span class="term-translated">chicken</span></span><span class="term-native"> </span><span class="term-native">(</span><span class="term-native">半只<span class="term-translated">half</span></span><span class="term-native">)</span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -9367,9 +9357,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=四川酸菜水煮魚" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=四川酸菜水煮魚', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=四川酸菜水煮魚"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=四川酸菜水煮魚', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -9377,7 +9366,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">E22</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">四川<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="term-native">酸菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">魚<span class="term-translated">fish</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">四川<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="term-native">酸菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="term-native">水煮魚<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Fish</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -10705,9 +10694,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=九層塔辣子雞" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=九層塔辣子雞', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=九層塔辣子雞"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=九層塔辣子雞', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -10715,7 +10703,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">G01</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">九層塔<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Thai_basil" target="wikipedia" rel="noopener">Thai basil</a></span></span><span class="term-native">辣子<span class="term-translated">spicy</span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">九層塔<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Thai_basil" target="wikipedia" rel="noopener">Thai basil</a></span></span><span class="term-native">辣子雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Laziji" target="wikipedia" rel="noopener">Laziji</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -10748,9 +10736,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=重慶辣子雞" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=重慶辣子雞', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=重慶辣子雞"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=重慶辣子雞', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -10758,7 +10745,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">G02</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">重慶<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="term-native">辣子<span class="term-translated">spicy</span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">重慶<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="term-native">辣子雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Laziji" target="wikipedia" rel="noopener">Laziji</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -11136,7 +11123,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">G11</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">陳皮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chenpi" target="wikipedia" rel="noopener">tangerine peel</a></span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">陳皮雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Orange_chicken" target="wikipedia" rel="noopener">Orange Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -11241,9 +11228,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('當紅炸子雞', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Crispy_fried_chicken"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Crispy_fried_chicken', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -11294,7 +11281,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg/520px-HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=脆皮糯米雞"
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/128px-2016_0716_Lo_Mai_Gai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=脆皮糯米雞"
                                     onclick="openLink('https://www.google.com/search?tbm=isch&q=脆皮糯米雞', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
@@ -11303,7 +11290,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">G15</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">脆<span class="term-translated">crisp</span></span><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">糯米<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Glutinous_rice#China" target="wikipedia" rel="noopener">sticky rice</a></span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">脆<span class="term-translated">crisp</span></span><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">糯米雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Lo_mai_gai" target="wikipedia" rel="noopener">Lo Mai Gai</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -11326,9 +11313,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('脆皮糯米雞', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Glutinous_rice#China"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Lo_mai_gai"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Glutinous_rice#China', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Lo_mai_gai', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -12359,7 +12346,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">K03</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">紅燒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Red_cooking" target="wikipedia" rel="noopener">red-braised</a></span></span><span class="term-native">豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tofu#China_2" target="wikipedia" rel="noopener">tofu</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">紅燒豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Red_cooking" target="wikipedia" rel="noopener">Red-Braised Tofu</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -12444,7 +12431,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">K05</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蠔油<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Oyster_sauce" target="wikipedia" rel="noopener">oyster sauce</a></span></span><span class="term-native">芥蘭<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Gai_lan" target="wikipedia" rel="noopener">gai lan</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">蠔油芥蘭<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Gai_lan" target="wikipedia" rel="noopener">Gai Lan with Oyster Sauce</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -12653,7 +12640,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">K10</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干煸<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying" target="wikipedia" rel="noopener">dry-fried</a></span></span><span class="term-native">四季豆<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Green_bean" target="wikipedia" rel="noopener">string bean</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干煸四季豆<span class="term-translated">Dry-Fried Green Beans</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -12676,9 +12663,6 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('干煸四季豆', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -12695,7 +12679,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">K11</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">茄子<span class="term-translated">eggplant</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香茄子<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">Yuxiang Eggplant</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -13092,9 +13076,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=四川魚香肉絲" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=四川魚香肉絲', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=四川魚香肉絲"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=四川魚香肉絲', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -13102,7 +13085,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">H05</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">四川<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="term-native">魚香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">絲<span class="term-translated">shredded</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">四川<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Sichuan</a></span></span><span class="term-native">魚香肉絲<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork" target="wikipedia" rel="noopener">Yuxiang Shredded Pork</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -13186,7 +13169,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">H07</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西蘭花<span class="term-translated">broccoli</span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">西蘭花牛肉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Beef_and_broccoli" target="wikipedia" rel="noopener">Beef with Broccoli</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -13262,9 +13245,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=成都水煮牛肉" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=成都水煮牛肉', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=成都水煮牛肉"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=成都水煮牛肉', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -13272,7 +13254,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">H09</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">成都<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Chengdu</a></span></span><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">成都<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sichuan_cuisine" target="wikipedia" rel="noopener">Chengdu</a></span></span><span class="term-native">水煮牛肉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Beef</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -13619,9 +13601,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=招牌炒面" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=招牌炒面', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=招牌炒面"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=招牌炒面', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -13629,7 +13610,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L01</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">招牌<span class="term-translated">signature</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">面<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">招牌<span class="term-translated">signature</span></span><span class="term-native">炒面<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">Chow Mein</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -13652,9 +13633,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('招牌炒面', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chow_mein"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -13705,9 +13686,8 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=雞炒面" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=雞炒面', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=雞炒面"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=雞炒面', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -13715,7 +13695,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L03</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">雞<span class="term-translated">chicken</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">面<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">雞<span class="term-translated">chicken</span></span><span class="term-native">炒面<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chow_mein" target="wikipedia" rel="noopener">Chow Mein</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -13738,9 +13718,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('雞炒面', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chow_mein"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -13843,7 +13823,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L06</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干<span class="term-translated">dry</span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">牛<span class="term-translated">beef</span></span><span class="term-native">河<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shahe_fen" target="wikipedia" rel="noopener">chow fun</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">干炒牛河<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Beef_chow_fun" target="wikipedia" rel="noopener">Beef Chow Fun</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -14122,9 +14102,9 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     onclick="speakText('星洲炒米粉', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Singapore-style_noodles"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Singapore-style_noodles', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -14184,7 +14164,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L14</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shanghai_cuisine" target="wikipedia" rel="noopener">Shanghai</a></span></span><span class="term-native">炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique" target="wikipedia" rel="noopener">stir-fried</a></span></span><span class="term-native">年糕<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Nian_gao" target="wikipedia" rel="noopener">nian gao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海炒年糕<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine" target="wikipedia" rel="noopener">Shanghai Fried Rice Cakes</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -14506,7 +14486,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L21</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">揚州<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Huaiyang_cuisine" target="wikipedia" rel="noopener">Yangzhou</a></span></span><span class="term-native">炒飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_fried_rice" target="wikipedia" rel="noopener">fried rice</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">揚州炒飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yangzhou_fried_rice" target="wikipedia" rel="noopener">Yangzhou Fried Rice</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -14548,7 +14528,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L22</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">福建<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Fujian_cuisine" target="wikipedia" rel="noopener">Fujian</a></span></span><span class="term-native">炒飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_fried_rice" target="wikipedia" rel="noopener">fried rice</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">福建炒飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hokkien_fried_rice" target="wikipedia" rel="noopener">Hokkien Fried Rice</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -14805,7 +14785,7 @@ Facebook: <a href="https://www.facebook.com/pages/Golden-Palace-Chinese-Restaura
                                     <span class="menu-item-number">L28</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">白<span class="term-translated">white</span></span><span class="term-native">飯<span class="term-translated">rice</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">白飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/White_rice" target="wikipedia" rel="noopener">Steamed Rice</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->

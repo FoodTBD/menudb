@@ -16,6 +16,13 @@
             object-fit: contain;
         }
 
+        .menu-iframe {
+            transform: scale(0.5);
+            transform-origin: top left;
+            width: 200%;
+            height: 200%;
+        }
+
         .menu-table {
             width: 100%;
         }
@@ -121,7 +128,7 @@
         <!-- Restaurant Info -->
         <p>
             Google Maps: <a href="https://www.google.com/maps/search/Shanghai%20Family%20Restaurant%2C%2010877%20N%20Wolfe%20Rd%2C%20Cupertino%2C%20CA%2C%20US" target="_blank" rel="noopener">10877 N Wolfe Rd, Cupertino, CA, US</a><br>
-        </p>
+Online Menu: <a href="https://shanghaifamilytogo.com/" target="_blank" rel="noopener">shanghaifamilytogo.com</a><br>        </p>
     </div>
     <div class="container mt-4">
         <!-- Table of Contents -->
@@ -245,9 +252,8 @@
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=上海醉雞" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=上海醉雞', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ShaoxingWineChickenWings.jpg/440px-ShaoxingWineChickenWings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=上海醉雞"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=上海醉雞', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -255,7 +261,7 @@
                                     <span class="menu-item-number">A3</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shanghai_cuisine" target="wikipedia" rel="noopener">Shanghai</a></span></span><span class="term-native">醉<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Drunken_chicken" target="wikipedia" rel="noopener">drunken</a></span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">上海<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shanghai_cuisine" target="wikipedia" rel="noopener">Shanghai</a></span></span><span class="term-native">醉雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Drunken_chicken" target="wikipedia" rel="noopener">Drunken Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -2403,7 +2409,7 @@
                                     <span class="menu-item-number">B32</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">shuizhu</a></span></span><span class="term-native">魚<span class="term-translated">fish</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">水煮魚<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Shuizhu" target="wikipedia" rel="noopener">Shuizhu Fish</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3232,7 +3238,7 @@
                                     <span class="menu-item-number">C8</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">絲<span class="term-translated">shredded</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香肉絲<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork" target="wikipedia" rel="noopener">Yuxiang Shredded Pork</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3447,7 +3453,7 @@
                                     <span class="menu-item-number">C13</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">家常<span class="term-translated">home-style</span></span><span class="term-native">豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tofu#China_2" target="wikipedia" rel="noopener">tofu</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">家常豆腐<span class="term-translated">Homestyle Tofu</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -3470,9 +3476,6 @@
                                     onclick="speakText('家常豆腐', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Tofu#China_2"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Tofu#China_2', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -4126,7 +4129,7 @@
                                     <span class="menu-item-number">C29</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">糖<span class="term-translated">sugar</span></span><span class="term-native">醋<span class="term-translated">vinegar</span></span><span class="term-native">小<span class="term-translated">small</span></span><span class="term-native">排<span class="term-translated">cutlet</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">糖醋小排<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs" target="wikipedia" rel="noopener">Sweet and Sour Spareribs</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4334,7 +4337,7 @@
                                     <span class="menu-item-number">C34</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">陳皮<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chenpi" target="wikipedia" rel="noopener">tangerine peel</a></span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">陳皮雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Orange_chicken" target="wikipedia" rel="noopener">Orange Chicken</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4664,7 +4667,7 @@
                                     <span class="menu-item-number">C42</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">孜然<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Cumin" target="wikipedia" rel="noopener">cumin</a></span></span><span class="term-native">羊肉<span class="term-translated">lamb meat</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">孜然羊肉<span class="term-translated">Cumin Lamb</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -4687,9 +4690,6 @@
                                     onclick="speakText('孜然羊肉', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Cumin"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Cumin', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -5156,9 +5156,8 @@
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=重慶辣子雞" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=重慶辣子雞', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=重慶辣子雞"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=重慶辣子雞', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -5166,7 +5165,7 @@
                                     <span class="menu-item-number">C54</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">重慶<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="term-native">辣子<span class="term-translated">spicy</span></span><span class="term-native">雞<span class="term-translated">chicken</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">重慶<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chongqing" target="wikipedia" rel="noopener">Chongqing</a></span></span><span class="term-native">辣子雞<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Laziji" target="wikipedia" rel="noopener">Laziji</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -5722,9 +5721,9 @@
                                     onclick="speakText('雙冬炒麵筋', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chow_mein"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -5827,7 +5826,7 @@
                                     <span class="menu-item-number">D12</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">茄子<span class="term-translated">eggplant</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香茄子<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">Yuxiang Eggplant</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -6201,7 +6200,7 @@
                                     <span class="menu-item-number">D21</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">紅燒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Red_cooking" target="wikipedia" rel="noopener">red-braised</a></span></span><span class="term-native">豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tofu#China_2" target="wikipedia" rel="noopener">tofu</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">紅燒豆腐<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Red_cooking" target="wikipedia" rel="noopener">Red-Braised Tofu</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -7445,7 +7444,7 @@
                                     <span class="menu-item-number">E10</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">牛腩<span class="term-translated">beef brisket</span></span><span class="term-native">煲<span class="term-translated">pot</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">牛腩煲<span class="term-translated">Beef Brisket Pot</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -7942,7 +7941,7 @@
                                     <span class="menu-item-number">E22</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour" target="wikipedia" rel="noopener">hot & sour</a></span></span><span class="term-native">湯<span class="term-translated">soup</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸辣湯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Hot_and_sour_soup" target="wikipedia" rel="noopener">Hot and Sour Soup</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -8264,9 +8263,8 @@
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=酸菜魚肉锅" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酸菜魚肉锅', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸菜魚肉锅"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=酸菜魚肉锅', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -8274,7 +8272,7 @@
                                     <span class="menu-item-number">E31</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸菜<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Suan_cai" target="wikipedia" rel="noopener">suan cai</a></span></span><span class="term-native">魚<span class="term-translated">fish</span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">锅<span class="term-translated">pot</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">酸菜魚<span class="term-translated"><a href="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC" target="wikipedia" rel="noopener">Suancai Fish</a></span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">锅<span class="term-translated">pot</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -8297,9 +8295,9 @@
                                     onclick="speakText('酸菜魚肉锅', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Suan_cai"
+                                <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Suan_cai', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                     </tbody>
@@ -9246,9 +9244,8 @@
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=咖喱牛肉麵" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=咖喱牛肉麵', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Xiangyang_beef_noodles_02.jpg/128px-Xiangyang_beef_noodles_02.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=咖喱牛肉麵"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=咖喱牛肉麵', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -9256,7 +9253,7 @@
                                     <span class="menu-item-number">F23</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">咖喱<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Curry#East_Asia" target="wikipedia" rel="noopener">curry</a></span></span><span class="term-native">牛肉<span class="term-translated">beef</span></span><span class="term-native">麵<span class="term-translated">noodle</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">咖喱<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Curry#East_Asia" target="wikipedia" rel="noopener">curry</a></span></span><span class="term-native">牛肉麵<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Beef_noodle_soup" target="wikipedia" rel="noopener">Beef Noodle Soup</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -10340,9 +10337,8 @@
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=丝瓜虾肉小笼包" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=丝瓜虾肉小笼包', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Xiaolongbao-breakfast.jpg/128px-Xiaolongbao-breakfast.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=丝瓜虾肉小笼包"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=丝瓜虾肉小笼包', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -10350,7 +10346,7 @@
                                     <span class="menu-item-number">F49</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">丝<span class="term-translated">shredded</span></span><span class="term-native">瓜<span class="term-translated">melon</span></span><span class="term-native">虾<span class="term-translated">unpeeled shrimp</span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">小<span class="term-translated">small</span></span><span class="term-native">笼<span class="term-translated">basket</span></span><span class="term-native">包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Baozi" target="wikipedia" rel="noopener">bao</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">丝<span class="term-translated">shredded</span></span><span class="term-native">瓜<span class="term-translated">melon</span></span><span class="term-native">虾<span class="term-translated">unpeeled shrimp</span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">小笼包<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Xiaolongbao" target="wikipedia" rel="noopener">Xiaolongbao</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -10373,9 +10369,9 @@
                                     onclick="speakText('丝瓜虾肉小笼包', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Baozi"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Xiaolongbao"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Baozi', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Xiaolongbao', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -10687,7 +10683,7 @@
                                     <span class="menu-item-number">F56</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">揚州<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Huaiyang_cuisine" target="wikipedia" rel="noopener">Yangzhou</a></span></span><span class="term-native">炒飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chinese_fried_rice" target="wikipedia" rel="noopener">fried rice</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">揚州炒飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yangzhou_fried_rice" target="wikipedia" rel="noopener">Yangzhou Fried Rice</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -10938,7 +10934,7 @@
                                     <span class="menu-item-number">F62</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">白<span class="term-translated">white</span></span><span class="term-native">飯<span class="term-translated">rice</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">白飯<span class="term-translated"><a href="https://en.wikipedia.org/wiki/White_rice" target="wikipedia" rel="noopener">Steamed Rice</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -11333,7 +11329,7 @@
                                     <span class="menu-item-number">8</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">茄子<span class="term-translated">eggplant</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香茄子<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">Yuxiang Eggplant</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -11398,9 +11394,9 @@
                                     onclick="speakText('雙冬炒麵筋', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir_frying#Chao_technique"
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chow_mein"
                                     class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Stir_frying#Chao_technique', 'wikipedia')">W</button><br>
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chow_mein', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
@@ -11460,7 +11456,7 @@
                                     <span class="menu-item-number">11</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang" target="wikipedia" rel="noopener">yuxiang</a></span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">絲<span class="term-translated">shredded</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">魚香肉絲<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork" target="wikipedia" rel="noopener">Yuxiang Shredded Pork</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -11627,7 +11623,7 @@
                                     <span class="menu-item-number">15</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">糖<span class="term-translated">sugar</span></span><span class="term-native">醋<span class="term-translated">vinegar</span></span><span class="term-native">小<span class="term-translated">small</span></span><span class="term-native">排<span class="term-translated">cutlet</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">糖醋小排<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs" target="wikipedia" rel="noopener">Sweet and Sour Spareribs</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -12401,7 +12397,7 @@
                                     <span class="menu-item-number">H1</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">皮<span class="term-translated">skin</span></span><span class="term-native">蛋<span class="term-translated">egg</span></span><span class="term-native">瘦<span class="term-translated">lean</span></span><span class="term-native">肉<span class="term-translated">pork</span></span><span class="term-native">粥<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Congee#China" target="wikipedia" rel="noopener">congee</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">皮蛋瘦肉粥<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Century_egg" target="wikipedia" rel="noopener">Century Egg and Pork Congee</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -12434,8 +12430,9 @@
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Chinese_rice_congee.jpg/440px-Chinese_rice_congee.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=生滾魚片粥"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=生滾魚片粥', 'googleimage')">
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=生滾魚片粥" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=生滾魚片粥', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -12443,7 +12440,7 @@
                                     <span class="menu-item-number">H2</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">生滾<span class="term-translated">freshly cooked</span></span><span class="term-native">魚<span class="term-translated">fish</span></span><span class="term-native">片<span class="term-translated">slice</span></span><span class="term-native">粥<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Congee#China" target="wikipedia" rel="noopener">congee</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">生滾魚片粥<span class="term-translated">Fresh Fish Slice Congee</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -12466,9 +12463,6 @@
                                     onclick="speakText('生滾魚片粥', 'zh-Hant')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
-                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Congee#China"
-                                    class="btn btn-light btn-menuaction btn-wikipedia"
-                                    onclick="openLink('https://en.wikipedia.org/wiki/Congee#China', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->
