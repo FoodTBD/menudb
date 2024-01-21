@@ -137,7 +137,8 @@ To promote a term to a **dish**:
 
 #### `wikipedia_url` Column
 
-Prefer links to English Wikipedia. However, if there's a relevant article in another language Wikipedia, use it and it will be presented to the user via Google Translate.
+* Prefer English Wikipedia. However, if there's a relevant article in another language Wikipedia, use it and it will be presented to the user via Google Translate.
+* Use the most specific Wikipedia link e.g. https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine.
 
 #### `image_url` Column
 

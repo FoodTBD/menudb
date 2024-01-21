@@ -11,7 +11,9 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy				(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
 竹	竹	bamboo	https://en.wikipedia.org/wiki/Bamboo#Culinary				
 笼仔	籠仔	bamboo basket					
-筍	筍	bamboo shoot	https://en.wikipedia.org/wiki/Bamboo_shoot				
+筍	筍	bamboo shoot	https://en.wikipedia.org/wiki/Bamboo_shoot#East_Asia				
+扁尖	扁尖	bamboo shoot	https://en.wikipedia.org/wiki/Bamboo_shoot#East_Asia				(Shanghainese Wu) https://en.wiktionary.org/wiki/%E6%89%81%E5%B0%96
+双冬	雙冬	bamboo shoot & mushroom					GPT-4: lit. "double-winter", often refers to the combination of bamboo shoots and mushrooms, commonly used together during the winter season
 棒棒鸡	棒棒雞	Bang Bang Chicken	https://en.wikipedia.org/wiki/Bang_bang_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bon_bon_chicken_with_sauce.jpg/440px-Bon_bon_chicken_with_sauce.jpg	zh	Sichuan shredded chicken, served cold and dressed with a spicy sauce	
 包	包	bao	https://en.wikipedia.org/wiki/Baozi				
 笼	笼	basket					
@@ -248,6 +250,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 羊	羊	lamb					
 羊肉	羊肉	lamb meat					
 拉面	拉麵	lamian/ramen	https://en.wikipedia.org/wiki/%E6%8B%89%E9%BA%B5				
+老干妈	老乾媽	Lao Gan Ma					
 大	大	large					
 大肠	大腸	large intestine	https://en.wikipedia.org/wiki/Chitterlings#China				
 辣子鸡	辣子雞	Laziji	https://en.wikipedia.org/wiki/Laziji	https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg	zh	Sichuan deep-fried chicken with peppercorns and chilies	
@@ -263,6 +266,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 糯米鸡	糯米雞	Lo Mai Gai	https://en.wikipedia.org/wiki/Lo_mai_gai	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/128px-2016_0716_Lo_Mai_Gai.jpg	zh-u-sd-cngd	Glutinous rice with chicken in lotus leaf, steamed	
 捞面	撈麵	Lo Mein	https://en.wikipedia.org/wiki/Lo_mein	https://upload.wikimedia.org/wikipedia/en/8/8b/Real_lo_mein.jpg	zh-u-sd-cngd	Chewy thin egg noodles combined with a savory sauce and various toppings	
 龙虾	龍蝦	lobster					
+丝瓜	絲瓜	loofah	https://en.wikipedia.org/wiki/Luffa#Other_Asian_cuisines				
 荷叶	荷葉	lotus leaf	https://en.wikipedia.org/wiki/Nelumbo_nucifera#Leaves				
 莲藕	蓮藕	lotus root	https://en.wikipedia.org/wiki/Nelumbo_nucifera#Rhizomes				
 美極	美極	Maggi	https://en.wikipedia.org/wiki/Maggi				
@@ -303,16 +307,19 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 东北	東北	northeastern	https://en.wikipedia.org/wiki/Northeastern_Chinese_cuisine				
 养生	養生	nourishing					
 油	油	oil					
+老	老	old					
 洋葱,葱	洋蔥,蔥	onion					
 明炉	明爐	open furnace					
 陈皮鸡	陳皮雞	Orange Chicken	https://en.wikipedia.org/wiki/Orange_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flickr_preppybyday_4786746354--Orange_chicken.jpg/128px-Flickr_preppybyday_4786746354--Orange_chicken.jpg	zh	Chicken stir-fried with orange peel and a tangy sauce	
 桂	桂	osmanthus	https://en.wikipedia.org/wiki/Osmanthus				
 牛脷酥	牛脷酥	Ox-Tongue Pastry	https://en.wikipedia.org/wiki/Ox-tongue_pastry	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ox-tongue_pastry.jpg/500px-Ox-tongue_pastry.jpg	zh-u-sd-cngd	Sweetened fried dough pastry that resembles an ox tongue in shape	
+牛尾	牛尾	oxtail	https://en.wikipedia.org/wiki/Oxtail				
 蚝	蠔	oyster					
 蚝油	蠔油	oyster sauce	https://en.wikipedia.org/wiki/Oyster_sauce				
 蚝皇	蠔皇	oyster sauce	https://en.wikipedia.org/wiki/Oyster_sauce				as in https://zh.wikipedia.org/wiki/%E8%A0%94%E7%9A%87%E9%AE%AE%E7%AB%B9%E5%8D%B7
 煎	煎	pan-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based				jiān
 煎饺	煎餃	Pan-Fried Jiaozi	https://en.wikipedia.org/wiki/Jiaozi#Types	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Potstickers_RTE.jpg/128px-Potstickers_RTE.jpg	zh	Jiaozi dumplings first boiled or steamed, then fried for a crispy bottom	jiānjiǎo
+煎年糕	煎年糕	Pan-Fried Nian Gao	https://en.wikipedia.org/wiki/Nian_gao#Guangdong/Cantonese_cuisine				
 焗	焗	pan-roasted					jú https://www.thefooddictator.com/the-40-methods-of-chinese-cooking/, https://www.youtube.com/watch?v=z_LAJKezDOs
 沙	沙	paste					
 豆苗	豆苗	pea sprout	https://en.wikipedia.org/wiki/Pea#Pea_sprouts				
@@ -397,13 +404,12 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 海参	海參	sea cucumber	https://en.wikipedia.org/wiki/Sea_cucumbers_as_food				
 苔條	苔条	sea moss					
 海鲜	海鮮	seafood					
-时蔬	時蔬	seasonal vegetables					
+时	時	seasonal					
 紫菜	紫菜	seaweed	https://en.wikipedia.org/wiki/Edible_seaweed				
 秘制	秘制	secret					
+面筋	麵筋	seitan	https://en.wikipedia.org/wiki/Seitan				
 芝麻,麻	芝麻,麻	sesame					
 上海	上海	Shanghai	https://en.wikipedia.org/wiki/Shanghai_cuisine				
-上海炒年糕	上海炒年糕	Shanghai Fried Rice Cakes	https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine	https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shanghai_Nian_cake.jpg/128px-Shanghai_Nian_cake.jpg	zh	Savory chewy rice cakes stir-fried with vegetables and meat	
-上海粗炒面	上海粗炒麵	Shanghai Thick Noodles		https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Shanghaifriednoodles.jpg/520px-Shanghaifriednoodles.jpg	zh	Thick noodles stir-fried with vegetables and meat in soy sauce	
 绍兴	紹興	Shaoxing wine	https://en.wikipedia.org/wiki/Shaoxing_wine				
 荠菜	薺菜	shepherd’s purse	https://en.wikipedia.org/wiki/Capsella_bursa-pastoris#Cooking				
 北菇	北菇	shittake	https://en.wikipedia.org/wiki/Shiitake#Uses				(chiefly Cantonese) https://en.wiktionary.org/wiki/%E5%8C%97%E8%8F%87#Definitions
@@ -426,7 +432,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 皮	皮	skin					
 片	片	slice					
 蒜泥白肉	蒜泥白肉	Sliced Pork Belly with Garlic Sauce		https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%E8%92%9C%E6%B3%A5%E7%99%BD%E8%82%89_Sliced_Belly_Pork_and_Cucumber_Rolls_with_Garlic_Sauce.jpg/800px-%E8%92%9C%E6%B3%A5%E7%99%BD%E8%82%89_Sliced_Belly_Pork_and_Cucumber_Rolls_with_Garlic_Sauce.jpg	zh	Sliced poached pork belly with a mashed garlic sauce	
-年糕	年糕	sliced rice cakes	https://en.wikipedia.org/wiki/Nian_gao				
 仔	仔	small					(Cantonese, dialectal Hakka, Min Bei) Diminutive suffix https://en.wiktionary.org/wiki/%E4%BB%94#Definitions_2
 小	小	small					
 小黄鱼	小黃魚	small yellow croaker	https://en.wikipedia.org/wiki/Larimichthys_polyactis				
@@ -464,6 +469,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 糯米,糯米饭	糯米,糯米飯	sticky rice	https://en.wikipedia.org/wiki/Glutinous_rice#China	https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg/520px-HK_%E5%A4%A7%E5%BF%AB%E6%B4%BB_Cafe_de_Coral_Tea_time_%E7%B3%AF%E7%B1%B3%E9%A3%AF_Glutinous_Mochi_Rice_Nuo_Mi_Fan_with_%E8%94%A5%E7%B2%92_Spring_Onion_Jan-2012.jpg		Glutinous rice, cooked to a sticky texture, often with additional ingredients	
 臭豆腐	臭豆腐	Stinky Tofu	https://en.wikipedia.org/wiki/Stinky_tofu	https://upload.wikimedia.org/wikipedia/commons/c/ca/Stinkender_Tofu_1.JPG	zh-u-sd-cngd	Fermented tofu	
 炒	炒	stir-fried	https://en.wikipedia.org/wiki/Stir_frying#Chao_technique				chǎo
+炒年糕	炒年糕	Stir-Fried Nian Gao	https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine	https://upload.wikimedia.org/wikipedia/commons/e/ec/Shanghai_Nian_cake.jpg	zh	Savory chewy rice cakes stir-fried with vegetables and meat	
 番茄炒蛋	番茄炒蛋	Stir-Fried Tomato and Scrambled Eggs	https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs	https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG/128px-%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG	zh	Tomatoes and scrambled eggs, stir-fried together	
 捞	撈	stirred					as in "lo mein", https://en.wiktionary.org/wiki/%E6%92%88#Etymology_3
 四季豆	四季豆	string bean	https://en.wikipedia.org/wiki/Green_bean				
@@ -542,6 +548,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 翅	翅	wing					
 翼	翼	wing					(literary or dialectal) https://en.wiktionary.org/wiki/%E7%BF%BC#Definitions
 冬	冬	winter					
+冬瓜	冬瓜	winter melon	https://en.wikipedia.org/wiki/Wax_gourd				
 拼	拼	with					
 杞子	杞子	wolfberry	https://en.wikipedia.org/wiki/Goji				
 云吞	雲吞	wonton	https://en.wikipedia.org/wiki/Wonton				

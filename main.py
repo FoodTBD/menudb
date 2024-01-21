@@ -213,11 +213,12 @@ def generate_menu_html(
 
         matched_all = True
         annotated_html = ""
+        # Match from left to right
         i = 0
         while i < len(primary_name):
             matched = False
 
-            # Check for the longest possible match first
+            # Preferring longest possible match first
             for key in ordered_known_terms:
                 if primary_name[i:].startswith(key):
                     annotated_html += '<span class="term-native">'
@@ -403,7 +404,7 @@ def generate_dishes_html(
                                     yaml_dict["_output_filename"]
                                 )
 
-    # Inject the outpuet files into known_dishes
+    # Inject the output files into known_dishes
     for known_dish in known_dishes:
         menu_filename_set = set()
         for dish_name in known_dish["name_native"].split(","):
