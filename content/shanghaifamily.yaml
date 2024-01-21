@@ -40,6 +40,7 @@ menu:
             - item_number: A8 
               "name_zh-Hant": 八寶辣醬
               "name_en": Pork, Vegetable in Hot Sauce
+              spice_heat_level: 1
             - item_number: A9 
               "name_zh-Hant": 八寶鹹醬
               "name_en": Salted Dry Chicken
@@ -49,6 +50,7 @@ menu:
             - item_number: A11
               "name_zh-Hant": 酸辣白菜
               "name_en": Napa Cabbage in Hot and Sour Sauce
+              spice_heat_level: 1
             - item_number: A12
               "name_zh-Hant": 馬蘭頭拌香乾
               "name_en": Bean Curd with Ma Lan
@@ -70,9 +72,11 @@ menu:
             - item_number: A20
               "name_zh-Hant": 清口麻辣雞肫
               "name_en": Spicy Chicken Stew
+              spice_heat_level: 1
             - item_number: A21
               "name_zh-Hant": 麻辣牛筋
               "name_en": Spicy Beef Tendon
+              spice_heat_level: 1
             - item_number: A22
               "name_zh-Hant": 上海蜇皮
               "name_en": Shanghai Sting The Skin
@@ -94,6 +98,7 @@ menu:
             - item_number: B3
               "name_zh-Hant": 乾燒蝦仁
               "name_en": Dry Cooked Shrimp in Hot Sauce
+              spice_heat_level: 1
             - item_number: B4
               "name_zh-Hant": 蝦仁炒蛋
               "name_en": Stir Fried Eggs with Shrimp
@@ -145,12 +150,14 @@ menu:
             - item_number: B20
               "name_zh-Hant": 剁椒魚片
               "name_en": Red Pepper Fish Fillets
+              spice_heat_level: 1
             - item_number: B21
               "name_zh-Hant": 唐芹墨魚絲
               "name_en": Tang Celery w/Squid
             - item_number: B22
               "name_zh-Hant": 椒鹽蝦
               "name_en": Salted and pepper Shrimp
+              spice_heat_level: 1
             - item_number: B23
               "name_zh-Hant": 翡翠溜魚片
               "name_en": Jade Fish Slides
@@ -178,9 +185,11 @@ menu:
             - item_number: B31
               "name_zh-Hant": 豆瓣魚片
               "name_en": Fish Fillet w/Bean Sauce
+              spice_heat_level: 1
             - item_number: B32
               "name_zh-Hant": 水煮魚
               "name_en": Water Boiled Fish
+              spice_heat_level: 1
             - item_number: B33
               "name_zh-Hant": 三鮮魚麵筋
               "name_en": Gluten Stuffed w/Seafood Peas Leaf
@@ -243,6 +252,7 @@ menu:
             - item_number: C8
               "name_zh-Hant": 魚香肉絲
               "name_en": Shredded Pork in Garlic Sauce
+              spice_heat_level: 1
             - item_number: C9
               "name_zh-Hant": 荠菜冬筍肉絲
               "name_en": Shredded Pork, Bamboo Shoot with Jizhai
@@ -258,12 +268,14 @@ menu:
             - item_number: C13
               "name_zh-Hant": 家常豆腐
               "name_en": Homemade Tofu
+              spice_heat_level: 1
             - item_number: C14
               "name_zh-Hant": 油豆腐塞肉紅燒蛋
               "name_en": Braised egg with fried tofu stuffed meat
             - item_number: C15
               "name_zh-Hant": 回鍋肉
               "name_en": Twice-Cooked Pork
+              spice_heat_level: 1
             - item_number: C16
               "name_zh-Hant": 韭黃香乾肉絲
               "name_en": The Chives Xianggan
@@ -279,15 +291,18 @@ menu:
             - item_number: C20
               "name_zh-Hant": 醬爆大腸
               "name_en": Intestine in Soy Sauce
+              spice_heat_level: 1
             - item_number: C21
               "name_zh-Hant": 本幫炒三鮮
               "name_en": Three Kinds Meat in Shanghai Brown Sauce
             - item_number: C22
               "name_zh-Hant": 蒜丝毛肚
               "name_en": Garlic Silk Duck
+              spice_heat_level: 1
             - item_number: C23
               "name_zh-Hant": 酸豆角炒肉絲
               "name_en": Sour Beans Fried Pork
+              spice_heat_level: 1
             - item_number: C24
               "name_zh-Hant": 花菜肉片燴番茄
               "name_en": Pork Sliced with Tomato and Vegetable
@@ -303,36 +318,44 @@ menu:
             - item_number: C28
               "name_zh-Hant": 干鍋肥腸
               "name_en": Griddle Cooked Spicy Pork Intestine
+              spice_heat_level: 1
             - item_number: C29
               "name_zh-Hant": 糖醋小排
               "name_en": Spare Rib Shanghai Style
             - item_number: C30
               "name_zh-Hant": 椒鹽排骨
               "name_en": Salted and Pepper Ribs
+              spice_heat_level: 1
             - item_number: C31
               "name_zh-Hant": 芋頭粉蒸排肉
               "name_en": Chongqing Steamed Pork Ribs
+              spice_heat_level: 1
             - item_number: C32
               "name_zh-Hant": 香辣蒜香骨
               "name_en": Spicy Croutons Bone
+              spice_heat_level: 1
             - item_number: C33
               "name_zh-Hant": 甜酸雞
               "name_en": Sweet and Sour Sauce Chicken
             - item_number: C34
               "name_zh-Hant": 陳皮雞
               "name_en": Tangerine Peel Chicken
+              spice_heat_level: 1
             - item_number: C35
               "name_zh-Hant": 辣子雞丁/塊
               "name_en": Chicken w/Spicy Sauce
+              spice_heat_level: 1
             - item_number: C36
               "name_zh-Hant": 左宗雞
               "name_en": General Tso's Chicken
+              spice_heat_level: 1
             - item_number: C37
               "name_zh-Hant": 豆豉雞
               "name_en": Chicken in Black Bean Sauce
             - item_number: C38
               "name_zh-Hant": 黑椒雞
               "name_en": Chicken in Black Pepper Sauce
+              spice_heat_level: 1
             - item_number: C39
               "name_zh-Hant": 蔥爆牛肉
               "name_en": Stir Fried Beef with Green Onion
@@ -348,6 +371,7 @@ menu:
             - item_number: C43
               "name_zh-Hant": 水煮牛
               "name_en": Boiled Beef
+              spice_heat_level: 1
             - item_number: C44
               "name_zh-Hant": 洋蔥牛肉
               "name_en": Lam w/Green Onion
@@ -363,15 +387,18 @@ menu:
             - item_number: C48
               "name_zh-Hant": 蒙古牛肉/雞
               "name_en": Mongolia Beef /Chicken
+              spice_heat_level: 1
             - item_number: C49
               "name_zh-Hant": 醬爆牛／雞
               "name_en": Sliced Beef /Chicken in Soy Sauce
             - item_number: C50
               "name_zh-Hant": 宮保雞丁/牛
               "name_en": Kung Pao Chicken /Beef
+              spice_heat_level: 1
             - item_number: C51
               "name_zh-Hant": 海派咖喱雞/牛
               "name_en": Curry Chicken /Beef
+              spice_heat_level: 1
             - item_number: C52
               "name_zh-Hant": 四季豆雞/牛
               "name_en": Green Bean with Chicken /Beef
@@ -398,6 +425,7 @@ menu:
             - item_number: D1
               "name_zh-Hant": 喬家栅小炒
               "name_en": House Special Stir Fry
+              spice_heat_level: 1
             - item_number: D2
               "name_zh-Hant": 雪菜百葉毛豆
               "name_en": Bean Sheets, Soy Bean w/Saited Snow Vegetable
@@ -431,9 +459,11 @@ menu:
             - item_number: D12
               "name_zh-Hant": 魚香茄子
               "name_en": Eggplant in Garlic Sauce
+              spice_heat_level: 1
             - item_number: D13
               "name_zh-Hant": 手撕包心菜
               "name_en": Shredded Cabbage
+              spice_heat_level: 1
             - item_number: D14
               "name_zh-Hant": 油燜茄子
               "name_en": Braised Eggplant
@@ -452,9 +482,11 @@ menu:
             - item_number: D19
               "name_zh-Hant": 土豆辣椒絲
               "name_en": Potato with Chili
+              spice_heat_level: 1
             - item_number: D20
               "name_zh-Hant": 麻婆豆腐
               "name_en": Ma Puo Hot and Spicy Bean Curd
+              spice_heat_level: 1
             - item_number: D21
               "name_zh-Hant": 紅燒豆腐
               "name_en": Bean Curd in Brown Sauce
@@ -500,6 +532,7 @@ menu:
             - item_number: D35
               "name_zh-Hant": 宮爆豆腐
               "name_en": Kung Po Tofu
+              spice_heat_level: 1
             - item_number: D36
               "name_zh-Hant": 茄子燒豆腐
               "name_en": Eggplant Curd
@@ -548,6 +581,7 @@ menu:
             - item_number: E10
               "name_zh-Hant": 牛腩煲
               "name_en": Beef Brisket in Clay Pot
+              spice_heat_level: 1
             - item_number: E11
               "name_zh-Hant": 鹹魚雞粒豆腐煲
               "name_en": Salted Fish & Chicken Tofu in Clay Pot
@@ -584,6 +618,7 @@ menu:
             - item_number: E22
               "name_zh-Hant": 酸辣湯
               "name_en": Hot and Sour Soup
+              spice_heat_level: 1
             - item_number: E23
               "name_zh-Hant": 榨菜肉絲蛋湯
               "name_en": The Mustard Pork Bowl of Soup
@@ -667,9 +702,11 @@ menu:
             - item_number: F18
               "name_zh-Hant": 炸醬麵
               "name_en": Noodle with Pork & Vegetable in Hot Sauce
+              spice_heat_level: 1
             - item_number: F19
               "name_zh-Hant": 辣醬面
               "name_en": Noodle Soup with Hot Brown Sauce
+              spice_heat_level: 1
             - item_number: F20
               "name_zh-Hant": 開洋蔥油麵
               "name_en": Noodle with Dry Shrimp and Scallion
@@ -682,6 +719,7 @@ menu:
             - item_number: F23
               "name_zh-Hant": 咖喱牛肉麵
               "name_en": Noodle Soup with Curry Beef
+              spice_heat_level: 1
             - item_number: F24
               "name_zh-Hant": 熏魚麵
               "name_en": Noodle Soup with Smoked Fish
@@ -694,6 +732,7 @@ menu:
             - item_number: F27
               "name_zh-Hant": 紅燒牛腩麵
               "name_en": Noodle Soup with Tender Beef Brisket
+              spice_heat_level: 1
             - item_number: F28
               "name_zh-Hant": 嫩雞煨麵
               "name_en": Noodle in Chicken Soup
@@ -739,6 +778,7 @@ menu:
             - item_number: F42
               "name_zh-Hant": 紅油抄手
               "name_en": Red Oil Super Hand
+              spice_heat_level: 1
             - item_number: F43
               "name_zh-Hant": 豆漿（甜/鹹）
               "name_en": Soybean Milk Sweet Orgial [*Original]
@@ -818,13 +858,11 @@ menu:
               "name_en": Shredded Pork with Dry Bean Curd
             - item_number: 4
               "name_zh-Hant": 油燜茄子
-              "name_en": Braised Eggplan
+              "name_en": Braised Eggplan [sic]
             - item_number: 5
               "name_zh-Hant": 土豆辣椒絲
               "name_en": Potato with Chili
-            - item_number: 5
-              "name_zh-Hant": 土豆辣椒絲
-              "name_en": Potato with Chili
+              spice_heat_level: 1
             - item_number: 6
               "name_zh-Hant": 麻婆豆腐
               "name_en": Ma Puo Hot and Spicy Bean Curd
@@ -840,9 +878,11 @@ menu:
             - item_number: 10
               "name_zh-Hant": 海派咖喱雞
               "name_en": Shanghai Style Curry Chicken
+              spice_heat_level: 1
             - item_number: 11
               "name_zh-Hant": 魚香肉絲
               "name_en": Shredded Pork with Dry Bean Curd
+              spice_heat_level: 1
             - item_number: 12
               "name_zh-Hant": 素什錦
               "name_en": Assorted Vegetable and Bean Curd
@@ -852,6 +892,7 @@ menu:
             - item_number: 14
               "name_zh-Hant": 宮保雞/牛
               "name_en": Kung Pao Chicken / Beef
+              spice_heat_level: 1
             - item_number: 15
               "name_zh-Hant": 糖醋小排
               "name_en": Spare Rib Shanghai Style
@@ -894,6 +935,7 @@ menu:
             - item_number: 28
               "name_zh-Hant": 蒙古牛/雞
               "name_en": Mongolian Beef /Chicken
+              spice_heat_level: 1
             - item_number: 29
               "name_zh-Hant": 豆豉牛肉/雞
               "name_en": Beef in Black Bean Sauce / Chicken
@@ -906,6 +948,7 @@ menu:
             - item_number: 32
               "name_zh-Hant": 回鍋肉
               "name_en": Back To The Pot of Meat
+              spice_heat_level: 1
         - "name_zh-Hant": 特价午餐
           "name_en": Porridge
           menu_items:
