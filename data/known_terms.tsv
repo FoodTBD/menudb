@@ -11,6 +11,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy				(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
 竹	竹	bamboo	https://en.wikipedia.org/wiki/Bamboo#Culinary				
 笼仔	籠仔	bamboo basket					
+竹笙	竹笙	bamboo fungus	https://en.wikipedia.org/wiki/Phallus_indusiatus#Culinary	https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bamboo_pith_mushroom.jpg/440px-Bamboo_pith_mushroom.jpg			
 筍	筍	bamboo shoot	https://en.wikipedia.org/wiki/Bamboo_shoot#East_Asia				
 扁尖	扁尖	bamboo shoot	https://en.wikipedia.org/wiki/Bamboo_shoot#East_Asia				(Shanghainese Wu) https://en.wiktionary.org/wiki/%E6%89%81%E5%B0%96
 双冬	雙冬	bamboo shoot & mushroom					GPT-4: lit. "double-winter", often refers to the combination of bamboo shoots and mushrooms, commonly used together during the winter season
@@ -77,7 +78,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 鸡	雞	chicken					
 鸡肉	鸡肉	chicken					
 凤爪	鳳爪,鳯爪	chicken feet	https://en.wikipedia.org/wiki/Chicken_feet				
-红油	紅油	chili oil	https://en.wikipedia.org/wiki/Chili_oil				
+红油	紅油	chili oil	https://en.wikipedia.org/wiki/Chili_oil#China				lit. "red oil"
 韭菜	韭菜	Chinese chive	https://en.wikipedia.org/wiki/Allium_tuberosum				
 明虾	明蝦	Chinese white shrimp	https://en.wikipedia.org/wiki/Chinese_white_shrimp				
 山城	山城	Chongqing	https://en.wikipedia.org/wiki/Chongqing				lit. "mountain city", referring to Chongqing
@@ -136,6 +137,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 点心	點心,點	dim sum	https://en.wikipedia.org/wiki/Dim_sum				
 碟	碟	dish					
 	燉	double-steamed	https://en.wikipedia.org/wiki/Double_steaming				dùn; NOTE: meaning of the Chinese character for dun in Cantonese is different from that in Mandarin
+豆豉	豆豉	douchi	https://en.wikipedia.org/wiki/Douchi	https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2015_1012_Preserved_black_beans_douchi_close-up.jpg/440px-2015_1012_Preserved_black_beans_douchi_close-up.jpg			
 虾米	蝦米	dried shrimp	https://en.wikipedia.org/wiki/Dried_shrimp#East_Asia				https://en.wiktionary.org/wiki/%E8%9D%A6%E7%B1%B3
 開洋	開洋	dried shrimp	https://en.wikipedia.org/wiki/Dried_shrimp#East_Asia				(chiefly Wu) https://en.wiktionary.org/wiki/%E9%96%8B%E6%B4%8B
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried				
@@ -146,7 +148,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 干锅鸡	乾鍋雞	Dry Pot Chicken	https://en.wikipedia.org/wiki/Dry_pot_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg	zh	Spicy chicken cooked in a dry pot with mixed vegetables	
 干煸	乾煸	dry-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				gānbiān
 干煸四季豆	乾煸四季豆	Dry-Fried Green Beans		https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg/2560px-Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg	zh	Dry-fried green beans mixed with minced pork or preserved vegetables	
-干锅	乾鍋	dry-pot	https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg			
+干锅	乾鍋,干鍋	dry-pot	https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg			
 鸭	鴨	duck					
 盒子	盒子	dumpling					lit. "box"
 角	角	dumpling					lit. "corner" or "angle," but in this context, it refers to a pastry or snack with a corner or triangular shape
@@ -194,7 +196,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 芥兰,兰	芥蘭,蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan				
 蚝油芥兰	蠔油芥蘭	Gai Lan with Oyster Sauce	https://en.wikipedia.org/wiki/Gai_lan	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Chinese_Broccoli_with_Oyster_sauce.jpg/320px-Chinese_Broccoli_with_Oyster_sauce.jpg	zh-u-sd-cngd	Stir-fried gai lan (Chinese broccoli) topped with oyster sauce	
 蒜子,蒜	蒜子,蒜	garlic					(Cantonese) https://en.wiktionary.org/wiki/%E8%92%9C%E5%AD%90
-左宗棠鸡	左宗棠雞	General Tso’s Chicken	https://en.wikipedia.org/wiki/General_Tso%27s_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg/128px-Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg	zh	Deep-fried chicken in a spicy, tangy sauce	
+左宗棠鸡,左宗鸡	左宗棠雞,左宗雞	General Tso’s Chicken	https://en.wikipedia.org/wiki/General_Tso%27s_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg/128px-Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg	zh	Deep-fried chicken in a spicy, tangy sauce	
 姜	薑	ginger					
 金	金	golden					
 靓	靚	good					(Cantonese, dialectal Hakka, Pinghua) https://en.wiktionary.org/wiki/%E9%9D%9A#Definitions
@@ -236,6 +238,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 海蜇	海蜇	jellyfish	https://en.wikipedia.org/wiki/Jellyfish_as_food				
 煎䭔,煎堆	煎䭔,煎堆	Jian Dui	https://en.wikipedia.org/wiki/Jian_dui	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Zin_Deoi.jpg/128px-Zin_Deoi.jpg	zh-u-sd-cngd	Sesame-coated fried balls of glutinous rice, sweet filling	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%8E%E5%A0%86
 芝麻球	芝麻球	Jian Dui	https://en.wikipedia.org/wiki/Jian_dui	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Zin_Deoi.jpg/128px-Zin_Deoi.jpg			
+茭白	茭白	jiaobai	https://en.wikipedia.org/wiki/Zizania_latifolia	https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Wild_rice_stems.jpg/440px-Wild_rice_stems.jpg			
 饺子	餃子	jiaozi	https://en.wikipedia.org/wiki/Jiaozi	https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg/128px-Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg			
 京酱肉丝	京醬肉絲	Jingjiang Rousi	https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si	https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg	zh	Shredded pork in sweet bean sauce, often with pancakes	
 金华玉树	金華玉樹	Jinhua ham	https://en.wikipedia.org/wiki/Jinhua_ham				
@@ -258,7 +261,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 柠檬	檸檬	lemon					
 柠檬鸡	檸檬雞	Lemon Chicken	https://en.wikipedia.org/wiki/Lemon_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lemon_Chicken_in_Hong_Kong.jpg/320px-Lemon_Chicken_in_Hong_Kong.jpg	zh	Crispy chicken in a fresh lemon sauce	
 生菜	生菜	lettuce					
-百合	百合	lily bulb	https://en.wikipedia.org/wiki/Lilium#Culinary_uses				
+百合	百合	lily	https://en.wikipedia.org/wiki/Lilium#Chinese_cuisine				
 灵芝	靈芝	lingzhi	https://en.wikipedia.org/wiki/Lingzhi_(mushroom)				
 狮子头	狮子头	lion's head	https://en.wikipedia.org/wiki/Lion%27s_Head_(food)				
 膶	膶	liver	https://en.wikipedia.org/wiki/Offal#China				(Cantonese) https://en.wiktionary.org/wiki/%E8%86%B6#Definitions
@@ -307,6 +310,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 东北	東北	northeastern	https://en.wikipedia.org/wiki/Northeastern_Chinese_cuisine				
 养生	養生	nourishing					
 油	油	oil					
+油泡	油泡	oil-blanched	https://en.wikipedia.org/wiki/Chili_oil#China				lit. "oil soaked"
 老	老	old					
 洋葱,葱	洋蔥,蔥	onion					
 明炉	明爐	open furnace					
@@ -327,7 +331,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 椒	椒	pepper					
 青椒	青椒	pepper					
 凤眼饺	鳳眼餃	Phoenix Eye Dumpling	https://zh.wikipedia.org/wiki/%E9%B3%B3%E7%9C%BC%E9%A4%83		zh		
-泡	泡	pickled					
+腌	醃	pickled					yān
 雪菜	雪菜	pickled mustard	https://en.wikipedia.org/wiki/Pickled_mustard				
 泡菜	泡菜	pickled vegetables					
 球	球	piece					lit. "ball" but typically means "chunks" or "pieces"
@@ -335,8 +339,9 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 松子	松子	pine nuts	https://en.wikipedia.org/wiki/Pine_nut				
 菠萝	菠蘿	pineapple					
 净	淨	plain					(Cantonese) https://en.wiktionary.org/wiki/%E6%B7%A8#Definitions
-清炖	清燉	plainly stewed					dùn (see also 燉); https://en.wiktionary.org/wiki/%E6%B8%85%E7%87%89#Verb
-清炒	清炒	plainly stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				qīngchǎo
+清炖	清燉	plain stewed					dùn (see also 燉); https://en.wiktionary.org/wiki/%E6%B8%85%E7%87%89#Verb
+清炒	清炒	plain stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				qīngchǎo
+蒜炒	蒜炒	plain stir-fried w/ garlic	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				suàn chǎo
 拼盘	拼盤	platter					
 梅	梅	plum					
 当红	當紅	popular					
@@ -440,6 +445,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 烟	煙	smoked					
 滑	滑	smooth					
 爽	爽	smooth					
+泡	泡	soaked					pào
 汽水	汽水	soft drink					
 汤	湯	soup					tāng: thinner and clearer soup or broth
 羹	羹	soup					gēng: thicker and heartier soup
