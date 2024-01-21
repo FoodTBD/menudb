@@ -10,9 +10,162 @@ restaurant:
 menu:
   language_codes:
     - zh-Hant
+    - sv-SE
     - en
   pages:
     # - page_image_url: https://media.restaurangshogun.se/2021/04/6.jpg
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/restaurangshogun/PXL_20240116_110757496 Large.jpeg
+      sections:
+        - "name_zh-Hant": 蒸點
+          "name_sv-SE": Dim Sum (Angkokt)
+          menu_items:
+            - item_number: 1
+              "name_zh-Hant": 鮮蝦餃
+              "name_sv-SE": Räkfärs med bambuskott
+            - item_number: 2
+              "name_zh-Hant": 香茜餃
+              "name_sv-SE": Rak- och fläskfärs med korriander
+            - item_number: 4
+              "name_zh-Hant": 干貝餃
+              "name_sv-SE": Rakfärs & pilgrimmusslor
+            - item_number: 6
+              "name_zh-Hant": 干蒸燒賣
+              "name_sv-SE": Fläskfärs, räkor & shiitake svamp
+            - item_number: 8
+              "name_zh-Hant": 山竹牛肉
+              "name_sv-SE": Kinesiska köttbullar och vattenkastanj
+            - item_number: 9
+              "name_zh-Hant": 薑蔥牛肉角
+              "name_sv-SE": Notfärs med ingefära & vårlök
+            - item_number: 10
+              "name_zh-Hant": 豉汁鳳爪
+              "name_sv-SE": Kycklingfötter m svartabönor, vitlök & chili
+            - item_number: 11
+              "name_zh-Hant": 豉椒排骨
+              "name_sv-SE": Revben med svartabörnor, vitlök & chili
+            - item_number: 12
+              # "name_zh-Hant": 牛柏葉  # [sic] Should be "牛百葉"
+              "name_zh-Hant": 牛百葉
+              "name_sv-SE": Ko mage med svartabönor, vitlök & chili
+            - item_number: 13
+              "name_zh-Hant": 鮮竹卷
+              "name_sv-SE": Fläskfärs i bambu och ostronsås
+            - item_number: 13e
+              "name_zh-Hant": 雞扎
+              "name_sv-SE": Fylld skinka, kycklingvingar,fläsksvål i soyablad
+              "note": NY !!
+            - item_number: 14c
+              "name_zh-Hant": 叉燒包
+              "name_sv-SE": Kinesisk vitbröd m fläskkarré
+            - item_number: 14d
+              "name_zh-Hant": 奶皇飽  # [sic] Should be 包
+              "name_sv-SE": Kinesisk vitbröd m vanilj smak
+            - item_number: 14e
+              "name_zh-Hant": 雞飽  # [sic] Should be 包
+              "name_sv-SE": Kinesisk Vitbröd med kyckling
+              "note": NY!!
+            - item_number: H
+              "name_zh-Hant": 糯米雞
+              "name_sv-SE": Sticky rice med kyckling & fläsk i lotus blad
+            - item_number: S
+              "name_zh-Hant": 上海小籠飽  # [sic] Should be 包
+              "name_sv-SE": Soup dumpling
+              "note": NYHET!
+            - item_number: I
+              "name_zh-Hant": 鍋貼
+              "name_sv-SE": Shanghainesiska degknyte
+              "note": fläskfärs
+            - item_number: A
+              "name_zh-Hant": 鮮蝦腸粉
+              "name_sv-SE": Rispasta med räkfyllning
+            - item_number: B
+              "name_zh-Hant": 牛肉腸粉
+              "name_sv-SE": Rispasta med nötfärs
+            - item_number: D
+              "name_zh-Hant": 叉燒粉
+              "name_sv-SE": Rispasta med ugnsgrillad fläskkarré
+        - "name_zh-Hant": 素點
+          "name_sv-SE": Vegetarisk Dim Sum
+          menu_items:
+            - item_number: G
+              "name_zh-Hant": 港式情懷腸粉
+              "name_sv-SE": Hong Kong style rispasta
+            - item_number: F
+              "name_zh-Hant": 炸兩
+              "name_sv-SE": Rispasta med friterad kinesisk bröd
+            - item_number: 18v
+              "name_zh-Hant": 素春捲
+              "name_sv-SE": Vegetariska várrullar
+            - item_number: 23v
+              "name_zh-Hant": 素蘿蔔糕
+              "name_sv-SE": Kantonesisk turnip cake
+            - item_number: 42
+              "name_zh-Hant": 豉油王炒麵
+              "name_sv-SE": Kantonesiska sojanudlar m böngroddar
+            - item_number: 27g
+              "name_zh-Hant": 素菜餃子
+              "name_sv-SE": Grönsaksfyllda dumpling
+              note: 4 st
+            - item_number: 4J
+              "name_zh-Hant": 蔥油餅
+              "name_sv-SE": Kinesisk pankaka med vårlök
+              note: Ny!!
+        - "name_zh-Hant": 炸點
+          "name_sv-SE": Dim Sum (Friterat, Stekt & Ungsgrillat)
+          menu_items:
+            - item_number: 17
+              "name_zh-Hant": 龍蝦角
+              "name_sv-SE": Räkfärs o bambuskott i friterad wonton deg
+            - item_number: 18
+              "name_zh-Hant": 蝦春卷
+              "name_sv-SE": Räkvårrullar
+            - item_number: 19
+              "name_zh-Hant": 炸芋角
+              "name_sv-SE": Friterad degknyte med taro, räkor & fläsk
+            - item_number: 20
+              "name_zh-Hant": 咸水角
+              "name_sv-SE": Sötris knyten med fläsk och shiitake svamp
+            - item_number: 23
+              "name_zh-Hant": 蘿蔔糕
+              "name_sv-SE": Rättika pudding med kinesisk luft torkad korv
+        - "name_zh-Hant": 甜點
+          "name_sv-SE": Dim Sum (Dessert)
+          menu_items:
+            - item_number: 14a
+              "name_zh-Hant": 馬拉糕
+              "name_sv-SE": Kinesisk ångkokt chiffonkaka
+            - item_number: 22
+              "name_zh-Hant": 芝麻煎堆仔
+              "name_sv-SE": Sesambollar med adzuki fyllning
+            - item_number: 24
+              "name_zh-Hant": 蛋撻
+              "name_sv-SE": Kantonesiska egg tarts
+              "note": lördag
+            - item_number: 26
+              "name_zh-Hant": 糯米糍
+              "name_sv-SE": Sticky rice bollar med vanilj smak
+              "note": NY!!
+        - "name_zh-Hant": 上湯類
+          "name_sv-SE": Soppa & Dumpling
+          menu_items:
+            - item_number: 27a
+              "name_zh-Hant": 鮮蝦雲吞湯
+              "name_sv-SE": Wonton soppa med räkfärsfyllning
+        - "name_zh-Hant": 粥類
+          "name_sv-SE": Congee
+          menu_items:
+            - item_number: 31
+              "name_zh-Hant": 咸蛋、皮蛋瘦肉粥
+              "name_sv-SE": Salt- och tusen ägg med skinka
+            - item_number: 32
+              "name_zh-Hant": 艇仔粥
+              "name_sv-SE": Grissvål, bläckfisk och jordnötter
+        - "name_zh-Hant": 燒鴨
+          "name_sv-SE": Grillad Anka
+          menu_items:
+            - "name_sv-SE": Grillad Anka Hel
+            - "name_sv-SE": Grillad Anka Halv
+            - "name_sv-SE": Grillad Anka Liten            
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/restaurangshogun/6%20Large.jpeg
       sections:
         - menu_items:
@@ -145,8 +298,7 @@ menu:
               "name_zh-Hant": 鍋貼
               "name_en": Classic Shanghainese Dumpling
             - item_number: S
-              # "name_zh-Hant": 小籠飽
-              "name_zh-Hant": 小籠包
+              "name_zh-Hant": 小籠飽  # [sic] Should be 包
               "name_en": Shanghainese Pork Dumpling
             - "name_zh-Hant": 港式燒鴨
               "name_en": Cantonese style roast duck

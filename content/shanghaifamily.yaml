@@ -253,7 +253,7 @@ menu:
               "name_zh-Hant": 青椒炒肉絲
               "name_en": Shredded Pork w/Green Pepper
             - item_number: C12
-              "name_zh-Hant": 揚州煮千絲
+              "name_zh-Hant": 揚州煮干絲
               "name_en": Yangzhou Boiled Dry Silk
             - item_number: C13
               "name_zh-Hant": 家常豆腐
@@ -301,7 +301,7 @@ menu:
               "name_zh-Hant": 油麵筋塞薺菜肉
               "name_en": Fried Gluten Stuffed with Ji Zhai and Meat
             - item_number: C28
-              "name_zh-Hant": 千鍋肥腸
+              "name_zh-Hant": 干鍋肥腸
               "name_en": Griddle Cooked Spicy Pork Intestine
             - item_number: C29
               "name_zh-Hant": 糖醋小排
@@ -477,7 +477,7 @@ menu:
               "name_zh-Hant": 鐵板豆腐
               "name_en": Sizzling Tofu
             - item_number: D28
-              "name_zh-Hant": 千扁四季豆
+              "name_zh-Hant": 干扁四季豆
               "name_en": Dry Sauteed String Bean
             - item_number: D29
               "name_zh-Hant": 素燴竹笙
@@ -507,7 +507,7 @@ menu:
               "name_zh-Hant": 爆炒菌菇
               "name_en": Stuffed Muchroom [*Mushroom]
             - item_number: D38
-              "name_zh-Hant": 千鍋花菜
+              "name_zh-Hant": 干鍋花菜
               "name_en": Dry Pot Cauliflower
             - item_number: D40
               "name_zh-Hant": 雞毛菜（清炒/蒜炒）
@@ -865,7 +865,7 @@ menu:
               "name_zh-Hant": 雪菜墨魚
               "name_en": Fresh Cuttle Fish with Salted Snow Vegetable
             - item_number: 19
-              "name_zh-Hant": 千煎小黄魚
+              "name_zh-Hant": 干煎小黄魚
               "name_en": Deep Fried Small Yellow Fish
             - item_number: 20
               "name_zh-Hant": 獅子頭菜心煲
