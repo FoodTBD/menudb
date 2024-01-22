@@ -12,7 +12,8 @@
     <style>
         .dishes-table-section-header {
             padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
+            padding-bottom: 0.5rem !important;
+            line-height: 1.2;
         }
 
         .cuisine-description {
@@ -29,6 +30,10 @@
             width: 128px;
             height: 128px;
             object-fit: cover;
+        }
+
+        .dishes-table-text-column {
+            line-height: 1.2;
         }
 
         .dishes-table-menuaction-column {
@@ -87,7 +92,7 @@
         <ul>
             <li><a href="#cuisine-zh">Chinese (24)</a></li>
             <li><a href="#cuisine-zh-u-sd-cngd">Chinese—Cantonese (62)</a></li>
-            <li><a href="#cuisine-zh-u-sd-cnjs">Chinese—Jiangsu & Shanghai (4)</a></li>
+            <li><a href="#cuisine-zh-u-sd-cnjs">Chinese—Jiangnan (4)</a></li>
             <li><a href="#cuisine-zh-u-sd-cnsc">Chinese—Sichuan (19)</a></li>
         </ul>
 
@@ -101,8 +106,8 @@
             <thead id="cuisine-zh">
                 <tr>
                     <th scope="col" colspan="3" class="dishes-table-section-header">
-                        <span class="cuisine-name">Chinese</span><br>
-                        <span class="cuisine-description">Cuisine of the Chinese disapora, including Taiwan and United States</span>
+                        <h4 class="cuisine-name">Chinese</h4>
+                        <p class="cuisine-description">Cuisine of the Chinese disapora, including Taiwan and United States</p>
                     </th>
                 </tr>
             </thead>
@@ -117,7 +122,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Xiangyang_beef_noodles_02.jpg/128px-Xiangyang_beef_noodles_02.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=牛肉面"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=牛肉面', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">牛肉面</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -155,7 +160,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Beef_and_broccoli_stir_fry.jpg/128px-Beef_and_broccoli_stir_fry.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=西兰花牛肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=西兰花牛肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">西兰花牛肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -193,7 +198,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Boeddha%27s_Delight.jpg/128px-Boeddha%27s_Delight.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=罗汉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=罗汉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">罗汉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -231,7 +236,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Cashewchickenphoto.jpg/600px-Cashewchickenphoto.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=腰果鸡丁"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=腰果鸡丁', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">腰果鸡丁</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -269,7 +274,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg/1024px-%E5%AD%9C%E7%84%B6%E7%BE%8A%E8%82%89.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=孜然羊肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=孜然羊肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">孜然羊肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -283,7 +288,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -305,7 +310,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=生滚鱼片粥', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">生滚鱼片粥</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -319,7 +324,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -340,7 +345,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg/128px-Flickr_preppybyday_4665999863--General_Tso%27s_Chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=左宗棠鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=左宗棠鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">左宗棠鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -354,7 +359,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
+                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -379,7 +384,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=家常豆腐', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">家常豆腐</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -393,7 +398,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -415,7 +420,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=贵妃鸡', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">贵妃鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -453,7 +458,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=京酱肉丝"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=京酱肉丝', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">京酱肉丝</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -467,7 +472,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -491,7 +496,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Mongolian_Beef.jpg/128px-Mongolian_Beef.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蒙古牛肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蒙古牛肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蒙古牛肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -505,7 +510,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -529,7 +534,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Mu_xu_rou.jpg/128px-Mu_xu_rou.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=木须肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=木须肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">木须肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -567,7 +572,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flickr_preppybyday_4786746354--Orange_chicken.jpg/128px-Flickr_preppybyday_4786746354--Orange_chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=陈皮鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=陈皮鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">陈皮鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -581,7 +586,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
+                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -605,7 +610,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Potstickers_RTE.jpg/128px-Potstickers_RTE.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=煎饺"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=煎饺', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">煎饺</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -643,7 +648,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Gastronomia_china-Pato_a_la_pekinesa5251.JPG/128px-Gastronomia_china-Pato_a_la_pekinesa5251.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=北京烤鸭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=北京烤鸭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">北京烤鸭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -681,7 +686,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Guotie_in_Ningxia_Night_Market_20070923.jpg/128px-Guotie_in_Ningxia_Night_Market_20070923.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=锅贴"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=锅贴', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">锅贴</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -695,7 +700,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
+                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -719,7 +724,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mianjin_hongshao_paigu_2009_03.jpg/320px-Mianjin_hongshao_paigu_2009_03.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=红烧排骨"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=红烧排骨', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">红烧排骨</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -755,7 +760,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=红烧豆腐', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">红烧豆腐</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -769,7 +774,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -794,7 +799,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=葱油花卷', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">葱油花卷</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -832,7 +837,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%E8%92%9C%E6%B3%A5%E7%99%BD%E8%82%89_Sliced_Belly_Pork_and_Cucumber_Rolls_with_Garlic_Sauce.jpg/800px-%E8%92%9C%E6%B3%A5%E7%99%BD%E8%82%89_Sliced_Belly_Pork_and_Cucumber_Rolls_with_Garlic_Sauce.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蒜泥白肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蒜泥白肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蒜泥白肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -867,7 +872,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Pai_huang_gua.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蒜泥黄瓜"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蒜泥黄瓜', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蒜泥黄瓜</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -881,7 +886,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -902,7 +907,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Steamed_rice_in_bowl_01.jpg/128px-Steamed_rice_in_bowl_01.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=米饭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=米饭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">米饭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -916,7 +921,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -940,7 +945,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG/128px-%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=番茄炒蛋"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=番茄炒蛋', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">番茄炒蛋</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -978,7 +983,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%E5%BC%80%E5%B0%81%E7%AC%AC%E4%B8%80%E6%A5%BC%E5%B0%8F%E7%AC%BC%E5%8C%85.JPG/500px-%E5%BC%80%E5%B0%81%E7%AC%AC%E4%B8%80%E6%A5%BC%E5%B0%8F%E7%AC%BC%E5%8C%85.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=汤包"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=汤包', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">汤包</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1010,8 +1015,8 @@
             <thead id="cuisine-zh-u-sd-cngd">
                 <tr>
                     <th scope="col" colspan="3" class="dishes-table-section-header">
-                        <span class="cuisine-name">Chinese—Cantonese</span><br>
-                        <span class="cuisine-description">粤/粵 (Yuè) cuisine, from Southern China</span>
+                        <h4 class="cuisine-name">Chinese—Cantonese</h4>
+                        <p class="cuisine-description">Cantonese (Yuè, 粵) cuisine, from Southern China, features iconic elements like smoky wok hei flavor, well-balanced sauces, use of fresh seafood, and the rich tradition of dim sum</p>
                     </th>
                 </tr>
             </thead>
@@ -1026,7 +1031,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/%E7%89%9B%E8%85%A9%E7%85%B2%E4%BB%94%E9%A5%AD_Beef_Brisket_Hotpot_Rice_-_Soup%2C_Box_Hill_%282171826488%29.jpg/320px-%E7%89%9B%E8%85%A9%E7%85%B2%E4%BB%94%E9%A5%AD_Beef_Brisket_Hotpot_Rice_-_Soup%2C_Box_Hill_%282171826488%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=牛腩煲"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=牛腩煲', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">牛腩煲</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1064,7 +1069,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干炒牛河"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=干炒牛河', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">干炒牛河</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1078,7 +1083,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1105,7 +1110,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/1200px-2015_0410_Chicken_feet_dim_sum.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=豉汁凤爪"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=豉汁凤爪', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">豉汁凤爪</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1119,7 +1124,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1146,7 +1151,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Pork_preserved_duck_egg_congee.jpg/128px-Pork_preserved_duck_egg_congee.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=皮蛋瘦肉粥"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=皮蛋瘦肉粥', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">皮蛋瘦肉粥</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1160,7 +1165,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1187,7 +1192,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/128px-Char_siu_bao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=叉烧包"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=叉烧包', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">叉烧包</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1201,7 +1206,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1228,7 +1233,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=炒面"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=炒面', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">炒面</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1269,7 +1274,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蚝油菜心"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蚝油菜心', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蚝油菜心</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1310,7 +1315,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Claypot_Chicken_Rice%2C_Singapore.JPG/500px-Claypot_Chicken_Rice%2C_Singapore.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=煲仔饭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=煲仔饭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">煲仔饭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1351,7 +1356,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Crispyfriedchicken.jpg/128px-Crispyfriedchicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=炸子鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=炸子鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">炸子鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1392,7 +1397,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/ShaoxingWineChickenWings.jpg/440px-ShaoxingWineChickenWings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=醉鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=醉鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">醉鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1433,7 +1438,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Egg_Tarts_with_Puff_Pastry.jpg/128px-Egg_Tarts_with_Puff_Pastry.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蛋挞"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蛋挞', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蛋挞</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1474,7 +1479,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/%E9%9B%9E%E6%89%8E.jpg/440px-%E9%9B%9E%E6%89%8E.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=四宝鸡扎"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=四宝鸡扎', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">四宝鸡扎</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1515,7 +1520,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg/440px-%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=粉粿"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=粉粿', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">粉粿</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1556,7 +1561,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Chinese_Broccoli_with_Oyster_sauce.jpg/320px-Chinese_Broccoli_with_Oyster_sauce.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蚝油芥兰"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蚝油芥兰', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蚝油芥兰</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1570,7 +1575,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1597,7 +1602,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Xianshuijiao.jpg/440px-Xianshuijiao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=咸水角"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=咸水角', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">咸水角</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1611,7 +1616,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1638,7 +1643,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shrimp_dumplings.jpg/128px-Shrimp_dumplings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=虾饺"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=虾饺', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">虾饺</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1652,7 +1657,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1679,7 +1684,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Hokkien_Fried_Rice.jpg/460px-Hokkien_Fried_Rice.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=福建炒饭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=福建炒饭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">福建炒饭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1693,7 +1698,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1721,7 +1726,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=核桃明虾球', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">核桃明虾球</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1735,7 +1740,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1762,7 +1767,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Zin_Deoi.jpg/128px-Zin_Deoi.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=煎䭔"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=煎䭔', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">煎䭔</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1804,7 +1809,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=韭菜粿', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">韭菜粿</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1845,7 +1850,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lemon_Chicken_in_Hong_Kong.jpg/320px-Lemon_Chicken_in_Hong_Kong.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=柠檬鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=柠檬鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">柠檬鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1886,7 +1891,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Griceball.jpg/500px-Griceball.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=糯米糍"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=糯米糍', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">糯米糍</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1927,7 +1932,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/2016_0716_Lo_Mai_Gai.jpg/128px-2016_0716_Lo_Mai_Gai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=糯米鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=糯米鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">糯米鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -1941,7 +1946,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1968,7 +1973,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Real_lo_mein.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=捞面"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=捞面', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">捞面</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2009,7 +2014,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Malaxiangguo.jpg/440px-Malaxiangguo.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=麻辣香锅"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=麻辣香锅', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">麻辣香锅</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2050,7 +2055,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sponge_cake_at_Top_Cantonese_Restaurant.jpg/440px-Sponge_cake_at_Top_Cantonese_Restaurant.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=马拉糕"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=马拉糕', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">马拉糕</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2091,7 +2096,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mango_pudding.JPG/128px-Mango_pudding.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=芒果布丁"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=芒果布丁', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">芒果布丁</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2132,7 +2137,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ox-tongue_pastry.jpg/500px-Ox-tongue_pastry.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=牛脷酥"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=牛脷酥', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">牛脷酥</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2174,7 +2179,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=凤眼饺', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">凤眼饺</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2215,7 +2220,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pork_chow_mein.jpg/128px-Pork_chow_mein.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=肉丝炒面"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=肉丝炒面', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">肉丝炒面</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2256,7 +2261,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/RedbeanCake_Cantoversion.jpg/128px-RedbeanCake_Cantoversion.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=红豆糕"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=红豆糕', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">红豆糕</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2297,7 +2302,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/A_Beef_rice_noodle_rolls.jpg/320px-A_Beef_rice_noodle_rolls.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=牛肉肠"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=牛肉肠', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">牛肉肠</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2338,7 +2343,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Cha_siu_choeng.jpg/440px-Cha_siu_choeng.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=叉烧肠粉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=叉烧肠粉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">叉烧肠粉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2352,7 +2357,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2379,7 +2384,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Cantonese_roast_duck_in_Los_Angeles_Chinatown.jpg/128px-Cantonese_roast_duck_in_Los_Angeles_Chinatown.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=烧鸭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=烧鸭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">烧鸭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2420,7 +2425,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/HK_Food_San_Yung_Sai_Ying_Pun_Star_Seafood_Rest.jpg/600px-HK_Food_San_Yung_Sai_Ying_Pun_Star_Seafood_Rest.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=沙翁"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=沙翁', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">沙翁</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2461,7 +2466,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/HK_%E9%95%B7%E6%B4%B2_Cheung_Chau_%E8%88%88%E6%A8%82%E6%B5%B7%E9%AE%AE_Hing_Lok_Seafoods_Restaurant_food_dish_%E9%85%A5%E7%82%B8%E9%AD%B7%E9%AD%9A_Deep_fried_Calamari_squid_Sept-2013.JPG/128px-HK_%E9%95%B7%E6%B4%B2_Cheung_Chau_%E8%88%88%E6%A8%82%E6%B5%B7%E9%AE%AE_Hing_Lok_Seafoods_Restaurant_food_dish_%E9%85%A5%E7%82%B8%E9%AD%B7%E9%AD%9A_Deep_fried_Calamari_squid_Sept-2013.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=椒盐鱿鱼"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=椒盐鱿鱼', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">椒盐鱿鱼</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2475,7 +2480,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="winnerhouse.html">Winner House</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2499,7 +2504,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Flowing_Custard_Bun.JPG/600px-Flowing_Custard_Bun.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=流沙包"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=流沙包', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">流沙包</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2540,7 +2545,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Sampan_Congee.jpg/500px-Sampan_Congee.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=艇仔粥"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=艇仔粥', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">艇仔粥</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2581,7 +2586,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg/460px-Shrimp_shaomais_by_Stewart_at_Din_Tai_Fung_in_Taipei.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=烧卖"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=烧卖', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">烧卖</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2595,7 +2600,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="winnerhouse.html">Winner House</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2622,7 +2627,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/R5_2023_08_02_0147-singapore-noodles.jpg/128px-R5_2023_08_02_0147-singapore-noodles.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=星州炒米"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=星州炒米', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">星州炒米</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2636,7 +2641,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2663,7 +2668,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Soy_Sauce_Chicken.jpg/128px-Soy_Sauce_Chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=豉油鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=豉油鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">豉油鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2704,7 +2709,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Soy_Sauce_Fried_Noodles.jpg/128px-Soy_Sauce_Fried_Noodles.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=豉油皇炒麵"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=豉油皇炒麵', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">豉油皇炒麵</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2718,7 +2723,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2745,7 +2750,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Spring_roll_001.jpg/128px-Spring_roll_001.jpg?20211018090341" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=春卷"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=春卷', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">春卷</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2786,7 +2791,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Char_siu_bao.jpg/500px-Char_siu_bao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蜜汁叉烧包"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蜜汁叉烧包', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蜜汁叉烧包</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2827,7 +2832,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naihuangbao.jpg/128px-Naihuangbao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=奶黄包"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=奶黄包', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">奶黄包</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2841,7 +2846,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2868,7 +2873,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG/128px-HK_Pacific_Plaza_SYP_%E5%BE%B7%E9%9F%BE%E8%8B%91_Tak_Hing_Yuen_Seafood_Restaurant_beef_meat_balls_Mar-2013_Bamboo_steamer.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=山竹牛肉丸"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=山竹牛肉丸', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">山竹牛肉丸</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2882,7 +2887,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2909,7 +2914,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dimsumpaigui.jpg/200px-Dimsumpaigui.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q="
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary"></span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2923,7 +2928,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2947,7 +2952,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Stinkender_Tofu_1.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=臭豆腐"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=臭豆腐', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">臭豆腐</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -2988,7 +2993,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sweet-and-sour_pork.jpg/440px-Sweet-and-sour_pork.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=咕噜肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=咕噜肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">咕噜肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3029,7 +3034,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/T%C3%A1ngc%C3%B9_p%C3%A1ig%C7%94.jpg/440px-T%C3%A1ngc%C3%B9_p%C3%A1ig%C7%94.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=糖醋小排"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=糖醋小排', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">糖醋小排</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3070,7 +3075,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg/128px-Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=汤圆"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=汤圆', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">汤圆</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3111,7 +3116,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Fried_taro_cake.jpg/128px-Fried_taro_cake.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=芋角"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=芋角', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">芋角</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3152,7 +3157,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Tofuskinroll.jpg/128px-Tofuskinroll.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鲜竹卷"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=鲜竹卷', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">鲜竹卷</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3166,7 +3171,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3193,7 +3198,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Billyfoodtofu1.jpg/128px-Billyfoodtofu1.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=皮蛋豆腐"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=皮蛋豆腐', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">皮蛋豆腐</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3231,7 +3236,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Food_%2825455396733%29.jpg/128px-Food_%2825455396733%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=萝卜糕"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=萝卜糕', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">萝卜糕</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3245,7 +3250,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3273,7 +3278,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=白云凤爪', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">白云凤爪</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3314,7 +3319,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/BeiQieJi-WhiteCutChicken.jpg/440px-BeiQieJi-WhiteCutChicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=白切鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=白切鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">白切鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3355,7 +3360,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=馄饨面汤"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=馄饨面汤', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">馄饨面汤</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3396,7 +3401,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wonton_soup_at_65_Huguosi_St_%2820211221173225%29.jpg/128px-Wonton_soup_at_65_Huguosi_St_%2820211221173225%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=云吞汤"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=云吞汤', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">云吞汤</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3437,7 +3442,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg/128px-Chinese_fried_rice_by_stu_spivack_in_Cleveland%2C_OH.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=扬州炒饭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=扬州炒饭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">扬州炒饭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3451,7 +3456,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3478,7 +3483,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Youtiao.jpg/128px-Youtiao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=油条"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=油条', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">油条</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3492,7 +3497,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3519,7 +3524,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Food_%E7%82%B8%E5%85%A9%E8%94%A5%E8%8A%B1%E8%85%B8%E7%B2%89%2C_%E6%96%B0%E8%91%A1%E8%8B%91%2C_Shin_Pu_Yuan%2C_%E5%8F%B0%E5%8C%97_%2820920383094%29.jpg/128px-Food_%E7%82%B8%E5%85%A9%E8%94%A5%E8%8A%B1%E8%85%B8%E7%B2%89%2C_%E6%96%B0%E8%91%A1%E8%8B%91%2C_Shin_Pu_Yuan%2C_%E5%8F%B0%E5%8C%97_%2820920383094%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=炸两"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=炸两', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">炸两</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3554,8 +3559,8 @@
             <thead id="cuisine-zh-u-sd-cnjs">
                 <tr>
                     <th scope="col" colspan="3" class="dishes-table-section-header">
-                        <span class="cuisine-name">Chinese—Jiangsu & Shanghai</span><br>
-                        <span class="cuisine-description">苏/蘇 (Sū) and 沪/滬 (Hù) cuisines, from Eastern China</span>
+                        <h4 class="cuisine-name">Chinese—Jiangnan</h4>
+                        <p class="cuisine-description">Jiangnan (including Jiangsu, Shanghai, Zhejiang) cuisine, from Eastern China, is known for dishes with refined flavors and delicate textures</p>
                     </th>
                 </tr>
             </thead>
@@ -3570,7 +3575,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sister_Song%27s_Fish_Soup_%28%E5%AE%8B%E5%AB%82%E9%AD%9A%E7%BE%B9%29.png/440px-Sister_Song%27s_Fish_Soup_%28%E5%AE%8B%E5%AB%82%E9%AD%9A%E7%BE%B9%29.png" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宋嫂鱼羹"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=宋嫂鱼羹', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">宋嫂鱼羹</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3608,7 +3613,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Shanghai_Nian_cake.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=炒年糕"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=炒年糕', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">炒年糕</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3647,7 +3652,7 @@
                             class="btn btn-light btn-googleimage"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=西湖牛肉羹', 'googleimage')">🖼️ 🔎</button>
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">西湖牛肉羹</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3661,7 +3666,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3679,10 +3684,10 @@
                     <td class="dishes-table-image-column">
 
                         <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Xiaolongbao-breakfast.jpg/128px-Xiaolongbao-breakfast.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=小笼包"
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Xiaolongbao.jpg/2560px-Xiaolongbao.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=小笼包"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=小笼包', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">小笼包</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3714,8 +3719,8 @@
             <thead id="cuisine-zh-u-sd-cnsc">
                 <tr>
                     <th scope="col" colspan="3" class="dishes-table-section-header">
-                        <span class="cuisine-name">Chinese—Sichuan</span><br>
-                        <span class="cuisine-description">川 (Chuān) cuisine, from Western China</span>
+                        <h4 class="cuisine-name">Chinese—Sichuan</h4>
+                        <p class="cuisine-description">Sichuan (Chuān, 川) cuisine, from Western China, is famous for its bold and spicy flavors, often featuring numbing Sichuan peppercorns and fiery chili peppers</p>
                     </th>
                 </tr>
             </thead>
@@ -3730,7 +3735,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mayishangshu.jpg/128px-Mayishangshu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蚂蚁上树"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蚂蚁上树', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">蚂蚁上树</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3768,7 +3773,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bon_bon_chicken_with_sauce.jpg/440px-Bon_bon_chicken_with_sauce.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=棒棒鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=棒棒鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">棒棒鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3806,7 +3811,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=担担面"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=担担面', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">担担面</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3844,7 +3849,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干锅鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=干锅鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">干锅鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3882,7 +3887,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg/2560px-Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干煸四季豆"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=干煸四季豆', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">干煸四季豆</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3896,7 +3901,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3917,7 +3922,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=夫妻肺片"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=夫妻肺片', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">夫妻肺片</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3931,7 +3936,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3955,7 +3960,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ping_SJ_hot_%26_sour_soup.JPG/128px-Ping_SJ_hot_%26_sour_soup.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸辣汤"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=酸辣汤', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">酸辣汤</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -3969,7 +3974,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3993,7 +3998,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宫保鸡丁"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=宫保鸡丁', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">宫保鸡丁</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4007,7 +4012,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4031,7 +4036,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=辣子鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=辣子鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">辣子鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4045,7 +4050,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4069,7 +4074,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=毛血旺"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=毛血旺', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">毛血旺</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4083,7 +4088,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4107,7 +4112,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=麻婆豆腐"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=麻婆豆腐', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">麻婆豆腐</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4121,7 +4126,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4145,7 +4150,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=口水鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=口水鸡', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">口水鸡</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4159,7 +4164,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4183,7 +4188,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮牛肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮牛肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">水煮牛肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4197,7 +4202,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4221,7 +4226,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮鱼"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮鱼', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">水煮鱼</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4235,7 +4240,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4259,7 +4264,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸菜鱼"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=酸菜鱼', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">酸菜鱼</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4273,7 +4278,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4297,7 +4302,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Zhangcha_Duck_at_Restaurant_Zen%2C_Qianmen_%2820211008185323%29.jpg/440px-Zhangcha_Duck_at_Restaurant_Zen%2C_Qianmen_%2820211008185323%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=樟茶鸭"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=樟茶鸭', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">樟茶鸭</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4335,7 +4340,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=回锅肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=回锅肉', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">回锅肉</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4349,7 +4354,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4373,7 +4378,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/440px-Yuxiangqiezi.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香茄子"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香茄子', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">鱼香茄子</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4387,7 +4392,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4411,7 +4416,7 @@
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香肉丝"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香肉丝', 'googleimage')">
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">鱼香肉丝</span><br>
                             <!-- Known Dish 'name_en' -->
@@ -4425,7 +4430,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                                <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">

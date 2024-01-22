@@ -12,7 +12,8 @@
     <style>
         .dishes-table-section-header {
             padding-top: 1rem !important;
-            padding-bottom: 1rem !important;
+            padding-bottom: 0.5rem !important;
+            line-height: 1.2;
         }
 
         .cuisine-description {
@@ -29,6 +30,10 @@
             width: 128px;
             height: 128px;
             object-fit: cover;
+        }
+
+        .dishes-table-text-column {
+            line-height: 1.2;
         }
 
         .dishes-table-menuaction-column {
@@ -102,8 +107,8 @@
             <thead id="cuisine-{{ locale_dish_group.locale_code }}">
                 <tr>
                     <th scope="col" colspan="3" class="dishes-table-section-header">
-                        <span class="cuisine-name">{{ locale_dish_group.cuisine_name_en }}</span><br>
-                        <span class="cuisine-description">{{ locale_dish_group.cuisine_description_en }}</span>
+                        <h4 class="cuisine-name">{{ locale_dish_group.cuisine_name_en }}</h4>
+                        <p class="cuisine-description">{{ locale_dish_group.cuisine_description_en }}</p>
                     </th>
                 </tr>
             </thead>
@@ -127,7 +132,7 @@
                             onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">🖼️ 🔎</button>
                         {% endif %}
                     </td>
-                    <td>
+                    <td class="dishes-table-text-column">
                         <div class="dish-name-div">
                             <span class="dish-name-primary">{{ primary_name_native }}</span><br>
                             <!-- Known Dish 'name_en' -->
