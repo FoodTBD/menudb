@@ -444,6 +444,7 @@ def generate_dishes_html(
 def generate_stats_html(
     menu_yaml_dicts: list[dict[str, Any]],
     known_terms_lookup_dict: dict[str, dict[str, Any]],
+    known_dishes: list[dict[str, Any]],
     known_dish_lookup_dict: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
@@ -460,6 +461,7 @@ def generate_stats_html(
     template = env.get_template("templates/stats_template.j2")
     rendered_html = template.render(
         menu_stats=menu_stats,
+        known_dishes=known_dishes,
         known_terms_lookup_dict=known_terms_lookup_dict,
         known_dish_lookup_dict=known_dish_lookup_dict,
     )
@@ -511,6 +513,7 @@ def main(input_dir: str, output_dir: str):
     generate_stats_html(
         list(menu_filename_to_menu_yaml_dict.values()),
         known_terms_lookup_dict,
+        known_dishes,
         known_dish_lookup_dict,
         output_path,
     )

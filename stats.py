@@ -1,6 +1,7 @@
 import collections
 import csv
 from collections import defaultdict
+import itertools
 from typing import Any
 
 UNKNOWN_CHAR_PLACEHOLDER = "🟨"
@@ -43,6 +44,37 @@ def load_eatsdb_names() -> list[str]:
     return dish_names
 
 
+def _generate_partitions(input_string: str) -> list[list[str]]:
+    """
+    Input: "AAA"
+    Output: [['A', 'B', 'C'], ['A', 'BC'], ['AB', 'C'], ['ABC']]
+    """
+    n = len(input_string)
+    results = []
+
+    # Iterate over all possible combinations of splitting points
+    for split_points in itertools.product([True, False], repeat=n - 1):
+        split_points = (
+            False,
+        ) + split_points  # Add a False at the start for correct indexing
+        partition = []
+        current_partition = input_string[0]
+
+        for i in range(1, n):
+            if split_points[i]:
+                # If True, start a new partition
+                partition.append(current_partition)
+                current_partition = input_string[i]
+            else:
+                # If False, continue the current partition
+                current_partition += input_string[i]
+
+        partition.append(current_partition)  # Add the last partition
+        results.append(partition)
+
+    return results
+
+
 def gather_menu_stats(
     menu_yaml_dicts: list[dict[str, Any]],
     known_terms_lookup_dict: dict[str, Any],
@@ -82,7 +114,7 @@ def gather_menu_stats(
     if top_chars_not_known:
         print(f"Top characters not present in known_terms: {top_chars_not_known}")
 
-    top_characters = character_counter.most_common(10)
+    top_characters = character_counter.most_common(50)
     # Enrich tuples with English definitions
     top_characters = [
         (k, v, known_terms_lookup_dict.get(k, {}).get("en", UNKNOWN_CHAR_PLACEHOLDER))
@@ -97,21 +129,27 @@ def gather_menu_stats(
 
     # Find top 3-grams
     top_3gram_tuples = []
-    for k, v in find_top_ngrams(alpha_primary_names, 3, 50):
-        if v >= 3:
-            # Enrich tuples with English definitions
-            en = known_terms_lookup_dict.get(k, {}).get("en")
-            if en:
-                en = f'"{en}"'
-            else:
-                en = " + ".join(
-                    [
-                        f'"{known_terms_lookup_dict.get(c, {}).get("en", UNKNOWN_CHAR_PLACEHOLDER)}"'
-                        for c in k
-                    ]
-                )
-            t = (k, v, en)
-            top_3gram_tuples.append(t)
+    for ngram, count in find_top_ngrams(alpha_primary_names, 3, 50):
+        # Filter out low-frequency results
+        if count < 3:
+            continue
+
+        # Enrich tuples with English definitions
+        best_en = None
+        for terms_zh in _generate_partitions(ngram):
+            terms_en = []
+            for term_zh in terms_zh:
+                term_en = known_terms_lookup_dict.get(term_zh, {}).get("en")
+                terms_en.append(term_en)
+            en = " + ".join(
+                [f'"{s}"' if s else f'"{UNKNOWN_CHAR_PLACEHOLDER}"' for s in terms_en]
+            )
+            if any(terms_en):
+                best_en = en
+            if all(terms_en):
+                break
+        t = (ngram, count, best_en)
+        top_3gram_tuples.append(t)
 
     top_3grams = [t[0] for t in top_3gram_tuples]
 
