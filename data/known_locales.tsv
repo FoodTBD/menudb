@@ -1,3 +1,5 @@
-locale_code	cuisine_name_en	tts_lang_code
-zh	Chinese	zh-CN
-zh-u-sd-cngd	Chinese - Cantonese	zh-CN,zh-HK
+locale_code	tts_lang_code	cuisine_name_en	cuisine_description_en	wikipedia_url
+zh	zh	Chinese	Cuisine of the Chinese disapora, including Taiwan and United States	https://en.wikipedia.org/wiki/Chinese_cuisine
+zh-u-sd-cngd	zh-CN,zh-HK	Chinese—Cantonese	粤/粵 (Yuè) cuisine, from Southern China	https://en.wikipedia.org/wiki/Cantonese_cuisine
+zh-u-sd-cnsc	zh-CN	Chinese—Sichuan	川 (Chuān) cuisine, from Western China	https://en.wikipedia.org/wiki/Sichuan_cuisine
+zh-u-sd-cnjs	zh-CN	Chinese—Jiangsu & Shanghai	苏/蘇 (Sū) and 沪/滬 (Hù) cuisines, from Eastern China	https://en.wikipedia.org/wiki/Jiangsu_cuisine

@@ -30,6 +30,22 @@ def prepare_output_dir(output_dir: str) -> None:
     shutil.copytree(STATIC_DIR, output_static_dir)
 
 
+def load_known_locales() -> dict[str, dict[str, Any]]:
+    known_locales = []
+    with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
+        csvreader = csv.DictReader(csvfile, delimiter="\t")
+        for row in csvreader:
+            assert any(row.values()), "ERROR: known_locales has empty lines"
+            known_locales.append(row)
+
+    # Map locale_code to locale dict
+    known_dish_lookup_dict = {}
+    for known_locale in known_locales:
+        locale_code = known_locale["locale_code"]
+        known_dish_lookup_dict[locale_code] = known_locale
+    return known_dish_lookup_dict
+
+
 def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
     known_terms = []
     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
@@ -107,22 +123,6 @@ def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]
             known_dish["locale_code"] = known_dish.pop("dish_cuisine")
             known_dishes.append(known_dish)
     return known_terms_lookup_dict, known_dishes
-
-
-def load_known_locales() -> dict[str, dict[str, Any]]:
-    known_locales = []
-    with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
-        csvreader = csv.DictReader(csvfile, delimiter="\t")
-        for row in csvreader:
-            assert any(row.values()), "ERROR: known_locales has empty lines"
-            known_locales.append(row)
-
-    # Map locale_code to locale dict
-    known_dish_lookup_dict = {}
-    for known_locale in known_locales:
-        locale_code = known_locale["locale_code"]
-        known_dish_lookup_dict[locale_code] = known_locale
-    return known_dish_lookup_dict
 
 
 def _slugify(s: str) -> str:
@@ -423,6 +423,7 @@ def generate_dishes_html(
         locale_dishes = sorted(locale_dishes, key=lambda d: d["name_en"])
         locale_dish_group = {**locale_dict, "dishes": locale_dishes}
         locale_dish_groups.append(locale_dish_group)
+    locale_dish_groups = sorted(locale_dish_groups, key=lambda d: d["cuisine_name_en"])
 
     env = Environment(loader=FileSystemLoader("."))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control

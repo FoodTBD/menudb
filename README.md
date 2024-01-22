@@ -154,7 +154,10 @@ Language Code | Meaning
 ----- | -----
 `zh` | Chinese (cuisine of the Chinese diaspora, including outside of People's Republic of China)
 `zh-u-sd-cngd` | Chinese ([Guangdong province](https://en.wikipedia.org/wiki/Guangdong)), i.e. Cantonese cuisine
+`zh-u-sd-cnjs` | Chinese ([Jiangsu province](https://en.wikipedia.org/wiki/Jiangsu)), i.e. Jiangsu cuisine
 `zh-u-sd-cnsc` | Chinese ([Sichuan province](https://en.wikipedia.org/wiki/Sichuan)), i.e. Szechuan cuisine
+
+See https://www.unicode.org/cldr/charts/43/supplemental/territory_subdivisions.html#CN for additional country subdivision codes.
 
 Locales are defined in the `known_locales.tsv`, which comes from the same Google Sheet as `known_terms.tsv`.
 

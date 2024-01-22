@@ -10,6 +10,17 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <style>
+        .dishes-table-section-header {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+
+        .cuisine-description {
+            font-weight: lighter;
+            font-size: small;
+            color: #6c757d;
+        }
+
         .dishes-table-image-column {
             padding-left: 0 !important;
         }
@@ -74,8 +85,10 @@
 
         <!-- Table of Contents -->
         <ul>
-            <li><a href="#cuisine-zh">Chinese (50)</a></li>
-            <li><a href="#cuisine-zh-u-sd-cngd">Chinese - Cantonese (59)</a></li>
+            <li><a href="#cuisine-zh">Chinese (24)</a></li>
+            <li><a href="#cuisine-zh-u-sd-cngd">Chinese—Cantonese (62)</a></li>
+            <li><a href="#cuisine-zh-u-sd-cnjs">Chinese—Jiangsu & Shanghai (4)</a></li>
+            <li><a href="#cuisine-zh-u-sd-cnsc">Chinese—Sichuan (19)</a></li>
         </ul>
 
         <!-- Filter Input -->
@@ -84,89 +97,16 @@
         </div>
 
         <!-- Dish Table -->
-        <table id="dataTable" class="table">
+        <table class="table" id="dataTable">
             <thead id="cuisine-zh">
                 <tr>
-                    <th colspan="3">Chinese</th>
+                    <th scope="col" colspan="3" class="dishes-table-section-header">
+                        <span class="cuisine-name">Chinese</span><br>
+                        <span class="cuisine-description">Cuisine of the Chinese disapora, including Taiwan and United States</span>
+                    </th>
                 </tr>
             </thead>
             <tbody>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mayishangshu.jpg/128px-Mayishangshu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蚂蚁上树"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=蚂蚁上树', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">蚂蚁上树</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Ants Climbing a Tree</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Sichuan glass noodles stir-fried with minced meat and vegetables
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('蚂蚁上树', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Ants_climbing_a_tree"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Ants_climbing_a_tree', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bon_bon_chicken_with_sauce.jpg/440px-Bon_bon_chicken_with_sauce.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=棒棒鸡"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=棒棒鸡', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">棒棒鸡</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Bang Bang Chicken</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Sichuan shredded chicken, served cold and dressed with a spicy sauce
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('棒棒鸡', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Bang_bang_chicken"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Bang_bang_chicken', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
                 <!-- Known Dish -->
                 <tr>
                     <!-- Known Dish 'name_native' -->
@@ -343,124 +283,13 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
+                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
 
                         <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
                             onclick="speakText('孜然羊肉', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=担担面"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=担担面', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">担担面</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Dandan Noodles</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Spicy Sichuan noodles with minced pork and peanuts
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('担担面', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Dandan_noodles"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Dandan_noodles', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干锅鸡"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=干锅鸡', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">干锅鸡</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Dry Pot Chicken</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Spicy chicken cooked in a dry pot with mixed vegetables
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="lillakina.html">Lilla Kina</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('干锅鸡', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Dry_pot_chicken"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Dry_pot_chicken', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg/2560px-Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干煸四季豆"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=干煸四季豆', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">干煸四季豆</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Dry-Fried Green Beans</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Dry-fried green beans mixed with minced pork or preserved vegetables
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('干煸四季豆', 'zh')">🗣️</button><br>
 
                         <!-- Known Dish 'wikipedia_url' -->
                     </td>
@@ -490,7 +319,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
+                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -499,44 +328,6 @@
                             onclick="speakText('生滚鱼片粥', 'zh')">🗣️</button><br>
 
                         <!-- Known Dish 'wikipedia_url' -->
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=夫妻肺片"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=夫妻肺片', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">夫妻肺片</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Fuqi Feipian</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Sichuan beef salad with tripe and tongue slices
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('夫妻肺片', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Fuqi_feipian"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_feipian', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -563,7 +354,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -602,7 +393,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -611,44 +402,6 @@
                             onclick="speakText('家常豆腐', 'zh')">🗣️</button><br>
 
                         <!-- Known Dish 'wikipedia_url' -->
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ping_SJ_hot_%26_sour_soup.JPG/128px-Ping_SJ_hot_%26_sour_soup.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸辣汤"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=酸辣汤', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">酸辣汤</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Hot and Sour Soup</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Spicy, tangy soup with vegetables, tofu, and optional meat
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('酸辣汤', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Hot_and_sour_soup"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Hot_and_sour_soup', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -735,196 +488,6 @@
                     <td class="dishes-table-image-column">
 
                         <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宫保鸡丁"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=宫保鸡丁', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">宫保鸡丁</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Kung Pao Chicken</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Spicy chicken stir-fry with peanuts and chili peppers
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('宫保鸡丁', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Kung_Pao_chicken"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=辣子鸡"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=辣子鸡', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">辣子鸡</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Laziji</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Sichuan deep-fried chicken with peppercorns and chilies
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('辣子鸡', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Laziji"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lemon_Chicken_in_Hong_Kong.jpg/320px-Lemon_Chicken_in_Hong_Kong.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=柠檬鸡"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=柠檬鸡', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">柠檬鸡</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Lemon Chicken</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Crispy chicken in a fresh lemon sauce
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('柠檬鸡', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Lemon_chicken"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Lemon_chicken', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=毛血旺"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=毛血旺', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">毛血旺</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Maoxuewang</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Spicy Sichuan broth with pig blood curd, tripe, and vegetables
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('毛血旺', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=麻婆豆腐"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=麻婆豆腐', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">麻婆豆腐</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Mapo Tofu</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Spicy Sichuan tofu with minced meat in bean sauce
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('麻婆豆腐', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Mapo_tofu"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Mongolian_Beef.jpg/128px-Mongolian_Beef.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蒙古牛肉"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=蒙古牛肉', 'googleimage')">
                     </td>
@@ -942,7 +505,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1001,44 +564,6 @@
                     <td class="dishes-table-image-column">
 
                         <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=口水鸡"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=口水鸡', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">口水鸡</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Mouthwatering Chicken</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Sichuan chicken in spicy, garlicky chili oil sauce
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('口水鸡', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Flickr_preppybyday_4786746354--Orange_chicken.jpg/128px-Flickr_preppybyday_4786746354--Orange_chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=陈皮鸡"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=陈皮鸡', 'googleimage')">
                     </td>
@@ -1056,7 +581,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1144,45 +669,6 @@
                         <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Peking_duck"
                             class="btn btn-light btn-menuaction btn-wikipedia"
                             onclick="openLink('https://en.wikipedia.org/wiki/Peking_duck', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=凤眼饺" type="button"
-                            class="btn btn-light btn-googleimage"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=凤眼饺', 'googleimage')">🖼️ 🔎</button>
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">凤眼饺</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Phoenix Eye Dumpling</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('凤眼饺', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%B3%B3%E7%9C%BC%E9%A4%83"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%B3%B3%E7%9C%BC%E9%A4%83', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -1283,7 +769,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1334,120 +820,6 @@
                         <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Mandarin_roll"
                             class="btn btn-light btn-menuaction btn-wikipedia"
                             onclick="openLink('https://en.wikipedia.org/wiki/Mandarin_roll', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮牛肉"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮牛肉', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">水煮牛肉</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Shuizhu Beef</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Poached beef in a spicy, flavorful Sichuan broth
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('水煮牛肉', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮鱼"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮鱼', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">水煮鱼</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Shuizhu Fish</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Poached fish in a spicy, flavorful Sichuan broth
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('水煮鱼', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sister_Song%27s_Fish_Soup_%28%E5%AE%8B%E5%AB%82%E9%AD%9A%E7%BE%B9%29.png/440px-Sister_Song%27s_Fish_Soup_%28%E5%AE%8B%E5%AB%82%E9%AD%9A%E7%BE%B9%29.png" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宋嫂鱼羹"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=宋嫂鱼羹', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">宋嫂鱼羹</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Sister Song’s Fish Soup</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Freshwater fish slices in a delicate broth
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('宋嫂鱼羹', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -1509,7 +881,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -1565,44 +937,6 @@
                     <td class="dishes-table-image-column">
 
                         <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Shanghai_Nian_cake.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=炒年糕"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=炒年糕', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">炒年糕</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Stir-Fried Nian Gao</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Savory chewy rice cakes stir-fried with vegetables and meat
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('炒年糕', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG/128px-%E7%95%AA%E8%8C%84%E7%82%92%E8%9B%8B2.PNG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=番茄炒蛋"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=番茄炒蛋', 'googleimage')">
                     </td>
@@ -1632,44 +966,6 @@
                         <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs"
                             class="btn btn-light btn-menuaction btn-wikipedia"
                             onclick="openLink('https://en.wikipedia.org/wiki/Stir-fried_tomato_and_scrambled_eggs', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸菜鱼"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=酸菜鱼', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">酸菜鱼</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Suancai Fish</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Poached fish in broth with pickled vegetables
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('酸菜鱼', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -1710,274 +1006,13 @@
                             onclick="openLink('https://en.wikipedia.org/wiki/Tangbao', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg/128px-Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=汤圆"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=汤圆', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">汤圆</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Tangyuan</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Glutinous rice balls with sweet filling, served in broth
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('汤圆', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Tangyuan_(food)"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Tangyuan_(food)', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Zhangcha_Duck_at_Restaurant_Zen%2C_Qianmen_%2820211008185323%29.jpg/440px-Zhangcha_Duck_at_Restaurant_Zen%2C_Qianmen_%2820211008185323%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=樟茶鸭"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=樟茶鸭', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">樟茶鸭</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Tea-Smoked Duck</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Duck marinated and hot-smoked, then roasted or fried
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('樟茶鸭', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Zhangcha_duck"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Zhangcha_duck', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=回锅肉"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=回锅肉', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">回锅肉</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Twice-Cooked Pork</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Pork stir-fried with vegetables and spices
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('回锅肉', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Twice-cooked_pork"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Twice-cooked_pork', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=西湖牛肉羹" type="button"
-                            class="btn btn-light btn-googleimage"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=西湖牛肉羹', 'googleimage')">🖼️ 🔎</button>
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">西湖牛肉羹</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">West Lake Beef Soup</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Thick beef soup with egg whites and coriander
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('西湖牛肉羹', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Xiaolongbao-breakfast.jpg/128px-Xiaolongbao-breakfast.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=小笼包"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=小笼包', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">小笼包</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Xiaolongbao</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Steamed thin-skinned soup dumplings, filled with meat or seafood and a hot broth
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('小笼包', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Xiaolongbao"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Xiaolongbao', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/440px-Yuxiangqiezi.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香茄子"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香茄子', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">鱼香茄子</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Yuxiang Eggplant</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Eggplant in a spicy garlic sauce
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('鱼香茄子', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Yuxiang"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
-                <!-- Known Dish -->
-                <tr>
-                    <!-- Known Dish 'name_native' -->
-
-                    <td class="dishes-table-image-column">
-
-                        <!-- Known Dish 'image_url' -->
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香肉丝"
-                            onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香肉丝', 'googleimage')">
-                    </td>
-                    <td>
-                        <div class="dish-name-div">
-                            <span class="dish-name-primary">鱼香肉丝</span><br>
-                            <!-- Known Dish 'name_en' -->
-                            <span class="dish-name-secondary">Yuxiang Shredded Pork</span>
-                        </div>
-                        <div class="dish-description-div">
-                            <span class="dish-description">
-                                <!-- Known Dish 'description_en' -->
-                                Shredded pork in a spicy garlic sauce
-                            </span>
-                        </div>
-                        <div class="dish-foundin-menus-div">
-                            <span class="dish-foundin-menus">
-                                <a href="yummyking.html">Yummy King</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
-                        </div>
-                    </td>
-                    <td class="dishes-table-menuaction-column">
-
-                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('鱼香肉丝', 'zh')">🗣️</button><br>
-
-                        <!-- Known Dish 'wikipedia_url' -->
-                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork"
-                            class="btn btn-light btn-menuaction btn-wikipedia"
-                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button><br>
-                    </td>
-                </tr>
             </tbody>
             <thead id="cuisine-zh-u-sd-cngd">
                 <tr>
-                    <th colspan="3">Chinese - Cantonese</th>
+                    <th scope="col" colspan="3" class="dishes-table-section-header">
+                        <span class="cuisine-name">Chinese—Cantonese</span><br>
+                        <span class="cuisine-description">粤/粵 (Yuè) cuisine, from Southern China</span>
+                    </th>
                 </tr>
             </thead>
             <tbody>
@@ -2005,7 +1040,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="winnerhouse.html">Winner House</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2043,7 +1078,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2166,7 +1201,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2617,7 +1652,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -2798,6 +1833,47 @@
                         <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Kuih#Chinese_kuih"
                             class="btn btn-light btn-menuaction btn-wikipedia"
                             onclick="openLink('https://en.wikipedia.org/wiki/Kuih#Chinese_kuih', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Lemon_Chicken_in_Hong_Kong.jpg/320px-Lemon_Chicken_in_Hong_Kong.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=柠檬鸡"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=柠檬鸡', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">柠檬鸡</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Lemon Chicken</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Crispy chicken in a fresh lemon sauce
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
+                            class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('柠檬鸡', 'zh-HK')">🗣️粵</button><br>
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('柠檬鸡', 'zh-CN')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Lemon_chicken"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Lemon_chicken', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -3085,6 +2161,48 @@
                         <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Ox-tongue_pastry"
                             class="btn btn-light btn-menuaction btn-wikipedia"
                             onclick="openLink('https://en.wikipedia.org/wiki/Ox-tongue_pastry', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=凤眼饺" type="button"
+                            class="btn btn-light btn-googleimage"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=凤眼饺', 'googleimage')">🖼️ 🔎</button>
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">凤眼饺</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Phoenix Eye Dumpling</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
+                            class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('凤眼饺', 'zh-HK')">🗣️粵</button><br>
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('凤眼饺', 'zh-CN')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%B3%B3%E7%9C%BC%E9%A4%83"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%B3%B3%E7%9C%BC%E9%A4%83', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
                 <!-- Known Dish -->
@@ -3477,7 +2595,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="lillakina.html">Lilla Kina</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3723,7 +2841,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3764,7 +2882,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3805,7 +2923,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -3949,6 +3067,47 @@
                     <td class="dishes-table-image-column">
 
                         <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg/128px-Pumpkin_tangyuan_%28%E6%B1%A4%E5%9C%86%29_with_red_bean_baste_and_black_sesame_fillings.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=汤圆"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=汤圆', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">汤圆</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Tangyuan</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Glutinous rice balls with sweet filling, served in broth
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
+                            class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('汤圆', 'zh-HK')">🗣️粵</button><br>
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('汤圆', 'zh-CN')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Tangyuan_(food)"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Tangyuan_(food)', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Fried_taro_cake.jpg/128px-Fried_taro_cake.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=芋角"
                             onclick="openLink('https://www.google.com/search?tbm=isch&q=芋角', 'googleimage')">
                     </td>
@@ -4007,7 +3166,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4128,7 +3287,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="restaurangshogun.html">Restaurang Shogun</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangshogun.html">Restaurang Shogun</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4292,7 +3451,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="restaurangming.html">Restaurang Ming</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4333,7 +3492,7 @@
                         </div>
                         <div class="dish-foundin-menus-div">
                             <span class="dish-foundin-menus">
-                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>                            </span>
+                                <a href="winnerhouse.html">Winner House</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>                            </span>
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
@@ -4389,6 +3548,895 @@
                         <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Zhaliang"
                             class="btn btn-light btn-menuaction btn-wikipedia"
                             onclick="openLink('https://en.wikipedia.org/wiki/Zhaliang', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+            </tbody>
+            <thead id="cuisine-zh-u-sd-cnjs">
+                <tr>
+                    <th scope="col" colspan="3" class="dishes-table-section-header">
+                        <span class="cuisine-name">Chinese—Jiangsu & Shanghai</span><br>
+                        <span class="cuisine-description">苏/蘇 (Sū) and 沪/滬 (Hù) cuisines, from Eastern China</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Sister_Song%27s_Fish_Soup_%28%E5%AE%8B%E5%AB%82%E9%AD%9A%E7%BE%B9%29.png/440px-Sister_Song%27s_Fish_Soup_%28%E5%AE%8B%E5%AB%82%E9%AD%9A%E7%BE%B9%29.png" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宋嫂鱼羹"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=宋嫂鱼羹', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">宋嫂鱼羹</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Sister Song’s Fish Soup</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Freshwater fish slices in a delicate broth
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('宋嫂鱼羹', 'zh-u-sd-cnjs')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Emperor_Gaozong_of_Song#Sister_Song's_Fish_Soup', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Shanghai_Nian_cake.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=炒年糕"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=炒年糕', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">炒年糕</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Stir-Fried Nian Gao</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Savory chewy rice cakes stir-fried with vegetables and meat
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('炒年糕', 'zh-u-sd-cnjs')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Nian_gao#Jiangnan_and_Shanghainese_cuisine', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=西湖牛肉羹" type="button"
+                            class="btn btn-light btn-googleimage"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=西湖牛肉羹', 'googleimage')">🖼️ 🔎</button>
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">西湖牛肉羹</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">West Lake Beef Soup</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Thick beef soup with egg whites and coriander
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('西湖牛肉羹', 'zh-u-sd-cnjs')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Xiaolongbao-breakfast.jpg/128px-Xiaolongbao-breakfast.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=小笼包"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=小笼包', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">小笼包</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Xiaolongbao</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Steamed thin-skinned soup dumplings, filled with meat or seafood and a hot broth
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="shanghaifamily.html">Shanghai Family Restaurant</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('小笼包', 'zh-u-sd-cnjs')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Xiaolongbao"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Xiaolongbao', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+            </tbody>
+            <thead id="cuisine-zh-u-sd-cnsc">
+                <tr>
+                    <th scope="col" colspan="3" class="dishes-table-section-header">
+                        <span class="cuisine-name">Chinese—Sichuan</span><br>
+                        <span class="cuisine-description">川 (Chuān) cuisine, from Western China</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Mayishangshu.jpg/128px-Mayishangshu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蚂蚁上树"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=蚂蚁上树', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">蚂蚁上树</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Ants Climbing a Tree</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Sichuan glass noodles stir-fried with minced meat and vegetables
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('蚂蚁上树', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Ants_climbing_a_tree"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Ants_climbing_a_tree', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Bon_bon_chicken_with_sauce.jpg/440px-Bon_bon_chicken_with_sauce.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=棒棒鸡"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=棒棒鸡', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">棒棒鸡</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Bang Bang Chicken</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Sichuan shredded chicken, served cold and dressed with a spicy sauce
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('棒棒鸡', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Bang_bang_chicken"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Bang_bang_chicken', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Dan-dan_noodles%2C_Shanghai.jpg/128px-Dan-dan_noodles%2C_Shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=担担面"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=担担面', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">担担面</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Dandan Noodles</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Spicy Sichuan noodles with minced pork and peanuts
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('担担面', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Dandan_noodles"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Dandan_noodles', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干锅鸡"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=干锅鸡', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">干锅鸡</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Dry Pot Chicken</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Spicy chicken cooked in a dry pot with mixed vegetables
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="lillakina.html">Lilla Kina</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('干锅鸡', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Dry_pot_chicken"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Dry_pot_chicken', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg/2560px-Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=干煸四季豆"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=干煸四季豆', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">干煸四季豆</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Dry-Fried Green Beans</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Dry-fried green beans mixed with minced pork or preserved vegetables
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('干煸四季豆', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=夫妻肺片"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=夫妻肺片', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">夫妻肺片</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Fuqi Feipian</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Sichuan beef salad with tripe and tongue slices
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('夫妻肺片', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Fuqi_feipian"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Fuqi_feipian', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ping_SJ_hot_%26_sour_soup.JPG/128px-Ping_SJ_hot_%26_sour_soup.JPG" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸辣汤"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=酸辣汤', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">酸辣汤</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Hot and Sour Soup</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Spicy, tangy soup with vegetables, tofu, and optional meat
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('酸辣汤', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Hot_and_sour_soup"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Hot_and_sour_soup', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Kung-pao-shanghai.jpg/128px-Kung-pao-shanghai.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=宫保鸡丁"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=宫保鸡丁', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">宫保鸡丁</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Kung Pao Chicken</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Spicy chicken stir-fry with peanuts and chili peppers
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('宫保鸡丁', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Kung_Pao_chicken"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Kung_Pao_chicken', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg/128px-La_Zi_Ji_%28Chicken_with_Chiles%29_%282269517013%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=辣子鸡"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=辣子鸡', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">辣子鸡</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Laziji</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Sichuan deep-fried chicken with peppercorns and chilies
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('辣子鸡', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Laziji"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Laziji', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=毛血旺"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=毛血旺', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">毛血旺</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Maoxuewang</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Spicy Sichuan broth with pig blood curd, tripe, and vegetables
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('毛血旺', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=麻婆豆腐"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=麻婆豆腐', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">麻婆豆腐</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Mapo Tofu</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Spicy Sichuan tofu with minced meat in bean sauce
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="lillakina.html">Lilla Kina</a>,                                 <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="hinglung.html">Hing Lung Ramen</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('麻婆豆腐', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Mapo_tofu"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Mapo_tofu', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Koushuiji.jpg/128px-Koushuiji.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=口水鸡"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=口水鸡', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">口水鸡</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Mouthwatering Chicken</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Sichuan chicken in spicy, garlicky chili oil sauce
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('口水鸡', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E5%8F%A3%E6%B0%B4%E9%9B%9E', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Shuizhuniurou.jpg/128px-Shuizhuniurou.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮牛肉"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮牛肉', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">水煮牛肉</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Shuizhu Beef</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Poached beef in a spicy, flavorful Sichuan broth
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="hemmahosdong.html">Hemma Hos Dong</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('水煮牛肉', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Shuizhuyu_at_Hamarkand_Silk_Road_Cuisine%2C_Beiqinglu_%2820230121154615%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=水煮鱼"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=水煮鱼', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">水煮鱼</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Shuizhu Fish</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Poached fish in a spicy, flavorful Sichuan broth
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('水煮鱼', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Shuizhu"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Shuizhu', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg/128px-%E9%85%B8%E8%8F%9C%E9%B1%BC_Preserved_Mustard_Green_with_Fish_-_Charming_Spice_AUD24.80_%284104355401%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=酸菜鱼"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=酸菜鱼', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">酸菜鱼</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Suancai Fish</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Poached fish in broth with pickled vegetables
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="yummyking.html">Yummy King</a>,                                 <a href="lillakina.html">Lilla Kina</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('酸菜鱼', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://translate.google.com/translate?sl=auto&tl=en&u=https://zh.wikipedia.org/wiki/%E9%85%B8%E8%8F%9C%E9%B1%BC', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Zhangcha_Duck_at_Restaurant_Zen%2C_Qianmen_%2820211008185323%29.jpg/440px-Zhangcha_Duck_at_Restaurant_Zen%2C_Qianmen_%2820211008185323%29.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=樟茶鸭"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=樟茶鸭', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">樟茶鸭</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Tea-Smoked Duck</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Duck marinated and hot-smoked, then roasted or fried
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="xlbkitchen.html">XLB Kitchen</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('樟茶鸭', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Zhangcha_duck"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Zhangcha_duck', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=回锅肉"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=回锅肉', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">回锅肉</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Twice-Cooked Pork</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Pork stir-fried with vegetables and spices
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('回锅肉', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Twice-cooked_pork"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Twice-cooked_pork', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/440px-Yuxiangqiezi.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香茄子"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香茄子', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">鱼香茄子</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Yuxiang Eggplant</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Eggplant in a spicy garlic sauce
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="goldenpalace.html">Golden Palace Restaurant</a>,                                 <a href="xlbkitchen.html">XLB Kitchen</a>,                                 <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="winnerhouse.html">Winner House</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('鱼香茄子', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Yuxiang"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang', 'wikipedia')">W</button><br>
+                    </td>
+                </tr>
+                <!-- Known Dish -->
+                <tr>
+                    <!-- Known Dish 'name_native' -->
+
+                    <td class="dishes-table-image-column">
+
+                        <!-- Known Dish 'image_url' -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=鱼香肉丝"
+                            onclick="openLink('https://www.google.com/search?tbm=isch&q=鱼香肉丝', 'googleimage')">
+                    </td>
+                    <td>
+                        <div class="dish-name-div">
+                            <span class="dish-name-primary">鱼香肉丝</span><br>
+                            <!-- Known Dish 'name_en' -->
+                            <span class="dish-name-secondary">Yuxiang Shredded Pork</span>
+                        </div>
+                        <div class="dish-description-div">
+                            <span class="dish-description">
+                                <!-- Known Dish 'description_en' -->
+                                Shredded pork in a spicy garlic sauce
+                            </span>
+                        </div>
+                        <div class="dish-foundin-menus-div">
+                            <span class="dish-foundin-menus">
+                                <a href="sichuanrestaurang.html">Sichuan Restaurang</a>,                                 <a href="shanghaifamily.html">Shanghai Family Restaurant</a>,                                 <a href="yummyking.html">Yummy King</a>                            </span>
+                        </div>
+                    </td>
+                    <td class="dishes-table-menuaction-column">
+
+                        <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
+                            onclick="speakText('鱼香肉丝', 'zh-u-sd-cnsc')">🗣️</button><br>
+
+                        <!-- Known Dish 'wikipedia_url' -->
+                        <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Yuxiang_shredded_pork"
+                            class="btn btn-light btn-menuaction btn-wikipedia"
+                            onclick="openLink('https://en.wikipedia.org/wiki/Yuxiang_shredded_pork', 'wikipedia')">W</button><br>
                     </td>
                 </tr>
             </tbody>
