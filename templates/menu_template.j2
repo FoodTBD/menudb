@@ -117,6 +117,7 @@
         <!-- Navigation Bar -->
         {% include 'templates/common_navbar.j2' %}
     </header>
+
     <div class="container mt-3">
         <!-- Page Title -->
         <h1>{{ data.restaurant.name }}</h1>
@@ -276,10 +277,12 @@
     </div>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="py-3">
         <div class="container">
-            <p><small>Generated {{ data._date_modified | iso8601_to_datetime | datetime_format("%Y-%m-%d")
-                    }}</small></p>
+            <p><small>Generated {{ data._date_modified | iso8601_to_datetime |
+                    datetime_format("%Y-%m-%d") }}</small></p>
+
+            {% include 'templates/common_footer.j2' %}
         </div>
     </footer>
 
