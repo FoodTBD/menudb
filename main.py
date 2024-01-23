@@ -248,7 +248,7 @@ def generate_menu_html(
                     if not section_or_item.get("image_url") and known_term.get(
                         "image_url"
                     ):
-                        menu_item["image_url"] = known_term["image_url"]
+                        section_or_item["image_url"] = known_term["image_url"]
                     if not section_or_item.get("wikipedia_url") and known_term.get(
                         "wikipedia_url"
                     ):
@@ -289,18 +289,6 @@ def generate_menu_html(
 
                 menu_items = section.get("menu_items", [])
                 for menu_item in menu_items:
-                    # # Annotate menu item name, trying first without dish names
-                    # matched_all = _annotate_menu_section_or_item_with_known_terms(
-                    #     menu_item, False, ordered_nondish_terms, known_terms_lookup_dict
-                    # )
-                    # # Are there holes? If so, re-try including dish names
-                    # if not matched_all:
-                    #     _annotate_menu_section_or_item_with_known_terms(
-                    #         menu_item,
-                    #         False,
-                    #         ordered_all_terms,
-                    #         known_terms_lookup_dict,
-                    #     )
                     _annotate_menu_section_or_item_with_known_terms(
                         menu_item, False, ordered_all_terms, known_terms_lookup_dict
                     )
