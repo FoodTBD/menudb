@@ -26,6 +26,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 干炒牛河	乾炒牛河	Beef Chow Fun	https://en.wikipedia.org/wiki/Beef_chow_fun	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Beefchowfoon.jpg/128px-Beefchowfoon.jpg	zh-u-sd-cngd	Stir-fried flat rice noodles with beef slices	
 牛肉面	牛肉麵	Beef Noodle Soup	https://en.wikipedia.org/wiki/Beef_noodle_soup	https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Xiangyang_beef_noodles_02.jpg/128px-Xiangyang_beef_noodles_02.jpg	zh	Noodle soup with beef in a rich, aromatic broth	
 牛杂	牛雜	beef offal	https://en.wikipedia.org/wiki/Offal#China				
+牛𦟌	牛𦟌	beef shank					(Cantonese)
 牛柳	牛柳	beef tenderloin	https://en.wikipedia.org/wiki/Beef_tenderloin				https://en.wiktionary.org/wiki/%E6%9F%B3#Definitions
 牛百叶	牛百葉	beef tripe	https://en.wikipedia.org/wiki/Tripe#Beef	https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Niubaiye.jpg/400px-Niubaiye.jpg			
 西兰花牛肉	西蘭花牛肉	Beef with Broccoli	https://en.wikipedia.org/wiki/Beef_and_broccoli	https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Beef_and_broccoli_stir_fry.jpg/128px-Beef_and_broccoli_stir_fry.jpg	zh	Stir-fried beef and broccoli in a savory sauce	Chinese-American cuisine
@@ -71,7 +72,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 潮州,潮	潮州,潮	Chaoshan	https://en.wikipedia.org/wiki/Teochew_cuisine				
 抄手	抄手	chaoshou wonton	https://en.wikipedia.org/wiki/Chaoshou	https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/SuanMary.JPG/500px-SuanMary.JPG			https://en.wikipedia.org/wiki/Wonton#Sichuan_cuisine
 炒贵刁	炒貴刁	Char Kway Teow	https://en.wikipedia.org/wiki/Char_kway_teow	https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Char_kway_teow.jpg/440px-Char_kway_teow.jpg			
-叉烧	叉燒	char siu	https://en.wikipedia.org/wiki/Char_siu			Cantonese barbecued pork with a sweet, caramelized glaze	
+叉烧	叉燒	char siu	https://en.wikipedia.org/wiki/Char_siu	https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/460px-Charsiu.jpg		Cantonese barbecued pork with a sweet, caramelized glaze	
 炭	炭	charcoal					
 厨	廚	chef					
 成都	成都	Chengdu	https://en.wikipedia.org/wiki/Sichuan_cuisine				
@@ -86,7 +87,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 重庆,重	重慶,重	Chongqing	https://en.wikipedia.org/wiki/Chongqing				
 河	河	chow fun	https://en.wikipedia.org/wiki/Shahe_fen				
 河粉	河粉	chow fun	https://en.wikipedia.org/wiki/Shahe_fen				
-炒面	炒麵	Chow Mein	https://en.wikipedia.org/wiki/Chow_mein	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg	zh-u-sd-cngd	Stir-fried noodles with various ingredients	
+炒面	炒麫,炒麵	Chow Mein	https://en.wikipedia.org/wiki/Chow_mein	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg/128px-Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg	zh-u-sd-cngd	Stir-fried noodles with various ingredients	
 油菜	油菜	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg			https://en.wiktionary.org/wiki/%E6%B2%B9%E8%8F%9C#Definitions
 菜心	菜心	choy sum	https://en.wikipedia.org/wiki/Choy_sum	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg			
 蚝油菜心	蠔油菜心	Choy Sum with Oyster Sauce	https://en.wikipedia.org/wiki/Choy_sum	https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Choy_Sum_with_Soy_Sauce.jpg/320px-Choy_Sum_with_Soy_Sauce.jpg	zh-u-sd-cngd	Choy sum stir-fried with oyster sauce 	
@@ -193,7 +194,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 炸大蝦	炸大蝦,吉列大蝦	Fried Panko Shrimp	https://en.wikipedia.org/wiki/Fried_shrimp#Ebi_furai	https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/CdazziEbifurai1.jpg/440px-CdazziEbifurai1.jpg	zh		（重定向自吉列大蝦）; == Ebi furai?
 炒饭	炒飯	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice				
 福建	福建	Fujian	https://en.wikipedia.org/wiki/Fujian_cuisine				
-粉粿	粉粿	Fun Guo	https://en.wikipedia.org/wiki/Fun_guo	https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg/440px-%E9%BB%83%E8%89%B2%E7%B2%89%E7%B2%BF.jpg	zh-u-sd-cngd		
+粉粿	粉粿	Fun Guo	https://en.wikipedia.org/wiki/Fun_guo	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Chaozhoufenguo.jpg/440px-Chaozhoufenguo.jpg	zh-u-sd-cngd		
 夫妻肺片	夫妻肺片	Fuqi Feipian	https://en.wikipedia.org/wiki/Fuqi_feipian	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg	zh-u-sd-cnsc	Sichuan beef salad with tripe and tongue slices	
 芥兰,兰	芥蘭,蘭	gai lan	https://en.wikipedia.org/wiki/Gai_lan				
 蚝油芥兰	蠔油芥蘭	Gai Lan with Oyster Sauce	https://en.wikipedia.org/wiki/Gai_lan	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Chinese_Broccoli_with_Oyster_sauce.jpg/320px-Chinese_Broccoli_with_Oyster_sauce.jpg	zh-u-sd-cngd	Stir-fried gai lan (Chinese broccoli) topped with oyster sauce	
@@ -241,7 +242,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 煎䭔,煎堆	煎䭔,煎堆	Jian Dui	https://en.wikipedia.org/wiki/Jian_dui	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Zin_Deoi.jpg/128px-Zin_Deoi.jpg	zh-u-sd-cngd	Sesame-coated fried balls of glutinous rice, sweet filling	(chiefly Cantonese) https://en.wiktionary.org/wiki/%E7%85%8E%E5%A0%86
 芝麻球	芝麻球	Jian Dui	https://en.wikipedia.org/wiki/Jian_dui	https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Zin_Deoi.jpg/128px-Zin_Deoi.jpg			
 茭白	茭白	jiaobai	https://en.wikipedia.org/wiki/Zizania_latifolia	https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Wild_rice_stems.jpg/440px-Wild_rice_stems.jpg			
-饺子	餃子	jiaozi	https://en.wikipedia.org/wiki/Jiaozi	https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg/128px-Noodlecat_-_Lee_Anne_Wong_-_%22Lucky_Dumpring_Jiao_Zi%22_%286739677033%29.jpg			
+饺子	餃子	jiaozi	https://en.wikipedia.org/wiki/Jiaozi	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gy%C5%8Dza_003.jpg/400px-Gy%C5%8Dza_003.jpg			
 京酱肉丝	京醬肉絲	Jingjiang Rousi	https://en.wikipedia.org/wiki/Jing_Jiang_Rou_Si	https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg/128px-%E4%BA%AC%E9%85%B1%E8%82%89%E4%B8%9D.jpg	zh	Shredded pork in sweet bean sauce, often with pancakes	from Beijing
 金华玉树	金華玉樹	Jinhua ham	https://en.wikipedia.org/wiki/Jinhua_ham				
 海带	海帶	kelp	https://en.wikipedia.org/wiki/Saccharina_japonica#China	https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sliced_kelp_at_Lady_Chai%2C_Ganjiakou_%2820211022125400%29.jpg/440px-Sliced_kelp_at_Lady_Chai%2C_Ganjiakou_%2820211022125400%29.jpg			
@@ -306,10 +307,9 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 蘑菇,菇	蘑菇,菇	mushroom					
 白菜	白菜	napa cabbage	https://en.wikipedia.org/wiki/Napa_cabbage				
 颈	頸	neck					
-新	新	new					
 年糕	年糕	nian gao	https://en.wikipedia.org/wiki/Nian_gao				
-面食		noodle					
-面	麵	noodle					
+面	麪,麵	noodle					https://en.wiktionary.org/wiki/%E9%BA%AA#Usage_notes
+汤面	湯麪,湯麵	noodle soup					
 东北	東北	northeastern	https://en.wikipedia.org/wiki/Northeastern_Chinese_cuisine				
 养生	養生	nourishing					
 油	油	oil					
@@ -328,7 +328,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 蚝油	蠔油	oyster sauce	https://en.wikipedia.org/wiki/Oyster_sauce				
 蚝皇	蠔皇	oyster sauce	https://en.wikipedia.org/wiki/Oyster_sauce				as in https://zh.wikipedia.org/wiki/%E8%A0%94%E7%9A%87%E9%AE%AE%E7%AB%B9%E5%8D%B7
 煎	煎	pan-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Oil-based				jiān
-煎饺	煎餃	Pan-Fried Jiaozi	https://en.wikipedia.org/wiki/Jiaozi#Types	https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Potstickers_RTE.jpg/128px-Potstickers_RTE.jpg	zh	Jiaozi dumplings first boiled or steamed, then fried for a crispy bottom	jiānjiǎo
+煎饺	煎餃	Pan-Fried Jiaozi	https://en.wikipedia.org/wiki/Jiaozi#Types	https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Gy%C5%8Dza_003.jpg/400px-Gy%C5%8Dza_003.jpg	zh	Jiaozi dumplings first boiled or steamed, then fried for a crispy bottom	jiānjiǎo
 煎年糕	煎年糕	Pan-Fried Nian Gao	https://en.wikipedia.org/wiki/Nian_gao#Guangdong/Cantonese_cuisine				
 焗	焗	pan-roasted					jú https://www.thefooddictator.com/the-40-methods-of-chinese-cooking/, https://www.youtube.com/watch?v=z_LAJKezDOs
 饼	餅	pancake					bǐng
@@ -536,6 +536,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 回锅肉	回鍋肉	Twice-Cooked Pork	https://en.wikipedia.org/wiki/Twice-cooked_pork	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg	zh-u-sd-cnsc	Pork stir-fried with vegetables and spices	
 双	雙	two					
 避风塘	避風塘	typhoon shelter	https://en.wikipedia.org/wiki/Typhoon_shelter#Typhoon_shelter_crab				
+乌冬	烏冬	udon	https://en.wikipedia.org/wiki/Udon				
 百花	百花	various					
 蔬菜,蔬,菜	蔬菜,蔬,菜	vegetable					
 菜膽	菜膽	vegetable heart					
@@ -567,7 +568,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 杞子	杞子	wolfberry	https://en.wikipedia.org/wiki/Goji				
 云吞	雲吞	wonton	https://en.wikipedia.org/wiki/Wonton				
 馄饨	馄饨	wonton	https://en.wikipedia.org/wiki/Wonton				
-馄饨面汤	餛飩麵湯	Wonton Noodle Soup	https://en.wikipedia.org/wiki/Wonton_noodles	https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg	zh-u-sd-cngd	Egg noodles in broth with pork or shrimp wontons	
+馄饨面汤	餛飩麵湯,云吞湯麪	Wonton Noodle Soup	https://en.wikipedia.org/wiki/Wonton_noodles	https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Wonton_noodle_soup_boston.jpg/128px-Wonton_noodle_soup_boston.jpg	zh-u-sd-cngd	Egg noodles in broth with pork or shrimp wontons	
 云吞汤	云吞湯	Wonton Soup	https://en.wikipedia.org/wiki/Wonton	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Wonton_soup_at_65_Huguosi_St_%2820211221173225%29.jpg/128px-Wonton_soup_at_65_Huguosi_St_%2820211221173225%29.jpg	zh-u-sd-cngd	Light broth with pork or shrimp dumplings	
 木耳	木耳	wood-ear	https://en.wikipedia.org/wiki/Wood_ear				
 小笼包	小籠包	Xiaolongbao	https://en.wikipedia.org/wiki/Xiaolongbao	https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Xiaolongbao.jpg/2560px-Xiaolongbao.jpg	zh-u-sd-cnjs	Steamed thin-skinned soup dumplings, filled with meat or seafood and a hot broth	
