@@ -23,20 +23,8 @@
             height: 200%;
         }
 
-        .menu-table {
-            width: 100%;
-        }
-
-        .menu-table th {
-            padding-top: 1rem;
-            padding-bottom: 0.5rem;
-        }
-
         .menu-table tbody td {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-top: 0.5px solid #ccc;
-            line-height: 1;
+            line-height: 1.2;
         }
 
         .menu-table-image-column img {
@@ -45,24 +33,18 @@
             object-fit: cover;
         }
 
-        .menu-table-text-column {
-            padding-left: 0.5rem;
-            padding-top: 0.2rem;
+        .term-native {
+            display: inline-block;
+            text-align: center;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            vertical-align: top;
         }
 
-        .menu-table-menuaction-column {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .btn-googleimage {
-            width: 104px;
-            height: 64px;
-        }
-
-        .menu-item-name-div {
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
+        .term-translated {
+            display: block;
+            font-size: small;
+            font-variation-settings: "wdth" 50;
         }
 
         .menu-item-number {
@@ -70,21 +52,12 @@
             color: #6c757d;
         }
 
+        .menu-item-name-div {
+            padding-bottom: 0.2rem;
+        }
+
         .menu-item-name-primary {
             font-size: 1.25rem;
-        }
-
-        .term-native {
-            display: inline-block;
-            text-align: center;
-            margin-right: 0.2rem;
-            vertical-align: top;
-        }
-
-        .term-translated {
-            display: block;
-            font-size: x-small;
-            font-variation-settings: "wdth" 50;
         }
 
         .menu-item-name-secondary {
@@ -100,6 +73,23 @@
             font-weight: 300;
             color: #6c757d;
             font-variation-settings: "wdth" 80;
+        }
+
+        .menu-item-note {
+            font-size: xx-small;
+            font-weight: 300;
+            color: #6c757d;
+            font-variation-settings: "wdth" 80;
+        }
+
+        .menu-table-menuaction-column {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .btn-googleimage {
+            width: 104px;
+            height: 64px;
         }
 
         .btn-menuaction {
@@ -152,12 +142,15 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://lh5.googleusercontent.com/p/AF1QipPsP5pVRUf4L-Z82SSpsaISmZMIgtPH4nw48PpZ=s1016-k-no" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://lh5.googleusercontent.com/p/AF1QipPsP5pVRUf4L-Z82SSpsaISmZMIgtPH4nw48PpZ=s1016-k-no" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="凉菜类">
                         <tr>
@@ -174,9 +167,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=泡椒凤爪" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=泡椒凤爪', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/2015_0410_Chicken_feet_dim_sum.jpg/1200px-2015_0410_Chicken_feet_dim_sum.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=泡椒凤爪"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=泡椒凤爪', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -195,8 +187,10 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Spice Heat Level -->
 
                                     <!-- Description(s) -->
-                                    <span class="menu-item-description">Picklad kycklingfötter i pepperoni</span>                                </div>
+                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -237,6 +231,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Grismage med chrispy chili & vitlö</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -276,6 +272,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -315,6 +313,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -354,6 +354,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -394,6 +396,9 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Bräserad ankhuvud (Mala ankhuvud)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                    <p class="menu-item-note">3个</p>
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -434,6 +439,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Bräserat oxkött med sojasås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -473,6 +480,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -513,6 +522,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Marinerad krossad gurka med vitlök</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -549,6 +560,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -586,6 +599,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Marinerad grisöron med vitlök & crispy chili</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -638,6 +653,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Gyllene soppa med skivat entrecote, vitlök, chili & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -675,6 +692,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt biff med selleri</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -712,6 +731,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Yummy Biff (Lätt-friterad biff med sötsur-stark sås & grönsaker)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -752,6 +773,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt biff med turkisk paprika</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -788,6 +811,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -828,6 +853,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Biffgryta med vitlök, chili bean sauce & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -879,6 +906,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -919,6 +948,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt grisnjure med chili, vitlök & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -959,6 +990,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt grismage med chili bean sauce & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -999,6 +1032,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt grisktarm med turkisk paprika</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1016,9 +1051,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=糖醋排骨" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=糖醋排骨', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dimsumpaigui.jpg/400px-Dimsumpaigui.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=糖醋排骨"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=糖醋排骨', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1037,8 +1071,10 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Spice Heat Level -->
 
                                     <!-- Description(s) -->
-                                    <span class="menu-item-description">Lätt-friterade revbensspjäll i sweet sour sauce</span>                                </div>
+                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1056,9 +1092,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=椒盐排骨" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=椒盐排骨', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dimsumpaigui.jpg/400px-Dimsumpaigui.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=椒盐排骨"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=椒盐排骨', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1077,8 +1112,10 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Spice Heat Level -->
 
                                     <!-- Description(s) -->
-                                    <span class="menu-item-description">Friterade revbensspjäll med sichuanpeppar</span>                                </div>
+                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1119,6 +1156,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Friterad fläskfilé i sötsursås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1155,6 +1194,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1194,6 +1235,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1234,6 +1277,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Bräserad sidfläsk med kinesisk soltorkad kål</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1285,6 +1330,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1325,6 +1372,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Yummy Duck (Wokad anka med vitlök & grönsaker)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1362,6 +1411,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Sichuan anka med chili vitlök, & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1414,6 +1465,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Bräserat kycklinglår med svamp & grönsaker (Med ben)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1454,6 +1507,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Yummy Chicken (Friterad kyckling i sötsur sås)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1490,6 +1545,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1529,6 +1586,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1580,6 +1639,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1619,6 +1680,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1659,6 +1722,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Wokad fiskfilé med grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1696,6 +1761,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt fisk med chrispy chili & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1733,6 +1800,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Pepparstekt tigerräkor med sichuanpeppar (Med skal)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1770,6 +1839,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Wokade tigerräkor med ingefära i ostronsås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1807,6 +1878,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Yummy Shrimp</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1856,6 +1929,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt haricots verts med vitlök i chrispy chili</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1896,6 +1971,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt potatis, haricots verts & aubergine</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1933,6 +2010,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt pak choy med vitlök</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1972,6 +2051,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2012,6 +2093,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt strimlad potatis med chili</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2052,6 +2135,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekt äggröra med turkisk paprika</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2093,6 +2178,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <span class="menu-item-description">Wokad tofu med grönsaker</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Stir-fried tofu with vegetables in savory sauce</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2129,6 +2216,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2180,6 +2269,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2220,6 +2311,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2260,6 +2353,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2300,6 +2395,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Steamed flower-shaped dough buns with layers of scallion and oil</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2341,6 +2438,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <span class="menu-item-description">Dabing (Kinesisk inbakad pizza med fläsk & soltorkad kål)</span> <span
                                         class="menu-item-divider">/</span>                                     <span class="menu-item-description">Steamed flower-shaped dough buns with layers of scallion and oil</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2380,6 +2479,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2419,6 +2520,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2459,6 +2562,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Sheng Jiang Bao (Fylld med fläsk & grönsaker)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2510,6 +2615,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2550,6 +2657,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">"La Mian" med långkokt oxkött pak choi</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2589,6 +2698,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2629,6 +2740,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Risnudelsoppa med gristarm & kinesisk surkål</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2669,6 +2782,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekta risnudlar med räkor, ägg & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2709,6 +2824,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Stekta risnudlar med biff, ägg & grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2749,6 +2866,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Risnudelsoppa med fläskfärs & surkål</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2785,6 +2904,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2824,6 +2945,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2876,6 +2999,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Peking soppa (Stor skål)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2913,6 +3038,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Fisk soppa (Stor skål)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2950,6 +3077,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Grismage-soppa med chili, svamp & grönsaker (Stor skål)</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3004,6 +3133,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3043,6 +3174,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3082,6 +3215,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3123,6 +3258,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3162,6 +3299,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3204,6 +3343,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3243,6 +3384,8 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->

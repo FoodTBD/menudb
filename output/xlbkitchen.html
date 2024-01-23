@@ -23,20 +23,8 @@
             height: 200%;
         }
 
-        .menu-table {
-            width: 100%;
-        }
-
-        .menu-table th {
-            padding-top: 1rem;
-            padding-bottom: 0.5rem;
-        }
-
         .menu-table tbody td {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-top: 0.5px solid #ccc;
-            line-height: 1;
+            line-height: 1.2;
         }
 
         .menu-table-image-column img {
@@ -45,24 +33,18 @@
             object-fit: cover;
         }
 
-        .menu-table-text-column {
-            padding-left: 0.5rem;
-            padding-top: 0.2rem;
+        .term-native {
+            display: inline-block;
+            text-align: center;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            vertical-align: top;
         }
 
-        .menu-table-menuaction-column {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .btn-googleimage {
-            width: 104px;
-            height: 64px;
-        }
-
-        .menu-item-name-div {
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
+        .term-translated {
+            display: block;
+            font-size: small;
+            font-variation-settings: "wdth" 50;
         }
 
         .menu-item-number {
@@ -70,21 +52,12 @@
             color: #6c757d;
         }
 
+        .menu-item-name-div {
+            padding-bottom: 0.2rem;
+        }
+
         .menu-item-name-primary {
             font-size: 1.25rem;
-        }
-
-        .term-native {
-            display: inline-block;
-            text-align: center;
-            margin-right: 0.2rem;
-            vertical-align: top;
-        }
-
-        .term-translated {
-            display: block;
-            font-size: x-small;
-            font-variation-settings: "wdth" 50;
         }
 
         .menu-item-name-secondary {
@@ -100,6 +73,23 @@
             font-weight: 300;
             color: #6c757d;
             font-variation-settings: "wdth" 80;
+        }
+
+        .menu-item-note {
+            font-size: xx-small;
+            font-weight: 300;
+            color: #6c757d;
+            font-variation-settings: "wdth" 80;
+        }
+
+        .menu-table-menuaction-column {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .btn-googleimage {
+            width: 104px;
+            height: 64px;
         }
 
         .btn-menuaction {
@@ -153,12 +143,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195238221%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195238221%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="冷盤">
                         <tr>
@@ -196,6 +189,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -236,6 +231,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -275,6 +272,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -314,6 +313,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -353,6 +354,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -390,6 +393,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -429,6 +434,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -466,6 +473,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -506,6 +515,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -546,6 +557,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -586,6 +599,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -625,6 +640,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -643,12 +660,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195249302%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195249302%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="湯類">
                         <tr>
@@ -687,6 +707,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -724,6 +746,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Thick beef soup with egg whites and coriander</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -761,6 +785,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -797,6 +823,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -837,6 +865,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -877,6 +907,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -917,6 +949,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -956,6 +990,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -996,6 +1032,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1014,12 +1052,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195253178%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195253178%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="招牌菜">
                         <tr>
@@ -1057,6 +1098,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1096,6 +1139,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1136,6 +1181,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1176,6 +1223,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1215,6 +1264,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1255,6 +1306,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1294,6 +1347,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1334,6 +1389,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1384,6 +1441,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1423,6 +1482,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1462,6 +1523,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1479,9 +1542,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=砂锅酥肉什锦煲" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=砂锅酥肉什锦煲', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/HK_%E7%81%A3%E4%BB%94_Wan_Chai_%E5%A0%85%E6%8B%BF%E9%81%93%E8%A5%BF_Canal_Road_West_shop_%E5%A4%9A%E5%A4%9A%E9%A4%90%E5%BB%B3%E7%87%92%E8%85%8A%E9%A3%AF%E5%BA%97_More_%26_More_Dor_Dor_Restaurant_%E7%85%B2%E4%BB%94%E9%A4%B8_Cooked_pot_foods_Display_Mar-2014_%E6%A2%85%E8%8F%9C%E6%89%A3%E8%82%89%E7%85%B2_n_%E6%9E%9D%E7%AB%B9%E7%BE%8A%E8%85%A9%E7%85%B2_ZR2.JPG/440px-thumbnail.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=砂锅酥肉什锦煲"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=砂锅酥肉什锦煲', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -1502,6 +1564,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1541,6 +1605,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1559,12 +1625,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195450014%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195450014%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="海鲜类">
                         <tr>
@@ -1603,6 +1672,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1639,6 +1710,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1678,6 +1751,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1718,6 +1793,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1755,6 +1832,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1795,6 +1874,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1832,6 +1913,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1847,12 +1930,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195452830%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195452830%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="蔬菜类">
                         <tr>
@@ -1891,6 +1977,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1931,6 +2019,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -1970,6 +2060,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2006,6 +2098,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2046,6 +2140,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2083,6 +2179,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2122,6 +2220,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2162,6 +2262,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Tofu braised in a savory, slightly sweet soy-based sauce</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2202,6 +2304,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2239,6 +2343,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2257,12 +2363,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195302734%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195302734%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="南北小炒">
                         <tr>
@@ -2300,6 +2409,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2339,6 +2450,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2356,9 +2469,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=蒜香大排骨" type="button"
-                                    class="btn btn-light btn-googleimage"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=蒜香大排骨', 'googleimage')">🖼️ 🔎</button>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dimsumpaigui.jpg/400px-Dimsumpaigui.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=蒜香大排骨"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=蒜香大排骨', 'googleimage')">
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -2379,6 +2491,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2419,6 +2533,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2455,6 +2571,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2495,6 +2613,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2534,6 +2654,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2574,6 +2696,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2614,6 +2738,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2654,6 +2780,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2694,6 +2822,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2733,6 +2863,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2772,6 +2904,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2811,6 +2945,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2851,6 +2987,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2866,12 +3004,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195305631%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195305631%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="点心">
                         <tr>
@@ -2909,6 +3050,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2949,6 +3092,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -2989,6 +3134,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3026,6 +3173,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3065,6 +3214,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3105,6 +3256,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3144,6 +3297,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3184,6 +3339,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3224,6 +3381,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3263,6 +3422,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3302,6 +3463,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3320,12 +3483,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195506298%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195506298%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="面类-米粉类">
                         <tr>
@@ -3363,6 +3529,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3402,6 +3570,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3441,6 +3611,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3480,6 +3652,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3520,6 +3694,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3559,6 +3735,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3599,6 +3777,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3639,6 +3819,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3689,6 +3871,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3729,6 +3913,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3769,6 +3955,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3784,12 +3972,15 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195509233%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/xlbkitchen/PXL_20230713_195509233%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="炒饭">
                         <tr>
@@ -3828,6 +4019,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3868,6 +4061,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3908,6 +4103,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3948,6 +4145,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -3988,6 +4187,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4028,6 +4229,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4068,6 +4271,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4118,6 +4323,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4158,6 +4365,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4197,6 +4406,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4236,6 +4447,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -4276,6 +4489,8 @@ Facebook: <a href="https://www.facebook.com/pages/XLB-Kitchen/503057360125929" t
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->

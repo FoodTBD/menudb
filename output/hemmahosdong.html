@@ -23,20 +23,8 @@
             height: 200%;
         }
 
-        .menu-table {
-            width: 100%;
-        }
-
-        .menu-table th {
-            padding-top: 1rem;
-            padding-bottom: 0.5rem;
-        }
-
         .menu-table tbody td {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            border-top: 0.5px solid #ccc;
-            line-height: 1;
+            line-height: 1.2;
         }
 
         .menu-table-image-column img {
@@ -45,24 +33,18 @@
             object-fit: cover;
         }
 
-        .menu-table-text-column {
-            padding-left: 0.5rem;
-            padding-top: 0.2rem;
+        .term-native {
+            display: inline-block;
+            text-align: center;
+            margin-left: 0.1rem;
+            margin-right: 0.1rem;
+            vertical-align: top;
         }
 
-        .menu-table-menuaction-column {
-            padding-left: 0;
-            padding-right: 0;
-        }
-
-        .btn-googleimage {
-            width: 104px;
-            height: 64px;
-        }
-
-        .menu-item-name-div {
-            padding-top: 0.2rem;
-            padding-bottom: 0.2rem;
+        .term-translated {
+            display: block;
+            font-size: small;
+            font-variation-settings: "wdth" 50;
         }
 
         .menu-item-number {
@@ -70,21 +52,12 @@
             color: #6c757d;
         }
 
+        .menu-item-name-div {
+            padding-bottom: 0.2rem;
+        }
+
         .menu-item-name-primary {
             font-size: 1.25rem;
-        }
-
-        .term-native {
-            display: inline-block;
-            text-align: center;
-            margin-right: 0.2rem;
-            vertical-align: top;
-        }
-
-        .term-translated {
-            display: block;
-            font-size: x-small;
-            font-variation-settings: "wdth" 50;
         }
 
         .menu-item-name-secondary {
@@ -100,6 +73,23 @@
             font-weight: 300;
             color: #6c757d;
             font-variation-settings: "wdth" 80;
+        }
+
+        .menu-item-note {
+            font-size: xx-small;
+            font-weight: 300;
+            color: #6c757d;
+            font-variation-settings: "wdth" 80;
+        }
+
+        .menu-table-menuaction-column {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .btn-googleimage {
+            width: 104px;
+            height: 64px;
         }
 
         .btn-menuaction {
@@ -144,12 +134,15 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2214%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2214%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="前餐">
                         <tr>
@@ -189,6 +182,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -225,6 +220,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -264,6 +261,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -303,6 +302,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Marinerad tofu (soyabönor) skin i chili olja</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -357,6 +358,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -396,6 +399,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -435,6 +440,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Wokade säsongens grönsaker</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -474,6 +481,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Bräserad aubergine med kockens söta, sura, salta och starka sås, soyasås, ostronsås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -513,6 +522,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Wokade potatisstrimlor med chili och vinäger smak, soyasås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -552,6 +563,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -591,6 +604,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Wokad strimlad fläsk med vitlöksskott i kockens säs, soyasås, ostronsås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -606,12 +621,15 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
 
             <!-- Menu Page -->
             <hr>
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <a href="https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2215%20Large.jpeg" target="_blank" rel="noopener"><img class="menu-image"
                         src="https://foodtbd.github.io/menudb_images/menus/hemmahosdong/img_2215%20Large.jpeg" alt="Menu Image"></a>
             </div>
+            <!-- Spacer column -->
+            <div class="col-md-1 d-sm-none d-md-block">
+            </div>
             <div class="col-md-6">
-                <table class="menu-table">
+                <table class="table menu-table">
                     <!-- Menu Section -->
                     <thead id="正餐">
                         <tr>
@@ -651,6 +669,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -690,6 +710,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -731,6 +753,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -770,6 +794,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -805,6 +831,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -844,6 +872,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -885,6 +915,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -925,6 +957,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                     <span class="menu-item-description">Nudelsoppa med biff och grönsaker, szenchuan smak, soyasås</span>                                </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
@@ -963,6 +997,8 @@ Homepage: <a href="https://hemmahosdong.wordpress.com/" target="_blank" rel="noo
                                     <!-- Description(s) -->
                                 </div>
 
+                                <div class="menu-item-description-div">
+                                </div>
                             </td>
                             <td class="menu-table-menuaction-column">
                                 <!-- Speak Button(s) -->
