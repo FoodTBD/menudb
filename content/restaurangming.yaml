@@ -11,7 +11,8 @@ menu:
     - zh-Hant
     - en
   pages:
-    - sections:
+    - page_url: https://www.restaurangming.com/menu-1
+      sections:
         - "name_zh-Hant": 點心
           "name_en": Steamed [Dim Sum]
           menu_items:

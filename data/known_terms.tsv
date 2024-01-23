@@ -8,7 +8,9 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 香	香	aromatic					
 什锦,什	什锦,什	assorted					
 什锦	什錦	assorted					(Cantonese)
-鸡毛菜	雞毛菜	baby bok choy	https://en.wikipedia.org/wiki/Bok_choy				(Shanghainese Wu) https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese, https://zh.wikipedia.org/wiki/%E5%B0%8F%E7%99%BD%E8%8F%9C lit. "chicken feather vegetable", a small cabbage with leaves as small as chicken feathers"
+鸡毛菜	雞毛菜	baby bok choy (?)	https://en.wikipedia.org/wiki/Bok_choy#Spelling_and_naming_variations				"lit. ""chicken feather vegetable"", a small cabbage with leaves as small as chicken feathers""
+https://www.sinosplice.com/life/archives/2005/12/16/mysteries-of-%E9%B8%A1%E6%AF%9B%E8%8F%9C-revealed, 
+https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese"
 竹	竹	bamboo	https://en.wikipedia.org/wiki/Bamboo#Culinary				
 笼仔	籠仔	bamboo basket					
 竹笙	竹笙	bamboo fungus	https://en.wikipedia.org/wiki/Phallus_indusiatus#Culinary	https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bamboo_pith_mushroom.jpg/440px-Bamboo_pith_mushroom.jpg			
@@ -104,6 +106,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 椰	椰	coconut					
 椰子	椰子	coconut					
 椰汁	椰汁	coconut milk					
+冷	冷	cold					
 凉拌	涼拌	cold tossed					
 色	色	colorful					
 粥,稀饭	粥,稀飯	congee	https://en.wikipedia.org/wiki/Congee#China	https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Chinese_rice_congee.jpg/440px-Chinese_rice_congee.jpg		Rice porridge, customizable with various toppings	
@@ -141,6 +144,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 碟	碟	dish					
 	燉	double-steamed	https://en.wikipedia.org/wiki/Double_steaming				dùn; NOTE: meaning of the Chinese character for dun in Cantonese is different from that in Mandarin
 豆豉	豆豉	douchi	https://en.wikipedia.org/wiki/Douchi	https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/2015_1012_Preserved_black_beans_douchi_close-up.jpg/440px-2015_1012_Preserved_black_beans_douchi_close-up.jpg			
+豆花		douhua	https://en.wikipedia.org/wiki/Douhua				
 虾米	蝦米	dried shrimp	https://en.wikipedia.org/wiki/Dried_shrimp#East_Asia				https://en.wiktionary.org/wiki/%E8%9D%A6%E7%B1%B3
 開洋	開洋	dried shrimp	https://en.wikipedia.org/wiki/Dried_shrimp#East_Asia				(chiefly Wu) https://en.wiktionary.org/wiki/%E9%96%8B%E6%B4%8B
 腐竹	腐竹	dried tofu stick	https://en.wikipedia.org/wiki/Tofu_skin#Dried				
@@ -151,11 +155,12 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 干锅鸡	乾鍋雞	Dry Pot Chicken	https://en.wikipedia.org/wiki/Dry_pot_chicken	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Dry_pot_chicken.jpg/128px-Dry_pot_chicken.jpg	zh-u-sd-cnsc	Spicy chicken cooked in a dry pot with mixed vegetables	
 干煸	乾煸	dry-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				gānbiān
 干煸四季豆	乾煸四季豆	Dry-Fried Green Beans		https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg/2560px-Sichuan%27s_Spicy_Green_Beans_at_Sichuan_Restaurant%2C_Acton%2C_London_%284466367167%29.jpg	zh-u-sd-cnsc	Dry-fried green beans mixed with minced pork or preserved vegetables	
-干锅	乾鍋,干鍋	dry-pot	https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85	https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg/440px-%E5%B9%B2%E9%94%85_-_Gan_Guo.jpg			
+干锅	乾鍋,干鍋	dry-pot	https://zh.wikipedia.org/wiki/%E5%B9%B2%E9%94%85				
 鸭	鴨	duck					
 盒子	盒子	dumpling					lit. "box"
 角	角	dumpling					lit. "corner" or "angle," but in this context, it refers to a pastry or snack with a corner or triangular shape
 饺	餃	dumpling	https://en.wikipedia.org/wiki/Jiaozi				
+剁椒		duo jiao	https://en.wikipedia.org/wiki/Chili_sauce_and_paste#China				Hunan cuisine
 毛豆	毛豆	edamame	https://en.wikipedia.org/wiki/Edamame				
 鳝	鱔	eel	https://en.wikipedia.org/wiki/Eel_as_food				
 蛋	蛋	egg					
@@ -193,6 +198,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 生滚	生滾	freshly cooked					
 炸大蝦	炸大蝦,吉列大蝦	Fried Panko Shrimp	https://en.wikipedia.org/wiki/Fried_shrimp#Ebi_furai	https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/CdazziEbifurai1.jpg/440px-CdazziEbifurai1.jpg	zh		（重定向自吉列大蝦）; == Ebi furai?
 炒饭	炒飯	fried rice	https://en.wikipedia.org/wiki/Chinese_fried_rice				
+青蛙腿	青蛙腿	frog legs	https://en.wikipedia.org/wiki/Frog_legs#China				
 福建	福建	Fujian	https://en.wikipedia.org/wiki/Fujian_cuisine				
 粉粿	粉粿	Fun Guo	https://en.wikipedia.org/wiki/Fun_guo	https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Chaozhoufenguo.jpg/440px-Chaozhoufenguo.jpg	zh-u-sd-cngd		
 夫妻肺片	夫妻肺片	Fuqi Feipian	https://en.wikipedia.org/wiki/Fuqi_feipian	https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Fuqi_Fei_Pian.jpg/128px-Fuqi_Fei_Pian.jpg	zh-u-sd-cnsc	Sichuan beef salad with tripe and tongue slices	
@@ -210,14 +216,16 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 擂沙	擂沙	ground paste					Possibly https://zh.wikipedia.org/wiki/%E6%93%82%E6%B2%99%E5%9C%86
 石斑,斑	石斑,斑	grouper	https://en.wikipedia.org/wiki/Grouper				(Cantonese) https://en.wiktionary.org/wiki/%E6%96%91#Definitions
 广东	廣東	Guangdong	https://en.wikipedia.org/wiki/Cantonese_cuisine				
+锅包肉	鍋包肉	Guo Bao Rou	https://en.wikipedia.org/wiki/Sweet_and_sour#Guo_bao_rou	https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gu%C5%8Db%C4%81or%C3%B2u.jpg/440px-Gu%C5%8Db%C4%81or%C3%B2u.jpg	zh	Deep-fried pork pieces coated in a sweet and tangy sauce	
 半	半	half					
 半只	半隻	half					
-火腿,腿	火腿,腿	ham					
+火腿	火腿	ham					
 咸水角	鹹水角	Ham Sui Gok	https://en.wikipedia.org/wiki/Dim_sum#Dumplings	https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Xianshuijiao.jpg/440px-Xianshuijiao.jpg	zh-u-sd-cngd	Deep fried glutinous rice dumpling filled with pork and vegetables	
 手	手	hand					
 虾饺	蝦餃	Har Gow	https://en.wikipedia.org/wiki/Har_gow	https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Shrimp_dumplings.jpg/128px-Shrimp_dumplings.jpg	zh-u-sd-cngd	Steamed shrimp dumplings in a translucent wrapper	
 头	頭	head					
 心	心	heart					
+	搞笑的	hilarious					
 福建炒饭	福建炒飯	Hokkien Fried Rice	https://en.wikipedia.org/wiki/Hokkien_fried_rice	https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Hokkien_Fried_Rice.jpg/460px-Hokkien_Fried_Rice.jpg	zh-u-sd-cngd	Fried rice with mushrooms, shrimp, and soy sauce	
 家常	家常	home-style					
 私房	私房	home-style					
@@ -235,7 +243,6 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 马兰头	馬蘭頭	Indian aster	https://en.wikipedia.org/wiki/Kalimeris_indica	https://upload.wikimedia.org/wikipedia/commons/b/b7/Kalimeris-indica-by-Taraxacumseeds-06.jpg			
 肠	肠	intestine					
 铁板	鐵板	iron platter					https://en.wiktionary.org/wiki/%E9%90%B5%E6%9D%BF#Chinese
-	搞笑的	hilarious					
 翡翠	翡翠	jade					
 日	日	Japan	https://en.wikipedia.org/wiki/Japanese_cuisine				
 凉粉	涼粉	jelly noodles	https://en.wikipedia.org/wiki/Liangfen				
@@ -286,6 +293,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 芒果	芒果	mango					
 芒果布丁	芒果布丁	Mango Pudding	https://en.wikipedia.org/wiki/Mango_pudding	https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Mango_pudding.JPG/128px-Mango_pudding.JPG	zh-u-sd-cngd	Chilled dessert pudding with mango and evaporated milk	
 多	多	many					
+冒菜	冒菜	Maocai	https://en.wikipedia.org/wiki/Maocai	https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%E4%BC%A0%E5%A5%87%E5%86%92%E8%8F%9C_2.jpg/440px-%E4%BC%A0%E5%A5%87%E5%86%92%E8%8F%9C_2.jpg	zh-u-sd-cnsc	Variety of vegetables and meat and/or fish cooked in a spicy and numbing broth	
 毛血旺	毛血旺	Maoxuewang	https://en.wikipedia.org/wiki/Pig_blood_curd#Characteristics_and_variations	https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg/128px-%E4%B8%AD%E5%9C%8B%E5%AE%B6%E5%B8%B8%E8%8F%9C_%E6%AF%9B%E8%A1%80%E6%97%BA.jpg	zh-u-sd-cnsc	Spicy Sichuan broth with pig blood curd, tripe, and vegetables	
 麻婆豆腐	麻婆豆腐	Mapo Tofu	https://en.wikipedia.org/wiki/Mapo_tofu	https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Chen_Mapo_Tofu.jpg/128px-Chen_Mapo_Tofu.jpg	zh-u-sd-cnsc	Spicy Sichuan tofu with minced meat in bean sauce	
 卤	鹵	marinated	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Prolonged_immersion				"Marinaded" is not a standard form of the word
@@ -343,10 +351,11 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 雪菜	雪菜	pickled mustard	https://en.wikipedia.org/wiki/Pickled_mustard				
 泡菜	泡菜	pickled vegetables					
 球	球	piece					lit. "ball" but typically means "chunks" or "pieces"
-猪手	豬手	pig trotter	https://en.wikipedia.org/wiki/Pig%27s_trotter				
+	豬手	pig trotter	https://en.wikipedia.org/wiki/Pig%27s_trotter				(chiefly Cantonese)
+猪蹄	豬蹄	pig trotter	https://en.wikipedia.org/wiki/Pig%27s_trotter				
 松子	松子	pine nuts	https://en.wikipedia.org/wiki/Pine_nut				
 菠萝	菠蘿	pineapple					
-净	淨	plain					(Cantonese) https://en.wiktionary.org/wiki/%E6%B7%A8#Definitions
+	淨	plain					(Cantonese) https://en.wiktionary.org/wiki/%E6%B7%A8#Definitions
 清炒	清炒	plain stir-fried	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				qīngchǎo
 蒜炒	蒜炒	plain stir-fried w/ garlic	https://en.wikipedia.org/wiki/Chinese_cooking_techniques#Stir_frying				suàn chǎo
 拼盘	拼盤	platter					
@@ -423,6 +432,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 面筋	麵筋	seitan	https://en.wikipedia.org/wiki/Seitan				
 芝麻,麻	芝麻,麻	sesame					
 上海	上海	Shanghai	https://en.wikipedia.org/wiki/Shanghai_cuisine				
+上海青		Shanghai bok choy	https://en.wikipedia.org/wiki/Bok_choy				
 绍兴	紹興	Shaoxing wine	https://en.wikipedia.org/wiki/Shaoxing_wine				
 荠菜	薺菜	shepherd’s purse	https://en.wikipedia.org/wiki/Capsella_bursa-pastoris#Cooking				
 北菇	北菇	shittake	https://en.wikipedia.org/wiki/Shiitake#Uses				(chiefly Cantonese) https://en.wiktionary.org/wiki/%E5%8C%97%E8%8F%87#Definitions
@@ -496,7 +506,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 糖	糖	sugar					
 皇	皇	supreme					
 甜	甜	sweet					
-咕噜肉,咕咾肉	咕嚕肉,咕咾肉	Sweet and Sour Pork	https://en.wikipedia.org/wiki/Sweet_and_sour#Hong_Kong/Cantonese	https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sweet-and-sour_pork.jpg/440px-Sweet-and-sour_pork.jpg	zh-u-sd-cngd	Deep-fried pork in a sweet and sour sauce	synonym https://en.wiktionary.org/wiki/%E5%92%95%E5%92%BE%E8%82%89#Chinese
+	咕嚕肉,咕咾肉	Sweet and Sour Pork	https://en.wikipedia.org/wiki/Sweet_and_sour#Hong_Kong/Cantonese	https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sweet-and-sour_pork.jpg/440px-Sweet-and-sour_pork.jpg	zh-u-sd-cngd	Cantonese deep-fried pork in a sweet and sour sauce	synonym https://en.wiktionary.org/wiki/%E5%92%95%E5%92%BE%E8%82%89#Chinese
 糖醋小排	糖醋小排	Sweet and Sour Spareribs	https://en.wikipedia.org/wiki/Sweet_and_sour#Sweet_and_sour_spare_ribs	https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/T%C3%A1ngc%C3%B9_p%C3%A1ig%C7%94.jpg/440px-T%C3%A1ngc%C3%B9_p%C3%A1ig%C7%94.jpg	zh-u-sd-cngd		
 薯	薯	sweet potato	https://en.wikipedia.org/wiki/Sweet_potato				
 章鱼烧	章魚燒	Takoyaki	https://en.wikipedia.org/wiki/Takoyaki	https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Takoyaki_by_Ballet_Lausanne_in_Tokyo.jpg/400px-Takoyaki_by_Ballet_Lausanne_in_Tokyo.jpg	ja	Japanese snack of grilled dough balls made with diced octopus	
@@ -533,6 +543,7 @@ zh-Hans	zh-Hant	en	wikipedia_url	image_url	dish_cuisine	dish_description_en	_com
 宝	寶	treasure					
 肚	肚	tripe	https://en.wikipedia.org/wiki/Tripe				
 筒	筒	tube	https://zh.wikipedia.org/wiki/%E7%AB%B9%E7%AD%92%E9%A5%AD				
+多宝鱼	多寶魚	turbot	https://en.wikipedia.org/wiki/Turbot				
 萝卜糕	蘿蔔糕	Turnip Cake	https://en.wikipedia.org/wiki/Turnip_cake	https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Food_%2825455396733%29.jpg/128px-Food_%2825455396733%29.jpg	zh-u-sd-cngd	Steamed and pan-fried cake made from shredded radish	
 回锅肉	回鍋肉	Twice-Cooked Pork	https://en.wikipedia.org/wiki/Twice-cooked_pork	https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg/128px-Twice_cooked_pork%2C_Jia_Yan%2C_5_rue_Humblot%2C_Paris_002.jpg	zh-u-sd-cnsc	Pork stir-fried with vegetables and spices	
 双	雙	two					

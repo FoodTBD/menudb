@@ -1,0 +1,172 @@
+author: John Chang
+restaurant:
+  name: Eat East
+  street_address: Fleminggatan 11
+  city: Stockholm
+  country_code: SE
+  tags: chinese, sichuan
+  homepage_url: https://www.eateast.se/
+  facebook_url: https://www.facebook.com/eateaststhlm/
+  online_menu_url: https://www.eateast.se/OmEatEast&Meny.html
+menu:
+  language_codes:
+    - zh-Hans
+    - en
+  pages:
+    - page_url: https://eateast.se/onewebmedia/%E4%B8%AD%E8%8B%B1%E8%AF%AD%E8%8F%9C%E5%8D%952023.pdf
+      sections:
+        - "name_zh-Hans": 特色川味菜
+          menu_items:
+            - item_number: 1
+              "name_zh-Hans": 麻辣海鲜干锅
+              "name_en": Sichuan Seafood Spicy Dry Pot with vegetables
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/%E6%B5%B7%E9%B2%9C%E5%B9%B2%E9%94%85.jpg?etag=%228d1f29-61d36cff%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B791&extract=0%2B1%2B1158%2B790&quality=85
+            - item_number: 2
+              "name_zh-Hans": 冷锅鱼
+              "name_en": Cold Pot Fish with vegetables
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/2.jpg?etag=%22990235-61d36d18%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 3
+              "name_zh-Hans": 疯狂烤鱼
+              "name_en": ”Crazy hot” Dry Pot Grilled fish
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/3.jpg?etag=%22fd4991-61d36ea2%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1156%2B790&quality=85
+            - item_number: 4
+              "name_zh-Hans": 剁椒青蛙腿
+              "name_en": Frog legs in Hot Chili Pepper
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/4.5.6.jpg?etag=%22a4ad61-61d36e94%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1156%2B790&quality=85
+            - item_number: 5
+              "name_zh-Hans": 干锅青蛙腿
+              "name_en": Dry Pot Frog legs
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/4.5.6.jpg?etag=%22a4ad61-61d36e94%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1156%2B790&quality=85
+            - item_number: 6
+              "name_zh-Hans": 水煮青蛙腿
+              "name_en": Frog legs in Hot Chili Oil
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/4.5.6.jpg?etag=%22a4ad61-61d36e94%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1156%2B790&quality=85
+            - item_number: 7
+              "name_zh-Hans": 一品海鲜冒菜
+              "name_en": Spicy Steampot with seafood and vegetables
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/7.jpg?etag=%229d6f1a-61d36e88%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 8
+              "name_zh-Hans": 老成都冒菜
+              "name_en": Chengdu Spicy Steampot with intestines, tripe, mini sausages, prawns, and vegetables
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/%E5%86%92%E8%8F%9C.jpg?etag=%22925277-61d36f2a%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1165%2B796&extract=0%2B0%2B1156%2B790&quality=85
+              spice_heat_level: 3
+            - item_number: 9
+              "name_zh-Hans": 干锅猪蹄排骨
+              "name_en": Dry Pot Trotters and Ribs
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/9.jpg?etag=%22a47d36-61d36e98%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+              spice_heat_level: 3
+            - item_number: 10
+              "name_zh-Hans": 水煮牛柳
+              "name_en": Beef Fillet in Chili Oil
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/10.jpg?etag=%22982360-61d36e8e%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 11
+              "name_zh-Hans": 豆花牛柳
+              "name_en": Beef Fillet with Tofu Pudding
+              spice_heat_level: 3
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/11-.jpg?etag=%22a20ebd-61d3746e%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 12
+              "name_zh-Hans": 孜然飘香虾
+              "name_en": Grilled Prawns with Cumin
+              spice_heat_level: 1
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/12-.jpg?etag=%229aaced-61d3745a%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 13
+              "name_zh-Hans": 神仙猪蹄
+              "name_en": Red-cooked Trotters in Udon Noodle Soup
+              spice_heat_level: 1
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/13-.jpg?etag=%2293297a-61d3744d%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 14
+              "name_zh-Hans": 香辣鸭
+              "name_en": Spicy Crispy Duck 〖No.1 Favorite〗
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/14.jpg?etag=%229a3484-61d37461%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B790&quality=85
+            - item_number: 15
+              "name_zh-Hans": 豆花鸭
+              "name_en": Crispy Duck with Tofu Pudding
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/15.jpg?etag=%228c165c-61d37447%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 16
+              "name_zh-Hans": 酸汤肥牛
+              "name_en": Thinly sliced beef in spicy and sour soup with pickled cabbage and enoki mushroom
+              spice_heat_level: 2
+            - item_number: 17
+              "name_zh-Hans": 重庆辣子鸡
+              "name_en": Sichuan Sautéed Diced Chicken with Chili Pepper (Without bones)
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/17.jpg?etag=%22a04891-61d37474%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 18
+              "name_zh-Hans": 豆花肥肠
+              "name_en": Sautéed intestines with Tofu Pudding
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/18.jpg?etag=%227d253e-61d37435%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 19
+              "name_zh-Hans": 干煸肥肠
+              "name_en": Quick Fried intestines with Chili and Pepper
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/19.jpg?etag=%229833a2-61d37468%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 20
+              "name_zh-Hans": 回锅肉
+              "name_en": Double Cooked Pork Slices
+              spice_heat_level: 1
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/20.jpg?etag=%2292cdac-61d37453%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 21
+              "name_zh-Hans": 酸菜鱼
+              "name_en": Sour & Spicy Poached Fish Soup with Sichuan Pickles
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/21.jpg?etag=%2275bed2-61d375da%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1159%2B792&extract=0%2B0%2B1158%2B792&quality=85
+            - item_number: 22
+              "name_zh-Hans": 豆花鱼
+              "name_en": Fish Fillet with Tofu Pudding
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/22.jpg?etag=%2294ebd2-61d375fa%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 23
+              "name_zh-Hans": 麻婆豆腐
+              "name_en": Sichuan Mapo Tofu
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/23.jpg?etag=%2290b894-61d37602%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 24
+              "name_zh-Hans": 虎皮尖椒
+              "name_en": Sichuan Pan-seared Green Chili Pepper
+              spice_heat_level: 1
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/24.jpg?etag=%22632b1b-61d375df%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 25
+              "name_zh-Hans": 酸辣粉
+              "name_en": Hot and Sour Glass Noodles
+              spice_heat_level: 2
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/25.jpg?etag=%2271a266-61d375ea%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1159%2B792&extract=0%2B0%2B1158%2B792&quality=85
+            - item_number: 26
+              "name_zh-Hans": 担担面
+              "name_en": Sichuan Dandan Noodles
+              spice_heat_level: 1
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/26.jpg?etag=%228fdcdb-61d3760c%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 27
+              "name_zh-Hans": 清蒸多宝鱼
+              "name_en": Steamed Turbot Fish
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/27.jpg?etag=%22a881e3-61d37611%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 28
+              "name_zh-Hans": 京酱牛柳
+              "name_en": Sautéed Beef Fillet in Sweet Bean Sauce with Steamed Pancakes
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/28.jpg?etag=%226e902f-61d375e2%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 29
+              "name_zh-Hans": 锅包肉
+              "name_en": Fried Pork in Scoop (Sweet and Sour)
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/29.jpg?etag=%22747f46-61d375ef%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 30
+              "name_zh-Hans": 蒜蓉上海青
+              "name_en": Pan Fried Bok Choy with Garlic
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/30.jpg?etag=%227c36dd-61d375f4%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 31
+              "name_zh-Hans": 蒸饺
+              "name_en": Steamed dumplings (4 pieces → Pork, Shrimp & Veg)
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/31.jpg?etag=%225cce12-61d375dd%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
+            - item_number: 32
+              "name_zh-Hans": 高汤鸡油菌
+              "name_en": Home-cooked Chicken Broth with chanterelles
+              image_url: https://www.eateast.se/____impro/1/onewebmedia/32.jpg?etag=%226b7646-61d375e5%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1158%2B792&quality=85
