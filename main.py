@@ -305,7 +305,7 @@ def generate_menu_html(
                         menu_item, False, ordered_all_terms, known_terms_lookup_dict
                     )
 
-    env = Environment(loader=FileSystemLoader("."))
+    env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
     env.trim_blocks = True
     env.lstrip_blocks = True
@@ -315,7 +315,7 @@ def generate_menu_html(
         env.filters[filter_name] = getattr(jinja_filters, filter_name)
 
     # Render the output file
-    template = env.get_template("templates/menu_template.j2")
+    template = env.get_template("menu_template.j2")
     rendered_html = template.render(
         data=yaml_dict, display_language_codes=display_language_codes
     )
@@ -362,13 +362,13 @@ def generate_index_html(
     known_dishes: list[dict[str, Any]],
     output_html_path: str,
 ) -> None:
-    env = Environment(loader=FileSystemLoader("."))
+    env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
     env.trim_blocks = True
     env.lstrip_blocks = True
 
     # Render the output file
-    template = env.get_template("templates/index_template.j2")
+    template = env.get_template("index_template.j2")
     rendered_html = template.render(
         menu_yaml_dicts=menu_yaml_dicts, known_dishes=known_dishes
     )
@@ -425,13 +425,13 @@ def generate_dishes_html(
         locale_dish_groups.append(locale_dish_group)
     locale_dish_groups = sorted(locale_dish_groups, key=lambda d: d["cuisine_name_en"])
 
-    env = Environment(loader=FileSystemLoader("."))
+    env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
     env.trim_blocks = True
     env.lstrip_blocks = True
 
     # Render the output file
-    template = env.get_template("templates/dishes_template.j2")
+    template = env.get_template("dishes_template.j2")
     rendered_html = template.render(
         locale_dish_groups=locale_dish_groups,
         menu_filename_to_menu_yaml_dict=menu_filename_to_menu_yaml_dict,
@@ -452,13 +452,13 @@ def generate_stats_html(
         menu_yaml_dicts, known_terms_lookup_dict, known_dish_lookup_dict
     )
 
-    env = Environment(loader=FileSystemLoader("."))
+    env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
     env.trim_blocks = True
     env.lstrip_blocks = True
 
     # Render the output file
-    template = env.get_template("templates/stats_template.j2")
+    template = env.get_template("stats_template.j2")
     rendered_html = template.render(
         menu_stats=menu_stats,
         known_dishes=known_dishes,

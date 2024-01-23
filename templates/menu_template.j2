@@ -115,7 +115,7 @@
     <!-- Header -->
     <header>
         <!-- Navigation Bar -->
-        {% include 'templates/common_navbar.j2' %}
+        {% include 'common_navbar.j2' %}
     </header>
 
     <div class="container mt-3">
@@ -282,11 +282,11 @@
             <p><small>Generated {{ data._date_modified | iso8601_to_datetime |
                     datetime_format("%Y-%m-%d") }}</small></p>
 
-            {% include 'templates/common_footer.j2' %}
+            {% include 'common_footer.j2' %}
         </div>
     </footer>
 
-    {% include 'templates/common_script.j2' %}
+    {% include 'common_script.j2' %}
 </body>
 
 </html>
