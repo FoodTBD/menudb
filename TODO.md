@@ -6,3 +6,4 @@
 * Add feedback link
 * Add About page
 * Add linter for unused known_terms
+* Refactor known_terms to use dataclasses

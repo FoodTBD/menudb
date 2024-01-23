@@ -77,6 +77,7 @@ def _generate_partitions(input_string: str) -> list[list[str]]:
 
 def gather_menu_stats(
     menu_yaml_dicts: list[dict[str, Any]],
+    known_terms: list[dict[str, Any]],
     known_terms_lookup_dict: dict[str, Any],
     known_dish_lookup_dict: dict[str, dict[str, Any]],
 ) -> dict[str, Any]:

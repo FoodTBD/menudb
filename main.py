@@ -46,7 +46,9 @@ def load_known_locales() -> dict[str, dict[str, Any]]:
     return known_dish_lookup_dict
 
 
-def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
+def load_known_terms() -> (
+    tuple[list[dict[str, Any]], dict[str, dict[str, Any]], list[dict[str, Any]]]
+):
     known_terms = []
     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
@@ -104,11 +106,13 @@ def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]
     known_terms_lookup_dict = {}
     for known_term in known_terms:
         # Use all native forms (both simplified and traditional) as lookup keys
+        all_term_variants = []
         for k in ["zh-Hans", "zh-Hant"]:
-            names = [s.strip() for s in known_term[k].split(",")]
-            for name in names:
-                if name:
-                    known_terms_lookup_dict[name] = known_term
+            for term in [s.strip() for s in known_term[k].split(",") if s.strip()]:
+                all_term_variants.append(term)
+
+        for term in all_term_variants:
+            known_terms_lookup_dict[term] = known_term
 
     known_dishes = []
     for known_term in known_terms:
@@ -122,7 +126,7 @@ def load_known_terms() -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]
             known_dish["description_en"] = known_dish.pop("dish_description_en")
             known_dish["locale_code"] = known_dish.pop("dish_cuisine")
             known_dishes.append(known_dish)
-    return known_terms_lookup_dict, known_dishes
+    return known_terms, known_terms_lookup_dict, known_dishes
 
 
 def _slugify(s: str) -> str:
@@ -220,6 +224,8 @@ def generate_menu_html(
 
             # Preferring longest possible match first
             for key in ordered_known_terms:
+                assert len(key) > 0
+
                 if primary_name[i:].startswith(key):
                     annotated_html += '<span class="term-native">'
                     annotated_html += key
@@ -431,13 +437,14 @@ def generate_dishes_html(
 
 def generate_stats_html(
     menu_yaml_dicts: list[dict[str, Any]],
+    known_terms: list[dict[str, Any]],
     known_terms_lookup_dict: dict[str, dict[str, Any]],
     known_dishes: list[dict[str, Any]],
     known_dish_lookup_dict: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
     menu_stats = gather_menu_stats(
-        menu_yaml_dicts, known_terms_lookup_dict, known_dish_lookup_dict
+        menu_yaml_dicts, known_terms, known_terms_lookup_dict, known_dish_lookup_dict
     )
 
     env = Environment(loader=FileSystemLoader("templates"))
@@ -461,7 +468,7 @@ def generate_stats_html(
 def main(input_dir: str, output_dir: str):
     # Load canned data
     known_locale_lookup_dict = load_known_locales()
-    known_terms_lookup_dict, known_dishes = load_known_terms()
+    known_terms, known_terms_lookup_dict, known_dishes = load_known_terms()
 
     # Map known_dish's name_native to known_dish dict
     known_dish_lookup_dict = {}
@@ -500,6 +507,7 @@ def main(input_dir: str, output_dir: str):
     output_path = os.path.join(output_dir, "stats.html")
     generate_stats_html(
         list(menu_filename_to_menu_yaml_dict.values()),
+        known_terms,
         known_terms_lookup_dict,
         known_dishes,
         known_dish_lookup_dict,
