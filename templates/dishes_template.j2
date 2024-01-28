@@ -113,15 +113,14 @@
                 {% for known_dish in locale_dish_group.dishes %}
                 <!-- Known Dish -->
                 <tr>
-                    <!-- Known Dish 'name_native' -->
-                    {% set primary_name_native = known_dish['name_native'].split(',')[0] %}
-
+                    <!-- Known Dish 'name_primary' -->
                     <td class="dishes-table-image-column">
-                        {% set imageSearchUrl = "https://www.google.com/search?tbm=isch&q=" ~ primary_name_native %}
+                        {% set imageSearchUrl = "https://www.google.com/search?tbm=isch&q=" ~
+                        known_dish.name_primary %}
 
                         <!-- Known Dish 'image_url' -->
-                        {% if known_dish['image_url'] %}
-                        <img src="{{ known_dish['image_url'] }}" alt="Dish Image" title="{{ imageSearchUrl }}"
+                        {% if known_dish.image_url %}
+                        <img src="{{ known_dish.image_url }}" alt="Dish Image" title="{{ imageSearchUrl }}"
                             onclick="openLink('{{ imageSearchUrl }}', 'googleimage')">
                         {% else %}
                         <button aria-label="Image Search" title="{{ imageSearchUrl }}" type="button"
@@ -131,7 +130,7 @@
                     </td>
                     <td class="dishes-table-text-column">
                         <div class="dish-name-div">
-                            <span class="dish-name-primary">{{ primary_name_native }}</span><br>
+                            <span class="dish-name-primary">{{ known_dish.name_primary }}</span><br>
                             <!-- Known Dish 'name_en' -->
                             <span class="dish-name-secondary">{{ known_dish.name_en }}</span>
                         </div>
@@ -152,16 +151,16 @@
                         </div>
                     </td>
                     <td class="dishes-table-menuaction-column">
-                        {% set lang = known_dish['locale_code'] %}
+                        {% set lang = known_dish.dish_cuisine_locale %}
 
                         {% if locale_dish_group.locale_code == 'zh-u-sd-cngd' %}
                         <button aria-label="Speak Cantonese" title="Speak (Cantonese)"
                             class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', 'zh-HK')">🗣️粵</button><br>
+                            onclick="speakText('{{ known_dish.name_primary }}', 'zh-HK')">🗣️粵</button><br>
                         {% set lang = 'zh-CN' %}
                         {% endif %}
                         <button aria-label="Speak" title="Speak" class="btn btn-light btn-menuaction btn-speak"
-                            onclick="speakText('{{ primary_name_native }}', '{{ lang }}')">🗣️</button><br>
+                            onclick="speakText('{{ known_dish.name_primary }}', '{{ lang }}')">🗣️</button><br>
 
                         <!-- Known Dish 'wikipedia_url' -->
                         {% if known_dish['wikipedia_url'] %}

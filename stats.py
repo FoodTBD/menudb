@@ -4,6 +4,8 @@ from collections import defaultdict
 import itertools
 from typing import Any
 
+from model import KnownTerm
+
 UNKNOWN_CHAR_PLACEHOLDER = "🟨"
 
 
@@ -77,9 +79,9 @@ def _generate_partitions(input_string: str) -> list[list[str]]:
 
 def gather_menu_stats(
     menu_yaml_dicts: list[dict[str, Any]],
-    known_terms: list[dict[str, Any]],
-    known_terms_lookup_dict: dict[str, Any],
-    known_dish_lookup_dict: dict[str, dict[str, Any]],
+    known_terms: list[KnownTerm],
+    known_terms_lookup_dict: dict[str, KnownTerm],
+    known_dish_lookup_dict: dict[str, KnownTerm],
 ) -> dict[str, Any]:
     # Find dish names
     menu_item_primary_names = []
@@ -117,10 +119,15 @@ def gather_menu_stats(
 
     top_characters = character_counter.most_common(50)
     # Enrich tuples with English definitions
-    top_characters = [
-        (k, v, known_terms_lookup_dict.get(k, {}).get("en", UNKNOWN_CHAR_PLACEHOLDER))
-        for k, v in top_characters
-    ]
+    top_characters = []
+    for k, v in top_characters:
+        known_term = known_terms_lookup_dict.get(k)
+        if known_term:
+            en = known_term.name_en
+        else:
+            en = UNKNOWN_CHAR_PLACEHOLDER
+        t = (k, v, en)
+        top_characters.append(t)
 
     # Get primary names with non-alpha characters filtered out
     alpha_primary_names = []
@@ -140,8 +147,12 @@ def gather_menu_stats(
         for terms_zh in _generate_partitions(ngram):
             terms_en = []
             for term_zh in terms_zh:
-                term_en = known_terms_lookup_dict.get(term_zh, {}).get("en")
-                terms_en.append(term_en)
+                known_term = known_terms_lookup_dict.get(term_zh)
+                if known_term:
+                    en = known_term.name_en
+                else:
+                    en = None
+                terms_en.append(en)
             en = " + ".join(
                 [f'"{s}"' if s else f'"{UNKNOWN_CHAR_PLACEHOLDER}"' for s in terms_en]
             )
@@ -159,16 +170,25 @@ def gather_menu_stats(
     for k, v in find_top_ngrams(alpha_primary_names, 2, 200):
         if v >= 3:
             # Enrich tuples with English definitions
-            en = known_terms_lookup_dict.get(k, {}).get("en")
+            known_term = known_terms_lookup_dict.get(k)
+            if known_term:
+                en = known_term.name_en
+            else:
+                en = None
+
             if en:
                 en = f'"{en}"'
             else:
-                en = " + ".join(
-                    [
-                        f'"{known_terms_lookup_dict.get(c, {}).get("en", UNKNOWN_CHAR_PLACEHOLDER)}"'
-                        for c in k
-                    ]
-                )
+                terms_en = []
+                for c in k:
+                    known_term = known_terms_lookup_dict.get(c)
+                    if known_term:
+                        en = known_term.name_en
+                    else:
+                        en = UNKNOWN_CHAR_PLACEHOLDER
+                    terms_en.append(en)
+
+                en = " + ".join([f'"{en}"' for en in terms_en])
             t = (k, v, en)
 
             # Filter out 2-grams e.g. "黃毛" that are included in 3-grams e.g. "黃毛雞"
@@ -184,14 +204,15 @@ def gather_menu_stats(
     # Find common dishes
     menu_item_primary_name_counter = collections.Counter(menu_item_primary_names)
     filtered_c = {k: v for k, v in menu_item_primary_name_counter.items() if v >= 3}
-    common_dishes = [
-        (
-            k,
-            v,
-            known_dish_lookup_dict.get(k, {}).get("name_en", UNKNOWN_CHAR_PLACEHOLDER),
-        )
-        for k, v in sorted(filtered_c.items(), key=lambda x: x[1], reverse=True)
-    ]
+    common_dishes = []
+    for k, v in sorted(filtered_c.items(), key=lambda x: x[1], reverse=True):
+        known_term = known_terms_lookup_dict.get(k)
+        if known_term:
+            en = known_term.name_en
+        else:
+            en = UNKNOWN_CHAR_PLACEHOLDER
+        t = (k, v, en)
+        common_dishes.append(t)
 
     # Data linting
     for dish_name in filtered_c:

@@ -31,7 +31,7 @@ Upon `git push`, all of `output/` is published to https://foodtbd.github.io/menu
 
 ## Menu YAML
 
-Each YAML file contains **restaurant** metadata coupled with a **menu** definition.  A **menu** contains **pages**. A page contains **sections**. A section contains **menu items**, a.k.a. dishes.
+Each YAML file contains **restaurant** metadata coupled with a **menu** definition.  A **menu** contains **pages**. A page contains **sections**. A section contains **menu items**.
 
 
 ### Example
@@ -99,37 +99,37 @@ Language Code | Meaning
 
 See repository https://github.com/FoodTBD/menudb_images.
 
-#### Dish Names (`name_{$LANG}` Fields)
+#### Menu Item Names (`name_{$LANG}` Fields)
 
-* Anything like quantities or "half portion" written in a dish name should be moved to `description_xxx` or `note_xxx` fields, to facilitate dictionary-based matching.
+* Anything like quantities or "half portion" written in a menu item name should be moved to `description_xxx` or `note_xxx` fields, to facilitate dictionary-based matching.
 * Any spelling mistakes in the original menu should be transcribed verbatim and annotated with `[sic]`.
 
 
 ## Language Data
 
-`known_terms.tsv` contains all linguistic definitions, including for dishes. It supercedes `known_dishes.tsv`.
+`known_terms.tsv` contains all linguistic definitions, including for dishes.
 
 `known_terms.tsv` is a snapshot copy of https://docs.google.com/spreadsheets/d/1p_pUiqP6fgpCcKsQ4Ok7WpijfDf6fmVvRuJAwMi1B1E/edit#gid=2051976005. As it's easier to edit in Google Sheets, treat Google Sheets as the canonical version and use that to overwrite `data/known_terms.tsv`, rather than the other way around.
 
 There's a grey zone between what is a "term" and what is a "dish". For example, "braised" is obviously a term, and "Kung Pao Chicken" is obviously a dish. Some things like "fried rice" and "wonton" and "bok choy" SHOULD be left as terms, rather than dishes, because they are usually only part of a dish name.
 
-To define a **term**:
-1. Write the `en` name in lowercase.
-1. Leave the `dish_cuisine` and `dish_description_en` fields unset.
+To define a known **term**:
+1. Write the `name_en` name in lowercase.
+1. Leave the `dish_cuisine_locale` and `description_en` fields unset.
 
-To promote a term to a **dish**:
-1. Write the `en` name in title-case.
-1. Fill out the `dish_cuisine` and `dish_description_en` fields.
+To promote a known term to a known **dish**:
+1. Write the `name_en` name in title-case.
+1. Fill out the `dish_cuisine_locale` and `description_en` fields.
 
 
 ### Language Data Style Guide
 
-#### `zh-Hans` and `zh-Hant` Columns
+#### `name_zh-Hans` and `name_zh-Hant` Columns
 
 * Use Google Translate to translate between simplified and traditional Chinese.
 * Minor variations in written form MAY be added using in comma separated format, e.g. (`煎䭔,煎堆` for jiān duī). Use separate line items for synonyms, especially if they correspond to separate entries in Wiktionary, e.g. (`煎䭔` jiān duī vs `芝麻球` for zhīma qiú).
 
-#### `en` Column
+#### `name_en` Column
 
 * Use Google Search and ChatGPT to come up with the best translation for food contexts.
 * Write nouns in singular form ("noodle", not "noodles"), and verbs in past tense form ("roasted" not "roast").
@@ -146,7 +146,11 @@ Either link directly to the restaurant's own website, or otherwise use free lice
 
 * Use Google Image Search for "`site:wikipedia.org OR site:wikimedia.org XXX`" to find images.
 
-#### `dish_cuisine` Column
+#### `description_en` Column
+
+Use ChatGPT to generate concise descriptions with an encyclopedic voice. Keep the description to around 50-75 characters. Omit filler words like "delicious", "Chinese".
+
+#### `dish_cuisine_locale` Column
 
 Use [BCP 47 language tags](https://en.wikipedia.org/wiki/IETF_language_tag), specifying the geographic region of the cuisine.
 
@@ -161,18 +165,14 @@ See https://www.unicode.org/cldr/charts/43/supplemental/territory_subdivisions.h
 
 Locales are defined in the `known_locales.tsv`, which comes from the same Google Sheet as `known_terms.tsv`.
 
-#### `dish_description_en` Column
-
-Use ChatGPT to generate concise descriptions with an encyclopedic voice. Keep the description to around 50-75 characters. Omit filler words like "delicious", "Chinese".
-
 
 ## Transcription Workflow
 
 John's workflow:
 
-1. Use OCR to do the transcription. Google Lens/Translate seems to work best, but you might want to double-check against macOS Preview and/or [EasyOCR](https://www.jaided.ai/easyocr/).
+1. Use OCR to do the menu transcription. Google Lens/Translate seems to work best, but you might want to double-check against macOS Preview and/or [EasyOCR](https://www.jaided.ai/easyocr/).
     * To use Google Lens/Translate: Upload menu photos to Google Drive. On phone: using the Google Drive app, choose "Open with", then "Google Lens". (Alternatively open the image file within the Google Translate app.) Tap "Select text". Send the copied text to Mac.
-    * To use macOS Preview: Open the menu photo in Preview. Select dish names and copy to clipboard.
+    * To use macOS Preview: Open the menu photo in Preview. Select menu item names and copy to clipboard.
 2. Ask ChatGPT to "`Translate literally: xxx`".
     * Read the answer and do a sanity check. Look up terms in [Wiktionary](https://en.wiktionary.org/), Wikipedia, Google Search, and/or Google Image Search, even [MDBG Chinese Dictionary](https://www.mdbg.net/chinese/dictionary?page=radicals). If something doesn't make sense, go back and look for OCR errors.
 3. Add any useful terms to the `known_terms` table, especially if it exists in Wiktionary. See style guide above.

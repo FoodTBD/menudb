@@ -11,8 +11,9 @@ import strictyaml
 from jinja2 import Environment, FileSystemLoader
 
 import jinja_filters
-from stats import gather_menu_stats
+from model import KnownTerm
 from schema import RESTAURANT_SCHEMA
+from stats import gather_menu_stats
 
 STATIC_DIR = "static"
 INPUT_DIR = "content"
@@ -30,7 +31,7 @@ def prepare_output_dir(output_dir: str) -> None:
     shutil.copytree(STATIC_DIR, output_static_dir)
 
 
-def load_known_locales() -> dict[str, dict[str, Any]]:
+def load_known_locales() -> dict[str, dict[str, str]]:
     known_locales = []
     with open("data/known_locales.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
@@ -46,86 +47,28 @@ def load_known_locales() -> dict[str, dict[str, Any]]:
     return known_dish_lookup_dict
 
 
-def load_known_terms() -> (
-    tuple[list[dict[str, Any]], dict[str, dict[str, Any]], list[dict[str, Any]]]
-):
+def load_known_terms() -> tuple[list[KnownTerm], dict[str, KnownTerm], list[KnownTerm]]:
     known_terms = []
     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
         for row in csvreader:
             assert any(row.values()), "ERROR: known_terms has empty lines"
 
-            # Remove comments
-            for k in list(row.keys()):
-                if k.startswith("_"):
-                    row.pop(k)
-
-            # Rewrite non-English Wikipedia links to be presented via Google Translate
-            wikipedia_url = row["wikipedia_url"]
-            o = urllib.parse.urlparse(wikipedia_url)
-            if o.hostname and not o.hostname.startswith("en."):
-                row["wikipedia_url"] = (
-                    "https://translate.google.com/translate?sl=auto&tl=en&u="
-                    + wikipedia_url
-                )
-
-            known_terms.append(row)
-
-    # Check for duplicates
-    zh_hans_name_set = set()
-    zh_hant_name_set = set()
-    for known_term in known_terms:
-        k = "zh-Hans"
-        if known_term[k]:
-            if known_term[k] in zh_hans_name_set:
-                print(f'WARNING: duplicate {k} key "{known_term[k]}" in known_terms')
-            zh_hans_name_set.add(known_term[k])
-
-        k = "zh-Hant"
-        if known_term[k]:
-            if known_term[k] in zh_hant_name_set:
-                print(f'WARNING: duplicate {k} key "{known_term[k]}" in known_terms')
-            zh_hant_name_set.add(known_term[k])
-
-    # Check capitalization
-    EN_STOPWORDS = ["a", "an", "and", "BBQ", "for", "in", "with"]
-    for known_term in known_terms:
-        if known_term["dish_cuisine"]:
-            en_actual = known_term["en"]
-            en_expected = " ".join(
-                [
-                    w.title() if not w in EN_STOPWORDS and w.isalpha() else w
-                    for w in en_actual.split(" ")
-                ]
-            )
-            if en_actual != en_expected:
-                print(
-                    f'WARNING: {known_term["en"]} defines dish_cuisine but is not title cased'
-                )
+            known_term = KnownTerm(row)
+            known_terms.append(known_term)
 
     known_terms_lookup_dict = {}
+    # Use all native names as lookup keys
     for known_term in known_terms:
-        # Use all native forms (both simplified and traditional) as lookup keys
-        all_term_variants = []
-        for k in ["zh-Hans", "zh-Hant"]:
-            for term in [s.strip() for s in known_term[k].split(",") if s.strip()]:
-                all_term_variants.append(term)
-
-        for term in all_term_variants:
-            known_terms_lookup_dict[term] = known_term
+        known_terms_lookup_dict.update(
+            {native_name: known_term for native_name in known_term.all_native_names}
+        )
 
     known_dishes = []
     for known_term in known_terms:
-        if known_term["dish_cuisine"]:
-            # Backward compatiblity from known_terms to known_dishes
-            known_dish = known_term.copy()
-            known_dish["name_native"] = ",".join(
-                [known_dish["zh-Hans"], known_dish["zh-Hant"]]
-            )
-            known_dish["name_en"] = known_dish.pop("en")
-            known_dish["description_en"] = known_dish.pop("dish_description_en")
-            known_dish["locale_code"] = known_dish.pop("dish_cuisine")
-            known_dishes.append(known_dish)
+        if known_term.dish_cuisine_locale:
+            known_dishes.append(known_term)
+
     return known_terms, known_terms_lookup_dict, known_dishes
 
 
@@ -135,17 +78,21 @@ def _slugify(s: str) -> str:
 
 def generate_menu_html(
     input_yaml_path: str,
+    output_filename: str,
     output_html_path: str,
-    known_dish_lookup_dict: dict[str, dict[str, Any]],
-    known_terms_lookup_dict: dict[str, Any],
+    known_dish_lookup_dict: dict[str, KnownTerm],
+    known_terms_lookup_dict: dict[str, KnownTerm],
 ) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
         yaml_data = strictyaml.load(yaml_path.read(), RESTAURANT_SCHEMA)
 
-    # Inject the modification date into the YAML data
-    mod_date = datetime.datetime.fromtimestamp(os.path.getmtime(input_yaml_path))
     # The type checker thinks yaml_data.data is a str, not a dict
     yaml_dict = typing.cast(OrderedDict[str, Any], yaml_data.data)
+
+    yaml_dict["_output_filename"] = output_filename
+
+    # Inject _date_modified into the YAML data
+    mod_date = datetime.datetime.fromtimestamp(os.path.getmtime(input_yaml_path))
     yaml_dict["_date_modified"] = mod_date.isoformat()
 
     # Inject restaurant.googlemaps_url if not already defined
@@ -185,10 +132,15 @@ def generate_menu_html(
                             lang = "name_" + primary_lang
                             if menu_item.get(lang):
                                 primary_name = menu_item[lang]
-                                if known_dish_lookup_dict.get(primary_name):
-                                    known_dish = known_dish_lookup_dict[primary_name]
-                                    for k, v in known_dish.items():
-                                        if k not in menu_item:
+                                known_dish = known_dish_lookup_dict.get(primary_name)
+                                if known_dish:
+                                    for k in [
+                                        "wikipedia_url",
+                                        "image_url",
+                                        "description_en",
+                                    ]:
+                                        v = getattr(known_dish, k)
+                                        if v and k not in menu_item:
                                             menu_item[k] = v
 
     # Display languages are all languages in the menu, plus English
@@ -203,19 +155,19 @@ def generate_menu_html(
         section_or_item: dict[str, Any],
         is_section: bool,
         ordered_known_terms: list[str],
-        known_terms_lookup_dict: dict[str, Any],
-    ) -> bool:
+        known_terms_lookup_dict: dict[str, KnownTerm],
+    ) -> list[KnownTerm]:
         primary_lang_tag = yaml_dict["menu"]["language_codes"][0]
 
         primary_lang_code = primary_lang_tag.split("-")[0]
         if not primary_lang_code == "zh":
-            return False
+            return []
 
         primary_name = section_or_item.get("name_" + primary_lang_tag)
         if not primary_name:
-            return False
+            return []
 
-        matched_all = True
+        matched_known_terms = []
         annotated_html = ""
         # Match from left to right
         i = 0
@@ -231,11 +183,13 @@ def generate_menu_html(
                     annotated_html += key
                     annotated_html += '<span class="term-translated">'
 
-                    wikipedia_url = known_terms_lookup_dict[key]["wikipedia_url"]
+                    known_term = known_terms_lookup_dict[key]
+
+                    wikipedia_url = known_term.wikipedia_url
                     if wikipedia_url:
                         annotated_html += f'<a href="{wikipedia_url}" target="wikipedia" rel="noopener">'
 
-                    term_en = known_terms_lookup_dict[key]["en"]
+                    term_en = known_term.name_en
                     if is_section:
                         term_en = term_en.title()
                     annotated_html += term_en
@@ -248,17 +202,16 @@ def generate_menu_html(
 
                     i += len(key)
                     matched = True
+                    matched_known_terms.append(known_term)
 
                     # Use data from this matching term to possibly enrich the section_or_item
-                    known_term = known_terms_lookup_dict[key]
-                    if not section_or_item.get("image_url") and known_term.get(
-                        "image_url"
+                    if not section_or_item.get("image_url") and known_term.image_url:
+                        section_or_item["image_url"] = known_term.image_url
+                    if (
+                        not section_or_item.get("wikipedia_url")
+                        and known_term.wikipedia_url
                     ):
-                        section_or_item["image_url"] = known_term["image_url"]
-                    if not section_or_item.get("wikipedia_url") and known_term.get(
-                        "wikipedia_url"
-                    ):
-                        section_or_item["wikipedia_url"] = known_term["wikipedia_url"]
+                        section_or_item["wikipedia_url"] = known_term.wikipedia_url
 
                     break
 
@@ -269,23 +222,22 @@ def generate_menu_html(
                 )
                 i += 1
 
-                matched_all = False
-
         section_or_item["_annotated_name"] = annotated_html
-        return matched_all
+        return matched_known_terms
 
     # CHINESE ONLY
     # Match against longest terms first
     ordered_nondish_terms = sorted(
-        {k: v for k, v in known_terms_lookup_dict.items() if not v["dish_cuisine"]},
+        {k: v for k, v in known_terms_lookup_dict.items() if not v.dish_cuisine_locale},
         key=len,
         reverse=True,
     )
     ordered_all_terms = sorted(known_terms_lookup_dict, key=len, reverse=True)
 
     # For each Chinese section/menu_item, try to annotate it
-    if yaml_dict.get("menu"):
-        for page in yaml_dict["menu"]["pages"]:
+    menu = yaml_dict.get("menu")
+    if menu:
+        for page in menu["pages"]:
             sections = page.get("sections", [])
             for section in sections:
                 # Annotate section name
@@ -295,9 +247,14 @@ def generate_menu_html(
 
                 menu_items = section.get("menu_items", [])
                 for menu_item in menu_items:
-                    _annotate_menu_section_or_item_with_known_terms(
-                        menu_item, False, ordered_all_terms, known_terms_lookup_dict
+                    matched_known_terms = (
+                        _annotate_menu_section_or_item_with_known_terms(
+                            menu_item, False, ordered_all_terms, known_terms_lookup_dict
+                        )
                     )
+                    for known_term in matched_known_terms:
+                        if not output_filename in known_term._menu_filenames:
+                            known_term._menu_filenames.append(output_filename)
 
     env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
@@ -323,8 +280,8 @@ def generate_menu_html(
 def process_menu_yaml_paths(
     input_dir: str,
     output_dir: str,
-    known_dish_lookup_dict: dict[str, dict[str, Any]],
-    known_terms_lookup_dict: dict[str, Any],
+    known_dish_lookup_dict: dict[str, KnownTerm],
+    known_terms_lookup_dict: dict[str, KnownTerm],
 ) -> dict[str, Any]:
     menu_filename_to_menu_yaml_dict = {}
     for root, _, files in os.walk(input_dir):
@@ -338,12 +295,12 @@ def process_menu_yaml_paths(
 
                 yaml_dict = generate_menu_html(
                     input_path,
+                    output_filename,
                     output_path,
                     known_dish_lookup_dict,
                     known_terms_lookup_dict,
                 )
 
-                yaml_dict["_output_filename"] = output_filename
                 menu_filename_to_menu_yaml_dict[output_filename] = yaml_dict
 
                 print(f"Processed: {input_path} -> {output_path}")
@@ -353,7 +310,7 @@ def process_menu_yaml_paths(
 
 def generate_index_html(
     menu_yaml_dicts: list[dict[str, Any]],
-    known_dishes: list[dict[str, Any]],
+    known_dishes: list[KnownTerm],
     output_html_path: str,
 ) -> None:
     env = Environment(loader=FileSystemLoader("templates"))
@@ -372,49 +329,19 @@ def generate_index_html(
 
 
 def generate_dishes_html(
-    known_locale_lookup_dict: dict[str, dict[str, Any]],
-    known_dishes: list[dict[str, Any]],
+    known_locale_lookup_dict: dict[str, dict[str, str]],
+    known_dishes: list[KnownTerm],
     menu_filename_to_menu_yaml_dict: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
-    # Build a mapping of menu item names to the output filename
-    dish_name_to_menu_filename = {}
-    for yaml_dict in menu_filename_to_menu_yaml_dict.values():
-        if yaml_dict.get("menu"):
-            menu = yaml_dict["menu"]
-            language_codes = menu["language_codes"]
-            for page in menu["pages"]:
-                sections = page.get("sections", [])
-                for section in sections:
-                    menu_items = section.get("menu_items", [])
-                    for menu_item in menu_items:
-                        for language_code in language_codes:
-                            name_lang = "name_" + language_code
-                            if menu_item.get(name_lang):
-                                name = menu_item[name_lang]
-                                if not dish_name_to_menu_filename.get(name):
-                                    dish_name_to_menu_filename[name] = []
-                                dish_name_to_menu_filename[name].append(
-                                    yaml_dict["_output_filename"]
-                                )
-
-    # Inject the output files into known_dishes
-    for known_dish in known_dishes:
-        menu_filename_set = set()
-        for dish_name in known_dish["name_native"].split(","):
-            menu_filenames = dish_name_to_menu_filename.get(dish_name)
-            if menu_filenames:
-                menu_filename_set.update(menu_filenames)
-        known_dish["_menu_filenames"] = list(menu_filename_set)
-
     # Group known_dishes by locale
     locale_dish_groups = []
     for locale_dict in known_locale_lookup_dict.values():
-        locale_code = locale_dict["locale_code"]
+        locale_code: str = locale_dict["locale_code"]
         locale_dishes = [
-            dish for dish in known_dishes if dish["locale_code"] == locale_code
+            dish for dish in known_dishes if dish.dish_cuisine_locale == locale_code
         ]
-        locale_dishes = sorted(locale_dishes, key=lambda d: d["name_en"])
+        locale_dishes = sorted(locale_dishes, key=lambda d: d.name_en)
         locale_dish_group = {**locale_dict, "dishes": locale_dishes}
         locale_dish_groups.append(locale_dish_group)
     locale_dish_groups = sorted(locale_dish_groups, key=lambda d: d["cuisine_name_en"])
@@ -437,10 +364,10 @@ def generate_dishes_html(
 
 def generate_stats_html(
     menu_yaml_dicts: list[dict[str, Any]],
-    known_terms: list[dict[str, Any]],
-    known_terms_lookup_dict: dict[str, dict[str, Any]],
-    known_dishes: list[dict[str, Any]],
-    known_dish_lookup_dict: dict[str, dict[str, Any]],
+    known_terms: list[KnownTerm],
+    known_terms_lookup_dict: dict[str, KnownTerm],
+    known_dishes: list[KnownTerm],
+    known_dish_lookup_dict: dict[str, KnownTerm],
     output_html_path: str,
 ) -> None:
     menu_stats = gather_menu_stats(
@@ -470,14 +397,12 @@ def main(input_dir: str, output_dir: str):
     known_locale_lookup_dict = load_known_locales()
     known_terms, known_terms_lookup_dict, known_dishes = load_known_terms()
 
-    # Map known_dish's name_native to known_dish dict
+    # Use all native names as lookup keys
     known_dish_lookup_dict = {}
     for known_dish in known_dishes:
-        name_native_commaseparated = known_dish["name_native"].split(",")
-        d = known_dish.copy()
-        d.pop("name_native")
-        for native_name in name_native_commaseparated:
-            known_dish_lookup_dict[native_name] = d
+        known_dish_lookup_dict.update(
+            {native_name: known_dish for native_name in known_dish.all_native_names}
+        )
 
     prepare_output_dir(output_dir)
 
