@@ -15,16 +15,18 @@ menu:
         - "name_zh-Hans":  北京烤鸭
           "name_en": Native Specialty
           menu_items:
-            - "name_zh-Hans": 老北京烤鸭套餐（小号）2-3人
-              "name_en": Beijing Style Traditional Roast Duck Combo2-3person 
+            - "name_zh-Hans": 老北京烤鸭套餐
+              "name_en": Beijing Style Traditional Roast Duck Combo
+              note: （小号）2-3人 / 2-3person
             - "name_zh-Hans": 自制烤鸭饼(10)
               "name_en": HomeMade Pancake(10)
             - "name_zh-Hans": 烤鸭酱
               "name_en": Roast Duck Sauce
             - "name_zh-Hans": 额外烤鸭小料
               "name_en": Extra Roast Duck Toppings
-            - "name_zh-Hans": 老北京烤鸭套餐（大号）4-6人
-              "name_en": Beijing Style Traditional Roast Duck Combo(L)4-6Person
+            - "name_zh-Hans": 老北京烤鸭套餐
+              "name_en": Beijing Style Traditional Roast Duck Combo
+              note: （大号）4-6人 / (L)4-6Person
         - "name_zh-Hans":  火锅
           "name_en": Beijing Hot Pot
           menu_items:
@@ -41,9 +43,11 @@ menu:
             - "name_zh-Hans": 腐乳
               "name_en": Preserved Bean Curd
             - "name_zh-Hans": 清真极品羊肉片
-              "name_en": Prime Lamb Slice (Halal)
+              "name_en": Prime Lamb Slice
+              note: (Halal)
             - "name_zh-Hans": 清真雪花牛肉片
-              "name_en": Premium Beef Slice (Halal)
+              "name_en": Premium Beef Slice
+              note: (Halal)
             - "name_zh-Hans": 九尺鹅肠
               "name_en": Goose intestines
             - "name_zh-Hans": 牛百叶
@@ -76,10 +80,12 @@ menu:
               "name_en": Crab Sticks
             - "name_zh-Hans": 带头虾
               "name_en": Head on Shrimp
-            - "name_zh-Hans": 超级大宽粉（大）
+            - "name_zh-Hans": 超级大宽粉
               "name_en": Super Wide Noodles
-            - "name_zh-Hans": 特质宽粉(小）
+              note: （大）
+            - "name_zh-Hans": 特质宽粉
               "name_en": Special Mung Bean Wide Noodles
+              note: (小）
             - "name_zh-Hans": 红薯粉条
               "name_en": Sweet Potato Noodles
             - "name_zh-Hans": 粉丝
@@ -288,12 +294,14 @@ menu:
         - "name_zh-Hans": 北京特色甜品
           "name_en": Special Dessert
           menu_items:
-            - "name_zh-Hans": 老北京什锦炸糕（4）
-              "name_en": Beijing Style Sweet Cakes(4)
+            - "name_zh-Hans": 老北京什锦炸糕
+              "name_en": Beijing Style Sweet Cakes
+              note: (4)
             - "name_zh-Hans": 宫廷豌豆黄
               "name_en": Beijing style yellow pea cake
-            - "name_zh-Hans": 蜂巢玉米烙（大）
+            - "name_zh-Hans": 蜂巢玉米烙
               "name_en": Fried Bees Nest with Corn
+              note: （大）
         - "name_zh-Hans": 砂锅 (汤) 类
           "name_en": Clay Pot
           menu_items:
@@ -376,29 +384,39 @@ menu:
         - "name_zh-Hans":  
           "name_en": Luncheon Special
           menu_items:
-            - "name_zh-Hans": 北京木须肉(L)
+            - "name_zh-Hans": 北京木须肉
               "name_en": Beijing Style Mushu Pork
-            - "name_zh-Hans": 麻婆豆腐(L)
+              note: (L)
+            - "name_zh-Hans": 麻婆豆腐
               "name_en": Mapo Tofu
-            - "name_zh-Hans": 宫保鸡(L)
+              note: (L)
+            - "name_zh-Hans": 宫保鸡
               "name_en": Kung Pao Chicken
-            - "name_zh-Hans": 蒙古牛(L)
+              note: (L)
+            - "name_zh-Hans": 蒙古牛
               "name_en": Mongolian Beef
-            - "name_zh-Hans": 芥兰牛(L)
+              note: (L)
+            - "name_zh-Hans": 芥兰牛
               "name_en": Broccoli Beef
-
-            - "name_zh-Hans": 豆豉鱼片(L)
+              note: (L)
+            - "name_zh-Hans": 豆豉鱼片
               "name_en": Fish Fillet in Black Bean Sauce
-            - "name_zh-Hans": 干煸四季豆(L)
+              note: (L)
+            - "name_zh-Hans": 干煸四季豆
               "name_en": Dry Cook String Bean
-            - "name_zh-Hans": 鱼香茄子(L)
+              note: (L)
+            - "name_zh-Hans": 鱼香茄子
               "name_en": Hot & Spicy Eggplant in Garlic Sauce
-            - "name_zh-Hans": 香笋回锅肉(L)
+              note: (L)
+            - "name_zh-Hans": 香笋回锅肉
               "name_en": Special Bamboo Shoot w. Twice Cooked Prok
-            - "name_zh-Hans": 香干鲜爆五花肉(L)
+              note: (L)
+            - "name_zh-Hans": 香干鲜爆五花肉
               "name_en": Stir Fried Pork Belly Smoked Bean Curd and Jalapeno
+              note: (L)
         - "name_zh-Hans": 汤美式菜单
-          "name_en": Soup (Classic)
+          "name_en": Soup
+          note:  (美式菜单 / Classic)
           menu_items:
             - "name_zh-Hans": 锅贴
               "name_en": Pot Sticker
@@ -414,8 +432,9 @@ menu:
               "name_en": Seafood Tofu Soup
             - "name_zh-Hans": 番茄蛋花汤
               "name_en": Tomato Eggs Soup
-        - "name_zh-Hans":  牛肉/羊肉 (美式菜单)
-          "name_en": Beef/Lamb (Classic)
+        - "name_zh-Hans":  牛肉/羊肉
+          "name_en": Beef/Lamb
+          note:  (美式菜单 / Classic)
           menu_items:
             - "name_zh-Hans": 蒙古牛
               "name_en": Mongolian Beef
@@ -425,8 +444,9 @@ menu:
               "name_en": Chinese Brocclli Beef
             - "name_zh-Hans": 芥兰羊
               "name_en": Chinese Brocclli Lamb
-        - "name_zh-Hans":  木须猪肉/鸡肉 (美式菜单)
-          "name_en": Mu Shu Pork/Chicken (Classic)
+        - "name_zh-Hans":  木须猪肉/鸡肉
+          "name_en": Mu Shu Pork/Chicken
+          note:  (美式菜单 / Classic)
           menu_items:
             - "name_zh-Hans": 宫保鸡丁（北京味)
               "name_en": Kung Pao Chicken
@@ -434,8 +454,9 @@ menu:
               "name_en": Salt and Pepper Chicken Wings
             - "name_zh-Hans": 京都干烹鸡翅
               "name_en": Beijing Style Dry Fried Chicken Wings w. Special Sauce
-        - "name_zh-Hans": 鱼虾类 (美式菜单)
-          "name_en": Fish & Shrimp (Classic)
+        - "name_zh-Hans": 鱼虾类
+          "name_en": Fish & Shrimp
+          note:  (美式菜单 / Classic)
           menu_items:
             - "name_zh-Hans": 宫保鱼/虾
               "name_en": Kung Pao Fish/Shrimp

@@ -6,6 +6,7 @@ name_zh-Hans	name_zh-Hant	name_en	wikipedia_url	image_url	description_en	dish_cu
 开胃	開胃	appetizer					
 杏	杏	apricot	https://en.wikipedia.org/wiki/Apricot				
 香	香	aromatic					
+飘香	飄香	aromatic					lit. "wafting fragrant/aromatic"
 什锦,什	什锦,什	assorted					
 什锦	什錦	assorted					(Cantonese)
 鸡毛菜	雞毛菜	baby bok choy (?)	https://en.wikipedia.org/wiki/Bok_choy#Spelling_and_naming_variations				"lit. ""chicken feather vegetable"", a small cabbage with leaves as small as chicken feathers""
@@ -232,10 +233,13 @@ https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese"
 自制	自製	homemade					
 家常豆腐	家常豆腐	Homestyle Tofu			Stir-fried tofu with vegetables in savory sauce	zh	Hunan cuisine
 蜜汁,蜜	蜜汁,蜜	honey					
+蜜汁叉烧	蜜汁叉燒	Honey Glazed Char Siu	https://en.wikipedia.org/wiki/Char_siu	https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Charsiu.jpg/460px-Charsiu.jpg	Cantonese barbecued pork with a sweet, caramelized glaze	zh-u-sd-cngd	
 核桃明虾球	核桃明蝦球	Honey Walnut Shrimp	https://en.wikipedia.org/wiki/Honey_walnut_shrimp		Crispy shrimp coated in a creamy sauce and garnished with candied walnuts	zh-u-sd-cngd	
 港	港	Hong Kong	https://en.wikipedia.org/wiki/Hong_Kong_cuisine				
 热	熱	hot					
 酸辣	酸辣	hot & sour	https://en.wikipedia.org/wiki/Hot_and_sour				
+酸辣粉	酸辣粉	Hot and Sour Noodles	https://en.wikipedia.org/wiki/Hot_and_sour_noodles	https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Hot_and_sour_noodles_with_pork_intestines.jpg/440px-Hot_and_sour_noodles_with_pork_intestines.jpg	Thick noodles served in a spicy and sour broth, served with toppings including peanuts	zh-u-sd-cnsc	
+酸辣土豆丝	酸辣土豆絲	Hot and Sour Shredded Potatoes	https://en.wikipedia.org/wiki/Northeastern_Chinese_cuisine#Classic_dishes	https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Taste_of_Beijing%2C_Soho%2C_London_%284363975792%29.jpg/1024px-Taste_of_Beijing%2C_Soho%2C_London_%284363975792%29.jpg	Shredded potatoes stir-fried in a hot and sour seasoning, made with vinegar and chili peppers	zh	
 酸辣汤	酸辣湯	Hot and Sour Soup	https://en.wikipedia.org/wiki/Hot_and_sour_soup	https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Ping_SJ_hot_%26_sour_soup.JPG/128px-Ping_SJ_hot_%26_sour_soup.JPG	Spicy, tangy soup with vegetables, tofu, and optional meat	zh-u-sd-cnsc	
 百	百	hundred					
 贵妃	貴妃	Imperial Concubine	https://zh.wikipedia.org/wiki/%E8%B2%B4%E5%A6%83%E9%9B%9E				
@@ -597,6 +601,6 @@ https://en.wiktionary.org/wiki/%E9%9B%9E%E6%AF%9B%E8%8F%9C#Chinese"
 鱼香茄子	魚香茄子	Yuxiang Eggplant	https://en.wikipedia.org/wiki/Yuxiang	https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Yuxiangqiezi.jpg/440px-Yuxiangqiezi.jpg	Eggplant in a spicy garlic sauce	zh-u-sd-cnsc	
 鱼香肉丝	魚香肉絲	Yuxiang Shredded Pork	https://en.wikipedia.org/wiki/Yuxiang_shredded_pork	https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Fish_flavoured_sliced_pork_from_Melbourne.jpg/128px-Fish_flavoured_sliced_pork_from_Melbourne.jpg	Shredded pork in a spicy garlic sauce	zh-u-sd-cnsc	
 榨菜	榨菜	zha cai	https://en.wikipedia.org/wiki/Zha_cai				
+炸酱面	炸醬麵	Zhajiangmian	https://en.wikipedia.org/wiki/Zhajiangmian	https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Billyzhajiang1.jpg/360px-Billyzhajiang1.jpg	Thick wheat noodles topped with zhajiang (a minced meat sauce)	zh	
 炸两	炸兩	Zhaliang	https://en.wikipedia.org/wiki/Zhaliang	https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Food_%E7%82%B8%E5%85%A9%E8%94%A5%E8%8A%B1%E8%85%B8%E7%B2%89%2C_%E6%96%B0%E8%91%A1%E8%8B%91%2C_Shin_Pu_Yuan%2C_%E5%8F%B0%E5%8C%97_%2820920383094%29.jpg/128px-Food_%E7%82%B8%E5%85%A9%E8%94%A5%E8%8A%B1%E8%85%B8%E7%B2%89%2C_%E6%96%B0%E8%91%A1%E8%8B%91%2C_Shin_Pu_Yuan%2C_%E5%8F%B0%E5%8C%97_%2820920383094%29.jpg	Fried dough wrapped in steamed rice noodle roll	zh-u-sd-cngd	
 舟山	舟山	Zhoushan	https://en.wikipedia.org/wiki/Zhejiang_cuisine				
-炸酱面	炸醬麵	Zhajiangmian	https://en.wikipedia.org/wiki/Zhajiangmian	https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Billyzhajiang1.jpg/360px-Billyzhajiang1.jpg	Thick wheat noodles topped with zhajiang (a minced meat sauce)	zh	
