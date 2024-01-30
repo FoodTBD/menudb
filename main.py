@@ -364,14 +364,13 @@ def generate_dishes_html(
 
 def generate_stats_html(
     menu_yaml_dicts: list[dict[str, Any]],
-    known_terms: list[KnownTerm],
     known_terms_lookup_dict: dict[str, KnownTerm],
     known_dishes: list[KnownTerm],
     known_dish_lookup_dict: dict[str, KnownTerm],
     output_html_path: str,
 ) -> None:
     menu_stats = gather_menu_stats(
-        menu_yaml_dicts, known_terms, known_terms_lookup_dict, known_dish_lookup_dict
+        menu_yaml_dicts, known_terms_lookup_dict, known_dish_lookup_dict
     )
 
     env = Environment(loader=FileSystemLoader("templates"))
@@ -432,7 +431,6 @@ def main(input_dir: str, output_dir: str):
     output_path = os.path.join(output_dir, "stats.html")
     generate_stats_html(
         list(menu_filename_to_menu_yaml_dict.values()),
-        known_terms,
         known_terms_lookup_dict,
         known_dishes,
         known_dish_lookup_dict,

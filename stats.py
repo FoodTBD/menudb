@@ -79,7 +79,6 @@ def _generate_partitions(input_string: str) -> list[list[str]]:
 
 def gather_menu_stats(
     menu_yaml_dicts: list[dict[str, Any]],
-    known_terms: list[KnownTerm],
     known_terms_lookup_dict: dict[str, KnownTerm],
     known_dish_lookup_dict: dict[str, KnownTerm],
 ) -> dict[str, Any]:
@@ -117,16 +116,15 @@ def gather_menu_stats(
     if top_chars_not_known:
         print(f"Top characters not present in known_terms: {top_chars_not_known}")
 
-    top_characters = character_counter.most_common(50)
     # Enrich tuples with English definitions
     top_characters = []
-    for k, v in top_characters:
-        known_term = known_terms_lookup_dict.get(k)
+    for c, n in character_counter.most_common(100):
+        known_term = known_terms_lookup_dict.get(c)
         if known_term:
             en = known_term.name_en
         else:
             en = UNKNOWN_CHAR_PLACEHOLDER
-        t = (k, v, en)
+        t = (c, n, en)
         top_characters.append(t)
 
     # Get primary names with non-alpha characters filtered out
