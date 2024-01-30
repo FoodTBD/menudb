@@ -1,0 +1,451 @@
+author: Jocelyn Chang
+restaurant:
+  name: Boiling Beijing
+  street_address: 649 San Mateo Ave
+  city: San Bruno, CA
+  country_code: US
+  tags: chinese, beijing, nothern
+  online_menu_url: https://www.39miles.com/p/14203179
+menu:
+  language_codes:
+    - zh-Hans
+    - en
+  pages:
+    - sections:
+        - "name_zh-Hans":  北京烤鸭
+          "name_en": Native Specialty
+          menu_items:
+            - "name_zh-Hans": 老北京烤鸭套餐（小号）2-3人
+              "name_en": Beijing Style Traditional Roast Duck Combo2-3person 
+            - "name_zh-Hans": 自制烤鸭饼(10)
+              "name_en": HomeMade Pancake(10)
+            - "name_zh-Hans": 烤鸭酱
+              "name_en": Roast Duck Sauce
+            - "name_zh-Hans": 额外烤鸭小料
+              "name_en": Extra Roast Duck Toppings
+            - "name_zh-Hans": 老北京烤鸭套餐（大号）4-6人
+              "name_en": Beijing Style Traditional Roast Duck Combo(L)4-6Person
+        - "name_zh-Hans":  火锅
+          "name_en": Beijing Hot Pot
+          menu_items:
+            - "name_zh-Hans": 传统清汤锅底
+              "name_en": Traditional Beijing Style Soup Base
+            - "name_zh-Hans": 秘制麻辣锅底
+              "name_en": Hot & Spicy Numbing Soup Base
+            - "name_zh-Hans": 鸳鸯锅
+              "name_en": Half & Half Soup Base
+            - "name_zh-Hans": 老北京芝麻酱（老北京火锅必备）
+              "name_en": Sesame dipping sauce
+            - "name_zh-Hans": 老北京韭菜花酱
+              "name_en": Chives Flower Sauce
+            - "name_zh-Hans": 腐乳
+              "name_en": Preserved Bean Curd
+            - "name_zh-Hans": 清真极品羊肉片
+              "name_en": Prime Lamb Slice (Halal)
+            - "name_zh-Hans": 清真雪花牛肉片
+              "name_en": Premium Beef Slice (Halal)
+            - "name_zh-Hans": 九尺鹅肠
+              "name_en": Goose intestines
+            - "name_zh-Hans": 牛百叶
+              "name_en": Beef Book Tripes
+            - "name_zh-Hans": 牛肚
+              "name_en": Beef Honeycomb
+            - "name_zh-Hans": 午餐肉
+              "name_en": Spam
+            - "name_zh-Hans": 肥肠
+              "name_en": Intestine
+            - "name_zh-Hans": 黄喉
+              "name_en": Beef Aorta
+            - "name_zh-Hans": 毛肚
+              "name_en": Stripe
+            - "name_zh-Hans": 大刀腰片
+              "name_en": Pork Kidney Slice
+            - "name_zh-Hans": 鱼丸
+              "name_en": Fish Balls
+            - "name_zh-Hans": 海鸭蛋鱼丸
+              "name_en": Fish Balls Stuffed with Salted Sea Duck Egg Yolk
+            - "name_zh-Hans": 海鸭蛋虾丸
+              "name_en": Shrimp Ball Stuffed with Salted Sea Duck Egg yolk
+            - "name_zh-Hans": 鱼豆腐
+              "name_en": Fish Tofu
+            - "name_zh-Hans": 牛奶丝滑鸭血
+              "name_en": Duck blood curds
+            - "name_zh-Hans": 鱼片
+              "name_en": Fish Fillet
+            - "name_zh-Hans": 蟹柳
+              "name_en": Crab Sticks
+            - "name_zh-Hans": 带头虾
+              "name_en": Head on Shrimp
+            - "name_zh-Hans": 超级大宽粉（大）
+              "name_en": Super Wide Noodles
+            - "name_zh-Hans": 特质宽粉(小）
+              "name_en": Special Mung Bean Wide Noodles
+            - "name_zh-Hans": 红薯粉条
+              "name_en": Sweet Potato Noodles
+            - "name_zh-Hans": 粉丝
+              "name_en": Rice Noodles
+            - "name_zh-Hans": 自制酸菜
+              "name_en": Homemade Sour Napa Cabbage
+            - "name_zh-Hans": 白菜
+              "name_en": Napa Cabbage
+            - "name_zh-Hans": 菠菜
+              "name_en": Spinach
+            - "name_zh-Hans": 茼蒿
+              "name_en": Crowndaisy
+            - "name_zh-Hans": 青江菜
+              "name_en": Bok Choy
+            - "name_zh-Hans": 西兰花
+              "name_en": Broccoli
+            - "name_zh-Hans": 韭菜
+              "name_en": Green Chives
+            - "name_zh-Hans": 香菜
+              "name_en": Cilantro
+            - "name_zh-Hans": 大豆苗
+              "name_en": Sugor Pea Leaves
+            - "name_zh-Hans": 5秒嫩海带苗
+              "name_en": Kelp seedling
+            - "name_zh-Hans": 包浆豆腐
+              "name_en": Bao Jiang Tofu
+            - "name_zh-Hans": 白萝卜
+              "name_en": Sliced White Tumip
+            - "name_zh-Hans": 莲藕
+              "name_en": Lotus Root
+            - "name_zh-Hans": 竹笋尖
+              "name_en": Bamboo Shoots
+            - "name_zh-Hans": 土豆片
+              "name_en": Potato Slice
+            - "name_zh-Hans": 芋头片
+              "name_en": Sliced Taro
+            - "name_zh-Hans": 豆腐
+              "name_en": Tofu
+            - "name_zh-Hans": 冻豆腐
+              "name_en": Frozen Tofu
+            - "name_zh-Hans": 油豆腐
+              "name_en": Fried Tofu
+            - "name_zh-Hans": 羊肚菌
+              "name_en": Morel Mushrooms
+            - "name_zh-Hans": 腐竹
+              "name_en": Bean Curd Stick
+            - "name_zh-Hans": 芋丝结
+              "name_en": Toro Vermicelli Knot
+            - "name_zh-Hans": 豆腐皮
+              "name_en": Bean Curd Skin
+            - "name_zh-Hans": 杏鲍菇
+              "name_en": Enoki Mushroom
+            - "name_zh-Hans": 黑木耳
+              "name_en": Black Fungus
+            - "name_zh-Hans": 油条
+              "name_en": Chinese Doughn
+            - "name_zh-Hans": 鹌鹑蛋
+              "name_en": Quail Eggs
+            - "name_zh-Hans": 拉面
+              "name_en": noodles
+        - "name_zh-Hans": 凉菜
+          "name_en": Appetizer
+          menu_items:
+            - "name_zh-Hans": 五彩大拉皮
+              "name_en": Rainbow Skin
+            - "name_zh-Hans": 京都味道
+              "name_en": House Special combination
+            - "name_zh-Hans": 宫廷桂花糯米藕
+              "name_en": Beijing Style Lotus Root Glutinous Rice In Osmanthus Date Sauce
+            - "name_zh-Hans": 京糕乾隆白菜
+              "name_en": Beijing Style Cabbagre with Sesame Sauce
+            - "name_zh-Hans": 巧拌什锦菠菜
+              "name_en": Spinach Salad
+            - "name_zh-Hans": 老醋蛰头
+              "name_en": Jellyfish in Special Vinegar Sauce
+            - "name_zh-Hans": 山椒（爽口）有机黑木耳
+              "name_en": Black Fungus Salad
+            - "name_zh-Hans": 夫妻肺片（牛筋牛肚牛肉）
+              "name_en": Spicy Cold Beef Combination
+            - "name_zh-Hans": 老坛酸辣什锦泡椒凤爪
+              "name_en": Chicken Feet w/ Red Pepper in Hot & Sour Sauce
+            - "name_zh-Hans": 麻辣百叶
+              "name_en": Hot and Spicy Beef BookTripes
+            - "name_zh-Hans": 五香酱牛腱
+              "name_en": Mandarin Beef
+        - "name_zh-Hans":  京都特色菜
+          "name_en": Chef's Special
+          menu_items:
+            - "name_zh-Hans": 老城一锅药膳羊蝎子火锅套餐
+              "name_en": Beijing Style Lamb Hot Pot Combo 
+            - "name_zh-Hans": 老城一锅羊蝎子火锅套餐
+              "name_en": Beijing Style Lamb Hot Pot Combo
+            - "name_zh-Hans": 京都浓汤葱烧海参
+              "name_en": Beijing Style Braised Sea Cucuber in Onion Sauce
+            - "name_zh-Hans": 菌香黄焖甲鱼（甲鱼 五花肉 杂菌 鹌鹑蛋）微辣
+              "name_en": Braised Turtle Pork Belly Quail Eggs Mushrooms in Special Sauce
+            - "name_zh-Hans": 老北京全鱼泡饼（新鲜活鱼）
+              "name_en": Beijing Style Braised Whole Live Fish w. Pancake
+            - "name_zh-Hans": 京都红焖羊小排
+              "name_en": Beijing Style Special Braised Lamb
+            - "name_zh-Hans": 黑椒蒜子安格斯牛肉粒
+              "name_en": Black Pepper Angus Beef w. Golden Garlic
+            - "name_zh-Hans": 老北京桂花酥皮虾
+              "name_en": Beijing style crispy shrimp
+            - "name_zh-Hans": 贝勒爷炒烤肉
+              "name_en": Beijing Style Iron Skillet Cumin Lamb
+            - "name_zh-Hans": 国宴清鸡汤狮子头（位
+              "name_en": Bei Jing Style Lion Head In Clear Chicken Soup (person)
+            - "name_zh-Hans": 双味手抓羊排（配羊骨汤）
+              "name_en": Dual Flavored Hand Tossed Lamb Ribs（Lamb Bone Soup）
+            - "name_zh-Hans": 养生金汤蹄花焖花胶（位）
+              "name_en": Braised Fish Maw Pig Feet in Golden Soup（person）
+            - "name_zh-Hans": 肉丝扒全茄
+              "name_en": Beijing Style Braised Shredded Pork w. Whole Eggplant
+            - "name_zh-Hans": 老北京腊八蒜烧肥肠.
+              "name_en": Bei Jing style Braised Intestine ,Bamboo Shoot , Special Garlic
+            - "name_zh-Hans": 石锅蟹粉豆腐
+              "name_en": Tofu ，Crab Meat，Crab Roe in Stone pot
+            - "name_zh-Hans": 京味醋溜木须（牛）
+              "name_en": Beijing Style Beef、 Eggs 、Fungus
+            - "name_zh-Hans": 京味大虾烧白菜
+              "name_en": Stri Fried Shrimp with Napa Cabbage
+            - "name_zh-Hans": 松鼠全鱼
+              "name_en": Beijing Style Sweet & Sour Whole Fish
+            - "name_zh-Hans": 芫爆两样
+              "name_en": Shredded Belly w. Cilantro
+            - "name_zh-Hans": 京酱肉丝
+              "name_en": Sauteed Shredded Pork w. Bean Curd Shin
+            - "name_zh-Hans": 北京木须肉
+              "name_en": Beijing Style Mushu Pork
+            - "name_zh-Hans": 松仁玉米粒
+              "name_en": Stri Fried Pine Nat Corn
+            - "name_zh-Hans": 小吊梨汤（壶）
+              "name_en": Beijing Style Pear Drink
+        - "name_zh-Hans":  绝味川湘
+          "name_en": Spicy Town
+          menu_items:
+            - "name_zh-Hans": 京都麻辣烤活鱼（可另加火锅配菜)
+              "name_en": Grilled Fish & Vegetables in Special Spicy Sauce
+            - "name_zh-Hans": 香辣烧鸡公煲套餐
+              "name_en": Spicy Chicken Hot Pot Combo
+            - "name_zh-Hans": 仔姜藤椒田鸡
+              "name_en": Ginger frog in spicy numbing suce
+            - "name_zh-Hans": 十里飘香盖帽菜
+              "name_en": Combination House Special Pot
+            - "name_zh-Hans": 飘香藤椒鱼
+              "name_en": Fish Fillet in spicy Numbing Soup
+            - "name_zh-Hans": 湘味小炒黄牛肉（香辣下饭）
+              "name_en": Hunan Stri Fried Spicy Beef 
+            - "name_zh-Hans": 新派金汤酸菜鱼
+              "name_en": Fish Fillet In Hot and Sour Golden Soup
+            - "name_zh-Hans": 老四川水煮鱼
+              "name_en": Hot & Spicy Boiled Fish Fillet
+            - "name_zh-Hans": 飘香重庆辣子鸡
+              "name_en": Fried Diced Chicken w. Red Chili
+            - "name_zh-Hans": 菌香酸汤肥牛
+              "name_en": Beef & Mushroom in Hot & Sour Golden Soup
+            - "name_zh-Hans": 湘味土家小炒肉
+              "name_en": Hunan Style Stir Fried Jajapeno w. Pork Belly
+            - "name_zh-Hans": 菌香藤椒肥牛
+              "name_en": Premium beef sweet potato noodles mushroom in spicy numbing soup
+        - "name_zh-Hans": 干锅类
+          "name_en": Dry Pot
+          menu_items:
+            - "name_zh-Hans": 干锅手撕包菜
+              "name_en": Grilled Cooked Cabbage with Pork
+            - "name_zh-Hans": 干锅莲藕
+              "name_en": Griddle Cooked Lotus Root
+            - "name_zh-Hans": 干锅千叶豆腐
+              "name_en": Griddle Cooked Cooked Special Tofu
+            - "name_zh-Hans": 干锅香辣大肠
+              "name_en": Griddle Cooked Spicy Intestine
+            - "name_zh-Hans": 干锅狼牙土豆
+              "name_en": Griddle Cooked Potato
+        - "name_zh-Hans": 田园时蔬
+          "name_en": Vegetables and Tofu
+          menu_items:
+            - "name_zh-Hans": 养生羊肚菌炒奶白菜
+              "name_en": Stir Fry Morel Mushrooms w/ Bok Chou
+            - "name_zh-Hans": 老北京炒合菜
+              "name_en": Beijing Style Stir Fried Mix Vegetables
+            - "name_zh-Hans": 香芹炒豆干
+              "name_en": Stir Fried Celery w. Smoked Bean Curd
+            - "name_zh-Hans": 酸辣土豆丝
+              "name_en": Shredded Potatoes w. Chili
+            - "name_zh-Hans": 醋溜土豆丝
+              "name_en": Shredded Potatoes w. Vinegar
+            - "name_zh-Hans": 干煸四季豆茄子
+              "name_en": Dry Cooked String Beans w. Eggplant
+            - "name_zh-Hans": 干煸四季豆豆腐
+              "name_en": Dry Cooked String Beans w. Tofu
+            - "name_zh-Hans": 麻婆豆腐
+              "name_en": Mapo Tofu
+            - "name_zh-Hans": 干煸四季豆
+              "name_en": Dry cooked string bean
+            - "name_zh-Hans": 蒜炒大豆苗
+              "name_en": Stir-Fry pea leaves
+            - "name_zh-Hans": 蒜炒奶白菜
+              "name_en": Stir-Fry bockchoy
+            - "name_zh-Hans": 蒜蓉菠菜
+              "name_en": Spinach in Garlic Sauce
+            - "name_zh-Hans": 蒜炒茼蒿
+              "name_en": Stir-Fry tonghao
+            - "name_zh-Hans": 蒜炒西兰花
+              "name_en": Stir-fry broccoli
+        - "name_zh-Hans": 北京特色甜品
+          "name_en": Special Dessert
+          menu_items:
+            - "name_zh-Hans": 老北京什锦炸糕（4）
+              "name_en": Beijing Style Sweet Cakes(4)
+            - "name_zh-Hans": 宫廷豌豆黄
+              "name_en": Beijing style yellow pea cake
+            - "name_zh-Hans": 蜂巢玉米烙（大）
+              "name_en": Fried Bees Nest with Corn
+        - "name_zh-Hans": 砂锅 (汤) 类
+          "name_en": Clay Pot
+          menu_items:
+            - "name_zh-Hans": 酸菜砂锅
+              "name_en": Sour Napa Cabbage Clay Pot
+            - "name_zh-Hans": 金钩萝卜丝蛤蜊砂锅
+              "name_en": Dry Shrimp Shredded Green Turnip Clam Meat Clay Pot
+        - "name_zh-Hans":  北方面食
+          "name_en": Northern Style Dim Sum
+          menu_items:
+            - "name_zh-Hans": 北京木须炒饼
+              "name_en": Stir fried shredded pancakes
+            - "name_zh-Hans": 自制豆腐脑
+              "name_en": doufu nao
+            - "name_zh-Hans": 油条
+              "name_en": Chinese Fritter
+            - "name_zh-Hans": 煎饼果子
+              "name_en": Jian Bing Guo Zi
+            - "name_zh-Hans": 手工自制酸菜猪肉水饺
+              "name_en": pickled cabbage with pork Dumpling
+            - "name_zh-Hans": 手工三鲜水饺（韭菜猪肉鸡蛋虾）
+              "name_en": Leek Pork Shrimp Dumpling
+            - "name_zh-Hans": 什锦炒面/炒饭
+              "name_en": Combination Show Mein/Fried Rice
+            - "name_zh-Hans": 清汤牛肉面
+              "name_en": beef soup Noodle
+            - "name_zh-Hans": 北京麻将冷面
+              "name_en": Beijing Style Cood Noodles w. Sesame Paste
+            - "name_zh-Hans": 刀削面（汤，炒）
+              "name_en": Hand Sliced Noodles
+            - "name_zh-Hans": 四川担担面
+              "name_en": Dan-Dan Noodles
+            - "name_zh-Hans": 北京炸酱面
+              "name_en": Beijing Style Zhajiang Mein
+            - "name_zh-Hans": 麻辣超级大宽粉
+              "name_en": Spicy wide Noodles
+            - "name_zh-Hans": 酸辣粉
+              "name_en": Hot & Sour noodles
+            - "name_zh-Hans": 牛炒饭/炒面
+              "name_en": Beef Show Mein /Fried Rice
+            - "name_zh-Hans": 猪炒饭/炒面
+              "name_en": Pork Show Mein /Fried Rice
+            - "name_zh-Hans": 虾炒饭/炒面
+              "name_en": Shrimp Show Mein /Fried Rice
+            - "name_zh-Hans": 扬州炒饭
+              "name_en": Yang Zhou Fried Rice
+            - "name_zh-Hans": 米饭
+              "name_en": Steam Rice
+            - "name_zh-Hans": 鸡炒饭/炒面
+              "name_en": Chicken Show Mein /Fried Rice
+        - "name_zh-Hans":  
+          "name_en": Beverages
+          menu_items:
+            - "name_zh-Hans": 小吊梨汤（壶）
+              "name_en": Beijing Style Pear Drink
+            - "name_zh-Hans": 自磨豆浆（周六日供应）
+              "name_en": Soy Milk
+            - "name_zh-Hans": 王老吉
+              "name_en": Herbar Tea
+            - "name_zh-Hans": 可乐
+              "name_en": Coke
+            - "name_zh-Hans": 北冰洋
+              "name_en": Refined mandarin soda 
+            - "name_zh-Hans": 喜力啤酒
+              "name_en": Heineke
+            - "name_zh-Hans": Modelo
+              "name_en": Modelo
+            - "name_zh-Hans": 桂花酸梅汤
+              "name_en": Plum Drink
+            - "name_zh-Hans": 雪碧/七喜
+              "name_en": sprite
+            - "name_zh-Hans": 无糖可乐
+              "name_en": Diet coke
+            - "name_zh-Hans": 红酒（杯）
+              "name_en": Red Wine (Glass)
+            - "name_zh-Hans": 开瓶
+              "name_en": Corkage Fee
+            - "name_zh-Hans": 青岛啤酒
+              "name_en": TsingTao
+        - "name_zh-Hans":  
+          "name_en": Luncheon Special
+          menu_items:
+            - "name_zh-Hans": 北京木须肉(L)
+              "name_en": Beijing Style Mushu Pork
+            - "name_zh-Hans": 麻婆豆腐(L)
+              "name_en": Mapo Tofu
+            - "name_zh-Hans": 宫保鸡(L)
+              "name_en": Kung Pao Chicken
+            - "name_zh-Hans": 蒙古牛(L)
+              "name_en": Mongolian Beef
+            - "name_zh-Hans": 芥兰牛(L)
+              "name_en": Broccoli Beef
+
+            - "name_zh-Hans": 豆豉鱼片(L)
+              "name_en": Fish Fillet in Black Bean Sauce
+            - "name_zh-Hans": 干煸四季豆(L)
+              "name_en": Dry Cook String Bean
+            - "name_zh-Hans": 鱼香茄子(L)
+              "name_en": Hot & Spicy Eggplant in Garlic Sauce
+            - "name_zh-Hans": 香笋回锅肉(L)
+              "name_en": Special Bamboo Shoot w. Twice Cooked Prok
+            - "name_zh-Hans": 香干鲜爆五花肉(L)
+              "name_en": Stir Fried Pork Belly Smoked Bean Curd and Jalapeno
+        - "name_zh-Hans": 汤美式菜单
+          "name_en": Soup (Classic)
+          menu_items:
+            - "name_zh-Hans": 锅贴
+              "name_en": Pot Sticker
+            - "name_zh-Hans": 春卷
+              "name_en": Egg Rolls
+            - "name_zh-Hans": 酸辣汤
+              "name_en": Hot & Sour Soup
+            - "name_zh-Hans": 鸡茸栗米汤
+              "name_en": Chicken & Corn Soup
+            - "name_zh-Hans": 云吞汤
+              "name_en": Won Ton Soup
+            - "name_zh-Hans": 海鲜豆腐汤
+              "name_en": Seafood Tofu Soup
+            - "name_zh-Hans": 番茄蛋花汤
+              "name_en": Tomato Eggs Soup
+        - "name_zh-Hans":  牛肉/羊肉 (美式菜单)
+          "name_en": Beef/Lamb (Classic)
+          menu_items:
+            - "name_zh-Hans": 蒙古牛
+              "name_en": Mongolian Beef
+            - "name_zh-Hans": 蒙古羊
+              "name_en": Mongolian Lamb
+            - "name_zh-Hans": 芥兰牛
+              "name_en": Chinese Brocclli Beef
+            - "name_zh-Hans": 芥兰羊
+              "name_en": Chinese Brocclli Lamb
+        - "name_zh-Hans":  木须猪肉/鸡肉 (美式菜单)
+          "name_en": Mu Shu Pork/Chicken (Classic)
+          menu_items:
+            - "name_zh-Hans": 宫保鸡丁（北京味)
+              "name_en": Kung Pao Chicken
+            - "name_zh-Hans": 椒盐鸡翅
+              "name_en": Salt and Pepper Chicken Wings
+            - "name_zh-Hans": 京都干烹鸡翅
+              "name_en": Beijing Style Dry Fried Chicken Wings w. Special Sauce
+        - "name_zh-Hans": 鱼虾类 (美式菜单)
+          "name_en": Fish & Shrimp (Classic)
+          menu_items:
+            - "name_zh-Hans": 宫保鱼/虾
+              "name_en": Kung Pao Fish/Shrimp
+            - "name_zh-Hans": 蔬菜鱼/虾
+              "name_en": Mix Vegetables Fish/Shrimp
+            - "name_zh-Hans": 豆豉鱼/虾
+              "name_en": Black Bean Fish/Shrimp
+            - "name_zh-Hans": 四季豆鱼/虾
+              "name_en": String Bean Fish/Shrimp
+            - "name_zh-Hans": 椒盐鱼/虾
+              "name_en": Salt and Pepper Fish/Shrimp
+            - "name_zh-Hans": 核桃虾
+              "name_en": Honey Walnut Prawns
