@@ -5,6 +5,7 @@ restaurant:
   city: San Bruno, CA
   country_code: US
   tags: chinese, beijing, nothern
+  homepage_url: https://boilingbeijingtogo.com/
   online_menu_url: https://www.39miles.com/p/14203179
 menu:
   language_codes:

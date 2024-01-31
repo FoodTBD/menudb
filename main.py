@@ -57,13 +57,24 @@ def load_known_terms() -> tuple[list[KnownTerm], dict[str, KnownTerm], list[Know
             known_term = KnownTerm(row)
             known_terms.append(known_term)
 
+    # Look for duplicates and warn
+    for lang in known_terms[0].native_name_dict.keys():
+        name_set = set()
+        for known_term in known_terms:
+            name = known_term.native_name_dict[lang]
+            if name:
+                if name in name_set:
+                    print(f'WARNING: duplicate {lang} key "{name}" in known_terms')
+                name_set.add(name)
+
+    # Build known_terms_lookup_dict using all native names
     known_terms_lookup_dict = {}
-    # Use all native names as lookup keys
     for known_term in known_terms:
         known_terms_lookup_dict.update(
             {native_name: known_term for native_name in known_term.all_native_names}
         )
 
+    # Build list of known_dishes
     known_dishes = []
     for known_term in known_terms:
         if known_term.dish_cuisine_locale:

@@ -27,17 +27,6 @@ class KnownTerm:
         # Internal use properties
         self._menu_filenames = []
 
-        # Check for duplicates
-        for lang in ["name_zh-Hans", "name_zh-Hant"]:
-            name_set = set()
-            localized_name = self.native_name_dict.get(lang)
-            if localized_name:
-                if localized_name in name_set:
-                    print(
-                        f'WARNING: duplicate {lang} key "{localized_name}" in known_terms'
-                    )
-                name_set.add(localized_name)
-
         # Check capitalization
         if self.dish_cuisine_locale:
             en_actual = self.name_en
