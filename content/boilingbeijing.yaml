@@ -19,8 +19,9 @@ menu:
             - "name_zh-Hans": 老北京烤鸭套餐
               "name_en": Beijing Style Traditional Roast Duck Combo
               note: （小号）2-3人 / 2-3person
-            - "name_zh-Hans": 自制烤鸭饼(10)
-              "name_en": HomeMade Pancake(10)
+            - "name_zh-Hans": 自制烤鸭饼
+              "name_en": HomeMade Pancake
+              note: (10)
             - "name_zh-Hans": 烤鸭酱
               "name_en": Roast Duck Sauce
             - "name_zh-Hans": 额外烤鸭小料

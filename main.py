@@ -11,7 +11,7 @@ import strictyaml
 from jinja2 import Environment, FileSystemLoader
 
 import jinja_filters
-from model import KnownTerm
+from model import KnownTerm, KnownTermsDB
 from schema import RESTAURANT_SCHEMA
 from stats import gather_menu_stats
 
@@ -40,14 +40,14 @@ def load_known_locales() -> dict[str, dict[str, str]]:
             known_locales.append(row)
 
     # Map locale_code to locale dict
-    known_dish_lookup_dict = {}
+    known_locale_lookup_dict = {}
     for known_locale in known_locales:
         locale_code = known_locale["locale_code"]
-        known_dish_lookup_dict[locale_code] = known_locale
-    return known_dish_lookup_dict
+        known_locale_lookup_dict[locale_code] = known_locale
+    return known_locale_lookup_dict
 
 
-def load_known_terms() -> tuple[list[KnownTerm], dict[str, KnownTerm], list[KnownTerm]]:
+def load_known_terms() -> KnownTermsDB:
     known_terms = []
     with open("data/known_terms.tsv", "r", encoding="utf-8") as csvfile:
         csvreader = csv.DictReader(csvfile, delimiter="\t")
@@ -57,30 +57,7 @@ def load_known_terms() -> tuple[list[KnownTerm], dict[str, KnownTerm], list[Know
             known_term = KnownTerm(row)
             known_terms.append(known_term)
 
-    # Look for duplicates and warn
-    for lang in known_terms[0].native_name_dict.keys():
-        name_set = set()
-        for known_term in known_terms:
-            name = known_term.native_name_dict[lang]
-            if name:
-                if name in name_set:
-                    print(f'WARNING: duplicate {lang} key "{name}" in known_terms')
-                name_set.add(name)
-
-    # Build known_terms_lookup_dict using all native names
-    known_terms_lookup_dict = {}
-    for known_term in known_terms:
-        known_terms_lookup_dict.update(
-            {native_name: known_term for native_name in known_term.all_native_names}
-        )
-
-    # Build list of known_dishes
-    known_dishes = []
-    for known_term in known_terms:
-        if known_term.dish_cuisine_locale:
-            known_dishes.append(known_term)
-
-    return known_terms, known_terms_lookup_dict, known_dishes
+    return KnownTermsDB(known_terms)
 
 
 def _slugify(s: str) -> str:
@@ -88,11 +65,7 @@ def _slugify(s: str) -> str:
 
 
 def generate_menu_html(
-    input_yaml_path: str,
-    output_filename: str,
-    output_html_path: str,
-    known_dish_lookup_dict: dict[str, KnownTerm],
-    known_terms_lookup_dict: dict[str, KnownTerm],
+    input_yaml_path: str, output_filename: str, output_html_path: str, db: KnownTermsDB
 ) -> dict[str, Any]:
     with open(input_yaml_path, "r", encoding="utf-8") as yaml_path:
         yaml_data = strictyaml.load(yaml_path.read(), RESTAURANT_SCHEMA)
@@ -143,7 +116,7 @@ def generate_menu_html(
                             lang = "name_" + primary_lang
                             if menu_item.get(lang):
                                 primary_name = menu_item[lang]
-                                known_dish = known_dish_lookup_dict.get(primary_name)
+                                known_dish = db.known_dish_lookup_dict.get(primary_name)
                                 if known_dish:
                                     for k in [
                                         "wikipedia_url",
@@ -239,11 +212,15 @@ def generate_menu_html(
     # CHINESE ONLY
     # Match against longest terms first
     ordered_nondish_terms = sorted(
-        {k: v for k, v in known_terms_lookup_dict.items() if not v.dish_cuisine_locale},
+        {
+            k: v
+            for k, v in db.known_terms_lookup_dict.items()
+            if not v.dish_cuisine_locale
+        },
         key=len,
         reverse=True,
     )
-    ordered_all_terms = sorted(known_terms_lookup_dict, key=len, reverse=True)
+    ordered_all_terms = sorted(db.known_terms_lookup_dict, key=len, reverse=True)
 
     # For each Chinese section/menu_item, try to annotate it
     menu = yaml_dict.get("menu")
@@ -253,14 +230,17 @@ def generate_menu_html(
             for section in sections:
                 # Annotate section name
                 _annotate_menu_section_or_item_with_known_terms(
-                    section, True, ordered_nondish_terms, known_terms_lookup_dict
+                    section, True, ordered_nondish_terms, db.known_terms_lookup_dict
                 )
 
                 menu_items = section.get("menu_items", [])
                 for menu_item in menu_items:
                     matched_known_terms = (
                         _annotate_menu_section_or_item_with_known_terms(
-                            menu_item, False, ordered_all_terms, known_terms_lookup_dict
+                            menu_item,
+                            False,
+                            ordered_all_terms,
+                            db.known_terms_lookup_dict,
                         )
                     )
                     for known_term in matched_known_terms:
@@ -289,10 +269,7 @@ def generate_menu_html(
 
 
 def process_menu_yaml_paths(
-    input_dir: str,
-    output_dir: str,
-    known_dish_lookup_dict: dict[str, KnownTerm],
-    known_terms_lookup_dict: dict[str, KnownTerm],
+    input_dir: str, output_dir: str, db: KnownTermsDB
 ) -> dict[str, Any]:
     menu_filename_to_menu_yaml_dict = {}
     for root, _, files in os.walk(input_dir):
@@ -305,11 +282,7 @@ def process_menu_yaml_paths(
                 output_path = os.path.join(output_dir, output_filename)
 
                 yaml_dict = generate_menu_html(
-                    input_path,
-                    output_filename,
-                    output_path,
-                    known_dish_lookup_dict,
-                    known_terms_lookup_dict,
+                    input_path, output_filename, output_path, db
                 )
 
                 menu_filename_to_menu_yaml_dict[output_filename] = yaml_dict
@@ -320,9 +293,7 @@ def process_menu_yaml_paths(
 
 
 def generate_index_html(
-    menu_yaml_dicts: list[dict[str, Any]],
-    known_dishes: list[KnownTerm],
-    output_html_path: str,
+    menu_yaml_dicts: list[dict[str, Any]], db: KnownTermsDB, output_html_path: str
 ) -> None:
     env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
@@ -332,7 +303,7 @@ def generate_index_html(
     # Render the output file
     template = env.get_template("index_template.j2")
     rendered_html = template.render(
-        menu_yaml_dicts=menu_yaml_dicts, known_dishes=known_dishes
+        menu_yaml_dicts=menu_yaml_dicts, known_dishes=db.known_dishes
     )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
@@ -341,7 +312,7 @@ def generate_index_html(
 
 def generate_dishes_html(
     known_locale_lookup_dict: dict[str, dict[str, str]],
-    known_dishes: list[KnownTerm],
+    db: KnownTermsDB,
     menu_filename_to_menu_yaml_dict: dict[str, dict[str, Any]],
     output_html_path: str,
 ) -> None:
@@ -350,7 +321,7 @@ def generate_dishes_html(
     for locale_dict in known_locale_lookup_dict.values():
         locale_code: str = locale_dict["locale_code"]
         locale_dishes = [
-            dish for dish in known_dishes if dish.dish_cuisine_locale == locale_code
+            dish for dish in db.known_dishes if dish.dish_cuisine_locale == locale_code
         ]
         locale_dishes = sorted(locale_dishes, key=lambda d: d.name_en)
         locale_dish_group = {**locale_dict, "dishes": locale_dishes}
@@ -374,15 +345,9 @@ def generate_dishes_html(
 
 
 def generate_stats_html(
-    menu_yaml_dicts: list[dict[str, Any]],
-    known_terms_lookup_dict: dict[str, KnownTerm],
-    known_dishes: list[KnownTerm],
-    known_dish_lookup_dict: dict[str, KnownTerm],
-    output_html_path: str,
+    menu_yaml_dicts: list[dict[str, Any]], db: KnownTermsDB, output_html_path: str
 ) -> None:
-    menu_stats = gather_menu_stats(
-        menu_yaml_dicts, known_terms_lookup_dict, known_dish_lookup_dict
-    )
+    menu_stats = gather_menu_stats(menu_yaml_dicts, db)
 
     env = Environment(loader=FileSystemLoader("templates"))
     # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
@@ -393,9 +358,9 @@ def generate_stats_html(
     template = env.get_template("stats_template.j2")
     rendered_html = template.render(
         menu_stats=menu_stats,
-        known_dishes=known_dishes,
-        known_terms_lookup_dict=known_terms_lookup_dict,
-        known_dish_lookup_dict=known_dish_lookup_dict,
+        known_dishes=db.known_dishes,
+        known_terms_lookup_dict=db.known_terms_lookup_dict,
+        known_dish_lookup_dict=db.known_dish_lookup_dict,
     )
 
     with open(output_html_path, "w", encoding="utf-8") as html_path:
@@ -405,48 +370,28 @@ def generate_stats_html(
 def main(input_dir: str, output_dir: str):
     # Load canned data
     known_locale_lookup_dict = load_known_locales()
-    known_terms, known_terms_lookup_dict, known_dishes = load_known_terms()
-
-    # Use all native names as lookup keys
-    known_dish_lookup_dict = {}
-    for known_dish in known_dishes:
-        known_dish_lookup_dict.update(
-            {native_name: known_dish for native_name in known_dish.all_native_names}
-        )
+    db = load_known_terms()
 
     prepare_output_dir(output_dir)
 
     # Generate menu pages
-    menu_filename_to_menu_yaml_dict = process_menu_yaml_paths(
-        input_dir, output_dir, known_dish_lookup_dict, known_terms_lookup_dict
-    )
+    menu_filename_to_menu_yaml_dict = process_menu_yaml_paths(input_dir, output_dir, db)
 
     # Generate index page
     output_path = os.path.join(output_dir, "index.html")
-    generate_index_html(
-        list(menu_filename_to_menu_yaml_dict.values()), known_dishes, output_path
-    )
+    generate_index_html(list(menu_filename_to_menu_yaml_dict.values()), db, output_path)
     print(f"Processed: {output_path}")
 
     # Generate dishes page
     output_path = os.path.join(output_dir, "dishes.html")
     generate_dishes_html(
-        known_locale_lookup_dict,
-        known_dishes,
-        menu_filename_to_menu_yaml_dict,
-        output_path,
+        known_locale_lookup_dict, db, menu_filename_to_menu_yaml_dict, output_path
     )
     print(f"Processed: {output_path}")
 
     # Generate stats page
     output_path = os.path.join(output_dir, "stats.html")
-    generate_stats_html(
-        list(menu_filename_to_menu_yaml_dict.values()),
-        known_terms_lookup_dict,
-        known_dishes,
-        known_dish_lookup_dict,
-        output_path,
-    )
+    generate_stats_html(list(menu_filename_to_menu_yaml_dict.values()), db, output_path)
     print(f"Processed: {output_path}")
 
 

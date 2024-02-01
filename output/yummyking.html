@@ -334,8 +334,9 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                             <td class="menu-table-image-column">
 
                                 <!-- Dish Image -->
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Niubaiye.jpg/400px-Niubaiye.jpg" alt="Dish Image" title="https://www.google.com/search?tbm=isch&q=红油牛百叶"
-                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=红油牛百叶', 'googleimage')">
+                                <button aria-label="Image Search" title="https://www.google.com/search?tbm=isch&q=红油牛百叶" type="button"
+                                    class="btn btn-light btn-googleimage"
+                                    onclick="openLink('https://www.google.com/search?tbm=isch&q=红油牛百叶', 'googleimage')">🖼️ 🔎</button>
                             </td>
                             <td class="menu-table-text-column">
                                 <div class="menu-item-name-div">
@@ -343,7 +344,7 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <span class="menu-item-number">5</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">红油<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil#China" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="term-native">牛<span class="term-translated">beef</span></span><span class="term-native">百叶<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tripe#Beef" target="wikipedia" rel="noopener">tofu skin (or book tripe)</a></span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">红油<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chili_oil#China" target="wikipedia" rel="noopener">chili oil</a></span></span><span class="term-native">牛<span class="term-translated">beef</span></span><span class="term-native">百叶<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Tofu_skin" target="wikipedia" rel="noopener">tofu skin (or book tripe)</a></span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -354,7 +355,7 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <!-- Spice Heat Level -->
 
                                     <!-- Description(s) -->
-                                </div>
+                                    <span class="menu-item-description">Oxmage med chiliolja & koriander</span>                                </div>
 
                                 <div class="menu-item-description-div">
                                 </div>
@@ -937,7 +938,7 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <span class="menu-item-number">20</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">爆炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Bao_technique" target="wikipedia" rel="noopener">flash-fried</a></span></span><span class="term-native">腰</span><span class="term-native">花<span class="term-translated">flower</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">爆炒<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Stir_frying#Bao_technique" target="wikipedia" rel="noopener">flash-fried</a></span></span><span class="term-native">腰<span class="term-translated">kidney</span></span><span class="term-native">花<span class="term-translated">flower</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1751,7 +1752,7 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     <span class="menu-item-number">42</span>
 
                                     <!-- Name (Primary) -->
-                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">辣子<span class="term-translated">spicy</span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
+                                    <span class="menu-item-name menu-item-name-primary"><span class="term-native">辣子<span class="term-translated"><a href="https://en.wikipedia.org/wiki/Chili_pepper" target="wikipedia" rel="noopener">chili pepper</a></span></span><span class="term-native">鱼<span class="term-translated">fish</span></span></span>
                                 </div>
                                 <div class="menu-item-name-div">
                                     <!-- Name(s) (Secondary) -->
@@ -1773,6 +1774,9 @@ Homepage: <a href="http://qopla.com/yummy-king" target="_blank" rel="noopener">h
                                     onclick="speakText('辣子鱼', 'zh-Hans')">🗣️</button><br>
 
                                 <!-- Wikipedia Button -->
+                                <button aria-label="Open Wikipedia" title="https://en.wikipedia.org/wiki/Chili_pepper"
+                                    class="btn btn-light btn-menuaction btn-wikipedia"
+                                    onclick="openLink('https://en.wikipedia.org/wiki/Chili_pepper', 'wikipedia')">W</button><br>
                             </td>
                         </tr>
                         <!-- Menu Item -->

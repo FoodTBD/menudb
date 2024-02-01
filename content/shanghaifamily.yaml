@@ -64,7 +64,7 @@ menu:
               "name_zh-Hant": 皮蛋拌豆腐
               "name_en": Preserved Eggs & Tofu
             - item_number: A18
-              "name_zh-Hant": 皮蛋拌豆腐
+              "name_zh-Hant": 蒜茸拌黃瓜
               "name_en": Cucumber Mixed w/Garlic
             - item_number: A19
               "name_zh-Hant": 冰鎮糖番茄
@@ -139,14 +139,14 @@ menu:
               "name_zh-Hant": 薑蔥蛴螃蟹炒年糕
               "name_en": Braised Crab with Rice Cake Slices
             - item_number: B17
-              "name_zh-Hant": 薑蔥蛴螃蟹炒年糕
-              "name_en": Braised Crab with Rice Cake Slices
-            - item_number: B18
               "name_zh-Hant": 蔥烤大鳥参
               "name_en": Green Onion Braised Sea Cucumber
-            - item_number: B19
+            - item_number: B18
               "name_zh-Hant": 蝦仔大鳥參
               "name_en": Sea Cucumber with Shrimp Roe
+            - item_number: B19
+              "name_zh-Hant": 乾煎小黃魚
+              "name_en": Deep Fried Smallyellow [sic] Fish
             - item_number: B20
               "name_zh-Hant": 剁椒魚片
               "name_en": Red Pepper Fish Fillets
@@ -218,10 +218,10 @@ menu:
               "name_zh-Hant": 海鲜豆腐煲
               "name_en": Seafood tofu pot
             - item_number: B43
-              "name_zh-Hant": 麻辣鳝魚
+              "name_zh-Hant": 麻辣鳝鱼
               "name_en": Spicy eel
             - item_number: B44
-              "name_zh-Hant": 紅烧鯧魚
+              "name_zh-Hant": 红烧鲳鱼
               "name_en": Braised Pomfret
     - page_image_url: https://foodtbd.github.io/menudb_images/menus/shanghai_family_cupertino_ca_usa/shanghai_family_2 Large.jpeg
       sections:
@@ -244,7 +244,8 @@ menu:
               "name_zh-Hant": 水筍燒肉
               "name_en": pork with Soaked Dry Bamboo Shoot
             - item_number: C6
-              "name_zh-Hant": 筊白炒肉絲
+              # "name_zh-Hant": 筊白炒肉絲  # [sic] should be 茭白
+              "name_zh-Hant": 茭白炒肉絲
               "name_en": Julienne Pork with Jiao Bai
             - item_number: C7
               "name_zh-Hant": 香乾炒肉絲
@@ -834,8 +835,9 @@ menu:
               "name_zh-Hant": 上海豆沙青团
               "name_en":  Shanghai Youth League Zaoni (4)
             - item_number: F60
-              "name_zh-Hant": 上海肉，豆沙大棕, 买十送一
-              "name_en":  "[*Shanghai meat, brown bean paste] Buy ten get one"
+              "name_zh-Hant": 上海肉，豆沙大棕
+              "name_en":  "[*Shanghai meat, brown bean paste]"
+              note: 买十送一 / Buy ten get one
             - item_number: F61
               "name_zh-Hant": 牛肉巻餅
               "name_en":  Beef Burrito
