@@ -1,0 +1,266 @@
+author: Jocelyn Chang
+restaurant:
+  name: wonderful
+  street_address: 270 Broadway
+  city: Millbrae, CA
+  country_code: US
+  tags: chinese, hunan
+  homepage_url: https://wonderful.restaurant/
+  online_menu_url: https://wonderful.restaurant/dinnermenu.pdf
+menu:
+  language_codes:
+    - zh-Hans
+    - en
+  pages:
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/wonderful/wonderful_1 Large.jpeg
+      sections:
+        - "name_zh-Hans": 自制湖南腊肉
+          "name_en": Hunan Smoked Pork 
+          menu_items:
+            - "name_zh-Hans": 香干腊肉
+              "name_en": "[Hunan Smoked Pork] with Smoked Tofu"
+            - "name_zh-Hans": 笋干腊肉
+              "name_en": "[Hunan Smoked Pork] with Bamboo Shoots"
+            - "name_zh-Hans": 蒜苗腊肉
+              "name_en": "[Hunan Smoked Pork]  with Leeks"
+            - "name_zh-Hans": 酸豆角腊肉 
+              "name_en": "[Hunan Smoked Pork] with Pickled Beans"
+            - "name_zh-Hans": 萝卜干腊肉 
+              "name_en": "[Hunan Smoked Pork] with Dried Radishes"
+            - "name_zh-Hans": 腊味家常腊肉
+              "name_en": "[House Made Smoked Pork] with Deep-Fried Tofu"
+        - "name_zh-Hans": 小炒系列
+          "name_en": Stir-Fried Specials
+          menu_items:
+            - "name_zh-Hans": 野山椒香菜牛肉丝 
+              "name_en": Cilantro Beef
+            - "name_zh-Hans": 小炒羊 
+              "name_en": Lamb and Cilantro
+            - "name_zh-Hans": 宫保鸡丁 
+              "name_en": Kung Pao Chicken
+            - "name_zh-Hans": 辣子鸡 
+              "name_en": Chili Fried Chicken
+            - "name_zh-Hans": 唐芹香干肉丝
+              "name_en": Pork and Tofu with Celery
+            - "name_zh-Hans": 左宗棠鸡 
+              "name_en": General Tso’s Chicken 
+            - "name_zh-Hans": 回锅肉 
+              "name_en": Twice-Cooked Pork 
+            - "name_zh-Hans": 酸豆角鸡胗 
+              "name_en": Gizzard Pickled Beans
+            - "name_zh-Hans": 香辣鸡翅 
+              "name_en": Chili Chicken Wings 
+            - "name_zh-Hans": 蒙古牛 
+              "name_en": Mongolian Beef
+            - "name_zh-Hans": 荷包蛋小炒肉 
+              "name_en": Fried Eggs with Pork
+            - "name_zh-Hans": 葱爆羊 
+              "name_en": Lamb and Onions
+            - "name_zh-Hans": 芥兰牛 
+              "name_en": Broccoli Beef
+            - "name_zh-Hans": 湖南小炒 
+              "name_en": Hunan Stir-Fry 
+            - "name_zh-Hans": 小炒牛 
+              "name_en": Jalapeño Beef
+            - "name_zh-Hans": 蚂蚁上树
+              "name_en": Ants Climbing the Tree
+            - "name_zh-Hans": 鱼香肉丝 
+              "name_en": Pork with Garlic Sauce 
+            - "name_zh-Hans": 宫保虾仁 
+              "name_en": Kung Pao Prawns 
+            - "name_zh-Hans": 湘味牛肉 
+              "name_en": Hunan Beef
+            - "name_zh-Hans": 萝卜干鸡胗 
+              "name_en": Gizzard Dried Radishes 
+            - "name_zh-Hans": 酸豆角鸡蛋 
+              "name_en": Eggs and Pickled Beans
+            - "name_zh-Hans": 冬坡笋干 
+              "name_en": Double Winter Deluxe
+        - "name_zh-Hans": 湖南特色
+          "name_en": Authentic Hunan 
+          menu_items:
+            - "name_zh-Hans": 麻婆豆腐 
+              "name_en": Mapo Tofu 
+              note: (with or w.o. pork)
+            - "name_zh-Hans": 沸腾鱼片 
+              "name_en": Boiling Hot Fish Fillets
+              note: Tofu, soybean sprouts, napa cabbage
+            - "name_zh-Hans": 毛氏红烧肉 
+              "name_en": Mao’s Pork Belly 
+            - "name_zh-Hans": 湘味土鸡 
+              "name_en": Hunan Chicken 
+              note: (has bones)
+            - "name_zh-Hans": 麻辣豆花鱼片 
+              "name_en": Spicy Tofu Fish Fillets
+            - "name_zh-Hans": 香辣肥肠 
+              "name_en": Deep-Fried Pork Intestines
+            - "name_zh-Hans": 水煮牛 
+              "name_en": Hot Boiled Beef 
+              note: (dine-in only)
+            - "name_zh-Hans": 家常豆腐 
+              "name_en": Family Tofu 
+              note: (with or w.o. pork)
+            - "name_zh-Hans": 彭家豆腐 
+              "name_en": Mr Peng’s Tofu 
+              note: (with or w.o. pork)
+            - "name_zh-Hans": 猪肚土鸡 
+              "name_en": Hunan Chicken and Pork Tripe
+            - "name_zh-Hans": 皮蛋辣椒 
+              "name_en": Preserved Eggs and Jalapeño 
+            - "name_zh-Hans": 香辣口味虾 
+              "name_en": Spicy Prawns 
+              note: (shell-on) 
+            - "name_zh-Hans": 酸辣粉皮 
+              "name_en": Hot and Sour Vermicelli Sheets 
+            - "name_zh-Hans": 湘味猪肚 
+              "name_en": Hunan Pork Tripe 
+            - "name_zh-Hans": 牵肠挂肚 
+              "name_en": Intestine and Tripe 
+        - "name_zh-Hans": 蒸菜
+          "name_en": Steamed Specials 
+          menu_items:
+            - "name_zh-Hans": 剁椒豆腐鱼片 
+              "name_en": Sole, Tofu, and Chili 
+              note: As featured in the San Francisco Chronicle. Boneless.
+            - "name_zh-Hans": 湘味蒸水蛋 
+              "name_en": Hunan Steamed Egg
+            - "name_zh-Hans": 薯粉蒸白菜 
+              "name_en": S.P. Noodles with Cabbage
+              note: White sweet potato noodles with napa cabbage
+    - page_image_url: https://foodtbd.github.io/menudb_images/menus/wonderful/wonderful_2 Large.jpeg
+      sections:
+        - "name_zh-Hans": 干锅
+          "name_en": Iron Pot 
+          menu_items:
+            - "name_zh-Hans": 干锅花菜腊肉 
+              "name_en": Cauliflower Smoked Pork 
+            - "name_zh-Hans": 干锅肥肠 
+              "name_en": Pork Intestines
+            - "name_zh-Hans": 干锅包心菜 
+              "name_en": Pork and Cabbage
+            - "name_zh-Hans": 干锅莲藕 
+              "name_en": Lotus Root with Pork 
+            - "name_zh-Hans": 干锅牛肉 
+              "name_en": Tender Beef 
+            - "name_zh-Hans": 干锅腊味豆腐 
+              "name_en": Smoked Pork and Tofu
+            - "name_zh-Hans": 干锅鸡胗 
+              "name_en": Chicken Gizzards
+            - "name_zh-Hans": 干锅鸡翅 
+              "name_en": Chicken Wings
+        - "name_zh-Hans": 铁板
+          "name_en": Iron Skillet 
+          menu_items:
+            - "name_zh-Hans": 铁板鸡片 
+              "name_en": "[Iron Skillet] with Chicken and Onions"
+            - "name_zh-Hans": 铁板牛肉 
+              "name_en": "[Iron Skillet] with Tender Beef and Onions"
+            - "name_zh-Hans": 铁板虾仁 
+              "name_en": "[Iron Skillet] with Prawns and Onions"
+            - "name_zh-Hans": 铁板豆腐 
+              "name_en": "[Iron Skillet] with Deep-Fried Tofu and Onions"
+            - "name_zh-Hans": 铁板鱿鱼 
+              "name_en": "[Iron Skillet] with Squid and Onions"
+        - "name_zh-Hans": 素菜
+          "name_en": Vegetables 
+          menu_items:
+            - "name_zh-Hans": 四季豆茄子 
+              "name_en": Eggplant String Beans
+            - "name_zh-Hans": 干煸四季豆 
+              "name_en": Dry-Sautéed String Beans 
+            - "name_zh-Hans": 鱼香茄子 
+              "name_en": Eggplant Garlic Sauce
+            - "name_zh-Hans": 开洋白菜 
+              "name_en": Napa Cabbage Dried Shrimp 
+            - "name_zh-Hans": 蒜蓉菜心 
+              "name_en": Bok Choy with Garlic
+            - "name_zh-Hans": 炝炒包心菜 
+              "name_en": Stir-Fried Cabbage
+            - "name_zh-Hans": 冬菇菜心 
+              "name_en": Bok Choy Black Mushroom 
+            - "name_zh-Hans": 唐芹炒香干 
+              "name_en": Celery and Smoked Tofu 
+            - "name_zh-Hans": 南瓜百合 
+              "name_en": Lily with Kabocha Squash
+            - "name_zh-Hans": 蒜蓉芥兰 
+              "name_en": Broccoli with Garlic Sauce
+            - "name_zh-Hans": 老陈醋土豆丝 
+              "name_en": Potato with Vinegar
+            - "name_zh-Hans": 炝炒土豆丝 
+              "name_en": Hot Stir-Fried Potato
+            - "name_zh-Hans": 香干素什 
+              "name_en": Shredded Cabbage and Tofu 
+            - "name_zh-Hans": 左宗棠菜花
+              "name_en":  General Tso’s Cauliflower
+            - "name_zh-Hans": 薯粉炒包心菜 
+              "name_en": Swt Potato Noodles Cabbage
+            - "name_zh-Hans": 酸辣白菜 
+              "name_en": Spicy and Sour Napa Cabbage
+            - "name_zh-Hans": 左宗棠豆腐 
+              "name_en": General Tso’s Tofu
+        - "name_zh-Hans": 汤类
+          "name_en": Soups 
+          menu_items:
+            - "name_zh-Hans": 冬瓜排骨汤 
+              "name_en": Winter Melon and Ribs Soup
+            - "name_zh-Hans": 酸辣汤 
+              "name_en": Hot and Sour Soup
+            - "name_zh-Hans": 酸菜鱼片汤 
+              "name_en": Pickled Mustard and Fish Soup
+            - "name_zh-Hans": 鸡茸玉米汤 
+              "name_en": Chicken, Corn, and Egg Soup
+        - "name_zh-Hans": 面点
+          "name_en": Pastries 
+          menu_items:
+            - "name_zh-Hans": 葱发大饼 
+              "name_en": Green Onion Pancake
+              note: Our signature fluffy, one-inch thick green onion pancake is made to order and is served with a side of our executive chef’s “godfather’s sauce”. This homemade sauce is a delicious combination of minced pork, black beans, chili peppers, chili pepper seeds, and diced jalapeños.
+            - "name_zh-Hans": 肉夹馍 
+              "name_en": Pork Belly “Burger”
+              note: Traditional Chinese street food. Diced marinated pork belly is sandwiched in a hot and fluffy bun.
+            - "name_zh-Hans": 猪肉锅贴 
+              "name_en": Pork Potstickers 
+              note: (8 pcs)
+            - "name_zh-Hans": 猪肉馄饨汤 
+              "name_en": Pork Wontons in Soup 
+              note: (10 pcs)
+        - "name_zh-Hans": 面条
+          "name_en": Noodles 
+          menu_items:
+            - "name_zh-Hans": 老干爹面 
+              "name_en": Godfather’s Noodles
+            - "name_zh-Hans": 北京炸酱面 
+              "name_en": Beijing Jah Jang Meeann
+            - "name_zh-Hans": 红烧牛肉汤面 
+              "name_en": Beef Noodle Soup
+            - "name_zh-Hans": 担担面 
+              "name_en": Dan Dan Noodles 
+              note: (v)
+            - "name_zh-Hans": 肉末茄丁面 
+              "name_en": Eggplant Pork Noodles
+            - "name_zh-Hans": 湖南凉面 
+              "name_en": Hunan Cold Noodles 
+              note: (v)
+            - "name_zh-Hans": 冬菇肉丝汤面 
+              "name_en": Mushroom Noodle Soup
+            - "name_zh-Hans": 素炒面 
+              "name_en": Veggie Chao Meeann 
+              note: (meat +$2) 
+        - "name_zh-Hans": 米饭
+          "name_en": Rice 
+          menu_items:
+            - "name_zh-Hans": 腊肉炒饭 
+              "name_en": Smoked Pork Fried Rice
+            - "name_zh-Hans": 老干爹炒饭 
+              "name_en": Godfather’s Fried Rice
+            - "name_zh-Hans": 素炒饭 
+              "name_en": Veggie Fried Rice 
+              note: (meat +$2)
+        - "name_zh-Hans": 冷盘
+          "name_en": Cold Dishes 
+          menu_items:
+            - "name_zh-Hans": 夫妻肺片 
+              "name_en": Beef and Tendons
+
+
+
