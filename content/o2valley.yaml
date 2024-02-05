@@ -1,0 +1,371 @@
+author: Jocelyn Chang
+restaurant:
+  name: O2 Valley
+  street_address: 19058 Stevens Creek Blvd
+  city: Cupertino, CA
+  country_code: US
+  tags: chinese, taiwanese, bento
+  online_menu_url: https://order.o2-valley.com/cupertino/menu
+menu:
+  language_codes:
+    - zh-Hant
+    - en
+  pages:
+    - sections:
+        - "name_zh-Hant": 便當
+          "name_en": Bentos
+          menu_items:
+            - item_number: R1 
+              "name_zh-Hant": 塔香雞肉便當
+              "name_en": Stir Fry Basil Chicken Bento 
+            - item_number: R2 
+              "name_zh-Hant": 傳統雞排便當 
+              "name_en": Chicken Cutlet Bento 
+            - item_number: R3 
+              "name_zh-Hant": 炭烤雞排便當 
+              "name_en": Grilled Chicken Cutlet Bento 
+            - item_number: R4 
+              "name_zh-Hant": 鹹酥雞便當
+              "name_en": Popcorn Chicken Bento 
+            - item_number: R5 
+              "name_zh-Hant": 炸排骨便當
+              "name_en": Fried Pork Chop Bento (Boneless) 
+            - item_number: R6 
+              "name_zh-Hant": 滷排骨便當
+              "name_en": Braised Pork Chop Bento (Boneless) 
+            - item_number: R7 
+              "name_zh-Hant": 烤排骨便當
+              "name_en": Grilled Pork Chop Bento (Boneless) 
+            - item_number: R8 
+              "name_zh-Hant": 台灣香腸便當
+              "name_en": Taiwanese Sausage Bento 
+            - item_number: R9 
+              "name_zh-Hant": 綜合滷味便當
+              "name_en": Taiwanese Braised Bento 
+            - item_number: R10 
+              "name_zh-Hant": 控肉飯便當
+              "name_en": Pork Belly Bento
+            - item_number: R11 
+              "name_zh-Hant": 五味排骨便當(微辣)
+              "name_en": Five Flavour Pork Chop Bento(Boneless)(Mild Spicy) 
+            - item_number: R12 
+              "name_zh-Hant": 烤鰻魚便當 
+              "name_en": Grilled Eel Bento 
+            - item_number: R13 
+              "name_zh-Hant": 滷肉飯便當 
+              "name_en": Minced Pork Rice Bento 
+            - item_number: R14 
+              "name_zh-Hant": 泰式椒麻雞便當 
+              "name_en": Thai Spicy Fried Chicken Bento 
+            - item_number: R15 
+              "name_zh-Hant": 滷牛腱便當 (微辣) 
+              "name_en": Braised Beef Shank Bento (Mild Spicy) 
+            - item_number: R16 
+              "name_zh-Hant": 素三杯豆腐便當
+              "name_en": Three Cup Tofu Bento (Vegetarian) 
+            - item_number: R17 
+              "name_zh-Hant": 素三杯杏鮑菇便當
+              "name_en": Three Cup King Oyster Mushroom Bento (Vegetarian) 
+            - item_number: R18 
+              "name_zh-Hant": 炸魚片便當
+              "name_en": Fried Fish Fillet Bento 
+        - "name_zh-Hans":  輕食便當
+          "name_en": Bento Lite 
+          menu_items:
+            - item_number: H1 
+              "name_zh-Hant": 咖哩鹹酥雞飯(微辣)
+              "name_en": Popcorn Chicken Curry Rice(Mild Spicy) 
+            - item_number: H2 
+              "name_zh-Hant": 咖哩雞排飯(微辣)
+              "name_en": Chicken Cutlet Curry Rice(Mild Spicy) 
+            - item_number: H3 
+              "name_zh-Hant": 咖哩魚片飯(微辣) 
+              "name_en": Fish Fillet Curry Rice(Mild Spicy) 
+            - item_number: H4 
+              "name_zh-Hant": 咖哩排骨飯(微辣) 
+              "name_en": Pork Chop Curry Rice(Mild Spicy) 
+            - item_number: H5 
+              "name_zh-Hant": 素咖哩杏鮑菇飯(微辣)
+              "name_en": King Oyster Mushroom Curry Rice(Mild Spicy)(Vegetarian) 
+        - "name_zh-Hant":  炸物
+          "name_en": Fried Appetizers 
+          menu_items:
+            - item_number: A1 
+              "name_zh-Hant": 甜不辣
+              "name_en": Taiwanese Tempura 
+            - item_number: A2 
+              "name_zh-Hant": 台式炸雞排 
+              "name_en": Taiwanese Chicken Cutlet 
+            - item_number: A3 
+              "name_zh-Hant": 塔香鹹酥雞
+              "name_en": Basil Popcorn Chicken 
+            - item_number: A4 
+              "name_zh-Hant": 蒜香鹽酥雞  
+              "name_en": Garlic Popcorn Chicken 
+            - item_number: A5 
+              "name_zh-Hant": 炸魚片
+              "name_en": Fried Fish Fillet 
+            - item_number: A6 
+              "name_zh-Hant": 炸湯圓(含花生粉)
+              "name_en": Fried Mochi Ball(with peanut powder) 
+            - item_number: A7 
+              "name_zh-Hant": 炸蘿蔔糕
+              "name_en": Turnip Cake 
+            - item_number: A8 
+              "name_zh-Hant": 酥炸杏鮑菇 
+              "name_en": Crispy King Oyster Mushroom 
+            - item_number: A9 
+              "name_zh-Hant": 薯格格 
+              "name_en": Waffle Fries 
+            - item_number: A10 
+              "name_zh-Hant": 素炸春捲(5pcs)
+              "name_en": Vegetarian Spring Rolls 
+            - item_number: A11 
+              "name_zh-Hant": 脆皮豆腐
+              "name_en": Crispy Tofu 
+            - item_number: A12 
+              "name_zh-Hant": 黃金泡菜
+              "name_en": Golden Kimchi (Not Fried) 
+            - item_number: A13 
+              "name_zh-Hant": 黃金泡菜豆腐組
+              "name_en": Crispy Tofu with Kimchi 
+            - item_number: A14 
+              "name_zh-Hant": 黃金芋頭丸 (5顆)
+              "name_en": Golden Taro Balls (5pcs) 
+            - item_number: A15 P
+              "name_zh-Hant": 米血糕
+              "name_en": Pig's Blood Cake 
+            - item_number: A16 
+              "name_zh-Hant": 芝麻球(8顆) 
+              "name_en": Sesame Balls (8pcs) 
+        - "name_zh-Hant":  烤物
+          "name_en": Grilled Appetizers 
+          menu_items:
+            - item_number: K1 
+              "name_zh-Hant": 醬烤雞排
+              "name_en": Grilled Chicken Cutlet 
+            - item_number: K2 
+              "name_zh-Hant": 烤雞肉塊
+              "name_en": Grilled Chicken Bites 
+            - item_number: K3 
+              "name_zh-Hant": 烤台灣香腸
+              "name_en": Grilled Taiwanese Sausage 
+            - item_number: K4 
+              "name_zh-Hant": 烤泡菜豆腐(含香菜)
+              "name_en": Grilled Tofu with Kimchi(with cilantro) 
+            - item_number: K5 
+              "name_zh-Hant": 烤米血糕(含花生粉和香菜)
+              "name_en": Grilled Pig's Blood Cake(with peanut powder and cilantro) 
+            - item_number: K6 
+              "name_zh-Hant": 綜合滷味(非烤物)
+              "name_en": Taiwanese Braised Dish(not grilled)
+            - item_number: K7 
+              "name_zh-Hant": 烤甜不辣 
+              "name_en": Taiwanese Grilled Tempura 
+        - "name_zh-Hant": 派對拼盤
+          "name_en": Party Tray 
+          menu_items:
+            - item_number: P1 
+              "name_zh-Hant": 雞排A組歡樂餐(3~4 People)
+              "name_en": Chicken Cutlet A Party Tray 
+            - item_number: P2 
+              "name_zh-Hant": 雞排B組歡樂餐(3~4 People)
+              "name_en": Chicken Cutlet B Party Tray 
+            - item_number: P3 
+              "name_zh-Hant": 鹹酥雞A組歡樂餐(3~4 People)
+              "name_en": GPopcorn Chicken A Party Tray 
+            - item_number: P4 P
+              "name_zh-Hant": 鹹酥雞B組歡樂餐(3~4 People)
+              "name_en": opcorn Chicken B Party Tray 
+            - item_number: P5 
+              "name_zh-Hant": 炸魚片A組歡樂餐(3~4 People)
+              "name_en": Fried Fish Fillet A Party Tray 
+            - item_number: P6
+              "name_zh-Hant": 炸魚片B組歡樂餐(3~4 People)
+              "name_en": Fried Fish Fillet B Party Tray 
+            - item_number: P7 
+              "name_zh-Hant": 醬烤雞排A組歡樂餐(3~4 People)
+              "name_en": Grilled Chicken Cutlet A Party Tray
+            - item_number: P8 
+              "name_zh-Hant": 醬烤雞排B組歡樂餐(3~4 People)
+              "name_en": Grilled Chicken Cutlet B Party Tray 
+        - "name_zh-Hant":  其他
+          "name_en": Extra 
+          menu_items:
+            - item_number: E1 
+              "name_zh-Hant": 一碗飯
+              "name_en": Bowl of Rice 
+            - item_number: E2 
+              "name_zh-Hant": 滷蛋(1pc)
+              "name_en": Marinated Egg 
+            - item_number: E3 
+              "name_zh-Hant": 泰式椒麻雞醬
+              "name_en": Thai Spicy Sauce 
+            - item_number: E5 
+              "name_zh-Hant": 爆辣菇菇醬
+              "name_en": Super hot Mushroom Sauce 
+            - item_number: E6 
+              "name_zh-Hant": 五味醬
+              "name_en": Five Flavour Sauce 
+        - "name_zh-Hant": 奶茶系列
+          "name_en": Milk Tea 
+          menu_items:
+            - item_number: M1 
+              "name_zh-Hant": 經典奶茶
+              "name_en": Classic Milk Tea 
+            - item_number: M2 
+              "name_zh-Hant": 茉香奶綠
+              "name_en": Jasmine Green Milk Tea 
+            - item_number: M3 
+              "name_zh-Hant": 烏龍奶茶
+              "name_en": Oolong Milk Tea 
+            - item_number: M4 
+              "name_zh-Hant": 伯爵奶茶
+              "name_en": Earl Grey Milk Tea 
+            - item_number: M5 
+              "name_zh-Hant": 台灣包種奶茶
+              "name_en": PaoChung Matcha Milk Tea 
+            - item_number: M6 
+              "name_zh-Hant": 玫瑰伯爵奶茶
+              "name_en": Rose Earl Grey Milk Tea 
+            - item_number: M7 
+              "name_zh-Hant": 芋香奶茶
+              "name_en": Taro Milk Tea 
+        - "name_zh-Hant":  純茶系列
+          "name_en": Pure Tea 
+          menu_items:
+            - item_number: T1 
+              "name_zh-Hant": 泡沫紅茶
+              "name_en": Black Tea 
+            - item_number: T2 
+              "name_zh-Hant": 茉莉綠茶
+              "name_en": Jasmine Green Tea 
+            - item_number: T3 
+              "name_zh-Hant": 烏龍茶
+              "name_en": Oolong Tea 
+            - item_number: T4 
+              "name_zh-Hant": 伯爵紅茶 
+              "name_en": Earl Grey Tea 
+            - item_number: T5 
+              "name_zh-Hant": 台灣包種茶
+              "name_en": PaoChung Tea 
+            - item_number: T6 
+              "name_zh-Hant": 玫瑰伯爵茶
+              "name_en": Rose Earl Grey Tea 
+            - item_number: T7 
+              "name_zh-Hant": 百香綠茶
+              "name_en": Passion Fruit Green Tea 
+            - item_number: T8 
+              "name_zh-Hant": 荔枝紅茶
+              "name_en": Lychee Black Tea 
+            - item_number: T9 
+              "name_zh-Hant": 水蜜桃紅茶 
+              "name_en": Peach Black Tea 
+            - item_number: T10 
+              "name_zh-Hant": 芒果烏龍茶
+              "name_en": Golden Mango Oolong Tea 
+            - item_number: T11 
+              "name_zh-Hant": 草莓綠茶
+              "name_en": Strawberry Green Tea
+            - item_number: T12 
+              "name_zh-Hant": 冬瓜茶
+              "name_en": GWinter Melon Tea 
+            - item_number: T13 
+              "name_zh-Hant": 滷肉飯便當 
+              "name_en": Honey Green Tea 
+        - "name_zh-Hant":  鹽岩奶蓋系列
+          "name_en": Salted Cheese 
+          menu_items:
+            - item_number: C1 
+              "name_zh-Hant": 岩鹽奶蓋紅茶
+              "name_en": Salted Cheese Black Tea 
+            - item_number: C2 
+              "name_zh-Hant": 岩鹽奶蓋綠茶
+              "name_en": Salted Cheese Green Tea 
+            - item_number: C3 
+              "name_zh-Hant": 岩鹽奶蓋包種抹茶
+              "name_en": Salted Cheese PaoChung Tea 
+        - "name_zh-Hant":  檸檬系列
+          "name_en": Lemon Drinks 
+          menu_items:
+            - item_number: L1 
+              "name_zh-Hant": 檸檬紅茶
+              "name_en": Lemon Black Tea 
+            - item_number: L2 
+              "name_zh-Hant": 檸檬綠茶
+              "name_en": Lemon Green Tea 
+            - item_number: L3 
+              "name_zh-Hant": 檸檬愛玉飲
+              "name_en": Lemon Ai-Yu 
+            - item_number: L4 
+              "name_zh-Hant": 檸檬百香飲
+              "name_en": Lemon Passion Fruit 
+            - item_number: L5 
+              "name_zh-Hant": 蜂蜜檸檬蘆薈飲
+              "name_en": Honey Lemon Aloe 
+            - item_number: L6 
+              "name_zh-Hant": 檸檬冬瓜飲
+              "name_en": Lemon Winter Melon 
+            - item_number: L7 
+              "name_zh-Hant": 蜂蜜檸檬蘭香籽
+              "name_en": Honey Lemon Basil Seeds 
+        - "name_zh-Hant":  鮮奶茶系列
+          "name_en": Fresh Milk 
+          menu_items:
+            - item_number: Q1 
+              "name_zh-Hant": 包種鮮奶茶
+              "name_en": PaoChung Fresh Milk Tea 
+            - item_number: Q2 
+              "name_zh-Hant": 玫瑰伯爵鮮奶茶
+              "name_en": Rose Earl Grey Fresh Milk Tea 
+            - item_number: Q3 
+              "name_zh-Hant": 冬瓜鮮奶
+              "name_en": Winter Melon Fresh Milk 
+            - item_number: Q4 
+              "name_zh-Hant": 紫薯鮮奶
+              "name_en":  Purple Yam Fresh Milk 
+            - item_number: Q5 
+              "name_zh-Hant": 黑糖珍珠撞奶
+              "name_en": Brown Sugar Boba Fresh Milk 
+            - item_number: Q6 
+              "name_zh-Hant": 仙草珍珠撞奶
+              "name_en": Grass Jelly Boba Fresh Milk 
+        - "name_zh-Hant":  冰沙系列
+          "name_en": Smoothie 
+          menu_items:
+            - item_number: S1
+              "name_zh-Hant": 百香果優格冰沙
+              "name_en": Passion Fruit Yogurt Smoothie 
+            - item_number: S2 
+              "name_zh-Hant": 荔枝優格冰沙
+              "name_en": Lychee Yogurt Smoothie 
+            - item_number: S3 
+              "name_zh-Hant": 水蜜桃優格冰沙
+              "name_en": Peach Yogurt Smoothie 
+            - item_number: S4 
+              "name_zh-Hant": Mango Yogurt Smoothie 芒果優格冰沙
+              "name_en": Mango Yogurt Smoothie x
+            - item_number: S5 
+              "name_zh-Hant": 草莓優格冰沙
+              "name_en": Strawberry Yogurt Smoothie 
+            - item_number: S6 
+              "name_zh-Hant": 芋頭優格冰沙
+              "name_en": Taro Yogurt Smoothie 
+            - item_number: S7
+              "name_zh-Hant": 玫瑰荔枝優格冰沙
+              "name_en": Rose Lychee Yogurt Smoothie 
+        - "name_zh-Hant": 特調系列
+          "name_en": Specialty 
+          menu_items:
+            - item_number: J2 
+              "name_zh-Hant": 荔枝玫瑰氣泡水 (爆爆珠)
+              "name_en": Lychee Rose Garden Soda (Popping Boba) 
+            - item_number: J3 
+              "name_zh-Hant": 百香檸檬氣泡水(荔枝椰果)
+              "name_en": Passion Fruit Lemon Soda(Lychee Coconut Jelly) 
+            - item_number: J4 
+              "name_zh-Hant": 古早味黑糖仙草
+              "name_en": Classic Brown Sugar Grass Jelly 
+            - item_number: J5 
+              "name_zh-Hant": 古早味黑糖愛玉
+              "name_en": Classic Brown Sugar Ai-Yu 
