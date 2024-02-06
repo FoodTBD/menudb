@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MenuDB - About MenuDB</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation Bar -->
+        {% include 'common_navbar.j2' %}
+    </header>
+
+    <div class="container mt-3">
+        <!-- Page Title -->
+        <h1>About MenuDB</h1>
+
+        <!-- About -->
+        <p>Hi, we’re two Chinese-American cousins, Jocelyn and John. We both love food but suck at reading Chinese.
+            When we walk into a Chinese restaurant, they look at us and hand us the Chinese menu, and then we have to
+            ask for the “normal” menu. This is our admittedly nerdy effort to help us make sense of “ethnic” food so we
+            (and you) can start ordering The Good Stuff outside of our little knowledge bubbles.</p>
+
+        <ul>
+            <li>Google Translate is great for what it does, but it’s not trained on restaurant menus, and it
+                doesn’t know dialectal meanings.</li>
+            <li>We do want to cover other cuisines, but we’re starting with Chinese because 1) it’s what we know and 2)
+                it’s probably the hardest (in terms of both culinary and linguistic complexity).
+            <li>Many years ago, Jocelyn made a Memrise course to learn to read Chinese menus.</li>
+            </li>
+        </ul>
+
+        <p>Comments, corrections, ideas? We’d love to hear from you. Email us at hello@food-tbd.com.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container">
+            {% include 'common_footer.j2' %}
+        </div>
+    </footer>
+</body>
+
+</html>

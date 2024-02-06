@@ -229,12 +229,16 @@ def generate_menu_html(
             sections = page.get("sections", [])
             for section in sections:
                 # Annotate section name
-                _annotate_menu_section_or_item_with_known_terms(
+                matched_known_terms = _annotate_menu_section_or_item_with_known_terms(
                     section, True, ordered_nondish_terms, db.known_terms_lookup_dict
                 )
+                for known_term in matched_known_terms:
+                    if not output_filename in known_term._menu_filenames:
+                        known_term._menu_filenames.append(output_filename)
 
                 menu_items = section.get("menu_items", [])
                 for menu_item in menu_items:
+                    # Annotate menu item name
                     matched_known_terms = (
                         _annotate_menu_section_or_item_with_known_terms(
                             menu_item,
@@ -367,6 +371,25 @@ def generate_stats_html(
         html_path.write(rendered_html)
 
 
+def generate_html(
+    template_name: str, data: Any, output_dir: str, html_filename: str
+) -> None:
+    env = Environment(loader=FileSystemLoader("templates"))
+    # https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+    env.trim_blocks = True
+    env.lstrip_blocks = True
+
+    # Render the output file
+    template = env.get_template(template_name)
+    rendered_html = template.render(data=data)
+
+    output_html_path = os.path.join(output_dir, html_filename)
+    with open(output_html_path, "w", encoding="utf-8") as html_file:
+        html_file.write(rendered_html)
+
+    print(f"Processed: {output_html_path}")
+
+
 def main(input_dir: str, output_dir: str):
     # Load canned data
     known_locale_lookup_dict = load_known_locales()
@@ -376,6 +399,12 @@ def main(input_dir: str, output_dir: str):
 
     # Generate menu pages
     menu_filename_to_menu_yaml_dict = process_menu_yaml_paths(input_dir, output_dir, db)
+
+    unused_known_terms = [kt for kt in db.known_terms if not kt._menu_filenames]
+    if unused_known_terms:
+        print(
+            f"known_terms defined but not referenced from any menus: {[(kt.name_primary, kt.name_en) for kt in unused_known_terms]}"
+        )
 
     # Generate index page
     output_path = os.path.join(output_dir, "index.html")
@@ -392,12 +421,14 @@ def main(input_dir: str, output_dir: str):
     # Generate stats page
     output_path = os.path.join(output_dir, "stats.html")
     generate_stats_html(list(menu_filename_to_menu_yaml_dict.values()), db, output_path)
-    print(f"Processed: {output_path}")
+
+    # Generate about page
+    generate_html("about_template.j2", None, output_dir, "about.html")
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 4:
-        print("Usage: python main.py [input_dir] [output_dir]")
+    if len(sys.argv) > 3:
+        print("Usage: python main.py [input_dir] [output_dir]", file=sys.stderr)
         sys.exit(1)
 
     input_dir = sys.argv[1] if len(sys.argv) >= 2 else INPUT_DIR
